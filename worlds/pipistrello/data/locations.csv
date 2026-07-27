@@ -30,7 +30,7 @@ Room Label,Type,Map Name,Name,Location,Object Ids,✅,❌,Edit,Rules,"Badge (SS[
 "South Plaza (X-2, Y-3) - ren223 (Southwest)",Location,Moneybag 2,Money Bag,South Plaza,lor3388,TRUE,FALSE,7/25/2026 12:06:18,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
 "South Plaza (X-2, Y-3) - ren223 (Main)",Location,Moneybag 3,Money Bag (top-center),South Plaza,lor380,TRUE,FALSE,7/25/2026 20:43:31,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
 "South Plaza (X-2, Y-3) - ren223 (Main)",Location,Moneybag 4,Money Bag (behind statue),South Plaza,lor397,TRUE,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Hidden behind statue
-"South Plaza (X-2, Y-3) - ren223 (Main)",Location,Moneybag 5,Money Bag (bottom-right),South Plaza,ren4803,TRUE,TRUE,7/26/2026 13:58:02,TRUE,Moon,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
+"South Plaza (X-2, Y-3) - ren223 (Main)",Location,Moneybag 5,Money Bag (bottom-right),South Plaza,ren4803,TRUE,FALSE,7/27/2026 13:43:24,TRUE,Moon,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,
 "South Plaza (X-2, Y-3) - ren223 (Southeast)",Location,Moneybag 6,Money Bag,South Plaza,yug2147,TRUE,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
 "South Plaza (X-1, Y-6) - ren355 (East)",Location,Moneybag 7,Money Bag,South Plaza,lor1120,TRUE,TRUE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
 "South Plaza (X-1, Y-6) - ren355 (South)",Location,Moneybag 8,Money Bag (behind sign),South Plaza,lor3013,TRUE,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Behind sign
