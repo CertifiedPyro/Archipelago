@@ -1,0 +1,53 @@
+Room Label,Type,Map Name,Name,Location,Object Ids,✅,❌,Edit,Rules,"Badge (SS[+], Moon, Turret)",Offstring Throw,Walk-the-Dog,Wall-Dash,UFO Throw,Wall Ride,"Move (Sleeper+AtW/Parry, Coin-Flip[+Prodigy], Cat's Cradle)",Other,Notes
+"Abandoned Tunnels (X+2, Y+1) - ren70",Location,Badge (Cheater's Teleportation),Badge (Cheater's Teleportation),Abandoned Tunnels,lor230,TRUE,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
+"Abandoned Tunnels (X+0, Y+2) - ren28",Event,Battery 1,,Abandoned Tunnels,,TRUE,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
+"Abandoned Tunnels (X+1, Y+0) - ren32",Event,Battery 2,,Abandoned Tunnels,,TRUE,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
+"Abandoned Tunnels (X+6, Y+1) - ren91",Event,Battery 3,,Abandoned Tunnels,,TRUE,FALSE,,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,
+"Abandoned Tunnels (X+5, Y+2) - ren55",Event,Battery 4,,Abandoned Tunnels,,TRUE,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
+"Abandoned Tunnels (X+7, Y+4) - ren693",Event,Battery 5,,Abandoned Tunnels,,TRUE,FALSE,,TRUE,FALSE,TRUE,TRUE,Skipping Stone+,FALSE,Skipping Stone,FALSE,FALSE,
+"Abandoned Tunnels (X+1, Y+0) - ren32",Location,Combat 1,,Abandoned Tunnels,"ren564,ren565",TRUE,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,2x rose + 2x coin
+"Abandoned Tunnels (X+2, Y+2) - ren334",Location,Combat 2 (optional),,Abandoned Tunnels,ren772,TRUE,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,1 moneybag
+"Abandoned Tunnels (X+10, Y+4) - ren422",Location,Combat 3,,Abandoned Tunnels,lor214,TRUE,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,1x moneybag + 10x coin
+"Abandoned Tunnels (X+2, Y+1) - ren70",Location,Diamond 1,,Abandoned Tunnels,lor236,TRUE,FALSE,,,,,,,,,,,Requires Cheater's badge
+"Abandoned Tunnels (X+0, Y+1) - ren12",Location,Moneybag 1,,Abandoned Tunnels,ren13,TRUE,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
+"Abandoned Tunnels (X+1, Y+1) - ren22",Location,Moneybag 2,,Abandoned Tunnels,lor167,TRUE,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
+"South Plaza (X-1, Y+4) - lor2248 (Southeast)",Location,Badge (Golden),Golden Badge,,yug4337,TRUE,TRUE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
+"South Plaza (X-1, Y-6) - ren355 (West)",Location,Badge (Hellhound),Hellbound Badge,South Plaza,yug3158,TRUE,TRUE,,,,,,,,,,,Only accessible from Gallineiros District
+"South Plaza (X-2, Y+4) - yug5210",Location,Badge (Pitcher's),Pitcher's Badge,South Plaza,yug5250,TRUE,FALSE,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Key 1,
+"South Plaza (X+2, Y+4) - yug5154",Location,BP Shard 1,BP Shard,South Plaza,yug5202,TRUE,FALSE,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,
+"South Plaza (X-2, Y-3) - ren223 (Main)",Event,Combat 1 (optional),"Combat (top-right, optional)",South Plaza,ren4804,TRUE,FALSE,7/25/2026 20:40:18,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
+"South Plaza (X-2, Y-3) - ren223 (Main)",Location,Combat 1 (optional),"Combat (top-right, optional) - Reward",South Plaza,ren4805,TRUE,FALSE,7/23/2026 19:26:58,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Combat 1,1x moneybag
+"South Plaza (X-3, Y+3) - ren4152",Event,Combat 2,Combat,South Plaza,lor2079,TRUE,FALSE,7/23/2026 19:08:26,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,1x moneybag
+"South Plaza (X-3, Y+3) - ren4152",Location,Combat 2,Combat - Reward,South Plaza,lor2096,TRUE,FALSE,7/25/2026 20:42:58,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Combat 2,
+"South Plaza (X-3, Y+4) - yug4930",Event,Combat 3,Combat,South Plaza,yug4954,TRUE,FALSE,7/23/2026 19:20:29,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Key 1
+"South Plaza (X-1, Y+4) - lor2248 (South)",Location,Diamond 1,Diamond,South Plaza,lor2469,TRUE,TRUE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
+"South Plaza (X-3, Y+4) - yug4930",Event,Key 1,Key,South Plaza,yug4979,TRUE,FALSE,7/23/2026 19:20:56,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Combat 3,
+"South Plaza (X-2, Y-3) - ren223 (Main)",Event,Lever 1,Right Lever,South Plaza,yug5535,TRUE,FALSE,7/23/2026 19:22:06,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
+"South Plaza (X-2, Y-3) - ren223 (Main)",Event,Lever 2,Left Lever,South Plaza,yug5536,TRUE,FALSE,7/23/2026 19:22:11,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
+"South Plaza (X-1, Y+4) - lor2248 (Southeast)",Event,Lever 3,Lever,South Plaza,lor3247,TRUE,TRUE,7/23/2026 19:22:37,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
+"South Plaza (X-2, Y-3) - ren223 (Southeast)",Event,Mole Brother 1,Mole Brother 1,South Plaza,lor1227,TRUE,FALSE,7/23/2026 19:23:14,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
+"South Plaza (X-2, Y-3) - ren223 (Main)",Location,Moneybag 1,"Money Bag (bottom-left, behind building)",South Plaza,cap369,TRUE,FALSE,7/25/2026 18:56:11,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
+"South Plaza (X-2, Y-3) - ren223 (Southwest)",Location,Moneybag 2,Money Bag,South Plaza,lor3388,TRUE,FALSE,7/25/2026 12:06:18,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
+"South Plaza (X-2, Y-3) - ren223 (Main)",Location,Moneybag 3,Money Bag (top-center),South Plaza,lor380,TRUE,FALSE,7/25/2026 20:43:31,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
+"South Plaza (X-2, Y-3) - ren223 (Main)",Location,Moneybag 4,Money Bag (behind statue),South Plaza,lor397,TRUE,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Hidden behind statue
+"South Plaza (X-2, Y-3) - ren223 (Main)",Location,Moneybag 5,Money Bag (bottom-right),South Plaza,ren4803,TRUE,TRUE,7/26/2026 13:58:02,TRUE,Moon,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
+"South Plaza (X-2, Y-3) - ren223 (Southeast)",Location,Moneybag 6,Money Bag,South Plaza,yug2147,TRUE,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
+"South Plaza (X-1, Y-6) - ren355 (East)",Location,Moneybag 7,Money Bag,South Plaza,lor1120,TRUE,TRUE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
+"South Plaza (X-1, Y-6) - ren355 (South)",Location,Moneybag 8,Money Bag (behind sign),South Plaza,lor3013,TRUE,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Behind sign
+"South Plaza (X-1, Y+4) - lor2248 (North)",Location,Moneybag 9,Money Bag,South Plaza,yug5046,TRUE,FALSE,7/25/2026 20:43:55,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
+"South Plaza (X+1, Y+4) - yug4939 (West)",Location,Moneybag 10,Money Bags (winged),South Plaza,"yug5160,yug5162",TRUE,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,2x money bag (winged)
+"South Plaza (X+1, Y+4) - yug4939 (East)",Location,Moneybag 11,Money Bag (left),South Plaza,yug5203,TRUE,FALSE,7/25/2026 20:44:22,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Reachable OR (yug4939 (West) + Moon Badge),Left moneybag
+"South Plaza (X+1, Y+4) - yug4939 (East)",Location,Moneybag 12,Money Bag (right),South Plaza,yug5166,TRUE,FALSE,7/25/2026 20:44:19,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Right moneybag
+"South Plaza (X-2, Y-3) - ren223 (South)",Event,Musical Notes 1,Left Musical Notes,South Plaza,yug5074,TRUE,FALSE,7/23/2026 19:30:21,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
+"South Plaza (X-2, Y-3) - ren223 (South)",Location,Musical Notes 1,Left Musical Notes - Reward,South Plaza,"yug5100,yug5101,yug5102,yug5103",TRUE,FALSE,7/23/2026 19:28:36,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Musical Notes 1,4x moneybag
+"South Plaza (X-2, Y-3) - ren223 (South)",Event,Musical Notes 2,Right Musical Notes,South Plaza,yug5127,TRUE,FALSE,7/23/2026 19:30:34,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,Around the World,FALSE,
+"South Plaza (X-2, Y-3) - ren223 (South)",Location,Musical Notes 2,Right Musical Notes - Reward,South Plaza,"yug5144,yug5146,yug5147",TRUE,FALSE,7/23/2026 19:29:22,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Musical Notes 2,"3x moneybag, wall-ride is hard"
+"South Plaza (X-2, Y-3) - ren223 (Main)",Location,Petal Container 1,Petal Container,South Plaza,yug5534,TRUE,FALSE,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Lever 1 AND Lever 2,
+"South Plaza (X-2, Y-3) - ren223 (Main)",Event,Quest (Burger 1),Burger Quest,South Plaza,yug3946,TRUE,FALSE,7/23/2026 19:31:57,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Burger,
+"South Plaza (X-2, Y-3) - ren223 (Main)",Location,Quest (Burger 1),Burger Quest - Reward,South Plaza,"yug5539,yug5540,yug5541,yug5545",TRUE,FALSE,7/23/2026 19:32:02,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Burger Quest 1,4x money bag
+"South Plaza (X-2, Y-3) - ren223 (Main)",Location,Taxi Phone 1,Taxi Phone,South Plaza,lor2057,TRUE,FALSE,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Costs $100,
+"South Plaza (Interiors) (X-1, Y+1) - ren85",Event,Burger,Burger,South Plaza (Interiors),yug421,TRUE,FALSE,7/23/2026 19:24:06,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Costs $15,
+"South Plaza (Sewers) (X-1, Y-5) - ren984",Event,Lever 2,Left Lever,South Plaza (Sewers),lor227,TRUE,FALSE,7/23/2026 19:26:14,TRUE,Skipping Stone+,FALSE,TRUE,Skipping Stone,TRUE,Skipping Stone,FALSE,FALSE,
+"South Plaza (Sewers) (X-1, Y-5) - ren984",Event,Lever 1,Right Lever,South Plaza (Sewers),lor228,TRUE,FALSE,7/23/2026 19:26:07,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,
+"South Plaza (Sewers) (X-1, Y+5) - yug1700 (East)",Location,Moneybag 1,Money Bags,South Plaza (Sewers),"yug2209,yug2291,yug2292",TRUE,TRUE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,3x moneybag
+"South Plaza (Sewers) (X-1, Y+5) - yug1700 (East)",Location,Petal Container 1,Petal Container,South Plaza (Sewers),yug2063,TRUE,TRUE,,TRUE,FALSE,Walk-the-Dog OR Wall Ride,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Rule is from yug1700 (East)
