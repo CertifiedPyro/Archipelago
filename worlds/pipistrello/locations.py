@@ -5,7 +5,7 @@ from __future__ import annotations
 from typing import TYPE_CHECKING
 
 from . import items
-from .data.generated_locations import EVENT_DATA, LOCATION_DATA, LocationData, PipLocation
+from .data.generated_locations import EVENT_DATA, LOCATION_DATA, EventData, LocationData, PipLocation
 
 if TYPE_CHECKING:
     from .world import PipWorld
@@ -44,6 +44,10 @@ def create_events(world: PipWorld) -> None:
 
 def get_location(global_room_id: str) -> LocationData:
     return GLOBAL_OBJECT_ID_TO_LOCATION[global_room_id]
+
+
+def get_event(global_room_id: str) -> EventData:
+    return GLOBAL_OBJECT_ID_TO_EVENT[global_room_id]
 
 
 def get_event_item(global_room_id: str) -> str:
