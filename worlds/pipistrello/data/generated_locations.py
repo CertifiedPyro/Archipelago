@@ -111,6 +111,13 @@ LOCATION_DATA: list[LocationData] = [
         id=301,
     ),
     LocationData(
+        region_name="SP (-2,-3) (Main)",
+        location_name="Money Bag (bottom-right)",
+        global_object_id="city/ren223/ren4803",
+        map_name="Moneybag 5",
+        id=311,
+    ),
+    LocationData(
         region_name="SP (-2,-3) (Southeast)",
         location_name="Money Bag",
         global_object_id="city/ren223/yug2147",

@@ -156,7 +156,7 @@ def set_location_rules_south_plaza(world: PipWorld) -> None:
         set_location_rule(world, "city/ren223/lor3388", True_())
         set_location_rule(world, "city/ren223/lor380", True_())
         set_location_rule(world, "city/ren223/lor397", True_())
-        # set_location_rule(world, "city/ren223/ren4803", H_MOON)
+        set_location_rule(world, "city/ren223/ren4803", H_MOON | Has(DASH))
         set_location_rule(world, "city/ren223/yug2147", True_())
         # set_new_location_rule(world, "city/ren355/lor1120", True_())
         set_location_rule(world, "city/ren355/lor3013", True_())
