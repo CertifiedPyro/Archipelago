@@ -129,8 +129,9 @@ def set_location_rules_south_plaza(world: PipWorld) -> None:
     set_location_rule(world, "city/yug5154/yug5202", HasAny(UFO, RIDE))
 
     # Combat
-    set_event_rule(world, "city/ren223/ren4804", True_())
-    set_location_rule(world, "city/ren223/ren4805", Has(locations.get_event_item("city/ren223/ren4804")))
+    if world.options.optional_combats:
+        set_event_rule(world, "city/ren223/ren4804", True_())
+        set_location_rule(world, "city/ren223/ren4805", Has(locations.get_event_item("city/ren223/ren4804")))
     set_event_rule(world, "city/ren4152/lor2079", True_())
     set_location_rule(world, "city/ren4152/lor2096", Has(locations.get_event_item("city/ren4152/lor2079")))
     set_event_rule(world, "city/yug4930/yug4954", True_())
@@ -150,24 +151,25 @@ def set_location_rules_south_plaza(world: PipWorld) -> None:
     set_event_rule(world, "city/ren223/lor1227", True_())
 
     # Money Bag
-    set_location_rule(world, "city/ren223/cap369", True_())
-    set_location_rule(world, "city/ren223/lor3388", True_())
-    set_location_rule(world, "city/ren223/lor380", True_())
-    set_location_rule(world, "city/ren223/lor397", True_())
-    # set_location_rule(world, "city/ren223/ren4803", H_MOON)
-    set_location_rule(world, "city/ren223/yug2147", True_())
-    # set_new_location_rule(world, "city/ren355/lor1120", True_())
-    set_location_rule(world, "city/ren355/lor3013", True_())
-    set_location_rule(world, "city/lor2248/yug5046", True_())
-    set_location_rule(world, "city/yug4939/yug5160", True_())
-    set_location_rule(world, "city/yug4939/yug5162", True_())
-    set_location_rule(
-        world,
-        "city/yug4939/yug5203",
-        CanReachRegion(regions.get_room("city/yug4939 (East)").region_name)
-        | (CanReachRegion(regions.get_room("city/yug4939 (West)").region_name) & H_MOON),
-    )
-    set_location_rule(world, "city/yug4939/yug5166", True_())
+    if world.options.moneybags:
+        set_location_rule(world, "city/ren223/cap369", True_())
+        set_location_rule(world, "city/ren223/lor3388", True_())
+        set_location_rule(world, "city/ren223/lor380", True_())
+        set_location_rule(world, "city/ren223/lor397", True_())
+        # set_location_rule(world, "city/ren223/ren4803", H_MOON)
+        set_location_rule(world, "city/ren223/yug2147", True_())
+        # set_new_location_rule(world, "city/ren355/lor1120", True_())
+        set_location_rule(world, "city/ren355/lor3013", True_())
+        set_location_rule(world, "city/lor2248/yug5046", True_())
+        set_location_rule(world, "city/yug4939/yug5160", True_())
+        set_location_rule(world, "city/yug4939/yug5162", True_())
+        set_location_rule(
+            world,
+            "city/yug4939/yug5203",
+            CanReachRegion(regions.get_room("city/yug4939 (East)").region_name)
+            | (CanReachRegion(regions.get_room("city/yug4939 (West)").region_name) & H_MOON),
+        )
+        set_location_rule(world, "city/yug4939/yug5166", True_())
 
     # Musical Notes
     set_event_rule(world, "city/ren223/yug5074", Has(OT))
