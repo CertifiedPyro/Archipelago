@@ -220,6 +220,7 @@ Full Room Label,Room Label,Area,Map ID,Room ID,X,Y,W,H,Suffix
 "Faria Slimer Borough (X+3, Y-3) - yug71","Faria Slimer Borough (X+3, Y-3) - yug71",Faria Slimer Borough,city,yug71,3,-3,1,1,
 "Faria Slimer Borough (X+4, Y-3) - yug2741 (Main)","Faria Slimer Borough (X+4, Y-3) - yug2741",Faria Slimer Borough,city,yug2741,4,-3,4,3, (Main)
 "Faria Slimer Borough (X+4, Y-3) - yug2741 (North)","Faria Slimer Borough (X+4, Y-3) - yug2741",Faria Slimer Borough,city,yug2741,4,-3,4,3, (North)
+"Faria Slimer Borough (X+4, Y-3) - yug2741 (East Alcove)","Faria Slimer Borough (X+4, Y-3) - yug2741",Faria Slimer Borough,city,yug2741,4,-3,4,3, (East Alcove)
 "Faria Slimer Borough (X+8, Y-3) - yug108 (Main)","Faria Slimer Borough (X+8, Y-3) - yug108",Faria Slimer Borough,city,yug108,8,-3,2,4, (Main)
 "Faria Slimer Borough (X+8, Y-3) - yug108 (North)","Faria Slimer Borough (X+8, Y-3) - yug108",Faria Slimer Borough,city,yug108,8,-3,2,4, (North)
 "Faria Slimer Borough (X+8, Y-3) - yug108 (South)","Faria Slimer Borough (X+8, Y-3) - yug108",Faria Slimer Borough,city,yug108,8,-3,2,4, (South)
@@ -237,6 +238,7 @@ Full Room Label,Room Label,Area,Map ID,Room ID,X,Y,W,H,Suffix
 "Faria Slimer Borough (X+2, Y+0) - yug220 (West)","Faria Slimer Borough (X+2, Y+0) - yug220",Faria Slimer Borough,city,yug220,2,0,1,1, (West)
 "Faria Slimer Borough (X+2, Y+0) - yug220 (East)","Faria Slimer Borough (X+2, Y+0) - yug220",Faria Slimer Borough,city,yug220,2,0,1,1, (East)
 "Faria Slimer Borough (X+4, Y+0) - yug27","Faria Slimer Borough (X+4, Y+0) - yug27",Faria Slimer Borough,city,yug27,4,0,4,3,
+"Faria Slimer Borough (X+4, Y+0) - yug27 (North Alcove)","Faria Slimer Borough (X+4, Y+0) - yug27",Faria Slimer Borough,city,yug27,4,0,4,3, (North Alcove)
 "Faria Slimer Borough (X+10, Y+0) - yug55","Faria Slimer Borough (X+10, Y+0) - yug55",Faria Slimer Borough,city,yug55,10,0,1,1,
 "Faria Slimer Borough (X+2, Y+1) - yug219","Faria Slimer Borough (X+2, Y+1) - yug219",Faria Slimer Borough,city,yug219,2,1,2,2,
 "Faria Slimer Borough (X+8, Y+1) - yug17","Faria Slimer Borough (X+8, Y+1) - yug17",Faria Slimer Borough,city,yug17,8,1,1,1,

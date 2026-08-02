@@ -1,14 +1,21 @@
 ﻿import csv
 import json
+import re
 from collections.abc import Iterable
-from dataclasses import dataclass, field
 from pathlib import Path
 
 import jinja2
 
+from .data_classes import ConnectionData, EventData, LocationData, RoomData
+
 # This dict maps area names to their user-facing region names.
 # This configures which areas are emitted.
 AREA_NAMES = {
+    # "Faria Slimer Borough": "FSB",
+    # "Faria Slimer Borough (Interiors)": "FSB Interiors",
+    # "Faria Slimer Borough (Sewers)": "FSB Sewers",
+    # "SlimeCorp Excavation Site": "SES",
+    # "SlimeCorp Skyscraper": "SS",
     "South Plaza": "SP",
     "South Plaza (Interiors)": "SP Interiors",
     "South Plaza (Sewers)": "SP Sewers",
@@ -19,86 +26,18 @@ FULL_ROOMS_CSV = DATA_DIR / "full_rooms.csv"
 CONNECTIONS_CSV = DATA_DIR / "connections.csv"
 LOCATIONS_CSV = DATA_DIR / "locations.csv"
 
-REGIONS_OUTPUT_FILE = DATA_DIR / "generated_regions.py"
-LOCATIONS_OUTPUT_FILE = DATA_DIR / "generated_locations.py"
+REGIONS_OUTPUT_FILE = DATA_DIR / "regions_generated.py"
+LOCATIONS_OUTPUT_FILE = DATA_DIR / "locations_generated.py"
 OBJECT_ID_OUTPUT_FILE = DATA_DIR / "object_id_mapping.json"
 
-
-@dataclass
-class RoomData:
-    room_label: str
-    """The full room label in the spreadsheet (e.g. South Plaza (X-2, Y-3) - ren223 (Main))."""
-    room_area: str
-    """The map area in-game (e.g. South Plaza)."""
-    region_name: str
-    """The Archipelago region name."""
-    global_room_id: str
-    """The global room ID (e.g. city/ren223 (Main))."""
-    suffix: str
-    """The Archipelago region suffix (e.g. (Main))."""
-    full_global_room_id: str = field(init=False, repr=False)
-    """The full global room ID (including suffix)."""
-
-    def __post_init__(self) -> None:
-        self.full_global_room_id = f"{self.global_room_id}{self.suffix}"
-
-
-@dataclass
-class ConnectionData:
-    start_region_name: str
-    """The connection start's Archipelago region name."""
-    end_region_name: str
-    """The connection end's Archipelago region name."""
-
-
-@dataclass
-class LocationData:
-    region_name: str
-    """The Archipelago region name."""
-    location_name: str
-    """The Archipelago location name (excluding region name)."""
-    global_object_id: str
-    """The global object ID in-game (e.g. city/ren223/yug2063)."""
-    map_name: str
-    """The Canva map name (e.g. Moneybag 1)."""
-    id: int
-    """The Archipelago location ID (e.g. 1)."""
-    full_location_name: str = field(init=False, repr=False)
-    """The full Archipelago location name (including region name)."""
-
-    def __post_init__(self) -> None:
-        self.full_location_name = f"{self.region_name}: {self.location_name}"
-
-
-@dataclass
-class EventData:
-    region_name: str
-    """The Archipelago region name."""
-    location_name: str
-    """The Archipelago location name (excluding region name)."""
-    item_name: str
-    """The Archipelago event item name (excluding region/location name)."""
-    global_object_id: str
-    """The global object ID in-game (e.g. city/ren223/yug5535)."""
-    map_name: str
-    """The Canva map name (e.g. Moneybag 1)."""
-    full_location_name: str = field(init=False, repr=False)
-    """The full Archipelago location name (including region name)."""
-    full_item_name: str = field(init=False, repr=False)
-    """The full Archipelago item name (including region/location name)."""
-
-    def __post_init__(self) -> None:
-        self.full_location_name = f"{self.region_name}: {self.location_name}"
-        # self.full_item_name = f"{self.full_location_name}: {self.item_name}"
-        self.full_item_name = f"{self.full_location_name}"
-
+RULE_HEADER_PATTERN = re.compile(r"^Rule \d+$")
 
 RoomDict = dict[str, RoomData]
 """A dict of room labels to :class:`RoomData`."""
 
 
 def read_full_rooms_csv() -> RoomDict:
-    room_dict: RoomDict = {"Menu": RoomData("Menu", "Menu", "Menu", "", "")}
+    room_dict: RoomDict = {"Menu": RoomData("Menu", "Menu", "Menu", "")}
     with FULL_ROOMS_CSV.open(encoding="utf-8") as file:
         reader = csv.DictReader(file)
         for row in reader:
@@ -114,14 +53,15 @@ def read_full_rooms_csv() -> RoomDict:
                 room_area=room_area,
                 region_name=region_name,
                 global_room_id=f"{row['Map ID']}/{row['Room ID']}",
-                suffix=row["Suffix"],
             )
     return room_dict
 
 
 def read_connections_csv(room_dict: RoomDict) -> list[ConnectionData]:
     connections: list[ConnectionData] = [
-        ConnectionData(room_dict["Menu"].region_name, room_dict["South Plaza (X-2, Y-3) - ren223 (Main)"].region_name)
+        ConnectionData(
+            room_dict["Menu"].region_name, room_dict["South Plaza (X-2, Y-3) - ren223 (Main)"].region_name, []
+        )
     ]
     with CONNECTIONS_CSV.open(encoding="utf-8") as file:
         reader = csv.DictReader(file)
@@ -132,9 +72,25 @@ def read_connections_csv(room_dict: RoomDict) -> list[ConnectionData]:
             if room1 not in room_dict or room2 not in room_dict:
                 continue
 
-            connections.append(ConnectionData(room_dict[room1].region_name, room_dict[room2].region_name))
+            # Get any non-empty rule values
+            rule_strs = [v for k, v in row.items() if RULE_HEADER_PATTERN.match(k) and v]
+
+            # Add connections
+            connections.append(
+                ConnectionData(
+                    start_region_name=room_dict[room1].region_name,
+                    end_region_name=room_dict[room2].region_name,
+                    rule_strs=rule_strs,
+                )
+            )
             if row["↔️"] == "TRUE":
-                connections.append(ConnectionData(room_dict[room2].region_name, room_dict[room1].region_name))
+                connections.append(
+                    ConnectionData(
+                        start_region_name=room_dict[room2].region_name,
+                        end_region_name=room_dict[room1].region_name,
+                        rule_strs=rule_strs,
+                    )
+                )
     return connections
 
 
@@ -154,41 +110,42 @@ def read_locations_csv(room_dict: RoomDict) -> tuple[list[LocationData], list[Ev
             object_ids = row["Object Ids"].split(",")
             location_name = row["Name"]
 
+            # Get any non-empty rule values
+            rule_strs = [v for k, v in row.items() if RULE_HEADER_PATTERN.match(k) and v]
+
             if row["Type"] == "Event":
-                item_name = ""
-                if "Combat" in location_name:
-                    item_name = "Complete"
-                elif "Burger" == location_name or "Key" in location_name:
-                    item_name = "Acquired"
-                elif "Lever" in location_name:
-                    item_name = "Activated"
                 events.append(
                     EventData(
-                        region_name,
-                        location_name,
-                        item_name,
-                        f"{room_data.global_room_id}/{object_ids[0]}",
-                        row["Map Name"],
+                        region_name=region_name,
+                        location_name=location_name,
+                        global_object_id=f"{room_data.global_room_id}/{object_ids[0]}",
+                        map_name=row["Map Name"],
+                        room_area=room_data.room_area,
+                        rule_strs=rule_strs,
                     )
                 )
             elif len(object_ids) == 1:
                 locations.append(
                     LocationData(
-                        region_name,
-                        location_name,
-                        f"{room_data.global_room_id}/{object_ids[0]}",
-                        row["Map Name"],
-                        i * 10 + 1,
+                        region_name=region_name,
+                        location_name=location_name,
+                        global_object_id=f"{room_data.global_room_id}/{object_ids[0]}",
+                        map_name=row["Map Name"],
+                        room_area=room_data.room_area,
+                        rule_strs=rule_strs,
+                        id=i * 10 + 1,
                     )
                 )
             else:
                 locations.extend(
                     LocationData(
-                        region_name,
-                        f"{location_name} {j + 1}",
-                        f"{room_data.global_room_id}/{object_ids[j]}",
-                        row["Map Name"],
-                        i * 10 + j + 1,
+                        region_name=region_name,
+                        location_name=f"{location_name} {j + 1}",
+                        global_object_id=f"{room_data.global_room_id}/{object_ids[j]}",
+                        map_name=row["Map Name"],
+                        room_area=room_data.room_area,
+                        rule_strs=rule_strs,
+                        id=i * 10 + j + 1,
                     )
                     for j in range(len(object_ids))
                 )
@@ -210,35 +167,7 @@ def write_generated_regions(
 # RUN "Reformat Code" AFTER GENERATION.
 from __future__ import annotations
 
-from dataclasses import dataclass, field
-
-
-@dataclass
-class RoomData:
-    room_label: str
-    '''The full room label in the spreadsheet (e.g. South Plaza (X-2, Y-3) - ren223 (Main)).'''
-    room_area: str
-    '''The map area in-game (e.g. South Plaza).'''
-    region_name: str
-    '''The Archipelago region name.'''
-    global_room_id: str
-    '''The global room ID (e.g. city/ren223 (Main)).'''
-    suffix: str
-    '''The Archipelago region suffix (e.g. (Main)).'''
-    full_global_room_id: str = field(init=False, repr=False)
-    '''The full global room ID (including suffix).'''
-
-    def __post_init__(self) -> None:
-        self.full_global_room_id = f"{self.global_room_id}{self.suffix}"
-
-
-@dataclass
-class ConnectionData:
-    start_region_name: str
-    '''The connection start's Archipelago region name.'''
-    end_region_name: str
-    '''The connection end's Archipelago region name.'''
-
+from .data_classes import ConnectionData, RoomData
 
 ROOMS: list[RoomData] = [
 {% for d in rooms %}
@@ -269,64 +198,22 @@ def write_generated_locations(
 # RUN "Reformat Code" AFTER GENERATION.
 from __future__ import annotations
 
-from dataclasses import dataclass, field
-
 from BaseClasses import Location
+
+from .data_classes import EventData, LocationData
 
 
 class PipLocation(Location):
     game = "Pipistrello and the Cursed Yoyo"
 
 
-@dataclass
-class LocationData:
-    region_name: str
-    '''The Archipelago region name.'''
-    location_name: str
-    '''The Archipelago location name (excluding region name).'''
-    global_object_id: str
-    '''The global object ID in-game (e.g. city/ren223/yug2063).'''
-    map_name: str
-    '''The Canva map name (e.g. Moneybag 1).'''
-    id: int
-    '''The Archipelago location ID (e.g. 1).'''
-    full_location_name: str = field(init=False, repr=False)
-    '''The full Archipelago location name (including region name).'''
-
-    def __post_init__(self) -> None:
-        self.full_location_name = f"{self.region_name}: {self.location_name}"
-
-
-@dataclass
-class EventData:
-    region_name: str
-    '''The Archipelago region name.'''
-    location_name: str
-    '''The Archipelago location name (excluding region name).'''
-    item_name: str
-    '''The Archipelago event item name (excluding region/location name).'''
-    global_object_id: str
-    '''The global object ID in-game (e.g. city/ren223/yug5535).'''
-    map_name: str
-    '''The Canva map name (e.g. Moneybag 1).'''
-    full_location_name: str = field(init=False, repr=False)
-    '''The full Archipelago location name (including region name).'''
-    full_item_name: str = field(init=False, repr=False)
-    '''The full Archipelago item name (including region/location name).'''
-
-    def __post_init__(self) -> None:
-        self.full_location_name = f"{self.region_name}: {self.location_name}"
-        # self.full_item_name = f"{self.full_location_name}: {self.item_name}"
-        self.full_item_name = f"{self.full_location_name}"
-
-
-LOCATION_DATA: list[LocationData] = [
+LOCATIONS: list[LocationData] = [
 {% for d in locations %}
     {{ d }},
 {% endfor %}
 ]
 
-EVENT_DATA: list[EventData] = [
+EVENTS: list[EventData] = [
 {% for d in events %}
     {{ d }},
 {% endfor %}

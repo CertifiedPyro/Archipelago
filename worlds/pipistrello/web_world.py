@@ -1,19 +1,14 @@
 from BaseClasses import Tutorial
 from worlds.AutoWorld import WebWorld
 
-from .options import option_presets
+from .options import option_groups, option_presets
 
 
 class PipWebWorld(WebWorld):
     game = "Pipistrello and the Cursed Yoyo"
     # theme = "grass"
+    rich_text_options_doc = True
 
-    # A WebWorld can have any number of tutorials, but should always have at least an English setup guide.
-    # Many WebWorlds just have one setup guide, but some have multiple, e.g. for different languages.
-    # We need to create a Tutorial object for every setup guide.
-    # In order, we need to provide a title, a description, a language, a filepath, a link, and authors.
-    # The filepath is relative to a "/docs/" directory in the root folder of your apworld.
-    # The "link" parameter is unused, but we still need to provide it.
     setup_en = Tutorial(
         "Multiworld Setup Guide",
         "A guide to setting up Pipistrello and the Cursed Yoyo for Archipelago.",
@@ -23,9 +18,7 @@ class PipWebWorld(WebWorld):
         ["CertifiedPyro"],
     )
 
-    # We add these tutorials to our WebWorld by overriding the "tutorials" field.
     tutorials = [setup_en]
 
-    # If we have option groups and/or option presets, we need to specify these here as well.
-    # option_groups = option_groups
+    option_groups = option_groups
     options_presets = option_presets

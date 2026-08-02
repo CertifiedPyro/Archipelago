@@ -2,63 +2,23 @@
 # RUN "Reformat Code" AFTER GENERATION.
 from __future__ import annotations
 
-from dataclasses import dataclass, field
-
 from BaseClasses import Location
+
+from .data_classes import EventData, LocationData
 
 
 class PipLocation(Location):
     game = "Pipistrello and the Cursed Yoyo"
 
 
-@dataclass
-class LocationData:
-    region_name: str
-    """The Archipelago region name."""
-    location_name: str
-    """The Archipelago location name (excluding region name)."""
-    global_object_id: str
-    """The global object ID in-game (e.g. city/ren223/yug2063)."""
-    map_name: str
-    """The Canva map name (e.g. Moneybag 1)."""
-    id: int
-    """The Archipelago location ID (e.g. 1)."""
-    full_location_name: str = field(init=False, repr=False)
-    """The full Archipelago location name (including region name)."""
-
-    def __post_init__(self) -> None:
-        self.full_location_name = f"{self.region_name}: {self.location_name}"
-
-
-@dataclass
-class EventData:
-    region_name: str
-    """The Archipelago region name."""
-    location_name: str
-    """The Archipelago location name (excluding region name)."""
-    item_name: str
-    """The Archipelago event item name (excluding region/location name)."""
-    global_object_id: str
-    """The global object ID in-game (e.g. city/ren223/yug5535)."""
-    map_name: str
-    """The Canva map name (e.g. Moneybag 1)."""
-    full_location_name: str = field(init=False, repr=False)
-    """The full Archipelago location name (including region name)."""
-    full_item_name: str = field(init=False, repr=False)
-    """The full Archipelago item name (including region/location name)."""
-
-    def __post_init__(self) -> None:
-        self.full_location_name = f"{self.region_name}: {self.location_name}"
-        # self.full_item_name = f"{self.full_location_name}: {self.item_name}"
-        self.full_item_name = f"{self.full_location_name}"
-
-
-LOCATION_DATA: list[LocationData] = [
+LOCATIONS: list[LocationData] = [
     LocationData(
         region_name="SP (-2,+4)",
         location_name="Pitcher's Badge",
         global_object_id="city/yug5210/yug5250",
         map_name="Badge (Pitcher's)",
+        room_area="South Plaza",
+        rule_strs=["Key 1"],
         id=141,
     ),
     LocationData(
@@ -66,6 +26,8 @@ LOCATION_DATA: list[LocationData] = [
         location_name="BP Shard",
         global_object_id="city/yug5154/yug5202",
         map_name="BP Shard 1",
+        room_area="South Plaza",
+        rule_strs=["ufo", "ride"],
         id=151,
     ),
     LocationData(
@@ -73,6 +35,8 @@ LOCATION_DATA: list[LocationData] = [
         location_name="Combat (top-right, optional) - Reward",
         global_object_id="city/ren223/ren4805",
         map_name="Combat 1 (optional)",
+        room_area="South Plaza",
+        rule_strs=["Combat 1 (optional)"],
         id=171,
     ),
     LocationData(
@@ -80,6 +44,8 @@ LOCATION_DATA: list[LocationData] = [
         location_name="Combat - Reward",
         global_object_id="city/ren4152/lor2096",
         map_name="Combat 2",
+        room_area="South Plaza",
+        rule_strs=["Combat 2"],
         id=191,
     ),
     LocationData(
@@ -87,6 +53,8 @@ LOCATION_DATA: list[LocationData] = [
         location_name="Money Bag (bottom-left, behind building)",
         global_object_id="city/ren223/cap369",
         map_name="Moneybag 1",
+        room_area="South Plaza",
+        rule_strs=[],
         id=271,
     ),
     LocationData(
@@ -94,6 +62,8 @@ LOCATION_DATA: list[LocationData] = [
         location_name="Money Bag",
         global_object_id="city/ren223/lor3388",
         map_name="Moneybag 2",
+        room_area="South Plaza",
+        rule_strs=[],
         id=281,
     ),
     LocationData(
@@ -101,6 +71,8 @@ LOCATION_DATA: list[LocationData] = [
         location_name="Money Bag (top-center)",
         global_object_id="city/ren223/lor380",
         map_name="Moneybag 3",
+        room_area="South Plaza",
+        rule_strs=[],
         id=291,
     ),
     LocationData(
@@ -108,6 +80,8 @@ LOCATION_DATA: list[LocationData] = [
         location_name="Money Bag (behind statue)",
         global_object_id="city/ren223/lor397",
         map_name="Moneybag 4",
+        room_area="South Plaza",
+        rule_strs=[],
         id=301,
     ),
     LocationData(
@@ -115,6 +89,8 @@ LOCATION_DATA: list[LocationData] = [
         location_name="Money Bag (bottom-right)",
         global_object_id="city/ren223/ren4803",
         map_name="Moneybag 5",
+        room_area="South Plaza",
+        rule_strs=[],
         id=311,
     ),
     LocationData(
@@ -122,6 +98,8 @@ LOCATION_DATA: list[LocationData] = [
         location_name="Money Bag",
         global_object_id="city/ren223/yug2147",
         map_name="Moneybag 6",
+        room_area="South Plaza",
+        rule_strs=[],
         id=321,
     ),
     LocationData(
@@ -129,6 +107,8 @@ LOCATION_DATA: list[LocationData] = [
         location_name="Money Bag (behind sign)",
         global_object_id="city/ren355/lor3013",
         map_name="Moneybag 8",
+        room_area="South Plaza",
+        rule_strs=[],
         id=341,
     ),
     LocationData(
@@ -136,6 +116,8 @@ LOCATION_DATA: list[LocationData] = [
         location_name="Money Bag",
         global_object_id="city/lor2248/yug5046",
         map_name="Moneybag 9",
+        room_area="South Plaza",
+        rule_strs=[],
         id=351,
     ),
     LocationData(
@@ -143,6 +125,8 @@ LOCATION_DATA: list[LocationData] = [
         location_name="Money Bags (winged) 1",
         global_object_id="city/yug4939/yug5160",
         map_name="Moneybag 10",
+        room_area="South Plaza",
+        rule_strs=[],
         id=361,
     ),
     LocationData(
@@ -150,13 +134,17 @@ LOCATION_DATA: list[LocationData] = [
         location_name="Money Bags (winged) 2",
         global_object_id="city/yug4939/yug5162",
         map_name="Moneybag 10",
+        room_area="South Plaza",
+        rule_strs=[],
         id=362,
     ),
     LocationData(
-        region_name="SP (+1,+4) (East)",
+        region_name="SP (+1,+4) (West)",
         location_name="Money Bag (left)",
         global_object_id="city/yug4939/yug5203",
         map_name="Moneybag 11",
+        room_area="South Plaza",
+        rule_strs=[],
         id=371,
     ),
     LocationData(
@@ -164,6 +152,8 @@ LOCATION_DATA: list[LocationData] = [
         location_name="Money Bag (right)",
         global_object_id="city/yug4939/yug5166",
         map_name="Moneybag 12",
+        room_area="South Plaza",
+        rule_strs=[],
         id=381,
     ),
     LocationData(
@@ -171,6 +161,8 @@ LOCATION_DATA: list[LocationData] = [
         location_name="Left Musical Notes - Reward 1",
         global_object_id="city/ren223/yug5100",
         map_name="Musical Notes 1",
+        room_area="South Plaza",
+        rule_strs=["Musical Notes 1"],
         id=401,
     ),
     LocationData(
@@ -178,6 +170,8 @@ LOCATION_DATA: list[LocationData] = [
         location_name="Left Musical Notes - Reward 2",
         global_object_id="city/ren223/yug5101",
         map_name="Musical Notes 1",
+        room_area="South Plaza",
+        rule_strs=["Musical Notes 1"],
         id=402,
     ),
     LocationData(
@@ -185,6 +179,8 @@ LOCATION_DATA: list[LocationData] = [
         location_name="Left Musical Notes - Reward 3",
         global_object_id="city/ren223/yug5102",
         map_name="Musical Notes 1",
+        room_area="South Plaza",
+        rule_strs=["Musical Notes 1"],
         id=403,
     ),
     LocationData(
@@ -192,6 +188,8 @@ LOCATION_DATA: list[LocationData] = [
         location_name="Left Musical Notes - Reward 4",
         global_object_id="city/ren223/yug5103",
         map_name="Musical Notes 1",
+        room_area="South Plaza",
+        rule_strs=["Musical Notes 1"],
         id=404,
     ),
     LocationData(
@@ -199,6 +197,8 @@ LOCATION_DATA: list[LocationData] = [
         location_name="Right Musical Notes - Reward 1",
         global_object_id="city/ren223/yug5144",
         map_name="Musical Notes 2",
+        room_area="South Plaza",
+        rule_strs=["Musical Notes 2"],
         id=421,
     ),
     LocationData(
@@ -206,6 +206,8 @@ LOCATION_DATA: list[LocationData] = [
         location_name="Right Musical Notes - Reward 2",
         global_object_id="city/ren223/yug5146",
         map_name="Musical Notes 2",
+        room_area="South Plaza",
+        rule_strs=["Musical Notes 2"],
         id=422,
     ),
     LocationData(
@@ -213,6 +215,8 @@ LOCATION_DATA: list[LocationData] = [
         location_name="Right Musical Notes - Reward 3",
         global_object_id="city/ren223/yug5147",
         map_name="Musical Notes 2",
+        room_area="South Plaza",
+        rule_strs=["Musical Notes 2"],
         id=423,
     ),
     LocationData(
@@ -220,6 +224,8 @@ LOCATION_DATA: list[LocationData] = [
         location_name="Petal Container",
         global_object_id="city/ren223/yug5534",
         map_name="Petal Container 1",
+        room_area="South Plaza",
+        rule_strs=["Lever 1, Lever 2"],
         id=431,
     ),
     LocationData(
@@ -227,6 +233,8 @@ LOCATION_DATA: list[LocationData] = [
         location_name="Burger Quest - Reward 1",
         global_object_id="city/ren223/yug5539",
         map_name="Quest (Burger 1)",
+        room_area="South Plaza",
+        rule_strs=["Quest (Burger 1)"],
         id=451,
     ),
     LocationData(
@@ -234,6 +242,8 @@ LOCATION_DATA: list[LocationData] = [
         location_name="Burger Quest - Reward 2",
         global_object_id="city/ren223/yug5540",
         map_name="Quest (Burger 1)",
+        room_area="South Plaza",
+        rule_strs=["Quest (Burger 1)"],
         id=452,
     ),
     LocationData(
@@ -241,6 +251,8 @@ LOCATION_DATA: list[LocationData] = [
         location_name="Burger Quest - Reward 3",
         global_object_id="city/ren223/yug5541",
         map_name="Quest (Burger 1)",
+        room_area="South Plaza",
+        rule_strs=["Quest (Burger 1)"],
         id=453,
     ),
     LocationData(
@@ -248,6 +260,8 @@ LOCATION_DATA: list[LocationData] = [
         location_name="Burger Quest - Reward 4",
         global_object_id="city/ren223/yug5545",
         map_name="Quest (Burger 1)",
+        room_area="South Plaza",
+        rule_strs=["Quest (Burger 1)"],
         id=454,
     ),
     LocationData(
@@ -255,100 +269,115 @@ LOCATION_DATA: list[LocationData] = [
         location_name="Taxi Phone",
         global_object_id="city/ren223/lor2057",
         map_name="Taxi Phone 1",
+        room_area="South Plaza",
+        rule_strs=["$100"],
         id=461,
     ),
 ]
 
-EVENT_DATA: list[EventData] = [
+EVENTS: list[EventData] = [
     EventData(
         region_name="SP (-2,-3) (Main)",
         location_name="Combat (top-right, optional)",
-        item_name="Complete",
         global_object_id="city/ren223/ren4804",
         map_name="Combat 1 (optional)",
+        room_area="South Plaza",
+        rule_strs=[],
     ),
     EventData(
         region_name="SP (-3,+3)",
         location_name="Combat",
-        item_name="Complete",
         global_object_id="city/ren4152/lor2079",
         map_name="Combat 2",
+        room_area="South Plaza",
+        rule_strs=[],
     ),
     EventData(
         region_name="SP (-3,+4)",
         location_name="Combat",
-        item_name="Complete",
         global_object_id="city/yug4930/yug4954",
         map_name="Combat 3",
+        room_area="South Plaza",
+        rule_strs=[],
     ),
     EventData(
         region_name="SP (-3,+4)",
         location_name="Key",
-        item_name="Acquired",
         global_object_id="city/yug4930/yug4979",
         map_name="Key 1",
+        room_area="South Plaza",
+        rule_strs=["Combat 3"],
     ),
     EventData(
         region_name="SP (-2,-3) (Main)",
         location_name="Right Lever",
-        item_name="Activated",
         global_object_id="city/ren223/yug5535",
         map_name="Lever 1",
+        room_area="South Plaza",
+        rule_strs=[],
     ),
     EventData(
         region_name="SP (-2,-3) (Main)",
         location_name="Left Lever",
-        item_name="Activated",
         global_object_id="city/ren223/yug5536",
         map_name="Lever 2",
+        room_area="South Plaza",
+        rule_strs=[],
     ),
     EventData(
         region_name="SP (-2,-3) (Southeast)",
         location_name="Mole Brother 1",
-        item_name="",
         global_object_id="city/ren223/lor1227",
         map_name="Mole Brother 1",
+        room_area="South Plaza",
+        rule_strs=[],
     ),
     EventData(
         region_name="SP (-2,-3) (South)",
         location_name="Left Musical Notes",
-        item_name="",
         global_object_id="city/ren223/yug5074",
         map_name="Musical Notes 1",
+        room_area="South Plaza",
+        rule_strs=["off"],
     ),
     EventData(
         region_name="SP (-2,-3) (South)",
         location_name="Right Musical Notes",
-        item_name="",
         global_object_id="city/ren223/yug5127",
         map_name="Musical Notes 2",
+        room_area="South Plaza",
+        rule_strs=["off", "atw", "hard,ride"],
     ),
     EventData(
         region_name="SP (-2,-3) (Main)",
         location_name="Burger Quest",
-        item_name="",
         global_object_id="city/ren223/yug3946",
         map_name="Quest (Burger 1)",
+        room_area="South Plaza",
+        rule_strs=["[SP-I] Burger"],
     ),
     EventData(
         region_name="SP Interiors (-1,+1)",
         location_name="Burger",
-        item_name="Acquired",
         global_object_id="city_interiors/ren85/yug421",
         map_name="Burger",
-    ),
-    EventData(
-        region_name="SP Sewers (-1,-5)",
-        location_name="Left Lever",
-        item_name="Activated",
-        global_object_id="city_underground/ren984/lor227",
-        map_name="Lever 2",
+        room_area="South Plaza (Interiors)",
+        rule_strs=["$15"],
     ),
     EventData(
         region_name="SP Sewers (-1,-5)",
         location_name="Right Lever",
-        item_name="Activated",
         global_object_id="city_underground/ren984/lor228",
         map_name="Lever 1",
+        room_area="South Plaza (Sewers)",
+        rule_strs=["dash", "ufo", "ride"],
+    ),
+    EventData(
+        region_name="SP Sewers (-1,-5)",
+        location_name="Left Lever",
+        global_object_id="city_underground/ren984/lor227",
+        map_name="Lever 2",
+        room_area="South Plaza (Sewers)",
+        rule_strs=["ss+", "dog", "dash,ss", "ufo", "ride, ss"],
     ),
 ]
