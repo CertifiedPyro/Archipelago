@@ -11,9 +11,9 @@ from .data_classes import ConnectionData, EventData, LocationData, RoomData
 # This dict maps area names to their user-facing region names.
 # This configures which areas are emitted.
 AREA_NAMES = {
-    # "Faria Slimer Borough": "FSB",
-    # "Faria Slimer Borough (Interiors)": "FSB Interiors",
-    # "Faria Slimer Borough (Sewers)": "FSB Sewers",
+    "Faria Slimer Borough": "FSB",
+    "Faria Slimer Borough (Interiors)": "FSB Interiors",
+    "Faria Slimer Borough (Sewers)": "FSB Sewers",
     # "SlimeCorp Excavation Site": "SES",
     # "SlimeCorp Skyscraper": "SS",
     "South Plaza": "SP",

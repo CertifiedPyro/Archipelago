@@ -51,9 +51,9 @@ RULE_DICT = {
     "fa": f"Has('{FA}')",
     "flurry": f"Has('{FA}')",
     "flurryattack": f"Has('{FA}')",
-    "cc": f"Has('{CC}')",
-    "cat": f"Has('{CC}')",
-    "catscradle": f"Has('{CC}')",
+    "cc": f'Has("{CC}")',
+    "cat": f'Has("{CC}")',
+    "catscradle": f'Has("{CC}")',
     "mgr": f"Has('{MGR}')",
     "merry": f"Has('{MGR}')",
     "merrygoround": f"Has('{MGR}')",
@@ -69,11 +69,15 @@ RULE_DICT = {
     "skippingstone": "HAS_SS_NORMAL",
     "ss+": "HAS_SS_PLUS",
     "skippingstone+": "HAS_SS_PLUS",
+    # Health
+    "+1heart": "Has('Petal Container', 8)",
+    "heart+1": "Has('Petal Container', 8)",
     # Difficulty
     "hard": "DIFF_HARD",
     "expert": "DIFF_EXPERT",
     # Interactables
     "bomb": "True_()",
+    "chest": "CHEST",
     "key": "True_()",
     "lever": "True_()",
 }
@@ -184,10 +188,11 @@ HAS_MID_AIR_UFO = Has("UFO Throw", options=[OptionFilter(Difficulty, Difficulty.
 HAS_SS_NORMAL = Has("Progressive Skipping Stone Badge", 1) & Has("BP Shard", 4)  # Requires 5 BP (from base 3 BP)
 HAS_SS_PLUS = Has("Progressive Skipping Stone Badge", 2) & Has("BP Shard", 2)  # Requires 4 BP (from base 3 BP)
 
-HAS_MONEY = True_()
-
 DIFF_HARD = True_(options=[OptionFilter(Difficulty, Difficulty.option_hard)])
 DIFF_EXPERT = True_(options=[OptionFilter(Difficulty, Difficulty.option_expert)])
+
+HAS_MONEY = True_()
+CHEST = True_()
 
 ENTRANCE_RULES: dict[str, Rule] = {
 {% for entrance_name, rule in entrance_rules.items() %}

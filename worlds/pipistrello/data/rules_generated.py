@@ -11,12 +11,57 @@ HAS_MID_AIR_UFO = Has("UFO Throw", options=[OptionFilter(Difficulty, Difficulty.
 HAS_SS_NORMAL = Has("Progressive Skipping Stone Badge", 1) & Has("BP Shard", 4)  # Requires 5 BP (from base 3 BP)
 HAS_SS_PLUS = Has("Progressive Skipping Stone Badge", 2) & Has("BP Shard", 2)  # Requires 4 BP (from base 3 BP)
 
-HAS_MONEY = True_()
-
 DIFF_HARD = True_(options=[OptionFilter(Difficulty, Difficulty.option_hard)])
 DIFF_EXPERT = True_(options=[OptionFilter(Difficulty, Difficulty.option_expert)])
 
+HAS_MONEY = True_()
+CHEST = True_()
+
 ENTRANCE_RULES: dict[str, Rule] = {
+    "FSB (+4,-5) (North) -> FSB (+4,-5) (South)": (Has("FSB (+4,-5) (North): Lever")),
+    "FSB (+4,-3) (Main) -> FSB (+7,-4) (Main)": (
+        HAS_SS_NORMAL | Has("Walk-the-Dog") | Has("Wall-Dash") | Has("UFO Throw") | Has("Wall Ride")
+    ),
+    "FSB (+4,-3) (Main) -> FSB (+4,+0) (North Alcove)": (Has("Wall-Dash") | Has("UFO Throw") | Has("Wall Ride")),
+    "FSB (+2,-2) -> FSB (+2,-1)": (
+        (Has("Wall-Dash") & Has("FSB (+2,-2): Lever (left)") & Has("FSB (+2,-2): Far Lever"))
+        | (Has("Wall Ride") & Has("FSB (+2,-2): Lever (left)") & Has("FSB (+2,-2): Lever (right)"))
+        | (Has("Wall Ride") & Has("FSB (+2,-2): Lever (left)") & Has("FSB (+2,-2): Far Lever"))
+        | (HAS_MID_AIR_UFO & Has("FSB (+2,-2): Lever (left)") & Has("FSB (+2,-2): Far Lever"))
+    ),
+    "FSB (+3,-1) -> FSB (+3,-2)": (Has("Wall-Dash") | Has("UFO Throw") | Has("Wall Ride")),
+    "FSB Sewers (+3,-7) -> FSB Sewers (+4,-7)": (
+        Has("FSB Sewers (+3,-7): North Lever") & Has("FSB Sewers (+3,-7): South Lever")
+    ),
+    "FSB Sewers (+4,-6) (Main) -> FSB Sewers (+5,-6) (Main)": (
+        Has("FSB Sewers (+4,-6) (Main): South Key")
+        & Has("FSB Sewers (+4,-6) (Main): North Key")
+        & Has("FSB Sewers (+4,-6) (South): South Button")
+        & Has("FSB Sewers (+4,-6) (North): North Button")
+    ),
+    "FSB Sewers (+5,-6) (Main) -> FSB Sewers (+5,-6) (South)": (Has("FSB Sewers (+5,-6) (Main): Key")),
+    "FSB Sewers (+4,-5) -> FSB Sewers (+4,-6) (South)": (Has("FSB Sewers (+4,-5): Combat")),
+    "FSB Sewers (+6,-1) -> FSB Sewers (+6,+0) (North)": (
+        Has("Offstring Throw") | Has("Wall-Dash") | Has("UFO Throw") | Has("Wall Ride") | DIFF_HARD
+    ),
+    "FSB Sewers (+2,+0) -> FSB Sewers (+2,-1)": (
+        HAS_SS_PLUS
+        | Has("Walk-the-Dog")
+        | HAS_MID_AIR_UFO
+        | (Has("Wall Ride") & HAS_SS_NORMAL)
+        | (DIFF_EXPERT & Has("Wall Ride"))
+    ),
+    "FSB Sewers (+6,+0) (East) -> FSB Sewers (+6,+0) (Main)": (
+        Has("FSB Sewers (+6,+0) (South): South Lever")
+        & Has("FSB Sewers (+6,+0) (North): North Lever")
+        & Has("FSB Sewers (+6,+0) (East): East Lever")
+    ),
+    "FSB Sewers (+7,+0) (South) -> FSB Sewers (+6,+0) (East)": (
+        Has("Offstring Throw") | Has("Wall-Dash") | Has("UFO Throw") | Has("Wall Ride") | DIFF_HARD
+    ),
+    "FSB Sewers (+6,+1) -> FSB Sewers (+6,+0) (South)": (
+        Has("Offstring Throw") | Has("UFO Throw") | (DIFF_HARD & Has("Wall Ride"))
+    ),
     "SP (-2,-3) (Main) -> SP (-2,-3) (South)": (
         HAS_SS_NORMAL | Has("Walk-the-Dog") | Has("Wall-Dash") | Has("UFO Throw") | Has("Wall Ride")
     ),
@@ -47,6 +92,46 @@ ENTRANCE_RULES: dict[str, Rule] = {
 }
 
 LOCATION_RULES: dict[str, Rule] = {
+    "FSB (+2,-2): Far Lever": (
+        (Has("Offstring Throw") & Has("FSB (+2,-2): Lever (left)") & Has("FSB (+2,-2): Lever (right)"))
+        | (Has("Wall Ride") & Has("FSB (+2,-2): Lever (left)") & Has("FSB (+2,-2): Lever (right)"))
+    ),
+    "FSB (+4,+0): Money Bag (top-right)": (Has("Wall-Dash") | Has("UFO Throw") | Has("Wall Ride")),
+    "FSB (+4,+0): Popcorn NPC": (HAS_MONEY),
+    "FSB (+4,+0): Popcorn Quest": (Has("FSB (+4,+0): Popcorn NPC")),
+    "FSB (+4,+0): Popcorn Quest - Reward 1": (Has("FSB (+4,+0): Popcorn Quest")),
+    "FSB (+4,+0): Popcorn Quest - Reward 2": (Has("FSB (+4,+0): Popcorn Quest")),
+    "FSB (+4,+0): Taxi Phone (central Faria)": (HAS_MONEY),
+    "FSB (+4,-5) (South): Taxi Phone (west Faria)": (HAS_MONEY),
+    "FSB Interiors (+2,-1): BP Shard": (True_()),
+    "FSB Interiors (+4,-5): BP Shard": (Has("FSB Interiors (+4,-5): Key")),
+    "FSB Interiors (+5,+0): Key": (Has("Offstring Throw")),
+    "FSB Interiors (+3,-3): Key": (Has("Offstring Throw")),
+    "FSB Interiors (+4,-5): Key": (Has("FSB Interiors (+4,-5): Lever")),
+    "FSB Interiors (+5,+0): Petal Container": (Has("FSB Interiors (+5,+0): Key") & CHEST),
+    "FSB Interiors (+7,-3): Petal Container": (Has("FSB Interiors (+7,-3): Key") & CHEST),
+    "FSB Interiors (+3,-3): Petal Container": (Has("FSB Interiors (+3,-3): Key") & CHEST),
+    "FSB Sewers (+2,-1): Combat": (
+        (Has("FSB Sewers (+2,-1): Lever") & Has("Petal Container", 8) & Has("Offstring Throw"))
+        | (Has("FSB Sewers (+2,-1): Lever") & Has("Petal Container", 8) & Has("Cat's Cradle"))
+        | (Has("FSB Sewers (+2,-1): Lever") & Has("Petal Container", 8) & Has("Parry"))
+    ),
+    "FSB Sewers (+2,-5): Combat (optional)": (Has("FSB Sewers (+2,-5): Lever") | DIFF_HARD),
+    "FSB Sewers (+2,-5): Combat (optional) - Reward 1": (Has("FSB Sewers (+2,-5): Combat (optional)")),
+    "FSB Sewers (+2,-5): Combat (optional) - Reward 2": (Has("FSB Sewers (+2,-5): Combat (optional)")),
+    "FSB Sewers (+2,-5): Combat (optional) - Reward 3": (Has("FSB Sewers (+2,-5): Combat (optional)")),
+    "FSB Sewers (+5,-6) (Main): Key": (HAS_SS_PLUS | Has("Offstring Throw") | Has("Walk-the-Dog") | Has("UFO Throw")),
+    "FSB Sewers (+5,-1): Lever": (
+        HAS_SS_PLUS
+        | Has("Offstring Throw")
+        | Has("Walk-the-Dog")
+        | (Has("Wall-Dash") & HAS_SS_NORMAL)
+        | Has("UFO Throw")
+        | Has("Wall Ride")
+    ),
+    "FSB Sewers (+8,-1): Money Bag (far right)": (Has("Offstring Throw") | Has("UFO Throw") | Has("Wall Ride")),
+    "FSB Sewers (+2,-1): Petal Container": (Has("FSB Sewers (+2,-1): Combat")),
+    "FSB Sewers (+8,-1): Petal Container": (Has("Offstring Throw")),
     "SP (-2,+4): Pitcher's Badge": (Has("SP (-3,+4): Key")),
     "SP (+2,+4): BP Shard": (Has("UFO Throw") | Has("Wall Ride")),
     "SP (-2,-3) (Main): Combat (top-right, optional) - Reward": (
