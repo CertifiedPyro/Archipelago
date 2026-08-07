@@ -7,15 +7,9 @@ from .data_classes import ConnectionData, RoomData
 ROOMS: list[RoomData] = [
     RoomData(room_label="Menu", room_area="Menu", region_name="Menu", global_room_id=""),
     RoomData(
-        room_label="Faria Slimer Borough (X+9, Y-7) - yug3435 (Main)",
+        room_label="Faria Slimer Borough (X+9, Y-7) - yug3435",
         room_area="Faria Slimer Borough",
-        region_name="FSB (+9,-7) (Main)",
-        global_room_id="city/yug3435",
-    ),
-    RoomData(
-        room_label="Faria Slimer Borough (X+9, Y-7) - yug3435 (East)",
-        room_area="Faria Slimer Borough",
-        region_name="FSB (+9,-7) (East)",
+        region_name="FSB (+9,-7)",
         global_room_id="city/yug3435",
     ),
     RoomData(
@@ -91,15 +85,9 @@ ROOMS: list[RoomData] = [
         global_room_id="city/yug23",
     ),
     RoomData(
-        room_label="Faria Slimer Borough (X+7, Y-5) - yug3458 (Main)",
+        room_label="Faria Slimer Borough (X+7, Y-5) - yug3458",
         room_area="Faria Slimer Borough",
-        region_name="FSB (+7,-5) (Main)",
-        global_room_id="city/yug3458",
-    ),
-    RoomData(
-        room_label="Faria Slimer Borough (X+7, Y-5) - yug3458 (West)",
-        room_area="Faria Slimer Borough",
-        region_name="FSB (+7,-5) (West)",
+        region_name="FSB (+7,-5)",
         global_room_id="city/yug3458",
     ),
     RoomData(
@@ -115,9 +103,9 @@ ROOMS: list[RoomData] = [
         global_room_id="city/yug3320",
     ),
     RoomData(
-        room_label="Faria Slimer Borough (X+9, Y-5) - yug3320 (South)",
+        room_label="Faria Slimer Borough (X+9, Y-5) - yug3320 (South Alcove)",
         room_area="Faria Slimer Borough",
-        region_name="FSB (+9,-5) (South)",
+        region_name="FSB (+9,-5) (South Alcove)",
         global_room_id="city/yug3320",
     ),
     RoomData(
@@ -157,9 +145,9 @@ ROOMS: list[RoomData] = [
         global_room_id="city/yug202",
     ),
     RoomData(
-        room_label="Faria Slimer Borough (X+7, Y-4) - yug202 (West)",
+        room_label="Faria Slimer Borough (X+7, Y-4) - yug202 (West Alcove)",
         room_area="Faria Slimer Borough",
-        region_name="FSB (+7,-4) (West)",
+        region_name="FSB (+7,-4) (West Alcove)",
         global_room_id="city/yug202",
     ),
     RoomData(
@@ -211,9 +199,15 @@ ROOMS: list[RoomData] = [
         global_room_id="city/yug108",
     ),
     RoomData(
-        room_label="Faria Slimer Borough (X+8, Y-3) - yug108 (North)",
+        room_label="Faria Slimer Borough (X+8, Y-3) - yug108 (Northwest)",
         room_area="Faria Slimer Borough",
-        region_name="FSB (+8,-3) (North)",
+        region_name="FSB (+8,-3) (Northwest)",
+        global_room_id="city/yug108",
+    ),
+    RoomData(
+        room_label="Faria Slimer Borough (X+8, Y-3) - yug108 (Northeast)",
+        room_area="Faria Slimer Borough",
+        region_name="FSB (+8,-3) (Northeast)",
         global_room_id="city/yug108",
     ),
     RoomData(
@@ -283,9 +277,9 @@ ROOMS: list[RoomData] = [
         global_room_id="city/yug61",
     ),
     RoomData(
-        room_label="Faria Slimer Borough (X+10, Y-1) - yug61 (West)",
+        room_label="Faria Slimer Borough (X+10, Y-1) - yug61 (West Alcove)",
         room_area="Faria Slimer Borough",
-        region_name="FSB (+10,-1) (West)",
+        region_name="FSB (+10,-1) (West Alcove)",
         global_room_id="city/yug61",
     ),
     RoomData(
@@ -301,9 +295,9 @@ ROOMS: list[RoomData] = [
         global_room_id="city/yug220",
     ),
     RoomData(
-        room_label="Faria Slimer Borough (X+4, Y+0) - yug27",
+        room_label="Faria Slimer Borough (X+4, Y+0) - yug27 (Main)",
         room_area="Faria Slimer Borough",
-        region_name="FSB (+4,+0)",
+        region_name="FSB (+4,+0) (Main)",
         global_room_id="city/yug27",
     ),
     RoomData(
@@ -319,9 +313,15 @@ ROOMS: list[RoomData] = [
         global_room_id="city/yug55",
     ),
     RoomData(
-        room_label="Faria Slimer Borough (X+2, Y+1) - yug219",
+        room_label="Faria Slimer Borough (X+2, Y+1) - yug219 (Main)",
         room_area="Faria Slimer Borough",
-        region_name="FSB (+2,+1)",
+        region_name="FSB (+2,+1) (Main)",
+        global_room_id="city/yug219",
+    ),
+    RoomData(
+        room_label="Faria Slimer Borough (X+2, Y+1) - yug219 (House Entrance)",
+        room_area="Faria Slimer Borough",
+        region_name="FSB (+2,+1) (House Entrance)",
         global_room_id="city/yug219",
     ),
     RoomData(
@@ -361,9 +361,9 @@ ROOMS: list[RoomData] = [
         global_room_id="city/lor2334",
     ),
     RoomData(
-        room_label="Faria Slimer Borough (X+10, Y+2) - lor2334 (North)",
+        room_label="Faria Slimer Borough (X+10, Y+2) - lor2334 (Northeast)",
         room_area="Faria Slimer Borough",
-        region_name="FSB (+10,+2) (North)",
+        region_name="FSB (+10,+2) (Northeast)",
         global_room_id="city/lor2334",
     ),
     RoomData(
@@ -445,9 +445,15 @@ ROOMS: list[RoomData] = [
         global_room_id="city/yug4185",
     ),
     RoomData(
-        room_label="Faria Slimer Borough (X+7, Y+4) - yug4153",
+        room_label="Faria Slimer Borough (X+7, Y+4) - yug4153 (North)",
         room_area="Faria Slimer Borough",
-        region_name="FSB (+7,+4)",
+        region_name="FSB (+7,+4) (North)",
+        global_room_id="city/yug4153",
+    ),
+    RoomData(
+        room_label="Faria Slimer Borough (X+7, Y+4) - yug4153 (South)",
+        room_area="Faria Slimer Borough",
+        region_name="FSB (+7,+4) (South)",
         global_room_id="city/yug4153",
     ),
     RoomData(
@@ -577,9 +583,15 @@ ROOMS: list[RoomData] = [
         global_room_id="city_underground/ren3974",
     ),
     RoomData(
-        room_label="Faria Slimer Borough (Sewers) (X+4, Y-7) - ren3993",
+        room_label="Faria Slimer Borough (Sewers) (X+4, Y-7) - ren3993 (Main)",
         room_area="Faria Slimer Borough (Sewers)",
-        region_name="FSB Sewers (+4,-7)",
+        region_name="FSB Sewers (+4,-7) (Main)",
+        global_room_id="city_underground/ren3993",
+    ),
+    RoomData(
+        room_label="Faria Slimer Borough (Sewers) (X+4, Y-7) - ren3993 (South)",
+        room_area="Faria Slimer Borough (Sewers)",
+        region_name="FSB Sewers (+4,-7) (South)",
         global_room_id="city_underground/ren3993",
     ),
     RoomData(
@@ -649,15 +661,15 @@ ROOMS: list[RoomData] = [
         global_room_id="city_underground/yug912",
     ),
     RoomData(
-        room_label="Faria Slimer Borough (Sewers) (X+8, Y-6) - yug912 (West)",
+        room_label="Faria Slimer Borough (Sewers) (X+8, Y-6) - yug912 (Northwest)",
         room_area="Faria Slimer Borough (Sewers)",
-        region_name="FSB Sewers (+8,-6) (West)",
+        region_name="FSB Sewers (+8,-6) (Northwest)",
         global_room_id="city_underground/yug912",
     ),
     RoomData(
-        room_label="Faria Slimer Borough (Sewers) (X+8, Y-6) - yug912 (East)",
+        room_label="Faria Slimer Borough (Sewers) (X+8, Y-6) - yug912 (Northeast)",
         room_area="Faria Slimer Borough (Sewers)",
-        region_name="FSB Sewers (+8,-6) (East)",
+        region_name="FSB Sewers (+8,-6) (Northeast)",
         global_room_id="city_underground/yug912",
     ),
     RoomData(
@@ -985,6 +997,12 @@ ROOMS: list[RoomData] = [
         global_room_id="city/lor2248",
     ),
     RoomData(
+        room_label="South Plaza (X-1, Y+4) - lor2248 (Southeast Entrance)",
+        room_area="South Plaza",
+        region_name="SP (-1,+4) (Southeast Entrance)",
+        global_room_id="city/lor2248",
+    ),
+    RoomData(
         room_label="South Plaza (X+1, Y+4) - yug4939 (West)",
         room_area="South Plaza",
         region_name="SP (+1,+4) (West)",
@@ -1042,13 +1060,10 @@ ROOMS: list[RoomData] = [
 
 CONNECTIONS: list[ConnectionData] = [
     ConnectionData(start_region_name="Menu", end_region_name="SP (-2,-3) (Main)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+9,-7) (Main)", end_region_name="FSB (+9,-7) (East)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+9,-7) (Main)", end_region_name="FSB (+9,-6)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+9,-7) (East)", end_region_name="FSB (+9,-7) (Main)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+9,-7) (East)", end_region_name="FSB Sewers (+9,-7)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB Sewers (+9,-7)", end_region_name="FSB (+9,-7) (East)", rule_strs=[]),
+    ConnectionData(start_region_name="FSB (+9,-7)", end_region_name="FSB Sewers (+9,-7)", rule_strs=[]),
+    ConnectionData(start_region_name="FSB Sewers (+9,-7)", end_region_name="FSB (+9,-7)", rule_strs=[]),
     ConnectionData(start_region_name="FSB (+1,-6)", end_region_name="FSB (+3,-6)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+1,-6)", end_region_name="SP (-1,-6) (East)", rule_strs=[]),
+    ConnectionData(start_region_name="FSB (+1,-6)", end_region_name="SP (-1,-6) (East)", rule_strs=["dog", "ride"]),
     ConnectionData(start_region_name="FSB (+3,-6)", end_region_name="FSB Sewers (+3,-6)", rule_strs=[]),
     ConnectionData(start_region_name="FSB Sewers (+3,-6)", end_region_name="FSB (+3,-6)", rule_strs=[]),
     ConnectionData(start_region_name="FSB (+4,-6)", end_region_name="FSB (+7,-6) (Main)", rule_strs=[]),
@@ -1056,16 +1071,20 @@ CONNECTIONS: list[ConnectionData] = [
     ConnectionData(start_region_name="FSB (+4,-6)", end_region_name="FSB (+4,-5) (North)", rule_strs=[]),
     ConnectionData(start_region_name="FSB (+4,-5) (North)", end_region_name="FSB (+4,-6)", rule_strs=[]),
     ConnectionData(start_region_name="FSB (+4,-6)", end_region_name="FSB (+6,-5)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+6,-5)", end_region_name="FSB (+4,-6)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+7,-6) (Main)", end_region_name="FSB (+7,-6) (East)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+7,-6) (Main)", end_region_name="FSB (+7,-5) (Main)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+7,-5) (Main)", end_region_name="FSB (+7,-6) (Main)", rule_strs=[]),
+    ConnectionData(
+        start_region_name="FSB (+7,-6) (Main)",
+        end_region_name="FSB (+7,-6) (East)",
+        rule_strs=["flip+", "dash, Bomb 1", "ufo, Bomb 1", "ride, Bomb 1"],
+    ),
+    ConnectionData(start_region_name="FSB (+7,-6) (Main)", end_region_name="FSB (+7,-5)", rule_strs=[]),
+    ConnectionData(start_region_name="FSB (+7,-5)", end_region_name="FSB (+7,-6) (Main)", rule_strs=[]),
     ConnectionData(start_region_name="FSB (+7,-6) (East)", end_region_name="FSB (+7,-6) (Main)", rule_strs=[]),
     ConnectionData(start_region_name="FSB (+7,-6) (East)", end_region_name="FSB Interiors (+6,-6)", rule_strs=[]),
     ConnectionData(start_region_name="FSB Interiors (+6,-6)", end_region_name="FSB (+7,-6) (East)", rule_strs=[]),
     ConnectionData(start_region_name="FSB (+8,-6)", end_region_name="FSB Interiors (+8,-6)", rule_strs=[]),
     ConnectionData(start_region_name="FSB Interiors (+8,-6)", end_region_name="FSB (+8,-6)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+9,-6)", end_region_name="FSB (+9,-7) (Main)", rule_strs=[]),
+    ConnectionData(start_region_name="FSB (+9,-6)", end_region_name="FSB (+9,-7)", rule_strs=[]),
+    ConnectionData(start_region_name="FSB (+9,-7)", end_region_name="FSB (+9,-6)", rule_strs=[]),
     ConnectionData(start_region_name="FSB (+3,-5)", end_region_name="FSB (+3,-6)", rule_strs=[]),
     ConnectionData(start_region_name="FSB (+3,-6)", end_region_name="FSB (+3,-5)", rule_strs=[]),
     ConnectionData(
@@ -1076,15 +1095,13 @@ CONNECTIONS: list[ConnectionData] = [
     ConnectionData(start_region_name="FSB (+4,-5) (South)", end_region_name="FSB (+3,-4)", rule_strs=[]),
     ConnectionData(start_region_name="FSB (+3,-4)", end_region_name="FSB (+4,-5) (South)", rule_strs=[]),
     ConnectionData(start_region_name="FSB (+5,-5)", end_region_name="FSB (+5,-4)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+5,-4)", end_region_name="FSB (+5,-5)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+6,-5)", end_region_name="FSB (+5,-5)", rule_strs=[]),
+    ConnectionData(start_region_name="FSB (+6,-5)", end_region_name="FSB (+5,-5)", rule_strs=["Key 1"]),
     ConnectionData(start_region_name="FSB (+6,-5)", end_region_name="FSB (+6,-4)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+7,-5) (Main)", end_region_name="FSB (+7,-5) (West)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+7,-5) (Main)", end_region_name="FSB (+8,-5)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+8,-5)", end_region_name="FSB (+7,-5) (Main)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+7,-5) (Main)", end_region_name="FSB (+7,-4) (Main)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+7,-4) (Main)", end_region_name="FSB (+7,-5) (Main)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+7,-5) (West)", end_region_name="FSB (+7,-4) (West)", rule_strs=[]),
+    ConnectionData(start_region_name="FSB (+7,-5)", end_region_name="FSB (+8,-5)", rule_strs=[]),
+    ConnectionData(start_region_name="FSB (+8,-5)", end_region_name="FSB (+7,-5)", rule_strs=[]),
+    ConnectionData(start_region_name="FSB (+7,-5)", end_region_name="FSB (+7,-4) (Main)", rule_strs=[]),
+    ConnectionData(start_region_name="FSB (+7,-4) (Main)", end_region_name="FSB (+7,-5)", rule_strs=[]),
+    ConnectionData(start_region_name="FSB (+7,-5)", end_region_name="FSB (+7,-4) (West Alcove)", rule_strs=[]),
     ConnectionData(start_region_name="FSB (+8,-5)", end_region_name="FSB (+8,-6)", rule_strs=[]),
     ConnectionData(start_region_name="FSB (+8,-6)", end_region_name="FSB (+8,-5)", rule_strs=[]),
     ConnectionData(start_region_name="FSB (+8,-5)", end_region_name="FSB (+9,-5) (Main)", rule_strs=[]),
@@ -1093,9 +1110,13 @@ CONNECTIONS: list[ConnectionData] = [
     ConnectionData(start_region_name="FSB Sewers (+8,-6) (Main)", end_region_name="FSB (+8,-5)", rule_strs=[]),
     ConnectionData(start_region_name="FSB (+9,-5) (Main)", end_region_name="FSB (+9,-6)", rule_strs=[]),
     ConnectionData(start_region_name="FSB (+9,-6)", end_region_name="FSB (+9,-5) (Main)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+9,-5) (South)", end_region_name="FSB (+9,-4)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+2,-4) (West)", end_region_name="FSB (+2,-4) (East)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+2,-4) (East)", end_region_name="FSB (+2,-4) (West)", rule_strs=[]),
+    ConnectionData(start_region_name="FSB (+9,-5) (South Alcove)", end_region_name="FSB (+9,-4)", rule_strs=[]),
+    ConnectionData(
+        start_region_name="FSB (+2,-4) (West)", end_region_name="FSB (+2,-4) (East)", rule_strs=["ufo", "ride"]
+    ),
+    ConnectionData(
+        start_region_name="FSB (+2,-4) (East)", end_region_name="FSB (+2,-4) (West)", rule_strs=["ufo", "ride"]
+    ),
     ConnectionData(start_region_name="FSB (+2,-4) (East)", end_region_name="FSB (+1,-6)", rule_strs=[]),
     ConnectionData(start_region_name="FSB (+1,-6)", end_region_name="FSB (+2,-4) (East)", rule_strs=[]),
     ConnectionData(start_region_name="FSB (+2,-4) (East)", end_region_name="FSB (+2,-3)", rule_strs=[]),
@@ -1104,11 +1125,13 @@ CONNECTIONS: list[ConnectionData] = [
     ConnectionData(start_region_name="FSB (+3,-5)", end_region_name="FSB (+3,-4)", rule_strs=[]),
     ConnectionData(start_region_name="FSB (+3,-4)", end_region_name="FSB (+3,-3)", rule_strs=[]),
     ConnectionData(start_region_name="FSB (+3,-3)", end_region_name="FSB (+3,-4)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+5,-4)", end_region_name="FSB (+4,-3) (North)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+4,-3) (North)", end_region_name="FSB (+5,-4)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+7,-4) (Main)", end_region_name="FSB (+8,-4)", rule_strs=[]),
+    ConnectionData(start_region_name="FSB (+5,-4)", end_region_name="FSB (+5,-5)", rule_strs=["Combat 2"]),
+    ConnectionData(start_region_name="FSB (+5,-4)", end_region_name="FSB (+4,-3) (North)", rule_strs=["Combat 2"]),
+    ConnectionData(
+        start_region_name="FSB (+7,-4) (Main)", end_region_name="FSB (+8,-4)", rule_strs=["dash", "ufo", "ride"]
+    ),
     ConnectionData(start_region_name="FSB (+7,-4) (Main)", end_region_name="FSB (+4,-3) (Main)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+8,-4)", end_region_name="FSB (+8,-3) (North)", rule_strs=[]),
+    ConnectionData(start_region_name="FSB (+8,-4)", end_region_name="FSB (+8,-3) (Northwest)", rule_strs=["Combat 4"]),
     ConnectionData(start_region_name="FSB (+9,-4)", end_region_name="FSB (+9,-5) (Main)", rule_strs=[]),
     ConnectionData(start_region_name="FSB (+3,-3)", end_region_name="FSB Interiors (+3,-3)", rule_strs=[]),
     ConnectionData(start_region_name="FSB Interiors (+3,-3)", end_region_name="FSB (+3,-3)", rule_strs=[]),
@@ -1130,24 +1153,44 @@ CONNECTIONS: list[ConnectionData] = [
     ConnectionData(start_region_name="FSB Sewers (+6,-2)", end_region_name="FSB (+4,-3) (Main)", rule_strs=[]),
     ConnectionData(start_region_name="FSB (+4,-3) (Main)", end_region_name="FSB Sewers (+7,-1)", rule_strs=[]),
     ConnectionData(start_region_name="FSB Sewers (+7,-1)", end_region_name="FSB (+4,-3) (Main)", rule_strs=[]),
+    ConnectionData(start_region_name="FSB (+4,-3) (North)", end_region_name="FSB (+5,-4)", rule_strs=[]),
     ConnectionData(start_region_name="FSB (+4,-3) (North)", end_region_name="FSB (+4,-3) (Main)", rule_strs=[]),
     ConnectionData(
         start_region_name="FSB (+8,-3) (Main)", end_region_name="FSB (+8,-3) (Dungeon Entrance)", rule_strs=[]
     ),
     ConnectionData(start_region_name="FSB (+8,-3) (Main)", end_region_name="FSB (+4,-3) (East Alcove)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+8,-3) (Main)", end_region_name="FSB (+10,-1) (West)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+8,-3) (North)", end_region_name="FSB (+8,-3) (Main)", rule_strs=[]),
+    ConnectionData(start_region_name="FSB (+8,-3) (Main)", end_region_name="FSB (+10,-1) (West Alcove)", rule_strs=[]),
+    ConnectionData(
+        start_region_name="FSB (+8,-3) (Northwest)",
+        end_region_name="FSB (+8,-3) (Northeast)",
+        rule_strs=["dash", "ufo", "ride"],
+    ),
+    ConnectionData(start_region_name="FSB (+8,-3) (Northeast)", end_region_name="FSB (+8,-3) (Main)", rule_strs=[]),
     ConnectionData(
         start_region_name="FSB (+8,-3) (Dungeon Entrance)", end_region_name="FSB (+8,-3) (Main)", rule_strs=[]
     ),
-    ConnectionData(start_region_name="FSB (+8,-3) (Southwest)", end_region_name="FSB (+8,-3) (Main)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+8,-3) (Main)", end_region_name="FSB (+8,-3) (Southwest)", rule_strs=[]),
+    ConnectionData(
+        start_region_name="FSB (+8,-3) (Southwest)",
+        end_region_name="FSB (+8,-3) (Main)",
+        rule_strs=["dash", "ufo", "ride"],
+    ),
+    ConnectionData(
+        start_region_name="FSB (+8,-3) (Main)",
+        end_region_name="FSB (+8,-3) (Southwest)",
+        rule_strs=["dash", "ufo", "ride"],
+    ),
     ConnectionData(start_region_name="FSB (+8,-3) (Southwest)", end_region_name="FSB Sewers (+8,+0)", rule_strs=[]),
     ConnectionData(start_region_name="FSB Sewers (+8,+0)", end_region_name="FSB (+8,-3) (Southwest)", rule_strs=[]),
     ConnectionData(start_region_name="FSB (+8,-3) (Southeast)", end_region_name="FSB (+8,-3) (Main)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+8,-3) (Southeast)", end_region_name="FSB (+10,+0)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+10,+0)", end_region_name="FSB (+8,-3) (Southeast)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+10,-3)", end_region_name="FSB (+8,-3) (North)", rule_strs=[]),
+    ConnectionData(
+        start_region_name="FSB (+8,-3) (Southeast)", end_region_name="FSB (+10,+0)", rule_strs=["dash", "ufo", "ride"]
+    ),
+    ConnectionData(
+        start_region_name="FSB (+10,+0)", end_region_name="FSB (+8,-3) (Southeast)", rule_strs=["dash", "ufo", "ride"]
+    ),
+    ConnectionData(
+        start_region_name="FSB (+10,-3)", end_region_name="FSB (+8,-3) (Northeast)", rule_strs=["dash", "ufo", "ride"]
+    ),
     ConnectionData(
         start_region_name="FSB (+2,-2)",
         end_region_name="FSB (+2,-1)",
@@ -1161,15 +1204,23 @@ CONNECTIONS: list[ConnectionData] = [
     ConnectionData(start_region_name="FSB (+3,-2)", end_region_name="FSB (+2,-2)", rule_strs=[]),
     ConnectionData(start_region_name="FSB (+10,-2) (Main)", end_region_name="FSB (+10,-3)", rule_strs=[]),
     ConnectionData(start_region_name="FSB (+10,-3)", end_region_name="FSB (+10,-2) (Main)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+10,-2) (Main)", end_region_name="FSB (+10,-2) (East)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+10,-2) (East)", end_region_name="FSB (+10,-2) (Main)", rule_strs=[]),
+    ConnectionData(
+        start_region_name="FSB (+10,-2) (Main)",
+        end_region_name="FSB (+10,-2) (East)",
+        rule_strs=["dash", "ufo", "ride"],
+    ),
+    ConnectionData(
+        start_region_name="FSB (+10,-2) (East)",
+        end_region_name="FSB (+10,-2) (Main)",
+        rule_strs=["dash", "ufo", "ride"],
+    ),
     ConnectionData(start_region_name="FSB (+10,-2) (East)", end_region_name="FSB Interiors (+10,-2)", rule_strs=[]),
     ConnectionData(start_region_name="FSB Interiors (+10,-2)", end_region_name="FSB (+10,-2) (East)", rule_strs=[]),
     ConnectionData(start_region_name="FSB (+2,-1)", end_region_name="FSB Interiors (+2,-1)", rule_strs=[]),
     ConnectionData(start_region_name="FSB Interiors (+2,-1)", end_region_name="FSB (+2,-1)", rule_strs=[]),
     ConnectionData(start_region_name="FSB (+3,-1)", end_region_name="FSB (+3,-2)", rule_strs=["dash", "ufo", "ride"]),
-    ConnectionData(start_region_name="FSB (+3,-1)", end_region_name="FSB (+4,+0)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+4,+0)", end_region_name="FSB (+3,-1)", rule_strs=[]),
+    ConnectionData(start_region_name="FSB (+3,-1)", end_region_name="FSB (+4,+0) (Main)", rule_strs=[]),
+    ConnectionData(start_region_name="FSB (+4,+0) (Main)", end_region_name="FSB (+3,-1)", rule_strs=[]),
     ConnectionData(start_region_name="FSB (+10,-1) (Main)", end_region_name="FSB (+10,-2) (Main)", rule_strs=[]),
     ConnectionData(start_region_name="FSB (+10,-2) (Main)", end_region_name="FSB (+10,-1) (Main)", rule_strs=[]),
     ConnectionData(start_region_name="FSB (+2,+0) (West)", end_region_name="FSB Sewers (+2,+0)", rule_strs=[]),
@@ -1179,23 +1230,35 @@ CONNECTIONS: list[ConnectionData] = [
     ConnectionData(start_region_name="FSB (+2,+0) (East)", end_region_name="FSB (+2,+0) (West)", rule_strs=[]),
     ConnectionData(start_region_name="FSB (+2,+0) (East)", end_region_name="FSB Sewers (+2,+0)", rule_strs=[]),
     ConnectionData(start_region_name="FSB Sewers (+2,+0)", end_region_name="FSB (+2,+0) (East)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+4,+0)", end_region_name="FSB (+4,-3) (Main)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+4,-3) (Main)", end_region_name="FSB (+4,+0)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+4,+0)", end_region_name="FSB (+8,-3) (Southwest)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+8,-3) (Southwest)", end_region_name="FSB (+4,+0)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+4,+0)", end_region_name="FSB (+4,+3) (East)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+4,+3) (East)", end_region_name="FSB (+4,+0)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+4,+0)", end_region_name="FSB Interiors (+5,+0)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB Interiors (+5,+0)", end_region_name="FSB (+4,+0)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+4,+0)", end_region_name="FSB Sewers (+5,+1)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB Sewers (+5,+1)", end_region_name="FSB (+4,+0)", rule_strs=[]),
+    ConnectionData(start_region_name="FSB (+4,+0) (Main)", end_region_name="FSB (+4,-3) (Main)", rule_strs=[]),
+    ConnectionData(start_region_name="FSB (+4,-3) (Main)", end_region_name="FSB (+4,+0) (Main)", rule_strs=[]),
+    ConnectionData(start_region_name="FSB (+4,+0) (Main)", end_region_name="FSB (+8,-3) (Southwest)", rule_strs=[]),
+    ConnectionData(start_region_name="FSB (+8,-3) (Southwest)", end_region_name="FSB (+4,+0) (Main)", rule_strs=[]),
+    ConnectionData(start_region_name="FSB (+4,+0) (Main)", end_region_name="FSB (+4,+3) (East)", rule_strs=[]),
+    ConnectionData(start_region_name="FSB (+4,+3) (East)", end_region_name="FSB (+4,+0) (Main)", rule_strs=[]),
+    ConnectionData(start_region_name="FSB (+4,+0) (Main)", end_region_name="FSB Interiors (+5,+0)", rule_strs=[]),
+    ConnectionData(start_region_name="FSB Interiors (+5,+0)", end_region_name="FSB (+4,+0) (Main)", rule_strs=[]),
+    ConnectionData(start_region_name="FSB (+4,+0) (Main)", end_region_name="FSB Sewers (+5,+1)", rule_strs=[]),
+    ConnectionData(start_region_name="FSB Sewers (+5,+1)", end_region_name="FSB (+4,+0) (Main)", rule_strs=[]),
     ConnectionData(start_region_name="FSB (+10,+0)", end_region_name="FSB (+10,-1) (Main)", rule_strs=[]),
     ConnectionData(start_region_name="FSB (+10,-1) (Main)", end_region_name="FSB (+10,+0)", rule_strs=[]),
     ConnectionData(start_region_name="FSB (+10,+0)", end_region_name="FSB (+10,+1)", rule_strs=[]),
     ConnectionData(start_region_name="FSB (+10,+0)", end_region_name="FSB Sewers (+10,+0)", rule_strs=[]),
     ConnectionData(start_region_name="FSB Sewers (+10,+0)", end_region_name="FSB (+10,+0)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+2,+1)", end_region_name="FSB Interiors (+3,+1)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB Interiors (+3,+1)", end_region_name="FSB (+2,+1)", rule_strs=[]),
+    ConnectionData(
+        start_region_name="FSB (+2,+1) (Main)",
+        end_region_name="FSB (+2,+1) (House Entrance)",
+        rule_strs=["Apple 1, Apple 2, Apple 3"],
+    ),
+    ConnectionData(
+        start_region_name="FSB (+2,+1) (House Entrance)", end_region_name="FSB (+2,+1) (Main)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="FSB (+2,+1) (House Entrance)", end_region_name="FSB Interiors (+3,+1)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="FSB Interiors (+3,+1)", end_region_name="FSB (+2,+1) (House Entrance)", rule_strs=[]
+    ),
     ConnectionData(start_region_name="FSB (+8,+1)", end_region_name="FSB (+8,+2)", rule_strs=[]),
     ConnectionData(start_region_name="FSB (+8,+1)", end_region_name="FSB Sewers (+8,+1)", rule_strs=[]),
     ConnectionData(start_region_name="FSB Sewers (+8,+1)", end_region_name="FSB (+8,+1)", rule_strs=[]),
@@ -1207,12 +1270,32 @@ CONNECTIONS: list[ConnectionData] = [
     ConnectionData(start_region_name="FSB (+9,+1)", end_region_name="FSB (+9,+2)", rule_strs=[]),
     ConnectionData(start_region_name="FSB (+9,+2)", end_region_name="FSB (+8,+2)", rule_strs=[]),
     ConnectionData(start_region_name="FSB (+8,+2)", end_region_name="FSB (+9,+2)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+10,+2) (Main)", end_region_name="FSB (+3,+4)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+10,+2) (Main)", end_region_name="FSB (+7,+4)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+10,+2) (Main)", end_region_name="FSB (+11,+4)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+3,+3)", end_region_name="FSB (+2,+1)", rule_strs=[]),
+    ConnectionData(
+        start_region_name="FSB (+10,+2) (Main)",
+        end_region_name="FSB (+10,+2) (Northeast)",
+        rule_strs=["dog, ss", "dash", "ufo, ss+", "ride, ss+"],
+    ),
+    ConnectionData(
+        start_region_name="FSB (+10,+2) (Main)",
+        end_region_name="FSB (+11,+2)",
+        rule_strs=["dog", "dash", "midair ufo", "ufo, ss", "ride, ss"],
+    ),
+    ConnectionData(
+        start_region_name="FSB (+10,+2) (Main)",
+        end_region_name="FSB (+10,+4)",
+        rule_strs=["dog", "hard, dash, ss+, ride", "midair ufo, ss+"],
+    ),
+    ConnectionData(
+        start_region_name="FSB (+2,+3)", end_region_name="SP (-2,-3) (Southeast)", rule_strs=["[FSB] Combat 7"]
+    ),
+    ConnectionData(start_region_name="FSB (+2,+3)", end_region_name="FSB (+3,+3)", rule_strs=["Combat 7"]),
+    ConnectionData(
+        start_region_name="FSB (+3,+3)", end_region_name="FSB (+2,+1) (Main)", rule_strs=["dash", "ufo", "ride"]
+    ),
+    ConnectionData(
+        start_region_name="FSB (+2,+1) (Main)", end_region_name="FSB (+3,+3)", rule_strs=["dash", "ufo", "ride"]
+    ),
     ConnectionData(start_region_name="FSB (+3,+3)", end_region_name="FSB (+2,+3)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+2,+3)", end_region_name="FSB (+3,+3)", rule_strs=[]),
     ConnectionData(start_region_name="FSB (+4,+3) (West)", end_region_name="FSB (+3,+3)", rule_strs=[]),
     ConnectionData(start_region_name="FSB (+3,+3)", end_region_name="FSB (+4,+3) (West)", rule_strs=[]),
     ConnectionData(start_region_name="FSB (+4,+3) (West)", end_region_name="FSB Sewers (+4,+3)", rule_strs=[]),
@@ -1221,36 +1304,89 @@ CONNECTIONS: list[ConnectionData] = [
     ConnectionData(start_region_name="FSB (+4,+3) (West)", end_region_name="FSB (+4,+3) (East)", rule_strs=[]),
     ConnectionData(start_region_name="FSB (+5,+3)", end_region_name="FSB (+6,+3) (North)", rule_strs=[]),
     ConnectionData(start_region_name="FSB (+6,+3) (South)", end_region_name="FSB (+5,+3)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+7,+3)", end_region_name="FSB (+4,+0)", rule_strs=[]),
+    ConnectionData(start_region_name="FSB (+7,+3)", end_region_name="FSB (+4,+0) (Main)", rule_strs=[]),
     ConnectionData(start_region_name="FSB (+7,+3)", end_region_name="FSB (+9,+2)", rule_strs=[]),
     ConnectionData(start_region_name="FSB (+7,+3)", end_region_name="FSB (+6,+3) (South)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+3,+4)", end_region_name="FSB (+10,+2) (Main)", rule_strs=[]),
     ConnectionData(start_region_name="FSB (+3,+4)", end_region_name="FSB (+1,+5)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+4,+4)", end_region_name="FSB (+3,+4)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+4,+4)", end_region_name="FSB (+5,+4)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+6,+4)", end_region_name="FSB (+6,+5)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+7,+4)", end_region_name="FSB (+10,+2) (Main)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+7,+4)", end_region_name="FSB (+6,+4)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+8,+4)", end_region_name="FSB (+7,+4)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+9,+4)", end_region_name="FSB (+8,+4)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+11,+4)", end_region_name="FSB (+10,+2) (North)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+11,+4)", end_region_name="FSB (+10,+4)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+11,+4)", end_region_name="FSB (+11,+5)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+1,+5)", end_region_name="SP (-1,+4) (Southeast)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+4,+5)", end_region_name="FSB (+4,+4)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+5,+5)", end_region_name="FSB (+4,+5)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+6,+5)", end_region_name="FSB (+5,+5)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+9,+5)", end_region_name="FSB (+9,+4)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+10,+5)", end_region_name="FSB (+9,+5)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+11,+5)", end_region_name="FSB (+10,+5)", rule_strs=[]),
     ConnectionData(
-        start_region_name="FSB Sewers (+3,-7)", end_region_name="FSB Sewers (+4,-7)", rule_strs=["Lever 7, Lever 8"]
+        start_region_name="FSB (+4,+4)",
+        end_region_name="FSB (+3,+4)",
+        rule_strs=["ss, buoy", "dog", "dash, ss+", "ride, ss+"],
     ),
-    ConnectionData(start_region_name="FSB Sewers (+4,-7)", end_region_name="FSB Sewers (+4,-6) (North)", rule_strs=[]),
+    ConnectionData(
+        start_region_name="FSB (+4,+4)", end_region_name="FSB (+5,+4)", rule_strs=["ss, buoy", "ss+", "dog"]
+    ),
+    ConnectionData(start_region_name="FSB (+6,+4)", end_region_name="FSB (+6,+5)", rule_strs=["ss", "buoy"]),
+    ConnectionData(
+        start_region_name="FSB (+7,+4) (North)",
+        end_region_name="FSB (+7,+4) (South)",
+        rule_strs=["ss", "dog", "dash", "ufo"],
+    ),
+    ConnectionData(start_region_name="FSB (+7,+4) (North)", end_region_name="FSB (+6,+4)", rule_strs=["Key 2"]),
+    ConnectionData(
+        start_region_name="FSB (+8,+4)",
+        end_region_name="FSB (+7,+4) (North)",
+        rule_strs=["dog", "dash, ss, ride", "ride, ss+"],
+    ),
+    ConnectionData(start_region_name="FSB (+9,+4)", end_region_name="FSB (+8,+4)", rule_strs=[]),
+    ConnectionData(start_region_name="FSB (+10,+4)", end_region_name="FSB (+11,+4)", rule_strs=["dog", "ride, ss"]),
+    ConnectionData(
+        start_region_name="FSB (+11,+4)", end_region_name="FSB (+10,+2) (Northeast)", rule_strs=["dog", "ride, ss"]
+    ),
+    ConnectionData(
+        start_region_name="FSB (+10,+2) (Northeast)", end_region_name="FSB (+11,+4)", rule_strs=["dog", "ride, ss"]
+    ),
+    ConnectionData(
+        start_region_name="FSB (+11,+4)", end_region_name="FSB (+11,+5)", rule_strs=["ss", "dog", "ufo", "ride"]
+    ),
+    ConnectionData(
+        start_region_name="FSB (+1,+5)",
+        end_region_name="SP (-1,+4) (Southeast Entrance)",
+        rule_strs=["dog, ride", "dash, ride", "ride, ss+", "buoy"],
+    ),
+    ConnectionData(
+        start_region_name="FSB (+4,+5)",
+        end_region_name="FSB (+4,+4)",
+        rule_strs=["dog, buoy", "dog, ride", "dash, ride", "ride, ss+"],
+    ),
+    ConnectionData(
+        start_region_name="FSB (+5,+5)",
+        end_region_name="FSB (+4,+5)",
+        rule_strs=["ss+, buoy", "dog, buoy", "dash, ss, buoy", "ride, buoy"],
+    ),
+    ConnectionData(
+        start_region_name="FSB (+6,+5)",
+        end_region_name="FSB (+5,+5)",
+        rule_strs=["dog, buoy", "dog, ss", "dash, buoy", "dash, ss", "ufo, ride", "ride, buoy", "ride, ss"],
+    ),
+    ConnectionData(
+        start_region_name="FSB (+9,+5)", end_region_name="FSB (+9,+4)", rule_strs=["dog", "dash, ride, ss", "ride, ss+"]
+    ),
+    ConnectionData(
+        start_region_name="FSB (+10,+5)",
+        end_region_name="FSB (+9,+5)",
+        rule_strs=["dog", "ride, ss+", "hard, ride, ss"],
+    ),
+    ConnectionData(
+        start_region_name="FSB (+11,+5)",
+        end_region_name="FSB (+10,+5)",
+        rule_strs=["dog", "hard, ride, ss+", "hard, dash, ride, ss"],
+    ),
+    ConnectionData(
+        start_region_name="FSB Sewers (+3,-7)",
+        end_region_name="FSB Sewers (+4,-7) (Main)",
+        rule_strs=["Lever 7, Lever 8"],
+    ),
+    ConnectionData(
+        start_region_name="FSB Sewers (+4,-7) (Main)", end_region_name="FSB Sewers (+4,-6) (North)", rule_strs=[]
+    ),
+    ConnectionData(start_region_name="FSB Sewers (+4,-7) (South)", end_region_name="FSB Sewers (+3,-7)", rule_strs=[]),
     ConnectionData(start_region_name="FSB Sewers (+8,-7)", end_region_name="FSB Sewers (+8,-6) (North)", rule_strs=[]),
     ConnectionData(start_region_name="FSB Sewers (+9,-7)", end_region_name="FSB Sewers (+8,-7)", rule_strs=[]),
     ConnectionData(start_region_name="FSB Sewers (+3,-6)", end_region_name="FSB Sewers (+4,-6) (Main)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB Sewers (+4,-6) (Main)", end_region_name="FSB Sewers (+3,-7)", rule_strs=[]),
+    ConnectionData(
+        start_region_name="FSB Sewers (+4,-6) (Main)", end_region_name="FSB Sewers (+4,-7) (South)", rule_strs=[]
+    ),
     ConnectionData(
         start_region_name="FSB Sewers (+4,-6) (Main)",
         end_region_name="FSB Sewers (+5,-6) (Main)",
@@ -1262,24 +1398,49 @@ CONNECTIONS: list[ConnectionData] = [
     ),
     ConnectionData(start_region_name="FSB Sewers (+5,-6) (South)", end_region_name="FSB (+4,-6)", rule_strs=[]),
     ConnectionData(start_region_name="FSB (+4,-6)", end_region_name="FSB Sewers (+5,-6) (South)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB Sewers (+7,-6)", end_region_name="FSB Sewers (+8,-6) (West)", rule_strs=[]),
+    ConnectionData(
+        start_region_name="FSB Sewers (+7,-6)", end_region_name="FSB Sewers (+8,-6) (Northwest)", rule_strs=[]
+    ),
     ConnectionData(start_region_name="FSB Sewers (+8,-6) (Main)", end_region_name="FSB Sewers (+7,-5)", rule_strs=[]),
     ConnectionData(
-        start_region_name="FSB Sewers (+8,-6) (Main)", end_region_name="FSB Sewers (+9,-5) (West)", rule_strs=[]
+        start_region_name="FSB Sewers (+8,-6) (Main)",
+        end_region_name="FSB Sewers (+9,-5) (West)",
+        rule_strs=["Button 3, Button 4, Button 5"],
     ),
     ConnectionData(start_region_name="FSB Sewers (+8,-6) (Main)", end_region_name="FSB Sewers (+8,-4)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB Sewers (+9,-6)", end_region_name="FSB Sewers (+8,-6) (East)", rule_strs=[]),
+    ConnectionData(
+        start_region_name="FSB Sewers (+9,-6)",
+        end_region_name="FSB Sewers (+8,-6) (Northeast)",
+        rule_strs=["ufo", "off, [FSB-I] Key (shop)", "off, manhole"],
+    ),
     ConnectionData(start_region_name="FSB Sewers (+2,-5)", end_region_name="FSB Sewers (+4,-5)", rule_strs=[]),
     ConnectionData(
         start_region_name="FSB Sewers (+4,-5)", end_region_name="FSB Sewers (+4,-6) (South)", rule_strs=["Combat 4"]
     ),
     ConnectionData(start_region_name="FSB Sewers (+7,-5)", end_region_name="FSB Sewers (+7,-6)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB Sewers (+9,-5) (West)", end_region_name="FSB (+9,-5) (South)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+9,-5) (South)", end_region_name="FSB Sewers (+9,-5) (West)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB Sewers (+9,-5) (East)", end_region_name="FSB Sewers (+9,-6)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB Sewers (+8,-4)", end_region_name="FSB Sewers (+9,-4)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB Sewers (+9,-4)", end_region_name="FSB Sewers (+9,-5) (East)", rule_strs=[]),
+    ConnectionData(
+        start_region_name="FSB Sewers (+9,-5) (West)", end_region_name="FSB (+9,-5) (South Alcove)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="FSB (+9,-5) (South Alcove)", end_region_name="FSB Sewers (+9,-5) (West)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="FSB Sewers (+9,-5) (East)",
+        end_region_name="FSB Sewers (+9,-6)",
+        rule_strs=["[FSB-I] Key (shop)", "manhole"],
+    ),
+    ConnectionData(
+        start_region_name="FSB Sewers (+8,-4)",
+        end_region_name="FSB Sewers (+9,-4)",
+        rule_strs=["manhole", "[FSB-I] Key (shop)"],
+    ),
+    ConnectionData(
+        start_region_name="FSB Sewers (+9,-4)",
+        end_region_name="FSB Sewers (+9,-5) (East)",
+        rule_strs=["off, [FSB-I] Key (shop)", "off, manhole"],
+    ),
     ConnectionData(start_region_name="FSB Sewers (+6,-2)", end_region_name="FSB Sewers (+6,-1)", rule_strs=[]),
+    ConnectionData(start_region_name="FSB Sewers (+5,-1)", end_region_name="FSB Sewers (+5,-2)", rule_strs=[]),
     ConnectionData(
         start_region_name="FSB Sewers (+6,-1)",
         end_region_name="FSB Sewers (+6,+0) (North)",
@@ -1305,7 +1466,11 @@ CONNECTIONS: list[ConnectionData] = [
         rule_strs=["off", "dash", "ufo", "ride", "hard"],
     ),
     ConnectionData(start_region_name="FSB Sewers (+8,+0)", end_region_name="FSB Sewers (+7,+0) (South)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB Sewers (+10,+0)", end_region_name="FSB Sewers (+9,+0)", rule_strs=[]),
+    ConnectionData(
+        start_region_name="FSB Sewers (+10,+0)",
+        end_region_name="FSB Sewers (+9,+0)",
+        rule_strs=["hard, dash", "ufo", "ride, dash"],
+    ),
     ConnectionData(start_region_name="FSB Sewers (+5,+1)", end_region_name="FSB Sewers (+6,+1)", rule_strs=[]),
     ConnectionData(
         start_region_name="FSB Sewers (+6,+1)",
@@ -1378,7 +1543,6 @@ CONNECTIONS: list[ConnectionData] = [
     ConnectionData(start_region_name="SP (-1,+4) (North)", end_region_name="SP (-2,-3) (South)", rule_strs=[]),
     ConnectionData(start_region_name="SP (-2,-3) (Southwest)", end_region_name="SP (-3,+3)", rule_strs=[]),
     ConnectionData(start_region_name="SP (-2,-3) (Southeast)", end_region_name="FSB (+2,+3)", rule_strs=[]),
-    ConnectionData(start_region_name="FSB (+2,+3)", end_region_name="SP (-2,-3) (Southeast)", rule_strs=[]),
     ConnectionData(
         start_region_name="SP (-3,+3)", end_region_name="SP (-2,-3) (Southwest)", rule_strs=["[SP] Combat 2"]
     ),
@@ -1388,7 +1552,16 @@ CONNECTIONS: list[ConnectionData] = [
     ConnectionData(start_region_name="SP (-1,+4) (South)", end_region_name="SP (-1,+4) (North)", rule_strs=[]),
     ConnectionData(start_region_name="SP (-1,+4) (South)", end_region_name="SP Sewers (-1,+4)", rule_strs=[]),
     ConnectionData(start_region_name="SP Sewers (-1,+4)", end_region_name="SP (-1,+4) (South)", rule_strs=[]),
-    ConnectionData(start_region_name="SP (-1,+4) (Southeast)", end_region_name="SP (-1,+4) (South)", rule_strs=[]),
+    ConnectionData(
+        start_region_name="SP (-1,+4) (Southeast)",
+        end_region_name="SP (-1,+4) (South)",
+        rule_strs=["ss", "dog", "dash", "ufo", "ride"],
+    ),
+    ConnectionData(
+        start_region_name="SP (-1,+4) (Southeast Entrance)",
+        end_region_name="SP (-1,+4) (Southeast)",
+        rule_strs=["ss, Lever 3", "dog, Lever 3", "ufo, Lever 3", "ride", "buoy, Lever 3"],
+    ),
     ConnectionData(
         start_region_name="SP (+1,+4) (West)", end_region_name="SP (+1,+4) (East)", rule_strs=["dash", "ufo", "ride"]
     ),

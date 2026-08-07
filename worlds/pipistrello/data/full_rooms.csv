@@ -188,8 +188,7 @@ Full Room Label,Room Label,Area,Map ID,Room ID,X,Y,W,H,Suffix
 "Fadalins Neighborhood (Sewers) (X+5, Y-8) - yug2151","Fadalins Neighborhood (Sewers) (X+5, Y-8) - yug2151",Fadalins Neighborhood (Sewers),city_underground,yug2151,5,-8,1,1,
 "Fadolio Eternatum Museum (X+1, Y-4) - yug2","Fadolio Eternatum Museum (X+1, Y-4) - yug2",Fadolio Eternatum Museum,museum,yug2,1,-4,2,3,
 "Fadolio Eternatum Museum (X-1, Y-3) - yug43","Fadolio Eternatum Museum (X-1, Y-3) - yug43",Fadolio Eternatum Museum,museum,yug43,-1,-3,2,3,
-"Faria Slimer Borough (X+9, Y-7) - yug3435 (Main)","Faria Slimer Borough (X+9, Y-7) - yug3435",Faria Slimer Borough,city,yug3435,9,-7,1,1, (Main)
-"Faria Slimer Borough (X+9, Y-7) - yug3435 (East)","Faria Slimer Borough (X+9, Y-7) - yug3435",Faria Slimer Borough,city,yug3435,9,-7,1,1, (East)
+"Faria Slimer Borough (X+9, Y-7) - yug3435","Faria Slimer Borough (X+9, Y-7) - yug3435",Faria Slimer Borough,city,yug3435,9,-7,1,1,
 "Faria Slimer Borough (X+1, Y-6) - lor1097","Faria Slimer Borough (X+1, Y-6) - lor1097",Faria Slimer Borough,city,lor1097,1,-6,2,2,
 "Faria Slimer Borough (X+3, Y-6) - yug1263","Faria Slimer Borough (X+3, Y-6) - yug1263",Faria Slimer Borough,city,yug1263,3,-6,1,1,
 "Faria Slimer Borough (X+4, Y-6) - yug173","Faria Slimer Borough (X+4, Y-6) - yug173",Faria Slimer Borough,city,yug173,4,-6,3,1,
@@ -202,18 +201,17 @@ Full Room Label,Room Label,Area,Map ID,Room ID,X,Y,W,H,Suffix
 "Faria Slimer Borough (X+4, Y-5) - yug208 (South)","Faria Slimer Borough (X+4, Y-5) - yug208",Faria Slimer Borough,city,yug208,4,-5,1,2, (South)
 "Faria Slimer Borough (X+5, Y-5) - yug183","Faria Slimer Borough (X+5, Y-5) - yug183",Faria Slimer Borough,city,yug183,5,-5,1,1,
 "Faria Slimer Borough (X+6, Y-5) - yug23","Faria Slimer Borough (X+6, Y-5) - yug23",Faria Slimer Borough,city,yug23,6,-5,1,1,
-"Faria Slimer Borough (X+7, Y-5) - yug3458 (Main)","Faria Slimer Borough (X+7, Y-5) - yug3458",Faria Slimer Borough,city,yug3458,7,-5,1,1, (Main)
-"Faria Slimer Borough (X+7, Y-5) - yug3458 (West)","Faria Slimer Borough (X+7, Y-5) - yug3458",Faria Slimer Borough,city,yug3458,7,-5,1,1, (West)
+"Faria Slimer Borough (X+7, Y-5) - yug3458","Faria Slimer Borough (X+7, Y-5) - yug3458",Faria Slimer Borough,city,yug3458,7,-5,1,1,
 "Faria Slimer Borough (X+8, Y-5) - yug3276","Faria Slimer Borough (X+8, Y-5) - yug3276",Faria Slimer Borough,city,yug3276,8,-5,1,1,
 "Faria Slimer Borough (X+9, Y-5) - yug3320 (Main)","Faria Slimer Borough (X+9, Y-5) - yug3320",Faria Slimer Borough,city,yug3320,9,-5,1,1, (Main)
-"Faria Slimer Borough (X+9, Y-5) - yug3320 (South)","Faria Slimer Borough (X+9, Y-5) - yug3320",Faria Slimer Borough,city,yug3320,9,-5,1,1, (South)
+"Faria Slimer Borough (X+9, Y-5) - yug3320 (South Alcove)","Faria Slimer Borough (X+9, Y-5) - yug3320",Faria Slimer Borough,city,yug3320,9,-5,1,1, (South Alcove)
 "Faria Slimer Borough (X+2, Y-4) - lor1128 (West)","Faria Slimer Borough (X+2, Y-4) - lor1128",Faria Slimer Borough,city,lor1128,2,-4,1,1, (West)
 "Faria Slimer Borough (X+2, Y-4) - lor1128 (East)","Faria Slimer Borough (X+2, Y-4) - lor1128",Faria Slimer Borough,city,lor1128,2,-4,1,1, (East)
 "Faria Slimer Borough (X+3, Y-4) - yug19","Faria Slimer Borough (X+3, Y-4) - yug19",Faria Slimer Borough,city,yug19,3,-4,1,1,
 "Faria Slimer Borough (X+5, Y-4) - yug190","Faria Slimer Borough (X+5, Y-4) - yug190",Faria Slimer Borough,city,yug190,5,-4,1,1,
 "Faria Slimer Borough (X+6, Y-4) - yug187","Faria Slimer Borough (X+6, Y-4) - yug187",Faria Slimer Borough,city,yug187,6,-4,1,1,
 "Faria Slimer Borough (X+7, Y-4) - yug202 (Main)","Faria Slimer Borough (X+7, Y-4) - yug202",Faria Slimer Borough,city,yug202,7,-4,1,1, (Main)
-"Faria Slimer Borough (X+7, Y-4) - yug202 (West)","Faria Slimer Borough (X+7, Y-4) - yug202",Faria Slimer Borough,city,yug202,7,-4,1,1, (West)
+"Faria Slimer Borough (X+7, Y-4) - yug202 (West Alcove)","Faria Slimer Borough (X+7, Y-4) - yug202",Faria Slimer Borough,city,yug202,7,-4,1,1, (West Alcove)
 "Faria Slimer Borough (X+8, Y-4) - yug169","Faria Slimer Borough (X+8, Y-4) - yug169",Faria Slimer Borough,city,yug169,8,-4,1,1,
 "Faria Slimer Borough (X+9, Y-4) - yug3345","Faria Slimer Borough (X+9, Y-4) - yug3345",Faria Slimer Borough,city,yug3345,9,-4,1,1,
 "Faria Slimer Borough (X+2, Y-3) - lor1129","Faria Slimer Borough (X+2, Y-3) - lor1129",Faria Slimer Borough,city,lor1129,2,-3,1,1,
@@ -222,7 +220,8 @@ Full Room Label,Room Label,Area,Map ID,Room ID,X,Y,W,H,Suffix
 "Faria Slimer Borough (X+4, Y-3) - yug2741 (North)","Faria Slimer Borough (X+4, Y-3) - yug2741",Faria Slimer Borough,city,yug2741,4,-3,4,3, (North)
 "Faria Slimer Borough (X+4, Y-3) - yug2741 (East Alcove)","Faria Slimer Borough (X+4, Y-3) - yug2741",Faria Slimer Borough,city,yug2741,4,-3,4,3, (East Alcove)
 "Faria Slimer Borough (X+8, Y-3) - yug108 (Main)","Faria Slimer Borough (X+8, Y-3) - yug108",Faria Slimer Borough,city,yug108,8,-3,2,4, (Main)
-"Faria Slimer Borough (X+8, Y-3) - yug108 (North)","Faria Slimer Borough (X+8, Y-3) - yug108",Faria Slimer Borough,city,yug108,8,-3,2,4, (North)
+"Faria Slimer Borough (X+8, Y-3) - yug108 (Northwest)","Faria Slimer Borough (X+8, Y-3) - yug108",Faria Slimer Borough,city,yug108,8,-3,2,4, (Northwest)
+"Faria Slimer Borough (X+8, Y-3) - yug108 (Northeast)","Faria Slimer Borough (X+8, Y-3) - yug108",Faria Slimer Borough,city,yug108,8,-3,2,4, (Northeast)
 "Faria Slimer Borough (X+8, Y-3) - yug108 (Southwest)","Faria Slimer Borough (X+8, Y-3) - yug108",Faria Slimer Borough,city,yug108,8,-3,2,4, (Southwest)
 "Faria Slimer Borough (X+8, Y-3) - yug108 (Southeast)","Faria Slimer Borough (X+8, Y-3) - yug108",Faria Slimer Borough,city,yug108,8,-3,2,4, (Southeast)
 "Faria Slimer Borough (X+8, Y-3) - yug108 (Dungeon Entrance)","Faria Slimer Borough (X+8, Y-3) - yug108",Faria Slimer Borough,city,yug108,8,-3,2,4, (Dungeon Entrance)
@@ -234,20 +233,21 @@ Full Room Label,Room Label,Area,Map ID,Room ID,X,Y,W,H,Suffix
 "Faria Slimer Borough (X+2, Y-1) - yug2440","Faria Slimer Borough (X+2, Y-1) - yug2440",Faria Slimer Borough,city,yug2440,2,-1,1,1,
 "Faria Slimer Borough (X+3, Y-1) - yug96","Faria Slimer Borough (X+3, Y-1) - yug96",Faria Slimer Borough,city,yug96,3,-1,1,2,
 "Faria Slimer Borough (X+10, Y-1) - yug61 (Main)","Faria Slimer Borough (X+10, Y-1) - yug61",Faria Slimer Borough,city,yug61,10,-1,1,1, (Main)
-"Faria Slimer Borough (X+10, Y-1) - yug61 (West)","Faria Slimer Borough (X+10, Y-1) - yug61",Faria Slimer Borough,city,yug61,10,-1,1,1, (West)
+"Faria Slimer Borough (X+10, Y-1) - yug61 (West Alcove)","Faria Slimer Borough (X+10, Y-1) - yug61",Faria Slimer Borough,city,yug61,10,-1,1,1, (West Alcove)
 "Faria Slimer Borough (X+2, Y+0) - yug220 (West)","Faria Slimer Borough (X+2, Y+0) - yug220",Faria Slimer Borough,city,yug220,2,0,1,1, (West)
 "Faria Slimer Borough (X+2, Y+0) - yug220 (East)","Faria Slimer Borough (X+2, Y+0) - yug220",Faria Slimer Borough,city,yug220,2,0,1,1, (East)
-"Faria Slimer Borough (X+4, Y+0) - yug27","Faria Slimer Borough (X+4, Y+0) - yug27",Faria Slimer Borough,city,yug27,4,0,4,3,
+"Faria Slimer Borough (X+4, Y+0) - yug27 (Main)","Faria Slimer Borough (X+4, Y+0) - yug27",Faria Slimer Borough,city,yug27,4,0,4,3, (Main)
 "Faria Slimer Borough (X+4, Y+0) - yug27 (North Alcove)","Faria Slimer Borough (X+4, Y+0) - yug27",Faria Slimer Borough,city,yug27,4,0,4,3, (North Alcove)
 "Faria Slimer Borough (X+10, Y+0) - yug55","Faria Slimer Borough (X+10, Y+0) - yug55",Faria Slimer Borough,city,yug55,10,0,1,1,
-"Faria Slimer Borough (X+2, Y+1) - yug219","Faria Slimer Borough (X+2, Y+1) - yug219",Faria Slimer Borough,city,yug219,2,1,2,2,
+"Faria Slimer Borough (X+2, Y+1) - yug219 (Main)","Faria Slimer Borough (X+2, Y+1) - yug219",Faria Slimer Borough,city,yug219,2,1,2,2, (Main)
+"Faria Slimer Borough (X+2, Y+1) - yug219 (House Entrance)","Faria Slimer Borough (X+2, Y+1) - yug219",Faria Slimer Borough,city,yug219,2,1,2,2, (House Entrance)
 "Faria Slimer Borough (X+8, Y+1) - yug17","Faria Slimer Borough (X+8, Y+1) - yug17",Faria Slimer Borough,city,yug17,8,1,1,1,
 "Faria Slimer Borough (X+9, Y+1) - yug18","Faria Slimer Borough (X+9, Y+1) - yug18",Faria Slimer Borough,city,yug18,9,1,1,1,
 "Faria Slimer Borough (X+10, Y+1) - lor2298","Faria Slimer Borough (X+10, Y+1) - lor2298",Faria Slimer Borough,city,lor2298,10,1,1,1,
 "Faria Slimer Borough (X+8, Y+2) - yug15","Faria Slimer Borough (X+8, Y+2) - yug15",Faria Slimer Borough,city,yug15,8,2,1,1,
 "Faria Slimer Borough (X+9, Y+2) - yug22","Faria Slimer Borough (X+9, Y+2) - yug22",Faria Slimer Borough,city,yug22,9,2,1,1,
 "Faria Slimer Borough (X+10, Y+2) - lor2334 (Main)","Faria Slimer Borough (X+10, Y+2) - lor2334",Faria Slimer Borough,city,lor2334,10,2,1,2, (Main)
-"Faria Slimer Borough (X+10, Y+2) - lor2334 (North)","Faria Slimer Borough (X+10, Y+2) - lor2334",Faria Slimer Borough,city,lor2334,10,2,1,2, (North)
+"Faria Slimer Borough (X+10, Y+2) - lor2334 (Northeast)","Faria Slimer Borough (X+10, Y+2) - lor2334",Faria Slimer Borough,city,lor2334,10,2,1,2, (Northeast)
 "Faria Slimer Borough (X+11, Y+2) - lor2872","Faria Slimer Borough (X+11, Y+2) - lor2872",Faria Slimer Borough,city,lor2872,11,2,1,2,
 "Faria Slimer Borough (X+2, Y+3) - yug1","Faria Slimer Borough (X+2, Y+3) - yug1",Faria Slimer Borough,city,yug1,2,3,1,1,
 "Faria Slimer Borough (X+3, Y+3) - yug217","Faria Slimer Borough (X+3, Y+3) - yug217",Faria Slimer Borough,city,yug217,3,3,1,1,
@@ -261,7 +261,8 @@ Full Room Label,Room Label,Area,Map ID,Room ID,X,Y,W,H,Suffix
 "Faria Slimer Borough (X+4, Y+4) - yug4303","Faria Slimer Borough (X+4, Y+4) - yug4303",Faria Slimer Borough,city,yug4303,4,4,1,1,
 "Faria Slimer Borough (X+5, Y+4) - yug4308","Faria Slimer Borough (X+5, Y+4) - yug4308",Faria Slimer Borough,city,yug4308,5,4,1,1,
 "Faria Slimer Borough (X+6, Y+4) - yug4185","Faria Slimer Borough (X+6, Y+4) - yug4185",Faria Slimer Borough,city,yug4185,6,4,1,1,
-"Faria Slimer Borough (X+7, Y+4) - yug4153","Faria Slimer Borough (X+7, Y+4) - yug4153",Faria Slimer Borough,city,yug4153,7,4,1,2,
+"Faria Slimer Borough (X+7, Y+4) - yug4153 (North)","Faria Slimer Borough (X+7, Y+4) - yug4153",Faria Slimer Borough,city,yug4153,7,4,1,2, (North)
+"Faria Slimer Borough (X+7, Y+4) - yug4153 (South)","Faria Slimer Borough (X+7, Y+4) - yug4153",Faria Slimer Borough,city,yug4153,7,4,1,2, (South)
 "Faria Slimer Borough (X+8, Y+4) - yug4144","Faria Slimer Borough (X+8, Y+4) - yug4144",Faria Slimer Borough,city,yug4144,8,4,1,2,
 "Faria Slimer Borough (X+9, Y+4) - yug4136","Faria Slimer Borough (X+9, Y+4) - yug4136",Faria Slimer Borough,city,yug4136,9,4,1,1,
 "Faria Slimer Borough (X+10, Y+4) - yug4122","Faria Slimer Borough (X+10, Y+4) - yug4122",Faria Slimer Borough,city,yug4122,10,4,1,1,
@@ -283,7 +284,8 @@ Full Room Label,Room Label,Area,Map ID,Room ID,X,Y,W,H,Suffix
 "Faria Slimer Borough (Interiors) (X+5, Y+0) - lor296","Faria Slimer Borough (Interiors) (X+5, Y+0) - lor296",Faria Slimer Borough (Interiors),city_interiors,lor296,5,0,1,1,
 "Faria Slimer Borough (Interiors) (X+3, Y+1) - yug119","Faria Slimer Borough (Interiors) (X+3, Y+1) - yug119",Faria Slimer Borough (Interiors),city_interiors,yug119,3,1,1,1,
 "Faria Slimer Borough (Sewers) (X+3, Y-7) - ren3974","Faria Slimer Borough (Sewers) (X+3, Y-7) - ren3974",Faria Slimer Borough (Sewers),city_underground,ren3974,3,-7,1,1,
-"Faria Slimer Borough (Sewers) (X+4, Y-7) - ren3993","Faria Slimer Borough (Sewers) (X+4, Y-7) - ren3993",Faria Slimer Borough (Sewers),city_underground,ren3993,4,-7,1,1,
+"Faria Slimer Borough (Sewers) (X+4, Y-7) - ren3993 (Main)","Faria Slimer Borough (Sewers) (X+4, Y-7) - ren3993",Faria Slimer Borough (Sewers),city_underground,ren3993,4,-7,1,1, (Main)
+"Faria Slimer Borough (Sewers) (X+4, Y-7) - ren3993 (South)","Faria Slimer Borough (Sewers) (X+4, Y-7) - ren3993",Faria Slimer Borough (Sewers),city_underground,ren3993,4,-7,1,1, (South)
 "Faria Slimer Borough (Sewers) (X+8, Y-7) - yug882","Faria Slimer Borough (Sewers) (X+8, Y-7) - yug882",Faria Slimer Borough (Sewers),city_underground,yug882,8,-7,1,1,
 "Faria Slimer Borough (Sewers) (X+9, Y-7) - yug873","Faria Slimer Borough (Sewers) (X+9, Y-7) - yug873",Faria Slimer Borough (Sewers),city_underground,yug873,9,-7,1,1,
 "Faria Slimer Borough (Sewers) (X+3, Y-6) - ren3946","Faria Slimer Borough (Sewers) (X+3, Y-6) - ren3946",Faria Slimer Borough (Sewers),city_underground,ren3946,3,-6,1,1,
@@ -295,8 +297,8 @@ Full Room Label,Room Label,Area,Map ID,Room ID,X,Y,W,H,Suffix
 "Faria Slimer Borough (Sewers) (X+7, Y-6) - yug817","Faria Slimer Borough (Sewers) (X+7, Y-6) - yug817",Faria Slimer Borough (Sewers),city_underground,yug817,7,-6,1,1,
 "Faria Slimer Borough (Sewers) (X+8, Y-6) - yug912 (Main)","Faria Slimer Borough (Sewers) (X+8, Y-6) - yug912",Faria Slimer Borough (Sewers),city_underground,yug912,8,-6,1,2, (Main)
 "Faria Slimer Borough (Sewers) (X+8, Y-6) - yug912 (North)","Faria Slimer Borough (Sewers) (X+8, Y-6) - yug912",Faria Slimer Borough (Sewers),city_underground,yug912,8,-6,1,2, (North)
-"Faria Slimer Borough (Sewers) (X+8, Y-6) - yug912 (West)","Faria Slimer Borough (Sewers) (X+8, Y-6) - yug912",Faria Slimer Borough (Sewers),city_underground,yug912,8,-6,1,2, (West)
-"Faria Slimer Borough (Sewers) (X+8, Y-6) - yug912 (East)","Faria Slimer Borough (Sewers) (X+8, Y-6) - yug912",Faria Slimer Borough (Sewers),city_underground,yug912,8,-6,1,2, (East)
+"Faria Slimer Borough (Sewers) (X+8, Y-6) - yug912 (Northwest)","Faria Slimer Borough (Sewers) (X+8, Y-6) - yug912",Faria Slimer Borough (Sewers),city_underground,yug912,8,-6,1,2, (Northwest)
+"Faria Slimer Borough (Sewers) (X+8, Y-6) - yug912 (Northeast)","Faria Slimer Borough (Sewers) (X+8, Y-6) - yug912",Faria Slimer Borough (Sewers),city_underground,yug912,8,-6,1,2, (Northeast)
 "Faria Slimer Borough (Sewers) (X+9, Y-6) - yug860","Faria Slimer Borough (Sewers) (X+9, Y-6) - yug860",Faria Slimer Borough (Sewers),city_underground,yug860,9,-6,1,1,
 "Faria Slimer Borough (Sewers) (X+2, Y-5) - ren3998","Faria Slimer Borough (Sewers) (X+2, Y-5) - ren3998",Faria Slimer Borough (Sewers),city_underground,ren3998,2,-5,2,1,
 "Faria Slimer Borough (Sewers) (X+4, Y-5) - ren3965","Faria Slimer Borough (Sewers) (X+4, Y-5) - ren3965",Faria Slimer Borough (Sewers),city_underground,ren3965,4,-5,1,1,
@@ -931,6 +933,7 @@ Full Room Label,Room Label,Area,Map ID,Room ID,X,Y,W,H,Suffix
 "South Plaza (X-1, Y+4) - lor2248 (North)","South Plaza (X-1, Y+4) - lor2248",South Plaza,city,lor2248,-1,4,2,2, (North)
 "South Plaza (X-1, Y+4) - lor2248 (South)","South Plaza (X-1, Y+4) - lor2248",South Plaza,city,lor2248,-1,4,2,2, (South)
 "South Plaza (X-1, Y+4) - lor2248 (Southeast)","South Plaza (X-1, Y+4) - lor2248",South Plaza,city,lor2248,-1,4,2,2, (Southeast)
+"South Plaza (X-1, Y+4) - lor2248 (Southeast Entrance)","South Plaza (X-1, Y+4) - lor2248",South Plaza,city,lor2248,-1,4,2,2, (Southeast Entrance)
 "South Plaza (X+1, Y+4) - yug4939 (West)","South Plaza (X+1, Y+4) - yug4939",South Plaza,city,yug4939,1,4,1,1, (West)
 "South Plaza (X+1, Y+4) - yug4939 (East)","South Plaza (X+1, Y+4) - yug4939",South Plaza,city,yug4939,1,4,1,1, (East)
 "South Plaza (X+2, Y+4) - yug5154","South Plaza (X+2, Y+4) - yug5154",South Plaza,city,yug5154,2,4,1,1,

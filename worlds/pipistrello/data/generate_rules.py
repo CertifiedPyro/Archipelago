@@ -64,6 +64,9 @@ RULE_DICT = {
     "cf": f"Has('{CF}')",
     "flip": f"Has('{CF}')",
     "coinflip": f"Has('{CF}')",
+    "cf+": "COIN_FLIP_PLUS",
+    "flip+": "COIN_FLIP_PLUS",
+    "coinflip+": "COIN_FLIP_PLUS",
     # Badges
     "ss": "HAS_SS_NORMAL",
     "skippingstone": "HAS_SS_NORMAL",
@@ -77,12 +80,19 @@ RULE_DICT = {
     "expert": "DIFF_EXPERT",
     # Interactables
     "bomb": "True_()",
+    "buoy": "True_()",
     "chest": "CHEST",
     "key": "True_()",
     "lever": "True_()",
+    "manhole": "True_()",
 }
 
-AREA_DICT = {"sp": "South Plaza", "sp-i": "South Plaza (Interiors)"}
+AREA_DICT = {
+    "fsb": "Faria Slimer Borough",
+    "fsb-i": "Faria Slimer Borough (Interiors)",
+    "sp": "South Plaza",
+    "sp-i": "South Plaza (Interiors)",
+}
 
 
 def process_connections() -> dict[str, str]:
@@ -157,7 +167,7 @@ def process_row(rule_strs: list[str], region_name: str, region_name2: str | None
             if event:
                 column_rule_strs.append(f"Has('{event.full_item_name}')")
             else:
-                raise Exception(f"Could not find rule value: {column_str}")
+                raise Exception(f"Could not find rule value: {room1.room_label}, {room2.room_label}, {column_str}")
 
         full_column_rule = str.join(" & ", column_rule_strs)
         if len(column_rule_strs) > 1:
@@ -180,10 +190,11 @@ def write_connection_rules(entrance_rules: dict[str, str], location_rules: dict[
 from __future__ import annotations
 
 from rule_builder.options import OptionFilter
-from rule_builder.rules import Has, Rule, True_
+from rule_builder.rules import Has, HasAll, Rule, True_
 
 from ..options import Difficulty, MoneyBags, OptionalCombats
 
+COIN_FLIP_PLUS = HasAll("Coin-Flip", "Prodigy")
 HAS_MID_AIR_UFO = Has("UFO Throw", options=[OptionFilter(Difficulty, Difficulty.option_hard)])
 HAS_SS_NORMAL = Has("Progressive Skipping Stone Badge", 1) & Has("BP Shard", 4)  # Requires 5 BP (from base 3 BP)
 HAS_SS_PLUS = Has("Progressive Skipping Stone Badge", 2) & Has("BP Shard", 2)  # Requires 4 BP (from base 3 BP)

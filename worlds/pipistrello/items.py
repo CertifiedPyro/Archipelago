@@ -82,7 +82,7 @@ class ItemTypes:
         # ItemData("Hard Rock", IC.useful),
         # # -- Tier 2 capstones --
         # ItemData("Return on Investment", IC.useful),
-        # ItemData("Prodigy", IC.progression),
+        ItemData("Prodigy", IC.progression),
     ]
     BADGES: typing.ClassVar = [
         # ItemData("Progressive Life Badge", IC.useful, num_in_pool=2),
@@ -206,8 +206,8 @@ def create_all_items(world: PipWorld) -> None:
         )
         for _ in range(data.num_in_pool)
     ]
-    itempool += 1 * [world.create_item(ItemTypes.PETAL_CONTAINER.name)]
-    itempool += 1 * [world.create_item(ItemTypes.BP_SHARD.name)]
+    itempool += [world.create_item(ItemTypes.PETAL_CONTAINER.name) for _ in range(11)]
+    itempool += [world.create_item(ItemTypes.BP_SHARD.name) for _ in range(3)]
 
     number_of_items = len(itempool)
     number_of_unfilled_locations = len(world.multiworld.get_unfilled_locations(world.player))
