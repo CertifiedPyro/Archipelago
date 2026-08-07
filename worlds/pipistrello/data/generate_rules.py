@@ -15,7 +15,7 @@ OT = "Offstring Throw"
 DOG = "Walk-the-Dog"
 DASH = "Wall-Dash"
 UFO = "UFO Throw"
-RIDE = "Wall Ride"
+RIDE = "Wall-Ride"
 
 # Charged moves
 SLEEPER = "Sleeper"
@@ -196,8 +196,8 @@ from ..options import Difficulty, MoneyBags, OptionalCombats
 
 COIN_FLIP_PLUS = HasAll("Coin-Flip", "Prodigy")
 HAS_MID_AIR_UFO = Has("UFO Throw", options=[OptionFilter(Difficulty, Difficulty.option_hard)])
-HAS_SS_NORMAL = Has("Progressive Skipping Stone Badge", 1) & Has("BP Shard", 4)  # Requires 5 BP (from base 3 BP)
 HAS_SS_PLUS = Has("Progressive Skipping Stone Badge", 2) & Has("BP Shard", 2)  # Requires 4 BP (from base 3 BP)
+HAS_SS_NORMAL = HAS_SS_PLUS | (Has("Progressive Skipping Stone Badge", 1) & Has("BP Shard", 4))  # Requires 5 BP (from base 3 BP)
 
 DIFF_HARD = True_(options=[OptionFilter(Difficulty, Difficulty.option_hard)])
 DIFF_EXPERT = True_(options=[OptionFilter(Difficulty, Difficulty.option_expert)])

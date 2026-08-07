@@ -320,8 +320,7 @@ Full Room Label,Room Label,Area,Map ID,Room ID,X,Y,W,H,Suffix
 "Faria Slimer Borough (Sewers) (X+6, Y+0) - yug26 (North)","Faria Slimer Borough (Sewers) (X+6, Y+0) - yug26",Faria Slimer Borough (Sewers),city_underground,yug26,6,0,1,1, (North)
 "Faria Slimer Borough (Sewers) (X+6, Y+0) - yug26 (South)","Faria Slimer Borough (Sewers) (X+6, Y+0) - yug26",Faria Slimer Borough (Sewers),city_underground,yug26,6,0,1,1, (South)
 "Faria Slimer Borough (Sewers) (X+6, Y+0) - yug26 (East)","Faria Slimer Borough (Sewers) (X+6, Y+0) - yug26",Faria Slimer Borough (Sewers),city_underground,yug26,6,0,1,1, (East)
-"Faria Slimer Borough (Sewers) (X+7, Y+0) - yug39 (North)","Faria Slimer Borough (Sewers) (X+7, Y+0) - yug39",Faria Slimer Borough (Sewers),city_underground,yug39,7,0,1,1, (North)
-"Faria Slimer Borough (Sewers) (X+7, Y+0) - yug39 (South)","Faria Slimer Borough (Sewers) (X+7, Y+0) - yug39",Faria Slimer Borough (Sewers),city_underground,yug39,7,0,1,1, (South)
+"Faria Slimer Borough (Sewers) (X+7, Y+0) - yug39","Faria Slimer Borough (Sewers) (X+7, Y+0) - yug39",Faria Slimer Borough (Sewers),city_underground,yug39,7,0,1,1,
 "Faria Slimer Borough (Sewers) (X+8, Y+0) - yug20","Faria Slimer Borough (Sewers) (X+8, Y+0) - yug20",Faria Slimer Borough (Sewers),city_underground,yug20,8,0,1,1,
 "Faria Slimer Borough (Sewers) (X+9, Y+0) - yug1330","Faria Slimer Borough (Sewers) (X+9, Y+0) - yug1330",Faria Slimer Borough (Sewers),city_underground,yug1330,9,0,1,2,
 "Faria Slimer Borough (Sewers) (X+10, Y+0) - yug1803","Faria Slimer Borough (Sewers) (X+10, Y+0) - yug1803",Faria Slimer Borough (Sewers),city_underground,yug1803,10,0,1,2,

@@ -799,15 +799,9 @@ ROOMS: list[RoomData] = [
         global_room_id="city_underground/yug26",
     ),
     RoomData(
-        room_label="Faria Slimer Borough (Sewers) (X+7, Y+0) - yug39 (North)",
+        room_label="Faria Slimer Borough (Sewers) (X+7, Y+0) - yug39",
         room_area="Faria Slimer Borough (Sewers)",
-        region_name="FSB Sewers (+7,+0) (North)",
-        global_room_id="city_underground/yug39",
-    ),
-    RoomData(
-        room_label="Faria Slimer Borough (Sewers) (X+7, Y+0) - yug39 (South)",
-        room_area="Faria Slimer Borough (Sewers)",
-        region_name="FSB Sewers (+7,+0) (South)",
+        region_name="FSB Sewers (+7,+0)",
         global_room_id="city_underground/yug39",
     ),
     RoomData(
@@ -1461,11 +1455,11 @@ CONNECTIONS: list[ConnectionData] = [
         rule_strs=["Lever 2, Lever 3, Lever 5"],
     ),
     ConnectionData(
-        start_region_name="FSB Sewers (+7,+0) (South)",
+        start_region_name="FSB Sewers (+7,+0)",
         end_region_name="FSB Sewers (+6,+0) (East)",
         rule_strs=["off", "dash", "ufo", "ride", "hard"],
     ),
-    ConnectionData(start_region_name="FSB Sewers (+8,+0)", end_region_name="FSB Sewers (+7,+0) (South)", rule_strs=[]),
+    ConnectionData(start_region_name="FSB Sewers (+8,+0)", end_region_name="FSB Sewers (+7,+0)", rule_strs=[]),
     ConnectionData(
         start_region_name="FSB Sewers (+10,+0)",
         end_region_name="FSB Sewers (+9,+0)",
