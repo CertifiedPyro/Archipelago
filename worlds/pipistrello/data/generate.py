@@ -42,7 +42,7 @@ def read_full_rooms_csv() -> RoomDict:
         reader = csv.DictReader(file)
         for row in reader:
             room_area = row["Area"]
-            if room_area not in AREA_NAMES:
+            if room_area not in AREA_NAMES or row["Exclude"] == "TRUE":
                 continue
 
             room_label = row["Full Room Label"]

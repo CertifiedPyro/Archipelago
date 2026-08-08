@@ -907,12 +907,6 @@ ROOMS: list[RoomData] = [
         global_room_id="city/ren355",
     ),
     RoomData(
-        room_label="South Plaza (X-1, Y-6) - ren355 (West)",
-        room_area="South Plaza",
-        region_name="SP (-1,-6) (West)",
-        global_room_id="city/ren355",
-    ),
-    RoomData(
         room_label="South Plaza (X-1, Y-6) - ren355 (East)",
         room_area="South Plaza",
         region_name="SP (-1,-6) (East)",
