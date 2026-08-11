@@ -25,6 +25,23 @@ class PipWorld(World):
     location_name_to_id = locations.LOCATION_NAME_TO_ID
     item_name_to_id = items.ItemTypes.item_name_to_id()
 
+    ut_can_gen_without_yaml = True
+
+    def generate_early(self) -> None:
+        # Handle yaml-less Universal Tracker generation.
+        re_gen_passthrough = getattr(self.multiworld, "re_gen_passthrough", {})
+        if re_gen_passthrough and self.game in re_gen_passthrough:
+            # Get the passed through slot data from the real generation.
+            slot_data: dict[str, Any] = re_gen_passthrough[self.game]
+
+            slot_options: dict[str, Any] = slot_data.get("options", {})
+            # Set all your options here instead of getting them from the yaml.
+            for key, value in slot_options.items():
+                opt = getattr(self.options, key, None)
+                if opt is not None:
+                    # You can also set .value directly but that won't work if you have OptionSets.
+                    setattr(self.options, key, opt.from_any(value))
+
     def create_regions(self) -> None:
         regions.create_and_connect_regions(self)
         locations.create_all_locations(self)
@@ -42,4 +59,12 @@ class PipWorld(World):
         return items.get_random_filler_item_name(self)
 
     def fill_slot_data(self) -> Mapping[str, Any]:
-        return self.options.as_dict("moneybags", "optional_combats")
+        return {"options": self.options.as_dict("difficulty", "moneysanity")}
+
+    @staticmethod
+    def interpret_slot_data(slot_data: dict[str, Any]) -> dict[str, Any]:
+        # Trigger a regen in UT
+        return slot_data
+
+    def custom_ut_sort(self, region_label: str, location_label: str) -> str | int:
+        return regions.REGION_NAME_TO_ROOM[region_label].sort_key

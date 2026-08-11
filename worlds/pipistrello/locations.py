@@ -29,10 +29,10 @@ def create_all_locations(world: PipWorld) -> None:
 def create_regular_locations(world: PipWorld) -> None:
     for d in LOCATIONS:
         loc_name_lower = d.location_name.lower()
-        if "money bag" in loc_name_lower and not world.options.moneybags:
+        if "money bag" in loc_name_lower and not world.options.moneysanity:
             continue
 
-        if "combat" in loc_name_lower and "optional" in loc_name_lower and not world.options.optional_combats:
+        if "combat" in loc_name_lower and "optional" in loc_name_lower and not world.options.moneysanity:
             continue
 
         r = world.get_region(d.region_name)

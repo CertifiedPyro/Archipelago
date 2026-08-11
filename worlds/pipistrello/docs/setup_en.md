@@ -25,14 +25,13 @@
 
 ### Archipelago mod
 
-1. Download `PipistrelloArchipelago.zip` from the latest release.
-2. Extract the .zip file's contents directly into the game's installation folder.
-    1. Make sure `PipistrelloArchipelago.dll` is in `Mods/` and `Archipelago.MultiClient.Net.dll` is in `UserLibs/`.
-3. Launch the game, and you should see a Connect button on the main menu.
+1. Download `PipistrelloArchipelago.dll` from the latest release.
+2. Place the dll file into the `Mods/` folder under the game's installation folder.
+3. Launch the game. The mod is installed correclty if a **Connect** button appears on the main menu.
 
 ### Archipelago tools
 
-1. Make sure Archipelago is installed.
+1. Make sure the Archipelago software is installed.
 2. Download `pipistrello.apworld` from the latest release.
 3. Double-click on `pipistrello.apworld`. Archipelago should install the apworld automatically.
 4. Open the Archipelago Launcher and run "Generate Template Options" to create the options template file.
@@ -45,12 +44,13 @@ Follow [the official instructions](https://archipelago.gg/tutorial/Archipelago/s
 ## Joining a multiworld game
 1. Start the game after installing all necessary mods.
 2. Press F5 to open MelonPreferencesManager and input your connection information.
+    1. Note: the password field is **not protected** and is fully visible.
 3. Press the **Connect** button in-game.
 4. Once connected, you can press **Load Game**.
 5. Start with a *new* save file. The game will stall for a few seconds before loading.
-6. You should now be starting in South Plaza!
+6. You should now be loaded directly into South Plaza!
 
 ## Hints and trackers
 
-If you need to interact with the server, you can use the Archipelago Text Client. There is no visual tracker yet, so
-please use Universal Tracker for now.
+There is no visual tracker yet, so please use Universal Tracker for now. In Universal Tracker. locations are sorted by
+area (in logical order).

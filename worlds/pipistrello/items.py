@@ -7,6 +7,12 @@ from typing import TYPE_CHECKING
 
 from BaseClasses import Item, ItemClassification
 
+from .constants import Badges as B
+from .constants import Moves as M
+from .constants import OtherItems as OI
+from .constants import SpecialItems as SI
+from .constants import Upgrades as U
+
 if TYPE_CHECKING:
     from .world import PipWorld
 
@@ -26,117 +32,118 @@ class ItemTypes:
     _ITEM_CLASSIFICATIONS: typing.ClassVar[dict[str, ItemData]] = {}
     _ITEM_NAME_TO_ID: typing.ClassVar[dict[str, int]] = {}
 
-    ACTIONS: typing.ClassVar = [
-        ItemData("Offstring Throw", IC.progression | IC.useful),
-        ItemData("Walk-the-Dog", IC.progression | IC.useful),
-        ItemData("Wall-Dash", IC.progression | IC.useful),
-        ItemData("UFO Throw", IC.progression | IC.useful),
-        ItemData("Wall-Ride", IC.progression | IC.useful),
+    ACTIONS: typing.ClassVar[list[ItemData]] = [
+        ItemData(M.OFF, IC.progression | IC.useful),
+        ItemData(M.DOG, IC.progression | IC.useful),
+        ItemData(M.DASH, IC.progression | IC.useful),
+        ItemData(M.UFO, IC.progression | IC.useful),
+        ItemData(M.RIDE, IC.progression | IC.useful),
     ]
-    CHARGED_MOVES: typing.ClassVar = [
-        ItemData("Sleeper", IC.progression),
-        ItemData("Flurry Attack", IC.useful),
-        ItemData("Cat's Cradle", IC.progression),
-        # ItemData("Merry-Go-Round", IC.useful),  # Unused charged move
+    CHARGED_MOVES: typing.ClassVar[list[ItemData]] = [
+        ItemData(M.SLEEPER, IC.progression),
+        ItemData(M.FLURRY, IC.useful),
+        ItemData(M.CAT, IC.progression),
+        # ItemData(M.MERRY, IC.useful),  # Unused charged move
     ]
-    SPECIAL_MOVES: typing.ClassVar = [
-        ItemData("Parry", IC.progression | IC.useful),
-        ItemData("Around-the-World", IC.progression | IC.useful),
-        ItemData("Coin-Flip", IC.progression | IC.useful),
+    SPECIAL_MOVES: typing.ClassVar[list[ItemData]] = [
+        ItemData(M.PARRY, IC.progression | IC.useful),
+        ItemData(M.ATW, IC.progression | IC.useful),
+        ItemData(M.COINFLIP, IC.progression | IC.useful),
     ]
-    UPGRADES: typing.ClassVar = [
+    UPGRADES: typing.ClassVar[list[ItemData]] = [
         # -- Tier 1 upgrades --
-        # ItemData("Bat Pouch", IC.progression),
+        ItemData(U.BAT_POUCH, IC.progression),
         # Row 1
-        # ItemData("Jumbo Breakfast", IC.progression),
-        # ItemData("Focus Ring", IC.useful),
-        # ItemData("Bat Pocket", IC.progression),
+        ItemData(U.JUMBO_BREAKFAST, IC.progression),
+        # ItemData(U.FOCUS_RING, IC.useful),
+        # ItemData(U.BAT_POCKET, IC.progression),
         # # Row 2
-        # ItemData("Retry Cookie", IC.useful),
-        # ItemData("Emergency Funds", IC.useful),
-        # ItemData("Safety Net", IC.useful),
+        ItemData(U.RETRY_COOKIE, IC.useful),
+        # ItemData(U.EMERGENCY_FUNDS IC.useful),
+        # ItemData(U.SAFETY_NET, IC.useful),
         # # Row 3
-        # ItemData("Wild Instinct", IC.useful),
-        # ItemData("Furious Blows", IC.useful),
-        # ItemData("Bold Determination", IC.useful),
+        ItemData(U.WILD_INSTINCT, IC.useful),
+        # ItemData(U.FURIOUS_BLOWS, IC.useful),
+        # ItemData(U.BOLD_DETERMINATION, IC.useful),
         # # Row 4
-        # ItemData("Bat Backpack", IC.progression),
-        # ItemData("Preventive Strike", IC.useful),
-        # ItemData("Bat Suitcase", IC.progression),
+        ItemData(U.BAT_BACKPACK, IC.progression),
+        # ItemData(U.PREVENTIVE_STRIKE, IC.useful),
+        # ItemData(U.BAT_SUITCASE, IC.progression),
         # # -- Tier 1 capstones --
-        # ItemData("Heavy Gloves", IC.useful),
-        # ItemData("Elusive Breakdancer", IC.useful),
-        # ItemData("Cutting Corners", IC.useful),
+        # ItemData(U.HEAVY_GLOVES, IC.useful),
+        # ItemData(U.ELUSIVE_BREAKDANCER, IC.useful),
+        # ItemData(U.CUTTING_CORNERS, IC.useful),
         # # -- Tier 2 upgrades --
         # # Row 1
-        # ItemData("Focus Bracelet", IC.useful),
-        # ItemData("Focus Pocket-Watch", IC.useful),
+        # ItemData(U.FOCUS_BRACELET, IC.useful),
+        # ItemData(U.FOCUS_POCKET_WATCH, IC.useful),
         # # Row 2
-        # ItemData("Retry Cake", IC.useful),
-        # ItemData("Sweet Revenge", IC.useful),
+        # ItemData(U.RETRY_CAKE, IC.useful),
+        # ItemData(U.SWEET_REVENGE, IC.useful),
         # # Row 3
-        # ItemData("Daring and Dangerous", IC.useful),
-        # ItemData("Bat Bag", IC.progression),
+        # ItemData(U.DARING_AND_DANGEROUS, IC.useful),
+        # ItemData(U.BAT_BAG, IC.progression),
         # # Row 4
-        # ItemData("Jaw Crusher", IC.useful),
-        # ItemData("Hard Rock", IC.useful),
+        # ItemData(U.JAW_CRUSHER, IC.useful),
+        # ItemData(U.HARD_ROCK, IC.useful),
         # # -- Tier 2 capstones --
-        # ItemData("Return on Investment", IC.useful),
-        # ItemData("Prodigy", IC.progression),
+        # ItemData(U.RETURN_ON_INVESTMENT, IC.useful),
+        ItemData(U.PRODIGY, IC.progression),
     ]
-    BADGES: typing.ClassVar = [
-        # ItemData("Progressive Life Badge", IC.useful, num_in_pool=2),
-        # ItemData("Progressive Candy Badge", IC.useful, num_in_pool=2),
-        # ItemData("Progressive Sprout Badge", IC.useful, num_in_pool=2),
-        # ItemData("Progressive Ghost Badge", IC.useful, num_in_pool=2),
-        # ItemData("Progressive Fist Badge", IC.useful, num_in_pool=2),
-        # ItemData("Progressive Demon Badge", IC.useful, num_in_pool=2),
-        # ItemData("Progressive Airplane Badge", IC.useful, num_in_pool=2),
-        # ItemData("Progressive Anvil Badge", IC.useful, num_in_pool=2),
-        # ItemData("Progressive Spring Badge", IC.useful, num_in_pool=2),
-        # ItemData("Progressive Rocket Badge", IC.useful, num_in_pool=2),
-        # ItemData("Progressive tarry Badge", IC.useful, num_in_pool=2),
-        # ItemData("Progressive Thorny Badge", IC.useful, num_in_pool=2),
-        # ItemData("Progressive Stun Badge", IC.useful, num_in_pool=2),
-        # ItemData("Progressive Whip Badge", IC.useful, num_in_pool=2),
-        # ItemData("Progressive Opportunist's Badge", IC.useful, num_in_pool=2),
-        # ItemData("Progressive Magnet Badge", IC.useful, num_in_pool=2),
-        # ItemData("Progressive Coin Badge", IC.useful, num_in_pool=2),
-        # ItemData("Progressive Rose Badge", IC.useful, num_in_pool=2),
-        # ItemData("Progressive Green-Thumb Badge", IC.useful, num_in_pool=2),
-        # ItemData("Progressive Focus Badge", IC.useful, num_in_pool=2),
-        # ItemData("Progressive Angled Badge", IC.useful, num_in_pool=2),
-        # ItemData("Progressive Diagonal Badge", IC.useful, num_in_pool=2),
-        # ItemData("Progressive Wing Badge", IC.useful, num_in_pool=2),
-        # ItemData("Progressive Mist Badge", IC.useful, num_in_pool=2),
-        # ItemData("Progressive Reflective Badge", IC.useful, num_in_pool=2),
-        ItemData("Progressive Moon Badge", IC.progression, num_in_pool=2),
-        # ItemData("Progressive Eye Badge", IC.useful, num_in_pool=2),
-        ItemData("Progressive Pitcher's Badge", IC.useful, area="South Plaza", num_in_pool=2),
-        # ItemData("Progressive Tight-Knot Badge", IC.useful, num_in_pool=2),
-        # ItemData("Progressive Treasure Chest Badge", IC.useful, num_in_pool=2),
-        # ItemData("Progressive Berserker Badge", IC.useful, num_in_pool=2),
-        ItemData("Progressive Skipping Stone Badge", IC.progression, num_in_pool=2),
-        # ItemData("Progressive Clone Badge", IC.useful, num_in_pool=2),
-        # ItemData("Progressive Flame Badge", IC.useful, num_in_pool=2),
-        # ItemData("Progressive Hellhound Badge", IC.useful, num_in_pool=2),
-        # ItemData("Progressive Elephant Badge", IC.useful, num_in_pool=2),
-        # ItemData("Progressive Golden Badge", IC.useful, area="South Plaza", num_in_pool=2),
-        # ItemData("Progressive Turret Badge", IC.progression, num_in_pool=2),
-        # ItemData("Progressive Cheater's Train Badge", IC.progression | IC.useful, num_in_pool=2),
-        # ItemData("Progressive Cheater's Ruler Badge", IC.progression | IC.useful, num_in_pool=2),
-        # ItemData("Progressive Cheater's Unleashed Badge", IC.progression | IC.useful, num_in_pool=2),
-        # ItemData("Progressive Cheater's Telekinesis Badge", IC.progression | IC.useful, num_in_pool=2),
-        # ItemData("Progressive Cheater's Fishing Rod Badge", IC.progression | IC.useful, num_in_pool=2),
-        # ItemData("Progressive Cheater's Teleportation Badge", IC.progression | IC.useful, num_in_pool=2),
+    BADGES: typing.ClassVar[list[ItemData]] = [
+        # ItemData(B.LIFE, IC.useful, num_in_pool=2),
+        # ItemData(B.CANDY, IC.useful, num_in_pool=2),
+        ItemData(B.SPROUT, IC.useful, num_in_pool=2),
+        # ItemData(B.GHOST, IC.useful, num_in_pool=2),
+        # ItemData(B.FIST, IC.useful, num_in_pool=2),
+        # ItemData(B.DEMON, IC.useful, num_in_pool=2),
+        # ItemData(B.AIRPLANE, IC.useful, num_in_pool=2),
+        # ItemData(B.ANVIL, IC.useful, num_in_pool=2),
+        # ItemData(B.SPRING, IC.useful, num_in_pool=2),
+        # ItemData(B.ROCKET, IC.useful, num_in_pool=2),
+        # ItemData(B.STARRY, IC.useful, num_in_pool=2),
+        # ItemData(B.THORNY, IC.useful, num_in_pool=2),
+        # ItemData(B.STUN, IC.useful, num_in_pool=2),
+        ItemData(B.WHIP, IC.useful, num_in_pool=2),
+        # ItemData(B.OPPORTUNIST, IC.useful, num_in_pool=2),
+        # ItemData(B.MAGNET, IC.useful, num_in_pool=2),
+        ItemData(B.COIN, IC.useful, num_in_pool=2),
+        # ItemData(B.ROSE, IC.useful, num_in_pool=2),
+        # ItemData(B.GREEN_THUMB, IC.useful, num_in_pool=2),
+        # ItemData(B.FOCUS, IC.useful, num_in_pool=2),
+        ItemData(B.ANGLED, IC.useful, num_in_pool=2),
+        # ItemData(B.DIAGONAL, IC.useful, num_in_pool=2),
+        # ItemData(B.WING, IC.useful, num_in_pool=2),
+        ItemData(B.MIST, IC.useful, num_in_pool=2),
+        # ItemData(B.REFLECTIVE, IC.useful, num_in_pool=2),
+        ItemData(B.MOON, IC.progression, num_in_pool=2),
+        ItemData(B.EYE, IC.useful, num_in_pool=2),
+        ItemData(B.PITCHER, IC.useful, area="South Plaza", num_in_pool=2),
+        # ItemData(B.TIGHT_KNOT, IC.useful, num_in_pool=2),
+        # ItemData(B.TREASURE, IC.useful, num_in_pool=2),
+        # ItemData(B.BERSERKER, IC.useful, num_in_pool=2),
+        ItemData(B.SS, IC.progression, num_in_pool=2),
+        # ItemData(B.CLONE, IC.useful, num_in_pool=2),
+        # ItemData(B.FLAME, IC.useful, num_in_pool=2),
+        # ItemData(B.HELLHOUND, IC.useful, num_in_pool=2),
+        # ItemData(B.ELEPHANT, IC.useful, num_in_pool=2),
+        ItemData(B.GOLDEN, IC.useful, area="South Plaza", num_in_pool=2),
+        # ItemData(B.TURRET, IC.progression, num_in_pool=2),
+        # ItemData("B.CHEATER_TRAIN", IC.progression | IC.useful, num_in_pool=2),
+        # ItemData(B.CHEATER_RULER, IC.progression | IC.useful, num_in_pool=2),
+        # ItemData(B.CHEATER_UNLEASHED, IC.progression | IC.useful, num_in_pool=2),
+        # ItemData(B.CHEATER_TELEKINESIS, IC.progression | IC.useful, num_in_pool=2),
+        # ItemData(B.CHEATER_FISH, IC.progression | IC.useful, num_in_pool=2),
+        # ItemData(B.CHEATER_TELEPORT, IC.progression | IC.useful, num_in_pool=2),
     ]
+    SPECIAL_ITEMS: typing.ClassVar[list[ItemData]] = [ItemData(SI.FARIA_STAFF_ID, IC.progression)]
     FILLER_ITEMS: typing.ClassVar[list[ItemData]] = [
         ItemData("Money Bag - $50", IC.filler),
         ItemData("Money Bag - $100", IC.filler),
         ItemData("Money Bag - $200", IC.filler),
     ]
-    PETAL_CONTAINER = ItemData("Petal Container", IC.progression)
-    BP_SHARD = ItemData("BP Shard", IC.progression)
+    PETAL_CONTAINER = ItemData(OI.PETAL, IC.progression)
+    BP_SHARD = ItemData(OI.BP, IC.progression)
     # TODO: Give taxi phones
 
     @classmethod
@@ -154,17 +161,15 @@ class ItemTypes:
     @classmethod
     def _init_cls_variables(cls):
         item_id = 1
-        for data in chain(cls.ACTIONS, cls.CHARGED_MOVES, cls.SPECIAL_MOVES, cls.UPGRADES):
+        for data in chain(
+            cls.ACTIONS, cls.CHARGED_MOVES, cls.SPECIAL_MOVES, cls.UPGRADES, cls.SPECIAL_ITEMS, cls.FILLER_ITEMS
+        ):
             data.id = item_id
             cls._ITEM_CLASSIFICATIONS[data.name] = data
             item_id += 1
         for data in cls.BADGES:
             data.id = item_id
             data.num_in_pool = 2
-            cls._ITEM_CLASSIFICATIONS[data.name] = data
-            item_id += 1
-        for data in cls.FILLER_ITEMS:
-            data.id = item_id
             cls._ITEM_CLASSIFICATIONS[data.name] = data
             item_id += 1
 
@@ -202,22 +207,23 @@ def create_all_items(world: PipWorld) -> None:
     itempool = [
         world.create_item(data.name)
         for data in chain(
-            ItemTypes.ACTIONS, ItemTypes.CHARGED_MOVES, ItemTypes.SPECIAL_MOVES, ItemTypes.UPGRADES, ItemTypes.BADGES
+            ItemTypes.ACTIONS,
+            ItemTypes.CHARGED_MOVES,
+            ItemTypes.SPECIAL_MOVES,
+            ItemTypes.UPGRADES,
+            ItemTypes.BADGES,
+            ItemTypes.SPECIAL_ITEMS,
         )
         for _ in range(data.num_in_pool)
     ]
-    itempool += 1 * [world.create_item(ItemTypes.PETAL_CONTAINER.name)]
-    itempool += 1 * [world.create_item(ItemTypes.BP_SHARD.name)]
+    itempool += [world.create_item(ItemTypes.PETAL_CONTAINER.name) for _ in range(12)]
+    itempool += [world.create_item(ItemTypes.BP_SHARD.name) for _ in range(5)]
 
     number_of_items = len(itempool)
     number_of_unfilled_locations = len(world.multiworld.get_unfilled_locations(world.player))
     needed_number_of_filler_items = number_of_unfilled_locations - number_of_items
 
-    # TODO: Remove once at least one area's locations are complete
     if needed_number_of_filler_items > 0:
         itempool += [world.create_filler() for _ in range(needed_number_of_filler_items)]
-    else:
-        charged_move_names = {x.name for x in ItemTypes.CHARGED_MOVES}
-        itempool = [x for x in itempool if x.name not in charged_move_names]
 
     world.multiworld.itempool += itempool

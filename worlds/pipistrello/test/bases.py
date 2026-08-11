@@ -1,26 +1,55 @@
+import typing
+from warnings import deprecated
+
+from BaseClasses import CollectionState, Entrance, Location, Region
 from test.bases import WorldTestBase
 
 from ..world import PipWorld
 
-# Tests are a big topic.
-# The testing API and the core code in general empower you to test all kinds of complicated custom behavior.
-# However, for APQuest, we'll stick to some of the more basic tests.
 
-
-# Most of your testing will probably be done using the generic WorldTestBase.
-# WorldTestBase is a class that performs a set of generic tests on your world using a given set of options.
-# It also enables you to write custom tests with a slew of generic helper functions.
-# The first thing you'll want to do is subclass it. You'll want to override "game" And "world" like this.
-class APQuestTestBase(WorldTestBase):
-    game = "APQuest"
+class PipTestBase(WorldTestBase):
+    game = "Pipistrello and the Cursed Yoyo"
     world: PipWorld
 
+    @typing.override
+    @deprecated("Use assert_access_dependency() instead")
+    def assertAccessDependency(
+        self,
+        locations: list[str],
+        possible_items: typing.Iterable[typing.Iterable[str]],
+        only_check_listed: bool = False,
+    ) -> None:
+        pass
 
-# The actual tests you write should be in files whose names start with "test_".
-# Ideally, you should group similar tests together in one file, where each file has some overarching significance.
+    def assert_access_dependency(
+        self,
+        checks: list[Location | Entrance | Region],
+        possible_items: typing.Iterable[typing.Iterable[str]],
+    ) -> None:
+        """Asserts that the provided locations can't be reached without the listed items but can be reached with any
+        one of the provided combinations"""
+        # Don't collect any event items either.
+        all_items = [item_name for item_names in possible_items for item_name in item_names]
+        event_items = [item.name for item in self.multiworld.get_items() if item.is_event]
 
-# The best order to read these tests in is:
-# 1. test_easy_mode.py
-# 2. test_hard_mode.py
-# 3. test_extra_starting_chest.py
-# 4. test_hammer.py
+        state = CollectionState(self.multiworld)
+        self.collect_all_but(all_items + event_items, state)
+        for check in checks:
+            self.assertFalse(
+                state.can_reach(check, player=self.player),
+                f"{check.name} is reachable without event items and {sorted(set(all_items))}",
+            )
+
+        for item_names in possible_items:
+            # Find specific item, then collect.
+            # This avoids collecting all of an item, for example.
+            for item_name in item_names:
+                item = self.get_item_by_name(item_name)
+                state.collect(item)
+            for check in checks:
+                self.assertTrue(
+                    state.can_reach(check, player=self.player), f"{check.name} not reachable with {item_names}"
+                )
+            for item_name in item_names:
+                item = self.get_item_by_name(item_name)
+                state.remove(item)

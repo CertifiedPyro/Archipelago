@@ -11,15 +11,17 @@ from .data_classes import ConnectionData, EventData, LocationData, RoomData
 # This dict maps area names to their user-facing region names.
 # This configures which areas are emitted.
 AREA_NAMES = {
-    # "Faria Slimer Borough": "FSB",
-    # "Faria Slimer Borough (Interiors)": "FSB Interiors",
-    # "Faria Slimer Borough (Sewers)": "FSB Sewers",
+    "Safe House": "Safe House",
+    "South Plaza": "S Plaza",
+    "South Plaza (Interiors)": "S Plaza Interiors",
+    "South Plaza (Sewers)": "S Plaza Sewers",
+    "Faria Slimer Borough": "Faria",
+    "Faria Slimer Borough (Interiors)": "Faria Interiors",
+    "Faria Slimer Borough (Sewers)": "Faria Sewers",
     # "SlimeCorp Excavation Site": "SES",
     # "SlimeCorp Skyscraper": "SS",
-    "South Plaza": "SP",
-    "South Plaza (Interiors)": "SP Interiors",
-    "South Plaza (Sewers)": "SP Sewers",
 }
+AREA_NAMES_KEYS = list(AREA_NAMES.keys())
 
 DATA_DIR = Path(__file__).resolve().parent
 FULL_ROOMS_CSV = DATA_DIR / "full_rooms.csv"
@@ -37,22 +39,25 @@ RoomDict = dict[str, RoomData]
 
 
 def read_full_rooms_csv() -> RoomDict:
-    room_dict: RoomDict = {"Menu": RoomData("Menu", "Menu", "Menu", "")}
+    room_dict: RoomDict = {"Menu": RoomData("Menu", "Menu", "Menu", "", "")}
     with FULL_ROOMS_CSV.open(encoding="utf-8") as file:
         reader = csv.DictReader(file)
         for row in reader:
             room_area = row["Area"]
-            if room_area not in AREA_NAMES:
+            if room_area not in AREA_NAMES or row["Exclude"] == "TRUE":
                 continue
 
             room_label = row["Full Room Label"]
             region_area = AREA_NAMES[room_area]
-            region_name = f"{region_area} ({int(row['X']):+},{int(row['Y']):+}){row['Suffix']}"
+            region_name = f"{region_area} (X{int(row['X']):+},Y{int(row['Y']):+}){row['Suffix']}"
+            sort_index = AREA_NAMES_KEYS.index(room_area) * 10000 + (abs(int(row["X"])) * 100 + int(row["Y"]))
+            sort_key = f"{sort_index:04}{row['Suffix']}"
             room_dict[room_label] = RoomData(
                 room_label=room_label,
                 room_area=room_area,
                 region_name=region_name,
                 global_room_id=f"{row['Map ID']}/{row['Room ID']}",
+                sort_key=sort_key,
             )
     return room_dict
 

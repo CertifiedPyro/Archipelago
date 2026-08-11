@@ -1,15 +1,15 @@
 from dataclasses import dataclass
 
-from Options import Choice, OptionGroup, PerGameCommonOptions, Toggle
+from Options import Choice, PerGameCommonOptions, Toggle
 
 
 class Difficulty(Choice):
     """
     Determines the logic difficulty.
 
-    - **Normal**: Vanilla difficulty logic
-    - **Hard**: May require binding solo trick buttons, mid-air UFO Throws, or somewhat tight timings.
-    - **Expert**: May require difficult yoyo tricks (e.g. Wall-Ride around corners).
+    - **Normal**: Vanilla difficulty logic.
+    - **Hard**: May require solo trick buttons, somewhat tight timings, or unusual solutions.
+    - **Expert**: May require difficult yoyo tricks (e.g. Wall-Ride around corners), or very tight timings.
     """
 
     display_name = "Difficulty"
@@ -21,45 +21,34 @@ class Difficulty(Choice):
     default = option_normal
 
 
-class MoneyBags(Toggle):
+class Moneysanity(Toggle):
     """
-    Adds money bags as location checks.
-    """
-
-    display_name = "Money Bags"
-
-
-class OptionalCombats(Toggle):
-    """
-    Adds optional combat encounters (i.e. ones that don't lock you in the room) as location checks.
+    Adds standalone money bags and money bags from optional combat encounters as location checks.
     """
 
-    display_name = "Optional Combat Encounters"
+    display_name = "Moneysanity"
 
 
 @dataclass
 class PipOptions(PerGameCommonOptions):
     difficulty: Difficulty
-    moneybags: MoneyBags
-    optional_combats: OptionalCombats
+    moneysanity: Moneysanity
 
 
-option_groups = [
-    OptionGroup(
-        "Gameplay Options",
-        [Difficulty, MoneyBags, OptionalCombats],
-    ),
-]
+# option_groups = [
+#     OptionGroup(
+#         "Gameplay Options",
+#         [Difficulty, Moneysanity],
+#     ),
+# ]
 
 option_presets = {
-    "basic": {
+    "normal": {
         "difficulty": Difficulty.option_normal,
-        "moneybags": False,
-        "optional_combats": False,
+        "moneysanity": False,
     },
-    "full": {
-        "difficulty": Difficulty.option_normal,
-        "moneybags": True,
-        "optional_combats": True,
+    "hard": {
+        "difficulty": Difficulty.option_hard,
+        "moneysanity": True,
     },
 }

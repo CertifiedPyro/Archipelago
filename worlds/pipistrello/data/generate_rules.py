@@ -4,81 +4,79 @@ from pathlib import Path
 import jinja2
 
 from .. import locations, regions
+from ..constants import Moves as M
+from ..constants import OtherItems as OI
+from ..constants import SpecialItems as SI
 from .locations_generated import EVENTS, LOCATIONS
 from .regions_generated import CONNECTIONS
 
 DATA_DIR = Path(__file__).resolve().parent
 CONNECTIONS_RULES_OUTPUT_FILE = DATA_DIR / "rules_generated.py"
 
-# Abilities
-OT = "Offstring Throw"
-DOG = "Walk-the-Dog"
-DASH = "Wall-Dash"
-UFO = "UFO Throw"
-RIDE = "Wall Ride"
-
-# Charged moves
-SLEEPER = "Sleeper"
-FA = "Flurry Attack"
-CC = "Cat's Cradle"
-MGR = "Merry-Go-Round"
-
-# Special moves
-PARRY = "Parry"
-ATW = "Around-the-World"
-CF = "Coin-Flip"
-
-# Badges
-SS = "Progressive Skipping Stone Badge"
-
 RULE_DICT = {
     # Abilities
-    "ot": f"Has('{OT}')",
-    "off": f"Has('{OT}')",
-    "offstring": f"Has('{OT}')",
-    "dog": f"Has('{DOG}')",
-    "walkthedog": f"Has('{DOG}')",
-    "dash": f"Has('{DASH}')",
-    "walldash": f"Has('{DASH}')",
-    "ufo": f"Has('{UFO}')",
-    "ufothrow": f"Has('{UFO}')",
+    "ot": f"Has('{M.OFF}')",
+    "off": f"Has('{M.OFF}')",
+    "offstring": f"Has('{M.OFF}')",
+    "dog": f"Has('{M.DOG}')",
+    "walkthedog": f"Has('{M.DOG}')",
+    "dash": f"Has('{M.DASH}')",
+    "walldash": f"Has('{M.DASH}')",
+    "ufo": f"Has('{M.UFO}')",
+    "ufothrow": f"Has('{M.UFO}')",
     "midairufo": "HAS_MID_AIR_UFO",
     "midairufothrow": "HAS_MID_AIR_UFO",
-    "ride": f"Has('{RIDE}')",
-    "wallride": f"Has('{RIDE}')",
+    "ride": f"Has('{M.RIDE}')",
+    "wallride": f"Has('{M.RIDE}')",
     # Charged moves
-    "sleeper": f"Has('{SLEEPER}')",
-    "fa": f"Has('{FA}')",
-    "flurry": f"Has('{FA}')",
-    "flurryattack": f"Has('{FA}')",
-    "cc": f"Has('{CC}')",
-    "cat": f"Has('{CC}')",
-    "catscradle": f"Has('{CC}')",
-    "mgr": f"Has('{MGR}')",
-    "merry": f"Has('{MGR}')",
-    "merrygoround": f"Has('{MGR}')",
+    "sleeper": f"Has('{M.SLEEPER}')",
+    "fa": f"Has('{M.FLURRY}')",
+    "flurry": f"Has('{M.FLURRY}')",
+    "flurryattack": f"Has('{M.FLURRY}')",
+    "cc": f'Has("{M.CAT}")',
+    "cat": f'Has("{M.CAT}")',
+    "catscradle": f'Has("{M.CAT}")',
+    "mgr": f"Has('{M.MERRY}')",
+    "merry": f"Has('{M.MERRY}')",
+    "merrygoround": f"Has('{M.MERRY}')",
     # Special moves
-    "parry": f"Has('{PARRY}')",
-    "atw": f"Has('{ATW}')",
-    "aroundtheworld": f"Has('{ATW}')",
-    "cf": f"Has('{CF}')",
-    "flip": f"Has('{CF}')",
-    "coinflip": f"Has('{CF}')",
+    "parry": f"Has('{M.PARRY}')",
+    "atw": f"Has('{M.ATW}')",
+    "aroundtheworld": f"Has('{M.ATW}')",
+    "cf": f"Has('{M.COINFLIP}')",
+    "flip": f"Has('{M.COINFLIP}')",
+    "coinflip": f"Has('{M.COINFLIP}')",
+    "cf+": "COIN_FLIP_PLUS",
+    "flip+": "COIN_FLIP_PLUS",
+    "coinflip+": "COIN_FLIP_PLUS",
     # Badges
     "ss": "HAS_SS_NORMAL",
     "skippingstone": "HAS_SS_NORMAL",
     "ss+": "HAS_SS_PLUS",
     "skippingstone+": "HAS_SS_PLUS",
+    # Special items
+    "staffid": f"Has('{SI.FARIA_STAFF_ID}')",
+    # Health
+    "+1heart": f"Has('{OI.PETAL}', 8)",
+    "heart+1": f"Has('{OI.PETAL}', 8)",
     # Difficulty
     "hard": "DIFF_HARD",
     "expert": "DIFF_EXPERT",
     # Interactables
-    "bomb": "True_()",
-    "key": "True_()",
-    "lever": "True_()",
+    "bomb": "BOMB",
+    "buoy": "BUOY",
+    "chest": "CHEST",
+    "key": "KEY",
+    "lever": "LEVER",
+    "manhole": "MANHOLE",
 }
 
-AREA_DICT = {"sp": "South Plaza", "sp-i": "South Plaza (Interiors)"}
+AREA_DICT = {
+    "fsb": "Faria Slimer Borough",
+    "fsb-i": "Faria Slimer Borough (Interiors)",
+    "sp": "South Plaza",
+    "sp-i": "South Plaza (Interiors)",
+}
 
 
 def process_connections() -> dict[str, str]:
@@ -153,7 +151,7 @@ def process_row(rule_strs: list[str], region_name: str, region_name2: str | None
             if event:
                 column_rule_strs.append(f"Has('{event.full_item_name}')")
             else:
-                raise Exception(f"Could not find rule value: {column_str}")
+                raise Exception(f"Could not find rule value: {room1.room_label}, {room2.room_label}, {column_str}")
 
         full_column_rule = str.join(" & ", column_rule_strs)
         if len(column_rule_strs) > 1:
@@ -176,18 +174,34 @@ def write_connection_rules(entrance_rules: dict[str, str], location_rules: dict[
 from __future__ import annotations
 
 from rule_builder.options import OptionFilter
-from rule_builder.rules import Has, Rule, True_
+from rule_builder.rules import Has, HasAll, HasFromList, Rule, True_
 
-from ..options import Difficulty, MoneyBags, OptionalCombats
+from ..options import Difficulty
 
+BP_PLUS1_UPGRADES = ["Bat Pouch", "Bat Backpack"]
+BP_PLUS1 = Has("BP Shard", 2) | HasFromList(*BP_PLUS1_UPGRADES, count=1)
+BP_PLUS2 = (
+    Has("BP Shard", 4)
+    | (Has("BP Shard", 2) & HasFromList(*BP_PLUS1_UPGRADES, count=1))
+    | HasFromList(*BP_PLUS1_UPGRADES, count=2)
+)
+
+COIN_FLIP_PLUS = HasAll("Coin-Flip", "Prodigy")
 HAS_MID_AIR_UFO = Has("UFO Throw", options=[OptionFilter(Difficulty, Difficulty.option_hard)])
-HAS_SS_NORMAL = Has("Progressive Skipping Stone Badge", 1) & Has("BP Shard", 4)  # Requires 5 BP (from base 3 BP)
-HAS_SS_PLUS = Has("Progressive Skipping Stone Badge", 2) & Has("BP Shard", 2)  # Requires 4 BP (from base 3 BP)
+HAS_SS_PLUS = Has("Progressive Skipping Stone Badge", 2) & BP_PLUS1  # Requires 4 BP (from base 3 BP)
+HAS_SS_NORMAL = HAS_SS_PLUS | (Has("Progressive Skipping Stone Badge", 1) & BP_PLUS2)  # Requires 5 BP (from base 3 BP)
+
+DIFF_HARD = [OptionFilter(Difficulty, Difficulty.option_hard, operator="ge")]
+DIFF_EXPERT = [OptionFilter(Difficulty, Difficulty.option_expert, operator="ge")]
+
+BOMB = True_()
+BUOY = True_()
+CHEST = True_()
+KEY = True_()
+LEVER = True_()
+MANHOLE = True_()
 
 HAS_MONEY = True_()
-
-DIFF_HARD = True_(options=[OptionFilter(Difficulty, Difficulty.option_hard)])
-DIFF_EXPERT = True_(options=[OptionFilter(Difficulty, Difficulty.option_expert)])
 
 ENTRANCE_RULES: dict[str, Rule] = {
 {% for entrance_name, rule in entrance_rules.items() %}

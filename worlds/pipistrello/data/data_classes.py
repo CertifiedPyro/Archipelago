@@ -11,6 +11,8 @@ class RoomData:
     """The Archipelago region name."""
     global_room_id: str
     """The global room ID (e.g. city/ren223 (Main))."""
+    sort_key: str
+    """The custom sort key for the room."""
 
 
 @dataclass
