@@ -46,9 +46,9 @@ class ItemTypes:
         # ItemData(M.MERRY, IC.useful),  # Unused charged move
     ]
     SPECIAL_MOVES: typing.ClassVar[list[ItemData]] = [
-        ItemData(M.PARRY, IC.progression | IC.useful),
-        ItemData(M.ATW, IC.progression | IC.useful),
-        ItemData(M.COINFLIP, IC.progression | IC.useful),
+        ItemData(M.PARRY, IC.progression),
+        ItemData(M.ATW, IC.progression),
+        ItemData(M.COINFLIP, IC.progression),
     ]
     UPGRADES: typing.ClassVar[list[ItemData]] = [
         # -- Tier 1 upgrades --
@@ -113,7 +113,7 @@ class ItemTypes:
         # ItemData(B.FOCUS, IC.useful, num_in_pool=2),
         ItemData(B.ANGLED, IC.useful, num_in_pool=2),
         # ItemData(B.DIAGONAL, IC.useful, num_in_pool=2),
-        # ItemData(B.WING, IC.useful, num_in_pool=2),
+        ItemData(B.WING, IC.progression, num_in_pool=2),
         ItemData(B.MIST, IC.useful, num_in_pool=2),
         # ItemData(B.REFLECTIVE, IC.useful, num_in_pool=2),
         ItemData(B.MOON, IC.progression, num_in_pool=2),
