@@ -4,6 +4,7 @@ from pathlib import Path
 import jinja2
 
 from .. import locations, regions
+from ..constants import Badges as B
 from ..constants import Moves as M
 from ..constants import OtherItems as OI
 from ..constants import SpecialItems as SI
@@ -54,6 +55,7 @@ RULE_DICT = {
     "skippingstone": "HAS_SS_NORMAL",
     "ss+": "HAS_SS_PLUS",
     "skippingstone+": "HAS_SS_PLUS",
+    "wing": f"Has('{B.WING}')",
     # Special items
     "staffid": f"Has('{SI.FARIA_STAFF_ID}')",
     # Health

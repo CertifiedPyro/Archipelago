@@ -44,17 +44,15 @@ ENTRANCE_RULES: dict[str, Rule] = {
     "Faria (X+6,Y-5) -> Faria (X+5,Y-5)": (Has("Faria (X+6,Y-4): Key")),
     "Faria (X+2,Y-4) (West) -> Faria (X+2,Y-4) (East)": (Has("UFO Throw") | Has("Wall-Ride")),
     "Faria (X+2,Y-4) (East) -> Faria (X+2,Y-4) (West)": (Has("UFO Throw") | Has("Wall-Ride")),
+    "Faria (X+3,Y-4) -> Faria (X+3,Y-5)": (Has("Faria (X+3,Y-4): Combat")),
+    "Faria (X+3,Y-4) -> Faria (X+4,Y-5) (South)": (Has("Faria (X+3,Y-4): Combat")),
+    "Faria (X+3,Y-4) -> Faria (X+3,Y-3)": (Has("Faria (X+3,Y-4): Combat")),
     "Faria (X+5,Y-4) -> Faria (X+5,Y-5)": (Has("Faria (X+5,Y-4): Combat")),
     "Faria (X+5,Y-4) -> Faria (X+4,Y-3) (North)": (Has("Faria (X+5,Y-4): Combat")),
     "Faria (X+7,Y-4) (Main) -> Faria (X+8,Y-4)": (Has("Wall-Dash") | Has("UFO Throw") | Has("Wall-Ride")),
     "Faria (X+8,Y-4) -> Faria (X+8,Y-3) (Northwest)": (Has("Faria (X+8,Y-4): Combat")),
     "Faria (X+4,Y-3) (Main) -> Faria (X+7,Y-4) (Main)": (
-        HAS_SS_NORMAL
-        | Has("Walk-the-Dog")
-        | Has("Wall-Dash")
-        | Has("UFO Throw")
-        | Has("Wall-Ride")
-        | (DIFF_HARD & MANHOLE)
+        HAS_SS_NORMAL | Has("Walk-the-Dog") | Has("Wall-Dash") | Has("UFO Throw") | Has("Wall-Ride") | DIFF_HARD
     ),
     "Faria (X+4,Y-3) (Main) -> Faria (X+4,Y+0) (North Alcove)": (
         Has("Wall-Dash") | Has("UFO Throw") | Has("Wall-Ride")
@@ -110,6 +108,7 @@ ENTRANCE_RULES: dict[str, Rule] = {
     "Faria (X+4,Y+3) (West) -> Faria (X+4,Y+3) (East)": (Has("Staff ID")),
     "Faria (X+5,Y+3) -> Faria (X+6,Y+3) (North)": (Has("Faria (X+5,Y+3): Combat")),
     "Faria (X+7,Y+3) -> Faria (X+9,Y+2)": (Has("Faria (X+7,Y+3): Lever")),
+    "Faria (X+3,Y+4) -> Faria (X+1,Y+5)": (Has("Faria (X+3,Y+4): Combat")),
     "Faria (X+4,Y+4) -> Faria (X+3,Y+4)": (
         (HAS_SS_NORMAL & BUOY)
         | Has("Walk-the-Dog")
@@ -127,8 +126,7 @@ ENTRANCE_RULES: dict[str, Rule] = {
         Has("Walk-the-Dog")
         | (Has("Wall-Dash") & HAS_SS_NORMAL & Has("Wall-Ride"))
         | (Has("Wall-Ride") & HAS_SS_PLUS)
-        | (DIFF_HARD & Has("Offstring Throw") & Has("Wall-Ride") & Has("Wall-Dash"))
-        | (DIFF_EXPERT & Has("Wall-Ride") & Has("Wall-Dash"))
+        | (DIFF_HARD & Has("Wall-Ride") & Has("Wall-Dash"))
     ),
     "Faria (X+10,Y+4) -> Faria (X+11,Y+4)": (Has("Walk-the-Dog") | (Has("Wall-Ride") & HAS_SS_NORMAL)),
     "Faria (X+11,Y+4) -> Faria (X+10,Y+2) (Northeast)": (Has("Walk-the-Dog") | (Has("Wall-Ride") & HAS_SS_NORMAL)),
@@ -215,9 +213,7 @@ ENTRANCE_RULES: dict[str, Rule] = {
         & Has("Faria Sewers (X+6,Y+0) (North): North Lever")
         & Has("Faria Sewers (X+6,Y+0) (East): East Lever")
     ),
-    "Faria Sewers (X+7,Y+0) -> Faria Sewers (X+6,Y+0) (East)": (
-        Has("Offstring Throw") | Has("Wall-Dash") | Has("UFO Throw") | Has("Wall-Ride") | DIFF_HARD
-    ),
+    "Faria Sewers (X+7,Y+0) -> Faria Sewers (X+6,Y+0) (East)": (Has("Faria Sewers (X+7,Y+0): Combat")),
     "Faria Sewers (X+10,Y+0) -> Faria Sewers (X+9,Y+0)": (
         (DIFF_HARD & Has("Wall-Dash")) | Has("UFO Throw") | (Has("Wall-Ride") & Has("Wall-Dash"))
     ),
@@ -281,7 +277,7 @@ LOCATION_RULES: dict[str, Rule] = {
     "Faria (X+2,Y+1) (Main): Northwest Apple": (Has("Wall-Dash") | Has("UFO Throw") | Has("Wall-Ride")),
     "Faria (X+2,Y+1) (Main): Southwest Apple": (Has("Wall-Dash") | Has("UFO Throw") | Has("Wall-Ride")),
     "Faria (X+8,Y-4): Combat - Reward": (Has("Faria (X+8,Y-4): Combat")),
-    "Faria (X+3,Y+4): Combat - Reward": (Has("Faria (X+3,Y+4): Combat ")),
+    "Faria (X+3,Y+4): Combat - Reward": (Has("Faria (X+3,Y+4): Combat")),
     "Faria (X+2,Y+3): Combat - Reward": (Has("Faria (X+2,Y+3): Combat ")),
     "Faria (X+5,Y+3): Combat - Rewards 1": (Has("Faria (X+5,Y+3): Combat")),
     "Faria (X+5,Y+3): Combat - Rewards 2": (Has("Faria (X+5,Y+3): Combat")),
@@ -351,7 +347,9 @@ LOCATION_RULES: dict[str, Rule] = {
         | (Has("Faria Sewers (X+2,Y-1): Lever") & Has("Petal Container", 8) & Has("Cat's Cradle"))
         | (Has("Faria Sewers (X+2,Y-1): Lever") & Has("Petal Container", 8) & Has("Parry"))
     ),
-    "Faria Sewers (X+2,Y-5): Combat (optional)": (Has("Faria Sewers (X+2,Y-5): Lever") | DIFF_HARD),
+    "Faria Sewers (X+2,Y-5): Combat (optional)": (
+        Has("Faria Sewers (X+2,Y-5): Lever") | (Has("Progressive Wing Badge") & DIFF_HARD) | DIFF_EXPERT
+    ),
     "Faria Sewers (X+2,Y-5): Combat (optional) - Rewards 1": (Has("Faria Sewers (X+2,Y-5): Combat (optional)")),
     "Faria Sewers (X+2,Y-5): Combat (optional) - Rewards 2": (Has("Faria Sewers (X+2,Y-5): Combat (optional)")),
     "Faria Sewers (X+2,Y-5): Combat (optional) - Rewards 3": (Has("Faria Sewers (X+2,Y-5): Combat (optional)")),
@@ -359,7 +357,21 @@ LOCATION_RULES: dict[str, Rule] = {
     "Faria Sewers (X+4,Y+4): Combat 2": (Has("Faria Sewers (X+4,Y+4): Key")),
     "Faria Sewers (X+8,Y+4) (West): Combat": (Has("Wall-Dash")),
     "Faria Sewers (X+6,Y-1): Combat": (
-        Has("Offstring Throw") | Has("Wall-Dash") | Has("UFO Throw") | Has("Wall-Ride") | MANHOLE | DIFF_HARD
+        Has("Offstring Throw")
+        | Has("Wall-Dash")
+        | Has("UFO Throw")
+        | Has("Wall-Ride")
+        | MANHOLE
+        | Has("Coin-Flip")
+        | DIFF_EXPERT
+    ),
+    "Faria Sewers (X+7,Y+0): Combat": (
+        Has("Offstring Throw")
+        | Has("Wall-Dash")
+        | Has("UFO Throw")
+        | Has("Wall-Ride")
+        | DIFF_EXPERT
+        | (DIFF_HARD & Has("Progressive Wing Badge"))
     ),
     "Faria Sewers (X+5,Y-6) (Main): Key": (
         HAS_SS_PLUS | Has("Offstring Throw") | Has("Walk-the-Dog") | Has("UFO Throw")

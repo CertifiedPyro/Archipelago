@@ -779,7 +779,7 @@ Full Room Label,Room Label,Area,Map ID,Room ID,X,Y,W,H,Suffix,Exclude
 "PoultryFC Stadium (X+6, Y+0) - lor800","PoultryFC Stadium (X+6, Y+0) - lor800",PoultryFC Stadium,dungeon4,lor800,6,0,1,1,,
 "Safe House (X-1, Y+0) - lor127","Safe House (X-1, Y+0) - lor127",Safe House,safehouse,lor127,-1,0,1,1,,
 "Safe House (X+0, Y+0) - mig38","Safe House (X+0, Y+0) - mig38",Safe House,safehouse,mig38,0,0,1,1,,
-"Safe House (X+1, Y+0) - mig32","Safe House (X+1, Y+0) - mig32",Safe House,safehouse,mig32,1,0,1,1,,
+"Safe House (X+1, Y+0) - mig32","Safe House (X+1, Y+0) - mig32",Safe House,safehouse,mig32,1,0,1,1,,TRUE
 "Secret Frying-Oil Plant (X+0, Y+2) - ren5312 (North)","Secret Frying-Oil Plant (X+0, Y+2) - ren5312",Secret Frying-Oil Plant,dungeon1,ren5312,0,2,1,4, (North),
 "Secret Frying-Oil Plant (X+0, Y+2) - ren5312 (South)","Secret Frying-Oil Plant (X+0, Y+2) - ren5312",Secret Frying-Oil Plant,dungeon1,ren5312,0,2,1,4, (South),
 "Secret Frying-Oil Plant (X-4, Y+3) - ren8164 (Main)","Secret Frying-Oil Plant (X-4, Y+3) - ren8164",Secret Frying-Oil Plant,dungeon1,ren8164,-4,3,2,1, (Main),

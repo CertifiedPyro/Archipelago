@@ -1071,13 +1071,6 @@ ROOMS: list[RoomData] = [
         sort_key="0000",
     ),
     RoomData(
-        room_label="Safe House (X+1, Y+0) - mig32",
-        room_area="Safe House",
-        region_name="Safe House (X+1,Y+0)",
-        global_room_id="safehouse/mig32",
-        sort_key="0100",
-    ),
-    RoomData(
         room_label="South Plaza (X-1, Y-6) - ren355 (North)",
         room_area="South Plaza",
         region_name="S Plaza (X-1,Y-6) (North)",
@@ -1289,6 +1282,7 @@ CONNECTIONS: list[ConnectionData] = [
     ConnectionData(start_region_name="Faria (X+9,Y-7)", end_region_name="Faria (X+9,Y-6)", rule_strs=[]),
     ConnectionData(start_region_name="Faria (X+3,Y-5)", end_region_name="Faria (X+3,Y-6)", rule_strs=[]),
     ConnectionData(start_region_name="Faria (X+3,Y-6)", end_region_name="Faria (X+3,Y-5)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria (X+3,Y-5)", end_region_name="Faria (X+3,Y-4)", rule_strs=[]),
     ConnectionData(
         start_region_name="Faria (X+4,Y-5) (North)", end_region_name="Faria (X+4,Y-5) (South)", rule_strs=["Lever 4"]
     ),
@@ -1299,7 +1293,6 @@ CONNECTIONS: list[ConnectionData] = [
         start_region_name="Faria Interiors (X+4,Y-5)", end_region_name="Faria (X+4,Y-5) (North)", rule_strs=[]
     ),
     ConnectionData(start_region_name="Faria (X+4,Y-5) (South)", end_region_name="Faria (X+3,Y-4)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+3,Y-4)", end_region_name="Faria (X+4,Y-5) (South)", rule_strs=[]),
     ConnectionData(start_region_name="Faria (X+5,Y-5)", end_region_name="Faria (X+5,Y-4)", rule_strs=[]),
     ConnectionData(start_region_name="Faria (X+6,Y-5)", end_region_name="Faria (X+5,Y-5)", rule_strs=["Key 1"]),
     ConnectionData(start_region_name="Faria (X+6,Y-5)", end_region_name="Faria (X+6,Y-4)", rule_strs=[]),
@@ -1327,10 +1320,11 @@ CONNECTIONS: list[ConnectionData] = [
     ConnectionData(start_region_name="Faria (X+1,Y-6)", end_region_name="Faria (X+2,Y-4) (East)", rule_strs=[]),
     ConnectionData(start_region_name="Faria (X+2,Y-4) (East)", end_region_name="Faria (X+2,Y-3)", rule_strs=[]),
     ConnectionData(start_region_name="Faria (X+2,Y-3)", end_region_name="Faria (X+2,Y-4) (East)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+3,Y-4)", end_region_name="Faria (X+3,Y-5)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+3,Y-5)", end_region_name="Faria (X+3,Y-4)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+3,Y-4)", end_region_name="Faria (X+3,Y-3)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+3,Y-3)", end_region_name="Faria (X+3,Y-4)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria (X+3,Y-4)", end_region_name="Faria (X+3,Y-5)", rule_strs=["Combat 1"]),
+    ConnectionData(
+        start_region_name="Faria (X+3,Y-4)", end_region_name="Faria (X+4,Y-5) (South)", rule_strs=["Combat 1"]
+    ),
+    ConnectionData(start_region_name="Faria (X+3,Y-4)", end_region_name="Faria (X+3,Y-3)", rule_strs=["Combat 1"]),
     ConnectionData(start_region_name="Faria (X+5,Y-4)", end_region_name="Faria (X+5,Y-5)", rule_strs=["Combat 2"]),
     ConnectionData(
         start_region_name="Faria (X+5,Y-4)", end_region_name="Faria (X+4,Y-3) (North)", rule_strs=["Combat 2"]
@@ -1343,6 +1337,7 @@ CONNECTIONS: list[ConnectionData] = [
         start_region_name="Faria (X+8,Y-4)", end_region_name="Faria (X+8,Y-3) (Northwest)", rule_strs=["Combat 4"]
     ),
     ConnectionData(start_region_name="Faria (X+9,Y-4)", end_region_name="Faria (X+9,Y-5) (Main)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria (X+3,Y-3)", end_region_name="Faria (X+3,Y-4)", rule_strs=[]),
     ConnectionData(start_region_name="Faria (X+3,Y-3)", end_region_name="Faria Interiors (X+3,Y-3)", rule_strs=[]),
     ConnectionData(start_region_name="Faria Interiors (X+3,Y-3)", end_region_name="Faria (X+3,Y-3)", rule_strs=[]),
     ConnectionData(start_region_name="Faria (X+4,Y-3) (Main)", end_region_name="Faria (X+4,Y-5) (South)", rule_strs=[]),
@@ -1350,7 +1345,7 @@ CONNECTIONS: list[ConnectionData] = [
     ConnectionData(
         start_region_name="Faria (X+4,Y-3) (Main)",
         end_region_name="Faria (X+7,Y-4) (Main)",
-        rule_strs=["ss", "dog", "dash", "ufo", "ride", "hard, manhole"],
+        rule_strs=["ss", "dog", "dash", "ufo", "ride", "hard"],
     ),
     ConnectionData(
         start_region_name="Faria (X+4,Y-3) (Main)",
@@ -1569,7 +1564,7 @@ CONNECTIONS: list[ConnectionData] = [
     ConnectionData(start_region_name="Faria (X+7,Y+3)", end_region_name="Faria (X+4,Y+0) (Main)", rule_strs=[]),
     ConnectionData(start_region_name="Faria (X+7,Y+3)", end_region_name="Faria (X+9,Y+2)", rule_strs=["Lever 5"]),
     ConnectionData(start_region_name="Faria (X+7,Y+3)", end_region_name="Faria (X+6,Y+3) (South)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+3,Y+4)", end_region_name="Faria (X+1,Y+5)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria (X+3,Y+4)", end_region_name="Faria (X+1,Y+5)", rule_strs=["Combat 6"]),
     ConnectionData(
         start_region_name="Faria (X+4,Y+4)",
         end_region_name="Faria (X+3,Y+4)",
@@ -1588,7 +1583,7 @@ CONNECTIONS: list[ConnectionData] = [
     ConnectionData(
         start_region_name="Faria (X+8,Y+4)",
         end_region_name="Faria (X+7,Y+4) (North)",
-        rule_strs=["dog", "dash, ss, ride", "ride, ss+", "hard, off, ride, dash", "expert, ride, dash"],
+        rule_strs=["dog", "dash, ss, ride", "ride, ss+", "hard, ride, dash"],
     ),
     ConnectionData(start_region_name="Faria (X+9,Y+4)", end_region_name="Faria (X+8,Y+4)", rule_strs=[]),
     ConnectionData(
@@ -1763,7 +1758,7 @@ CONNECTIONS: list[ConnectionData] = [
     ConnectionData(
         start_region_name="Faria Sewers (X+7,Y+0)",
         end_region_name="Faria Sewers (X+6,Y+0) (East)",
-        rule_strs=["off", "dash", "ufo", "ride", "hard"],
+        rule_strs=["Combat 9"],
     ),
     ConnectionData(start_region_name="Faria Sewers (X+8,Y+0)", end_region_name="Faria Sewers (X+7,Y+0)", rule_strs=[]),
     ConnectionData(
@@ -1818,6 +1813,7 @@ CONNECTIONS: list[ConnectionData] = [
         end_region_name="Faria Sewers (X+8,Y+4) (West)",
         rule_strs=["dash", "ride"],
     ),
+    ConnectionData(start_region_name="Safe House (X+0,Y+0)", end_region_name="Safe House (X-1,Y+0)", rule_strs=[]),
     ConnectionData(start_region_name="Safe House (X+0,Y+0)", end_region_name="S Plaza (X-2,Y-3) (Main)", rule_strs=[]),
     ConnectionData(
         start_region_name="S Plaza (X-1,Y-6) (North)", end_region_name="S Plaza (X-1,Y-6) (South)", rule_strs=[]
