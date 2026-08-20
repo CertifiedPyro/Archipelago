@@ -39,8 +39,6 @@ class LocationData:
     """The map area in-game (e.g. South Plaza)."""
     rule_strs: list[str]
     """The list of rule strings."""
-    id: int
-    """The Archipelago location ID (e.g. 1)."""
     full_location_name: str = field(init=False, repr=False)
     """The full Archipelago location name (including region name)."""
 

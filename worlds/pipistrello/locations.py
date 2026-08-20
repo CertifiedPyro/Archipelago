@@ -15,7 +15,7 @@ class PipLocation(Location):
     game = "Pipistrello and the Cursed Yoyo"
 
 
-LOCATION_NAME_TO_ID = {d.full_location_name: d.id for d in LOCATIONS}
+LOCATION_NAME_TO_ID = {d.full_location_name: idx for idx, d in enumerate(LOCATIONS)}
 """Map of location name to numerical id. This is required for the Archipelago world."""
 
 __EVENT_LOCATION_NAME_TO_ITEM_NAME = {d.full_location_name: d.full_item_name for d in EVENTS}
@@ -27,7 +27,7 @@ def create_all_locations(world: PipWorld) -> None:
 
 
 def create_regular_locations(world: PipWorld) -> None:
-    for d in LOCATIONS:
+    for idx, d in enumerate(LOCATIONS):
         loc_name_lower = d.location_name.lower()
         if "money bag" in loc_name_lower and not world.options.moneysanity:
             continue
@@ -36,7 +36,7 @@ def create_regular_locations(world: PipWorld) -> None:
             continue
 
         r = world.get_region(d.region_name)
-        r.add_locations({d.full_location_name: d.id}, PipLocation)
+        r.add_locations({d.full_location_name: idx}, PipLocation)
 
 
 def create_events(world: PipWorld) -> None:

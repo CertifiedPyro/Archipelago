@@ -19,7 +19,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Badge (Eye)",
         room_area="Safe House",
         rule_strs=[],
-        id=121,
     ),
     LocationData(
         region_name="S Plaza (X-1,Y+4) (Southeast)",
@@ -28,7 +27,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Badge (Golden)",
         room_area="South Plaza",
         rule_strs=[],
-        id=131,
     ),
     LocationData(
         region_name="S Plaza (X-2,Y+4)",
@@ -37,7 +35,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Badge (Pitcher's)",
         room_area="South Plaza",
         rule_strs=["Key 1"],
-        id=151,
     ),
     LocationData(
         region_name="S Plaza (X+2,Y+4)",
@@ -46,7 +43,6 @@ LOCATIONS: list[LocationData] = [
         map_name="BP Shard 1",
         room_area="South Plaza",
         rule_strs=["ufo", "ride"],
-        id=161,
     ),
     LocationData(
         region_name="S Plaza (X-2,Y-3) (Main)",
@@ -55,7 +51,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Combat 1 (optional)",
         room_area="South Plaza",
         rule_strs=["Combat 1 (optional)"],
-        id=181,
     ),
     LocationData(
         region_name="S Plaza (X-3,Y+3)",
@@ -64,7 +59,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Combat 2",
         room_area="South Plaza",
         rule_strs=["Combat 2"],
-        id=201,
     ),
     LocationData(
         region_name="S Plaza (X-1,Y+4) (South)",
@@ -73,7 +67,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Diamond 1",
         room_area="South Plaza",
         rule_strs=[],
-        id=221,
     ),
     LocationData(
         region_name="S Plaza (X-2,Y-3) (Main)",
@@ -82,7 +75,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 1",
         room_area="South Plaza",
         rule_strs=[],
-        id=281,
     ),
     LocationData(
         region_name="S Plaza (X-2,Y-3) (Southwest)",
@@ -91,7 +83,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 2",
         room_area="South Plaza",
         rule_strs=[],
-        id=291,
     ),
     LocationData(
         region_name="S Plaza (X-2,Y-3) (Main)",
@@ -100,7 +91,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 3",
         room_area="South Plaza",
         rule_strs=[],
-        id=301,
     ),
     LocationData(
         region_name="S Plaza (X-2,Y-3) (Main)",
@@ -109,7 +99,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 4",
         room_area="South Plaza",
         rule_strs=[],
-        id=311,
     ),
     LocationData(
         region_name="S Plaza (X-2,Y-3) (Main)",
@@ -118,7 +107,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 5",
         room_area="South Plaza",
         rule_strs=[],
-        id=321,
     ),
     LocationData(
         region_name="S Plaza (X-2,Y-3) (Southeast)",
@@ -127,7 +115,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 6",
         room_area="South Plaza",
         rule_strs=[],
-        id=331,
     ),
     LocationData(
         region_name="S Plaza (X-1,Y-6) (East)",
@@ -136,7 +123,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 7",
         room_area="South Plaza",
         rule_strs=[],
-        id=341,
     ),
     LocationData(
         region_name="S Plaza (X-1,Y-6) (South)",
@@ -145,7 +131,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 8",
         room_area="South Plaza",
         rule_strs=[],
-        id=351,
     ),
     LocationData(
         region_name="S Plaza (X-1,Y+4) (North)",
@@ -154,7 +139,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 9",
         room_area="South Plaza",
         rule_strs=[],
-        id=361,
     ),
     LocationData(
         region_name="S Plaza (X+1,Y+4) (West)",
@@ -163,7 +147,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 10",
         room_area="South Plaza",
         rule_strs=[],
-        id=371,
     ),
     LocationData(
         region_name="S Plaza (X+1,Y+4) (West)",
@@ -172,7 +155,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 10",
         room_area="South Plaza",
         rule_strs=[],
-        id=372,
     ),
     LocationData(
         region_name="S Plaza (X+1,Y+4) (West)",
@@ -181,7 +163,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 11",
         room_area="South Plaza",
         rule_strs=[],
-        id=381,
     ),
     LocationData(
         region_name="S Plaza (X+1,Y+4) (East)",
@@ -190,7 +171,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 12",
         room_area="South Plaza",
         rule_strs=[],
-        id=391,
     ),
     LocationData(
         region_name="S Plaza (X-2,Y-3) (South)",
@@ -199,7 +179,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Musical Notes 1",
         room_area="South Plaza",
         rule_strs=["Musical Notes 1"],
-        id=411,
     ),
     LocationData(
         region_name="S Plaza (X-2,Y-3) (South)",
@@ -208,7 +187,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Musical Notes 1",
         room_area="South Plaza",
         rule_strs=["Musical Notes 1"],
-        id=412,
     ),
     LocationData(
         region_name="S Plaza (X-2,Y-3) (South)",
@@ -217,7 +195,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Musical Notes 1",
         room_area="South Plaza",
         rule_strs=["Musical Notes 1"],
-        id=413,
     ),
     LocationData(
         region_name="S Plaza (X-2,Y-3) (South)",
@@ -226,7 +203,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Musical Notes 1",
         room_area="South Plaza",
         rule_strs=["Musical Notes 1"],
-        id=414,
     ),
     LocationData(
         region_name="S Plaza (X-2,Y-3) (South)",
@@ -235,7 +211,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Musical Notes 2",
         room_area="South Plaza",
         rule_strs=["Musical Notes 2"],
-        id=431,
     ),
     LocationData(
         region_name="S Plaza (X-2,Y-3) (South)",
@@ -244,7 +219,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Musical Notes 2",
         room_area="South Plaza",
         rule_strs=["Musical Notes 2"],
-        id=432,
     ),
     LocationData(
         region_name="S Plaza (X-2,Y-3) (South)",
@@ -253,7 +227,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Musical Notes 2",
         room_area="South Plaza",
         rule_strs=["Musical Notes 2"],
-        id=433,
     ),
     LocationData(
         region_name="S Plaza (X-2,Y-3) (Main)",
@@ -262,7 +235,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Petal Container 1",
         room_area="South Plaza",
         rule_strs=["Lever 1, Lever 2"],
-        id=441,
     ),
     LocationData(
         region_name="S Plaza (X-2,Y-3) (Main)",
@@ -271,7 +243,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Quest (Burger 1)",
         room_area="South Plaza",
         rule_strs=["Quest (Burger 1)"],
-        id=461,
     ),
     LocationData(
         region_name="S Plaza (X-2,Y-3) (Main)",
@@ -280,7 +251,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Quest (Burger 1)",
         room_area="South Plaza",
         rule_strs=["Quest (Burger 1)"],
-        id=462,
     ),
     LocationData(
         region_name="S Plaza (X-2,Y-3) (Main)",
@@ -289,7 +259,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Quest (Burger 1)",
         room_area="South Plaza",
         rule_strs=["Quest (Burger 1)"],
-        id=463,
     ),
     LocationData(
         region_name="S Plaza (X-2,Y-3) (Main)",
@@ -298,7 +267,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Quest (Burger 1)",
         room_area="South Plaza",
         rule_strs=["Quest (Burger 1)"],
-        id=464,
     ),
     LocationData(
         region_name="S Plaza (X-2,Y-3) (Main)",
@@ -307,7 +275,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Taxi Phone 1",
         room_area="South Plaza",
         rule_strs=["$100"],
-        id=471,
     ),
     LocationData(
         region_name="S Plaza Sewers (X-1,Y+5) (East)",
@@ -316,7 +283,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 1",
         room_area="South Plaza (Sewers)",
         rule_strs=[],
-        id=511,
     ),
     LocationData(
         region_name="S Plaza Sewers (X-1,Y+5) (East)",
@@ -325,7 +291,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 1",
         room_area="South Plaza (Sewers)",
         rule_strs=[],
-        id=512,
     ),
     LocationData(
         region_name="S Plaza Sewers (X-1,Y+5) (East)",
@@ -334,7 +299,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 1",
         room_area="South Plaza (Sewers)",
         rule_strs=[],
-        id=513,
     ),
     LocationData(
         region_name="S Plaza Sewers (X-1,Y+5) (East)",
@@ -343,7 +307,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Petal Container 1",
         room_area="South Plaza (Sewers)",
         rule_strs=["off,dog", "off,ride"],
-        id=521,
     ),
     LocationData(
         region_name="Faria (X+9,Y-4)",
@@ -352,7 +315,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Badge (Mist)",
         room_area="Faria Slimer Borough",
         rule_strs=[],
-        id=571,
     ),
     LocationData(
         region_name="Faria (X+6,Y+3) (North)",
@@ -361,7 +323,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Badge (Whip)",
         room_area="Faria Slimer Borough",
         rule_strs=[],
-        id=581,
     ),
     LocationData(
         region_name="Faria (X+3,Y-4)",
@@ -370,7 +331,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Combat 1",
         room_area="Faria Slimer Borough",
         rule_strs=[],
-        id=611,
     ),
     LocationData(
         region_name="Faria (X+8,Y-4)",
@@ -379,7 +339,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Combat 4",
         room_area="Faria Slimer Borough",
         rule_strs=["Combat 4"],
-        id=651,
     ),
     LocationData(
         region_name="Faria (X+3,Y+4)",
@@ -388,7 +347,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Combat 6",
         room_area="Faria Slimer Borough",
         rule_strs=["Combat 6"],
-        id=681,
     ),
     LocationData(
         region_name="Faria (X+2,Y+3)",
@@ -397,7 +355,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Combat 7",
         room_area="Faria Slimer Borough",
         rule_strs=["Combat 7"],
-        id=701,
     ),
     LocationData(
         region_name="Faria (X+5,Y+3)",
@@ -406,7 +363,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Combat 8",
         room_area="Faria Slimer Borough",
         rule_strs=["Combat 8"],
-        id=721,
     ),
     LocationData(
         region_name="Faria (X+5,Y+3)",
@@ -415,7 +371,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Combat 8",
         room_area="Faria Slimer Borough",
         rule_strs=["Combat 8"],
-        id=722,
     ),
     LocationData(
         region_name="Faria (X+3,Y-2)",
@@ -424,7 +379,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 1",
         room_area="Faria Slimer Borough",
         rule_strs=[],
-        id=811,
     ),
     LocationData(
         region_name="Faria (X+4,Y+0) (Main)",
@@ -433,7 +387,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 2",
         room_area="Faria Slimer Borough",
         rule_strs=[],
-        id=821,
     ),
     LocationData(
         region_name="Faria (X+4,Y+0) (Main)",
@@ -442,7 +395,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 3",
         room_area="Faria Slimer Borough",
         rule_strs=[],
-        id=831,
     ),
     LocationData(
         region_name="Faria (X+4,Y+0) (Main)",
@@ -451,7 +403,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 4",
         room_area="Faria Slimer Borough",
         rule_strs=["dash", "ufo", "ride"],
-        id=841,
     ),
     LocationData(
         region_name="Faria (X+4,Y-3) (Main)",
@@ -460,7 +411,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 5",
         room_area="Faria Slimer Borough",
         rule_strs=[],
-        id=851,
     ),
     LocationData(
         region_name="Faria (X+4,Y-3) (East Alcove)",
@@ -469,7 +419,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 6",
         room_area="Faria Slimer Borough",
         rule_strs=[],
-        id=861,
     ),
     LocationData(
         region_name="Faria (X+3,Y-5)",
@@ -478,7 +427,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 7",
         room_area="Faria Slimer Borough",
         rule_strs=[],
-        id=871,
     ),
     LocationData(
         region_name="Faria (X+4,Y-6)",
@@ -487,7 +435,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 8",
         room_area="Faria Slimer Borough",
         rule_strs=[],
-        id=881,
     ),
     LocationData(
         region_name="Faria (X+8,Y-6)",
@@ -496,7 +443,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 9",
         room_area="Faria Slimer Borough",
         rule_strs=[],
-        id=891,
     ),
     LocationData(
         region_name="Faria (X+8,Y-3) (Northwest)",
@@ -505,7 +451,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 10",
         room_area="Faria Slimer Borough",
         rule_strs=["dash", "ufo", "ride"],
-        id=901,
     ),
     LocationData(
         region_name="Faria (X+10,Y-1) (West Alcove)",
@@ -514,7 +459,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 11",
         room_area="Faria Slimer Borough",
         rule_strs=[],
-        id=911,
     ),
     LocationData(
         region_name="Faria (X+10,Y+0)",
@@ -523,7 +467,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 12",
         room_area="Faria Slimer Borough",
         rule_strs=[],
-        id=921,
     ),
     LocationData(
         region_name="Faria (X+10,Y-1) (Main)",
@@ -532,7 +475,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 13",
         room_area="Faria Slimer Borough",
         rule_strs=[],
-        id=931,
     ),
     LocationData(
         region_name="Faria (X+10,Y+2) (Northeast)",
@@ -541,7 +483,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 14",
         room_area="Faria Slimer Borough",
         rule_strs=[],
-        id=941,
     ),
     LocationData(
         region_name="Faria (X+10,Y+2) (Northeast)",
@@ -550,7 +491,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 14",
         room_area="Faria Slimer Borough",
         rule_strs=[],
-        id=942,
     ),
     LocationData(
         region_name="Faria (X+10,Y+4)",
@@ -559,7 +499,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 15",
         room_area="Faria Slimer Borough",
         rule_strs=["dog", "dash, ss+", "ride, ss"],
-        id=951,
     ),
     LocationData(
         region_name="Faria (X+10,Y+4)",
@@ -568,7 +507,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 15",
         room_area="Faria Slimer Borough",
         rule_strs=["dog", "dash, ss+", "ride, ss"],
-        id=952,
     ),
     LocationData(
         region_name="Faria (X+7,Y+4) (South)",
@@ -577,7 +515,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 16",
         room_area="Faria Slimer Borough",
         rule_strs=[],
-        id=961,
     ),
     LocationData(
         region_name="Faria (X+5,Y+4)",
@@ -586,7 +523,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 17",
         room_area="Faria Slimer Borough",
         rule_strs=["dog", "ufo, ss", "ride"],
-        id=971,
     ),
     LocationData(
         region_name="Faria (X+5,Y+4)",
@@ -595,7 +531,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 17",
         room_area="Faria Slimer Borough",
         rule_strs=["dog", "ufo, ss", "ride"],
-        id=972,
     ),
     LocationData(
         region_name="Faria (X+5,Y+4)",
@@ -604,7 +539,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 17",
         room_area="Faria Slimer Borough",
         rule_strs=["dog", "ufo, ss", "ride"],
-        id=973,
     ),
     LocationData(
         region_name="Faria (X+5,Y+4)",
@@ -613,7 +547,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 17",
         room_area="Faria Slimer Borough",
         rule_strs=["dog", "ufo, ss", "ride"],
-        id=974,
     ),
     LocationData(
         region_name="Faria (X+5,Y+4)",
@@ -622,7 +555,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 17",
         room_area="Faria Slimer Borough",
         rule_strs=["dog", "ufo, ss", "ride"],
-        id=975,
     ),
     LocationData(
         region_name="Faria (X+5,Y+4)",
@@ -631,7 +563,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 17",
         room_area="Faria Slimer Borough",
         rule_strs=["dog", "ufo, ss", "ride"],
-        id=976,
     ),
     LocationData(
         region_name="Faria (X+7,Y+3)",
@@ -640,7 +571,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 18",
         room_area="Faria Slimer Borough",
         rule_strs=[],
-        id=981,
     ),
     LocationData(
         region_name="Faria (X+7,Y+3)",
@@ -649,7 +579,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 18",
         room_area="Faria Slimer Borough",
         rule_strs=[],
-        id=982,
     ),
     LocationData(
         region_name="Faria (X+10,Y+1)",
@@ -658,7 +587,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Musical Notes 1",
         room_area="Faria Slimer Borough",
         rule_strs=["Musical Notes 1"],
-        id=1001,
     ),
     LocationData(
         region_name="Faria (X+10,Y+1)",
@@ -667,7 +595,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Musical Notes 1",
         room_area="Faria Slimer Borough",
         rule_strs=["Musical Notes 1"],
-        id=1002,
     ),
     LocationData(
         region_name="Faria (X+4,Y+0) (North Alcove)",
@@ -676,7 +603,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Petal Container 1",
         room_area="Faria Slimer Borough",
         rule_strs=[],
-        id=1011,
     ),
     LocationData(
         region_name="Faria (X+1,Y+5)",
@@ -685,7 +611,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Petal Container 2",
         room_area="Faria Slimer Borough",
         rule_strs=["Buoy"],
-        id=1021,
     ),
     LocationData(
         region_name="Faria (X+9,Y+2)",
@@ -694,7 +619,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Petal Container 3",
         room_area="Faria Slimer Borough",
         rule_strs=["flip+", "dash, Bomb 1", "ufo, Bomb 1", "ride, Bomb 1"],
-        id=1031,
     ),
     LocationData(
         region_name="Faria (X+3,Y+3)",
@@ -703,7 +627,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Quest (Apple 1)",
         room_area="Faria Slimer Borough",
         rule_strs=["Quest (Apple 1)"],
-        id=1061,
     ),
     LocationData(
         region_name="Faria (X+3,Y+3)",
@@ -712,7 +635,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Quest (Apple 1)",
         room_area="Faria Slimer Borough",
         rule_strs=["Quest (Apple 1)"],
-        id=1062,
     ),
     LocationData(
         region_name="Faria (X+7,Y-6) (Main)",
@@ -721,7 +643,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Quest (Burger 1)",
         room_area="Faria Slimer Borough",
         rule_strs=["Quest (Burger 1)"],
-        id=1081,
     ),
     LocationData(
         region_name="Faria (X+4,Y+0) (Main)",
@@ -730,7 +651,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Quest (Popcorn 1)",
         room_area="Faria Slimer Borough",
         rule_strs=["Quest (Popcorn 1)"],
-        id=1101,
     ),
     LocationData(
         region_name="Faria (X+4,Y+0) (Main)",
@@ -739,7 +659,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Quest (Popcorn 1)",
         room_area="Faria Slimer Borough",
         rule_strs=["Quest (Popcorn 1)"],
-        id=1102,
     ),
     LocationData(
         region_name="Faria (X+4,Y+0) (Main)",
@@ -748,7 +667,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Taxi Phone 1",
         room_area="Faria Slimer Borough",
         rule_strs=["$100"],
-        id=1111,
     ),
     LocationData(
         region_name="Faria (X+4,Y-5) (South)",
@@ -757,7 +675,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Taxi Phone 2",
         room_area="Faria Slimer Borough",
         rule_strs=["$100"],
-        id=1121,
     ),
     LocationData(
         region_name="Faria (X+10,Y+0)",
@@ -766,7 +683,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Taxi Phone 3",
         room_area="Faria Slimer Borough",
         rule_strs=["$100"],
-        id=1131,
     ),
     LocationData(
         region_name="Faria Interiors (X+3,Y+1)",
@@ -775,7 +691,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Badge (Coin)",
         room_area="Faria Slimer Borough (Interiors)",
         rule_strs=["flip+", "bomb"],
-        id=1141,
     ),
     LocationData(
         region_name="Faria Interiors (X+2,Y-1)",
@@ -784,7 +699,6 @@ LOCATIONS: list[LocationData] = [
         map_name="BP Shard 1",
         room_area="Faria Slimer Borough (Interiors)",
         rule_strs=["bomb"],
-        id=1161,
     ),
     LocationData(
         region_name="Faria Interiors (X+4,Y-5)",
@@ -793,7 +707,6 @@ LOCATIONS: list[LocationData] = [
         map_name="BP Shard 2",
         room_area="Faria Slimer Borough (Interiors)",
         rule_strs=["Key 4"],
-        id=1171,
     ),
     LocationData(
         region_name="Faria Interiors (X+6,Y-6)",
@@ -802,7 +715,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 1",
         room_area="Faria Slimer Borough (Interiors)",
         rule_strs=[],
-        id=1261,
     ),
     LocationData(
         region_name="Faria Interiors (X+6,Y-6)",
@@ -811,7 +723,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 1",
         room_area="Faria Slimer Borough (Interiors)",
         rule_strs=[],
-        id=1262,
     ),
     LocationData(
         region_name="Faria Interiors (X+6,Y-6)",
@@ -820,7 +731,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 1",
         room_area="Faria Slimer Borough (Interiors)",
         rule_strs=[],
-        id=1263,
     ),
     LocationData(
         region_name="Faria Interiors (X+6,Y-6)",
@@ -829,7 +739,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 1",
         room_area="Faria Slimer Borough (Interiors)",
         rule_strs=[],
-        id=1264,
     ),
     LocationData(
         region_name="Faria Interiors (X+5,Y+0)",
@@ -838,7 +747,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Petal Container 1",
         room_area="Faria Slimer Borough (Interiors)",
         rule_strs=["Key 1, chest"],
-        id=1271,
     ),
     LocationData(
         region_name="Faria Interiors (X+7,Y-3)",
@@ -847,7 +755,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Petal Container 2",
         room_area="Faria Slimer Borough (Interiors)",
         rule_strs=["Key 2, chest"],
-        id=1281,
     ),
     LocationData(
         region_name="Faria Interiors (X+3,Y-3)",
@@ -856,7 +763,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Petal Container 3",
         room_area="Faria Slimer Borough (Interiors)",
         rule_strs=["Key 3, chest"],
-        id=1291,
     ),
     LocationData(
         region_name="Faria Interiors (X+6,Y-6)",
@@ -865,7 +771,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Petal Container 4",
         room_area="Faria Slimer Borough (Interiors)",
         rule_strs=[],
-        id=1301,
     ),
     LocationData(
         region_name="Faria Interiors (X+10,Y-2)",
@@ -874,7 +779,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Petal Container 5",
         room_area="Faria Slimer Borough (Interiors)",
         rule_strs=["flip+", "Bomb 1"],
-        id=1311,
     ),
     LocationData(
         region_name="Faria Sewers (X+7,Y+4)",
@@ -883,7 +787,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Badge (Angled)",
         room_area="Faria Slimer Borough (Sewers)",
         rule_strs=[],
-        id=1331,
     ),
     LocationData(
         region_name="Faria Sewers (X+9,Y+0)",
@@ -892,7 +795,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Badge (Cheater's Telekinesis)",
         room_area="Faria Slimer Borough (Sewers)",
         rule_strs=[],
-        id=1341,
     ),
     LocationData(
         region_name="Faria Sewers (X+6,Y+0) (Main)",
@@ -901,7 +803,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Badge (Sprout)",
         room_area="Faria Slimer Borough (Sewers)",
         rule_strs=[],
-        id=1351,
     ),
     LocationData(
         region_name="Faria Sewers (X+6,Y+4)",
@@ -910,7 +811,6 @@ LOCATIONS: list[LocationData] = [
         map_name="BP Shard 1",
         room_area="Faria Slimer Borough (Sewers)",
         rule_strs=["Lever 10"],
-        id=1361,
     ),
     LocationData(
         region_name="Faria Sewers (X+8,Y+1)",
@@ -919,7 +819,6 @@ LOCATIONS: list[LocationData] = [
         map_name="BP Shard 2",
         room_area="Faria Slimer Borough (Sewers)",
         rule_strs=[],
-        id=1371,
     ),
     LocationData(
         region_name="Faria Sewers (X+2,Y-5)",
@@ -928,7 +827,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Combat 3 (optional)",
         room_area="Faria Slimer Borough (Sewers)",
         rule_strs=["Combat 3 (optional)"],
-        id=1461,
     ),
     LocationData(
         region_name="Faria Sewers (X+2,Y-5)",
@@ -937,7 +835,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Combat 3 (optional)",
         room_area="Faria Slimer Borough (Sewers)",
         rule_strs=["Combat 3 (optional)"],
-        id=1462,
     ),
     LocationData(
         region_name="Faria Sewers (X+2,Y-5)",
@@ -946,7 +843,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Combat 3 (optional)",
         room_area="Faria Slimer Borough (Sewers)",
         rule_strs=["Combat 3 (optional)"],
-        id=1463,
     ),
     LocationData(
         region_name="Faria Sewers (X+8,Y+1)",
@@ -955,7 +851,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Diamond 1",
         room_area="Faria Slimer Borough (Sewers)",
         rule_strs=[],
-        id=1531,
     ),
     LocationData(
         region_name="Faria Sewers (X+5,Y-1)",
@@ -964,7 +859,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 1",
         room_area="Faria Slimer Borough (Sewers)",
         rule_strs=["Lever 4"],
-        id=1701,
     ),
     LocationData(
         region_name="Faria Sewers (X+5,Y-1)",
@@ -973,7 +867,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 1",
         room_area="Faria Slimer Borough (Sewers)",
         rule_strs=["Lever 4"],
-        id=1702,
     ),
     LocationData(
         region_name="Faria Sewers (X+5,Y-1)",
@@ -982,7 +875,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 1",
         room_area="Faria Slimer Borough (Sewers)",
         rule_strs=["Lever 4"],
-        id=1703,
     ),
     LocationData(
         region_name="Faria Sewers (X+8,Y-1)",
@@ -991,7 +883,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 2",
         room_area="Faria Slimer Borough (Sewers)",
         rule_strs=[],
-        id=1711,
     ),
     LocationData(
         region_name="Faria Sewers (X+8,Y-1)",
@@ -1000,7 +891,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 2",
         room_area="Faria Slimer Borough (Sewers)",
         rule_strs=[],
-        id=1712,
     ),
     LocationData(
         region_name="Faria Sewers (X+8,Y-1)",
@@ -1009,7 +899,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 3",
         room_area="Faria Slimer Borough (Sewers)",
         rule_strs=["off", "ufo", "ride"],
-        id=1721,
     ),
     LocationData(
         region_name="Faria Sewers (X+8,Y-6) (Main)",
@@ -1018,7 +907,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 4",
         room_area="Faria Slimer Borough (Sewers)",
         rule_strs=[],
-        id=1731,
     ),
     LocationData(
         region_name="Faria Sewers (X+9,Y-5) (West)",
@@ -1027,7 +915,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 5",
         room_area="Faria Slimer Borough (Sewers)",
         rule_strs=[],
-        id=1741,
     ),
     LocationData(
         region_name="Faria Sewers (X+9,Y-5) (West)",
@@ -1036,7 +923,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 5",
         room_area="Faria Slimer Borough (Sewers)",
         rule_strs=[],
-        id=1742,
     ),
     LocationData(
         region_name="Faria Sewers (X+10,Y+0)",
@@ -1045,7 +931,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 6",
         room_area="Faria Slimer Borough (Sewers)",
         rule_strs=["off", "Event 1"],
-        id=1751,
     ),
     LocationData(
         region_name="Faria Sewers (X+10,Y+0)",
@@ -1054,7 +939,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 7",
         room_area="Faria Slimer Borough (Sewers)",
         rule_strs=[],
-        id=1761,
     ),
     LocationData(
         region_name="Faria Sewers (X+10,Y+0)",
@@ -1063,7 +947,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 8",
         room_area="Faria Slimer Borough (Sewers)",
         rule_strs=[],
-        id=1771,
     ),
     LocationData(
         region_name="Faria Sewers (X+10,Y+0)",
@@ -1072,7 +955,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 8",
         room_area="Faria Slimer Borough (Sewers)",
         rule_strs=[],
-        id=1772,
     ),
     LocationData(
         region_name="Faria Sewers (X+6,Y+4)",
@@ -1081,7 +963,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 10",
         room_area="Faria Slimer Borough (Sewers)",
         rule_strs=["Lever 10"],
-        id=1791,
     ),
     LocationData(
         region_name="Faria Sewers (X+6,Y+4)",
@@ -1090,7 +971,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 10",
         room_area="Faria Slimer Borough (Sewers)",
         rule_strs=["Lever 10"],
-        id=1792,
     ),
     LocationData(
         region_name="Faria Sewers (X+7,Y+3) (East)",
@@ -1099,7 +979,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 11",
         room_area="Faria Slimer Borough (Sewers)",
         rule_strs=[],
-        id=1801,
     ),
     LocationData(
         region_name="Faria Sewers (X+8,Y+3)",
@@ -1108,7 +987,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 12",
         room_area="Faria Slimer Borough (Sewers)",
         rule_strs=[],
-        id=1811,
     ),
     LocationData(
         region_name="Faria Sewers (X+8,Y+3)",
@@ -1117,7 +995,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 12",
         room_area="Faria Slimer Borough (Sewers)",
         rule_strs=[],
-        id=1812,
     ),
     LocationData(
         region_name="Faria Sewers (X+8,Y+3)",
@@ -1126,7 +1003,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 13",
         room_area="Faria Slimer Borough (Sewers)",
         rule_strs=["dash"],
-        id=1821,
     ),
     LocationData(
         region_name="Faria Sewers (X+8,Y+1)",
@@ -1135,7 +1011,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 14",
         room_area="Faria Slimer Borough (Sewers)",
         rule_strs=[],
-        id=1831,
     ),
     LocationData(
         region_name="Faria Sewers (X+8,Y+1)",
@@ -1144,7 +1019,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 14",
         room_area="Faria Slimer Borough (Sewers)",
         rule_strs=[],
-        id=1832,
     ),
     LocationData(
         region_name="Faria Sewers (X+8,Y+1)",
@@ -1153,7 +1027,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 14",
         room_area="Faria Slimer Borough (Sewers)",
         rule_strs=[],
-        id=1833,
     ),
     LocationData(
         region_name="Faria Sewers (X+8,Y+1)",
@@ -1162,7 +1035,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 14",
         room_area="Faria Slimer Borough (Sewers)",
         rule_strs=[],
-        id=1834,
     ),
     LocationData(
         region_name="Faria Sewers (X+8,Y+1)",
@@ -1171,7 +1043,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 14",
         room_area="Faria Slimer Borough (Sewers)",
         rule_strs=[],
-        id=1835,
     ),
     LocationData(
         region_name="Faria Sewers (X+8,Y+1)",
@@ -1180,7 +1051,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 14",
         room_area="Faria Slimer Borough (Sewers)",
         rule_strs=[],
-        id=1836,
     ),
     LocationData(
         region_name="Faria Sewers (X+8,Y+1)",
@@ -1189,7 +1059,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 14",
         room_area="Faria Slimer Borough (Sewers)",
         rule_strs=[],
-        id=1837,
     ),
     LocationData(
         region_name="Faria Sewers (X+8,Y+1)",
@@ -1198,7 +1067,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 14",
         room_area="Faria Slimer Borough (Sewers)",
         rule_strs=[],
-        id=1838,
     ),
     LocationData(
         region_name="Faria Sewers (X+6,Y+3)",
@@ -1207,7 +1075,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Musical Notes 1",
         room_area="Faria Slimer Borough (Sewers)",
         rule_strs=["Musical Notes 1"],
-        id=1851,
     ),
     LocationData(
         region_name="Faria Sewers (X+6,Y+3)",
@@ -1216,7 +1083,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Musical Notes 1",
         room_area="Faria Slimer Borough (Sewers)",
         rule_strs=["Musical Notes 1"],
-        id=1852,
     ),
     LocationData(
         region_name="Faria Sewers (X+6,Y+3)",
@@ -1225,7 +1091,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Musical Notes 1",
         room_area="Faria Slimer Borough (Sewers)",
         rule_strs=["Musical Notes 1"],
-        id=1853,
     ),
     LocationData(
         region_name="Faria Sewers (X+2,Y-1)",
@@ -1234,7 +1099,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Petal Container 1",
         room_area="Faria Slimer Borough (Sewers)",
         rule_strs=["Combat 1"],
-        id=1861,
     ),
     LocationData(
         region_name="Faria Sewers (X+8,Y-1)",
@@ -1243,7 +1107,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Petal Container 2",
         room_area="Faria Slimer Borough (Sewers)",
         rule_strs=["off"],
-        id=1871,
     ),
     LocationData(
         region_name="Skyscraper (X+4,Y-1)",
@@ -1252,7 +1115,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Badge (Stun)",
         room_area="SlimeCorp Skyscraper",
         rule_strs=["Key 1, cog, off", "ride, dash, expert"],
-        id=1881,
     ),
     LocationData(
         region_name="Skyscraper (X+3,Y-4) (Southeast)",
@@ -1261,7 +1123,6 @@ LOCATIONS: list[LocationData] = [
         map_name="BP Shard 1",
         room_area="SlimeCorp Skyscraper",
         rule_strs=[],
-        id=1891,
     ),
     LocationData(
         region_name="Skyscraper (X+2,Y+0)",
@@ -1270,7 +1131,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 1",
         room_area="SlimeCorp Skyscraper",
         rule_strs=["none"],
-        id=1981,
     ),
     LocationData(
         region_name="Skyscraper (X+1,Y-5)",
@@ -1279,7 +1139,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 2",
         room_area="SlimeCorp Skyscraper",
         rule_strs=["cog", "ride, dash", "ride, ufo", "ride, expert"],
-        id=1991,
     ),
     LocationData(
         region_name="Skyscraper (X+4,Y-5)",
@@ -1288,7 +1147,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 3",
         room_area="SlimeCorp Skyscraper",
         rule_strs=["cog, off", "ufo", "ride"],
-        id=2001,
     ),
     LocationData(
         region_name="Skyscraper (X+0,Y-2) (West)",
@@ -1297,7 +1155,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Musical Notes 1",
         room_area="SlimeCorp Skyscraper",
         rule_strs=["Musical Notes 1"],
-        id=2021,
     ),
     LocationData(
         region_name="Skyscraper (X+3,Y-4) (North)",
@@ -1306,7 +1163,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Musical Notes 2",
         room_area="SlimeCorp Skyscraper",
         rule_strs=["Musical Notes 2"],
-        id=2041,
     ),
     LocationData(
         region_name="Skyscraper (X+0,Y-5)",
@@ -1315,7 +1171,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Petal Container 1",
         room_area="SlimeCorp Skyscraper",
         rule_strs=["Key 5, chest"],
-        id=2051,
     ),
     LocationData(
         region_name="Skyscraper (X+0,Y-4)",
@@ -1324,7 +1179,6 @@ LOCATIONS: list[LocationData] = [
         map_name="Staff ID",
         room_area="SlimeCorp Skyscraper",
         rule_strs=["none"],
-        id=2061,
     ),
 ]
 

@@ -138,7 +138,6 @@ def read_locations_csv(room_dict: RoomDict) -> tuple[list[LocationData], list[Ev
                         map_name=row["Map Name"],
                         room_area=room_data.room_area,
                         rule_strs=rule_strs,
-                        id=i * 10 + 1,
                     )
                 )
             else:
@@ -150,7 +149,6 @@ def read_locations_csv(room_dict: RoomDict) -> tuple[list[LocationData], list[Ev
                         map_name=row["Map Name"],
                         room_area=room_data.room_area,
                         rule_strs=rule_strs,
-                        id=i * 10 + j + 1,
                     )
                     for j in range(len(object_ids))
                 )
@@ -228,11 +226,11 @@ EVENTS: list[EventData] = [
 
 
 def write_object_id_mapping(locations: list[LocationData]):
-    global_object_id_to_id: dict[str, str] = {}
+    mapping: dict[str, str] = {}
     for location in locations:
-        global_object_id_to_id[location.global_object_id] = location.full_location_name
+        mapping[location.global_object_id] = location.full_location_name
 
-    output = json.dumps(global_object_id_to_id, indent=2)
+    output = json.dumps(mapping, indent=2)
     OBJECT_ID_OUTPUT_FILE.write_text(output, encoding="utf-8")
 
 
