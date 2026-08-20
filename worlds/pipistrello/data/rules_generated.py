@@ -26,6 +26,7 @@ DIFF_EXPERT = [OptionFilter(Difficulty, Difficulty.option_expert, operator="ge")
 BOMB = True_()
 BUOY = True_()
 CHEST = True_()
+COG = True_()
 KEY = True_()
 LEVER = True_()
 MANHOLE = True_()
@@ -230,6 +231,63 @@ ENTRANCE_RULES: dict[str, Rule] = {
     "Faria Sewers (X+4,Y+4) -> Faria Sewers (X+6,Y+4)": (Has("Faria Sewers (X+4,Y+4): Combat 2")),
     "Faria Sewers (X+8,Y+4) (West) -> Faria Sewers (X+7,Y+4)": (Has("Faria Sewers (X+8,Y+4) (West): Combat")),
     "Faria Sewers (X+8,Y+4) (East) -> Faria Sewers (X+8,Y+4) (West)": (Has("Wall-Dash") | Has("Wall-Ride")),
+    "Skyscraper (X+2,Y-5) -> Skyscraper (X+1,Y-5)": (COG),
+    "Skyscraper (X+1,Y-4) -> Skyscraper (X+0,Y-4)": (Has("Skyscraper (X+1,Y-4): Combat")),
+    "Skyscraper (X+1,Y-4) -> Skyscraper (X+1,Y-3)": (Has("UFO Throw") | (Has("Wall-Ride") & Has("Wall-Dash"))),
+    "Skyscraper (X+2,Y-4) -> Skyscraper (X+3,Y-4) (Main)": (
+        (COG & Has("Offstring Throw")) | (Has("Wall-Ride") & Has("Wall-Dash"))
+    ),
+    "Skyscraper (X+2,Y-4) -> Skyscraper (X+1,Y-3)": (
+        (COG & Has("Skyscraper (X+1,Y-5): Key") & Has("Skyscraper (X+4,Y-5): Key"))
+        | (DIFF_HARD & Has("Wall-Ride") & Has("Wall-Dash"))
+    ),
+    "Skyscraper (X+3,Y-4) (Main) -> Skyscraper (X+2,Y-4)": (
+        Has("Skyscraper (X+1,Y-5): Key") | Has("Skyscraper (X+4,Y-5): Key") | Has("Wall-Ride") | Has("UFO Throw")
+    ),
+    "Skyscraper (X+3,Y-4) (Main) -> Skyscraper (X+3,Y-4) (North)": (
+        COG | (DIFF_HARD & Has("Wall-Dash") & Has("Wall-Ride")) | Has("UFO Throw")
+    ),
+    "Skyscraper (X+3,Y-4) (Main) -> Skyscraper (X+3,Y-4) (Southeast)": (
+        (COG & Has("Offstring Throw")) | Has("UFO Throw") | (COG & Has("Wall-Dash") & DIFF_HARD)
+    ),
+    "Skyscraper (X+1,Y-3) -> Skyscraper (X+1,Y-4)": (
+        (COG & Has("Offstring Throw")) | Has("UFO Throw") | (Has("Wall-Dash") & Has("Wall-Ride") & DIFF_HARD)
+    ),
+    "Skyscraper (X+1,Y-3) -> Skyscraper (X+0,Y-2) (East)": (Has("UFO Throw")),
+    "Skyscraper (X+0,Y-2) (West) -> Skyscraper (X+0,Y-4)": (Has("UFO Throw") | Has("Wall-Ride")),
+    "Skyscraper (X+0,Y-2) (West) -> Skyscraper (X+0,Y-2) (East)": (Has("UFO Throw") | COG),
+    "Skyscraper (X+0,Y-2) (East) -> Skyscraper (X+1,Y-3)": (Has("UFO Throw") | Has("Wall-Dash")),
+    "Skyscraper (X+0,Y-2) (East) -> Skyscraper (X+2,Y-2) (West)": (
+        Has("Skyscraper (X+2,Y-1): Key") | Has("Wall-Ride") | Has("UFO Throw")
+    ),
+    "Skyscraper (X+0,Y-2) (East) -> Skyscraper (X+2,Y-1)": (Has("UFO Throw") | Has("Wall-Ride")),
+    "Skyscraper (X+2,Y-2) (West) -> Skyscraper (X+0,Y-2) (East)": (
+        Has("Skyscraper (X+2,Y-1): Key") | Has("Wall-Ride") | Has("Wall-Dash") | Has("UFO Throw")
+    ),
+    "Skyscraper (X+2,Y-2) (West) -> Skyscraper (X+2,Y-2) (East)": (
+        Has("Skyscraper (X+2,Y-2) (West): Combat") | Has("Wall-Ride") | HAS_MID_AIR_UFO
+    ),
+    "Skyscraper (X+2,Y-2) (East) -> Skyscraper (X+2,Y-2) (West)": (
+        Has("Skyscraper (X+2,Y-2) (West): Combat") | Has("Wall-Ride") | HAS_MID_AIR_UFO
+    ),
+    "Skyscraper (X+2,Y-1) -> Skyscraper (X+3,Y-1) (North)": (Has("UFO Throw") | Has("Wall-Dash")),
+    "Skyscraper (X+3,Y-1) (North) -> Skyscraper (X+3,Y-4) (Main)": (
+        Has("UFO Throw") | (Has("Wall-Dash") & Has("Wall-Ride"))
+    ),
+    "Skyscraper (X+3,Y-1) (North) -> Skyscraper (X+2,Y-1)": (
+        (Has("Skyscraper (X+3,Y-1) (North): Combat") & COG)
+        | (Has("Skyscraper (X+3,Y-1) (North): Combat") & Has("UFO Throw"))
+        | (Has("Wall-Dash") & Has("Wall-Ride"))
+        | (Has("UFO Throw") & Has("Wall-Ride"))
+    ),
+    "Skyscraper (X+3,Y-1) (North) -> Skyscraper (X+4,Y-1)": (
+        (Has("Skyscraper (X+3,Y-1) (North): Combat") & COG)
+        | (Has("Skyscraper (X+3,Y-1) (North): Combat") & Has("UFO Throw"))
+        | (Has("Wall-Dash") & Has("Wall-Ride"))
+        | (Has("UFO Throw") & Has("Wall-Ride"))
+    ),
+    "Skyscraper (X+3,Y-1) (Southwest) -> Skyscraper (X+3,Y-1) (North)": (COG & Has("Offstring Throw")),
+    "Skyscraper (X+4,Y-1) -> Skyscraper (X+3,Y-4) (Southeast)": (Has("Wall-Dash") & Has("Wall-Ride") & DIFF_EXPERT),
     "S Plaza (X-2,Y-3) (Main) -> S Plaza (X-2,Y-3) (South)": (
         HAS_SS_NORMAL | Has("Walk-the-Dog") | Has("Wall-Dash") | Has("UFO Throw") | Has("Wall-Ride")
     ),
@@ -399,6 +457,26 @@ LOCATION_RULES: dict[str, Rule] = {
     "Faria Sewers (X+6,Y+3): Musical Notes - Reward 3": (Has("Faria Sewers (X+6,Y+3): Musical Notes")),
     "Faria Sewers (X+2,Y-1): Petal Container": (Has("Faria Sewers (X+2,Y-1): Combat")),
     "Faria Sewers (X+8,Y-1): Petal Container": (Has("Offstring Throw")),
+    "Skyscraper (X+4,Y-1): Stun Badge": (
+        (Has("Skyscraper (X+4,Y-1): Key") & COG & Has("Offstring Throw"))
+        | (Has("Wall-Ride") & Has("Wall-Dash") & DIFF_EXPERT)
+    ),
+    "Skyscraper (X+2,Y-2) (West): Combat": (COG),
+    "Skyscraper (X+1,Y-4): Combat": (COG & Has("Offstring Throw")),
+    "Skyscraper (X+4,Y-1): Key": (COG & Has("Offstring Throw")),
+    "Skyscraper (X+2,Y-1): Key": ((COG & Has("Offstring Throw")) | Has("Wall-Dash") | Has("Progressive Moon Badge")),
+    "Skyscraper (X+1,Y-5): Key": (COG & Has("Offstring Throw")),
+    "Skyscraper (X+4,Y-5): Key": ((COG & Has("Offstring Throw")) | (COG & DIFF_HARD) | Has("UFO Throw")),
+    "Skyscraper (X+1,Y-5): Money Bag": (
+        COG
+        | (Has("Wall-Ride") & Has("Wall-Dash"))
+        | (Has("Wall-Ride") & Has("UFO Throw"))
+        | (Has("Wall-Ride") & DIFF_EXPERT)
+    ),
+    "Skyscraper (X+4,Y-5): Money Bag": ((COG & Has("Offstring Throw")) | Has("UFO Throw") | Has("Wall-Ride")),
+    "Skyscraper (X+0,Y-2) (West): Musical Notes - Reward": (Has("Skyscraper (X+0,Y-2) (West): Musical Notes")),
+    "Skyscraper (X+3,Y-4) (North): Musical Notes - Reward": (Has("Skyscraper (X+3,Y-4) (North): Musical Notes")),
+    "Skyscraper (X+0,Y-5): Petal Container": (Has("Skyscraper (X+0,Y-5): Key") & CHEST),
     "S Plaza (X-2,Y+4): Pitcher's Badge": (Has("S Plaza (X-3,Y+4): Key")),
     "S Plaza (X+2,Y+4): BP Shard": (Has("UFO Throw") | Has("Wall-Ride")),
     "S Plaza (X-2,Y-3) (Main): Combat (top-right, optional) - Reward": (
@@ -415,7 +493,7 @@ LOCATION_RULES: dict[str, Rule] = {
     "S Plaza (X-2,Y-3) (South): Left Musical Notes - Rewards 3": (Has("S Plaza (X-2,Y-3) (South): Left Musical Notes")),
     "S Plaza (X-2,Y-3) (South): Left Musical Notes - Rewards 4": (Has("S Plaza (X-2,Y-3) (South): Left Musical Notes")),
     "S Plaza (X-2,Y-3) (South): Right Musical Notes": (
-        Has("Offstring Throw") | Has("Around-the-World") | (DIFF_HARD & Has("Wall-Ride"))
+        Has("Offstring Throw") | (DIFF_EXPERT & Has("Around-the-World")) | (DIFF_EXPERT & Has("Wall-Ride"))
     ),
     "S Plaza (X-2,Y-3) (South): Right Musical Notes - Rewards 1": (
         Has("S Plaza (X-2,Y-3) (South): Right Musical Notes")

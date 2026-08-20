@@ -51,6 +51,7 @@ RULE_DICT = {
     "flip+": "COIN_FLIP_PLUS",
     "coinflip+": "COIN_FLIP_PLUS",
     # Badges
+    "moon": f"Has('{B.MOON}')",
     "ss": "HAS_SS_NORMAL",
     "skippingstone": "HAS_SS_NORMAL",
     "ss+": "HAS_SS_PLUS",
@@ -68,6 +69,7 @@ RULE_DICT = {
     "bomb": "BOMB",
     "buoy": "BUOY",
     "chest": "CHEST",
+    "cog": "COG",
     "key": "KEY",
     "lever": "LEVER",
     "manhole": "MANHOLE",
@@ -110,6 +112,9 @@ def process_row(rule_strs: list[str], region_name: str, region_name2: str | None
         column_strs = rule_str.translate(remove_map).lower().split(",")
         column_rule_strs = []
         for column_str in column_strs:
+            if column_str == "none":
+                continue
+
             # Check if string is a known one.
             rule_value_str = RULE_DICT.get(column_str)
             if rule_value_str is not None:
@@ -199,6 +204,7 @@ DIFF_EXPERT = [OptionFilter(Difficulty, Difficulty.option_expert, operator="ge")
 BOMB = True_()
 BUOY = True_()
 CHEST = True_()
+COG = True_()
 KEY = True_()
 LEVER = True_()
 MANHOLE = True_()

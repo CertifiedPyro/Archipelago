@@ -1071,6 +1071,146 @@ ROOMS: list[RoomData] = [
         sort_key="0000",
     ),
     RoomData(
+        room_label="SlimeCorp Skyscraper (X+0, Y-5) - lor151",
+        room_area="SlimeCorp Skyscraper",
+        region_name="Skyscraper (X+0,Y-5)",
+        global_room_id="skyscraper/lor151",
+        sort_key="69995",
+    ),
+    RoomData(
+        room_label="SlimeCorp Skyscraper (X+1, Y-5) - lor133",
+        room_area="SlimeCorp Skyscraper",
+        region_name="Skyscraper (X+1,Y-5)",
+        global_room_id="skyscraper/lor133",
+        sort_key="70095",
+    ),
+    RoomData(
+        room_label="SlimeCorp Skyscraper (X+2, Y-5) - lor98",
+        room_area="SlimeCorp Skyscraper",
+        region_name="Skyscraper (X+2,Y-5)",
+        global_room_id="skyscraper/lor98",
+        sort_key="70195",
+    ),
+    RoomData(
+        room_label="SlimeCorp Skyscraper (X+3, Y-5) - lor112",
+        room_area="SlimeCorp Skyscraper",
+        region_name="Skyscraper (X+3,Y-5)",
+        global_room_id="skyscraper/lor112",
+        sort_key="70295",
+    ),
+    RoomData(
+        room_label="SlimeCorp Skyscraper (X+4, Y-5) - lor104",
+        room_area="SlimeCorp Skyscraper",
+        region_name="Skyscraper (X+4,Y-5)",
+        global_room_id="skyscraper/lor104",
+        sort_key="70395",
+    ),
+    RoomData(
+        room_label="SlimeCorp Skyscraper (X+0, Y-4) - lor187",
+        room_area="SlimeCorp Skyscraper",
+        region_name="Skyscraper (X+0,Y-4)",
+        global_room_id="skyscraper/lor187",
+        sort_key="69996",
+    ),
+    RoomData(
+        room_label="SlimeCorp Skyscraper (X+1, Y-4) - lor150",
+        room_area="SlimeCorp Skyscraper",
+        region_name="Skyscraper (X+1,Y-4)",
+        global_room_id="skyscraper/lor150",
+        sort_key="70096",
+    ),
+    RoomData(
+        room_label="SlimeCorp Skyscraper (X+2, Y-4) - lor140",
+        room_area="SlimeCorp Skyscraper",
+        region_name="Skyscraper (X+2,Y-4)",
+        global_room_id="skyscraper/lor140",
+        sort_key="70196",
+    ),
+    RoomData(
+        room_label="SlimeCorp Skyscraper (X+3, Y-4) - lor97 (Main)",
+        room_area="SlimeCorp Skyscraper",
+        region_name="Skyscraper (X+3,Y-4) (Main)",
+        global_room_id="skyscraper/lor97",
+        sort_key="70296 (Main)",
+    ),
+    RoomData(
+        room_label="SlimeCorp Skyscraper (X+3, Y-4) - lor97 (North)",
+        room_area="SlimeCorp Skyscraper",
+        region_name="Skyscraper (X+3,Y-4) (North)",
+        global_room_id="skyscraper/lor97",
+        sort_key="70296 (North)",
+    ),
+    RoomData(
+        room_label="SlimeCorp Skyscraper (X+3, Y-4) - lor97 (Southeast)",
+        room_area="SlimeCorp Skyscraper",
+        region_name="Skyscraper (X+3,Y-4) (Southeast)",
+        global_room_id="skyscraper/lor97",
+        sort_key="70296 (Southeast)",
+    ),
+    RoomData(
+        room_label="SlimeCorp Skyscraper (X+1, Y-3) - lor220",
+        room_area="SlimeCorp Skyscraper",
+        region_name="Skyscraper (X+1,Y-3)",
+        global_room_id="skyscraper/lor220",
+        sort_key="70097",
+    ),
+    RoomData(
+        room_label="SlimeCorp Skyscraper (X+0, Y-2) - lor2 (West)",
+        room_area="SlimeCorp Skyscraper",
+        region_name="Skyscraper (X+0,Y-2) (West)",
+        global_room_id="skyscraper/lor2",
+        sort_key="69998 (West)",
+    ),
+    RoomData(
+        room_label="SlimeCorp Skyscraper (X+0, Y-2) - lor2 (East)",
+        room_area="SlimeCorp Skyscraper",
+        region_name="Skyscraper (X+0,Y-2) (East)",
+        global_room_id="skyscraper/lor2",
+        sort_key="69998 (East)",
+    ),
+    RoomData(
+        room_label="SlimeCorp Skyscraper (X+2, Y-2) - lor63 (West)",
+        room_area="SlimeCorp Skyscraper",
+        region_name="Skyscraper (X+2,Y-2) (West)",
+        global_room_id="skyscraper/lor63",
+        sort_key="70198 (West)",
+    ),
+    RoomData(
+        room_label="SlimeCorp Skyscraper (X+2, Y-2) - lor63 (East)",
+        room_area="SlimeCorp Skyscraper",
+        region_name="Skyscraper (X+2,Y-2) (East)",
+        global_room_id="skyscraper/lor63",
+        sort_key="70198 (East)",
+    ),
+    RoomData(
+        room_label="SlimeCorp Skyscraper (X+2, Y-1) - ren22",
+        room_area="SlimeCorp Skyscraper",
+        region_name="Skyscraper (X+2,Y-1)",
+        global_room_id="skyscraper/ren22",
+        sort_key="70199",
+    ),
+    RoomData(
+        room_label="SlimeCorp Skyscraper (X+3, Y-1) - lor25 (North)",
+        room_area="SlimeCorp Skyscraper",
+        region_name="Skyscraper (X+3,Y-1) (North)",
+        global_room_id="skyscraper/lor25",
+        sort_key="70299 (North)",
+    ),
+    RoomData(
+        room_label="SlimeCorp Skyscraper (X+3, Y-1) - lor25 (Southwest)",
+        room_area="SlimeCorp Skyscraper",
+        region_name="Skyscraper (X+3,Y-1) (Southwest)",
+        global_room_id="skyscraper/lor25",
+        sort_key="70299 (Southwest)",
+    ),
+    RoomData(
+        room_label="SlimeCorp Skyscraper (X+4, Y-1) - lor54",
+        room_area="SlimeCorp Skyscraper",
+        region_name="Skyscraper (X+4,Y-1)",
+        global_room_id="skyscraper/lor54",
+        sort_key="70399",
+    ),
+    RoomData(
         room_label="South Plaza (X-1, Y-6) - ren355 (North)",
         room_area="South Plaza",
         region_name="S Plaza (X-1,Y-6) (North)",
@@ -1083,6 +1223,13 @@ ROOMS: list[RoomData] = [
         region_name="S Plaza (X-1,Y-6) (South)",
         global_room_id="city/ren355",
         sort_key="10094 (South)",
+    ),
+    RoomData(
+        room_label="South Plaza (X-1, Y-6) - ren355 (West)",
+        room_area="South Plaza",
+        region_name="S Plaza (X-1,Y-6) (West)",
+        global_room_id="city/ren355",
+        sort_key="10094 (West)",
     ),
     RoomData(
         room_label="South Plaza (X-1, Y-6) - ren355 (East)",
@@ -1364,6 +1511,12 @@ CONNECTIONS: list[ConnectionData] = [
     ConnectionData(start_region_name="Faria Sewers (X+7,Y-1)", end_region_name="Faria (X+4,Y-3) (Main)", rule_strs=[]),
     ConnectionData(start_region_name="Faria (X+4,Y-3) (North)", end_region_name="Faria (X+5,Y-4)", rule_strs=[]),
     ConnectionData(start_region_name="Faria (X+4,Y-3) (North)", end_region_name="Faria (X+4,Y-3) (Main)", rule_strs=[]),
+    ConnectionData(
+        start_region_name="Faria (X+4,Y-3) (North)", end_region_name="Skyscraper (X+0,Y-2) (West)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+0,Y-2) (West)", end_region_name="Faria (X+4,Y-3) (North)", rule_strs=["none"]
+    ),
     ConnectionData(
         start_region_name="Faria (X+8,Y-3) (Main)", end_region_name="Faria (X+8,Y-3) (Dungeon Entrance)", rule_strs=[]
     ),
@@ -1815,6 +1968,154 @@ CONNECTIONS: list[ConnectionData] = [
     ),
     ConnectionData(start_region_name="Safe House (X+0,Y+0)", end_region_name="Safe House (X-1,Y+0)", rule_strs=[]),
     ConnectionData(start_region_name="Safe House (X+0,Y+0)", end_region_name="S Plaza (X-2,Y-3) (Main)", rule_strs=[]),
+    ConnectionData(start_region_name="Skyscraper (X+2,Y-5)", end_region_name="Skyscraper (X+1,Y-5)", rule_strs=["cog"]),
+    ConnectionData(
+        start_region_name="Skyscraper (X+3,Y-5)", end_region_name="Skyscraper (X+2,Y-5)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+0,Y-4)", end_region_name="Skyscraper (X+0,Y-5)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+0,Y-4)", end_region_name="Skyscraper (X+1,Y-4)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+1,Y-4)", end_region_name="Skyscraper (X+0,Y-4)", rule_strs=["Combat 3"]
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+1,Y-4)",
+        end_region_name="Skyscraper (X+1,Y-3)",
+        rule_strs=["ufo", "ride, dash"],
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+2,Y-4)",
+        end_region_name="Skyscraper (X+3,Y-4) (Main)",
+        rule_strs=["cog, off", "ride, dash"],
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+2,Y-4)",
+        end_region_name="Skyscraper (X+1,Y-3)",
+        rule_strs=["cog, Key 3, Key 4", "hard, ride, dash"],
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+3,Y-4) (Main)",
+        end_region_name="Skyscraper (X+2,Y-4)",
+        rule_strs=["Key 3", "Key 4", "ride", "ufo"],
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+3,Y-4) (Main)",
+        end_region_name="Skyscraper (X+3,Y-4) (North)",
+        rule_strs=["cog", "hard, dash, ride", "ufo"],
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+3,Y-4) (Main)",
+        end_region_name="Skyscraper (X+3,Y-4) (Southeast)",
+        rule_strs=["cog, off", "ufo", "cog, dash, hard"],
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+3,Y-4) (North)", end_region_name="Skyscraper (X+3,Y-5)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+3,Y-4) (North)", end_region_name="Skyscraper (X+4,Y-5)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+3,Y-4) (Southeast)",
+        end_region_name="Skyscraper (X+3,Y-4) (Main)",
+        rule_strs=["none"],
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+1,Y-3)",
+        end_region_name="Skyscraper (X+1,Y-4)",
+        rule_strs=["cog, off", "ufo", "dash, ride, hard"],
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+1,Y-3)", end_region_name="Skyscraper (X+2,Y-4)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+1,Y-3)", end_region_name="Skyscraper (X+0,Y-2) (East)", rule_strs=["ufo"]
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+0,Y-2) (West)",
+        end_region_name="Skyscraper (X+0,Y-4)",
+        rule_strs=["ufo", "ride"],
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+0,Y-2) (West)",
+        end_region_name="Skyscraper (X+0,Y-2) (East)",
+        rule_strs=["ufo", "cog"],
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+0,Y-2) (East)",
+        end_region_name="Skyscraper (X+1,Y-3)",
+        rule_strs=["ufo", "dash"],
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+0,Y-2) (East)",
+        end_region_name="Skyscraper (X+2,Y-2) (West)",
+        rule_strs=["Key 2", "ride", "ufo"],
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+0,Y-2) (East)",
+        end_region_name="Skyscraper (X+2,Y-1)",
+        rule_strs=["ufo", "ride"],
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+2,Y-2) (West)",
+        end_region_name="Skyscraper (X+0,Y-2) (East)",
+        rule_strs=["Key 2", "ride", "dash", "ufo"],
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+2,Y-2) (West)",
+        end_region_name="Skyscraper (X+2,Y-2) (East)",
+        rule_strs=["Combat 2", "ride", "midair ufo"],
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+2,Y-2) (East)",
+        end_region_name="Skyscraper (X+2,Y-2) (West)",
+        rule_strs=["Combat 2", "ride", "midair ufo"],
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+2,Y-2) (East)",
+        end_region_name="Skyscraper (X+3,Y-4) (Main)",
+        rule_strs=["none"],
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+3,Y-4) (Main)",
+        end_region_name="Skyscraper (X+2,Y-2) (East)",
+        rule_strs=["none"],
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+2,Y-1)", end_region_name="Skyscraper (X+0,Y-2) (East)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+2,Y-1)",
+        end_region_name="Skyscraper (X+3,Y-1) (North)",
+        rule_strs=["ufo", "dash"],
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+3,Y-1) (North)",
+        end_region_name="Skyscraper (X+3,Y-4) (Main)",
+        rule_strs=["ufo", "dash, ride"],
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+3,Y-1) (North)",
+        end_region_name="Skyscraper (X+2,Y-1)",
+        rule_strs=["Combat 1, cog", "Combat 1, ufo", "dash, ride", "ufo, ride"],
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+3,Y-1) (North)",
+        end_region_name="Skyscraper (X+4,Y-1)",
+        rule_strs=["Combat 1, cog", "Combat 1, ufo", "dash, ride", "ufo, ride"],
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+3,Y-1) (Southwest)",
+        end_region_name="Skyscraper (X+3,Y-1) (North)",
+        rule_strs=["cog, off"],
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+4,Y-1)",
+        end_region_name="Skyscraper (X+3,Y-4) (Southeast)",
+        rule_strs=["dash, ride, expert"],
+    ),
     ConnectionData(
         start_region_name="S Plaza (X-1,Y-6) (North)", end_region_name="S Plaza (X-1,Y-6) (South)", rule_strs=[]
     ),
