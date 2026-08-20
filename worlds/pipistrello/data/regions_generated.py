@@ -1211,6 +1211,13 @@ ROOMS: list[RoomData] = [
         sort_key="70399",
     ),
     RoomData(
+        room_label="SlimeCorp Skyscraper (X+2, Y+0) - lor16",
+        room_area="SlimeCorp Skyscraper",
+        region_name="Skyscraper (X+2,Y+0)",
+        global_room_id="skyscraper/lor16",
+        sort_key="70200",
+    ),
+    RoomData(
         room_label="South Plaza (X-1, Y-6) - ren355 (North)",
         room_area="South Plaza",
         region_name="S Plaza (X-1,Y-6) (North)",
@@ -1223,13 +1230,6 @@ ROOMS: list[RoomData] = [
         region_name="S Plaza (X-1,Y-6) (South)",
         global_room_id="city/ren355",
         sort_key="10094 (South)",
-    ),
-    RoomData(
-        room_label="South Plaza (X-1, Y-6) - ren355 (West)",
-        room_area="South Plaza",
-        region_name="S Plaza (X-1,Y-6) (West)",
-        global_room_id="city/ren355",
-        sort_key="10094 (West)",
     ),
     RoomData(
         room_label="South Plaza (X-1, Y-6) - ren355 (East)",
@@ -2059,6 +2059,9 @@ CONNECTIONS: list[ConnectionData] = [
         rule_strs=["ufo", "ride"],
     ),
     ConnectionData(
+        start_region_name="Skyscraper (X+0,Y-2) (East)", end_region_name="Skyscraper (X+2,Y+0)", rule_strs=["none"]
+    ),
+    ConnectionData(
         start_region_name="Skyscraper (X+2,Y-2) (West)",
         end_region_name="Skyscraper (X+0,Y-2) (East)",
         rule_strs=["Key 2", "ride", "dash", "ufo"],
@@ -2115,6 +2118,11 @@ CONNECTIONS: list[ConnectionData] = [
         start_region_name="Skyscraper (X+4,Y-1)",
         end_region_name="Skyscraper (X+3,Y-4) (Southeast)",
         rule_strs=["dash, ride, expert"],
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+2,Y+0)",
+        end_region_name="Skyscraper (X+3,Y-1) (Southwest)",
+        rule_strs=["cog", "ufo"],
     ),
     ConnectionData(
         start_region_name="S Plaza (X-1,Y-6) (North)", end_region_name="S Plaza (X-1,Y-6) (South)", rule_strs=[]

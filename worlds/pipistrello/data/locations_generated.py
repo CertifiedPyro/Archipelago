@@ -1264,6 +1264,15 @@ LOCATIONS: list[LocationData] = [
         id=1891,
     ),
     LocationData(
+        region_name="Skyscraper (X+2,Y+0)",
+        location_name="Money Bag",
+        global_object_id="skyscraper/lor16/lor318",
+        map_name="Moneybag 1",
+        room_area="SlimeCorp Skyscraper",
+        rule_strs=["none"],
+        id=1981,
+    ),
+    LocationData(
         region_name="Skyscraper (X+1,Y-5)",
         location_name="Money Bag",
         global_object_id="skyscraper/lor133/lor382",

@@ -921,10 +921,10 @@ Full Room Label,Room Label,Area,Map ID,Room ID,X,Y,W,H,Suffix,Exclude
 "SlimeCorp Skyscraper (X+3, Y-1) - lor25 (North)","SlimeCorp Skyscraper (X+3, Y-1) - lor25",SlimeCorp Skyscraper,skyscraper,lor25,3,-1,1,2, (North),
 "SlimeCorp Skyscraper (X+3, Y-1) - lor25 (Southwest)","SlimeCorp Skyscraper (X+3, Y-1) - lor25",SlimeCorp Skyscraper,skyscraper,lor25,3,-1,1,2, (Southwest),
 "SlimeCorp Skyscraper (X+4, Y-1) - lor54","SlimeCorp Skyscraper (X+4, Y-1) - lor54",SlimeCorp Skyscraper,skyscraper,lor54,4,-1,1,2,,
-"SlimeCorp Skyscraper (X+2, Y+0) - lor16","SlimeCorp Skyscraper (X+2, Y+0) - lor16",SlimeCorp Skyscraper,skyscraper,lor16,2,0,1,1,,TRUE
+"SlimeCorp Skyscraper (X+2, Y+0) - lor16","SlimeCorp Skyscraper (X+2, Y+0) - lor16",SlimeCorp Skyscraper,skyscraper,lor16,2,0,1,1,,
 "South Plaza (X-1, Y-6) - ren355 (North)","South Plaza (X-1, Y-6) - ren355",South Plaza,city,ren355,-1,-6,2,3, (North),
 "South Plaza (X-1, Y-6) - ren355 (South)","South Plaza (X-1, Y-6) - ren355",South Plaza,city,ren355,-1,-6,2,3, (South),
-"South Plaza (X-1, Y-6) - ren355 (West)","South Plaza (X-1, Y-6) - ren355",South Plaza,city,ren355,-1,-6,2,3, (West),
+"South Plaza (X-1, Y-6) - ren355 (West)","South Plaza (X-1, Y-6) - ren355",South Plaza,city,ren355,-1,-6,2,3, (West),TRUE
 "South Plaza (X-1, Y-6) - ren355 (East)","South Plaza (X-1, Y-6) - ren355",South Plaza,city,ren355,-1,-6,2,3, (East),
 "South Plaza (X-2, Y-4) - ren4064","South Plaza (X-2, Y-4) - ren4064",South Plaza,city,ren4064,-2,-4,1,1,,
 "South Plaza (X+1, Y-4) - ren4066","South Plaza (X+1, Y-4) - ren4066",South Plaza,city,ren4066,1,-4,1,1,,

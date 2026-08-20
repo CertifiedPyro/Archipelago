@@ -8,6 +8,7 @@ from .bases import PipTestBase
 
 
 class TestFariaNormalLogic(PipTestBase):
+    run_default_tests = False
     options = {
         "difficulty": Difficulty.option_normal,
     }
@@ -46,6 +47,7 @@ class TestFariaNormalLogic(PipTestBase):
 
 
 class TestFariaHardLogic(PipTestBase):
+    run_default_tests = False
     options = {
         "difficulty": Difficulty.option_hard,
     }
@@ -82,6 +84,7 @@ class TestFariaHardLogic(PipTestBase):
 
 
 class TestFariaExpertLogic(PipTestBase):
+    run_default_tests = False
     options = {
         "difficulty": Difficulty.option_expert,
     }

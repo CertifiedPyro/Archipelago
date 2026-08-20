@@ -288,6 +288,7 @@ ENTRANCE_RULES: dict[str, Rule] = {
     ),
     "Skyscraper (X+3,Y-1) (Southwest) -> Skyscraper (X+3,Y-1) (North)": (COG & Has("Offstring Throw")),
     "Skyscraper (X+4,Y-1) -> Skyscraper (X+3,Y-4) (Southeast)": (Has("Wall-Dash") & Has("Wall-Ride") & DIFF_EXPERT),
+    "Skyscraper (X+2,Y+0) -> Skyscraper (X+3,Y-1) (Southwest)": (COG | Has("UFO Throw")),
     "S Plaza (X-2,Y-3) (Main) -> S Plaza (X-2,Y-3) (South)": (
         HAS_SS_NORMAL | Has("Walk-the-Dog") | Has("Wall-Dash") | Has("UFO Throw") | Has("Wall-Ride")
     ),
