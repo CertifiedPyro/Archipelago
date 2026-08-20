@@ -233,11 +233,8 @@ ENTRANCE_RULES: dict[str, Rule] = {
     "Faria Sewers (X+8,Y+4) (East) -> Faria Sewers (X+8,Y+4) (West)": (Has("Wall-Dash") | Has("Wall-Ride")),
     "Skyscraper (X+2,Y-5) -> Skyscraper (X+1,Y-5)": (COG),
     "Skyscraper (X+1,Y-4) -> Skyscraper (X+0,Y-4)": (Has("Skyscraper (X+1,Y-4): Combat")),
-    "Skyscraper (X+1,Y-4) -> Skyscraper (X+1,Y-3)": (Has("UFO Throw") | (Has("Wall-Ride") & Has("Wall-Dash"))),
-    "Skyscraper (X+2,Y-4) -> Skyscraper (X+3,Y-4) (Main)": (
-        (COG & Has("Offstring Throw")) | (Has("Wall-Ride") & Has("Wall-Dash"))
-    ),
-    "Skyscraper (X+2,Y-4) -> Skyscraper (X+1,Y-3)": (
+    "Skyscraper (X+2,Y-4) -> Skyscraper (X+3,Y-4) (Main)": (Has("Wall-Ride") & Has("Wall-Dash")),
+    "Skyscraper (X+2,Y-4) -> Skyscraper (X+1,Y-3) (Main)": (
         (COG & Has("Skyscraper (X+1,Y-5): Key") & Has("Skyscraper (X+4,Y-5): Key"))
         | (DIFF_HARD & Has("Wall-Ride") & Has("Wall-Dash"))
     ),
@@ -250,13 +247,16 @@ ENTRANCE_RULES: dict[str, Rule] = {
     "Skyscraper (X+3,Y-4) (Main) -> Skyscraper (X+3,Y-4) (Southeast)": (
         (COG & Has("Offstring Throw")) | Has("UFO Throw") | (COG & Has("Wall-Dash") & DIFF_HARD)
     ),
-    "Skyscraper (X+1,Y-3) -> Skyscraper (X+1,Y-4)": (
+    "Skyscraper (X+1,Y-3) (Main) -> Skyscraper (X+1,Y-3) (North)": (
         (COG & Has("Offstring Throw")) | Has("UFO Throw") | (Has("Wall-Dash") & Has("Wall-Ride") & DIFF_HARD)
     ),
-    "Skyscraper (X+1,Y-3) -> Skyscraper (X+0,Y-2) (East)": (Has("UFO Throw")),
+    "Skyscraper (X+1,Y-3) (Main) -> Skyscraper (X+0,Y-2) (East)": (Has("UFO Throw")),
+    "Skyscraper (X+1,Y-3) (North) -> Skyscraper (X+1,Y-3) (Main)": (
+        Has("UFO Throw") | (Has("Wall-Ride") & Has("Wall-Dash"))
+    ),
     "Skyscraper (X+0,Y-2) (West) -> Skyscraper (X+0,Y-4)": (Has("UFO Throw") | Has("Wall-Ride")),
     "Skyscraper (X+0,Y-2) (West) -> Skyscraper (X+0,Y-2) (East)": (Has("UFO Throw") | COG),
-    "Skyscraper (X+0,Y-2) (East) -> Skyscraper (X+1,Y-3)": (Has("UFO Throw") | Has("Wall-Dash")),
+    "Skyscraper (X+0,Y-2) (East) -> Skyscraper (X+1,Y-3) (Main)": (Has("UFO Throw") | Has("Wall-Dash")),
     "Skyscraper (X+0,Y-2) (East) -> Skyscraper (X+2,Y-2) (West)": (
         Has("Skyscraper (X+2,Y-1): Key") | Has("Wall-Ride") | Has("UFO Throw")
     ),
@@ -265,10 +265,10 @@ ENTRANCE_RULES: dict[str, Rule] = {
         Has("Skyscraper (X+2,Y-1): Key") | Has("Wall-Ride") | Has("Wall-Dash") | Has("UFO Throw")
     ),
     "Skyscraper (X+2,Y-2) (West) -> Skyscraper (X+2,Y-2) (East)": (
-        Has("Skyscraper (X+2,Y-2) (West): Combat") | Has("Wall-Ride") | HAS_MID_AIR_UFO
+        Has("Skyscraper (X+2,Y-2) (West): Combat") | Has("Wall-Ride")
     ),
     "Skyscraper (X+2,Y-2) (East) -> Skyscraper (X+2,Y-2) (West)": (
-        Has("Skyscraper (X+2,Y-2) (West): Combat") | Has("Wall-Ride") | HAS_MID_AIR_UFO
+        Has("Skyscraper (X+2,Y-2) (West): Combat") | Has("Wall-Ride")
     ),
     "Skyscraper (X+2,Y-1) -> Skyscraper (X+3,Y-1) (North)": (Has("UFO Throw") | Has("Wall-Dash")),
     "Skyscraper (X+3,Y-1) (North) -> Skyscraper (X+3,Y-4) (Main)": (

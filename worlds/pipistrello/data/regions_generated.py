@@ -1148,11 +1148,18 @@ ROOMS: list[RoomData] = [
         sort_key="70296 (Southeast)",
     ),
     RoomData(
-        room_label="SlimeCorp Skyscraper (X+1, Y-3) - lor220",
+        room_label="SlimeCorp Skyscraper (X+1, Y-3) - lor220 (Main)",
         room_area="SlimeCorp Skyscraper",
-        region_name="Skyscraper (X+1,Y-3)",
+        region_name="Skyscraper (X+1,Y-3) (Main)",
         global_room_id="skyscraper/lor220",
-        sort_key="70097",
+        sort_key="70097 (Main)",
+    ),
+    RoomData(
+        room_label="SlimeCorp Skyscraper (X+1, Y-3) - lor220 (North)",
+        room_area="SlimeCorp Skyscraper",
+        region_name="Skyscraper (X+1,Y-3) (North)",
+        global_room_id="skyscraper/lor220",
+        sort_key="70097 (North)",
     ),
     RoomData(
         room_label="SlimeCorp Skyscraper (X+0, Y-2) - lor2 (West)",
@@ -1982,18 +1989,13 @@ CONNECTIONS: list[ConnectionData] = [
         start_region_name="Skyscraper (X+1,Y-4)", end_region_name="Skyscraper (X+0,Y-4)", rule_strs=["Combat 3"]
     ),
     ConnectionData(
-        start_region_name="Skyscraper (X+1,Y-4)",
-        end_region_name="Skyscraper (X+1,Y-3)",
-        rule_strs=["ufo", "ride, dash"],
-    ),
-    ConnectionData(
         start_region_name="Skyscraper (X+2,Y-4)",
         end_region_name="Skyscraper (X+3,Y-4) (Main)",
-        rule_strs=["cog, off", "ride, dash"],
+        rule_strs=["ride, dash"],
     ),
     ConnectionData(
         start_region_name="Skyscraper (X+2,Y-4)",
-        end_region_name="Skyscraper (X+1,Y-3)",
+        end_region_name="Skyscraper (X+1,Y-3) (Main)",
         rule_strs=["cog, Key 3, Key 4", "hard, ride, dash"],
     ),
     ConnectionData(
@@ -2023,15 +2025,28 @@ CONNECTIONS: list[ConnectionData] = [
         rule_strs=["none"],
     ),
     ConnectionData(
-        start_region_name="Skyscraper (X+1,Y-3)",
-        end_region_name="Skyscraper (X+1,Y-4)",
+        start_region_name="Skyscraper (X+1,Y-3) (North)", end_region_name="Skyscraper (X+1,Y-4)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+1,Y-4)", end_region_name="Skyscraper (X+1,Y-3) (North)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+1,Y-3) (Main)",
+        end_region_name="Skyscraper (X+1,Y-3) (North)",
         rule_strs=["cog, off", "ufo", "dash, ride, hard"],
     ),
     ConnectionData(
-        start_region_name="Skyscraper (X+1,Y-3)", end_region_name="Skyscraper (X+2,Y-4)", rule_strs=["none"]
+        start_region_name="Skyscraper (X+1,Y-3) (Main)", end_region_name="Skyscraper (X+2,Y-4)", rule_strs=["none"]
     ),
     ConnectionData(
-        start_region_name="Skyscraper (X+1,Y-3)", end_region_name="Skyscraper (X+0,Y-2) (East)", rule_strs=["ufo"]
+        start_region_name="Skyscraper (X+1,Y-3) (Main)",
+        end_region_name="Skyscraper (X+0,Y-2) (East)",
+        rule_strs=["ufo"],
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+1,Y-3) (North)",
+        end_region_name="Skyscraper (X+1,Y-3) (Main)",
+        rule_strs=["ufo", "ride, dash"],
     ),
     ConnectionData(
         start_region_name="Skyscraper (X+0,Y-2) (West)",
@@ -2045,7 +2060,7 @@ CONNECTIONS: list[ConnectionData] = [
     ),
     ConnectionData(
         start_region_name="Skyscraper (X+0,Y-2) (East)",
-        end_region_name="Skyscraper (X+1,Y-3)",
+        end_region_name="Skyscraper (X+1,Y-3) (Main)",
         rule_strs=["ufo", "dash"],
     ),
     ConnectionData(
@@ -2069,12 +2084,12 @@ CONNECTIONS: list[ConnectionData] = [
     ConnectionData(
         start_region_name="Skyscraper (X+2,Y-2) (West)",
         end_region_name="Skyscraper (X+2,Y-2) (East)",
-        rule_strs=["Combat 2", "ride", "midair ufo"],
+        rule_strs=["Combat 2", "ride"],
     ),
     ConnectionData(
         start_region_name="Skyscraper (X+2,Y-2) (East)",
         end_region_name="Skyscraper (X+2,Y-2) (West)",
-        rule_strs=["Combat 2", "ride", "midair ufo"],
+        rule_strs=["Combat 2", "ride"],
     ),
     ConnectionData(
         start_region_name="Skyscraper (X+2,Y-2) (East)",
@@ -2085,9 +2100,6 @@ CONNECTIONS: list[ConnectionData] = [
         start_region_name="Skyscraper (X+3,Y-4) (Main)",
         end_region_name="Skyscraper (X+2,Y-2) (East)",
         rule_strs=["none"],
-    ),
-    ConnectionData(
-        start_region_name="Skyscraper (X+2,Y-1)", end_region_name="Skyscraper (X+0,Y-2) (East)", rule_strs=["none"]
     ),
     ConnectionData(
         start_region_name="Skyscraper (X+2,Y-1)",
