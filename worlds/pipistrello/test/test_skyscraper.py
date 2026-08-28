@@ -2,18 +2,17 @@ from options import Difficulty
 from rule_builder.rules import False_
 
 from ..constants import Moves as M
-from ..world import PipWorld
 from .bases import PipTestBase
 
 
-class TestSkyscraperNormalLogic(PipTestBase):
+class TestSkyscraperExpertLogic(PipTestBase):
     run_default_tests = False
     options = {
-        "difficulty": Difficulty.option_normal,
+        "difficulty": Difficulty.option_expert,
     }
 
     def test_staff_id(self) -> None:
-        set_origin_region(self.world)
+        self._set_origin_region()
         staff_id = self.world.get_location("Skyscraper (X+0,Y-4): Staff ID")
         possible_items = {
             "Offstring Throw": [M.OFF],
@@ -23,7 +22,7 @@ class TestSkyscraperNormalLogic(PipTestBase):
         self.assert_access_dependency([staff_id], possible_items.values())
 
     def test_starting_room(self) -> None:
-        set_origin_region(self.world)
+        self._set_origin_region()
         start_room_east = self.world.get_region("Skyscraper (X+0,Y-2) (East)")
 
         with self.subTest("Test east side of starting room is reachable with vanilla logic"):
@@ -38,8 +37,8 @@ class TestSkyscraperNormalLogic(PipTestBase):
             }
             self.assert_access_dependency([start_room_east], possible_items.values())
 
-    def test_key_room(self) -> None:
-        set_origin_region(self.world)
+    def test_keys_room(self) -> None:
+        self._set_origin_region()
         key_room = self.world.get_region("Skyscraper (X+3,Y-4) (Main)")
         possible_items = {
             "Offstring Throw": [M.OFF],
@@ -48,6 +47,5 @@ class TestSkyscraperNormalLogic(PipTestBase):
         }
         self.assert_access_dependency([key_room], possible_items.values())
 
-
-def set_origin_region(world: PipWorld) -> None:
-    world.origin_region_name = "Skyscraper (X+0,Y-2) (West)"
+    def _set_origin_region(self) -> None:
+        self.world.origin_region_name = "Skyscraper (X+0,Y-2) (West)"

@@ -245,10 +245,10 @@ ENTRANCE_RULES: dict[str, Rule] = {
         COG | (DIFF_HARD & Has("Wall-Dash") & Has("Wall-Ride")) | Has("UFO Throw")
     ),
     "Skyscraper (X+3,Y-4) (Main) -> Skyscraper (X+3,Y-4) (Southeast)": (
-        (COG & Has("Offstring Throw")) | Has("UFO Throw") | (COG & Has("Wall-Dash") & DIFF_HARD)
+        (COG & Has("Offstring Throw")) | Has("UFO Throw") | (DIFF_HARD & COG & Has("Wall-Dash"))
     ),
     "Skyscraper (X+1,Y-3) (Main) -> Skyscraper (X+1,Y-3) (North)": (
-        (COG & Has("Offstring Throw")) | Has("UFO Throw") | (Has("Wall-Dash") & Has("Wall-Ride") & DIFF_HARD)
+        (COG & Has("Offstring Throw")) | Has("UFO Throw") | (DIFF_HARD & Has("Wall-Dash") & Has("Wall-Ride"))
     ),
     "Skyscraper (X+1,Y-3) (Main) -> Skyscraper (X+0,Y-2) (East)": (Has("UFO Throw")),
     "Skyscraper (X+1,Y-3) (North) -> Skyscraper (X+1,Y-3) (Main)": (
@@ -277,17 +277,15 @@ ENTRANCE_RULES: dict[str, Rule] = {
     "Skyscraper (X+3,Y-1) (North) -> Skyscraper (X+2,Y-1)": (
         (Has("Skyscraper (X+3,Y-1) (North): Combat") & COG)
         | (Has("Skyscraper (X+3,Y-1) (North): Combat") & Has("UFO Throw"))
-        | (Has("Wall-Dash") & Has("Wall-Ride"))
         | (Has("UFO Throw") & Has("Wall-Ride"))
     ),
     "Skyscraper (X+3,Y-1) (North) -> Skyscraper (X+4,Y-1)": (
         (Has("Skyscraper (X+3,Y-1) (North): Combat") & COG)
         | (Has("Skyscraper (X+3,Y-1) (North): Combat") & Has("UFO Throw"))
-        | (Has("Wall-Dash") & Has("Wall-Ride"))
         | (Has("UFO Throw") & Has("Wall-Ride"))
     ),
     "Skyscraper (X+3,Y-1) (Southwest) -> Skyscraper (X+3,Y-1) (North)": (COG & Has("Offstring Throw")),
-    "Skyscraper (X+4,Y-1) -> Skyscraper (X+3,Y-4) (Southeast)": (Has("Wall-Dash") & Has("Wall-Ride") & DIFF_EXPERT),
+    "Skyscraper (X+4,Y-1) -> Skyscraper (X+3,Y-4) (Southeast)": (DIFF_EXPERT & Has("Wall-Dash") & Has("Wall-Ride")),
     "Skyscraper (X+2,Y+0) -> Skyscraper (X+3,Y-1) (Southwest)": (COG | Has("UFO Throw")),
     "S Plaza (X-2,Y-3) (Main) -> S Plaza (X-2,Y-3) (South)": (
         HAS_SS_NORMAL | Has("Walk-the-Dog") | Has("Wall-Dash") | Has("UFO Throw") | Has("Wall-Ride")

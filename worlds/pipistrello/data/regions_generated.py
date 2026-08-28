@@ -2011,7 +2011,7 @@ CONNECTIONS: list[ConnectionData] = [
     ConnectionData(
         start_region_name="Skyscraper (X+3,Y-4) (Main)",
         end_region_name="Skyscraper (X+3,Y-4) (Southeast)",
-        rule_strs=["cog, off", "ufo", "cog, dash, hard"],
+        rule_strs=["cog, off", "ufo", "hard, cog, dash"],
     ),
     ConnectionData(
         start_region_name="Skyscraper (X+3,Y-4) (North)", end_region_name="Skyscraper (X+3,Y-5)", rule_strs=["none"]
@@ -2025,15 +2025,15 @@ CONNECTIONS: list[ConnectionData] = [
         rule_strs=["none"],
     ),
     ConnectionData(
-        start_region_name="Skyscraper (X+1,Y-3) (North)", end_region_name="Skyscraper (X+1,Y-4)", rule_strs=[]
+        start_region_name="Skyscraper (X+1,Y-3) (North)", end_region_name="Skyscraper (X+1,Y-4)", rule_strs=["none"]
     ),
     ConnectionData(
-        start_region_name="Skyscraper (X+1,Y-4)", end_region_name="Skyscraper (X+1,Y-3) (North)", rule_strs=[]
+        start_region_name="Skyscraper (X+1,Y-4)", end_region_name="Skyscraper (X+1,Y-3) (North)", rule_strs=["none"]
     ),
     ConnectionData(
         start_region_name="Skyscraper (X+1,Y-3) (Main)",
         end_region_name="Skyscraper (X+1,Y-3) (North)",
-        rule_strs=["cog, off", "ufo", "dash, ride, hard"],
+        rule_strs=["cog, off", "ufo", "hard, dash, ride"],
     ),
     ConnectionData(
         start_region_name="Skyscraper (X+1,Y-3) (Main)", end_region_name="Skyscraper (X+2,Y-4)", rule_strs=["none"]
@@ -2114,12 +2114,12 @@ CONNECTIONS: list[ConnectionData] = [
     ConnectionData(
         start_region_name="Skyscraper (X+3,Y-1) (North)",
         end_region_name="Skyscraper (X+2,Y-1)",
-        rule_strs=["Combat 1, cog", "Combat 1, ufo", "dash, ride", "ufo, ride"],
+        rule_strs=["Combat 1, cog", "Combat 1, ufo", "ufo, ride"],
     ),
     ConnectionData(
         start_region_name="Skyscraper (X+3,Y-1) (North)",
         end_region_name="Skyscraper (X+4,Y-1)",
-        rule_strs=["Combat 1, cog", "Combat 1, ufo", "dash, ride", "ufo, ride"],
+        rule_strs=["Combat 1, cog", "Combat 1, ufo", "ufo, ride"],
     ),
     ConnectionData(
         start_region_name="Skyscraper (X+3,Y-1) (Southwest)",
@@ -2129,7 +2129,7 @@ CONNECTIONS: list[ConnectionData] = [
     ConnectionData(
         start_region_name="Skyscraper (X+4,Y-1)",
         end_region_name="Skyscraper (X+3,Y-4) (Southeast)",
-        rule_strs=["dash, ride, expert"],
+        rule_strs=["expert, dash, ride"],
     ),
     ConnectionData(
         start_region_name="Skyscraper (X+2,Y+0)",
