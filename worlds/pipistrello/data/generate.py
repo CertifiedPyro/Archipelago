@@ -18,8 +18,8 @@ AREA_NAMES = {
     "Faria Slimer Borough": "Faria",
     "Faria Slimer Borough (Interiors)": "Faria Interiors",
     "Faria Slimer Borough (Sewers)": "Faria Sewers",
-    # "SlimeCorp Excavation Site": "SES",
     "SlimeCorp Skyscraper": "Skyscraper",
+    "SlimeCorp Excavation Site": "Excavation",
 }
 AREA_NAMES_KEYS = list(AREA_NAMES.keys())
 

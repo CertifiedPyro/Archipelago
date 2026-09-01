@@ -3,9 +3,12 @@
 from __future__ import annotations
 
 from rule_builder.options import OptionFilter
-from rule_builder.rules import Has, HasAll, HasFromList, Rule, True_
+from rule_builder.rules import Has, HasAll, HasAny, HasFromList, Rule, True_
 
 from ..options import Difficulty
+
+DIFF_HARD = [OptionFilter(Difficulty, Difficulty.option_hard, operator="ge")]
+DIFF_EXPERT = [OptionFilter(Difficulty, Difficulty.option_expert, operator="ge")]
 
 BP_PLUS1_UPGRADES = ["Bat Pouch", "Bat Backpack"]
 BP_PLUS1 = Has("BP Shard", 2) | HasFromList(*BP_PLUS1_UPGRADES, count=1)
@@ -16,17 +19,21 @@ BP_PLUS2 = (
 )
 
 COIN_FLIP_PLUS = HasAll("Coin-Flip", "Prodigy")
-HAS_MID_AIR_UFO = Has("UFO Throw", options=[OptionFilter(Difficulty, Difficulty.option_hard)])
-HAS_SS_PLUS = Has("Progressive Skipping Stone Badge", 2) & BP_PLUS1  # Requires 4 BP (from base 3 BP)
-HAS_SS_NORMAL = HAS_SS_PLUS | (Has("Progressive Skipping Stone Badge", 1) & BP_PLUS2)  # Requires 5 BP (from base 3 BP)
+SS_PLUS = Has("Progressive Skipping Stone Badge", 2) & BP_PLUS1  # Requires 4 BP (from base 3 BP)
+SS_NORMAL = SS_PLUS | (Has("Progressive Skipping Stone Badge", 1) & BP_PLUS2)  # Requires 5 BP (from base 3 BP)
 
-DIFF_HARD = [OptionFilter(Difficulty, Difficulty.option_hard, operator="ge")]
-DIFF_EXPERT = [OptionFilter(Difficulty, Difficulty.option_expert, operator="ge")]
+MID_AIR_UFO = Has("UFO Throw") & DIFF_HARD
+DASH_MIDAIR_UFO = HasAll("Wall-Dash", "UFO Throw") & DIFF_HARD
+DASH_MIDAIR_OFF = HasAll("Wall-Dash", "Offstring Throw") & DIFF_HARD
+TRICK_DASH = Has("Wall-Dash") & (DIFF_EXPERT | (DIFF_HARD & HasAny("Offstring Throw", "UFO Throw")))
+DROP = HasAny("Parry", "Around-the-World", "Coin-Flip") & DIFF_HARD
+SLEEPER_DROP = Has("Sleeper") & DROP & DIFF_HARD
 
 BOMB = True_()
 BUOY = True_()
 CHEST = True_()
 COG = True_()
+HOOK = True_()
 KEY = True_()
 LEVER = True_()
 MANHOLE = True_()
@@ -53,11 +60,12 @@ ENTRANCE_RULES: dict[str, Rule] = {
     "Faria (X+7,Y-4) (Main) -> Faria (X+8,Y-4)": (Has("Wall-Dash") | Has("UFO Throw") | Has("Wall-Ride")),
     "Faria (X+8,Y-4) -> Faria (X+8,Y-3) (Northwest)": (Has("Faria (X+8,Y-4): Combat")),
     "Faria (X+4,Y-3) (Main) -> Faria (X+7,Y-4) (Main)": (
-        HAS_SS_NORMAL | Has("Walk-the-Dog") | Has("Wall-Dash") | Has("UFO Throw") | Has("Wall-Ride") | DIFF_HARD
+        SS_NORMAL | Has("Walk-the-Dog") | Has("Wall-Dash") | Has("UFO Throw") | Has("Wall-Ride") | DIFF_HARD
     ),
     "Faria (X+4,Y-3) (Main) -> Faria (X+4,Y+0) (North Alcove)": (
         Has("Wall-Dash") | Has("UFO Throw") | Has("Wall-Ride")
     ),
+    "Faria (X+8,Y-3) (Main) -> Faria (X+8,Y-3) (Dungeon Entrance)": (Has("Staff ID")),
     "Faria (X+8,Y-3) (Northwest) -> Faria (X+8,Y-3) (Northeast)": (
         Has("Wall-Dash") | Has("UFO Throw") | Has("Wall-Ride")
     ),
@@ -70,7 +78,7 @@ ENTRANCE_RULES: dict[str, Rule] = {
         (Has("Wall-Dash") & Has("Faria (X+2,Y-2): Lever (left)") & Has("Faria (X+2,Y-2): Far Lever"))
         | (Has("Wall-Ride") & Has("Faria (X+2,Y-2): Lever (left)") & Has("Faria (X+2,Y-2): Lever (right)"))
         | (Has("Wall-Ride") & Has("Faria (X+2,Y-2): Lever (left)") & Has("Faria (X+2,Y-2): Far Lever"))
-        | (HAS_MID_AIR_UFO & Has("Faria (X+2,Y-2): Lever (left)") & Has("Faria (X+2,Y-2): Far Lever"))
+        | (MID_AIR_UFO & Has("Faria (X+2,Y-2): Lever (left)") & Has("Faria (X+2,Y-2): Far Lever"))
     ),
     "Faria (X+10,Y-2) (Main) -> Faria (X+10,Y-2) (East)": (Has("Wall-Dash") | Has("UFO Throw") | Has("Wall-Ride")),
     "Faria (X+10,Y-2) (East) -> Faria (X+10,Y-2) (Main)": (Has("Wall-Dash") | Has("UFO Throw") | Has("Wall-Ride")),
@@ -84,22 +92,25 @@ ENTRANCE_RULES: dict[str, Rule] = {
         Has("S Plaza (X-2,Y-3) (Southeast): Mole Brother 1") & Has("Faria (X+7,Y-4) (West Alcove): Mole Brother 2")
     ),
     "Faria (X+10,Y+2) (Main) -> Faria (X+10,Y+2) (Northeast)": (
-        (Has("Walk-the-Dog") & HAS_SS_NORMAL)
+        (Has("Walk-the-Dog") & SS_NORMAL)
         | Has("Wall-Dash")
-        | (Has("UFO Throw") & HAS_SS_PLUS)
-        | (Has("Wall-Ride") & HAS_SS_PLUS)
+        | (Has("UFO Throw") & SS_PLUS)
+        | (Has("Wall-Ride") & SS_PLUS)
     ),
     "Faria (X+10,Y+2) (Main) -> Faria (X+11,Y+2)": (
         Has("Walk-the-Dog")
         | Has("Wall-Dash")
-        | HAS_MID_AIR_UFO
-        | (Has("UFO Throw") & HAS_SS_NORMAL)
-        | (Has("Wall-Ride") & HAS_SS_NORMAL)
+        | MID_AIR_UFO
+        | (Has("UFO Throw") & SS_NORMAL)
+        | (Has("Wall-Ride") & SS_NORMAL)
     ),
     "Faria (X+10,Y+2) (Main) -> Faria (X+10,Y+4)": (
         Has("Walk-the-Dog")
-        | (DIFF_HARD & Has("Wall-Dash") & HAS_SS_PLUS & Has("Wall-Ride"))
-        | (HAS_MID_AIR_UFO & HAS_SS_PLUS)
+        | (Has("Wall-Dash") & SS_PLUS & Has("Wall-Ride"))
+        | (MID_AIR_UFO & SS_PLUS)
+        | (DASH_MIDAIR_UFO & SS_PLUS)
+        | (Has("UFO Throw") & Has("Wall-Dash") & SS_PLUS)
+        | (Has("UFO Throw") & Has("Wall-Dash") & Has("Wall-Ride") & SS_NORMAL)
     ),
     "Faria (X+2,Y+3) -> S Plaza (X-2,Y-3) (Southeast)": (Has("Faria (X+2,Y+3): Combat ")),
     "Faria (X+2,Y+3) -> Faria (X+3,Y+3)": (Has("Faria (X+2,Y+3): Combat ")),
@@ -111,68 +122,68 @@ ENTRANCE_RULES: dict[str, Rule] = {
     "Faria (X+7,Y+3) -> Faria (X+9,Y+2)": (Has("Faria (X+7,Y+3): Lever")),
     "Faria (X+3,Y+4) -> Faria (X+1,Y+5)": (Has("Faria (X+3,Y+4): Combat")),
     "Faria (X+4,Y+4) -> Faria (X+3,Y+4)": (
-        (HAS_SS_NORMAL & BUOY)
+        (SS_NORMAL & BUOY)
         | Has("Walk-the-Dog")
-        | (Has("Wall-Dash") & HAS_SS_PLUS)
-        | (Has("Wall-Ride") & HAS_SS_PLUS)
+        | (Has("Wall-Dash") & SS_PLUS)
+        | (Has("Wall-Ride") & SS_PLUS)
         | (Has("Wall-Dash") & Has("Wall-Ride"))
     ),
-    "Faria (X+4,Y+4) -> Faria (X+5,Y+4)": ((HAS_SS_NORMAL & BUOY) | HAS_SS_PLUS | Has("Walk-the-Dog")),
-    "Faria (X+6,Y+4) -> Faria (X+6,Y+5)": (HAS_SS_NORMAL | BUOY),
+    "Faria (X+4,Y+4) -> Faria (X+5,Y+4)": ((SS_NORMAL & BUOY) | SS_PLUS | Has("Walk-the-Dog")),
+    "Faria (X+6,Y+4) -> Faria (X+6,Y+5)": (SS_NORMAL | BUOY),
     "Faria (X+7,Y+4) (North) -> Faria (X+7,Y+4) (South)": (
-        HAS_SS_NORMAL | Has("Walk-the-Dog") | Has("Wall-Dash") | Has("UFO Throw")
+        SS_NORMAL | Has("Walk-the-Dog") | Has("Wall-Dash") | Has("UFO Throw")
     ),
     "Faria (X+7,Y+4) (North) -> Faria (X+6,Y+4)": (Has("Faria (X+7,Y+4) (South): Key")),
     "Faria (X+8,Y+4) -> Faria (X+7,Y+4) (North)": (
         Has("Walk-the-Dog")
-        | (Has("Wall-Dash") & HAS_SS_NORMAL & Has("Wall-Ride"))
-        | (Has("Wall-Ride") & HAS_SS_PLUS)
+        | (Has("Wall-Dash") & SS_NORMAL & Has("Wall-Ride"))
+        | (Has("Wall-Ride") & SS_PLUS)
         | (DIFF_HARD & Has("Wall-Ride") & Has("Wall-Dash"))
     ),
-    "Faria (X+10,Y+4) -> Faria (X+11,Y+4)": (Has("Walk-the-Dog") | (Has("Wall-Ride") & HAS_SS_NORMAL)),
-    "Faria (X+11,Y+4) -> Faria (X+10,Y+2) (Northeast)": (Has("Walk-the-Dog") | (Has("Wall-Ride") & HAS_SS_NORMAL)),
-    "Faria (X+10,Y+2) (Northeast) -> Faria (X+11,Y+4)": (Has("Walk-the-Dog") | (Has("Wall-Ride") & HAS_SS_NORMAL)),
-    "Faria (X+11,Y+4) -> Faria (X+11,Y+5)": (HAS_SS_NORMAL | Has("Walk-the-Dog") | Has("UFO Throw") | Has("Wall-Ride")),
+    "Faria (X+10,Y+4) -> Faria (X+11,Y+4)": (Has("Walk-the-Dog") | (Has("Wall-Ride") & SS_NORMAL)),
+    "Faria (X+11,Y+4) -> Faria (X+10,Y+2) (Northeast)": (Has("Walk-the-Dog") | (Has("Wall-Ride") & SS_NORMAL)),
+    "Faria (X+10,Y+2) (Northeast) -> Faria (X+11,Y+4)": (Has("Walk-the-Dog") | (Has("Wall-Ride") & SS_NORMAL)),
+    "Faria (X+11,Y+4) -> Faria (X+11,Y+5)": (SS_NORMAL | Has("Walk-the-Dog") | Has("UFO Throw") | Has("Wall-Ride")),
     "Faria (X+1,Y+5) -> S Plaza (X-1,Y+4) (Southeast Entrance)": (
         (Has("Walk-the-Dog") & Has("Wall-Ride"))
         | (Has("Wall-Dash") & Has("Wall-Ride"))
-        | (Has("Wall-Ride") & HAS_SS_PLUS)
+        | (Has("Wall-Ride") & SS_PLUS)
         | BUOY
     ),
     "Faria (X+4,Y+5) -> Faria (X+4,Y+4)": (
         (Has("Walk-the-Dog") & BUOY)
         | (Has("Walk-the-Dog") & Has("Wall-Ride"))
         | (Has("Wall-Dash") & Has("Wall-Ride"))
-        | (Has("Wall-Ride") & HAS_SS_PLUS)
+        | (Has("Wall-Ride") & SS_PLUS)
     ),
     "Faria (X+5,Y+5) -> Faria (X+4,Y+5)": (
-        (HAS_SS_PLUS & BUOY)
+        (SS_PLUS & BUOY)
         | (Has("Walk-the-Dog") & BUOY)
-        | (Has("Wall-Dash") & HAS_SS_NORMAL & BUOY)
+        | (Has("Wall-Dash") & SS_NORMAL & BUOY)
         | (Has("Wall-Ride") & BUOY)
     ),
     "Faria (X+6,Y+5) -> Faria (X+5,Y+5)": (
         (Has("Walk-the-Dog") & BUOY)
-        | (Has("Walk-the-Dog") & HAS_SS_NORMAL)
+        | (Has("Walk-the-Dog") & SS_NORMAL)
         | (Has("Wall-Dash") & BUOY)
-        | (Has("Wall-Dash") & HAS_SS_NORMAL)
+        | (Has("Wall-Dash") & SS_NORMAL)
         | (Has("UFO Throw") & Has("Wall-Ride"))
         | (Has("Wall-Ride") & BUOY)
-        | (Has("Wall-Ride") & HAS_SS_NORMAL)
+        | (Has("Wall-Ride") & SS_NORMAL)
     ),
     "Faria (X+9,Y+5) -> Faria (X+9,Y+4)": (
-        Has("Walk-the-Dog") | (Has("Wall-Dash") & Has("Wall-Ride")) | (Has("Wall-Ride") & HAS_SS_PLUS)
+        Has("Walk-the-Dog") | (Has("Wall-Dash") & Has("Wall-Ride")) | (Has("Wall-Ride") & SS_PLUS)
     ),
     "Faria (X+10,Y+5) -> Faria (X+9,Y+5)": (
         Has("Walk-the-Dog")
-        | (Has("Wall-Ride") & HAS_SS_PLUS)
-        | (DIFF_HARD & Has("Wall-Ride") & HAS_SS_NORMAL)
+        | (Has("Wall-Ride") & SS_PLUS)
+        | (DIFF_HARD & Has("Wall-Ride") & SS_NORMAL)
         | (DIFF_HARD & Has("Wall-Ride") & Has("Wall-Dash"))
     ),
     "Faria (X+11,Y+5) -> Faria (X+10,Y+5)": (
         Has("Walk-the-Dog")
-        | (DIFF_HARD & Has("Wall-Ride") & HAS_SS_PLUS)
-        | (DIFF_HARD & Has("Wall-Dash") & Has("Wall-Ride") & HAS_SS_NORMAL)
+        | (DIFF_HARD & Has("Wall-Ride") & SS_PLUS)
+        | (DIFF_HARD & Has("Wall-Dash") & Has("Wall-Ride") & SS_NORMAL)
         | (DIFF_EXPERT & Has("Wall-Dash") & Has("Wall-Ride"))
     ),
     "Faria Sewers (X+3,Y-7) -> Faria Sewers (X+4,Y-7) (Main)": (
@@ -203,11 +214,7 @@ ENTRANCE_RULES: dict[str, Rule] = {
     ),
     "Faria Sewers (X+6,Y-1) -> Faria Sewers (X+6,Y+0) (North)": (Has("Faria Sewers (X+6,Y-1): Combat")),
     "Faria Sewers (X+2,Y+0) -> Faria Sewers (X+2,Y-1)": (
-        HAS_SS_PLUS
-        | Has("Walk-the-Dog")
-        | HAS_MID_AIR_UFO
-        | (Has("Wall-Ride") & HAS_SS_NORMAL)
-        | (DIFF_EXPERT & Has("Wall-Ride"))
+        SS_PLUS | Has("Walk-the-Dog") | MID_AIR_UFO | DASH_MIDAIR_UFO | (Has("Wall-Ride") & SS_NORMAL)
     ),
     "Faria Sewers (X+6,Y+0) (East) -> Faria Sewers (X+6,Y+0) (Main)": (
         Has("Faria Sewers (X+6,Y+0) (South): South Lever")
@@ -222,15 +229,184 @@ ENTRANCE_RULES: dict[str, Rule] = {
         Has("Offstring Throw") | Has("UFO Throw") | (DIFF_HARD & Has("Wall-Ride"))
     ),
     "Faria Sewers (X+5,Y+3) -> Faria Sewers (X+4,Y+3)": (
-        HAS_SS_NORMAL | Has("Walk-the-Dog") | Has("Wall-Dash") | Has("UFO Throw") | Has("Wall-Ride")
+        SS_NORMAL | Has("Walk-the-Dog") | Has("Wall-Dash") | Has("UFO Throw") | Has("Wall-Ride")
     ),
     "Faria Sewers (X+7,Y+3) (West) -> Faria Sewers (X+7,Y+3) (East)": (
-        Has("Wall-Dash") | (Has("Wall-Ride") & HAS_MID_AIR_UFO)
+        Has("Wall-Dash") | (Has("Wall-Ride") & MID_AIR_UFO)
     ),
     "Faria Sewers (X+8,Y+3) -> Faria Sewers (X+8,Y+4) (East)": (Has("Wall-Dash")),
     "Faria Sewers (X+4,Y+4) -> Faria Sewers (X+6,Y+4)": (Has("Faria Sewers (X+4,Y+4): Combat 2")),
     "Faria Sewers (X+8,Y+4) (West) -> Faria Sewers (X+7,Y+4)": (Has("Faria Sewers (X+8,Y+4) (West): Combat")),
     "Faria Sewers (X+8,Y+4) (East) -> Faria Sewers (X+8,Y+4) (West)": (Has("Wall-Dash") | Has("Wall-Ride")),
+    "Safe House (X+0,Y+0) -> Safe House (X+1,Y+0)": (Has("Faria Mega-Battery")),
+    "Excavation (X-3,Y-2) -> Excavation (X+0,Y-2)": (Has("Wall-Ride")),
+    "Excavation (X+0,Y-2) -> Excavation (X+3,Y-2)": (Has("Wall-Ride") & Has("Wall-Dash")),
+    "Excavation (X+4,Y-2) (Main) -> Excavation (X+4,Y-2) (South Money Bag)": (
+        BOMB | Has("Wall-Ride") | Has("UFO Throw")
+    ),
+    "Excavation (X+4,Y-2) (West) -> Excavation (X+4,Y-2) (Main)": (BOMB),
+    "Excavation (X+4,Y-2) (South Money Bag) -> Excavation (X+4,Y-2) (Main)": (
+        (Has("Wall-Dash") & Has("Wall-Ride")) | MID_AIR_UFO | (Has("UFO Throw") & Has("Wall-Dash"))
+    ),
+    "Excavation (X+6,Y-2) -> Excavation (X+5,Y-2)": (Has("Wall-Ride")),
+    "Excavation (X-3,Y-1) -> Excavation (X-2,Y-1) (Northwest)": (
+        Has("Excavation (X-3,Y-1): North Lever") & Has("Excavation (X-3,Y-1): South Lever")
+    ),
+    "Excavation (X-2,Y-1) (Main) -> Excavation (X-3,Y-2)": (Has("Wall-Ride")),
+    "Excavation (X-2,Y-1) (Main) -> Excavation (X-2,Y-1) (Northwest)": (COIN_FLIP_PLUS),
+    "Excavation (X-2,Y-1) (Main) -> Excavation (X-2,Y-1) (Southwest)": (COIN_FLIP_PLUS),
+    "Excavation (X-2,Y-1) (Main) -> Excavation (X-3,Y+0)": (
+        Has("Excavation (X-2,Y-1) (Northwest): Cog") & Has("Excavation (X-2,Y-1) (Southwest): Cog")
+    ),
+    "Excavation (X-2,Y-1) (Main) -> Excavation (X-1,Y+1)": (Has("Excavation (X-3,Y+0): Key")),
+    "Excavation (X+3,Y-1) -> Excavation (X+2,Y-1)": (Has("Excavation (X+3,Y-1): Lever")),
+    "Excavation (X+5,Y-1) -> Excavation (X+5,Y-2)": (
+        Has("UFO Throw") | (BOMB & Has("Offstring Throw") & Has("Wall-Dash"))
+    ),
+    "Excavation (X+5,Y-1) -> Excavation (X+5,Y+0)": (Has("UFO Throw") | (Has("Wall-Dash") & Has("Wall-Ride"))),
+    "Excavation (X+5,Y+0) -> Excavation (X+5,Y-1)": (Has("UFO Throw") | (Has("Wall-Dash") & Has("Wall-Ride"))),
+    "Excavation (X-1,Y+0) -> Excavation (X-1,Y+1)": (Has("Wall-Ride") | Has("UFO Throw") | Has("Wall-Dash")),
+    "Excavation (X-1,Y+1) -> Excavation (X-1,Y+0)": (Has("Wall-Ride") | Has("UFO Throw") | Has("Wall-Dash")),
+    "Excavation (X+0,Y+0) (Main) -> Excavation (X-1,Y+0)": (Has("Excavation (X+0,Y+0) (Southeast): Southeast Lever")),
+    "Excavation (X+0,Y+0) (Main) -> Excavation (X+0,Y+0) (Southwest Right)": (
+        Has("Excavation (X+0,Y+0) (Southwest Right): South Lever")
+        | Has("Wall-Dash")
+        | Has("Wall-Ride")
+        | Has("UFO Throw")
+    ),
+    "Excavation (X+0,Y+0) (Main) -> Excavation (X+0,Y+0) (Southeast)": (
+        Has("Excavation (X+0,Y+0) (Southeast): Southeast Lever") | Has("Wall-Ride") | Has("UFO Throw")
+    ),
+    "Excavation (X+0,Y+0) (Main) -> Excavation (X+2,Y+1)": (Has("Wall-Dash") | Has("Wall-Ride") | Has("UFO Throw")),
+    "Excavation (X+0,Y+0) (Main) -> Excavation (X-3,Y+3)": (Has("Wall-Ride")),
+    "Excavation (X+0,Y+0) (Southwest Left) -> Excavation (X+0,Y+0) (Southwest Right)": (
+        Has("Wall-Dash") | Has("Wall-Ride") | Has("UFO Throw")
+    ),
+    "Excavation (X+0,Y+0) (Southwest Right) -> Excavation (X+0,Y+0) (Southwest Left)": (
+        Has("Wall-Dash") | Has("Wall-Ride") | Has("UFO Throw")
+    ),
+    "Excavation (X+2,Y+0) (West) -> Excavation (X+2,Y+0) (East)": (BOMB | Has("Wall-Ride") | Has("Wall-Dash")),
+    "Excavation (X+4,Y+0) -> Excavation (X+4,Y-2) (South Money Bag)": (
+        (Has("Wall-Dash") & Has("Wall-Ride") & DIFF_HARD) | (Has("Wall-Dash") & Has("UFO Throw") & DIFF_HARD)
+    ),
+    "Excavation (X+5,Y+0) -> Excavation (X+6,Y-2)": (Has("Wall-Ride")),
+    "Excavation (X-3,Y+1) -> Excavation (X-4,Y-1)": (Has("Wall-Ride")),
+    "Excavation (X-3,Y+1) -> Excavation (X-2,Y-1) (Southwest)": (Has("Excavation (X-3,Y+1): Lever")),
+    "Excavation (X+2,Y+1) -> Excavation (X+2,Y+0) (East)": (Has("UFO Throw")),
+    "Excavation (X+3,Y+1) -> Excavation (X+2,Y+1)": (
+        Has("Excavation (X+2,Y-1): Key") & Has("Excavation (X+4,Y+1): Key")
+    ),
+    "Excavation (X+3,Y+1) -> Excavation (X+4,Y+1)": (Has("Wall-Ride")),
+    "Excavation (X+4,Y+1) -> Excavation (X+5,Y+1)": (Has("Wall-Ride")),
+    "Excavation (X+4,Y+1) -> Excavation (X+4,Y+2)": (Has("Wall-Ride")),
+    "Excavation (X+5,Y+1) -> Excavation (X+5,Y+0)": (Has("Wall-Ride")),
+    "Excavation (X+2,Y+2) (West) -> Excavation (X+2,Y+2) (East)": (BOMB),
+    "Excavation (X+2,Y+2) (East) -> Excavation (X+2,Y+2) (West)": (BOMB),
+    "Excavation (X+2,Y+2) (West) -> Excavation (X+2,Y+3) (West)": (Has("Wall-Ride") | Has("UFO Throw")),
+    "Excavation (X+4,Y+2) -> Excavation (X+4,Y+3)": (Has("Excavation (X+4,Y+2): Lever")),
+    "Excavation (X-3,Y+3) -> Excavation (X-4,Y+2)": (Has("Wall-Ride")),
+    "Excavation (X+0,Y+3) -> Excavation (X+0,Y+0) (Southwest Left)": (Has("Excavation (X+0,Y+3): Combat")),
+    "Excavation (X+0,Y+3) -> Excavation (X-3,Y+3)": (Has("Excavation (X+0,Y+3): Combat")),
+    "Excavation (X+0,Y+3) -> Excavation (X+0,Y+4) (Main)": (Has("Excavation (X+0,Y+0) (Southwest Left): Key")),
+    "Excavation (X+1,Y+3) -> Excavation (X+0,Y+0) (Southeast)": (Has("Excavation (X+1,Y+3): Combat")),
+    "Excavation (X+1,Y+3) -> Excavation (X+2,Y+3) (West)": (Has("Excavation (X+1,Y+3): Combat")),
+    "Excavation (X+2,Y+3) (West) -> Excavation (X+2,Y+3) (East)": (
+        BOMB | (Has("UFO Throw") & Has("Wall-Ride")) | (Has("Wall-Ride") & DIFF_HARD) | Has("Wall-Dash")
+    ),
+    "Excavation (X+2,Y+3) (East) -> Excavation (X+2,Y+3) (West)": (
+        BOMB | (Has("Wall-Ride") & Has("Wall-Dash")) | (Has("Wall-Ride") & DIFF_HARD) | Has("UFO Throw")
+    ),
+    "Excavation (X+3,Y+3) (East) -> Excavation (X+3,Y+3) (West)": (
+        Has("Wall-Dash") | Has("Wall-Ride") | Has("UFO Throw")
+    ),
+    "Excavation (X+3,Y+3) (West) -> Excavation (X+3,Y+3) (East)": (
+        Has("Wall-Dash") | Has("Wall-Ride") | Has("UFO Throw")
+    ),
+    "Excavation (X-2,Y+4) (North) -> Excavation (X-2,Y+4) (South)": (Has("Wall-Dash") | Has("UFO Throw")),
+    "Excavation (X-2,Y+4) (South) -> Excavation (X-2,Y+4) (North)": (Has("Wall-Dash") | Has("UFO Throw")),
+    "Excavation (X-2,Y+4) (North) -> Excavation (X-2,Y+4) (Southeast)": (
+        Has("Wall-Dash") | Has("UFO Throw") | Has("Wall-Ride")
+    ),
+    "Excavation (X-2,Y+4) (Southeast) -> Excavation (X-2,Y+4) (North)": (
+        Has("Wall-Dash") | Has("UFO Throw") | Has("Wall-Ride")
+    ),
+    "Excavation (X-2,Y+4) (North) -> Excavation (X-2,Y+4) (Lever)": (DIFF_HARD & Has("Offstring Throw")),
+    "Excavation (X-2,Y+4) (South) -> Excavation (X-2,Y+4) (Southeast)": (Has("Excavation (X-2,Y+4) (Lever): Lever")),
+    "Excavation (X-2,Y+4) (Southeast) -> Excavation (X-2,Y+4) (South)": (Has("Excavation (X-2,Y+4) (Lever): Lever")),
+    "Excavation (X-2,Y+4) (South) -> Excavation (X-3,Y+6) (West)": (Has("Wall-Ride")),
+    "Excavation (X-3,Y+6) (West) -> Excavation (X-2,Y+4) (South)": (Has("Wall-Ride")),
+    "Excavation (X+0,Y+4) (Main) -> Excavation (X+0,Y+4) (Southeast)": (
+        (Has("Excavation (X+0,Y+4) (Southeast): Lever") & Has("Wall-Dash")) | Has("Wall-Ride") | Has("UFO Throw")
+    ),
+    "Excavation (X+0,Y+4) (Southeast) -> Excavation (X+0,Y+4) (Main)": (
+        (Has("Excavation (X+0,Y+4) (Southeast): Lever") & Has("Wall-Dash")) | Has("Wall-Ride") | Has("UFO Throw")
+    ),
+    "Excavation (X+1,Y+4) -> Excavation (X+1,Y+3)": (Has("Excavation (X+1,Y+4): Lever")),
+    "Excavation (X+1,Y+4) -> Excavation (X+2,Y+4)": (Has("Wall-Dash") | Has("Wall-Ride") | Has("UFO Throw")),
+    "Excavation (X+1,Y+4) -> Excavation (X+2,Y+5) (Main)": (Has("Wall-Dash") | Has("Wall-Ride") | Has("UFO Throw")),
+    "Excavation (X+1,Y+4) -> Excavation (X+0,Y+6) (East Alcove)": (Has("Wall-Ride")),
+    "Excavation (X+1,Y+4) -> Excavation (X+2,Y+6)": (Has("Excavation (X+2,Y+5) (Key): Key")),
+    "Excavation (X+3,Y+4) (West) -> Excavation (X+3,Y+4) (East)": (BOMB),
+    "Excavation (X+3,Y+4) (East) -> Excavation (X+3,Y+4) (West)": (
+        (BOMB & Has("Offstring Throw")) | (BOMB & SLEEPER_DROP) | COIN_FLIP_PLUS
+    ),
+    "Excavation (X+4,Y+4) -> Excavation (X+5,Y+1)": (Has("Wall-Ride")),
+    "Excavation (X+5,Y+1) -> Excavation (X+4,Y+4)": (Has("Wall-Ride")),
+    "Excavation (X+0,Y+5) (West) -> Excavation (X+0,Y+5) (East)": (
+        Has("Wall-Dash") | Has("Wall-Ride") | Has("UFO Throw")
+    ),
+    "Excavation (X+0,Y+5) (East) -> Excavation (X+0,Y+5) (West)": (
+        (Has("Wall-Dash") & Has("Excavation (X+0,Y+5) (West): Combat"))
+        | (Has("Wall-Ride") & Has("Excavation (X+0,Y+5) (West): Combat"))
+        | (Has("UFO Throw") & Has("Excavation (X+0,Y+5) (West): Combat"))
+    ),
+    "Excavation (X+2,Y+5) (Main) -> Excavation (X+2,Y+5) (Key)": (
+        Has("Wall-Dash") | Has("Wall-Ride") | Has("UFO Throw")
+    ),
+    "Excavation (X-4,Y+6) (East) -> Excavation (X-5,Y+5) (Main)": (Has("Wall-Ride") & Has("Wall-Dash")),
+    "Excavation (X-4,Y+6) (East) -> Excavation (X-5,Y+5) (Money Bag)": (Has("Wall-Ride")),
+    "Excavation (X-4,Y+6) (East) -> Excavation (X-4,Y+6) (West)": (Has("Wall-Dash") | Has("Wall-Ride")),
+    "Excavation (X-3,Y+6) (East) -> Excavation (X-3,Y+6) (West)": (Has("Wall-Dash") | Has("UFO Throw")),
+    "Excavation (X-3,Y+6) (West) -> Excavation (X-3,Y+6) (East)": (Has("Wall-Dash") | Has("UFO Throw")),
+    "Excavation (X-2,Y+6) (East) -> Excavation (X-2,Y+6) (West)": (
+        Has("Wall-Dash") | Has("Wall-Ride") | Has("UFO Throw")
+    ),
+    "Excavation (X-2,Y+6) (West) -> Excavation (X-2,Y+6) (East)": (
+        Has("Wall-Dash") | Has("Wall-Ride") | Has("UFO Throw")
+    ),
+    "Excavation (X-1,Y+6) (South) -> Excavation (X-1,Y+6) (East)": (Has("Excavation (X-2,Y+7) (Key): Key")),
+    "Excavation (X+2,Y+6) -> Excavation (X+3,Y+6)": (Has("Wall-Dash") | Has("UFO Throw") | Has("Wall-Ride")),
+    "Excavation (X+3,Y+6) -> Excavation (X+3,Y+5)": (Has("Wall-Dash") | Has("UFO Throw") | Has("Wall-Ride")),
+    "Excavation (X+3,Y+6) -> Excavation (X+4,Y+6)": (Has("Wall-Dash") | Has("UFO Throw") | Has("Wall-Ride")),
+    "Excavation (X+4,Y+6) -> Excavation (X+2,Y+7)": (Has("Wall-Dash") | Has("UFO Throw") | Has("Wall-Ride")),
+    "Excavation (X+5,Y+6) -> Excavation (X+4,Y+4)": (Has("Wall-Ride")),
+    "Excavation (X+4,Y+4) -> Excavation (X+5,Y+6)": (Has("Wall-Ride")),
+    "Excavation (X-3,Y+7) -> Excavation (X-4,Y+7)": (Has("Wall-Ride")),
+    "Excavation (X-2,Y+7) (Main) -> Excavation (X-1,Y+7) (West)": (
+        Has("Walk-the-Dog") | Has("Wall-Dash") | Has("UFO Throw") | SS_NORMAL | Has("Wall-Ride")
+    ),
+    "Excavation (X-2,Y+7) (Main) -> Excavation (X-2,Y+8)": (
+        Has("Walk-the-Dog") | Has("Wall-Ride") | Has("UFO Throw") | SS_NORMAL
+    ),
+    "Excavation (X-2,Y+8) -> Excavation (X-2,Y+7) (Main)": (
+        Has("Walk-the-Dog") | Has("Wall-Ride") | Has("UFO Throw") | SS_NORMAL
+    ),
+    "Excavation (X-1,Y+7) (West) -> Excavation (X-2,Y+7) (Key)": (
+        Has("Walk-the-Dog")
+        | Has("Wall-Dash")
+        | Has("UFO Throw")
+        | SS_NORMAL
+        | DIFF_EXPERT
+        | Has("Progressive Moon Badge")
+    ),
+    "Excavation (X-1,Y+7) (West) -> Excavation (X-1,Y+7) (East)": (
+        Has("UFO Throw") | Has("Wall-Dash") | Has("Wall-Ride")
+    ),
+    "Excavation (X+0,Y+7) -> Excavation (X+1,Y+4)": (Has("Excavation (X+0,Y+7): Lever")),
+    "Excavation (X+0,Y+7) -> Excavation (X+0,Y+6) (Main)": (Has("Excavation (X+0,Y+7): Lever")),
+    "Excavation (X+2,Y+7) -> Excavation (X+0,Y+7)": (Has("Wall-Dash")),
+    "Excavation (X-2,Y+8) -> Excavation (X+5,Y+6)": (Has("Wall-Ride")),
+    "Excavation (X+5,Y+6) -> Excavation (X-2,Y+8)": (Has("Wall-Ride")),
     "Skyscraper (X+2,Y-5) -> Skyscraper (X+1,Y-5)": (COG),
     "Skyscraper (X+1,Y-4) -> Skyscraper (X+0,Y-4)": (Has("Skyscraper (X+1,Y-4): Combat")),
     "Skyscraper (X+2,Y-4) -> Skyscraper (X+3,Y-4) (Main)": (Has("Wall-Ride") & Has("Wall-Dash")),
@@ -288,16 +464,16 @@ ENTRANCE_RULES: dict[str, Rule] = {
     "Skyscraper (X+4,Y-1) -> Skyscraper (X+3,Y-4) (Southeast)": (DIFF_EXPERT & Has("Wall-Dash") & Has("Wall-Ride")),
     "Skyscraper (X+2,Y+0) -> Skyscraper (X+3,Y-1) (Southwest)": (COG | Has("UFO Throw")),
     "S Plaza (X-2,Y-3) (Main) -> S Plaza (X-2,Y-3) (South)": (
-        HAS_SS_NORMAL | Has("Walk-the-Dog") | Has("Wall-Dash") | Has("UFO Throw") | Has("Wall-Ride")
+        SS_NORMAL | Has("Walk-the-Dog") | Has("Wall-Dash") | Has("UFO Throw") | Has("Wall-Ride")
     ),
     "S Plaza (X-2,Y-3) (South) -> S Plaza (X-2,Y-3) (Main)": (
-        HAS_SS_NORMAL | Has("Walk-the-Dog") | Has("Wall-Dash") | Has("UFO Throw") | Has("Wall-Ride")
+        SS_NORMAL | Has("Walk-the-Dog") | Has("Wall-Dash") | Has("UFO Throw") | Has("Wall-Ride")
     ),
     "S Plaza (X-2,Y-3) (Main) -> S Plaza (X-2,Y-3) (Southwest)": (
-        HAS_SS_NORMAL | Has("Walk-the-Dog") | Has("UFO Throw") | Has("Wall-Ride")
+        SS_NORMAL | Has("Walk-the-Dog") | Has("UFO Throw") | Has("Wall-Ride")
     ),
     "S Plaza (X-2,Y-3) (Southwest) -> S Plaza (X-2,Y-3) (Main)": (
-        HAS_SS_NORMAL | Has("Walk-the-Dog") | Has("UFO Throw") | Has("Wall-Ride")
+        SS_NORMAL | Has("Walk-the-Dog") | Has("UFO Throw") | Has("Wall-Ride")
     ),
     "S Plaza (X-2,Y-3) (Main) -> S Plaza (X-2,Y-3) (Southeast)": (
         Has("Wall-Dash") | Has("UFO Throw") | Has("Wall-Ride")
@@ -307,10 +483,10 @@ ENTRANCE_RULES: dict[str, Rule] = {
     ),
     "S Plaza (X-3,Y+3) -> S Plaza (X-2,Y-3) (Southwest)": (Has("S Plaza (X-3,Y+3): Combat")),
     "S Plaza (X-1,Y+4) (Southeast) -> S Plaza (X-1,Y+4) (South)": (
-        HAS_SS_NORMAL | Has("Walk-the-Dog") | Has("Wall-Dash") | Has("UFO Throw") | Has("Wall-Ride")
+        SS_NORMAL | Has("Walk-the-Dog") | Has("Wall-Dash") | Has("UFO Throw") | Has("Wall-Ride")
     ),
     "S Plaza (X-1,Y+4) (Southeast Entrance) -> S Plaza (X-1,Y+4) (Southeast)": (
-        (HAS_SS_NORMAL & Has("S Plaza (X-1,Y+4) (Southeast Entrance): Lever"))
+        (SS_NORMAL & Has("S Plaza (X-1,Y+4) (Southeast Entrance): Lever"))
         | (Has("Walk-the-Dog") & Has("S Plaza (X-1,Y+4) (Southeast Entrance): Lever"))
         | (Has("UFO Throw") & Has("S Plaza (X-1,Y+4) (Southeast Entrance): Lever"))
         | Has("Wall-Ride")
@@ -321,12 +497,15 @@ ENTRANCE_RULES: dict[str, Rule] = {
         Has("S Plaza Sewers (X-1,Y-5): Right Lever") & Has("S Plaza Sewers (X-1,Y-5): Left Lever")
     ),
     "S Plaza Sewers (X-1,Y+4) -> S Plaza Sewers (X-1,Y+5) (West)": (
-        Has("Walk-the-Dog") | (HAS_MID_AIR_UFO & HAS_SS_NORMAL) | Has("Wall-Ride")
+        Has("Walk-the-Dog")
+        | (Has("UFO Throw") & SS_NORMAL & MID_AIR_UFO)
+        | (Has("UFO Throw") & SS_NORMAL & DASH_MIDAIR_UFO)
+        | Has("Wall-Ride")
     ),
     "S Plaza Sewers (X-1,Y+5) (West) -> S Plaza Sewers (X-1,Y+5) (East)": (
         (Has("Offstring Throw") & Has("Walk-the-Dog"))
         | (Has("Offstring Throw") & Has("Wall-Ride"))
-        | (Has("Walk-the-Dog") & HAS_SS_NORMAL)
+        | (Has("Walk-the-Dog") & SS_NORMAL)
     ),
 }
 
@@ -345,17 +524,17 @@ LOCATION_RULES: dict[str, Rule] = {
     ),
     "Faria (X+8,Y-3) (Northwest): Money Bag": (Has("Wall-Dash") | Has("UFO Throw") | Has("Wall-Ride")),
     "Faria (X+10,Y+4): Money Bags 1": (
-        Has("Walk-the-Dog") | (Has("Wall-Dash") & HAS_SS_PLUS) | (Has("Wall-Ride") & HAS_SS_NORMAL)
+        Has("Walk-the-Dog") | (Has("Wall-Dash") & SS_PLUS) | (Has("Wall-Ride") & SS_NORMAL)
     ),
     "Faria (X+10,Y+4): Money Bags 2": (
-        Has("Walk-the-Dog") | (Has("Wall-Dash") & HAS_SS_PLUS) | (Has("Wall-Ride") & HAS_SS_NORMAL)
+        Has("Walk-the-Dog") | (Has("Wall-Dash") & SS_PLUS) | (Has("Wall-Ride") & SS_NORMAL)
     ),
-    "Faria (X+5,Y+4): Money Bags 1": (Has("Walk-the-Dog") | (Has("UFO Throw") & HAS_SS_NORMAL) | Has("Wall-Ride")),
-    "Faria (X+5,Y+4): Money Bags 2": (Has("Walk-the-Dog") | (Has("UFO Throw") & HAS_SS_NORMAL) | Has("Wall-Ride")),
-    "Faria (X+5,Y+4): Money Bags 3": (Has("Walk-the-Dog") | (Has("UFO Throw") & HAS_SS_NORMAL) | Has("Wall-Ride")),
-    "Faria (X+5,Y+4): Money Bags 4": (Has("Walk-the-Dog") | (Has("UFO Throw") & HAS_SS_NORMAL) | Has("Wall-Ride")),
-    "Faria (X+5,Y+4): Money Bags 5": (Has("Walk-the-Dog") | (Has("UFO Throw") & HAS_SS_NORMAL) | Has("Wall-Ride")),
-    "Faria (X+5,Y+4): Money Bags 6": (Has("Walk-the-Dog") | (Has("UFO Throw") & HAS_SS_NORMAL) | Has("Wall-Ride")),
+    "Faria (X+5,Y+4): Money Bags 1": (Has("Walk-the-Dog") | (Has("UFO Throw") & SS_NORMAL) | Has("Wall-Ride")),
+    "Faria (X+5,Y+4): Money Bags 2": (Has("Walk-the-Dog") | (Has("UFO Throw") & SS_NORMAL) | Has("Wall-Ride")),
+    "Faria (X+5,Y+4): Money Bags 3": (Has("Walk-the-Dog") | (Has("UFO Throw") & SS_NORMAL) | Has("Wall-Ride")),
+    "Faria (X+5,Y+4): Money Bags 4": (Has("Walk-the-Dog") | (Has("UFO Throw") & SS_NORMAL) | Has("Wall-Ride")),
+    "Faria (X+5,Y+4): Money Bags 5": (Has("Walk-the-Dog") | (Has("UFO Throw") & SS_NORMAL) | Has("Wall-Ride")),
+    "Faria (X+5,Y+4): Money Bags 6": (Has("Walk-the-Dog") | (Has("UFO Throw") & SS_NORMAL) | Has("Wall-Ride")),
     "Faria (X+4,Y+0) (Main): Money Bag (top-right)": (Has("Wall-Dash") | Has("UFO Throw") | Has("Wall-Ride")),
     "Faria (X+10,Y+1): Musical Notes": (Has("Wall-Dash")),
     "Faria (X+10,Y+1): Musical Notes - Rewards 1": (Has("Faria (X+10,Y+1): Musical Notes")),
@@ -379,13 +558,13 @@ LOCATION_RULES: dict[str, Rule] = {
     "Faria (X+4,Y+0) (Main): Taxi Phone (central)": (HAS_MONEY),
     "Faria (X+4,Y-5) (South): Taxi Phone (west)": (HAS_MONEY),
     "Faria (X+10,Y+0): Taxi Phone (east)": (HAS_MONEY),
-    "Faria Interiors (X+3,Y+1): Coin Badge": (COIN_FLIP_PLUS | BOMB),
+    "Faria Interiors (X+3,Y+1): Coin Badge": (BOMB),
     "Faria Interiors (X+10,Y-2): Bomb": (Has("Wall-Dash") | Has("UFO Throw") | Has("Wall-Ride")),
     "Faria Interiors (X+2,Y-1): BP Shard": (BOMB),
     "Faria Interiors (X+4,Y-5): BP Shard": (Has("Faria Interiors (X+4,Y-5): Key")),
     "Faria Interiors (X+8,Y-6): Key (shop)": (HAS_MONEY),
-    "Faria Interiors (X+5,Y+0): Key": (Has("Offstring Throw")),
-    "Faria Interiors (X+3,Y-3): Key": (Has("Offstring Throw")),
+    "Faria Interiors (X+5,Y+0): Key": (Has("Offstring Throw") | DASH_MIDAIR_UFO),
+    "Faria Interiors (X+3,Y-3): Key": (Has("Offstring Throw") | (Has("UFO Throw") & TRICK_DASH & DASH_MIDAIR_UFO)),
     "Faria Interiors (X+4,Y-5): Key": (Has("Faria Interiors (X+4,Y-5): Lever")),
     "Faria Interiors (X+5,Y+0): Petal Container": (Has("Faria Interiors (X+5,Y+0): Key") & CHEST),
     "Faria Interiors (X+7,Y-3): Petal Container": (Has("Faria Interiors (X+7,Y-3): Key") & CHEST),
@@ -393,7 +572,9 @@ LOCATION_RULES: dict[str, Rule] = {
     "Faria Interiors (X+10,Y-2): Petal Container": (COIN_FLIP_PLUS | Has("Faria Interiors (X+10,Y-2): Bomb")),
     "Faria Sewers (X+6,Y+4): BP Shard": (Has("Faria Sewers (X+6,Y+4): Lever")),
     "Faria Sewers (X+8,Y-6) (Northeast): Right Button": (
-        Has("Offstring Throw") & Has("Faria Interiors (X+8,Y-6): Key (shop)")
+        (Has("Offstring Throw") & Has("Faria Interiors (X+8,Y-6): Key (shop)"))
+        | (MID_AIR_UFO & Has("Faria Interiors (X+8,Y-6): Key (shop)"))
+        | (TRICK_DASH & DASH_MIDAIR_UFO & Has("Faria Interiors (X+8,Y-6): Key (shop)"))
     ),
     "Faria Sewers (X+8,Y-6) (Northwest): Left Button": (Has("Faria Interiors (X+8,Y-6): Key (shop)")),
     "Faria Sewers (X+8,Y-6) (North): Center Button": (
@@ -430,16 +611,14 @@ LOCATION_RULES: dict[str, Rule] = {
         | DIFF_EXPERT
         | (DIFF_HARD & Has("Progressive Wing Badge"))
     ),
-    "Faria Sewers (X+5,Y-6) (Main): Key": (
-        HAS_SS_PLUS | Has("Offstring Throw") | Has("Walk-the-Dog") | Has("UFO Throw")
-    ),
+    "Faria Sewers (X+5,Y-6) (Main): Key": (SS_PLUS | Has("Offstring Throw") | Has("Walk-the-Dog") | Has("UFO Throw")),
     "Faria Sewers (X+4,Y+4): Key": (Has("Faria Sewers (X+4,Y+4): Combat 1")),
     "Faria Sewers (X+6,Y+4): Lever": (Has("Offstring Throw")),
     "Faria Sewers (X+5,Y-1): Lever": (
-        HAS_SS_PLUS
+        SS_PLUS
         | Has("Offstring Throw")
         | Has("Walk-the-Dog")
-        | (Has("Wall-Dash") & HAS_SS_NORMAL)
+        | (Has("Wall-Dash") & SS_NORMAL)
         | Has("UFO Throw")
         | Has("Wall-Ride")
     ),
@@ -456,6 +635,101 @@ LOCATION_RULES: dict[str, Rule] = {
     "Faria Sewers (X+6,Y+3): Musical Notes - Reward 3": (Has("Faria Sewers (X+6,Y+3): Musical Notes")),
     "Faria Sewers (X+2,Y-1): Petal Container": (Has("Faria Sewers (X+2,Y-1): Combat")),
     "Faria Sewers (X+8,Y-1): Petal Container": (Has("Offstring Throw")),
+    "Excavation (X+2,Y+4): Berserker Badge": (Has("Wall-Dash") | Has("Wall-Ride") | Has("UFO Throw")),
+    "Excavation (X+5,Y-1): Wing Badge": (BOMB & Has("Offstring Throw")),
+    "Excavation (X+4,Y+3): BP Shard": (
+        Has("Walk-the-Dog") | Has("Wall-Dash") | Has("UFO Throw") | Has("Wall-Ride") | SS_NORMAL
+    ),
+    "Excavation (X+0,Y+8): Boss": (
+        (Has("Petal Container", 8) & BOMB) | (Has("Petal Container", 8) & DIFF_HARD) | DIFF_EXPERT
+    ),
+    "Excavation (X+2,Y-1): Key": ((BOMB & Has("Offstring Throw")) | COIN_FLIP_PLUS),
+    "Excavation (X+4,Y+1): Key": (Has("Excavation (X+4,Y+1): Combat")),
+    "Excavation (X+5,Y-2): Key": ((COG & Has("Offstring Throw")) | Has("Progressive Moon Badge")),
+    "Excavation (X-2,Y+7) (Key): Key": (
+        Has("Wall-Dash") | Has("UFO Throw") | Has("Excavation (X-1,Y+7) (East): Lever")
+    ),
+    "Excavation (X+2,Y+5) (Key): Key": (
+        Has("Offstring Throw") | Has("UFO Throw") | TRICK_DASH | (Has("Wall-Dash") & DIFF_HARD)
+    ),
+    "Excavation (X-3,Y+0): Key": (Has("Excavation (X-3,Y+0): Combat")),
+    "Excavation (X+0,Y+0) (Southwest Left): Key": (Has("Excavation (X+0,Y+0) (Southwest Right): South Lever")),
+    "Excavation (X+3,Y-1): Lever": (BOMB),
+    "Excavation (X+4,Y+2): Lever": (
+        (BOMB & Has("Offstring Throw"))
+        | Has("Walk-the-Dog")
+        | Has("Wall-Dash")
+        | Has("UFO Throw")
+        | Has("Wall-Ride")
+        | SS_NORMAL
+        | COIN_FLIP_PLUS
+    ),
+    "Excavation (X-4,Y+7): Lever": (Has("Wall-Ride")),
+    "Excavation (X-3,Y-1): North Lever": ((BOMB & COG) | (BOMB & TRICK_DASH & DASH_MIDAIR_OFF)),
+    "Excavation (X-3,Y-1): South Lever": (
+        (BOMB & COG & Has("Offstring Throw"))
+        | Has("Wall-Ride")
+        | MID_AIR_UFO
+        | DASH_MIDAIR_UFO
+        | (COIN_FLIP_PLUS & Has("Offstring Throw"))
+        | (DIFF_HARD & COG & Has("Offstring Throw"))
+    ),
+    "Excavation (X-3,Y+1): Lever": (
+        (BOMB & COG & Has("Offstring Throw"))
+        | (COIN_FLIP_PLUS & DIFF_HARD)
+        | (BOMB & Has("UFO Throw") & TRICK_DASH & DASH_MIDAIR_OFF & Has("Offstring Throw"))
+    ),
+    "Excavation (X+0,Y+8): Mega-Battery": (Has("Excavation (X+0,Y+8): Boss")),
+    "Excavation (X+2,Y+1): Money Bag": ((BOMB & Has("Offstring Throw")) | COIN_FLIP_PLUS),
+    "Excavation (X+2,Y+2) (East): Money Bag": (BOMB),
+    "Excavation (X+3,Y+4) (West): Money Bag (secret)": (BOMB),
+    "Excavation (X+2,Y+3) (East): Money Bag": (BOMB),
+    "Excavation (X-3,Y-1): Money Bag (secret)": (
+        (COG & Has("Offstring Throw") & BOMB) | (DASH_MIDAIR_UFO & Has("Wall-Ride"))
+    ),
+    "Excavation (X-4,Y-1): Money Bag": (
+        (BOMB & Has("Offstring Throw"))
+        | COIN_FLIP_PLUS
+        | (Has("UFO Throw") & Has("Wall-Dash") & Has("Wall-Ride") & DIFF_HARD)
+    ),
+    "Excavation (X-1,Y+1): Money Bag": (BOMB),
+    "Excavation (X-3,Y+2): Money Bag": (
+        (BOMB & Has("Offstring Throw"))
+        | (BOMB & Has("Wall-Dash") & DROP & DIFF_EXPERT)
+        | (Has("Wall-Dash") & COIN_FLIP_PLUS & DIFF_EXPERT)
+        | (BOMB & MID_AIR_UFO & DROP & DIFF_EXPERT)
+        | (MID_AIR_UFO & COIN_FLIP_PLUS & DIFF_EXPERT)
+        | (BOMB & DASH_MIDAIR_UFO & DROP)
+        | (DASH_MIDAIR_UFO & COIN_FLIP_PLUS)
+    ),
+    "Excavation (X-4,Y+2): Money Bag": (HOOK | (Has("UFO Throw") & Has("Wall-Ride"))),
+    "Excavation (X-3,Y+3): Money Bag": (Has("Wall-Dash") | Has("Wall-Ride") | Has("UFO Throw")),
+    "Excavation (X+0,Y+4) (Main): Money Bag": (Has("Wall-Dash") | Has("Wall-Ride") | Has("UFO Throw")),
+    "Excavation (X-4,Y+7): Money Bag": (
+        (Has("Wall-Dash") & Has("Wall-Ride") & Has("Excavation (X-4,Y+7): Lever"))
+        | (DIFF_HARD & Has("Wall-Ride") & Has("Excavation (X-4,Y+7): Lever"))
+    ),
+    "Excavation (X+3,Y+0): Money Bag": (BOMB),
+    "Excavation (X+0,Y+6) (East Alcove): Money Bag (secret)": (Has("Wall-Ride") | Has("UFO Throw")),
+    "Excavation (X+2,Y+7): Money Bag": (Has("Wall-Dash") | Has("Wall-Ride") | (Has("UFO Throw") & DIFF_HARD)),
+    "Excavation (X+3,Y-1): Money Bag": (BOMB),
+    "Excavation (X+4,Y-2) (Main): Money Bag": (BOMB),
+    "Excavation (X+5,Y-2): Money Bag": (Has("Excavation (X+5,Y-2): Key") & CHEST),
+    "Excavation (X+4,Y+0): Money Bag": (BOMB),
+    "Excavation (X-1,Y-1): Petal Container": (
+        Has("Offstring Throw")
+        | DIFF_HARD
+        | Has("Around-the-World")
+        | COIN_FLIP_PLUS
+        | (Has("Wall-Dash") & Has("UFO Throw"))
+    ),
+    "Excavation (X+3,Y+5): Petal Container": (
+        Has("UFO Throw")
+        | Has("Wall-Ride")
+        | (Has("Wall-Dash") & Has("Offstring Throw"))
+        | (Has("Wall-Dash") & Has("Coin-Flip"))
+        | (Has("Wall-Dash") & Has("Around-the-World"))
+    ),
     "Skyscraper (X+4,Y-1): Stun Badge": (
         (Has("Skyscraper (X+4,Y-1): Key") & COG & Has("Offstring Throw"))
         | (Has("Wall-Ride") & Has("Wall-Dash") & DIFF_EXPERT)
@@ -466,13 +740,13 @@ LOCATION_RULES: dict[str, Rule] = {
     "Skyscraper (X+2,Y-1): Key": ((COG & Has("Offstring Throw")) | Has("Wall-Dash") | Has("Progressive Moon Badge")),
     "Skyscraper (X+1,Y-5): Key": (COG & Has("Offstring Throw")),
     "Skyscraper (X+4,Y-5): Key": ((COG & Has("Offstring Throw")) | (COG & DIFF_HARD) | Has("UFO Throw")),
-    "Skyscraper (X+1,Y-5): Money Bag": (
+    "Skyscraper (X+1,Y-5): Money Bag (secret)": (
         COG
         | (Has("Wall-Ride") & Has("Wall-Dash"))
         | (Has("Wall-Ride") & Has("UFO Throw"))
         | (Has("Wall-Ride") & DIFF_EXPERT)
     ),
-    "Skyscraper (X+4,Y-5): Money Bag": ((COG & Has("Offstring Throw")) | Has("UFO Throw") | Has("Wall-Ride")),
+    "Skyscraper (X+4,Y-5): Money Bag (secret)": ((COG & Has("Offstring Throw")) | Has("UFO Throw") | Has("Wall-Ride")),
     "Skyscraper (X+0,Y-2) (West): Musical Notes - Reward": (Has("Skyscraper (X+0,Y-2) (West): Musical Notes")),
     "Skyscraper (X+3,Y-4) (North): Musical Notes - Reward": (Has("Skyscraper (X+3,Y-4) (North): Musical Notes")),
     "Skyscraper (X+0,Y-5): Petal Container": (Has("Skyscraper (X+0,Y-5): Key") & CHEST),
@@ -484,7 +758,7 @@ LOCATION_RULES: dict[str, Rule] = {
     "S Plaza (X-3,Y+3): Combat - Reward": (Has("S Plaza (X-3,Y+3): Combat")),
     "S Plaza (X-3,Y+4): Key": (Has("S Plaza (X-3,Y+4): Combat")),
     "S Plaza (X-1,Y+4) (Southeast Entrance): Lever": (
-        HAS_SS_NORMAL | (Has("Walk-the-Dog") & Has("Wall-Ride")) | Has("Wall-Dash") | Has("UFO Throw")
+        SS_NORMAL | (Has("Walk-the-Dog") & Has("Wall-Ride")) | Has("Wall-Dash") | Has("UFO Throw")
     ),
     "S Plaza (X-2,Y-3) (South): Left Musical Notes": (Has("Offstring Throw")),
     "S Plaza (X-2,Y-3) (South): Left Musical Notes - Rewards 1": (Has("S Plaza (X-2,Y-3) (South): Left Musical Notes")),
@@ -515,11 +789,11 @@ LOCATION_RULES: dict[str, Rule] = {
     "S Plaza Interiors (X-1,Y+1): Burger": (HAS_MONEY),
     "S Plaza Sewers (X-1,Y-5): Right Lever": (Has("Wall-Dash") | Has("UFO Throw") | Has("Wall-Ride")),
     "S Plaza Sewers (X-1,Y-5): Left Lever": (
-        HAS_SS_PLUS
+        SS_PLUS
         | Has("Walk-the-Dog")
-        | (Has("Wall-Dash") & HAS_SS_NORMAL)
+        | (Has("Wall-Dash") & SS_NORMAL)
         | Has("UFO Throw")
-        | (Has("Wall-Ride") & HAS_SS_NORMAL)
+        | (Has("Wall-Ride") & SS_NORMAL)
     ),
     "S Plaza Sewers (X-1,Y+5) (East): Petal Container": (
         (Has("Offstring Throw") & Has("Walk-the-Dog")) | (Has("Offstring Throw") & Has("Wall-Ride"))

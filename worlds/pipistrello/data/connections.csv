@@ -438,7 +438,7 @@ Room Label 1,Exit,Room Label 2,↔️,Rules,Edit,Idx1,Idx2,✅,Rule 1,Rule 2,Rul
 "Faria Slimer Borough (X+9, Y-7) - yug3435",manhole (down),"Faria Slimer Borough (Sewers) (X+9, Y-7) - yug873",TRUE,FALSE,8/4/2026 16:38:25,191,290,TRUE,,,,,,,,,,,,,,,,
 "Faria Slimer Borough (X+1, Y-6) - lor1097",up,"Fadalins Neighborhood (X+1, Y-8) - lor1096",FALSE,TRUE,,192,158,FALSE,,,,,,,,FALSE,FALSE,TRUE,FALSE,Skipping Stone+,TRUE,FALSE,FALSE,
 "Faria Slimer Borough (X+1, Y-6) - lor1097",right,"Faria Slimer Borough (X+3, Y-6) - yug1263",FALSE,FALSE,8/4/2026 17:19:00,192,193,TRUE,,,,,,,,,,,,,,,,
-"Faria Slimer Borough (X+1, Y-6) - lor1097",left,"South Plaza (X-1, Y-6) - ren355 (East)",FALSE,TRUE,8/4/2026 17:25:51,192,935,TRUE,dog,ride,,,,,,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,Rule is to safe platform
+"Faria Slimer Borough (X+1, Y-6) - lor1097",left,"South Plaza (X-1, Y-6) - ren355 (East)",FALSE,TRUE,8/4/2026 17:25:51,192,944,TRUE,dog,ride,,,,,,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,Rule is to safe platform
 "Faria Slimer Borough (X+3, Y-6) - yug1263",manhole (down),"Faria Slimer Borough (Sewers) (X+3, Y-6) - ren3946",TRUE,FALSE,8/2/2026 21:06:44,193,291,TRUE,,,,,,,,,,,,,,,,
 "Faria Slimer Borough (X+4, Y-6) - yug173",right,"Faria Slimer Borough (X+7, Y-6) - yug171 (Main)",TRUE,FALSE,8/3/2026 15:17:37,194,195,TRUE,,,,,,,,,,,,,,,,
 "Faria Slimer Borough (X+4, Y-6) - yug173",down,"Faria Slimer Borough (X+4, Y-5) - yug208 (North)",TRUE,FALSE,8/3/2026 15:17:41,194,200,TRUE,,,,,,,,,,,,,,,,
@@ -488,14 +488,14 @@ Room Label 1,Exit,Room Label 2,↔️,Rules,Edit,Idx1,Idx2,✅,Rule 1,Rule 2,Rul
 "Faria Slimer Borough (X+4, Y-3) - yug2741 (Main)",manhole (down),"Faria Slimer Borough (Sewers) (X+7, Y-1) - lor194",TRUE,FALSE,7/28/2026 14:58:42,219,315,TRUE,,,,,,,,,,,,,,,,
 "Faria Slimer Borough (X+4, Y-3) - yug2741 (North)",up,"Faria Slimer Borough (X+5, Y-4) - yug190",FALSE,FALSE,8/3/2026 15:43:11,220,211,TRUE,,,,,,,,,,,,,,,,
 "Faria Slimer Borough (X+4, Y-3) - yug2741 (North)",down,"Faria Slimer Borough (X+4, Y-3) - yug2741 (Main)",FALSE,FALSE,7/28/2026 14:59:21,220,219,TRUE,,,,,,,,,,,,,,,,
-"Faria Slimer Borough (X+4, Y-3) - yug2741 (North)",warp (up),"SlimeCorp Skyscraper (X+0, Y-2) - lor2 (West)",TRUE,FALSE,8/19/2026 18:19:16,220,923,TRUE,none,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
-"Faria Slimer Borough (X+8, Y-3) - yug108 (Main)",up,"Faria Slimer Borough (X+8, Y-3) - yug108 (Dungeon Entrance)",FALSE,TRUE,8/2/2026 19:53:54,222,227,FALSE,,,,,,,,,,,,,,,,
+"Faria Slimer Borough (X+4, Y-3) - yug2741 (North)",warp (up),"SlimeCorp Skyscraper (X+0, Y-2) - lor2 (West)",TRUE,FALSE,8/19/2026 18:19:16,220,932,TRUE,none,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
+"Faria Slimer Borough (X+8, Y-3) - yug108 (Main)",up,"Faria Slimer Borough (X+8, Y-3) - yug108 (Dungeon Entrance)",FALSE,TRUE,8/27/2026 17:20:51,222,227,TRUE,Staff ID,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Staff ID,
 "Faria Slimer Borough (X+8, Y-3) - yug108 (Main)",left,"Faria Slimer Borough (X+4, Y-3) - yug2741 (East Alcove)",FALSE,FALSE,8/4/2026 17:58:52,222,221,TRUE,,,,,,,,,,,,,,,,
 "Faria Slimer Borough (X+8, Y-3) - yug108 (Main)",right,"Faria Slimer Borough (X+10, Y-1) - yug61 (West Alcove)",FALSE,FALSE,8/5/2026 18:50:39,222,236,TRUE,,,,,,,,,,,,,,,,
 "Faria Slimer Borough (X+8, Y-3) - yug108 (Northwest)",right,"Faria Slimer Borough (X+8, Y-3) - yug108 (Northeast)",FALSE,TRUE,8/4/2026 17:54:34,223,224,TRUE,dash,ufo,ride,,,,,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,
 "Faria Slimer Borough (X+8, Y-3) - yug108 (Northeast)",down,"Faria Slimer Borough (X+8, Y-3) - yug108 (Main)",FALSE,FALSE,8/4/2026 17:54:37,224,222,TRUE,,,,,,,,,,,,,,,,
-"Faria Slimer Borough (X+8, Y-3) - yug108 (Dungeon Entrance)",down,"Faria Slimer Borough (X+8, Y-3) - yug108 (Main)",FALSE,FALSE,8/2/2026 19:53:28,227,222,FALSE,,,,,,,,,,,,,,,,
-"Faria Slimer Borough (X+8, Y-3) - yug108 (Dungeon Entrance)",warp (up),"SlimeCorp Excavation Site (X+0, Y+0) - lor149 (Main)",TRUE,FALSE,8/21/2026 2:13:41,227,830,FALSE,none,,,,,,,,,,,,,,,
+"Faria Slimer Borough (X+8, Y-3) - yug108 (Dungeon Entrance)",down,"Faria Slimer Borough (X+8, Y-3) - yug108 (Main)",FALSE,FALSE,8/27/2026 17:20:24,227,222,TRUE,,,,,,,,,,,,,,,,Return to safe house to get unstuck
+"Faria Slimer Borough (X+8, Y-3) - yug108 (Dungeon Entrance)",warp (up),"SlimeCorp Excavation Site (X+0, Y+0) - lor149 (Main)",TRUE,FALSE,8/27/2026 17:19:49,227,830,TRUE,none,,,,,,,,,,,,,,,
 "Faria Slimer Borough (X+8, Y-3) - yug108 (Southwest)",right,"Faria Slimer Borough (X+8, Y-3) - yug108 (Main)",TRUE,TRUE,8/4/2026 17:57:24,225,222,TRUE,dash,ufo,ride,,,,,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,
 "Faria Slimer Borough (X+8, Y-3) - yug108 (Southwest)",manhole (down),"Faria Slimer Borough (Sewers) (X+8, Y+0) - yug20",TRUE,FALSE,8/2/2026 19:58:04,225,324,TRUE,,,,,,,,,,,,,,,,
 "Faria Slimer Borough (X+8, Y-3) - yug108 (Southeast)",left,"Faria Slimer Borough (X+8, Y-3) - yug108 (Main)",FALSE,FALSE,8/5/2026 18:52:41,226,222,TRUE,,,,,,,,,,,,,,,,
@@ -534,8 +534,11 @@ Room Label 1,Exit,Room Label 2,↔️,Rules,Edit,Idx1,Idx2,✅,Rule 1,Rule 2,Rul
 "Faria Slimer Borough (X+9, Y+2) - yug22",left,"Faria Slimer Borough (X+8, Y+2) - yug15",TRUE,FALSE,8/8/2026 19:21:41,248,247,TRUE,,,,,,,,,,,,,,,,
 "Faria Slimer Borough (X+10, Y+2) - lor2334 (Main)",up,"Faria Slimer Borough (X+10, Y+2) - lor2334 (Northeast)",FALSE,TRUE,8/6/2026 21:34:02,249,250,TRUE,"dog, ss",dash,"ufo, ss+","ride, ss+",,,,FALSE,FALSE,Skipping Stone,TRUE,Skipping Stone+,Skipping Stone+,FALSE,FALSE,
 "Faria Slimer Borough (X+10, Y+2) - lor2334 (Main)",right,"Faria Slimer Borough (X+11, Y+2) - lor2872",FALSE,TRUE,8/6/2026 21:37:14,249,251,TRUE,dog,dash,midair ufo,"ufo, ss","ride, ss",,,FALSE,FALSE,TRUE,TRUE,Midair OR Skipping Stone,Skipping Stone,FALSE,FALSE,
-"Faria Slimer Borough (X+10, Y+2) - lor2334 (Main)",down,"Faria Slimer Borough (X+10, Y+4) - yug4122",FALSE,TRUE,8/6/2026 22:00:05,249,268,TRUE,dog,"hard, dash, ss+, ride","midair ufo, ss+",,,,,FALSE,FALSE,TRUE,Skipping Stone+ AND Wall-Ride,Midair UFO AND Skipping Stone+,FALSE,FALSE,FALSE,
-"Faria Slimer Borough (X+2, Y+3) - yug1",left,"South Plaza (X-2, Y-3) - ren223 (Southeast)",FALSE,TRUE,8/7/2026 11:07:27,252,941,TRUE,[FSB] Combat 7,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Combat 7,
+"Faria Slimer Borough (X+10, Y+2) - lor2334 (Main)",down,"Faria Slimer Borough (X+10, Y+4) - yug4122",FALSE,TRUE,8/30/2026 0:43:56,249,268,TRUE,dog,"dash, ss+, ride","midair ufo, ss+","dash-midair-ufo, ss+","ufo, dash, ss+","ufo, dash, ride, ss",,FALSE,FALSE,TRUE,Skipping Stone+ AND Wall-Ride,Midair UFO AND Skipping Stone+,FALSE,FALSE,FALSE,"- SS -> dash off right buoy -> wall-ride + SS
+- SS -> midair ufo off bottom-right corner
+- UFO -> dash off right buoy -> SS+
+- UFO -> dash off right buoy -> wall-ride + SS"
+"Faria Slimer Borough (X+2, Y+3) - yug1",left,"South Plaza (X-2, Y-3) - ren223 (Southeast)",FALSE,TRUE,8/7/2026 11:07:27,252,950,TRUE,[FSB] Combat 7,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Combat 7,
 "Faria Slimer Borough (X+2, Y+3) - yug1",right,"Faria Slimer Borough (X+3, Y+3) - yug217",FALSE,TRUE,8/7/2026 1:58:41,252,253,TRUE,Combat 7,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Combat 7,
 "Faria Slimer Borough (X+3, Y+3) - yug217",up,"Faria Slimer Borough (X+2, Y+1) - yug219 (Main)",TRUE,TRUE,8/7/2026 2:32:39,253,242,TRUE,dash,ufo,ride,,,,,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,
 "Faria Slimer Borough (X+3, Y+3) - yug217",left,"Faria Slimer Borough (X+2, Y+3) - yug1",FALSE,FALSE,8/7/2026 1:59:16,253,252,TRUE,,,,,,,,,,,,,,,,
@@ -558,7 +561,7 @@ Room Label 1,Exit,Room Label 2,↔️,Rules,Edit,Idx1,Idx2,✅,Rule 1,Rule 2,Rul
 "Faria Slimer Borough (X+10, Y+4) - yug4122",right,"Faria Slimer Borough (X+11, Y+4) - lor2884",FALSE,TRUE,8/6/2026 21:24:11,268,269,TRUE,dog,"ride, ss",,,,,,FALSE,FALSE,TRUE,FALSE,FALSE,Skipping Stone,FALSE,FALSE,
 "Faria Slimer Borough (X+11, Y+4) - lor2884",up,"Faria Slimer Borough (X+10, Y+2) - lor2334 (Northeast)",TRUE,TRUE,8/6/2026 22:03:03,269,250,TRUE,dog,"ride, ss",,,,,,FALSE,FALSE,TRUE,FALSE,FALSE,Skipping Stone,FALSE,FALSE,
 "Faria Slimer Borough (X+11, Y+4) - lor2884",down,"Faria Slimer Borough (X+11, Y+5) - lor2866",FALSE,TRUE,8/6/2026 21:40:15,269,276,TRUE,ss,dog,ufo,ride,,,,Skipping Stone,FALSE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,
-"Faria Slimer Borough (X+1, Y+5) - yug4288",left,"South Plaza (X-1, Y+4) - lor2248 (Southeast Entrance)",FALSE,TRUE,8/7/2026 1:51:07,270,948,TRUE,"dog, ride","dash, ride","ride, ss+",buoy,,,,FALSE,FALSE,Wall-Ride,Wall-Ride,FALSE,Skipping Stone+,FALSE,buoy,
+"Faria Slimer Borough (X+1, Y+5) - yug4288",left,"South Plaza (X-1, Y+4) - lor2248 (Southeast Entrance)",FALSE,TRUE,8/7/2026 1:51:07,270,957,TRUE,"dog, ride","dash, ride","ride, ss+",buoy,,,,FALSE,FALSE,Wall-Ride,Wall-Ride,FALSE,Skipping Stone+,FALSE,buoy,
 "Faria Slimer Borough (X+4, Y+5) - yug4222",up,"Faria Slimer Borough (X+4, Y+4) - yug4303",FALSE,TRUE,8/7/2026 1:31:54,271,261,TRUE,"dog, buoy","dog, ride","dash, ride","ride, ss+",,,,FALSE,FALSE,Buoy OR Wall-Ride,Wall-Ride,FALSE,Skipping Stone+,FALSE,FALSE,
 "Faria Slimer Borough (X+5, Y+5) - yug4236",left,"Faria Slimer Borough (X+4, Y+5) - yug4222",FALSE,TRUE,8/7/2026 1:26:20,272,271,TRUE,"ss+, buoy","dog, buoy","dash, ss, buoy","ride, buoy",,,,Skipping Stone+ AND Buoy,FALSE,Buoy,Skipping Stone AND Buoy,FALSE,Buoy,FALSE,FALSE,
 "Faria Slimer Borough (X+6, Y+5) - yug4194",left,"Faria Slimer Borough (X+5, Y+5) - yug4236",FALSE,TRUE,8/7/2026 1:22:41,273,272,TRUE,"dog, buoy","dog, ss","dash, buoy","dash, ss","ufo, ride","ride, buoy","ride, ss",FALSE,FALSE,Buoy OR Skipping Stone,Buoy OR Skipping Stone OR Wall-Ride,Wall-Ride,Buoy OR Skipping Stone,FALSE,FALSE,
@@ -592,7 +595,7 @@ Room Label 1,Exit,Room Label 2,↔️,Rules,Edit,Idx1,Idx2,✅,Rule 1,Rule 2,Rul
 "Faria Slimer Borough (Sewers) (X+5, Y-1) - lor176",up,"Faria Slimer Borough (Sewers) (X+5, Y-2) - lor177",FALSE,FALSE,8/3/2026 15:09:52,313,310,TRUE,,,,,,,,,,,,,,,,
 "Faria Slimer Borough (Sewers) (X+6, Y-1) - yug31",down,"Faria Slimer Borough (Sewers) (X+6, Y+0) - yug26 (North)",FALSE,TRUE,8/8/2026 20:55:00,314,320,TRUE,Combat 8,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Combat 8,
 "Faria Slimer Borough (Sewers) (X+7, Y-1) - lor194",right,"Faria Slimer Borough (Sewers) (X+8, Y-1) - yug23",FALSE,FALSE,8/2/2026 19:28:38,315,316,TRUE,,,,,,,,,,,,,,,,
-"Faria Slimer Borough (Sewers) (X+2, Y+0) - ren1453",up,"Faria Slimer Borough (Sewers) (X+2, Y-1) - ren1477",FALSE,TRUE,8/2/2026 19:16:08,317,312,TRUE,ss+,dog,midair ufo,"ride, ss","expert, ride",,,Skipping Stone+,FALSE,TRUE,FALSE,TRUE,Skipping Stone,FALSE,FALSE,Mid-air UFO Throw. Solo Wall-Ride is very hard
+"Faria Slimer Borough (Sewers) (X+2, Y+0) - ren1453",up,"Faria Slimer Borough (Sewers) (X+2, Y-1) - ren1477",FALSE,TRUE,8/30/2026 0:47:30,317,312,TRUE,ss+,dog,midair ufo,dash-midair-ufo,"ride, ss",,,Skipping Stone+,FALSE,TRUE,FALSE,TRUE,Skipping Stone,FALSE,FALSE,Mid-air UFO Throw. Solo Wall-Ride is too difficult
 "Faria Slimer Borough (Sewers) (X+6, Y+0) - yug26 (North)",left,"Faria Slimer Borough (Sewers) (X+5, Y-1) - lor176",FALSE,FALSE,8/2/2026 20:22:32,320,313,TRUE,,,,,,,,,,,,,,,,
 "Faria Slimer Borough (Sewers) (X+6, Y+0) - yug26 (North)",left,"Faria Slimer Borough (Sewers) (X+5, Y+0) - lor175",FALSE,FALSE,8/2/2026 20:23:07,320,318,TRUE,,,,,,,,,,,,,,,,
 "Faria Slimer Borough (Sewers) (X+6, Y+0) - yug26 (South)",left,"Faria Slimer Borough (Sewers) (X+5, Y+0) - lor175",FALSE,FALSE,8/2/2026 20:24:12,321,318,TRUE,,,,,,,,,,,,,,,,
@@ -608,7 +611,7 @@ Room Label 1,Exit,Room Label 2,↔️,Rules,Edit,Idx1,Idx2,✅,Rule 1,Rule 2,Rul
 "Faria Slimer Borough (Sewers) (X+5, Y+3) - lor779",down,"Faria Slimer Borough (Sewers) (X+4, Y+4) - yug385",FALSE,FALSE,8/8/2026 17:47:24,331,336,TRUE,,,,,,,,,,,,,,,,
 "Faria Slimer Borough (Sewers) (X+6, Y+3) - yug382",right,"Faria Slimer Borough (Sewers) (X+7, Y+3) - lor173 (West)",TRUE,FALSE,8/8/2026 18:20:33,332,333,TRUE,,,,,,,,,,,,,,,,
 "Faria Slimer Borough (Sewers) (X+7, Y+3) - lor173 (West)",manhole (up),"Faria Slimer Borough (X+7, Y+3) - yug9",TRUE,FALSE,8/8/2026 18:20:38,333,259,TRUE,,,,,,,,,,,,,,,,
-"Faria Slimer Borough (Sewers) (X+7, Y+3) - lor173 (West)",right,"Faria Slimer Borough (Sewers) (X+7, Y+3) - lor173 (East)",FALSE,TRUE,8/8/2026 18:25:05,333,334,TRUE,dash,"ride, midair ufo",,,,,,FALSE,FALSE,FALSE,TRUE,FALSE,Midair UFO Throw,FALSE,FALSE,
+"Faria Slimer Borough (Sewers) (X+7, Y+3) - lor173 (West)",right,"Faria Slimer Borough (Sewers) (X+7, Y+3) - lor173 (East)",FALSE,TRUE,8/30/2026 0:50:37,333,334,TRUE,dash,"ride, midair ufo",,,,,,FALSE,FALSE,FALSE,TRUE,FALSE,Midair UFO Throw,FALSE,FALSE,Can wall-ride short wall -> midair ufo (seems lenient)
 "Faria Slimer Borough (Sewers) (X+7, Y+3) - lor173 (East)",right,"Faria Slimer Borough (Sewers) (X+8, Y+3) - yug1141",FALSE,FALSE,8/8/2026 18:22:22,334,335,TRUE,,,,,,,,,,,,,,,,
 "Faria Slimer Borough (Sewers) (X+8, Y+3) - yug1141",down,"Faria Slimer Borough (Sewers) (X+8, Y+4) - ren3800 (East)",FALSE,TRUE,8/8/2026 18:37:44,335,340,TRUE,dash,,,,,,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,
 "Faria Slimer Borough (Sewers) (X+4, Y+4) - yug385",right,"Faria Slimer Borough (Sewers) (X+6, Y+4) - yug528",FALSE,TRUE,8/8/2026 17:57:32,336,337,TRUE,Combat 6,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Combat 6,
@@ -784,10 +787,10 @@ Room Label 1,Exit,Room Label 2,↔️,Rules,Edit,Idx1,Idx2,✅,Rule 1,Rule 2,Rul
 "Gallineiros District (X-5, Y-7) - ren6340",down,"Gallineiros District (X-5, Y-4) - ren6334",,,,394,397,FALSE,,,,,,,,,,,,,,,,
 "Gallineiros District (X-2, Y-7) - ren6339",left,"Gallineiros District (X-5, Y-7) - ren6340",,,,395,394,FALSE,,,,,,,,,,,,,,,,
 "Gallineiros District (X-2, Y-7) - ren6339",down,"Gallineiros District (X-2, Y-5) - ren6337",,,,395,396,FALSE,,,,,,,,,,,,,,,,
-"Gallineiros District (X-2, Y-7) - ren6339",right,"South Plaza (X-1, Y-6) - ren355 (West)",FALSE,TRUE,,395,934,FALSE,,,,,,,,,,,,,,,,
+"Gallineiros District (X-2, Y-7) - ren6339",right,"South Plaza (X-1, Y-6) - ren355 (West)",FALSE,TRUE,,395,943,FALSE,,,,,,,,,,,,,,,,
 "Gallineiros District (X-2, Y-5) - ren6337",left,"Gallineiros District (X-5, Y-7) - ren6340",,,,396,394,FALSE,,,,,,,,,,,,,,,,
 "Gallineiros District (X-2, Y-5) - ren6337",up,"Gallineiros District (X-2, Y-7) - ren6339",,,,396,395,FALSE,,,,,,,,,,,,,,,,
-"Gallineiros District (X-2, Y-5) - ren6337",right,"South Plaza (X-1, Y-6) - ren355 (West)",FALSE,TRUE,,396,934,FALSE,,,,,,,,,,,,,,,,
+"Gallineiros District (X-2, Y-5) - ren6337",right,"South Plaza (X-1, Y-6) - ren355 (West)",FALSE,TRUE,,396,943,FALSE,,,,,,,,,,,,,,,,
 "Gallineiros District (X-5, Y-4) - ren6334",up,"Gallineiros District (X-5, Y-7) - ren6340",,,,397,394,FALSE,,,,,,,,,,,,,,,,
 "Gallineiros District (X-5, Y-4) - ren6334",right,"Gallineiros District (X-3, Y-4) - lor1740",,,,397,398,FALSE,,,,,,,,,,,,,,,,
 "Gallineiros District (X-3, Y-4) - lor1740",left,"Gallineiros District (X-5, Y-4) - ren6334",,,,398,397,FALSE,,,,,,,,,,,,,,,,
@@ -955,7 +958,7 @@ Room Label 1,Exit,Room Label 2,↔️,Rules,Edit,Idx1,Idx2,✅,Rule 1,Rule 2,Rul
 "Old Rattalia Town (X-11, Y-5) - ren3958",right,"Old Rattalia Town (X-10, Y-5) - ren3953",TRUE,FALSE,,472,473,FALSE,,,,,,,,,,,,,,,,
 "Old Rattalia Town (X-10, Y-5) - ren3953",right,"Old Rattalia Town (X-9, Y-5) - ren3952",TRUE,FALSE,,473,474,FALSE,,,,,,,,,,,,,,,,
 "Old Rattalia Town (X-10, Y-5) - ren3953",down,"Old Rattalia Town (X-10, Y-4) - ren3963",TRUE,FALSE,,473,479,FALSE,,,,,,,,,,,,,,,,
-"Old Rattalia Town (X-10, Y-5) - ren3953",warp (up),"Trevosos Motor Club (Interiors) (X-10, Y-6) - ren93",TRUE,FALSE,,473,961,FALSE,,,,,,,,,,,,,,,,
+"Old Rattalia Town (X-10, Y-5) - ren3953",warp (up),"Trevosos Motor Club (Interiors) (X-10, Y-6) - ren93",TRUE,FALSE,,473,970,FALSE,,,,,,,,,,,,,,,,
 "Old Rattalia Town (X-9, Y-5) - ren3952",right,"Old Rattalia Town (X-8, Y-5) - ren3972",TRUE,FALSE,,474,475,FALSE,,,,,,,,,,,,,,,,
 "Old Rattalia Town (X-9, Y-5) - ren3952",down,"Old Rattalia Town (X-9, Y-4) - ren3951",FALSE,FALSE,,474,480,FALSE,,,,,,,,,,,,,,,,Possible by using the life raft in the room on the left side and using coyote time to jump in the next room.
 "Old Rattalia Town (X-8, Y-5) - ren3972",down,"Old Rattalia Town (X-8, Y-4) - ren3970",TRUE,FALSE,,475,481,FALSE,,,,,,,,,,,,,,,,
@@ -1039,7 +1042,7 @@ Room Label 1,Exit,Room Label 2,↔️,Rules,Edit,Idx1,Idx2,✅,Rule 1,Rule 2,Rul
 "Old Rattalia Town (X-5, Y+3) - ren4154",left,"Old Rattalia Town (X-6, Y+3) - ren4151",FALSE,FALSE,,524,523,FALSE,,,,,,,,,,,,,,,,
 "Old Rattalia Town (X-5, Y+3) - ren4154",right,"Old Rattalia Town (X-4, Y+3) - ren4147",FALSE,FALSE,,524,525,FALSE,,,,,,,,,,,,,,,,
 "Old Rattalia Town (X-4, Y+3) - ren4147",down,"Old Rattalia Town (X-4, Y+4) - ren4148",TRUE,FALSE,,525,533,FALSE,,,,,,,,,,,,,,,,
-"Old Rattalia Town (X-4, Y+3) - ren4147",right,"South Plaza (X-3, Y+3) - ren4152",FALSE,FALSE,7/28/2026 16:16:22,525,942,FALSE,,,,,,,,,,,,,,,,
+"Old Rattalia Town (X-4, Y+3) - ren4147",right,"South Plaza (X-3, Y+3) - ren4152",FALSE,FALSE,7/28/2026 16:16:22,525,951,FALSE,,,,,,,,,,,,,,,,
 "Old Rattalia Town (X-9, Y+4) - lor1915",left,"Old Rattalia Town (X-12, Y+5) - lor1924",FALSE,TRUE,,529,534,FALSE,,,,,,,,,,,,,,,,
 "Old Rattalia Town (X-8, Y+4) - lor1916",right,"Old Rattalia Town (X-6, Y+5) - lor1919",FALSE,TRUE,,530,538,FALSE,,,,,,,,,,,,,,,,
 "Old Rattalia Town (X-6, Y+4) - ren4150",up,"Old Rattalia Town (X-6, Y+3) - ren4151",TRUE,FALSE,,531,523,FALSE,,,,,,,,,,,,,,,,
@@ -1053,7 +1056,7 @@ Room Label 1,Exit,Room Label 2,↔️,Rules,Edit,Idx1,Idx2,✅,Rule 1,Rule 2,Rul
 "Old Rattalia Town (X-10, Y+5) - lor1922",right,"Old Rattalia Town (X-9, Y+5) - lor1921",TRUE,TRUE,,536,537,FALSE,,,,,,,,,,,,,,,,
 "Old Rattalia Town (X-9, Y+5) - lor1921",up,"Old Rattalia Town (X-9, Y+4) - lor1915",TRUE,TRUE,,537,529,FALSE,,,,,,,,,,,,,,,,
 "Old Rattalia Town (X-6, Y+5) - lor1919",right,"Old Rattalia Town (X-3, Y+5) - lor2247",FALSE,TRUE,,538,539,FALSE,,,,,,,,,,,,,,,,
-"Old Rattalia Town (X-3, Y+5) - lor2247",right,"South Plaza (X-1, Y+4) - lor2248 (South)",FALSE,TRUE,,539,946,FALSE,,,,,,,,,,,,,,,,
+"Old Rattalia Town (X-3, Y+5) - lor2247",right,"South Plaza (X-1, Y+4) - lor2248 (South)",FALSE,TRUE,,539,955,FALSE,,,,,,,,,,,,,,,,
 "Old Rattalia Town (Sewers) (X-8, Y-6) - ren1596",left,"Old Rattalia Town (Sewers) (X-9, Y-5) - ren3577",FALSE,TRUE,,548,549,FALSE,,,,,,,,SS+,FALSE,TRUE,AND Wall ride,TRUE,AND Wall-Dash,FALSE,FALSE,
 "Old Rattalia Town (Sewers) (X-8, Y-4) - ren1529",right,"Old Rattalia Town (Sewers) (X-7, Y-4) - ren1531",FALSE,FALSE,,550,551,FALSE,,,,,,,,,,,,,,,,
 "Old Rattalia Town (Sewers) (X-7, Y-4) - ren1531",down,"Old Rattalia Town (Sewers) (X-7, Y-3) - ren1533",TRUE,FALSE,,551,553,FALSE,,,,,,,,,,,,,,,,
@@ -1440,8 +1443,8 @@ Room Label 1,Exit,Room Label 2,↔️,Rules,Edit,Idx1,Idx2,✅,Rule 1,Rule 2,Rul
 "PoultryFC Stadium (X+6, Y+0) - lor800",up,"PoultryFC Stadium (X+6, Y-1) - lor803",,,,779,768,FALSE,,,,,,,,,,,,,,,,
 "PoultryFC Stadium (X+6, Y+0) - lor800",left,"PoultryFC Stadium (X+5, Y+0) - lor792",,,,779,778,FALSE,,,,,,,,,,,,,,,,
 "Safe House (X+0, Y+0) - mig38",left,"Safe House (X-1, Y+0) - lor127",FALSE,FALSE,8/16/2026 13:39:55,781,780,TRUE,,,,,,,,,,,,,,,,Technically requires 1 of the 2 cousins
-"Safe House (X+0, Y+0) - mig38",right,"Safe House (X+1, Y+0) - mig32",FALSE,TRUE,8/16/2026 13:40:23,781,782,FALSE,MB1,,,,,,,,,,,,,,,
-"Safe House (X+0, Y+0) - mig38",warp (up),"South Plaza (X-2, Y-3) - ren223 (Main)",FALSE,FALSE,8/16/2026 13:39:44,781,938,FALSE,,,,,,,,,,,,,,,,
+"Safe House (X+0, Y+0) - mig38",right,"Safe House (X+1, Y+0) - mig32",FALSE,TRUE,8/31/2026 17:20:51,781,782,FALSE,Mega Battery,,,,,,,,,,,,,,,
+"Safe House (X+0, Y+0) - mig38",warp (up),"South Plaza (X-2, Y-3) - ren223 (Main)",FALSE,FALSE,8/16/2026 13:39:44,781,947,FALSE,,,,,,,,,,,,,,,,
 "Secret Frying-Oil Plant (X+0, Y+2) - ren5312 (North)",right,"Secret Frying-Oil Plant (X+1, Y+3) - ren5462",FALSE,FALSE,,783,788,FALSE,,,,,,,,,,,,,,,,
 "Secret Frying-Oil Plant (X+0, Y+2) - ren5312 (North)",warp (up),"Secret Frying-Oil Plant (X-1, Y+7) - ren29878",FALSE,TRUE,8/16/2026 13:38:04,783,805,FALSE,,,,,,,,,,,,,,,,
 "Secret Frying-Oil Plant (X+0, Y+2) - ren5312 (South)",left,"Secret Frying-Oil Plant (X-1, Y+4) - ren7218",FALSE,FALSE,,784,794,FALSE,,,,,,,,,,,,,,,,
@@ -1467,197 +1470,205 @@ Room Label 1,Exit,Room Label 2,↔️,Rules,Edit,Idx1,Idx2,✅,Rule 1,Rule 2,Rul
 "Secret Frying-Oil Plant (X-1, Y+7) - ren29878",warp (up),"Secret Frying-Oil Plant (X+0, Y+2) - ren5312 (North)",FALSE,FALSE,,805,783,FALSE,,,,,,,,,,,,,,,,
 "Secret Frying-Oil Plant (X-1, Y+7) - ren29878",left,"Secret Frying-Oil Plant (X-2, Y+7) - ren7935",FALSE,TRUE,,805,804,FALSE,,,,,,,,,,,,,,,,
 "Secret Frying-Oil Plant (X+2, Y+7) - ren7605",left,"Secret Frying-Oil Plant (X-1, Y+7) - ren29878",FALSE,TRUE,,806,805,FALSE,,,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X-3, Y-2) - lor1300",right,"SlimeCorp Excavation Site (X+3, Y-2) - lor1305",FALSE,TRUE,8/21/2026 3:59:55,807,812,FALSE,ride,,,,,,,,,,,,,,,Should add lor1303 as midpoint of this connection for roomsanity
-"SlimeCorp Excavation Site (X+4, Y-2) - lor179 (Main)",left,"SlimeCorp Excavation Site (X+4, Y-2) - lor179 (South Money Bag)",FALSE,TRUE,8/20/2026 22:43:44,813,815,FALSE,bomb,ride,ufo,,,,,,,,,,,,,Only ride or ufo doesn't allow landing but the ony outward connection is back anyway
-"SlimeCorp Excavation Site (X+4, Y-2) - lor179 (Main)",right,"SlimeCorp Excavation Site (X+5, Y-1) - lor1228",TRUE,FALSE,8/20/2026 22:18:24,813,826,FALSE,none,,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X+4, Y-2) - lor179 (West)",right,"SlimeCorp Excavation Site (X+4, Y-2) - lor179 (Main)",FALSE,TRUE,8/20/2026 22:40:16,814,813,FALSE,bomb,,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X+4, Y-2) - lor179 (South Money Bag)",right,"SlimeCorp Excavation Site (X+4, Y-2) - lor179 (Main)",FALSE,TRUE,8/20/2026 21:58:41,815,813,FALSE,"dash, ride",midair ufo,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X+6, Y-2) - lor1325",left,"SlimeCorp Excavation Site (X+5, Y-2) - lor1326",FALSE,TRUE,8/21/2026 2:28:54,817,816,FALSE,ride,,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X-3, Y-1) - lor534",right,"SlimeCorp Excavation Site (X-2, Y-1) - lor524 (North)",FALSE,TRUE,8/21/2026 4:16:35,819,821,FALSE,"Lever West 1, Lever West 2",,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X-2, Y-1) - lor524 (Main)",up,"SlimeCorp Excavation Site (X-3, Y-2) - lor1300",FALSE,TRUE,8/21/2026 3:36:08,820,807,FALSE,ride,,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X-2, Y-1) - lor524 (Main)",left,"SlimeCorp Excavation Site (X-3, Y-1) - lor534",FALSE,FALSE,8/21/2026 3:36:17,820,819,FALSE,none,,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X-2, Y-1) - lor524 (Main)",right,"SlimeCorp Excavation Site (X-1, Y-1) - lor533",FALSE,FALSE,8/21/2026 3:36:17,820,823,FALSE,none,,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X-2, Y-1) - lor524 (Main)",left,"SlimeCorp Excavation Site (X-3, Y+0) - lor536",FALSE,TRUE,8/21/2026 3:40:24,820,828,FALSE,"Cog 1, Cog 2",,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X-2, Y-1) - lor524 (Main)",left,"SlimeCorp Excavation Site (X-3, Y+1) - lor535",FALSE,FALSE,8/21/2026 3:41:19,820,839,FALSE,none,,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X-2, Y-1) - lor524 (Main)",right,"SlimeCorp Excavation Site (X-1, Y+1) - lor584",FALSE,TRUE,8/21/2026 4:32:07,820,840,FALSE,Key West 1,,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X-2, Y-1) - lor524 (Main)",down,"SlimeCorp Excavation Site (X-2, Y+2) - lor586",TRUE,TRUE,8/21/2026 3:42:29,820,847,FALSE,ride,"ufo, hard",,,,,,,,,,,,,,ufo requires buffered left input
-"SlimeCorp Excavation Site (X+3, Y-1) - lor172",right,"SlimeCorp Excavation Site (X+4, Y-2) - lor179 (West)",FALSE,FALSE,8/20/2026 21:49:46,825,814,FALSE,none,,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X+3, Y-1) - lor172",left,"SlimeCorp Excavation Site (X+2, Y-1) - lor1231",FALSE,TRUE,8/20/2026 21:30:49,825,824,FALSE,Lever East 1,,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X+5, Y-1) - lor1228",up,"SlimeCorp Excavation Site (X+5, Y-2) - lor1326",FALSE,TRUE,8/21/2026 2:20:58,826,816,FALSE,ufo,"bomb, off, dash",,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X+5, Y-1) - lor1228",down,"SlimeCorp Excavation Site (X+5, Y+0) - lor339",TRUE,TRUE,8/21/2026 2:21:33,826,837,FALSE,ufo,"ride, dash",,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X-1, Y+0) - lor523",left,"SlimeCorp Excavation Site (X-2, Y-1) - lor524 (Main)",FALSE,FALSE,8/21/2026 3:33:51,829,820,FALSE,none,,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X-1, Y+0) - lor523",down,"SlimeCorp Excavation Site (X-1, Y+1) - lor584",TRUE,TRUE,8/21/2026 3:34:30,829,840,FALSE,ride,ufo,dash,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X+0, Y+0) - lor149 (Main)",left,"SlimeCorp Excavation Site (X-1, Y+0) - lor523",FALSE,TRUE,8/20/2026 21:18:08,830,829,FALSE,Lever Main 2,,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X+0, Y+0) - lor149 (Main)",down,"SlimeCorp Excavation Site (X+0, Y+0) - lor149 (Southwest)",FALSE,TRUE,8/20/2026 21:11:29,830,831,FALSE,Lever Main 4,dash,ride,ufo,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X+0, Y+0) - lor149 (Main)",down,"SlimeCorp Excavation Site (X+0, Y+0) - lor149 (Southeast)",FALSE,TRUE,8/20/2026 20:33:50,830,832,FALSE,Lever Main 2,ride,ufo,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X+0, Y+0) - lor149 (Main)",right,"SlimeCorp Excavation Site (X+2, Y+0) - lor158 (West)",FALSE,FALSE,8/20/2026 20:46:11,830,833,FALSE,none,,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X+0, Y+0) - lor149 (Main)",right,"SlimeCorp Excavation Site (X+2, Y+1) - lor213",FALSE,TRUE,8/20/2026 21:11:08,830,841,FALSE,dash,ride,ufo,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X+0, Y+0) - lor149 (Main)",left,"SlimeCorp Excavation Site (X-1, Y+2) - lor585",FALSE,TRUE,8/20/2026 21:21:13,830,848,FALSE,"ride, hard",,,,,,,,,,,,,,,Possibly unnecessary
-"SlimeCorp Excavation Site (X+0, Y+0) - lor149 (Main)",right,"SlimeCorp Excavation Site (X+2, Y+2) - lor212",FALSE,TRUE,8/20/2026 20:15:31,830,849,FALSE,ride,ufo,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X+0, Y+0) - lor149 (Southwest)",down,"SlimeCorp Excavation Site (X+0, Y+3) - lor619",FALSE,FALSE,8/20/2026 21:21:43,831,854,FALSE,none,,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X+0, Y+0) - lor149 (Southeast)",down,"SlimeCorp Excavation Site (X+1, Y+3) - lor416",FALSE,FALSE,8/21/2026 3:23:20,832,855,FALSE,none,,,,,,,,,,,,,,,Connection is not 2-way because of combat
-"SlimeCorp Excavation Site (X+2, Y+0) - lor158 (West)",right,"SlimeCorp Excavation Site (X+2, Y+0) - lor158 (East)",FALSE,TRUE,8/21/2026 3:23:38,833,834,FALSE,bomb,ride,"dash, hard",,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X+2, Y+0) - lor158 (East)",right,"SlimeCorp Excavation Site (X+3, Y+0) - lor166",FALSE,FALSE,8/20/2026 21:24:19,834,835,FALSE,none,,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X+3, Y+0) - lor166",up,"SlimeCorp Excavation Site (X+3, Y-1) - lor172",FALSE,FALSE,8/20/2026 21:24:55,835,825,FALSE,none,,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X+3, Y+0) - lor166",right,"SlimeCorp Excavation Site (X+4, Y+0) - lor171",FALSE,FALSE,8/20/2026 21:48:08,835,836,FALSE,none,,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X+4, Y+0) - lor171",up,"SlimeCorp Excavation Site (X+4, Y-2) - lor179 (South Money Bag)",FALSE,TRUE,8/20/2026 22:06:58,836,815,FALSE,"dash, ride, hard","dash, ufo, hard",,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X+4, Y+0) - lor171",down,"SlimeCorp Excavation Site (X+4, Y+1) - lor180",FALSE,FALSE,8/21/2026 2:30:54,836,843,FALSE,none,,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X+5, Y+0) - lor339",right,"SlimeCorp Excavation Site (X+6, Y-2) - lor1325",FALSE,TRUE,8/21/2026 2:27:52,837,817,FALSE,ride,,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X-3, Y+1) - lor535",left,"SlimeCorp Excavation Site (X-4, Y-1) - lor1299",FALSE,TRUE,8/21/2026 4:21:01,839,818,FALSE,ride,,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X-3, Y+1) - lor535",right,"SlimeCorp Excavation Site (X-2, Y-1) - lor524 (South)",FALSE,TRUE,8/21/2026 4:28:15,839,822,FALSE,Lever West 3,,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X-1, Y+1) - lor584",down,"SlimeCorp Excavation Site (X-1, Y+2) - lor585",TRUE,FALSE,8/21/2026 5:08:28,840,848,FALSE,none,,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X+2, Y+1) - lor213",up,"SlimeCorp Excavation Site (X+2, Y+0) - lor158 (East)",FALSE,TRUE,8/20/2026 20:48:07,841,834,FALSE,ufo,ride,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X+2, Y+1) - lor213",down,"SlimeCorp Excavation Site (X+2, Y+2) - lor212",FALSE,FALSE,8/21/2026 2:47:31,841,849,FALSE,none,,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X+3, Y+1) - lor173",left,"SlimeCorp Excavation Site (X+2, Y+1) - lor213",FALSE,TRUE,8/21/2026 2:40:34,842,841,FALSE,"Key East 1, Key East 2","ride, expert",,,,,,,,,,,,,,Bomb not necessary because of access from north room
-"SlimeCorp Excavation Site (X+4, Y+1) - lor180",left,"SlimeCorp Excavation Site (X+3, Y+1) - lor173",FALSE,TRUE,8/21/2026 2:31:30,843,842,FALSE,Combat 1,,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X+4, Y+1) - lor180",right,"SlimeCorp Excavation Site (X+5, Y+1) - lor337",FALSE,TRUE,8/21/2026 2:37:32,843,844,FALSE,ride,,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X+4, Y+1) - lor180",down,"SlimeCorp Excavation Site (X+4, Y+2) - yug8",FALSE,TRUE,8/21/2026 3:21:58,843,850,FALSE,"Combat 1, ride",,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X+5, Y+1) - lor337",up,"SlimeCorp Excavation Site (X+5, Y+0) - lor339",FALSE,TRUE,8/21/2026 5:09:23,844,837,FALSE,ride,,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X-3, Y+2) - lor617",down,"SlimeCorp Excavation Site (X-3, Y+3) - lor618",TRUE,FALSE,8/21/2026 4:37:28,846,853,FALSE,none,,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X-2, Y+2) - lor586",left,"SlimeCorp Excavation Site (X-3, Y+2) - lor617",TRUE,FALSE,8/21/2026 4:37:14,847,846,FALSE,none,,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X-1, Y+2) - lor585",left,"SlimeCorp Excavation Site (X-2, Y+2) - lor586",TRUE,FALSE,8/21/2026 4:37:01,848,847,FALSE,none,,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X+2, Y+2) - lor212",right,"SlimeCorp Excavation Site (X+4, Y+2) - yug8",TRUE,FALSE,8/21/2026 2:50:29,849,850,FALSE,bomb,,,,,,,,,,,,,,,Maybe split this room West/East
-"SlimeCorp Excavation Site (X+2, Y+2) - lor212",down,"SlimeCorp Excavation Site (X+2, Y+3) - lor417 (West)",TRUE,TRUE,8/21/2026 5:11:06,849,856,FALSE,ride,ufo,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X+4, Y+2) - yug8",down,"SlimeCorp Excavation Site (X+4, Y+3) - lor256",FALSE,TRUE,8/21/2026 2:58:15,850,860,FALSE,Lever East 2,,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X-3, Y+3) - lor618",left,"SlimeCorp Excavation Site (X-4, Y+2) - lor1296",FALSE,TRUE,8/21/2026 4:55:33,853,845,FALSE,ride,,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X-3, Y+3) - lor618",right,"SlimeCorp Excavation Site (X+0, Y+3) - lor619",FALSE,FALSE,8/21/2026 4:59:57,853,854,FALSE,none,,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X+0, Y+3) - lor619",up,"SlimeCorp Excavation Site (X+0, Y+0) - lor149 (Southwest)",FALSE,TRUE,8/21/2026 5:01:16,854,831,FALSE,Combat 4,,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X+0, Y+3) - lor619",left,"SlimeCorp Excavation Site (X-3, Y+3) - lor618",FALSE,TRUE,8/21/2026 5:01:17,854,853,FALSE,Combat 4,,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X+0, Y+3) - lor619",down,"SlimeCorp Excavation Site (X+0, Y+4) - lor667 (West)",FALSE,TRUE,8/21/2026 5:03:04,854,866,FALSE,Key West 2,,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X+1, Y+3) - lor416",up,"SlimeCorp Excavation Site (X+0, Y+0) - lor149 (Southeast)",FALSE,TRUE,8/21/2026 3:26:35,855,832,FALSE,Combat 2,,,,,,,,,,,,,,,New connection to fix fake two-way connection
-"SlimeCorp Excavation Site (X+1, Y+3) - lor416",right,"SlimeCorp Excavation Site (X+2, Y+3) - lor417 (West)",FALSE,TRUE,8/21/2026 3:27:53,855,856,FALSE,Combat 2,,,,,,,,,,,,,,,New connection to fix fake two-way connection
-"SlimeCorp Excavation Site (X+2, Y+3) - lor417 (West)",left,"SlimeCorp Excavation Site (X+1, Y+3) - lor416",FALSE,FALSE,8/21/2026 3:28:21,856,855,FALSE,none,,,,,,,,,,,,,,,Connection is not two-way because of combat
-"SlimeCorp Excavation Site (X+2, Y+3) - lor417 (West)",right,"SlimeCorp Excavation Site (X+2, Y+3) - lor417 (East)",FALSE,TRUE,8/21/2026 3:27:57,856,857,FALSE,bomb,"ufo, ride",dash,,,,,,,,,,,,,"- (dash) This requires being able to move the bomb but not grabbing it
+"SlimeCorp Excavation Site (X-3, Y-2) - lor1300",right,"SlimeCorp Excavation Site (X+0, Y-2) - lor1303",FALSE,TRUE,8/30/2026 1:28:31,807,810,TRUE,ride,,,,,,,,,,,,,,,Should add lor1303 as midpoint of this connection for roomsanity
+"SlimeCorp Excavation Site (X+0, Y-2) - lor1303",right,"SlimeCorp Excavation Site (X+3, Y-2) - lor1305",FALSE,TRUE,8/30/2026 1:31:12,810,812,TRUE,"ride, dash",,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X+4, Y-2) - lor179 (Main)",left,"SlimeCorp Excavation Site (X+4, Y-2) - lor179 (South Money Bag)",FALSE,TRUE,8/28/2026 21:27:43,813,815,TRUE,bomb,ride,ufo,,,,,,,,,,,,,Only ride or ufo doesn't allow landing but the ony outward connection is back anyway
+"SlimeCorp Excavation Site (X+4, Y-2) - lor179 (Main)",right,"SlimeCorp Excavation Site (X+5, Y-1) - lor1228",TRUE,FALSE,8/28/2026 21:26:14,813,826,TRUE,none,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X+4, Y-2) - lor179 (West)",right,"SlimeCorp Excavation Site (X+4, Y-2) - lor179 (Main)",FALSE,TRUE,8/28/2026 21:23:12,814,813,TRUE,bomb,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X+4, Y-2) - lor179 (South Money Bag)",right,"SlimeCorp Excavation Site (X+4, Y-2) - lor179 (Main)",FALSE,TRUE,8/30/2026 1:15:28,815,813,TRUE,"dash, ride",midair ufo,"ufo, dash",,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X+6, Y-2) - lor1325",left,"SlimeCorp Excavation Site (X+5, Y-2) - lor1326",FALSE,TRUE,8/28/2026 22:37:51,817,816,TRUE,ride,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X-3, Y-1) - lor534",right,"SlimeCorp Excavation Site (X-2, Y-1) - lor524 (Northwest)",FALSE,TRUE,8/30/2026 1:18:36,819,821,TRUE,"Lever West 1, Lever West 2",,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X-2, Y-1) - lor524 (Main)",up,"SlimeCorp Excavation Site (X-3, Y-2) - lor1300",FALSE,TRUE,8/30/2026 1:25:47,820,807,TRUE,ride,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X-2, Y-1) - lor524 (Main)",left,"SlimeCorp Excavation Site (X-3, Y-1) - lor534",FALSE,FALSE,8/29/2026 18:24:00,820,819,TRUE,none,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X-2, Y-1) - lor524 (Main)",left,"SlimeCorp Excavation Site (X-2, Y-1) - lor524 (Northwest)",FALSE,TRUE,8/30/2026 1:21:48,820,821,TRUE,flip+,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X-2, Y-1) - lor524 (Main)",left,"SlimeCorp Excavation Site (X-2, Y-1) - lor524 (Southwest)",FALSE,TRUE,8/30/2026 1:22:41,820,822,TRUE,flip+,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X-2, Y-1) - lor524 (Main)",right,"SlimeCorp Excavation Site (X-1, Y-1) - lor533",FALSE,FALSE,8/30/2026 1:32:27,820,823,TRUE,none,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X-2, Y-1) - lor524 (Main)",left,"SlimeCorp Excavation Site (X-3, Y+0) - lor536",FALSE,TRUE,8/30/2026 2:15:01,820,828,TRUE,"Cog 1, Cog 2",,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X-2, Y-1) - lor524 (Main)",left,"SlimeCorp Excavation Site (X-3, Y+1) - lor535",FALSE,FALSE,8/30/2026 1:44:19,820,840,TRUE,none,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X-2, Y-1) - lor524 (Main)",right,"SlimeCorp Excavation Site (X-1, Y+1) - lor584",FALSE,TRUE,8/30/2026 2:17:54,820,841,TRUE,Key West 1,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X+3, Y-1) - lor172",right,"SlimeCorp Excavation Site (X+4, Y-2) - lor179 (West)",FALSE,FALSE,8/30/2026 18:12:43,825,814,TRUE,none,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X+3, Y-1) - lor172",left,"SlimeCorp Excavation Site (X+2, Y-1) - lor1231",FALSE,TRUE,8/28/2026 21:08:25,825,824,TRUE,Lever East 1,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X+5, Y-1) - lor1228",up,"SlimeCorp Excavation Site (X+5, Y-2) - lor1326",FALSE,TRUE,8/28/2026 22:21:39,826,816,TRUE,ufo,"bomb, off, dash",,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X+5, Y-1) - lor1228",down,"SlimeCorp Excavation Site (X+5, Y+0) - lor339",TRUE,TRUE,8/29/2026 18:06:10,826,838,TRUE,ufo,"dash, ride",,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X-1, Y+0) - lor523",left,"SlimeCorp Excavation Site (X-2, Y-1) - lor524 (Main)",FALSE,FALSE,8/29/2026 18:14:05,829,820,TRUE,none,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X-1, Y+0) - lor523",down,"SlimeCorp Excavation Site (X-1, Y+1) - lor584",TRUE,TRUE,8/29/2026 18:17:46,829,841,TRUE,ride,ufo,dash,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X+0, Y+0) - lor149 (Main)",left,"SlimeCorp Excavation Site (X-1, Y+0) - lor523",FALSE,TRUE,8/29/2026 18:13:26,830,829,TRUE,Lever Main 2,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X+0, Y+0) - lor149 (Main)",down,"SlimeCorp Excavation Site (X+0, Y+0) - lor149 (Southwest Right)",FALSE,TRUE,8/30/2026 20:57:05,830,832,TRUE,Lever Main 4,dash,ride,ufo,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X+0, Y+0) - lor149 (Main)",down,"SlimeCorp Excavation Site (X+0, Y+0) - lor149 (Southeast)",FALSE,TRUE,8/30/2026 20:58:41,830,833,TRUE,Lever Main 2,ride,ufo,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X+0, Y+0) - lor149 (Main)",right,"SlimeCorp Excavation Site (X+2, Y+0) - lor158 (West)",FALSE,FALSE,8/27/2026 17:25:43,830,834,TRUE,none,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X+0, Y+0) - lor149 (Main)",right,"SlimeCorp Excavation Site (X+2, Y+1) - lor213",FALSE,TRUE,8/27/2026 17:26:19,830,842,TRUE,dash,ride,ufo,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X+0, Y+0) - lor149 (Main)",left,"SlimeCorp Excavation Site (X-3, Y+3) - lor618",FALSE,TRUE,8/30/2026 18:25:22,830,855,TRUE,ride,,,,,,,,,,,,,,,Possibly unnecessary
+"SlimeCorp Excavation Site (X+0, Y+0) - lor149 (Southwest Left)",down,"SlimeCorp Excavation Site (X+0, Y+3) - lor619",FALSE,FALSE,8/30/2026 20:57:44,831,856,TRUE,none,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X+0, Y+0) - lor149 (Southwest Left)",right,"SlimeCorp Excavation Site (X+0, Y+0) - lor149 (Southwest Right)",TRUE,TRUE,8/30/2026 20:57:47,831,832,TRUE,dash,ride,ufo,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X+0, Y+0) - lor149 (Southeast)",down,"SlimeCorp Excavation Site (X+1, Y+3) - lor416",FALSE,FALSE,8/30/2026 20:55:22,833,857,TRUE,none,,,,,,,,,,,,,,,Connection is not 2-way because of combat
+"SlimeCorp Excavation Site (X+2, Y+0) - lor158 (West)",right,"SlimeCorp Excavation Site (X+2, Y+0) - lor158 (East)",FALSE,TRUE,8/27/2026 17:31:10,834,835,TRUE,bomb,ride,dash,,,,,,,,,,,,,Wall-Ride and Wall-Dash requires going offscreen at the top. Wall-Dash position is a little tight
+"SlimeCorp Excavation Site (X+2, Y+0) - lor158 (East)",right,"SlimeCorp Excavation Site (X+3, Y+0) - lor166",FALSE,FALSE,8/27/2026 17:31:55,835,836,TRUE,none,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X+3, Y+0) - lor166",up,"SlimeCorp Excavation Site (X+3, Y-1) - lor172",FALSE,FALSE,8/28/2026 21:04:10,836,825,TRUE,none,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X+3, Y+0) - lor166",right,"SlimeCorp Excavation Site (X+4, Y+0) - lor171",FALSE,FALSE,8/28/2026 21:04:59,836,837,TRUE,none,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X+3, Y+0) - lor166",down,"SlimeCorp Excavation Site (X+3, Y+1) - lor173",FALSE,FALSE,8/28/2026 21:49:19,836,843,TRUE,none,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X+4, Y+0) - lor171",up,"SlimeCorp Excavation Site (X+4, Y-2) - lor179 (South Money Bag)",FALSE,TRUE,8/28/2026 21:22:46,837,815,TRUE,"dash, ride, hard","dash, ufo, hard",,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X+4, Y+0) - lor171",down,"SlimeCorp Excavation Site (X+4, Y+1) - lor180",FALSE,FALSE,8/28/2026 21:33:31,837,844,TRUE,none,,,,,,,,,,,,,,,Can jump around bomb blocks
+"SlimeCorp Excavation Site (X+5, Y+0) - lor339",right,"SlimeCorp Excavation Site (X+6, Y-2) - lor1325",FALSE,TRUE,8/28/2026 22:36:34,838,817,TRUE,ride,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X-3, Y+1) - lor535",left,"SlimeCorp Excavation Site (X-4, Y-1) - lor1299",FALSE,TRUE,8/30/2026 2:13:54,840,818,TRUE,ride,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X-3, Y+1) - lor535",right,"SlimeCorp Excavation Site (X-2, Y-1) - lor524 (Southwest)",FALSE,TRUE,8/30/2026 2:13:54,840,822,TRUE,Lever West 3,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X-1, Y+1) - lor584",down,"SlimeCorp Excavation Site (X-1, Y+2) - lor585",TRUE,FALSE,8/30/2026 18:20:53,841,849,TRUE,none,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X+2, Y+1) - lor213",up,"SlimeCorp Excavation Site (X+2, Y+0) - lor158 (East)",FALSE,TRUE,8/28/2026 21:46:53,842,835,TRUE,ufo,,,,,,,,,,,,,,,Wall-Ride already possible with route above
+"SlimeCorp Excavation Site (X+2, Y+1) - lor213",down,"SlimeCorp Excavation Site (X+2, Y+2) - lor212 (West)",FALSE,FALSE,8/28/2026 23:05:13,842,850,TRUE,none,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X+3, Y+1) - lor173",left,"SlimeCorp Excavation Site (X+2, Y+1) - lor213",FALSE,TRUE,8/28/2026 21:54:41,843,842,TRUE,"Key East 1, Key East 2",,,,,,,,,,,,,,,"- Bomb not necessary because of access from north room.
+- Destination is already reachable by wall-ride from main room"
+"SlimeCorp Excavation Site (X+3, Y+1) - lor173",right,"SlimeCorp Excavation Site (X+4, Y+1) - lor180",FALSE,TRUE,8/28/2026 23:17:28,843,844,TRUE,ride,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X+4, Y+1) - lor180",right,"SlimeCorp Excavation Site (X+5, Y+1) - lor337",FALSE,TRUE,8/28/2026 23:17:08,844,845,TRUE,ride,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X+4, Y+1) - lor180",down,"SlimeCorp Excavation Site (X+4, Y+2) - yug8",FALSE,TRUE,8/29/2026 18:09:11,844,852,TRUE,ride,,,,,,,,,,,,,,,Can avoid combat by coming from other side w/ Wall-Ride
+"SlimeCorp Excavation Site (X+5, Y+1) - lor337",up,"SlimeCorp Excavation Site (X+5, Y+0) - lor339",FALSE,TRUE,8/28/2026 22:31:51,845,838,TRUE,ride,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X-3, Y+2) - lor617",down,"SlimeCorp Excavation Site (X-3, Y+3) - lor618",TRUE,FALSE,8/30/2026 19:15:30,847,855,TRUE,none,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X-2, Y+2) - lor586",left,"SlimeCorp Excavation Site (X-3, Y+2) - lor617",TRUE,FALSE,8/30/2026 18:27:34,848,847,TRUE,none,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X-1, Y+2) - lor585",left,"SlimeCorp Excavation Site (X-2, Y+2) - lor586",TRUE,FALSE,8/30/2026 18:21:14,849,848,TRUE,none,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X+2, Y+2) - lor212 (West)",right,"SlimeCorp Excavation Site (X+2, Y+2) - lor212 (East)",TRUE,TRUE,8/28/2026 23:04:28,850,851,TRUE,bomb,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X+2, Y+2) - lor212 (West)",down,"SlimeCorp Excavation Site (X+2, Y+3) - lor417 (West)",FALSE,TRUE,8/30/2026 18:28:08,850,858,TRUE,ride,ufo,,,,,,,,,,,,,,"Opposite direction not needed, since you can go from Combat 2 room to main room and origin room"
+"SlimeCorp Excavation Site (X+2, Y+2) - lor212 (East)",right,"SlimeCorp Excavation Site (X+4, Y+2) - yug8",TRUE,FALSE,8/28/2026 23:04:28,851,852,TRUE,none,,,,,,,,,,,,,,,Maybe split this room West/East
+"SlimeCorp Excavation Site (X+4, Y+2) - yug8",down,"SlimeCorp Excavation Site (X+4, Y+3) - lor256",FALSE,TRUE,8/28/2026 23:21:35,852,862,TRUE,Lever East 2,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X-3, Y+3) - lor618",left,"SlimeCorp Excavation Site (X-4, Y+2) - lor1296",FALSE,TRUE,8/30/2026 19:16:00,855,846,TRUE,ride,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X-3, Y+3) - lor618",right,"SlimeCorp Excavation Site (X+0, Y+3) - lor619",FALSE,FALSE,8/30/2026 20:20:12,855,856,TRUE,none,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X+0, Y+3) - lor619",up,"SlimeCorp Excavation Site (X+0, Y+0) - lor149 (Southwest Left)",FALSE,TRUE,8/30/2026 21:01:11,856,831,TRUE,Combat 4,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X+0, Y+3) - lor619",left,"SlimeCorp Excavation Site (X-3, Y+3) - lor618",FALSE,TRUE,8/30/2026 20:27:31,856,855,TRUE,Combat 4,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X+0, Y+3) - lor619",down,"SlimeCorp Excavation Site (X+0, Y+4) - lor667 (Main)",FALSE,TRUE,8/30/2026 21:19:59,856,869,TRUE,Key West 2,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X+1, Y+3) - lor416",up,"SlimeCorp Excavation Site (X+0, Y+0) - lor149 (Southeast)",FALSE,TRUE,8/30/2026 20:31:22,857,833,TRUE,Combat 2,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X+1, Y+3) - lor416",right,"SlimeCorp Excavation Site (X+2, Y+3) - lor417 (West)",FALSE,TRUE,8/30/2026 20:30:51,857,858,TRUE,Combat 2,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X+2, Y+3) - lor417 (West)",left,"SlimeCorp Excavation Site (X+1, Y+3) - lor416",FALSE,FALSE,8/30/2026 20:30:51,858,857,TRUE,none,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X+2, Y+3) - lor417 (West)",right,"SlimeCorp Excavation Site (X+2, Y+3) - lor417 (East)",FALSE,TRUE,8/28/2026 23:51:16,858,859,TRUE,bomb,"ufo, ride","ride, hard",dash,,,,,,,,,,,,"- (dash) This requires being able to move the bomb but not grabbing it
 - Possible with very difficult midair ufo"
-"SlimeCorp Excavation Site (X+2, Y+3) - lor417 (East)",left,"SlimeCorp Excavation Site (X+2, Y+3) - lor417 (West)",FALSE,TRUE,8/21/2026 3:21:04,857,856,FALSE,bomb,"ride, dash","ride, expert",ufo,,,,,,,,,,,,"- (ride) Normally this setup is difficult but the wall makes it easier
+"SlimeCorp Excavation Site (X+2, Y+3) - lor417 (East)",left,"SlimeCorp Excavation Site (X+2, Y+3) - lor417 (West)",FALSE,TRUE,8/28/2026 23:47:43,859,858,TRUE,bomb,"ride, dash","ride, hard",ufo,,,,,,,,,,,,"- (ride) Normally this setup is difficult but the wall makes it easier
 - (ufo) This requires being able to move the bomb but not grabbing it"
-"SlimeCorp Excavation Site (X+3, Y+3) - lor368 (West)",left,"SlimeCorp Excavation Site (X+2, Y+3) - lor417 (East)",TRUE,FALSE,8/21/2026 3:03:08,858,857,FALSE,none,,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X+3, Y+3) - lor368 (West)",down,"SlimeCorp Excavation Site (X+3, Y+4) - lor390 (West)",TRUE,FALSE,8/21/2026 3:03:08,858,870,FALSE,none,,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X+3, Y+3) - lor368 (East)",left,"SlimeCorp Excavation Site (X+3, Y+3) - lor368 (West)",TRUE,TRUE,8/21/2026 3:01:55,859,858,FALSE,dash,ride,ufo,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X+3, Y+3) - lor368 (East)",down,"SlimeCorp Excavation Site (X+3, Y+4) - lor390 (East)",TRUE,FALSE,8/21/2026 3:01:59,859,871,FALSE,none,,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X+4, Y+3) - lor256",left,"SlimeCorp Excavation Site (X+3, Y+3) - lor368 (East)",TRUE,FALSE,8/21/2026 3:01:31,860,859,FALSE,none,,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X-2, Y+4) - lor672 (North)",left,"SlimeCorp Excavation Site (X-3, Y+3) - lor618",FALSE,TRUE,8/21/2026 16:48:52,863,853,FALSE,ride,,,,,,,,,,,,,,,"- Connection starts at northeast transition
-- Purple dude can be iframe bypassed easily with ride"
-"SlimeCorp Excavation Site (X-2, Y+4) - lor672 (North)",down,"SlimeCorp Excavation Site (X-2, Y+4) - lor672 (South)",TRUE,TRUE,8/21/2026 16:49:23,863,864,FALSE,dash,ufo,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X-2, Y+4) - lor672 (North)",down,"SlimeCorp Excavation Site (X-2, Y+4) - lor672 (Southeast)",TRUE,TRUE,8/21/2026 16:49:48,863,865,FALSE,dash,ufo,ride,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X-2, Y+4) - lor672 (South)",right,"SlimeCorp Excavation Site (X-2, Y+4) - lor672 (Southeast)",TRUE,TRUE,8/21/2026 16:59:12,864,865,FALSE,Lever South 2,,,,,,,,,,,,,,,"Normally this doesn't express the SE to S connection properly. But in all scenarios (ride + lever | ufo | dash) where this connection is possible, it's already in logic through N, or lever access is enough."
-"SlimeCorp Excavation Site (X-2, Y+4) - lor672 (South)",down,"SlimeCorp Excavation Site (X-1, Y+6) - lor732 (West)",TRUE,FALSE,8/21/2026 17:00:10,864,886,FALSE,none,,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X-2, Y+4) - lor672 (South)",left,"SlimeCorp Excavation Site (X-3, Y+6) - lor703 (West)",TRUE,TRUE,8/21/2026 17:14:31,864,882,FALSE,ride,,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X+0, Y+4) - lor667 (West)",left,"SlimeCorp Excavation Site (X-2, Y+4) - lor672 (North)",TRUE,FALSE,8/21/2026 16:40:39,866,863,FALSE,none,,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X+0, Y+4) - lor667 (West)",right,"SlimeCorp Excavation Site (X+0, Y+4) - lor667 (East)",FALSE,TRUE,8/21/2026 16:42:00,866,867,FALSE,"Lever South 1, dash",ride,ufo,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X+0, Y+4) - lor667 (East)",left,"SlimeCorp Excavation Site (X+0, Y+4) - lor667 (West)",FALSE,TRUE,8/21/2026 16:42:01,867,866,FALSE,Lever South 1,ride,ufo,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X+0, Y+4) - lor667 (East)",down,"SlimeCorp Excavation Site (X+0, Y+5) - lor741 (East)",TRUE,FALSE,8/21/2026 16:42:10,867,876,FALSE,none,,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X+1, Y+4) - lor755",up,"SlimeCorp Excavation Site (X+1, Y+3) - lor416",FALSE,TRUE,8/21/2026 18:04:59,868,855,FALSE,Lever South 4,,,,,,,,,,,,,,,Canva missing rule (lever)
-"SlimeCorp Excavation Site (X+1, Y+4) - lor755",right,"SlimeCorp Excavation Site (X+2, Y+4) - lor770",FALSE,TRUE,8/21/2026 18:06:06,868,869,FALSE,dash,ride,ufo,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X+1, Y+4) - lor755",right,"SlimeCorp Excavation Site (X+2, Y+5) - lor769",FALSE,TRUE,8/21/2026 18:08:09,868,877,FALSE,dash,ride,ufo,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X+1, Y+4) - lor755",right,"SlimeCorp Excavation Site (X+2, Y+6) - lor768",FALSE,TRUE,8/21/2026 19:19:14,868,889,FALSE,Key South 2,,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X+3, Y+4) - lor390 (West)",right,"SlimeCorp Excavation Site (X+3, Y+4) - lor390 (East)",FALSE,TRUE,8/21/2026 3:04:02,870,871,FALSE,bomb,,,,,,,,,,,,,,,Canva missing bomb rule
-"SlimeCorp Excavation Site (X+3, Y+4) - lor390 (East)",left,"SlimeCorp Excavation Site (X+3, Y+4) - lor390 (West)",FALSE,TRUE,8/21/2026 3:03:39,871,870,FALSE,"bomb, off",,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X+4, Y+4) - lor1321",up,"SlimeCorp Excavation Site (X+5, Y+1) - lor337",TRUE,TRUE,8/21/2026 18:45:21,872,844,FALSE,ride,,,,,,,,,,,,,,,Not a checkpointable room
-"SlimeCorp Excavation Site (X-5, Y+5) - lor1307",down,"SlimeCorp Excavation Site (X-4, Y+6) - yug3 (West)",FALSE,TRUE,8/21/2026 17:22:40,873,880,FALSE,ride,,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X+0, Y+5) - lor741 (West)",right,"SlimeCorp Excavation Site (X+0, Y+5) - lor741 (East)",TRUE,TRUE,8/21/2026 18:02:12,875,876,FALSE,dash,ride,ufo,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X+0, Y+5) - lor741 (East)",right,"SlimeCorp Excavation Site (X+1, Y+4) - lor755",FALSE,FALSE,8/21/2026 18:02:18,876,868,FALSE,none,,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X-4, Y+6) - yug3 (East)",up,"SlimeCorp Excavation Site (X-5, Y+5) - lor1307",FALSE,TRUE,8/21/2026 17:22:24,881,873,FALSE,"ride, dash",,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X-4, Y+6) - yug3 (East)",left,"SlimeCorp Excavation Site (X-4, Y+6) - yug3 (West)",FALSE,TRUE,8/21/2026 17:24:13,881,880,FALSE,dash,ride,,,,,,,,,,,,,,Ride connection is by going up and going all the way around (this doesn't set a checkpoint in lor1307 and doesn't need dash)
-"SlimeCorp Excavation Site (X-3, Y+6) - lor703 (West)",left,"SlimeCorp Excavation Site (X-4, Y+6) - yug3 (East)",FALSE,FALSE,8/21/2026 17:15:00,882,881,FALSE,none,,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X-3, Y+6) - lor703 (West)",down,"SlimeCorp Excavation Site (X-3, Y+7) - lor712",TRUE,FALSE,8/21/2026 17:13:29,882,894,FALSE,none,,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X-3, Y+6) - lor703 (East)",left,"SlimeCorp Excavation Site (X-3, Y+6) - lor703 (West)",TRUE,TRUE,8/21/2026 19:39:05,883,882,FALSE,dash,ufo,ride,,,,,,,,,,,,,Ride is difficult to do directly but it can be done easily via east gap in room to the next and backtracking
-"SlimeCorp Excavation Site (X-2, Y+6) - lor701 (West)",left,"SlimeCorp Excavation Site (X-3, Y+6) - lor703 (East)",TRUE,FALSE,8/21/2026 17:09:42,884,883,FALSE,none,,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X-2, Y+6) - lor701 (East)",left,"SlimeCorp Excavation Site (X-2, Y+6) - lor701 (West)",TRUE,TRUE,8/21/2026 17:09:38,885,884,FALSE,dash,ride,ufo,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X-1, Y+6) - lor732 (West)",left,"SlimeCorp Excavation Site (X-2, Y+6) - lor701 (East)",TRUE,FALSE,8/21/2026 17:05:21,886,885,FALSE,none,,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X-1, Y+6) - lor732 (East)",right,"SlimeCorp Excavation Site (X+0, Y+6) - lor1079",FALSE,TRUE,8/21/2026 19:19:10,887,888,FALSE,Key South 1,,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X+0, Y+6) - lor1079",up,"SlimeCorp Excavation Site (X+0, Y+5) - lor741 (West)",TRUE,FALSE,8/21/2026 17:58:25,888,875,FALSE,none,,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X+2, Y+6) - lor768",right,"SlimeCorp Excavation Site (X+3, Y+6) - lor854",FALSE,TRUE,8/21/2026 18:18:14,889,890,FALSE,dash,ufo,ride,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X+3, Y+6) - lor854",up,"SlimeCorp Excavation Site (X+3, Y+5) - lor856",FALSE,TRUE,8/21/2026 18:18:29,890,878,FALSE,dash,ufo,"ride, expert",,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X+3, Y+6) - lor854",right,"SlimeCorp Excavation Site (X+4, Y+6) - lor1086",FALSE,TRUE,8/21/2026 18:18:35,890,891,FALSE,dash,ufo,"ride, expert",,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X+4, Y+6) - lor1086",down,"SlimeCorp Excavation Site (X+2, Y+7) - lor860",FALSE,TRUE,8/21/2026 18:21:52,891,898,FALSE,dash,ufo,ride,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X+5, Y+6) - lor1320",up,"SlimeCorp Excavation Site (X+4, Y+4) - lor1321",TRUE,TRUE,8/21/2026 18:45:55,892,872,FALSE,ride,,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X-3, Y+7) - lor712",left,"SlimeCorp Excavation Site (X-4, Y+7) - lor1309",FALSE,TRUE,8/21/2026 17:26:36,894,893,FALSE,ride,,,,,,,,,,,,,,,lor1309 isn't checkpointable for roomsanity
-"SlimeCorp Excavation Site (X-3, Y+7) - lor712",right,"SlimeCorp Excavation Site (X-2, Y+7) - lor726",TRUE,FALSE,8/21/2026 17:31:22,894,895,FALSE,none,,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X-3, Y+7) - lor712",down,"SlimeCorp Excavation Site (X-2, Y+8) - lor1311",TRUE,TRUE,8/21/2026 17:31:22,894,901,FALSE,ride,,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X-2, Y+7) - lor726",right,"SlimeCorp Excavation Site (X-1, Y+7) - lor731",FALSE,TRUE,8/21/2026 17:46:53,895,896,FALSE,dash,walk,ufo,ss,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X-2, Y+7) - lor726",down,"SlimeCorp Excavation Site (X-2, Y+8) - lor1311",TRUE,TRUE,8/21/2026 17:47:04,895,901,FALSE,walk,ride,ufo,ss,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X-1, Y+7) - lor731",up,"SlimeCorp Excavation Site (X-1, Y+6) - lor732 (East)",FALSE,TRUE,8/21/2026 17:57:33,896,887,FALSE,Lever South 3,ufo,dash,"ride, expert",,,,,,,,,,,,"Consider a split or a canReachRegion, see lever"
-"SlimeCorp Excavation Site (X+0, Y+7) - lor1284",warp (up),"SlimeCorp Excavation Site (X+0, Y+0) - lor149 (Main)",TRUE,FALSE,8/21/2026 18:28:34,897,830,FALSE,none,,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X+0, Y+7) - lor1284",up,"SlimeCorp Excavation Site (X+1, Y+4) - lor755",FALSE,TRUE,8/21/2026 18:29:03,897,868,FALSE,Lever South 5,,,,,,,,,,,,,,,Canva missing rule (lever)
-"SlimeCorp Excavation Site (X+0, Y+7) - lor1284",up,"SlimeCorp Excavation Site (X+0, Y+6) - lor1079",FALSE,TRUE,8/21/2026 18:29:06,897,888,FALSE,Lever South 5,,,,,,,,,,,,,,,Canva missing rule (lever)
-"SlimeCorp Excavation Site (X+0, Y+7) - lor1284",down,"SlimeCorp Excavation Site (X+0, Y+8) - lor1089",FALSE,FALSE,8/21/2026 18:29:37,897,903,FALSE,none,,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X+2, Y+7) - lor860",left,"SlimeCorp Excavation Site (X+0, Y+7) - lor1284",FALSE,TRUE,8/21/2026 18:24:54,898,897,FALSE,dash,,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X-2, Y+8) - lor1311",right,"SlimeCorp Excavation Site (X+5, Y+6) - lor1320",TRUE,TRUE,8/21/2026 18:48:16,901,892,FALSE,ride,,,,,,,,,,,,,,,
-"SlimeCorp Skyscraper (X+2, Y-5) - lor98",left,"SlimeCorp Skyscraper (X+1, Y-5) - lor133",FALSE,FALSE,8/19/2026 15:13:16,912,911,TRUE,cog,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Cog,"Technically possible w/ ride + dash if using platform in room below, but it depends on that platform not being moved"
-"SlimeCorp Skyscraper (X+3, Y-5) - lor112",left,"SlimeCorp Skyscraper (X+2, Y-5) - lor98",FALSE,FALSE,8/19/2026 15:08:30,913,912,TRUE,none,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
-"SlimeCorp Skyscraper (X+0, Y-4) - lor187",up,"SlimeCorp Skyscraper (X+0, Y-5) - lor151",FALSE,FALSE,8/19/2026 18:15:57,915,910,TRUE,none,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
-"SlimeCorp Skyscraper (X+0, Y-4) - lor187",right,"SlimeCorp Skyscraper (X+1, Y-4) - lor150",FALSE,FALSE,8/19/2026 18:11:12,915,916,TRUE,none,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
-"SlimeCorp Skyscraper (X+1, Y-4) - lor150",left,"SlimeCorp Skyscraper (X+0, Y-4) - lor187",FALSE,TRUE,8/19/2026 18:11:21,916,915,TRUE,Combat 3,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Combat 3,
-"SlimeCorp Skyscraper (X+2, Y-4) - lor140",right,"SlimeCorp Skyscraper (X+3, Y-4) - lor97 (Main)",FALSE,TRUE,8/19/2026 22:02:18,917,918,TRUE,"ride, dash",,,,,,,FALSE,FALSE,FALSE,Wall-Ride,FALSE,FALSE,FALSE,FALSE,"- Midair UFO possible, but easier UFO via other route
+"SlimeCorp Excavation Site (X+3, Y+3) - lor368 (West)",left,"SlimeCorp Excavation Site (X+2, Y+3) - lor417 (East)",TRUE,FALSE,8/28/2026 23:32:55,860,859,TRUE,none,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X+3, Y+3) - lor368 (West)",down,"SlimeCorp Excavation Site (X+3, Y+4) - lor390 (West)",TRUE,FALSE,8/28/2026 23:32:40,860,873,TRUE,none,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X+3, Y+3) - lor368 (East)",left,"SlimeCorp Excavation Site (X+3, Y+3) - lor368 (West)",TRUE,TRUE,8/28/2026 23:32:21,861,860,TRUE,dash,ride,ufo,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X+3, Y+3) - lor368 (East)",down,"SlimeCorp Excavation Site (X+3, Y+4) - lor390 (East)",TRUE,FALSE,8/28/2026 23:32:32,861,874,TRUE,none,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X+4, Y+3) - lor256",left,"SlimeCorp Excavation Site (X+3, Y+3) - lor368 (East)",TRUE,FALSE,8/28/2026 23:31:41,862,861,TRUE,none,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X-2, Y+4) - lor672 (North)",down,"SlimeCorp Excavation Site (X-2, Y+4) - lor672 (South)",TRUE,TRUE,8/30/2026 21:40:18,865,866,TRUE,dash,ufo,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X-2, Y+4) - lor672 (North)",down,"SlimeCorp Excavation Site (X-2, Y+4) - lor672 (Southeast)",TRUE,TRUE,8/30/2026 21:49:09,865,867,TRUE,dash,ufo,ride,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X-2, Y+4) - lor672 (North)",down,"SlimeCorp Excavation Site (X-2, Y+4) - lor672 (Lever)",FALSE,TRUE,8/31/2026 0:34:24,865,868,TRUE,"hard, off",,,,,,,,,,,,,,,Offstring Throw goes offscreen
+"SlimeCorp Excavation Site (X-2, Y+4) - lor672 (South)",right,"SlimeCorp Excavation Site (X-2, Y+4) - lor672 (Southeast)",TRUE,TRUE,8/30/2026 21:58:44,866,867,TRUE,Lever South 2,,,,,,,,,,,,,,,"Normally this doesn't express the SE to S connection properly. But in all scenarios (ride + lever | ufo | dash) where this connection is possible, it's already in logic through N, or lever access is enough."
+"SlimeCorp Excavation Site (X-2, Y+4) - lor672 (South)",down,"SlimeCorp Excavation Site (X-1, Y+6) - lor732 (West)",TRUE,FALSE,8/30/2026 21:48:45,866,892,TRUE,none,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X-2, Y+4) - lor672 (South)",left,"SlimeCorp Excavation Site (X-3, Y+6) - lor703 (West)",TRUE,TRUE,8/30/2026 21:54:14,866,887,TRUE,ride,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X-2, Y+4) - lor672 (South)",right,"SlimeCorp Excavation Site (X-2, Y+4) - lor672 (Lever)",FALSE,FALSE,8/31/2026 0:33:44,866,868,TRUE,,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X+0, Y+4) - lor667 (Main)",left,"SlimeCorp Excavation Site (X-2, Y+4) - lor672 (North)",TRUE,FALSE,8/30/2026 21:15:12,869,865,TRUE,none,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X+0, Y+4) - lor667 (Main)",right,"SlimeCorp Excavation Site (X+0, Y+4) - lor667 (Southeast)",TRUE,TRUE,8/30/2026 21:15:21,869,870,TRUE,"Lever South 1, dash",ride,ufo,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X+0, Y+4) - lor667 (Southeast)",down,"SlimeCorp Excavation Site (X+0, Y+5) - lor741 (East)",TRUE,FALSE,8/30/2026 21:15:25,870,880,TRUE,none,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X+1, Y+4) - lor755",up,"SlimeCorp Excavation Site (X+1, Y+3) - lor416",FALSE,TRUE,8/31/2026 15:59:12,871,857,TRUE,Lever South 4,,,,,,,,,,,,,,,Canva missing rule (lever)
+"SlimeCorp Excavation Site (X+1, Y+4) - lor755",right,"SlimeCorp Excavation Site (X+2, Y+4) - lor770",FALSE,TRUE,8/31/2026 16:00:40,871,872,TRUE,dash,ride,ufo,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X+1, Y+4) - lor755",right,"SlimeCorp Excavation Site (X+2, Y+5) - lor769 (Main)",FALSE,TRUE,8/31/2026 16:09:11,871,881,TRUE,dash,ride,ufo,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X+1, Y+4) - lor755",left,"SlimeCorp Excavation Site (X+0, Y+6) - lor1079 (East Alcove)",FALSE,TRUE,8/31/2026 16:26:41,871,895,TRUE,ride,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X+1, Y+4) - lor755",right,"SlimeCorp Excavation Site (X+2, Y+6) - lor768",FALSE,TRUE,8/31/2026 16:25:30,871,896,TRUE,Key South 2,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X+3, Y+4) - lor390 (West)",right,"SlimeCorp Excavation Site (X+3, Y+4) - lor390 (East)",FALSE,TRUE,8/28/2026 23:38:21,873,874,TRUE,bomb,,,,,,,,,,,,,,,Canva missing bomb rule
+"SlimeCorp Excavation Site (X+3, Y+4) - lor390 (East)",left,"SlimeCorp Excavation Site (X+3, Y+4) - lor390 (West)",FALSE,TRUE,8/31/2026 1:44:05,874,873,TRUE,"bomb, off","bomb, sleeper-drop",flip+,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X+4, Y+4) - lor1321",up,"SlimeCorp Excavation Site (X+5, Y+1) - lor337",TRUE,TRUE,8/31/2026 16:59:51,875,845,TRUE,ride,,,,,,,,,,,,,,,Not a checkpointable room
+"SlimeCorp Excavation Site (X+0, Y+5) - lor741 (West)",right,"SlimeCorp Excavation Site (X+0, Y+5) - lor741 (East)",FALSE,TRUE,8/31/2026 15:56:47,879,880,TRUE,dash,ride,ufo,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X+0, Y+5) - lor741 (East)",right,"SlimeCorp Excavation Site (X+1, Y+4) - lor755",FALSE,FALSE,8/30/2026 21:17:25,880,871,TRUE,none,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X+0, Y+5) - lor741 (East)",left,"SlimeCorp Excavation Site (X+0, Y+5) - lor741 (West)",FALSE,TRUE,8/31/2026 15:57:31,880,879,TRUE,"dash, Combat 5","ride, Combat 5","ufo, Combat 5",,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X+2, Y+5) - lor769 (Main)",right,"SlimeCorp Excavation Site (X+2, Y+5) - lor769 (Key)",FALSE,TRUE,8/31/2026 16:10:07,881,882,TRUE,dash,ride,ufo,,,,,,,,,,,,,Rule is to bring key near key block in main room
+"SlimeCorp Excavation Site (X-4, Y+6) - yug3 (East)",up,"SlimeCorp Excavation Site (X-5, Y+5) - lor1307 (Main)",FALSE,TRUE,8/31/2026 0:23:44,886,876,TRUE,"ride, dash",,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X-4, Y+6) - yug3 (East)",up,"SlimeCorp Excavation Site (X-5, Y+5) - lor1307 (Money Bag)",FALSE,TRUE,8/31/2026 15:57:27,886,877,TRUE,ride,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X-4, Y+6) - yug3 (East)",left,"SlimeCorp Excavation Site (X-4, Y+6) - yug3 (West)",FALSE,TRUE,8/31/2026 0:18:28,886,885,TRUE,dash,ride,,,,,,,,,,,,,,Ride connection is by going up and going all the way around (this doesn't set a checkpoint in lor1307 and doesn't need dash)
+"SlimeCorp Excavation Site (X-3, Y+6) - lor703 (West)",left,"SlimeCorp Excavation Site (X-4, Y+6) - yug3 (East)",FALSE,FALSE,8/31/2026 0:06:54,887,886,TRUE,none,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X-3, Y+6) - lor703 (West)",down,"SlimeCorp Excavation Site (X-3, Y+7) - lor712",TRUE,FALSE,8/31/2026 0:06:54,887,901,TRUE,none,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X-3, Y+6) - lor703 (East)",left,"SlimeCorp Excavation Site (X-3, Y+6) - lor703 (West)",TRUE,TRUE,8/31/2026 0:05:37,888,887,TRUE,dash,ufo,,,,,,,,,,,,,,Ride is difficult to do directly but it can be done easily via east gap in room to the next and backtracking
+"SlimeCorp Excavation Site (X-2, Y+6) - lor701 (West)",left,"SlimeCorp Excavation Site (X-3, Y+6) - lor703 (East)",TRUE,FALSE,8/30/2026 23:57:14,889,888,TRUE,none,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X-2, Y+6) - lor701 (East)",left,"SlimeCorp Excavation Site (X-2, Y+6) - lor701 (West)",TRUE,TRUE,8/30/2026 23:58:09,890,889,TRUE,dash,ride,ufo,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X-1, Y+6) - lor732 (South)",right,"SlimeCorp Excavation Site (X-1, Y+6) - lor732 (East)",FALSE,TRUE,8/30/2026 21:24:58,891,893,TRUE,Key South 1,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X-1, Y+6) - lor732 (West)",left,"SlimeCorp Excavation Site (X-2, Y+6) - lor701 (East)",TRUE,FALSE,8/30/2026 21:24:09,892,890,TRUE,none,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X-1, Y+6) - lor732 (East)",right,"SlimeCorp Excavation Site (X+0, Y+6) - lor1079 (Main)",TRUE,FALSE,8/31/2026 16:23:58,893,894,TRUE,none,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X+0, Y+6) - lor1079 (Main)",up,"SlimeCorp Excavation Site (X+0, Y+5) - lor741 (West)",TRUE,FALSE,8/31/2026 16:24:29,894,879,TRUE,none,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X+2, Y+6) - lor768",right,"SlimeCorp Excavation Site (X+3, Y+6) - lor854",FALSE,TRUE,8/31/2026 16:32:41,896,897,TRUE,dash,ufo,ride,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X+3, Y+6) - lor854",up,"SlimeCorp Excavation Site (X+3, Y+5) - lor856",FALSE,TRUE,8/31/2026 16:33:53,897,883,TRUE,dash,ufo,ride,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X+3, Y+6) - lor854",right,"SlimeCorp Excavation Site (X+4, Y+6) - lor1086",FALSE,TRUE,8/31/2026 16:34:19,897,898,TRUE,dash,ufo,ride,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X+4, Y+6) - lor1086",down,"SlimeCorp Excavation Site (X+2, Y+7) - lor860",FALSE,TRUE,8/31/2026 16:45:10,898,907,TRUE,dash,ufo,ride,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X+5, Y+6) - lor1320",up,"SlimeCorp Excavation Site (X+4, Y+4) - lor1321",TRUE,TRUE,8/31/2026 16:59:20,899,875,TRUE,ride,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X-3, Y+7) - lor712",left,"SlimeCorp Excavation Site (X-4, Y+7) - lor1309",FALSE,TRUE,8/31/2026 0:51:25,901,900,TRUE,ride,,,,,,,,,,,,,,,lor1309 isn't checkpointable for roomsanity
+"SlimeCorp Excavation Site (X-3, Y+7) - lor712",right,"SlimeCorp Excavation Site (X-2, Y+7) - lor726 (Main)",TRUE,FALSE,8/31/2026 1:56:05,901,902,TRUE,none,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X-2, Y+7) - lor726 (Main)",right,"SlimeCorp Excavation Site (X-1, Y+7) - lor731 (West)",FALSE,FALSE,8/31/2026 15:47:27,902,904,TRUE,walk,dash,ufo,ss,ride,,,,,,,,,,,"Wall-Ride down on the west side, and ride back up on the east side"
+"SlimeCorp Excavation Site (X-2, Y+7) - lor726 (Main)",down,"SlimeCorp Excavation Site (X-2, Y+8) - lor1311",TRUE,TRUE,8/31/2026 1:56:13,902,910,TRUE,walk,ride,ufo,ss,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X-1, Y+7) - lor731 (West)",left,"SlimeCorp Excavation Site (X-2, Y+7) - lor726 (Key)",FALSE,TRUE,8/31/2026 15:49:12,904,903,TRUE,walk,dash,ufo,ss,expert,moon,,,,,,,,,,"Rule is to bring the key from (X-2, Y+7) west to east side of the room, starting from the east side"
+"SlimeCorp Excavation Site (X-1, Y+7) - lor731 (West)",right,"SlimeCorp Excavation Site (X-1, Y+7) - lor731 (East)",FALSE,TRUE,8/31/2026 15:51:14,904,905,TRUE,ufo,dash,ride,,,,,,,,,,,,,"Lever South 3 is only reachable from one side, so it's not necessary"
+"SlimeCorp Excavation Site (X-1, Y+7) - lor731 (East)",up,"SlimeCorp Excavation Site (X-1, Y+6) - lor732 (South)",FALSE,FALSE,8/31/2026 17:00:59,905,891,TRUE,none,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X+0, Y+7) - lor1284",up,"SlimeCorp Excavation Site (X+1, Y+4) - lor755",FALSE,TRUE,8/31/2026 16:54:21,906,871,TRUE,Lever South 5,,,,,,,,,,,,,,,Canva missing rule (lever)
+"SlimeCorp Excavation Site (X+0, Y+7) - lor1284",up,"SlimeCorp Excavation Site (X+0, Y+6) - lor1079 (Main)",FALSE,TRUE,8/31/2026 16:54:36,906,894,TRUE,Lever South 5,,,,,,,,,,,,,,,Canva missing rule (lever)
+"SlimeCorp Excavation Site (X+0, Y+7) - lor1284",down,"SlimeCorp Excavation Site (X+0, Y+8) - lor1089",FALSE,FALSE,8/31/2026 16:54:51,906,912,TRUE,none,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X+2, Y+7) - lor860",left,"SlimeCorp Excavation Site (X+0, Y+7) - lor1284",FALSE,TRUE,8/31/2026 16:53:02,907,906,TRUE,dash,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X-2, Y+8) - lor1311",right,"SlimeCorp Excavation Site (X+5, Y+6) - lor1320",TRUE,TRUE,8/31/2026 16:56:40,910,899,TRUE,ride,,,,,,,,,,,,,,,
+"SlimeCorp Skyscraper (X+2, Y-5) - lor98",left,"SlimeCorp Skyscraper (X+1, Y-5) - lor133",FALSE,FALSE,8/19/2026 15:13:16,921,920,TRUE,cog,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Cog,"Technically possible w/ ride + dash if using platform in room below, but it depends on that platform not being moved"
+"SlimeCorp Skyscraper (X+3, Y-5) - lor112",left,"SlimeCorp Skyscraper (X+2, Y-5) - lor98",FALSE,FALSE,8/19/2026 15:08:30,922,921,TRUE,none,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
+"SlimeCorp Skyscraper (X+0, Y-4) - lor187",up,"SlimeCorp Skyscraper (X+0, Y-5) - lor151",FALSE,FALSE,8/19/2026 18:15:57,924,919,TRUE,none,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
+"SlimeCorp Skyscraper (X+0, Y-4) - lor187",right,"SlimeCorp Skyscraper (X+1, Y-4) - lor150",FALSE,FALSE,8/19/2026 18:11:12,924,925,TRUE,none,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
+"SlimeCorp Skyscraper (X+1, Y-4) - lor150",left,"SlimeCorp Skyscraper (X+0, Y-4) - lor187",FALSE,TRUE,8/19/2026 18:11:21,925,924,TRUE,Combat 3,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Combat 3,
+"SlimeCorp Skyscraper (X+2, Y-4) - lor140",right,"SlimeCorp Skyscraper (X+3, Y-4) - lor97 (Main)",FALSE,TRUE,8/19/2026 22:02:18,926,927,TRUE,"ride, dash",,,,,,,FALSE,FALSE,FALSE,Wall-Ride,FALSE,FALSE,FALSE,FALSE,"- Midair UFO possible, but easier UFO via other route
 - Cog + Offstring possible, but easier via vanilla route"
-"SlimeCorp Skyscraper (X+2, Y-4) - lor140",left,"SlimeCorp Skyscraper (X+1, Y-3) - lor220 (Main)",FALSE,TRUE,8/19/2026 21:38:13,917,921,TRUE,"cog, Key 3, Key 4","hard, ride, dash",,,,,,FALSE,FALSE,FALSE,Wall-Ride (Hard diff),FALSE,FALSE,FALSE,Cog AND Key 3+4,"- Ride + dash is possible from south side only, but easy to go there from the north side via east room.
+"SlimeCorp Skyscraper (X+2, Y-4) - lor140",left,"SlimeCorp Skyscraper (X+1, Y-3) - lor220 (Main)",FALSE,TRUE,8/19/2026 21:38:13,926,930,TRUE,"cog, Key 3, Key 4","hard, ride, dash",,,,,,FALSE,FALSE,FALSE,Wall-Ride (Hard diff),FALSE,FALSE,FALSE,Cog AND Key 3+4,"- Ride + dash is possible from south side only, but easy to go there from the north side via east room.
 - Possible with only cog + dash but only from south side and missable
 - Cog + UFO possible, but can also reach left room from east side of starting room w/ just UFO"
-"SlimeCorp Skyscraper (X+3, Y-4) - lor97 (Main)",left,"SlimeCorp Skyscraper (X+2, Y-4) - lor140",FALSE,TRUE,8/19/2026 14:54:29,918,917,TRUE,Key 3,Key 4,ride,ufo,,,,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,Key 3 OR Key 4,
-"SlimeCorp Skyscraper (X+3, Y-4) - lor97 (Main)",up,"SlimeCorp Skyscraper (X+3, Y-4) - lor97 (North)",FALSE,TRUE,8/19/2026 14:54:55,918,919,TRUE,cog,"hard, dash, ride",ufo,,,,,FALSE,FALSE,FALSE,Wall-Ride (Hard diff),TRUE,FALSE,FALSE,Cog,Hard diff requires wall-riding on cog and back to the wall
-"SlimeCorp Skyscraper (X+3, Y-4) - lor97 (Main)",down,"SlimeCorp Skyscraper (X+3, Y-4) - lor97 (Southeast)",FALSE,TRUE,8/27/2026 16:43:30,918,920,TRUE,"cog, off",ufo,"hard, cog, dash",,,,,FALSE,Cog,FALSE,Cog (Hard diff),TRUE,FALSE,FALSE,FALSE,
-"SlimeCorp Skyscraper (X+3, Y-4) - lor97 (North)",up,"SlimeCorp Skyscraper (X+3, Y-5) - lor112",FALSE,FALSE,8/19/2026 14:55:11,919,913,TRUE,none,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
-"SlimeCorp Skyscraper (X+3, Y-4) - lor97 (North)",up,"SlimeCorp Skyscraper (X+4, Y-5) - lor104",FALSE,FALSE,8/19/2026 15:05:01,919,914,TRUE,none,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
-"SlimeCorp Skyscraper (X+3, Y-4) - lor97 (Southeast)",up,"SlimeCorp Skyscraper (X+3, Y-4) - lor97 (Main)",FALSE,FALSE,8/19/2026 14:37:41,920,918,TRUE,none,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Return to safe house to get into Main section
-"SlimeCorp Skyscraper (X+1, Y-3) - lor220 (North)",up,"SlimeCorp Skyscraper (X+1, Y-4) - lor150",TRUE,FALSE,8/27/2026 16:44:09,922,916,TRUE,none,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
-"SlimeCorp Skyscraper (X+1, Y-3) - lor220 (Main)",up,"SlimeCorp Skyscraper (X+1, Y-3) - lor220 (North)",FALSE,TRUE,8/27/2026 16:43:36,921,922,TRUE,"cog, off",ufo,"hard, dash, ride",,,,,FALSE,Cog,FALSE,Wall-Ride (Hard diff),TRUE,FALSE,FALSE,FALSE,
-"SlimeCorp Skyscraper (X+1, Y-3) - lor220 (Main)",right,"SlimeCorp Skyscraper (X+2, Y-4) - lor140",FALSE,FALSE,8/19/2026 21:36:37,921,917,TRUE,none,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
-"SlimeCorp Skyscraper (X+1, Y-3) - lor220 (Main)",down,"SlimeCorp Skyscraper (X+0, Y-2) - lor2 (East)",FALSE,TRUE,8/19/2026 21:36:43,921,924,TRUE,ufo,,,,,,,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,"Possible with wall-ride only, but might be too hard even for expert"
-"SlimeCorp Skyscraper (X+1, Y-3) - lor220 (North)",down,"SlimeCorp Skyscraper (X+1, Y-3) - lor220 (Main)",FALSE,TRUE,8/19/2026 21:39:21,922,921,TRUE,ufo,"ride, dash",,,,,,FALSE,FALSE,FALSE,Wall-Ride,TRUE,FALSE,FALSE,FALSE,Start Wall-Ride in room above
-"SlimeCorp Skyscraper (X+0, Y-2) - lor2 (West)",up,"SlimeCorp Skyscraper (X+0, Y-4) - lor187",FALSE,TRUE,8/19/2026 18:18:32,923,915,TRUE,ufo,ride,,,,,,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,
-"SlimeCorp Skyscraper (X+0, Y-2) - lor2 (West)",right,"SlimeCorp Skyscraper (X+0, Y-2) - lor2 (East)",FALSE,TRUE,8/16/2026 19:03:07,923,924,TRUE,ufo,cog,,,,,,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,Cog,
-"SlimeCorp Skyscraper (X+0, Y-2) - lor2 (East)",up,"SlimeCorp Skyscraper (X+1, Y-3) - lor220 (Main)",FALSE,TRUE,8/19/2026 21:39:58,924,921,TRUE,ufo,dash,,,,,,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,
-"SlimeCorp Skyscraper (X+0, Y-2) - lor2 (East)",right,"SlimeCorp Skyscraper (X+2, Y-2) - lor63 (West)",FALSE,TRUE,8/19/2026 13:50:06,924,925,TRUE,Key 2,ride,ufo,,,,,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,Key 2,
-"SlimeCorp Skyscraper (X+0, Y-2) - lor2 (East)",right,"SlimeCorp Skyscraper (X+2, Y-1) - ren22",FALSE,TRUE,8/19/2026 14:14:45,924,927,TRUE,ufo,ride,,,,,,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,
-"SlimeCorp Skyscraper (X+0, Y-2) - lor2 (East)",right,"SlimeCorp Skyscraper (X+2, Y+0) - lor16",FALSE,FALSE,8/16/2026 20:09:53,924,931,TRUE,none,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
-"SlimeCorp Skyscraper (X+2, Y-2) - lor63 (West)",left,"SlimeCorp Skyscraper (X+0, Y-2) - lor2 (East)",FALSE,TRUE,8/19/2026 14:04:19,925,924,TRUE,Key 2,ride,dash,ufo,,,,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,Key 2,
-"SlimeCorp Skyscraper (X+2, Y-2) - lor63 (West)",right,"SlimeCorp Skyscraper (X+2, Y-2) - lor63 (East)",TRUE,TRUE,8/19/2026 21:43:02,925,926,TRUE,Combat 2,ride,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,Combat 2,"Midair UFO possible, but easier UFO route in rooms below"
-"SlimeCorp Skyscraper (X+2, Y-2) - lor63 (East)",right,"SlimeCorp Skyscraper (X+3, Y-4) - lor97 (Main)",TRUE,FALSE,8/19/2026 14:00:29,926,918,TRUE,none,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
-"SlimeCorp Skyscraper (X+2, Y-1) - ren22",right,"SlimeCorp Skyscraper (X+3, Y-1) - lor25 (North)",FALSE,TRUE,8/19/2026 22:18:47,927,928,TRUE,ufo,dash,,,,,,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,
-"SlimeCorp Skyscraper (X+3, Y-1) - lor25 (North)",up,"SlimeCorp Skyscraper (X+3, Y-4) - lor97 (Main)",FALSE,TRUE,8/19/2026 16:26:46,928,918,TRUE,ufo,"dash, ride",,,,,,FALSE,FALSE,FALSE,Wall-Ride,TRUE,FALSE,FALSE,FALSE,
-"SlimeCorp Skyscraper (X+3, Y-1) - lor25 (North)",left,"SlimeCorp Skyscraper (X+2, Y-1) - ren22",FALSE,TRUE,8/27/2026 16:59:54,928,927,TRUE,"Combat 1, cog","Combat 1, ufo","ufo, ride",,,,,FALSE,FALSE,FALSE,FALSE,Combat 1 OR Wall-Ride,FALSE,FALSE,Combat 1 AND Cog,Wall-Ride + Wall-Dash possible if Combat 1 is not complete (but shouldn't matter anyways)
-"SlimeCorp Skyscraper (X+3, Y-1) - lor25 (North)",right,"SlimeCorp Skyscraper (X+4, Y-1) - lor54",FALSE,TRUE,8/27/2026 16:59:55,928,930,TRUE,"Combat 1, cog","Combat 1, ufo","ufo, ride",,,,,FALSE,FALSE,FALSE,FALSE,Combat 1 OR Wall-Ride,FALSE,FALSE,Combat 1 AND Cog,Wall-Ride + Wall-Dash possible if Combat 1 is not complete (but shouldn't matter anyways)
-"SlimeCorp Skyscraper (X+3, Y-1) - lor25 (Southwest)",up,"SlimeCorp Skyscraper (X+3, Y-1) - lor25 (North)",FALSE,TRUE,8/19/2026 14:13:03,929,928,TRUE,"cog, off",,,,,,,FALSE,Cog,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
-"SlimeCorp Skyscraper (X+4, Y-1) - lor54",up,"SlimeCorp Skyscraper (X+3, Y-4) - lor97 (Southeast)",FALSE,TRUE,8/27/2026 16:46:44,930,920,TRUE,"expert, dash, ride",,,,,,,FALSE,FALSE,FALSE,Ride (expert diff),FALSE,FALSE,FALSE,FALSE,
-"SlimeCorp Skyscraper (X+2, Y+0) - lor16",right,"SlimeCorp Skyscraper (X+3, Y-1) - lor25 (Southwest)",FALSE,TRUE,8/19/2026 14:12:11,931,929,TRUE,cog,ufo,,,,,,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,cog,
-"South Plaza (X-1, Y-6) - ren355 (North)",up,"North Plaza (X-1, Y-10) - ren4872",TRUE,FALSE,8/16/2026 19:47:32,932,457,TRUE,,,,,,,,,,,,,,,,
-"South Plaza (X-1, Y-6) - ren355 (North)",down,"South Plaza (X-1, Y-6) - ren355 (South)",FALSE,FALSE,,932,933,TRUE,,,,,,,,,,,,,,,,
-"South Plaza (X-1, Y-6) - ren355 (North)",manhole (down),"South Plaza (Sewers) (X-1, Y-6) - lor230",TRUE,FALSE,,932,953,TRUE,,,,,,,,,,,,,,,,
-"South Plaza (X-1, Y-6) - ren355 (South)",manhole (down),"South Plaza (Sewers) (X-1, Y-5) - ren984",TRUE,FALSE,,933,954,TRUE,,,,,,,,,,,,,,,,
-"South Plaza (X-2, Y-4) - ren4064",left,"Gallineiros District (X-3, Y-4) - lor1740",TRUE,FALSE,,936,398,TRUE,,,,,,,,,,,,,,,,
-"South Plaza (X-2, Y-4) - ren4064",right,"South Plaza (X-1, Y-6) - ren355 (South)",TRUE,FALSE,,936,933,TRUE,,,,,,,,,,,,,,,,
-"South Plaza (X+1, Y-4) - ren4066",right,"Faria Slimer Borough (X+2, Y-4) - lor1128 (West)",TRUE,FALSE,,937,208,TRUE,,,,,,,,,,,,,,,,
-"South Plaza (X+1, Y-4) - ren4066",left,"South Plaza (X-1, Y-6) - ren355 (South)",TRUE,FALSE,,937,933,TRUE,,,,,,,,,,,,,,,,
-"South Plaza (X-2, Y-3) - ren223 (Main)",right,"Faria Slimer Borough (X+2, Y+0) - yug220 (West)",TRUE,FALSE,,938,237,TRUE,,,,,,,,,,,,,,,,
-"South Plaza (X-2, Y-3) - ren223 (Main)",left,"Old Rattalia Town (X-3, Y-1) - ren1833 (East)",TRUE,FALSE,,938,503,TRUE,,,,,,,,,,,,,,,,
-"South Plaza (X-2, Y-3) - ren223 (Main)",warp (down),"Safe House (X+0, Y+0) - mig38",FALSE,FALSE,8/19/2026 14:23:18,938,781,TRUE,,,,,,,,,,,,,,,,No ER
-"South Plaza (X-2, Y-3) - ren223 (Main)",up,"South Plaza (X-2, Y-4) - ren4064",TRUE,FALSE,,938,936,TRUE,,,,,,,,,,,,,,,,
-"South Plaza (X-2, Y-3) - ren223 (Main)",up,"South Plaza (X+1, Y-4) - ren4066",TRUE,FALSE,,938,937,TRUE,,,,,,,,,,,,,,,,
-"South Plaza (X-2, Y-3) - ren223 (Main)",down,"South Plaza (X-2, Y-3) - ren223 (South)",TRUE,TRUE,8/1/2026 15:37:39,938,939,TRUE,ss,dog,dash,ufo,ride,,,Skipping Stone,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,
-"South Plaza (X-2, Y-3) - ren223 (Main)",down,"South Plaza (X-2, Y-3) - ren223 (Southwest)",TRUE,TRUE,8/1/2026 15:34:51,938,940,TRUE,ss,dog,ufo,ride,,,,Skipping Stone,FALSE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,
-"South Plaza (X-2, Y-3) - ren223 (Main)",down,"South Plaza (X-2, Y-3) - ren223 (Southeast)",TRUE,TRUE,8/1/2026 15:34:54,938,941,TRUE,dash,ufo,ride,,,,,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,
-"South Plaza (X-2, Y-3) - ren223 (Main)",warp (up),"South Plaza (Interiors) (X-1, Y+1) - ren85",TRUE,FALSE,,938,952,TRUE,,,,,,,,,,,,,,,,
-"South Plaza (X-2, Y-3) - ren223 (South)",down,"South Plaza (X-1, Y+4) - lor2248 (North)",TRUE,FALSE,,939,945,TRUE,,,,,,,,,,,,,,,,
-"South Plaza (X-2, Y-3) - ren223 (Southwest)",left,"South Plaza (X-3, Y+3) - ren4152",FALSE,FALSE,7/23/2026 19:12:22,940,942,TRUE,,,,,,,,,,,,,,,,
-"South Plaza (X-2, Y-3) - ren223 (Southeast)",right,"Faria Slimer Borough (X+2, Y+3) - yug1",FALSE,FALSE,8/7/2026 1:59:25,941,252,TRUE,,,,,,,,,,,,,,,,
-"South Plaza (X-3, Y+3) - ren4152",left,"Old Rattalia Town (X-4, Y+3) - ren4147",FALSE,TRUE,8/1/2026 15:35:59,942,525,FALSE,[SP] Combat 2,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Combat 2,
-"South Plaza (X-3, Y+3) - ren4152",right,"South Plaza (X-2, Y-3) - ren223 (Southwest)",FALSE,TRUE,8/1/2026 15:36:04,942,940,TRUE,[SP] Combat 2,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Combat 2,
-"South Plaza (X-2, Y+4) - yug5210",left,"South Plaza (X-3, Y+4) - yug4930",FALSE,FALSE,,944,943,TRUE,,,,,,,,,,,,,,,,
-"South Plaza (X-1, Y+4) - lor2248 (North)",left,"South Plaza (X-2, Y+4) - yug5210",FALSE,FALSE,,945,944,TRUE,,,,,,,,,,,,,,,,
-"South Plaza (X-1, Y+4) - lor2248 (North)",right,"South Plaza (X+1, Y+4) - yug4939 (West)",FALSE,FALSE,,945,949,TRUE,,,,,,,,,,,,,,,,
-"South Plaza (X-1, Y+4) - lor2248 (South)",up,"South Plaza (X-1, Y+4) - lor2248 (North)",FALSE,FALSE,,946,945,TRUE,,,,,,,,,,,,,,,,
-"South Plaza (X-1, Y+4) - lor2248 (South)",manhole (down),"South Plaza (Sewers) (X-1, Y+4) - lor871",TRUE,FALSE,,946,955,TRUE,,,,,,,,,,,,,,,,
-"South Plaza (X-1, Y+4) - lor2248 (Southeast)",left,"South Plaza (X-1, Y+4) - lor2248 (South)",FALSE,TRUE,8/7/2026 1:07:42,947,946,TRUE,ss,dog,dash,ufo,ride,,,Skipping Stone,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,
-"South Plaza (X-1, Y+4) - lor2248 (Southeast Entrance)",left,"South Plaza (X-1, Y+4) - lor2248 (Southeast)",FALSE,TRUE,8/7/2026 11:52:29,948,947,TRUE,"ss, Lever 3","dog, Lever 3","ufo, Lever 3",ride,"buoy, Lever 3",,,Skipping Stone AND Lever 3,FALSE,Lever 3,FALSE,Lever 3,TRUE,FALSE,Lever 3 AND buoy,
-"South Plaza (X+1, Y+4) - yug4939 (West)",right,"South Plaza (X+1, Y+4) - yug4939 (East)",FALSE,TRUE,8/1/2026 15:36:20,949,950,TRUE,dash,ufo,ride,,,,,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,
-"South Plaza (X+1, Y+4) - yug4939 (East)",right,"South Plaza (X+2, Y+4) - yug5154",FALSE,FALSE,,950,951,TRUE,,,,,,,,,,,,,,,,
-"South Plaza (Sewers) (X-1, Y-5) - ren984",up,"South Plaza (Sewers) (X-1, Y-6) - lor230",FALSE,TRUE,8/1/2026 17:33:53,954,953,TRUE,"Lever 1, Lever 2",,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Lever 1 AND Lever 2,
-"South Plaza (Sewers) (X-1, Y+4) - lor871",down,"South Plaza (Sewers) (X-1, Y+5) - yug1700 (West)",FALSE,TRUE,8/1/2026 15:38:04,955,956,TRUE,dog,"midair ufo, ss",ride,,,,,FALSE,FALSE,TRUE,FALSE,Skipping Stone,TRUE,FALSE,FALSE,UFO Throw -> mid-air UFO Throw off corner
-"South Plaza (Sewers) (X-1, Y+5) - yug1700 (West)",right,"South Plaza (Sewers) (X-1, Y+5) - yug1700 (East)",FALSE,TRUE,8/1/2026 21:18:51,956,957,TRUE,"off, dog","off, ride","dog, ss",,,,,FALSE,Walk-the-Dog OR Wall Ride,Skipping Stone,FALSE,FALSE,FALSE,FALSE,FALSE,
-"Trevosos Motor Club (Interiors) (X-10, Y-6) - ren93",warp (up),"Trevosos Motor Club (X-3, Y+0) - ren212",FALSE,TRUE,,961,958,FALSE,,,,,,,,,,,,,,,,
-"Trevosos Motor Club (Interiors) (X-10, Y-6) - ren93",warp (up),"Trevosos Motor Club (X+0, Y+0) - ren2",FALSE,FALSE,,961,959,FALSE,,,,,,,,,,,,,,,,
-"Trevosos Motor Club (Interiors) (X-10, Y-6) - ren93",warp (up),"Trevosos Motor Club (X+2, Y+0) - ren75",FALSE,TRUE,,961,960,FALSE,,,,,,,,,,,,,,,,
+"SlimeCorp Skyscraper (X+3, Y-4) - lor97 (Main)",left,"SlimeCorp Skyscraper (X+2, Y-4) - lor140",FALSE,TRUE,8/19/2026 14:54:29,927,926,TRUE,Key 3,Key 4,ride,ufo,,,,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,Key 3 OR Key 4,
+"SlimeCorp Skyscraper (X+3, Y-4) - lor97 (Main)",up,"SlimeCorp Skyscraper (X+3, Y-4) - lor97 (North)",FALSE,TRUE,8/19/2026 14:54:55,927,928,TRUE,cog,"hard, dash, ride",ufo,,,,,FALSE,FALSE,FALSE,Wall-Ride (Hard diff),TRUE,FALSE,FALSE,Cog,Hard diff requires wall-riding on cog and back to the wall
+"SlimeCorp Skyscraper (X+3, Y-4) - lor97 (Main)",down,"SlimeCorp Skyscraper (X+3, Y-4) - lor97 (Southeast)",FALSE,TRUE,8/27/2026 16:43:30,927,929,TRUE,"cog, off",ufo,"hard, cog, dash",,,,,FALSE,Cog,FALSE,Cog (Hard diff),TRUE,FALSE,FALSE,FALSE,
+"SlimeCorp Skyscraper (X+3, Y-4) - lor97 (North)",up,"SlimeCorp Skyscraper (X+3, Y-5) - lor112",FALSE,FALSE,8/19/2026 14:55:11,928,922,TRUE,none,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
+"SlimeCorp Skyscraper (X+3, Y-4) - lor97 (North)",up,"SlimeCorp Skyscraper (X+4, Y-5) - lor104",FALSE,FALSE,8/19/2026 15:05:01,928,923,TRUE,none,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
+"SlimeCorp Skyscraper (X+3, Y-4) - lor97 (Southeast)",up,"SlimeCorp Skyscraper (X+3, Y-4) - lor97 (Main)",FALSE,FALSE,8/19/2026 14:37:41,929,927,TRUE,none,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Return to safe house to get into Main section
+"SlimeCorp Skyscraper (X+1, Y-3) - lor220 (North)",up,"SlimeCorp Skyscraper (X+1, Y-4) - lor150",TRUE,FALSE,8/27/2026 16:44:09,931,925,TRUE,none,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
+"SlimeCorp Skyscraper (X+1, Y-3) - lor220 (Main)",up,"SlimeCorp Skyscraper (X+1, Y-3) - lor220 (North)",FALSE,TRUE,8/27/2026 16:43:36,930,931,TRUE,"cog, off",ufo,"hard, dash, ride",,,,,FALSE,Cog,FALSE,Wall-Ride (Hard diff),TRUE,FALSE,FALSE,FALSE,
+"SlimeCorp Skyscraper (X+1, Y-3) - lor220 (Main)",right,"SlimeCorp Skyscraper (X+2, Y-4) - lor140",FALSE,FALSE,8/19/2026 21:36:37,930,926,TRUE,none,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
+"SlimeCorp Skyscraper (X+1, Y-3) - lor220 (Main)",down,"SlimeCorp Skyscraper (X+0, Y-2) - lor2 (East)",FALSE,TRUE,8/19/2026 21:36:43,930,933,TRUE,ufo,,,,,,,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,"Possible with wall-ride only, but might be too hard even for expert"
+"SlimeCorp Skyscraper (X+1, Y-3) - lor220 (North)",down,"SlimeCorp Skyscraper (X+1, Y-3) - lor220 (Main)",FALSE,TRUE,8/19/2026 21:39:21,931,930,TRUE,ufo,"ride, dash",,,,,,FALSE,FALSE,FALSE,Wall-Ride,TRUE,FALSE,FALSE,FALSE,Start Wall-Ride in room above
+"SlimeCorp Skyscraper (X+0, Y-2) - lor2 (West)",up,"SlimeCorp Skyscraper (X+0, Y-4) - lor187",FALSE,TRUE,8/19/2026 18:18:32,932,924,TRUE,ufo,ride,,,,,,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,
+"SlimeCorp Skyscraper (X+0, Y-2) - lor2 (West)",right,"SlimeCorp Skyscraper (X+0, Y-2) - lor2 (East)",FALSE,TRUE,8/16/2026 19:03:07,932,933,TRUE,ufo,cog,,,,,,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,Cog,
+"SlimeCorp Skyscraper (X+0, Y-2) - lor2 (East)",up,"SlimeCorp Skyscraper (X+1, Y-3) - lor220 (Main)",FALSE,TRUE,8/19/2026 21:39:58,933,930,TRUE,ufo,dash,,,,,,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,
+"SlimeCorp Skyscraper (X+0, Y-2) - lor2 (East)",right,"SlimeCorp Skyscraper (X+2, Y-2) - lor63 (West)",FALSE,TRUE,8/19/2026 13:50:06,933,934,TRUE,Key 2,ride,ufo,,,,,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,Key 2,
+"SlimeCorp Skyscraper (X+0, Y-2) - lor2 (East)",right,"SlimeCorp Skyscraper (X+2, Y-1) - ren22",FALSE,TRUE,8/19/2026 14:14:45,933,936,TRUE,ufo,ride,,,,,,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,
+"SlimeCorp Skyscraper (X+0, Y-2) - lor2 (East)",right,"SlimeCorp Skyscraper (X+2, Y+0) - lor16",FALSE,FALSE,8/16/2026 20:09:53,933,940,TRUE,none,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
+"SlimeCorp Skyscraper (X+2, Y-2) - lor63 (West)",left,"SlimeCorp Skyscraper (X+0, Y-2) - lor2 (East)",FALSE,TRUE,8/19/2026 14:04:19,934,933,TRUE,Key 2,ride,dash,ufo,,,,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,Key 2,
+"SlimeCorp Skyscraper (X+2, Y-2) - lor63 (West)",right,"SlimeCorp Skyscraper (X+2, Y-2) - lor63 (East)",TRUE,TRUE,8/19/2026 21:43:02,934,935,TRUE,Combat 2,ride,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,Combat 2,"Midair UFO possible, but easier UFO route in rooms below"
+"SlimeCorp Skyscraper (X+2, Y-2) - lor63 (East)",right,"SlimeCorp Skyscraper (X+3, Y-4) - lor97 (Main)",TRUE,FALSE,8/19/2026 14:00:29,935,927,TRUE,none,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
+"SlimeCorp Skyscraper (X+2, Y-1) - ren22",right,"SlimeCorp Skyscraper (X+3, Y-1) - lor25 (North)",FALSE,TRUE,8/19/2026 22:18:47,936,937,TRUE,ufo,dash,,,,,,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,
+"SlimeCorp Skyscraper (X+3, Y-1) - lor25 (North)",up,"SlimeCorp Skyscraper (X+3, Y-4) - lor97 (Main)",FALSE,TRUE,8/19/2026 16:26:46,937,927,TRUE,ufo,"dash, ride",,,,,,FALSE,FALSE,FALSE,Wall-Ride,TRUE,FALSE,FALSE,FALSE,
+"SlimeCorp Skyscraper (X+3, Y-1) - lor25 (North)",left,"SlimeCorp Skyscraper (X+2, Y-1) - ren22",FALSE,TRUE,8/27/2026 16:59:54,937,936,TRUE,"Combat 1, cog","Combat 1, ufo","ufo, ride",,,,,FALSE,FALSE,FALSE,FALSE,Combat 1 OR Wall-Ride,FALSE,FALSE,Combat 1 AND Cog,Wall-Ride + Wall-Dash possible if Combat 1 is not complete (but shouldn't matter anyways)
+"SlimeCorp Skyscraper (X+3, Y-1) - lor25 (North)",right,"SlimeCorp Skyscraper (X+4, Y-1) - lor54",FALSE,TRUE,8/27/2026 16:59:55,937,939,TRUE,"Combat 1, cog","Combat 1, ufo","ufo, ride",,,,,FALSE,FALSE,FALSE,FALSE,Combat 1 OR Wall-Ride,FALSE,FALSE,Combat 1 AND Cog,Wall-Ride + Wall-Dash possible if Combat 1 is not complete (but shouldn't matter anyways)
+"SlimeCorp Skyscraper (X+3, Y-1) - lor25 (Southwest)",up,"SlimeCorp Skyscraper (X+3, Y-1) - lor25 (North)",FALSE,TRUE,8/19/2026 14:13:03,938,937,TRUE,"cog, off",,,,,,,FALSE,Cog,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
+"SlimeCorp Skyscraper (X+4, Y-1) - lor54",up,"SlimeCorp Skyscraper (X+3, Y-4) - lor97 (Southeast)",FALSE,TRUE,8/27/2026 16:46:44,939,929,TRUE,"expert, dash, ride",,,,,,,FALSE,FALSE,FALSE,Ride (expert diff),FALSE,FALSE,FALSE,FALSE,
+"SlimeCorp Skyscraper (X+2, Y+0) - lor16",right,"SlimeCorp Skyscraper (X+3, Y-1) - lor25 (Southwest)",FALSE,TRUE,8/19/2026 14:12:11,940,938,TRUE,cog,ufo,,,,,,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,cog,
+"South Plaza (X-1, Y-6) - ren355 (North)",up,"North Plaza (X-1, Y-10) - ren4872",TRUE,FALSE,8/16/2026 19:47:32,941,457,TRUE,,,,,,,,,,,,,,,,
+"South Plaza (X-1, Y-6) - ren355 (North)",down,"South Plaza (X-1, Y-6) - ren355 (South)",FALSE,FALSE,,941,942,TRUE,,,,,,,,,,,,,,,,
+"South Plaza (X-1, Y-6) - ren355 (North)",manhole (down),"South Plaza (Sewers) (X-1, Y-6) - lor230",TRUE,FALSE,,941,962,TRUE,,,,,,,,,,,,,,,,
+"South Plaza (X-1, Y-6) - ren355 (South)",manhole (down),"South Plaza (Sewers) (X-1, Y-5) - ren984",TRUE,FALSE,,942,963,TRUE,,,,,,,,,,,,,,,,
+"South Plaza (X-2, Y-4) - ren4064",left,"Gallineiros District (X-3, Y-4) - lor1740",TRUE,FALSE,,945,398,TRUE,,,,,,,,,,,,,,,,
+"South Plaza (X-2, Y-4) - ren4064",right,"South Plaza (X-1, Y-6) - ren355 (South)",TRUE,FALSE,,945,942,TRUE,,,,,,,,,,,,,,,,
+"South Plaza (X+1, Y-4) - ren4066",right,"Faria Slimer Borough (X+2, Y-4) - lor1128 (West)",TRUE,FALSE,,946,208,TRUE,,,,,,,,,,,,,,,,
+"South Plaza (X+1, Y-4) - ren4066",left,"South Plaza (X-1, Y-6) - ren355 (South)",TRUE,FALSE,,946,942,TRUE,,,,,,,,,,,,,,,,
+"South Plaza (X-2, Y-3) - ren223 (Main)",right,"Faria Slimer Borough (X+2, Y+0) - yug220 (West)",TRUE,FALSE,,947,237,TRUE,,,,,,,,,,,,,,,,
+"South Plaza (X-2, Y-3) - ren223 (Main)",left,"Old Rattalia Town (X-3, Y-1) - ren1833 (East)",TRUE,FALSE,,947,503,TRUE,,,,,,,,,,,,,,,,
+"South Plaza (X-2, Y-3) - ren223 (Main)",warp (down),"Safe House (X+0, Y+0) - mig38",FALSE,FALSE,8/19/2026 14:23:18,947,781,TRUE,,,,,,,,,,,,,,,,No ER
+"South Plaza (X-2, Y-3) - ren223 (Main)",up,"South Plaza (X-2, Y-4) - ren4064",TRUE,FALSE,,947,945,TRUE,,,,,,,,,,,,,,,,
+"South Plaza (X-2, Y-3) - ren223 (Main)",up,"South Plaza (X+1, Y-4) - ren4066",TRUE,FALSE,,947,946,TRUE,,,,,,,,,,,,,,,,
+"South Plaza (X-2, Y-3) - ren223 (Main)",down,"South Plaza (X-2, Y-3) - ren223 (South)",TRUE,TRUE,8/1/2026 15:37:39,947,948,TRUE,ss,dog,dash,ufo,ride,,,Skipping Stone,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,
+"South Plaza (X-2, Y-3) - ren223 (Main)",down,"South Plaza (X-2, Y-3) - ren223 (Southwest)",TRUE,TRUE,8/1/2026 15:34:51,947,949,TRUE,ss,dog,ufo,ride,,,,Skipping Stone,FALSE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,
+"South Plaza (X-2, Y-3) - ren223 (Main)",down,"South Plaza (X-2, Y-3) - ren223 (Southeast)",TRUE,TRUE,8/1/2026 15:34:54,947,950,TRUE,dash,ufo,ride,,,,,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,
+"South Plaza (X-2, Y-3) - ren223 (Main)",warp (up),"South Plaza (Interiors) (X-1, Y+1) - ren85",TRUE,FALSE,,947,961,TRUE,,,,,,,,,,,,,,,,
+"South Plaza (X-2, Y-3) - ren223 (South)",down,"South Plaza (X-1, Y+4) - lor2248 (North)",TRUE,FALSE,,948,954,TRUE,,,,,,,,,,,,,,,,
+"South Plaza (X-2, Y-3) - ren223 (Southwest)",left,"South Plaza (X-3, Y+3) - ren4152",FALSE,FALSE,7/23/2026 19:12:22,949,951,TRUE,,,,,,,,,,,,,,,,
+"South Plaza (X-2, Y-3) - ren223 (Southeast)",right,"Faria Slimer Borough (X+2, Y+3) - yug1",FALSE,FALSE,8/7/2026 1:59:25,950,252,TRUE,,,,,,,,,,,,,,,,
+"South Plaza (X-3, Y+3) - ren4152",left,"Old Rattalia Town (X-4, Y+3) - ren4147",FALSE,TRUE,8/1/2026 15:35:59,951,525,FALSE,[SP] Combat 2,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Combat 2,
+"South Plaza (X-3, Y+3) - ren4152",right,"South Plaza (X-2, Y-3) - ren223 (Southwest)",FALSE,TRUE,8/1/2026 15:36:04,951,949,TRUE,[SP] Combat 2,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Combat 2,
+"South Plaza (X-2, Y+4) - yug5210",left,"South Plaza (X-3, Y+4) - yug4930",FALSE,FALSE,,953,952,TRUE,,,,,,,,,,,,,,,,
+"South Plaza (X-1, Y+4) - lor2248 (North)",left,"South Plaza (X-2, Y+4) - yug5210",FALSE,FALSE,,954,953,TRUE,,,,,,,,,,,,,,,,
+"South Plaza (X-1, Y+4) - lor2248 (North)",right,"South Plaza (X+1, Y+4) - yug4939 (West)",FALSE,FALSE,,954,958,TRUE,,,,,,,,,,,,,,,,
+"South Plaza (X-1, Y+4) - lor2248 (South)",up,"South Plaza (X-1, Y+4) - lor2248 (North)",FALSE,FALSE,,955,954,TRUE,,,,,,,,,,,,,,,,
+"South Plaza (X-1, Y+4) - lor2248 (South)",manhole (down),"South Plaza (Sewers) (X-1, Y+4) - lor871",TRUE,FALSE,,955,964,TRUE,,,,,,,,,,,,,,,,
+"South Plaza (X-1, Y+4) - lor2248 (Southeast)",left,"South Plaza (X-1, Y+4) - lor2248 (South)",FALSE,TRUE,8/7/2026 1:07:42,956,955,TRUE,ss,dog,dash,ufo,ride,,,Skipping Stone,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,
+"South Plaza (X-1, Y+4) - lor2248 (Southeast Entrance)",left,"South Plaza (X-1, Y+4) - lor2248 (Southeast)",FALSE,TRUE,8/7/2026 11:52:29,957,956,TRUE,"ss, Lever 3","dog, Lever 3","ufo, Lever 3",ride,"buoy, Lever 3",,,Skipping Stone AND Lever 3,FALSE,Lever 3,FALSE,Lever 3,TRUE,FALSE,Lever 3 AND buoy,
+"South Plaza (X+1, Y+4) - yug4939 (West)",right,"South Plaza (X+1, Y+4) - yug4939 (East)",FALSE,TRUE,8/1/2026 15:36:20,958,959,TRUE,dash,ufo,ride,,,,,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,
+"South Plaza (X+1, Y+4) - yug4939 (East)",right,"South Plaza (X+2, Y+4) - yug5154",FALSE,FALSE,,959,960,TRUE,,,,,,,,,,,,,,,,
+"South Plaza (Sewers) (X-1, Y-5) - ren984",up,"South Plaza (Sewers) (X-1, Y-6) - lor230",FALSE,TRUE,8/1/2026 17:33:53,963,962,TRUE,"Lever 1, Lever 2",,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Lever 1 AND Lever 2,
+"South Plaza (Sewers) (X-1, Y+4) - lor871",down,"South Plaza (Sewers) (X-1, Y+5) - yug1700 (West)",FALSE,TRUE,8/30/2026 0:22:42,964,965,TRUE,dog,"ufo, ss, midair ufo","ufo, ss, dash-midair-ufo",ride,,,,FALSE,FALSE,TRUE,FALSE,Skipping Stone,TRUE,FALSE,FALSE,UFO Throw -> mid-air UFO Throw off corner
+"South Plaza (Sewers) (X-1, Y+5) - yug1700 (West)",right,"South Plaza (Sewers) (X-1, Y+5) - yug1700 (East)",FALSE,TRUE,8/1/2026 21:18:51,965,966,TRUE,"off, dog","off, ride","dog, ss",,,,,FALSE,Walk-the-Dog OR Wall Ride,Skipping Stone,FALSE,FALSE,FALSE,FALSE,FALSE,
+"Trevosos Motor Club (Interiors) (X-10, Y-6) - ren93",warp (up),"Trevosos Motor Club (X-3, Y+0) - ren212",FALSE,TRUE,,970,967,FALSE,,,,,,,,,,,,,,,,
+"Trevosos Motor Club (Interiors) (X-10, Y-6) - ren93",warp (up),"Trevosos Motor Club (X+0, Y+0) - ren2",FALSE,FALSE,,970,968,FALSE,,,,,,,,,,,,,,,,
+"Trevosos Motor Club (Interiors) (X-10, Y-6) - ren93",warp (up),"Trevosos Motor Club (X+2, Y+0) - ren75",FALSE,TRUE,,970,969,FALSE,,,,,,,,,,,,,,,,
 ,,,,,,9999,9999,FALSE,,,,,,,,,,,,,,,,
 ,,,,,,9999,9999,FALSE,,,,,,,,,,,,,,,,
 ,,,,,,9999,9999,FALSE,,,,,,,,,,,,,,,,

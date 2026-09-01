@@ -1071,6 +1071,797 @@ ROOMS: list[RoomData] = [
         sort_key="0000",
     ),
     RoomData(
+        room_label="Safe House (X+1, Y+0) - mig32",
+        room_area="Safe House",
+        region_name="Safe House (X+1,Y+0)",
+        global_room_id="safehouse/mig32",
+        sort_key="0100",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-3, Y-2) - lor1300",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-3,Y-2)",
+        global_room_id="dungeon2/lor1300",
+        sort_key="80298",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-2, Y-2) - lor1301",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-2,Y-2)",
+        global_room_id="dungeon2/lor1301",
+        sort_key="80198",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-1, Y-2) - lor1302",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-1,Y-2)",
+        global_room_id="dungeon2/lor1302",
+        sort_key="80098",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+0, Y-2) - lor1303",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+0,Y-2)",
+        global_room_id="dungeon2/lor1303",
+        sort_key="79998",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+2, Y-2) - lor1304",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+2,Y-2)",
+        global_room_id="dungeon2/lor1304",
+        sort_key="80198",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+3, Y-2) - lor1305",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+3,Y-2)",
+        global_room_id="dungeon2/lor1305",
+        sort_key="80298",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+4, Y-2) - lor179 (Main)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+4,Y-2) (Main)",
+        global_room_id="dungeon2/lor179",
+        sort_key="80398 (Main)",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+4, Y-2) - lor179 (West)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+4,Y-2) (West)",
+        global_room_id="dungeon2/lor179",
+        sort_key="80398 (West)",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+4, Y-2) - lor179 (South Money Bag)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+4,Y-2) (South Money Bag)",
+        global_room_id="dungeon2/lor179",
+        sort_key="80398 (South Money Bag)",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+5, Y-2) - lor1326",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+5,Y-2)",
+        global_room_id="dungeon2/lor1326",
+        sort_key="80498",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+6, Y-2) - lor1325",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+6,Y-2)",
+        global_room_id="dungeon2/lor1325",
+        sort_key="80598",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-4, Y-1) - lor1299",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-4,Y-1)",
+        global_room_id="dungeon2/lor1299",
+        sort_key="80399",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-3, Y-1) - lor534",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-3,Y-1)",
+        global_room_id="dungeon2/lor534",
+        sort_key="80299",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-2, Y-1) - lor524 (Main)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-2,Y-1) (Main)",
+        global_room_id="dungeon2/lor524",
+        sort_key="80199 (Main)",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-2, Y-1) - lor524 (Northwest)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-2,Y-1) (Northwest)",
+        global_room_id="dungeon2/lor524",
+        sort_key="80199 (Northwest)",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-2, Y-1) - lor524 (Southwest)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-2,Y-1) (Southwest)",
+        global_room_id="dungeon2/lor524",
+        sort_key="80199 (Southwest)",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-1, Y-1) - lor533",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-1,Y-1)",
+        global_room_id="dungeon2/lor533",
+        sort_key="80099",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+2, Y-1) - lor1231",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+2,Y-1)",
+        global_room_id="dungeon2/lor1231",
+        sort_key="80199",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+3, Y-1) - lor172",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+3,Y-1)",
+        global_room_id="dungeon2/lor172",
+        sort_key="80299",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+5, Y-1) - lor1228",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+5,Y-1)",
+        global_room_id="dungeon2/lor1228",
+        sort_key="80499",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-4, Y+0) - lor1298",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-4,Y+0)",
+        global_room_id="dungeon2/lor1298",
+        sort_key="80400",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-3, Y+0) - lor536",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-3,Y+0)",
+        global_room_id="dungeon2/lor536",
+        sort_key="80300",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-1, Y+0) - lor523",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-1,Y+0)",
+        global_room_id="dungeon2/lor523",
+        sort_key="80100",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+0, Y+0) - lor149 (Main)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+0,Y+0) (Main)",
+        global_room_id="dungeon2/lor149",
+        sort_key="80000 (Main)",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+0, Y+0) - lor149 (Southwest Left)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+0,Y+0) (Southwest Left)",
+        global_room_id="dungeon2/lor149",
+        sort_key="80000 (Southwest Left)",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+0, Y+0) - lor149 (Southwest Right)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+0,Y+0) (Southwest Right)",
+        global_room_id="dungeon2/lor149",
+        sort_key="80000 (Southwest Right)",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+0, Y+0) - lor149 (Southeast)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+0,Y+0) (Southeast)",
+        global_room_id="dungeon2/lor149",
+        sort_key="80000 (Southeast)",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+2, Y+0) - lor158 (West)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+2,Y+0) (West)",
+        global_room_id="dungeon2/lor158",
+        sort_key="80200 (West)",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+2, Y+0) - lor158 (East)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+2,Y+0) (East)",
+        global_room_id="dungeon2/lor158",
+        sort_key="80200 (East)",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+3, Y+0) - lor166",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+3,Y+0)",
+        global_room_id="dungeon2/lor166",
+        sort_key="80300",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+4, Y+0) - lor171",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+4,Y+0)",
+        global_room_id="dungeon2/lor171",
+        sort_key="80400",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+5, Y+0) - lor339",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+5,Y+0)",
+        global_room_id="dungeon2/lor339",
+        sort_key="80500",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-4, Y+1) - lor1297",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-4,Y+1)",
+        global_room_id="dungeon2/lor1297",
+        sort_key="80401",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-3, Y+1) - lor535",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-3,Y+1)",
+        global_room_id="dungeon2/lor535",
+        sort_key="80301",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-1, Y+1) - lor584",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-1,Y+1)",
+        global_room_id="dungeon2/lor584",
+        sort_key="80101",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+2, Y+1) - lor213",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+2,Y+1)",
+        global_room_id="dungeon2/lor213",
+        sort_key="80201",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+3, Y+1) - lor173",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+3,Y+1)",
+        global_room_id="dungeon2/lor173",
+        sort_key="80301",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+4, Y+1) - lor180",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+4,Y+1)",
+        global_room_id="dungeon2/lor180",
+        sort_key="80401",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+5, Y+1) - lor337",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+5,Y+1)",
+        global_room_id="dungeon2/lor337",
+        sort_key="80501",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-4, Y+2) - lor1296",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-4,Y+2)",
+        global_room_id="dungeon2/lor1296",
+        sort_key="80402",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-3, Y+2) - lor617",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-3,Y+2)",
+        global_room_id="dungeon2/lor617",
+        sort_key="80302",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-2, Y+2) - lor586",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-2,Y+2)",
+        global_room_id="dungeon2/lor586",
+        sort_key="80202",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-1, Y+2) - lor585",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-1,Y+2)",
+        global_room_id="dungeon2/lor585",
+        sort_key="80102",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+2, Y+2) - lor212 (West)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+2,Y+2) (West)",
+        global_room_id="dungeon2/lor212",
+        sort_key="80202 (West)",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+2, Y+2) - lor212 (East)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+2,Y+2) (East)",
+        global_room_id="dungeon2/lor212",
+        sort_key="80202 (East)",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+4, Y+2) - yug8",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+4,Y+2)",
+        global_room_id="dungeon2/yug8",
+        sort_key="80402",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+5, Y+2) - lor1324",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+5,Y+2)",
+        global_room_id="dungeon2/lor1324",
+        sort_key="80502",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-4, Y+3) - lor1295",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-4,Y+3)",
+        global_room_id="dungeon2/lor1295",
+        sort_key="80403",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-3, Y+3) - lor618",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-3,Y+3)",
+        global_room_id="dungeon2/lor618",
+        sort_key="80303",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+0, Y+3) - lor619",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+0,Y+3)",
+        global_room_id="dungeon2/lor619",
+        sort_key="80003",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+1, Y+3) - lor416",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+1,Y+3)",
+        global_room_id="dungeon2/lor416",
+        sort_key="80103",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+2, Y+3) - lor417 (West)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+2,Y+3) (West)",
+        global_room_id="dungeon2/lor417",
+        sort_key="80203 (West)",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+2, Y+3) - lor417 (East)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+2,Y+3) (East)",
+        global_room_id="dungeon2/lor417",
+        sort_key="80203 (East)",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+3, Y+3) - lor368 (West)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+3,Y+3) (West)",
+        global_room_id="dungeon2/lor368",
+        sort_key="80303 (West)",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+3, Y+3) - lor368 (East)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+3,Y+3) (East)",
+        global_room_id="dungeon2/lor368",
+        sort_key="80303 (East)",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+4, Y+3) - lor256",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+4,Y+3)",
+        global_room_id="dungeon2/lor256",
+        sort_key="80403",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+5, Y+3) - lor1323",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+5,Y+3)",
+        global_room_id="dungeon2/lor1323",
+        sort_key="80503",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-3, Y+4) - lor1294",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-3,Y+4)",
+        global_room_id="dungeon2/lor1294",
+        sort_key="80304",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-2, Y+4) - lor672 (North)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-2,Y+4) (North)",
+        global_room_id="dungeon2/lor672",
+        sort_key="80204 (North)",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-2, Y+4) - lor672 (South)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-2,Y+4) (South)",
+        global_room_id="dungeon2/lor672",
+        sort_key="80204 (South)",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-2, Y+4) - lor672 (Southeast)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-2,Y+4) (Southeast)",
+        global_room_id="dungeon2/lor672",
+        sort_key="80204 (Southeast)",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-2, Y+4) - lor672 (Lever)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-2,Y+4) (Lever)",
+        global_room_id="dungeon2/lor672",
+        sort_key="80204 (Lever)",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+0, Y+4) - lor667 (Main)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+0,Y+4) (Main)",
+        global_room_id="dungeon2/lor667",
+        sort_key="80004 (Main)",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+0, Y+4) - lor667 (Southeast)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+0,Y+4) (Southeast)",
+        global_room_id="dungeon2/lor667",
+        sort_key="80004 (Southeast)",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+1, Y+4) - lor755",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+1,Y+4)",
+        global_room_id="dungeon2/lor755",
+        sort_key="80104",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+2, Y+4) - lor770",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+2,Y+4)",
+        global_room_id="dungeon2/lor770",
+        sort_key="80204",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+3, Y+4) - lor390 (West)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+3,Y+4) (West)",
+        global_room_id="dungeon2/lor390",
+        sort_key="80304 (West)",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+3, Y+4) - lor390 (East)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+3,Y+4) (East)",
+        global_room_id="dungeon2/lor390",
+        sort_key="80304 (East)",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+4, Y+4) - lor1321",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+4,Y+4)",
+        global_room_id="dungeon2/lor1321",
+        sort_key="80404",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-5, Y+5) - lor1307 (Main)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-5,Y+5) (Main)",
+        global_room_id="dungeon2/lor1307",
+        sort_key="80505 (Main)",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-5, Y+5) - lor1307 (Money Bag)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-5,Y+5) (Money Bag)",
+        global_room_id="dungeon2/lor1307",
+        sort_key="80505 (Money Bag)",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-4, Y+5) - lor1306",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-4,Y+5)",
+        global_room_id="dungeon2/lor1306",
+        sort_key="80405",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+0, Y+5) - lor741 (West)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+0,Y+5) (West)",
+        global_room_id="dungeon2/lor741",
+        sort_key="80005 (West)",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+0, Y+5) - lor741 (East)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+0,Y+5) (East)",
+        global_room_id="dungeon2/lor741",
+        sort_key="80005 (East)",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+2, Y+5) - lor769 (Main)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+2,Y+5) (Main)",
+        global_room_id="dungeon2/lor769",
+        sort_key="80205 (Main)",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+2, Y+5) - lor769 (Key)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+2,Y+5) (Key)",
+        global_room_id="dungeon2/lor769",
+        sort_key="80205 (Key)",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+3, Y+5) - lor856",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+3,Y+5)",
+        global_room_id="dungeon2/lor856",
+        sort_key="80305",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-5, Y+6) - lor1308",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-5,Y+6)",
+        global_room_id="dungeon2/lor1308",
+        sort_key="80506",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-4, Y+6) - yug3 (West)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-4,Y+6) (West)",
+        global_room_id="dungeon2/yug3",
+        sort_key="80406 (West)",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-4, Y+6) - yug3 (East)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-4,Y+6) (East)",
+        global_room_id="dungeon2/yug3",
+        sort_key="80406 (East)",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-3, Y+6) - lor703 (West)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-3,Y+6) (West)",
+        global_room_id="dungeon2/lor703",
+        sort_key="80306 (West)",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-3, Y+6) - lor703 (East)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-3,Y+6) (East)",
+        global_room_id="dungeon2/lor703",
+        sort_key="80306 (East)",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-2, Y+6) - lor701 (West)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-2,Y+6) (West)",
+        global_room_id="dungeon2/lor701",
+        sort_key="80206 (West)",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-2, Y+6) - lor701 (East)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-2,Y+6) (East)",
+        global_room_id="dungeon2/lor701",
+        sort_key="80206 (East)",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-1, Y+6) - lor732 (South)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-1,Y+6) (South)",
+        global_room_id="dungeon2/lor732",
+        sort_key="80106 (South)",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-1, Y+6) - lor732 (West)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-1,Y+6) (West)",
+        global_room_id="dungeon2/lor732",
+        sort_key="80106 (West)",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-1, Y+6) - lor732 (East)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-1,Y+6) (East)",
+        global_room_id="dungeon2/lor732",
+        sort_key="80106 (East)",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+0, Y+6) - lor1079 (Main)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+0,Y+6) (Main)",
+        global_room_id="dungeon2/lor1079",
+        sort_key="80006 (Main)",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+0, Y+6) - lor1079 (East Alcove)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+0,Y+6) (East Alcove)",
+        global_room_id="dungeon2/lor1079",
+        sort_key="80006 (East Alcove)",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+2, Y+6) - lor768",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+2,Y+6)",
+        global_room_id="dungeon2/lor768",
+        sort_key="80206",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+3, Y+6) - lor854",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+3,Y+6)",
+        global_room_id="dungeon2/lor854",
+        sort_key="80306",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+4, Y+6) - lor1086",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+4,Y+6)",
+        global_room_id="dungeon2/lor1086",
+        sort_key="80406",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+5, Y+6) - lor1320",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+5,Y+6)",
+        global_room_id="dungeon2/lor1320",
+        sort_key="80506",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-4, Y+7) - lor1309",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-4,Y+7)",
+        global_room_id="dungeon2/lor1309",
+        sort_key="80407",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-3, Y+7) - lor712",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-3,Y+7)",
+        global_room_id="dungeon2/lor712",
+        sort_key="80307",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-2, Y+7) - lor726 (Main)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-2,Y+7) (Main)",
+        global_room_id="dungeon2/lor726",
+        sort_key="80207 (Main)",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-2, Y+7) - lor726 (Key)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-2,Y+7) (Key)",
+        global_room_id="dungeon2/lor726",
+        sort_key="80207 (Key)",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-1, Y+7) - lor731 (West)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-1,Y+7) (West)",
+        global_room_id="dungeon2/lor731",
+        sort_key="80107 (West)",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-1, Y+7) - lor731 (East)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-1,Y+7) (East)",
+        global_room_id="dungeon2/lor731",
+        sort_key="80107 (East)",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+0, Y+7) - lor1284",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+0,Y+7)",
+        global_room_id="dungeon2/lor1284",
+        sort_key="80007",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+2, Y+7) - lor860",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+2,Y+7)",
+        global_room_id="dungeon2/lor860",
+        sort_key="80207",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+5, Y+7) - lor1319",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+5,Y+7)",
+        global_room_id="dungeon2/lor1319",
+        sort_key="80507",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-3, Y+8) - lor1310",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-3,Y+8)",
+        global_room_id="dungeon2/lor1310",
+        sort_key="80308",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-2, Y+8) - lor1311",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-2,Y+8)",
+        global_room_id="dungeon2/lor1311",
+        sort_key="80208",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-1, Y+8) - lor1312",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-1,Y+8)",
+        global_room_id="dungeon2/lor1312",
+        sort_key="80108",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+0, Y+8) - lor1089",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+0,Y+8)",
+        global_room_id="dungeon2/lor1089",
+        sort_key="80008",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+2, Y+8) - lor1313",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+2,Y+8)",
+        global_room_id="dungeon2/lor1313",
+        sort_key="80208",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+3, Y+8) - lor1317",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+3,Y+8)",
+        global_room_id="dungeon2/lor1317",
+        sort_key="80308",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+5, Y+8) - lor1318",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+5,Y+8)",
+        global_room_id="dungeon2/lor1318",
+        sort_key="80508",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-1, Y+10) - lor1314",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-1,Y+10)",
+        global_room_id="dungeon2/lor1314",
+        sort_key="80110",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+0, Y+10) - lor1315",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+0,Y+10)",
+        global_room_id="dungeon2/lor1315",
+        sort_key="80010",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+2, Y+10) - lor1316",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+2,Y+10)",
+        global_room_id="dungeon2/lor1316",
+        sort_key="80210",
+    ),
+    RoomData(
         room_label="SlimeCorp Skyscraper (X+0, Y-5) - lor151",
         room_area="SlimeCorp Skyscraper",
         region_name="Skyscraper (X+0,Y-5)",
@@ -1237,6 +2028,13 @@ ROOMS: list[RoomData] = [
         region_name="S Plaza (X-1,Y-6) (South)",
         global_room_id="city/ren355",
         sort_key="10094 (South)",
+    ),
+    RoomData(
+        room_label="South Plaza (X-1, Y-6) - ren355 (West)",
+        room_area="South Plaza",
+        region_name="S Plaza (X-1,Y-6) (West)",
+        global_room_id="city/ren355",
+        sort_key="10094 (West)",
     ),
     RoomData(
         room_label="South Plaza (X-1, Y-6) - ren355 (East)",
@@ -1525,7 +2323,9 @@ CONNECTIONS: list[ConnectionData] = [
         start_region_name="Skyscraper (X+0,Y-2) (West)", end_region_name="Faria (X+4,Y-3) (North)", rule_strs=["none"]
     ),
     ConnectionData(
-        start_region_name="Faria (X+8,Y-3) (Main)", end_region_name="Faria (X+8,Y-3) (Dungeon Entrance)", rule_strs=[]
+        start_region_name="Faria (X+8,Y-3) (Main)",
+        end_region_name="Faria (X+8,Y-3) (Dungeon Entrance)",
+        rule_strs=["Staff ID"],
     ),
     ConnectionData(
         start_region_name="Faria (X+8,Y-3) (Main)", end_region_name="Faria (X+4,Y-3) (East Alcove)", rule_strs=[]
@@ -1543,6 +2343,16 @@ CONNECTIONS: list[ConnectionData] = [
     ),
     ConnectionData(
         start_region_name="Faria (X+8,Y-3) (Dungeon Entrance)", end_region_name="Faria (X+8,Y-3) (Main)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="Faria (X+8,Y-3) (Dungeon Entrance)",
+        end_region_name="Excavation (X+0,Y+0) (Main)",
+        rule_strs=["none"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+0,Y+0) (Main)",
+        end_region_name="Faria (X+8,Y-3) (Dungeon Entrance)",
+        rule_strs=["none"],
     ),
     ConnectionData(
         start_region_name="Faria (X+8,Y-3) (Southwest)",
@@ -1692,7 +2502,14 @@ CONNECTIONS: list[ConnectionData] = [
     ConnectionData(
         start_region_name="Faria (X+10,Y+2) (Main)",
         end_region_name="Faria (X+10,Y+4)",
-        rule_strs=["dog", "hard, dash, ss+, ride", "midair ufo, ss+"],
+        rule_strs=[
+            "dog",
+            "dash, ss+, ride",
+            "midair ufo, ss+",
+            "dash-midair-ufo, ss+",
+            "ufo, dash, ss+",
+            "ufo, dash, ride, ss",
+        ],
     ),
     ConnectionData(
         start_region_name="Faria (X+2,Y+3)",
@@ -1899,7 +2716,7 @@ CONNECTIONS: list[ConnectionData] = [
     ConnectionData(
         start_region_name="Faria Sewers (X+2,Y+0)",
         end_region_name="Faria Sewers (X+2,Y-1)",
-        rule_strs=["ss+", "dog", "midair ufo", "ride, ss", "expert, ride"],
+        rule_strs=["ss+", "dog", "midair ufo", "dash-midair-ufo", "ride, ss"],
     ),
     ConnectionData(
         start_region_name="Faria Sewers (X+6,Y+0) (North)", end_region_name="Faria Sewers (X+5,Y-1)", rule_strs=[]
@@ -1974,7 +2791,669 @@ CONNECTIONS: list[ConnectionData] = [
         rule_strs=["dash", "ride"],
     ),
     ConnectionData(start_region_name="Safe House (X+0,Y+0)", end_region_name="Safe House (X-1,Y+0)", rule_strs=[]),
+    ConnectionData(
+        start_region_name="Safe House (X+0,Y+0)", end_region_name="Safe House (X+1,Y+0)", rule_strs=["Mega Battery"]
+    ),
     ConnectionData(start_region_name="Safe House (X+0,Y+0)", end_region_name="S Plaza (X-2,Y-3) (Main)", rule_strs=[]),
+    ConnectionData(
+        start_region_name="Excavation (X-3,Y-2)", end_region_name="Excavation (X+0,Y-2)", rule_strs=["ride"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+0,Y-2)", end_region_name="Excavation (X+3,Y-2)", rule_strs=["ride, dash"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+4,Y-2) (Main)",
+        end_region_name="Excavation (X+4,Y-2) (South Money Bag)",
+        rule_strs=["bomb", "ride", "ufo"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+4,Y-2) (Main)", end_region_name="Excavation (X+5,Y-1)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+5,Y-1)", end_region_name="Excavation (X+4,Y-2) (Main)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+4,Y-2) (West)",
+        end_region_name="Excavation (X+4,Y-2) (Main)",
+        rule_strs=["bomb"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+4,Y-2) (South Money Bag)",
+        end_region_name="Excavation (X+4,Y-2) (Main)",
+        rule_strs=["dash, ride", "midair ufo", "ufo, dash"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+6,Y-2)", end_region_name="Excavation (X+5,Y-2)", rule_strs=["ride"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-3,Y-1)",
+        end_region_name="Excavation (X-2,Y-1) (Northwest)",
+        rule_strs=["Lever West 1, Lever West 2"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-2,Y-1) (Main)", end_region_name="Excavation (X-3,Y-2)", rule_strs=["ride"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-2,Y-1) (Main)", end_region_name="Excavation (X-3,Y-1)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-2,Y-1) (Main)",
+        end_region_name="Excavation (X-2,Y-1) (Northwest)",
+        rule_strs=["flip+"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-2,Y-1) (Main)",
+        end_region_name="Excavation (X-2,Y-1) (Southwest)",
+        rule_strs=["flip+"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-2,Y-1) (Main)", end_region_name="Excavation (X-1,Y-1)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-2,Y-1) (Main)",
+        end_region_name="Excavation (X-3,Y+0)",
+        rule_strs=["Cog 1, Cog 2"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-2,Y-1) (Main)", end_region_name="Excavation (X-3,Y+1)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-2,Y-1) (Main)",
+        end_region_name="Excavation (X-1,Y+1)",
+        rule_strs=["Key West 1"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+3,Y-1)", end_region_name="Excavation (X+4,Y-2) (West)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+3,Y-1)", end_region_name="Excavation (X+2,Y-1)", rule_strs=["Lever East 1"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+5,Y-1)",
+        end_region_name="Excavation (X+5,Y-2)",
+        rule_strs=["ufo", "bomb, off, dash"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+5,Y-1)",
+        end_region_name="Excavation (X+5,Y+0)",
+        rule_strs=["ufo", "dash, ride"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+5,Y+0)",
+        end_region_name="Excavation (X+5,Y-1)",
+        rule_strs=["ufo", "dash, ride"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-1,Y+0)", end_region_name="Excavation (X-2,Y-1) (Main)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-1,Y+0)",
+        end_region_name="Excavation (X-1,Y+1)",
+        rule_strs=["ride", "ufo", "dash"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-1,Y+1)",
+        end_region_name="Excavation (X-1,Y+0)",
+        rule_strs=["ride", "ufo", "dash"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+0,Y+0) (Main)",
+        end_region_name="Excavation (X-1,Y+0)",
+        rule_strs=["Lever Main 2"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+0,Y+0) (Main)",
+        end_region_name="Excavation (X+0,Y+0) (Southwest Right)",
+        rule_strs=["Lever Main 4", "dash", "ride", "ufo"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+0,Y+0) (Main)",
+        end_region_name="Excavation (X+0,Y+0) (Southeast)",
+        rule_strs=["Lever Main 2", "ride", "ufo"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+0,Y+0) (Main)",
+        end_region_name="Excavation (X+2,Y+0) (West)",
+        rule_strs=["none"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+0,Y+0) (Main)",
+        end_region_name="Excavation (X+2,Y+1)",
+        rule_strs=["dash", "ride", "ufo"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+0,Y+0) (Main)", end_region_name="Excavation (X-3,Y+3)", rule_strs=["ride"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+0,Y+0) (Southwest Left)",
+        end_region_name="Excavation (X+0,Y+3)",
+        rule_strs=["none"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+0,Y+0) (Southwest Left)",
+        end_region_name="Excavation (X+0,Y+0) (Southwest Right)",
+        rule_strs=["dash", "ride", "ufo"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+0,Y+0) (Southwest Right)",
+        end_region_name="Excavation (X+0,Y+0) (Southwest Left)",
+        rule_strs=["dash", "ride", "ufo"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+0,Y+0) (Southeast)", end_region_name="Excavation (X+1,Y+3)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+2,Y+0) (West)",
+        end_region_name="Excavation (X+2,Y+0) (East)",
+        rule_strs=["bomb", "ride", "dash"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+2,Y+0) (East)", end_region_name="Excavation (X+3,Y+0)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+3,Y+0)", end_region_name="Excavation (X+3,Y-1)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+3,Y+0)", end_region_name="Excavation (X+4,Y+0)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+3,Y+0)", end_region_name="Excavation (X+3,Y+1)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+4,Y+0)",
+        end_region_name="Excavation (X+4,Y-2) (South Money Bag)",
+        rule_strs=["dash, ride, hard", "dash, ufo, hard"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+4,Y+0)", end_region_name="Excavation (X+4,Y+1)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+5,Y+0)", end_region_name="Excavation (X+6,Y-2)", rule_strs=["ride"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-3,Y+1)", end_region_name="Excavation (X-4,Y-1)", rule_strs=["ride"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-3,Y+1)",
+        end_region_name="Excavation (X-2,Y-1) (Southwest)",
+        rule_strs=["Lever West 3"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-1,Y+1)", end_region_name="Excavation (X-1,Y+2)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-1,Y+2)", end_region_name="Excavation (X-1,Y+1)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+2,Y+1)", end_region_name="Excavation (X+2,Y+0) (East)", rule_strs=["ufo"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+2,Y+1)", end_region_name="Excavation (X+2,Y+2) (West)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+3,Y+1)",
+        end_region_name="Excavation (X+2,Y+1)",
+        rule_strs=["Key East 1, Key East 2"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+3,Y+1)", end_region_name="Excavation (X+4,Y+1)", rule_strs=["ride"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+4,Y+1)", end_region_name="Excavation (X+5,Y+1)", rule_strs=["ride"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+4,Y+1)", end_region_name="Excavation (X+4,Y+2)", rule_strs=["ride"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+5,Y+1)", end_region_name="Excavation (X+5,Y+0)", rule_strs=["ride"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-3,Y+2)", end_region_name="Excavation (X-3,Y+3)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-3,Y+3)", end_region_name="Excavation (X-3,Y+2)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-2,Y+2)", end_region_name="Excavation (X-3,Y+2)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-3,Y+2)", end_region_name="Excavation (X-2,Y+2)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-1,Y+2)", end_region_name="Excavation (X-2,Y+2)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-2,Y+2)", end_region_name="Excavation (X-1,Y+2)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+2,Y+2) (West)",
+        end_region_name="Excavation (X+2,Y+2) (East)",
+        rule_strs=["bomb"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+2,Y+2) (East)",
+        end_region_name="Excavation (X+2,Y+2) (West)",
+        rule_strs=["bomb"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+2,Y+2) (West)",
+        end_region_name="Excavation (X+2,Y+3) (West)",
+        rule_strs=["ride", "ufo"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+2,Y+2) (East)", end_region_name="Excavation (X+4,Y+2)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+4,Y+2)", end_region_name="Excavation (X+2,Y+2) (East)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+4,Y+2)", end_region_name="Excavation (X+4,Y+3)", rule_strs=["Lever East 2"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-3,Y+3)", end_region_name="Excavation (X-4,Y+2)", rule_strs=["ride"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-3,Y+3)", end_region_name="Excavation (X+0,Y+3)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+0,Y+3)",
+        end_region_name="Excavation (X+0,Y+0) (Southwest Left)",
+        rule_strs=["Combat 4"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+0,Y+3)", end_region_name="Excavation (X-3,Y+3)", rule_strs=["Combat 4"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+0,Y+3)",
+        end_region_name="Excavation (X+0,Y+4) (Main)",
+        rule_strs=["Key West 2"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+1,Y+3)",
+        end_region_name="Excavation (X+0,Y+0) (Southeast)",
+        rule_strs=["Combat 2"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+1,Y+3)", end_region_name="Excavation (X+2,Y+3) (West)", rule_strs=["Combat 2"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+2,Y+3) (West)", end_region_name="Excavation (X+1,Y+3)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+2,Y+3) (West)",
+        end_region_name="Excavation (X+2,Y+3) (East)",
+        rule_strs=["bomb", "ufo, ride", "ride, hard", "dash"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+2,Y+3) (East)",
+        end_region_name="Excavation (X+2,Y+3) (West)",
+        rule_strs=["bomb", "ride, dash", "ride, hard", "ufo"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+3,Y+3) (West)",
+        end_region_name="Excavation (X+2,Y+3) (East)",
+        rule_strs=["none"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+2,Y+3) (East)",
+        end_region_name="Excavation (X+3,Y+3) (West)",
+        rule_strs=["none"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+3,Y+3) (West)",
+        end_region_name="Excavation (X+3,Y+4) (West)",
+        rule_strs=["none"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+3,Y+4) (West)",
+        end_region_name="Excavation (X+3,Y+3) (West)",
+        rule_strs=["none"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+3,Y+3) (East)",
+        end_region_name="Excavation (X+3,Y+3) (West)",
+        rule_strs=["dash", "ride", "ufo"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+3,Y+3) (West)",
+        end_region_name="Excavation (X+3,Y+3) (East)",
+        rule_strs=["dash", "ride", "ufo"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+3,Y+3) (East)",
+        end_region_name="Excavation (X+3,Y+4) (East)",
+        rule_strs=["none"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+3,Y+4) (East)",
+        end_region_name="Excavation (X+3,Y+3) (East)",
+        rule_strs=["none"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+4,Y+3)", end_region_name="Excavation (X+3,Y+3) (East)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+3,Y+3) (East)", end_region_name="Excavation (X+4,Y+3)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-2,Y+4) (North)",
+        end_region_name="Excavation (X-2,Y+4) (South)",
+        rule_strs=["dash", "ufo"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-2,Y+4) (South)",
+        end_region_name="Excavation (X-2,Y+4) (North)",
+        rule_strs=["dash", "ufo"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-2,Y+4) (North)",
+        end_region_name="Excavation (X-2,Y+4) (Southeast)",
+        rule_strs=["dash", "ufo", "ride"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-2,Y+4) (Southeast)",
+        end_region_name="Excavation (X-2,Y+4) (North)",
+        rule_strs=["dash", "ufo", "ride"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-2,Y+4) (North)",
+        end_region_name="Excavation (X-2,Y+4) (Lever)",
+        rule_strs=["hard, off"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-2,Y+4) (South)",
+        end_region_name="Excavation (X-2,Y+4) (Southeast)",
+        rule_strs=["Lever South 2"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-2,Y+4) (Southeast)",
+        end_region_name="Excavation (X-2,Y+4) (South)",
+        rule_strs=["Lever South 2"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-2,Y+4) (South)",
+        end_region_name="Excavation (X-1,Y+6) (West)",
+        rule_strs=["none"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-1,Y+6) (West)",
+        end_region_name="Excavation (X-2,Y+4) (South)",
+        rule_strs=["none"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-2,Y+4) (South)",
+        end_region_name="Excavation (X-3,Y+6) (West)",
+        rule_strs=["ride"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-3,Y+6) (West)",
+        end_region_name="Excavation (X-2,Y+4) (South)",
+        rule_strs=["ride"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-2,Y+4) (South)", end_region_name="Excavation (X-2,Y+4) (Lever)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+0,Y+4) (Main)",
+        end_region_name="Excavation (X-2,Y+4) (North)",
+        rule_strs=["none"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-2,Y+4) (North)",
+        end_region_name="Excavation (X+0,Y+4) (Main)",
+        rule_strs=["none"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+0,Y+4) (Main)",
+        end_region_name="Excavation (X+0,Y+4) (Southeast)",
+        rule_strs=["Lever South 1, dash", "ride", "ufo"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+0,Y+4) (Southeast)",
+        end_region_name="Excavation (X+0,Y+4) (Main)",
+        rule_strs=["Lever South 1, dash", "ride", "ufo"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+0,Y+4) (Southeast)",
+        end_region_name="Excavation (X+0,Y+5) (East)",
+        rule_strs=["none"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+0,Y+5) (East)",
+        end_region_name="Excavation (X+0,Y+4) (Southeast)",
+        rule_strs=["none"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+1,Y+4)", end_region_name="Excavation (X+1,Y+3)", rule_strs=["Lever South 4"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+1,Y+4)",
+        end_region_name="Excavation (X+2,Y+4)",
+        rule_strs=["dash", "ride", "ufo"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+1,Y+4)",
+        end_region_name="Excavation (X+2,Y+5) (Main)",
+        rule_strs=["dash", "ride", "ufo"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+1,Y+4)",
+        end_region_name="Excavation (X+0,Y+6) (East Alcove)",
+        rule_strs=["ride"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+1,Y+4)", end_region_name="Excavation (X+2,Y+6)", rule_strs=["Key South 2"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+3,Y+4) (West)",
+        end_region_name="Excavation (X+3,Y+4) (East)",
+        rule_strs=["bomb"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+3,Y+4) (East)",
+        end_region_name="Excavation (X+3,Y+4) (West)",
+        rule_strs=["bomb, off", "bomb, sleeper-drop", "flip+"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+4,Y+4)", end_region_name="Excavation (X+5,Y+1)", rule_strs=["ride"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+5,Y+1)", end_region_name="Excavation (X+4,Y+4)", rule_strs=["ride"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+0,Y+5) (West)",
+        end_region_name="Excavation (X+0,Y+5) (East)",
+        rule_strs=["dash", "ride", "ufo"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+0,Y+5) (East)", end_region_name="Excavation (X+1,Y+4)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+0,Y+5) (East)",
+        end_region_name="Excavation (X+0,Y+5) (West)",
+        rule_strs=["dash, Combat 5", "ride, Combat 5", "ufo, Combat 5"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+2,Y+5) (Main)",
+        end_region_name="Excavation (X+2,Y+5) (Key)",
+        rule_strs=["dash", "ride", "ufo"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-4,Y+6) (East)",
+        end_region_name="Excavation (X-5,Y+5) (Main)",
+        rule_strs=["ride, dash"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-4,Y+6) (East)",
+        end_region_name="Excavation (X-5,Y+5) (Money Bag)",
+        rule_strs=["ride"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-4,Y+6) (East)",
+        end_region_name="Excavation (X-4,Y+6) (West)",
+        rule_strs=["dash", "ride"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-3,Y+6) (West)",
+        end_region_name="Excavation (X-4,Y+6) (East)",
+        rule_strs=["none"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-3,Y+6) (West)", end_region_name="Excavation (X-3,Y+7)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-3,Y+7)", end_region_name="Excavation (X-3,Y+6) (West)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-3,Y+6) (East)",
+        end_region_name="Excavation (X-3,Y+6) (West)",
+        rule_strs=["dash", "ufo"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-3,Y+6) (West)",
+        end_region_name="Excavation (X-3,Y+6) (East)",
+        rule_strs=["dash", "ufo"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-2,Y+6) (West)",
+        end_region_name="Excavation (X-3,Y+6) (East)",
+        rule_strs=["none"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-3,Y+6) (East)",
+        end_region_name="Excavation (X-2,Y+6) (West)",
+        rule_strs=["none"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-2,Y+6) (East)",
+        end_region_name="Excavation (X-2,Y+6) (West)",
+        rule_strs=["dash", "ride", "ufo"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-2,Y+6) (West)",
+        end_region_name="Excavation (X-2,Y+6) (East)",
+        rule_strs=["dash", "ride", "ufo"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-1,Y+6) (South)",
+        end_region_name="Excavation (X-1,Y+6) (East)",
+        rule_strs=["Key South 1"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-1,Y+6) (West)",
+        end_region_name="Excavation (X-2,Y+6) (East)",
+        rule_strs=["none"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-2,Y+6) (East)",
+        end_region_name="Excavation (X-1,Y+6) (West)",
+        rule_strs=["none"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-1,Y+6) (East)",
+        end_region_name="Excavation (X+0,Y+6) (Main)",
+        rule_strs=["none"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+0,Y+6) (Main)",
+        end_region_name="Excavation (X-1,Y+6) (East)",
+        rule_strs=["none"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+0,Y+6) (Main)",
+        end_region_name="Excavation (X+0,Y+5) (West)",
+        rule_strs=["none"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+0,Y+5) (West)",
+        end_region_name="Excavation (X+0,Y+6) (Main)",
+        rule_strs=["none"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+2,Y+6)",
+        end_region_name="Excavation (X+3,Y+6)",
+        rule_strs=["dash", "ufo", "ride"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+3,Y+6)",
+        end_region_name="Excavation (X+3,Y+5)",
+        rule_strs=["dash", "ufo", "ride"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+3,Y+6)",
+        end_region_name="Excavation (X+4,Y+6)",
+        rule_strs=["dash", "ufo", "ride"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+4,Y+6)",
+        end_region_name="Excavation (X+2,Y+7)",
+        rule_strs=["dash", "ufo", "ride"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+5,Y+6)", end_region_name="Excavation (X+4,Y+4)", rule_strs=["ride"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+4,Y+4)", end_region_name="Excavation (X+5,Y+6)", rule_strs=["ride"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-3,Y+7)", end_region_name="Excavation (X-4,Y+7)", rule_strs=["ride"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-3,Y+7)", end_region_name="Excavation (X-2,Y+7) (Main)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-2,Y+7) (Main)", end_region_name="Excavation (X-3,Y+7)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-2,Y+7) (Main)",
+        end_region_name="Excavation (X-1,Y+7) (West)",
+        rule_strs=["walk", "dash", "ufo", "ss", "ride"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-2,Y+7) (Main)",
+        end_region_name="Excavation (X-2,Y+8)",
+        rule_strs=["walk", "ride", "ufo", "ss"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-2,Y+8)",
+        end_region_name="Excavation (X-2,Y+7) (Main)",
+        rule_strs=["walk", "ride", "ufo", "ss"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-1,Y+7) (West)",
+        end_region_name="Excavation (X-2,Y+7) (Key)",
+        rule_strs=["walk", "dash", "ufo", "ss", "expert", "moon"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-1,Y+7) (West)",
+        end_region_name="Excavation (X-1,Y+7) (East)",
+        rule_strs=["ufo", "dash", "ride"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-1,Y+7) (East)",
+        end_region_name="Excavation (X-1,Y+6) (South)",
+        rule_strs=["none"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+0,Y+7)", end_region_name="Excavation (X+1,Y+4)", rule_strs=["Lever South 5"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+0,Y+7)",
+        end_region_name="Excavation (X+0,Y+6) (Main)",
+        rule_strs=["Lever South 5"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+0,Y+7)", end_region_name="Excavation (X+0,Y+8)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+2,Y+7)", end_region_name="Excavation (X+0,Y+7)", rule_strs=["dash"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-2,Y+8)", end_region_name="Excavation (X+5,Y+6)", rule_strs=["ride"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+5,Y+6)", end_region_name="Excavation (X-2,Y+8)", rule_strs=["ride"]
+    ),
     ConnectionData(start_region_name="Skyscraper (X+2,Y-5)", end_region_name="Skyscraper (X+1,Y-5)", rule_strs=["cog"]),
     ConnectionData(
         start_region_name="Skyscraper (X+3,Y-5)", end_region_name="Skyscraper (X+2,Y-5)", rule_strs=["none"]
@@ -2257,7 +3736,7 @@ CONNECTIONS: list[ConnectionData] = [
     ConnectionData(
         start_region_name="S Plaza Sewers (X-1,Y+4)",
         end_region_name="S Plaza Sewers (X-1,Y+5) (West)",
-        rule_strs=["dog", "midair ufo, ss", "ride"],
+        rule_strs=["dog", "ufo, ss, midair ufo", "ufo, ss, dash-midair-ufo", "ride"],
     ),
     ConnectionData(
         start_region_name="S Plaza Sewers (X-1,Y+5) (West)",

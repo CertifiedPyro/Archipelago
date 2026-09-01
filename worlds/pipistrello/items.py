@@ -103,7 +103,7 @@ class ItemTypes:
         # ItemData(B.ROCKET, IC.useful, num_in_pool=2),
         # ItemData(B.STARRY, IC.useful, num_in_pool=2),
         # ItemData(B.THORNY, IC.useful, num_in_pool=2),
-        # ItemData(B.STUN, IC.useful, num_in_pool=2),
+        ItemData(B.STUN, IC.useful, num_in_pool=2),
         ItemData(B.WHIP, IC.useful, num_in_pool=2),
         # ItemData(B.OPPORTUNIST, IC.useful, num_in_pool=2),
         # ItemData(B.MAGNET, IC.useful, num_in_pool=2),
@@ -121,7 +121,7 @@ class ItemTypes:
         ItemData(B.PITCHER, IC.useful, area="South Plaza", num_in_pool=2),
         # ItemData(B.TIGHT_KNOT, IC.useful, num_in_pool=2),
         # ItemData(B.TREASURE, IC.useful, num_in_pool=2),
-        # ItemData(B.BERSERKER, IC.useful, num_in_pool=2),
+        ItemData(B.BERSERKER, IC.useful, num_in_pool=2),
         ItemData(B.SS, IC.progression, num_in_pool=2),
         # ItemData(B.CLONE, IC.useful, num_in_pool=2),
         # ItemData(B.FLAME, IC.useful, num_in_pool=2),
@@ -136,7 +136,10 @@ class ItemTypes:
         # ItemData(B.CHEATER_FISH, IC.progression | IC.useful, num_in_pool=2),
         # ItemData(B.CHEATER_TELEPORT, IC.progression | IC.useful, num_in_pool=2),
     ]
-    SPECIAL_ITEMS: typing.ClassVar[list[ItemData]] = [ItemData(SI.FARIA_STAFF_ID, IC.progression)]
+    SPECIAL_ITEMS: typing.ClassVar[list[ItemData]] = [
+        ItemData(SI.MEGA_BATTERY_FARIA, IC.progression),
+        ItemData(SI.FARIA_STAFF_ID, IC.progression),
+    ]
     FILLER_ITEMS: typing.ClassVar[list[ItemData]] = [
         ItemData("Money Bag - $50", IC.filler),
         ItemData("Money Bag - $100", IC.filler),
@@ -216,12 +219,13 @@ def create_all_items(world: PipWorld) -> None:
         )
         for _ in range(data.num_in_pool)
     ]
-    itempool += [world.create_item(ItemTypes.PETAL_CONTAINER.name) for _ in range(12)]
-    itempool += [world.create_item(ItemTypes.BP_SHARD.name) for _ in range(5)]
+    itempool += [world.create_item(ItemTypes.PETAL_CONTAINER.name) for _ in range(16)]
+    itempool += [world.create_item(ItemTypes.BP_SHARD.name) for _ in range(6)]  # Should be 7
 
     number_of_items = len(itempool)
     number_of_unfilled_locations = len(world.multiworld.get_unfilled_locations(world.player))
     needed_number_of_filler_items = number_of_unfilled_locations - number_of_items
+    # print(f"Items: {number_of_items}, {number_of_unfilled_locations}")
 
     if needed_number_of_filler_items > 0:
         itempool += [world.create_filler() for _ in range(needed_number_of_filler_items)]

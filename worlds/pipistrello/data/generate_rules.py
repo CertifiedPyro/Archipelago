@@ -20,13 +20,12 @@ RULE_DICT = {
     "off": f"Has('{M.OFF}')",
     "offstring": f"Has('{M.OFF}')",
     "dog": f"Has('{M.DOG}')",
+    "walk": f"Has('{M.DOG}')",
     "walkthedog": f"Has('{M.DOG}')",
     "dash": f"Has('{M.DASH}')",
     "walldash": f"Has('{M.DASH}')",
     "ufo": f"Has('{M.UFO}')",
     "ufothrow": f"Has('{M.UFO}')",
-    "midairufo": "HAS_MID_AIR_UFO",
-    "midairufothrow": "HAS_MID_AIR_UFO",
     "ride": f"Has('{M.RIDE}')",
     "wallride": f"Has('{M.RIDE}')",
     # Charged moves
@@ -52,12 +51,13 @@ RULE_DICT = {
     "coinflip+": "COIN_FLIP_PLUS",
     # Badges
     "moon": f"Has('{B.MOON}')",
-    "ss": "HAS_SS_NORMAL",
-    "skippingstone": "HAS_SS_NORMAL",
-    "ss+": "HAS_SS_PLUS",
-    "skippingstone+": "HAS_SS_PLUS",
+    "ss": "SS_NORMAL",
+    "skippingstone": "SS_NORMAL",
+    "ss+": "SS_PLUS",
+    "skippingstone+": "SS_PLUS",
     "wing": f"Has('{B.WING}')",
     # Special items
+    "megabattery": f"Has('{SI.MEGA_BATTERY_FARIA}')",
     "staffid": f"Has('{SI.FARIA_STAFF_ID}')",
     # Health
     "+1heart": f"Has('{OI.PETAL}', 8)",
@@ -70,9 +70,17 @@ RULE_DICT = {
     "buoy": "BUOY",
     "chest": "CHEST",
     "cog": "COG",
+    "hook": "HOOK",
     "key": "KEY",
     "lever": "LEVER",
     "manhole": "MANHOLE",
+    # Difficult tricks
+    "midairufo": "MID_AIR_UFO",
+    "dash-midair-ufo": "DASH_MIDAIR_UFO",
+    "dash-midair-off": "DASH_MIDAIR_OFF",
+    "trick-dash": "TRICK_DASH",
+    "drop": "DROP",
+    "sleeper-drop": "SLEEPER_DROP",
 }
 
 AREA_DICT = {
@@ -109,6 +117,7 @@ def process_row(rule_strs: list[str], region_name: str, region_name2: str | None
     remove_map = str.maketrans("", "", " '")
     row_rules = []
     for rule_str in rule_strs:
+        # TODO: Bomb by itself should be Bomb item + Coin Flip+
         column_strs = rule_str.translate(remove_map).lower().split(",")
         column_rule_strs = []
         for column_str in column_strs:
@@ -181,9 +190,12 @@ def write_connection_rules(entrance_rules: dict[str, str], location_rules: dict[
 from __future__ import annotations
 
 from rule_builder.options import OptionFilter
-from rule_builder.rules import Has, HasAll, HasFromList, Rule, True_
+from rule_builder.rules import Has, HasAll, HasAny, HasFromList, Rule, True_
 
 from ..options import Difficulty
+
+DIFF_HARD = [OptionFilter(Difficulty, Difficulty.option_hard, operator="ge")]
+DIFF_EXPERT = [OptionFilter(Difficulty, Difficulty.option_expert, operator="ge")]
 
 BP_PLUS1_UPGRADES = ["Bat Pouch", "Bat Backpack"]
 BP_PLUS1 = Has("BP Shard", 2) | HasFromList(*BP_PLUS1_UPGRADES, count=1)
@@ -194,17 +206,21 @@ BP_PLUS2 = (
 )
 
 COIN_FLIP_PLUS = HasAll("Coin-Flip", "Prodigy")
-HAS_MID_AIR_UFO = Has("UFO Throw", options=[OptionFilter(Difficulty, Difficulty.option_hard)])
-HAS_SS_PLUS = Has("Progressive Skipping Stone Badge", 2) & BP_PLUS1  # Requires 4 BP (from base 3 BP)
-HAS_SS_NORMAL = HAS_SS_PLUS | (Has("Progressive Skipping Stone Badge", 1) & BP_PLUS2)  # Requires 5 BP (from base 3 BP)
+SS_PLUS = Has("Progressive Skipping Stone Badge", 2) & BP_PLUS1  # Requires 4 BP (from base 3 BP)
+SS_NORMAL = SS_PLUS | (Has("Progressive Skipping Stone Badge", 1) & BP_PLUS2)  # Requires 5 BP (from base 3 BP)
 
-DIFF_HARD = [OptionFilter(Difficulty, Difficulty.option_hard, operator="ge")]
-DIFF_EXPERT = [OptionFilter(Difficulty, Difficulty.option_expert, operator="ge")]
+MID_AIR_UFO = Has("UFO Throw") & DIFF_HARD
+DASH_MIDAIR_UFO = HasAll("Wall-Dash", "UFO Throw") & DIFF_HARD
+DASH_MIDAIR_OFF = HasAll("Wall-Dash", "Offstring Throw") & DIFF_HARD
+TRICK_DASH = Has("Wall-Dash") & (DIFF_EXPERT | (DIFF_HARD & HasAny("Offstring Throw", "UFO Throw")))
+DROP = HasAny("Parry", "Around-the-World", "Coin-Flip") & DIFF_HARD
+SLEEPER_DROP = Has("Sleeper") & DROP & DIFF_HARD
 
 BOMB = True_()
 BUOY = True_()
 CHEST = True_()
 COG = True_()
+HOOK = True_()
 KEY = True_()
 LEVER = True_()
 MANHOLE = True_()
