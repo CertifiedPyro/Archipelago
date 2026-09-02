@@ -50,7 +50,7 @@ def read_full_rooms_csv() -> RoomDict:
             room_label = row["Full Room Label"]
             region_area = AREA_NAMES[room_area]
             region_name = f"{region_area} (X{int(row['X']):+},Y{int(row['Y']):+}){row['Suffix']}"
-            sort_index = AREA_NAMES_KEYS.index(room_area) * 10000 + (abs(int(row["X"])) * 100 + int(row["Y"]))
+            sort_index = AREA_NAMES_KEYS.index(room_area) * 10_000 + (abs(int(row["X"])) * 100 + int(row["Y"]))
             sort_key = f"{sort_index:04}{row['Suffix']}"
             room_dict[room_label] = RoomData(
                 room_label=room_label,

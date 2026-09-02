@@ -89,7 +89,7 @@ ENTRANCE_RULES: dict[str, Rule] = {
         & Has("Faria (X+2,Y+1) (Main): Southwest Apple")
     ),
     "Faria (X+8,Y+2) -> Faria (X+8,Y+1)": (
-        Has("S Plaza (X-2,Y-3) (Southeast): Mole Brother 1") & Has("Faria (X+7,Y-4) (West Alcove): Mole Brother 2")
+        Has("S Plaza (X-2,Y-3) (Southeast): Mole Brother") & Has("Faria (X+7,Y-4) (West Alcove): Mole Brother")
     ),
     "Faria (X+10,Y+2) (Main) -> Faria (X+10,Y+2) (Northeast)": (
         (Has("Walk-the-Dog") & SS_NORMAL)
@@ -515,30 +515,30 @@ LOCATION_RULES: dict[str, Rule] = {
     "Faria (X+8,Y-4): Combat - Reward": (Has("Faria (X+8,Y-4): Combat")),
     "Faria (X+3,Y+4): Combat - Reward": (Has("Faria (X+3,Y+4): Combat")),
     "Faria (X+2,Y+3): Combat - Reward": (Has("Faria (X+2,Y+3): Combat ")),
-    "Faria (X+5,Y+3): Combat - Rewards 1": (Has("Faria (X+5,Y+3): Combat")),
-    "Faria (X+5,Y+3): Combat - Rewards 2": (Has("Faria (X+5,Y+3): Combat")),
+    "Faria (X+5,Y+3): Combat - Reward 1": (Has("Faria (X+5,Y+3): Combat")),
+    "Faria (X+5,Y+3): Combat - Reward 2": (Has("Faria (X+5,Y+3): Combat")),
     "Faria (X+7,Y+4) (South): Key": (Has("Faria (X+7,Y+4) (South): Combat")),
     "Faria (X+2,Y-2): Far Lever": (
         (Has("Offstring Throw") & Has("Faria (X+2,Y-2): Lever (left)") & Has("Faria (X+2,Y-2): Lever (right)"))
         | (Has("Wall-Ride") & Has("Faria (X+2,Y-2): Lever (left)") & Has("Faria (X+2,Y-2): Lever (right)"))
     ),
     "Faria (X+8,Y-3) (Northwest): Money Bag": (Has("Wall-Dash") | Has("UFO Throw") | Has("Wall-Ride")),
-    "Faria (X+10,Y+4): Money Bags 1": (
+    "Faria (X+10,Y+4): Money Bag 1": (
         Has("Walk-the-Dog") | (Has("Wall-Dash") & SS_PLUS) | (Has("Wall-Ride") & SS_NORMAL)
     ),
-    "Faria (X+10,Y+4): Money Bags 2": (
+    "Faria (X+10,Y+4): Money Bag 2": (
         Has("Walk-the-Dog") | (Has("Wall-Dash") & SS_PLUS) | (Has("Wall-Ride") & SS_NORMAL)
     ),
-    "Faria (X+5,Y+4): Money Bags 1": (Has("Walk-the-Dog") | (Has("UFO Throw") & SS_NORMAL) | Has("Wall-Ride")),
-    "Faria (X+5,Y+4): Money Bags 2": (Has("Walk-the-Dog") | (Has("UFO Throw") & SS_NORMAL) | Has("Wall-Ride")),
-    "Faria (X+5,Y+4): Money Bags 3": (Has("Walk-the-Dog") | (Has("UFO Throw") & SS_NORMAL) | Has("Wall-Ride")),
-    "Faria (X+5,Y+4): Money Bags 4": (Has("Walk-the-Dog") | (Has("UFO Throw") & SS_NORMAL) | Has("Wall-Ride")),
-    "Faria (X+5,Y+4): Money Bags 5": (Has("Walk-the-Dog") | (Has("UFO Throw") & SS_NORMAL) | Has("Wall-Ride")),
-    "Faria (X+5,Y+4): Money Bags 6": (Has("Walk-the-Dog") | (Has("UFO Throw") & SS_NORMAL) | Has("Wall-Ride")),
-    "Faria (X+4,Y+0) (Main): Money Bag (top-right)": (Has("Wall-Dash") | Has("UFO Throw") | Has("Wall-Ride")),
+    "Faria (X+5,Y+4): Money Bag 1": (Has("Walk-the-Dog") | (Has("UFO Throw") & SS_NORMAL) | Has("Wall-Ride")),
+    "Faria (X+5,Y+4): Money Bag 2": (Has("Walk-the-Dog") | (Has("UFO Throw") & SS_NORMAL) | Has("Wall-Ride")),
+    "Faria (X+5,Y+4): Money Bag 3": (Has("Walk-the-Dog") | (Has("UFO Throw") & SS_NORMAL) | Has("Wall-Ride")),
+    "Faria (X+5,Y+4): Money Bag 4": (Has("Walk-the-Dog") | (Has("UFO Throw") & SS_NORMAL) | Has("Wall-Ride")),
+    "Faria (X+5,Y+4): Money Bag 5": (Has("Walk-the-Dog") | (Has("UFO Throw") & SS_NORMAL) | Has("Wall-Ride")),
+    "Faria (X+5,Y+4): Money Bag 6": (Has("Walk-the-Dog") | (Has("UFO Throw") & SS_NORMAL) | Has("Wall-Ride")),
+    "Faria (X+4,Y+0) (Main): Money Bag 3": (Has("Wall-Dash") | Has("UFO Throw") | Has("Wall-Ride")),
     "Faria (X+10,Y+1): Musical Notes": (Has("Wall-Dash")),
-    "Faria (X+10,Y+1): Musical Notes - Rewards 1": (Has("Faria (X+10,Y+1): Musical Notes")),
-    "Faria (X+10,Y+1): Musical Notes - Rewards 2": (Has("Faria (X+10,Y+1): Musical Notes")),
+    "Faria (X+10,Y+1): Musical Notes - Reward 1": (Has("Faria (X+10,Y+1): Musical Notes")),
+    "Faria (X+10,Y+1): Musical Notes - Reward 2": (Has("Faria (X+10,Y+1): Musical Notes")),
     "Faria (X+1,Y+5): Petal Container": (BUOY),
     "Faria (X+9,Y+2): Petal Container": (
         COIN_FLIP_PLUS
@@ -548,17 +548,17 @@ LOCATION_RULES: dict[str, Rule] = {
     ),
     "Faria (X+4,Y+0) (Main): Popcorn NPC": (HAS_MONEY),
     "Faria (X+3,Y+3): Apple Quest": (Has("Faria (X+2,Y+1) (Main): South Apple")),
-    "Faria (X+3,Y+3): Apple Quest - Rewards 1": (Has("Faria (X+3,Y+3): Apple Quest")),
-    "Faria (X+3,Y+3): Apple Quest - Rewards 2": (Has("Faria (X+3,Y+3): Apple Quest")),
+    "Faria (X+3,Y+3): Apple Quest - Reward 1": (Has("Faria (X+3,Y+3): Apple Quest")),
+    "Faria (X+3,Y+3): Apple Quest - Reward 2": (Has("Faria (X+3,Y+3): Apple Quest")),
     "Faria (X+7,Y-6) (Main): Burger Quest": (Has("S Plaza Interiors (X-1,Y+1): Burger")),
     "Faria (X+7,Y-6) (Main): Burger Quest - Reward": (Has("Faria (X+7,Y-6) (Main): Burger Quest")),
     "Faria (X+4,Y+0) (Main): Popcorn Quest": (Has("Faria (X+4,Y+0) (Main): Popcorn NPC")),
-    "Faria (X+4,Y+0) (Main): Popcorn Quest - Rewards 1": (Has("Faria (X+4,Y+0) (Main): Popcorn Quest")),
-    "Faria (X+4,Y+0) (Main): Popcorn Quest - Rewards 2": (Has("Faria (X+4,Y+0) (Main): Popcorn Quest")),
-    "Faria (X+4,Y+0) (Main): Taxi Phone (central)": (HAS_MONEY),
-    "Faria (X+4,Y-5) (South): Taxi Phone (west)": (HAS_MONEY),
-    "Faria (X+10,Y+0): Taxi Phone (east)": (HAS_MONEY),
-    "Faria Interiors (X+3,Y+1): Coin Badge": (BOMB),
+    "Faria (X+4,Y+0) (Main): Popcorn Quest - Reward 1": (Has("Faria (X+4,Y+0) (Main): Popcorn Quest")),
+    "Faria (X+4,Y+0) (Main): Popcorn Quest - Reward 2": (Has("Faria (X+4,Y+0) (Main): Popcorn Quest")),
+    "Faria (X+4,Y+0) (Main): Taxi Phone": (HAS_MONEY),
+    "Faria (X+4,Y-5) (South): Taxi Phone": (HAS_MONEY),
+    "Faria (X+10,Y+0): Taxi Phone": (HAS_MONEY),
+    "Faria Interiors (X+3,Y+1): Badge": (BOMB),
     "Faria Interiors (X+10,Y-2): Bomb": (Has("Wall-Dash") | Has("UFO Throw") | Has("Wall-Ride")),
     "Faria Interiors (X+2,Y-1): BP Shard": (BOMB),
     "Faria Interiors (X+4,Y-5): BP Shard": (Has("Faria Interiors (X+4,Y-5): Key")),
@@ -588,9 +588,9 @@ LOCATION_RULES: dict[str, Rule] = {
     "Faria Sewers (X+2,Y-5): Combat (optional)": (
         Has("Faria Sewers (X+2,Y-5): Lever") | (Has("Progressive Wing Badge") & DIFF_HARD) | DIFF_EXPERT
     ),
-    "Faria Sewers (X+2,Y-5): Combat (optional) - Rewards 1": (Has("Faria Sewers (X+2,Y-5): Combat (optional)")),
-    "Faria Sewers (X+2,Y-5): Combat (optional) - Rewards 2": (Has("Faria Sewers (X+2,Y-5): Combat (optional)")),
-    "Faria Sewers (X+2,Y-5): Combat (optional) - Rewards 3": (Has("Faria Sewers (X+2,Y-5): Combat (optional)")),
+    "Faria Sewers (X+2,Y-5): Combat (optional) - Reward 1": (Has("Faria Sewers (X+2,Y-5): Combat (optional)")),
+    "Faria Sewers (X+2,Y-5): Combat (optional) - Reward 2": (Has("Faria Sewers (X+2,Y-5): Combat (optional)")),
+    "Faria Sewers (X+2,Y-5): Combat (optional) - Reward 3": (Has("Faria Sewers (X+2,Y-5): Combat (optional)")),
     "Faria Sewers (X+4,Y+4): Combat 1": (Has("Faria Sewers (X+4,Y+4): Lever")),
     "Faria Sewers (X+4,Y+4): Combat 2": (Has("Faria Sewers (X+4,Y+4): Key")),
     "Faria Sewers (X+8,Y+4) (West): Combat": (Has("Wall-Dash")),
@@ -622,26 +622,29 @@ LOCATION_RULES: dict[str, Rule] = {
         | Has("UFO Throw")
         | Has("Wall-Ride")
     ),
-    "Faria Sewers (X+5,Y-1): Money Bags 1": (Has("Faria Sewers (X+5,Y-1): Lever")),
-    "Faria Sewers (X+5,Y-1): Money Bags 2": (Has("Faria Sewers (X+5,Y-1): Lever")),
-    "Faria Sewers (X+5,Y-1): Money Bags 3": (Has("Faria Sewers (X+5,Y-1): Lever")),
-    "Faria Sewers (X+6,Y+4): Money Bags 1": (Has("Faria Sewers (X+6,Y+4): Lever")),
-    "Faria Sewers (X+6,Y+4): Money Bags 2": (Has("Faria Sewers (X+6,Y+4): Lever")),
-    "Faria Sewers (X+8,Y+3): Money Bag (room center)": (Has("Wall-Dash")),
-    "Faria Sewers (X+8,Y-1): Money Bag (far right)": (Has("Offstring Throw") | Has("UFO Throw") | Has("Wall-Ride")),
-    "Faria Sewers (X+10,Y+0): Money Bag (left)": (Has("Offstring Throw") | Has("Faria Sewers (X+9,Y+0): Event 1")),
+    "Faria Sewers (X+5,Y-1): Money Bag 1": (Has("Faria Sewers (X+5,Y-1): Lever")),
+    "Faria Sewers (X+5,Y-1): Money Bag 2": (Has("Faria Sewers (X+5,Y-1): Lever")),
+    "Faria Sewers (X+5,Y-1): Money Bag 3": (Has("Faria Sewers (X+5,Y-1): Lever")),
+    "Faria Sewers (X+6,Y+4): Money Bag 1": (Has("Faria Sewers (X+6,Y+4): Lever")),
+    "Faria Sewers (X+6,Y+4): Money Bag 2": (Has("Faria Sewers (X+6,Y+4): Lever")),
+    "Faria Sewers (X+8,Y+3): Money Bag 3": (Has("Wall-Dash")),
+    "Faria Sewers (X+8,Y-1): Money Bag 3": (Has("Offstring Throw") | Has("UFO Throw") | Has("Wall-Ride")),
+    "Faria Sewers (X+10,Y+0): Money Bag 4": (Has("Offstring Throw") | Has("Faria Sewers (X+9,Y+0): Event 1")),
     "Faria Sewers (X+6,Y+3): Musical Notes - Reward 1": (Has("Faria Sewers (X+6,Y+3): Musical Notes")),
     "Faria Sewers (X+6,Y+3): Musical Notes - Reward 2": (Has("Faria Sewers (X+6,Y+3): Musical Notes")),
     "Faria Sewers (X+6,Y+3): Musical Notes - Reward 3": (Has("Faria Sewers (X+6,Y+3): Musical Notes")),
     "Faria Sewers (X+2,Y-1): Petal Container": (Has("Faria Sewers (X+2,Y-1): Combat")),
     "Faria Sewers (X+8,Y-1): Petal Container": (Has("Offstring Throw")),
-    "Excavation (X+2,Y+4): Berserker Badge": (Has("Wall-Dash") | Has("Wall-Ride") | Has("UFO Throw")),
-    "Excavation (X+5,Y-1): Wing Badge": (BOMB & Has("Offstring Throw")),
+    "Excavation (X+2,Y+4): Badge": (Has("Wall-Dash") | Has("Wall-Ride") | Has("UFO Throw")),
+    "Excavation (X+5,Y-1): Badge": (BOMB & Has("Offstring Throw")),
     "Excavation (X+4,Y+3): BP Shard": (
         Has("Walk-the-Dog") | Has("Wall-Dash") | Has("UFO Throw") | Has("Wall-Ride") | SS_NORMAL
     ),
     "Excavation (X+0,Y+8): Boss": (
-        (Has("Petal Container", 8) & BOMB) | (Has("Petal Container", 8) & DIFF_HARD) | DIFF_EXPERT
+        (Has("Petal Container", 8) & BOMB)
+        | (Has("Petal Container", 8) & COIN_FLIP_PLUS)
+        | (Has("Petal Container", 8) & DIFF_HARD)
+        | DIFF_EXPERT
     ),
     "Excavation (X+2,Y-1): Key": ((BOMB & Has("Offstring Throw")) | COIN_FLIP_PLUS),
     "Excavation (X+4,Y+1): Key": (Has("Excavation (X+4,Y+1): Combat")),
@@ -730,7 +733,7 @@ LOCATION_RULES: dict[str, Rule] = {
         | (Has("Wall-Dash") & Has("Coin-Flip"))
         | (Has("Wall-Dash") & Has("Around-the-World"))
     ),
-    "Skyscraper (X+4,Y-1): Stun Badge": (
+    "Skyscraper (X+4,Y-1): Badge": (
         (Has("Skyscraper (X+4,Y-1): Key") & COG & Has("Offstring Throw"))
         | (Has("Wall-Ride") & Has("Wall-Dash") & DIFF_EXPERT)
     ),
@@ -750,41 +753,39 @@ LOCATION_RULES: dict[str, Rule] = {
     "Skyscraper (X+0,Y-2) (West): Musical Notes - Reward": (Has("Skyscraper (X+0,Y-2) (West): Musical Notes")),
     "Skyscraper (X+3,Y-4) (North): Musical Notes - Reward": (Has("Skyscraper (X+3,Y-4) (North): Musical Notes")),
     "Skyscraper (X+0,Y-5): Petal Container": (Has("Skyscraper (X+0,Y-5): Key") & CHEST),
-    "S Plaza (X-2,Y+4): Pitcher's Badge": (Has("S Plaza (X-3,Y+4): Key")),
+    "S Plaza (X-2,Y+4): Badge": (Has("S Plaza (X-3,Y+4): Key")),
     "S Plaza (X+2,Y+4): BP Shard": (Has("UFO Throw") | Has("Wall-Ride")),
-    "S Plaza (X-2,Y-3) (Main): Combat (top-right, optional) - Reward": (
-        Has("S Plaza (X-2,Y-3) (Main): Combat (top-right, optional)")
-    ),
+    "S Plaza (X-2,Y-3) (Main): Combat (optional) - Reward": (Has("S Plaza (X-2,Y-3) (Main): Combat (optional)")),
     "S Plaza (X-3,Y+3): Combat - Reward": (Has("S Plaza (X-3,Y+3): Combat")),
     "S Plaza (X-3,Y+4): Key": (Has("S Plaza (X-3,Y+4): Combat")),
     "S Plaza (X-1,Y+4) (Southeast Entrance): Lever": (
         SS_NORMAL | (Has("Walk-the-Dog") & Has("Wall-Ride")) | Has("Wall-Dash") | Has("UFO Throw")
     ),
     "S Plaza (X-2,Y-3) (South): Left Musical Notes": (Has("Offstring Throw")),
-    "S Plaza (X-2,Y-3) (South): Left Musical Notes - Rewards 1": (Has("S Plaza (X-2,Y-3) (South): Left Musical Notes")),
-    "S Plaza (X-2,Y-3) (South): Left Musical Notes - Rewards 2": (Has("S Plaza (X-2,Y-3) (South): Left Musical Notes")),
-    "S Plaza (X-2,Y-3) (South): Left Musical Notes - Rewards 3": (Has("S Plaza (X-2,Y-3) (South): Left Musical Notes")),
-    "S Plaza (X-2,Y-3) (South): Left Musical Notes - Rewards 4": (Has("S Plaza (X-2,Y-3) (South): Left Musical Notes")),
+    "S Plaza (X-2,Y-3) (South): Left Musical Notes - Reward 1": (Has("S Plaza (X-2,Y-3) (South): Left Musical Notes")),
+    "S Plaza (X-2,Y-3) (South): Left Musical Notes - Reward 2": (Has("S Plaza (X-2,Y-3) (South): Left Musical Notes")),
+    "S Plaza (X-2,Y-3) (South): Left Musical Notes - Reward 3": (Has("S Plaza (X-2,Y-3) (South): Left Musical Notes")),
+    "S Plaza (X-2,Y-3) (South): Left Musical Notes - Reward 4": (Has("S Plaza (X-2,Y-3) (South): Left Musical Notes")),
     "S Plaza (X-2,Y-3) (South): Right Musical Notes": (
         Has("Offstring Throw") | (DIFF_EXPERT & Has("Around-the-World")) | (DIFF_EXPERT & Has("Wall-Ride"))
     ),
-    "S Plaza (X-2,Y-3) (South): Right Musical Notes - Rewards 1": (
+    "S Plaza (X-2,Y-3) (South): Right Musical Notes - Reward 1": (
         Has("S Plaza (X-2,Y-3) (South): Right Musical Notes")
     ),
-    "S Plaza (X-2,Y-3) (South): Right Musical Notes - Rewards 2": (
+    "S Plaza (X-2,Y-3) (South): Right Musical Notes - Reward 2": (
         Has("S Plaza (X-2,Y-3) (South): Right Musical Notes")
     ),
-    "S Plaza (X-2,Y-3) (South): Right Musical Notes - Rewards 3": (
+    "S Plaza (X-2,Y-3) (South): Right Musical Notes - Reward 3": (
         Has("S Plaza (X-2,Y-3) (South): Right Musical Notes")
     ),
     "S Plaza (X-2,Y-3) (Main): Petal Container": (
         Has("S Plaza (X-2,Y-3) (Main): Right Lever") & Has("S Plaza (X-2,Y-3) (Main): Left Lever")
     ),
     "S Plaza (X-2,Y-3) (Main): Burger Quest": (Has("S Plaza Interiors (X-1,Y+1): Burger")),
-    "S Plaza (X-2,Y-3) (Main): Burger Quest - Rewards 1": (Has("S Plaza (X-2,Y-3) (Main): Burger Quest")),
-    "S Plaza (X-2,Y-3) (Main): Burger Quest - Rewards 2": (Has("S Plaza (X-2,Y-3) (Main): Burger Quest")),
-    "S Plaza (X-2,Y-3) (Main): Burger Quest - Rewards 3": (Has("S Plaza (X-2,Y-3) (Main): Burger Quest")),
-    "S Plaza (X-2,Y-3) (Main): Burger Quest - Rewards 4": (Has("S Plaza (X-2,Y-3) (Main): Burger Quest")),
+    "S Plaza (X-2,Y-3) (Main): Burger Quest - Reward 1": (Has("S Plaza (X-2,Y-3) (Main): Burger Quest")),
+    "S Plaza (X-2,Y-3) (Main): Burger Quest - Reward 2": (Has("S Plaza (X-2,Y-3) (Main): Burger Quest")),
+    "S Plaza (X-2,Y-3) (Main): Burger Quest - Reward 3": (Has("S Plaza (X-2,Y-3) (Main): Burger Quest")),
+    "S Plaza (X-2,Y-3) (Main): Burger Quest - Reward 4": (Has("S Plaza (X-2,Y-3) (Main): Burger Quest")),
     "S Plaza (X-2,Y-3) (Main): Taxi Phone": (HAS_MONEY),
     "S Plaza Interiors (X-1,Y+1): Burger": (HAS_MONEY),
     "S Plaza Sewers (X-1,Y-5): Right Lever": (Has("Wall-Dash") | Has("UFO Throw") | Has("Wall-Ride")),
