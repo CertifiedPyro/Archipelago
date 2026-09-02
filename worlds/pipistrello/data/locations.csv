@@ -74,8 +74,8 @@ Room Label,Type,Map Name,Name,Location,Object Ids,✅,❌,Edit,Rules,Rule 1,Rule
 "Faria Slimer Borough (X+5, Y+3) - yug2165",Location,Combat 8,Combat - Reward,Faria Slimer Borough,"yug2231,yug3087",TRUE,FALSE,8/8/2026 19:09:54,TRUE,Combat 8,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Combat 8,
 "Faria Slimer Borough (X+6, Y-4) - yug187",Event,Key 1,Key,Faria Slimer Borough,lor884,TRUE,FALSE,8/6/2026 22:42:20,FALSE,,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Key hidden in crate
 "Faria Slimer Borough (X+7, Y+4) - yug4153 (South)",Event,Key 2,Key,Faria Slimer Borough,yug4159,TRUE,FALSE,8/6/2026 22:45:14,TRUE,Combat 5,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Combat 5,
-"Faria Slimer Borough (X+2, Y-2) - yug2715",Event,Lever 1,Lever (left),Faria Slimer Borough,yug2730,TRUE,FALSE,7/27/2026 18:38:02,FALSE,,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
-"Faria Slimer Borough (X+2, Y-2) - yug2715",Event,Lever 2,Lever (right),Faria Slimer Borough,yug2731,TRUE,FALSE,7/27/2026 18:33:27,FALSE,,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
+"Faria Slimer Borough (X+2, Y-2) - yug2715",Event,Lever 1,Left Lever,Faria Slimer Borough,yug2730,TRUE,FALSE,9/2/2026 0:04:38,FALSE,,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
+"Faria Slimer Borough (X+2, Y-2) - yug2715",Event,Lever 2,Right Lever,Faria Slimer Borough,yug2731,TRUE,FALSE,9/2/2026 0:04:38,FALSE,,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
 "Faria Slimer Borough (X+2, Y-2) - yug2715",Event,Lever 3,Far Lever,Faria Slimer Borough,yug2732,TRUE,FALSE,8/2/2026 18:51:53,TRUE,"off, Lever 1, Lever 2","ride, Lever 1, Lever 2",,,,,,FALSE,Lever 1 AND Lever 2,FALSE,FALSE,FALSE,Lever 1 AND Lever 2,FALSE,FALSE,
 "Faria Slimer Borough (X+4, Y-5) - yug208 (North)",Event,Lever 4,Lever,Faria Slimer Borough,lor753,TRUE,FALSE,8/2/2026 22:10:04,FALSE,,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
 "Faria Slimer Borough (X+7, Y+3) - yug9",Event,Lever 5,Lever,Faria Slimer Borough,yug2265,TRUE,FALSE,8/8/2026 19:15:01,FALSE,,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
@@ -90,9 +90,9 @@ Room Label,Type,Map Name,Name,Location,Object Ids,✅,❌,Edit,Rules,Rule 1,Rule
 "Faria Slimer Borough (X+4, Y-6) - yug173",Location,Moneybag 8,Money Bag,Faria Slimer Borough,yug2435,TRUE,FALSE,8/2/2026 22:07:07,FALSE,,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
 "Faria Slimer Borough (X+8, Y-6) - yug3298",Location,Moneybag 9,Money Bag,Faria Slimer Borough,yug3316,TRUE,FALSE,8/4/2026 17:50:01,FALSE,,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
 "Faria Slimer Borough (X+8, Y-3) - yug108 (Northwest)",Location,Moneybag 10,Money Bag,Faria Slimer Borough,yug2607,TRUE,FALSE,8/4/2026 17:53:09,TRUE,dash,ufo,ride,,,,,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,
-"Faria Slimer Borough (X+10, Y-1) - yug61 (West Alcove)",Location,Moneybag 11,Money Bag,Faria Slimer Borough,yug1755,TRUE,FALSE,8/5/2026 18:51:55,FALSE,,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
+"Faria Slimer Borough (X+10, Y-1) - yug61 (West Alcove)",Location,Moneybag 11,Money Bag 1,Faria Slimer Borough,yug1755,TRUE,FALSE,9/2/2026 0:16:58,FALSE,,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
 "Faria Slimer Borough (X+10, Y+0) - yug55",Location,Moneybag 12,Money Bag,Faria Slimer Borough,lor2327,TRUE,FALSE,8/5/2026 18:57:08,FALSE,,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
-"Faria Slimer Borough (X+10, Y-1) - yug61 (Main)",Location,Moneybag 13,Money Bag,Faria Slimer Borough,yug2599,TRUE,FALSE,8/5/2026 19:40:21,FALSE,,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
+"Faria Slimer Borough (X+10, Y-1) - yug61 (Main)",Location,Moneybag 13,Money Bag 2,Faria Slimer Borough,yug2599,TRUE,FALSE,9/2/2026 0:16:59,FALSE,,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
 "Faria Slimer Borough (X+10, Y+2) - lor2334 (Northeast)",Location,Moneybag 14,Money Bag,Faria Slimer Borough,"yug4335,yug4336",TRUE,FALSE,9/1/2026 23:40:25,FALSE,,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
 "Faria Slimer Borough (X+10, Y+4) - yug4122",Location,Moneybag 15,Money Bag,Faria Slimer Borough,"yug4760,yug5561",TRUE,FALSE,9/1/2026 23:40:29,TRUE,dog,"dash, ss+","ride, ss",,,,,FALSE,FALSE,TRUE,Skipping Stone+,FALSE,Skipping Stone,FALSE,FALSE,
 "Faria Slimer Borough (X+7, Y+4) - yug4153 (South)",Location,Moneybag 16,Money Bag,Faria Slimer Borough,yug4556,TRUE,FALSE,8/6/2026 22:42:02,FALSE,,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
@@ -211,8 +211,8 @@ Room Label,Type,Map Name,Name,Location,Object Ids,✅,❌,Edit,Rules,Rule 1,Rule
 "SlimeCorp Excavation Site (X+5, Y-1) - lor1228",Location,Badge (Wing),Badge,SlimeCorp Excavation Site,yug36,TRUE,FALSE,9/1/2026 23:57:16,TRUE,"bomb, off",,,,,,,,,,,,,,,Coin Flip+ not possible
 "SlimeCorp Excavation Site (X+2, Y+4) - lor770",Location,Badge (Berserker),Badge,SlimeCorp Excavation Site,yug2,TRUE,FALSE,9/1/2026 23:57:17,TRUE,dash,ride,ufo,,,,,,,,,,,,,
 "SlimeCorp Excavation Site (X+4, Y+3) - lor256",Location,BP Shard 1,BP Shard,SlimeCorp Excavation Site,yug1,TRUE,FALSE,8/28/2026 23:31:00,TRUE,dog,dash,ufo,ride,ss,,,,,,,,,,,
-"SlimeCorp Excavation Site (X-2, Y-1) - lor524 (Northwest)",Event,Cog 1,Cog,SlimeCorp Excavation Site,lor543,TRUE,FALSE,8/30/2026 1:23:31,FALSE,none,,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X-2, Y-1) - lor524 (Southwest)",Event,Cog 2,Cog,SlimeCorp Excavation Site,lor528,TRUE,FALSE,8/30/2026 2:14:34,FALSE,none,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X-2, Y-1) - lor524 (Northwest)",Event,Cog 1,Cog 1,SlimeCorp Excavation Site,lor543,TRUE,FALSE,9/2/2026 0:19:52,FALSE,none,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X-2, Y-1) - lor524 (Southwest)",Event,Cog 2,Cog 2,SlimeCorp Excavation Site,lor528,TRUE,FALSE,9/2/2026 0:19:54,FALSE,none,,,,,,,,,,,,,,,
 "SlimeCorp Excavation Site (X+4, Y+1) - lor180",Event,Combat 1,Combat,SlimeCorp Excavation Site,lor183,TRUE,FALSE,8/28/2026 21:40:40,FALSE,none,,,,,,,,,,,,,,,
 "SlimeCorp Excavation Site (X+1, Y+3) - lor416",Event,Combat 2,Combat,SlimeCorp Excavation Site,lor425,TRUE,FALSE,8/29/2026 0:01:29,FALSE,none,,,,,,,,,,,,,,,
 "SlimeCorp Excavation Site (X-3, Y+0) - lor536",Event,Combat 3,Combat,SlimeCorp Excavation Site,lor565,TRUE,FALSE,8/30/2026 2:17:38,FALSE,none,,,,,,,,,,,,,,,
@@ -230,7 +230,7 @@ Room Label,Type,Map Name,Name,Location,Object Ids,✅,❌,Edit,Rules,Rule 1,Rule
 "SlimeCorp Excavation Site (X+0, Y+0) - lor149 (Main)",Event,Lever Main 1,East Lever,SlimeCorp Excavation Site,lor153,TRUE,TRUE,8/28/2026 22:52:59,FALSE,none,,,,,,,,,,,,,,,Unused
 "SlimeCorp Excavation Site (X+0, Y+0) - lor149 (Southeast)",Event,Lever Main 2,Southeast Lever,SlimeCorp Excavation Site,lor294,TRUE,FALSE,8/29/2026 0:01:18,FALSE,none,,,,,,,,,,,,,,,
 "SlimeCorp Excavation Site (X+0, Y+0) - lor149 (Main)",Event,Lever Main 3,West Lever,SlimeCorp Excavation Site,lor587,TRUE,TRUE,8/30/2026 18:20:33,FALSE,none,,,,,,,,,,,,,,,Unused
-"SlimeCorp Excavation Site (X+0, Y+0) - lor149 (Southwest Right)",Event,Lever Main 4,South Lever,SlimeCorp Excavation Site,lor631,TRUE,FALSE,8/30/2026 20:59:25,FALSE,none,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X+0, Y+0) - lor149 (Southwest Right)",Event,Lever Main 4,Southwest Lever,SlimeCorp Excavation Site,lor631,TRUE,FALSE,9/2/2026 0:05:41,FALSE,none,,,,,,,,,,,,,,,
 "SlimeCorp Excavation Site (X+3, Y-1) - lor172",Event,Lever East 1,Lever,SlimeCorp Excavation Site,lor203,TRUE,FALSE,8/28/2026 21:08:33,TRUE,bomb,,,,,,,,,,,,,,,
 "SlimeCorp Excavation Site (X+4, Y+2) - yug8",Event,Lever East 2,Lever,SlimeCorp Excavation Site,yug11,TRUE,FALSE,8/28/2026 23:26:17,TRUE,"bomb, off",dog,dash,ufo,ride,ss,flip+,,,,,,,,,
 "SlimeCorp Excavation Site (X-3, Y-1) - lor534",Event,Lever West 1,North Lever,SlimeCorp Excavation Site,lor554,TRUE,FALSE,8/30/2026 1:04:17,TRUE,"bomb, cog","bomb, trick-dash, dash-midair-off",,,,,,,,,,,,,,Not possible with Coin Flip+
@@ -247,8 +247,8 @@ Room Label,Type,Map Name,Name,Location,Object Ids,✅,❌,Edit,Rules,Rule 1,Rule
 "SlimeCorp Excavation Site (X+0, Y+0) - lor149 (Main)",Location,Moneybag 2,Money Bag 2,SlimeCorp Excavation Site,lor1438,TRUE,FALSE,9/1/2026 23:57:45,FALSE,none,,,,,,,,,,,,,,,
 "SlimeCorp Excavation Site (X+3, Y+0) - lor166",Location,Moneybag 3,Money Bag,SlimeCorp Excavation Site,lor174,TRUE,FALSE,8/28/2026 21:05:36,TRUE,bomb,,,,,,,,,,,,,,,
 "SlimeCorp Excavation Site (X+3, Y-1) - lor172",Location,Moneybag 4,Money Bag,SlimeCorp Excavation Site,lor478,TRUE,FALSE,8/28/2026 21:28:12,TRUE,bomb,,,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X+4, Y-2) - lor179 (South Money Bag)",Location,Moneybag 5,Money Bag,SlimeCorp Excavation Site,lor326,TRUE,FALSE,8/28/2026 21:28:40,FALSE,none,,,,,,,,,,,,,,,Collectible with just ufo + ride but not landable
-"SlimeCorp Excavation Site (X+4, Y-2) - lor179 (Main)",Location,Moneybag 6,Money Bag,SlimeCorp Excavation Site,lor328,TRUE,FALSE,8/28/2026 21:29:21,TRUE,bomb,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X+4, Y-2) - lor179 (South Money Bag)",Location,Moneybag 5,Money Bag 2,SlimeCorp Excavation Site,lor326,TRUE,FALSE,9/2/2026 0:18:09,FALSE,none,,,,,,,,,,,,,,,Collectible with just ufo + ride but not landable
+"SlimeCorp Excavation Site (X+4, Y-2) - lor179 (Main)",Location,Moneybag 6,Money Bag 1,SlimeCorp Excavation Site,lor328,TRUE,FALSE,9/2/2026 0:18:11,TRUE,bomb,,,,,,,,,,,,,,,
 "SlimeCorp Excavation Site (X+5, Y-2) - lor1326",Location,Moneybag 7,Money Bag,SlimeCorp Excavation Site,lor1408,TRUE,FALSE,8/28/2026 22:43:14,TRUE,"Key East 3, chest",,,,,,,,,,,,,,,
 "SlimeCorp Excavation Site (X+5, Y+0) - lor339",Location,Moneybag 8,Money Bag,SlimeCorp Excavation Site,lor340,TRUE,FALSE,8/28/2026 22:34:41,FALSE,none,,,,,,,,,,,,,,,
 "SlimeCorp Excavation Site (X+4, Y+0) - lor171",Location,Moneybag 9,Money Bag,SlimeCorp Excavation Site,lor211,TRUE,FALSE,8/28/2026 21:32:36,TRUE,bomb,,,,,,,,,,,,,,,
@@ -266,8 +266,8 @@ Room Label,Type,Map Name,Name,Location,Object Ids,✅,❌,Edit,Rules,Rule 1,Rule
 "SlimeCorp Excavation Site (X-4, Y+2) - lor1296",Location,Moneybag 21,Money Bag,SlimeCorp Excavation Site,lor1333,TRUE,FALSE,8/30/2026 20:09:29,TRUE,hook,"ufo, ride",,,,,,,,,,,,,,
 "SlimeCorp Excavation Site (X-3, Y+3) - lor618",Location,Moneybag 22,Money Bag,SlimeCorp Excavation Site,lor657,TRUE,FALSE,8/30/2026 20:20:55,TRUE,dash,ride,ufo,,,,,,,,,,,,,
 "SlimeCorp Excavation Site (X+0, Y+4) - lor667 (Main)",Location,Moneybag 23,Money Bag,SlimeCorp Excavation Site,lor670,TRUE,FALSE,8/30/2026 21:14:55,TRUE,dash,ride,ufo,,,,,,,,,,,,,
-"SlimeCorp Excavation Site (X-2, Y+4) - lor672 (North)",Location,Moneybag 24,Money Bag,SlimeCorp Excavation Site,lor700,TRUE,FALSE,8/30/2026 21:38:04,FALSE,,,,,,,,,,,,,,,,Can jump off and collect without landing
-"SlimeCorp Excavation Site (X-2, Y+4) - lor672 (Southeast)",Location,Moneybag 25,Money Bag,SlimeCorp Excavation Site,lor675,TRUE,FALSE,8/30/2026 22:04:16,FALSE,none,,,,,,,,,,,,,,,
+"SlimeCorp Excavation Site (X-2, Y+4) - lor672 (North)",Location,Moneybag 24,Money Bag 1,SlimeCorp Excavation Site,lor700,TRUE,FALSE,9/2/2026 0:19:15,FALSE,,,,,,,,,,,,,,,,Can jump off and collect without landing
+"SlimeCorp Excavation Site (X-2, Y+4) - lor672 (Southeast)",Location,Moneybag 25,Money Bag 2,SlimeCorp Excavation Site,lor675,TRUE,FALSE,9/2/2026 0:19:16,FALSE,none,,,,,,,,,,,,,,,
 "SlimeCorp Excavation Site (X-2, Y+6) - lor701 (East)",Location,Moneybag 26,Money Bag,SlimeCorp Excavation Site,lor1085,TRUE,FALSE,8/30/2026 23:59:15,FALSE,none,,,,,,,,,,,,,,,Suicide jump
 "SlimeCorp Excavation Site (X-5, Y+5) - lor1307 (Money Bag)",Location,Moneybag 27,Money Bag,SlimeCorp Excavation Site,lor1338,TRUE,FALSE,8/31/2026 0:24:32,FALSE,none,,,,,,,,,,,,,,,
 "SlimeCorp Excavation Site (X-4, Y+7) - lor1309",Location,Moneybag 28,Money Bag,SlimeCorp Excavation Site,lor1341,TRUE,FALSE,8/31/2026 1:06:08,TRUE,"dash, ride, Lever South 6","hard, ride, Lever South 6",,,,,,,,,,,,,,"- This is a rare non-once-per-save lever

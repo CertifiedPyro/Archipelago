@@ -1,26 +1,26 @@
 Full Room Label,Room Label,Area,Map ID,Room ID,X,Y,W,H,Suffix,Exclude
 "Abandoned Tunnels (X+0, Y+0) - ren1","Abandoned Tunnels (X+0, Y+0) - ren1",Abandoned Tunnels,tunnels,ren1,0,0,1,1,,"Safe House (X+1, Y+0) - mig32"
 "Abandoned Tunnels (X+1, Y+0) - ren32","Abandoned Tunnels (X+1, Y+0) - ren32",Abandoned Tunnels,tunnels,ren32,1,0,1,1,,"South Plaza (X-1, Y-6) - ren355 (West)"
-"Abandoned Tunnels (X+0, Y+1) - ren12","Abandoned Tunnels (X+0, Y+1) - ren12",Abandoned Tunnels,tunnels,ren12,0,1,1,1,,
-"Abandoned Tunnels (X+1, Y+1) - ren22","Abandoned Tunnels (X+1, Y+1) - ren22",Abandoned Tunnels,tunnels,ren22,1,1,1,1,,
-"Abandoned Tunnels (X+2, Y+1) - ren70","Abandoned Tunnels (X+2, Y+1) - ren70",Abandoned Tunnels,tunnels,ren70,2,1,1,1,,
-"Abandoned Tunnels (X+4, Y+1) - ren71","Abandoned Tunnels (X+4, Y+1) - ren71",Abandoned Tunnels,tunnels,ren71,4,1,1,1,,
-"Abandoned Tunnels (X+5, Y+1) - ren50","Abandoned Tunnels (X+5, Y+1) - ren50",Abandoned Tunnels,tunnels,ren50,5,1,1,1,,
-"Abandoned Tunnels (X+6, Y+1) - ren91","Abandoned Tunnels (X+6, Y+1) - ren91",Abandoned Tunnels,tunnels,ren91,6,1,1,1,,
-"Abandoned Tunnels (X+0, Y+2) - ren28","Abandoned Tunnels (X+0, Y+2) - ren28",Abandoned Tunnels,tunnels,ren28,0,2,1,1,,
-"Abandoned Tunnels (X+1, Y+2) - ren76","Abandoned Tunnels (X+1, Y+2) - ren76",Abandoned Tunnels,tunnels,ren76,1,2,1,1,,
-"Abandoned Tunnels (X+2, Y+2) - ren334","Abandoned Tunnels (X+2, Y+2) - ren334",Abandoned Tunnels,tunnels,ren334,2,2,1,1,,
-"Abandoned Tunnels (X+3, Y+2) - ren80","Abandoned Tunnels (X+3, Y+2) - ren80",Abandoned Tunnels,tunnels,ren80,3,2,1,1,,
-"Abandoned Tunnels (X+4, Y+2) - ren349","Abandoned Tunnels (X+4, Y+2) - ren349",Abandoned Tunnels,tunnels,ren349,4,2,1,1,,
-"Abandoned Tunnels (X+5, Y+2) - ren55","Abandoned Tunnels (X+5, Y+2) - ren55",Abandoned Tunnels,tunnels,ren55,5,2,1,1,,
-"Abandoned Tunnels (X+6, Y+2) - ren64","Abandoned Tunnels (X+6, Y+2) - ren64",Abandoned Tunnels,tunnels,ren64,6,2,1,1,,
-"Abandoned Tunnels (X+6, Y+3) - ren106","Abandoned Tunnels (X+6, Y+3) - ren106",Abandoned Tunnels,tunnels,ren106,6,3,1,1,,
-"Abandoned Tunnels (X+6, Y+4) - ren387","Abandoned Tunnels (X+6, Y+4) - ren387",Abandoned Tunnels,tunnels,ren387,6,4,1,1,,
-"Abandoned Tunnels (X+7, Y+4) - ren693","Abandoned Tunnels (X+7, Y+4) - ren693",Abandoned Tunnels,tunnels,ren693,7,4,3,1,,
-"Abandoned Tunnels (X+10, Y+4) - ren422","Abandoned Tunnels (X+10, Y+4) - ren422",Abandoned Tunnels,tunnels,ren422,10,4,1,1,,
-"Abandoned Tunnels (X+11, Y+4) - ren140","Abandoned Tunnels (X+11, Y+4) - ren140",Abandoned Tunnels,tunnels,ren140,11,4,1,1,,
-"Canceled Subway Station (X-1, Y-2) - ren899","Canceled Subway Station (X-1, Y-2) - ren899",Canceled Subway Station,subway,ren899,-1,-2,2,4,,
-"Canceled Subway Station (X-3, Y+1) - ren279","Canceled Subway Station (X-3, Y+1) - ren279",Canceled Subway Station,subway,ren279,-3,1,1,1,,
+"Abandoned Tunnels (X+0, Y+1) - ren12","Abandoned Tunnels (X+0, Y+1) - ren12",Abandoned Tunnels,tunnels,ren12,0,1,1,1,,"SlimeCorp Excavation Site (X-2, Y-2) - lor1301"
+"Abandoned Tunnels (X+1, Y+1) - ren22","Abandoned Tunnels (X+1, Y+1) - ren22",Abandoned Tunnels,tunnels,ren22,1,1,1,1,,"SlimeCorp Excavation Site (X-1, Y-2) - lor1302"
+"Abandoned Tunnels (X+2, Y+1) - ren70","Abandoned Tunnels (X+2, Y+1) - ren70",Abandoned Tunnels,tunnels,ren70,2,1,1,1,,"SlimeCorp Excavation Site (X+2, Y-2) - lor1304"
+"Abandoned Tunnels (X+4, Y+1) - ren71","Abandoned Tunnels (X+4, Y+1) - ren71",Abandoned Tunnels,tunnels,ren71,4,1,1,1,,"SlimeCorp Excavation Site (X-4, Y+0) - lor1298"
+"Abandoned Tunnels (X+5, Y+1) - ren50","Abandoned Tunnels (X+5, Y+1) - ren50",Abandoned Tunnels,tunnels,ren50,5,1,1,1,,"SlimeCorp Excavation Site (X-4, Y+1) - lor1297"
+"Abandoned Tunnels (X+6, Y+1) - ren91","Abandoned Tunnels (X+6, Y+1) - ren91",Abandoned Tunnels,tunnels,ren91,6,1,1,1,,"SlimeCorp Excavation Site (X+5, Y+2) - lor1324"
+"Abandoned Tunnels (X+0, Y+2) - ren28","Abandoned Tunnels (X+0, Y+2) - ren28",Abandoned Tunnels,tunnels,ren28,0,2,1,1,,"SlimeCorp Excavation Site (X-4, Y+3) - lor1295"
+"Abandoned Tunnels (X+1, Y+2) - ren76","Abandoned Tunnels (X+1, Y+2) - ren76",Abandoned Tunnels,tunnels,ren76,1,2,1,1,,"SlimeCorp Excavation Site (X+5, Y+3) - lor1323"
+"Abandoned Tunnels (X+2, Y+2) - ren334","Abandoned Tunnels (X+2, Y+2) - ren334",Abandoned Tunnels,tunnels,ren334,2,2,1,1,,"SlimeCorp Excavation Site (X-3, Y+4) - lor1294"
+"Abandoned Tunnels (X+3, Y+2) - ren80","Abandoned Tunnels (X+3, Y+2) - ren80",Abandoned Tunnels,tunnels,ren80,3,2,1,1,,"SlimeCorp Excavation Site (X-4, Y+5) - lor1306"
+"Abandoned Tunnels (X+4, Y+2) - ren349","Abandoned Tunnels (X+4, Y+2) - ren349",Abandoned Tunnels,tunnels,ren349,4,2,1,1,,"SlimeCorp Excavation Site (X-5, Y+6) - lor1308"
+"Abandoned Tunnels (X+5, Y+2) - ren55","Abandoned Tunnels (X+5, Y+2) - ren55",Abandoned Tunnels,tunnels,ren55,5,2,1,1,,"SlimeCorp Excavation Site (X+5, Y+7) - lor1319"
+"Abandoned Tunnels (X+6, Y+2) - ren64","Abandoned Tunnels (X+6, Y+2) - ren64",Abandoned Tunnels,tunnels,ren64,6,2,1,1,,"SlimeCorp Excavation Site (X-3, Y+8) - lor1310"
+"Abandoned Tunnels (X+6, Y+3) - ren106","Abandoned Tunnels (X+6, Y+3) - ren106",Abandoned Tunnels,tunnels,ren106,6,3,1,1,,"SlimeCorp Excavation Site (X-1, Y+8) - lor1312"
+"Abandoned Tunnels (X+6, Y+4) - ren387","Abandoned Tunnels (X+6, Y+4) - ren387",Abandoned Tunnels,tunnels,ren387,6,4,1,1,,"SlimeCorp Excavation Site (X+2, Y+8) - lor1313"
+"Abandoned Tunnels (X+7, Y+4) - ren693","Abandoned Tunnels (X+7, Y+4) - ren693",Abandoned Tunnels,tunnels,ren693,7,4,3,1,,"SlimeCorp Excavation Site (X+3, Y+8) - lor1317"
+"Abandoned Tunnels (X+10, Y+4) - ren422","Abandoned Tunnels (X+10, Y+4) - ren422",Abandoned Tunnels,tunnels,ren422,10,4,1,1,,"SlimeCorp Excavation Site (X+5, Y+8) - lor1318"
+"Abandoned Tunnels (X+11, Y+4) - ren140","Abandoned Tunnels (X+11, Y+4) - ren140",Abandoned Tunnels,tunnels,ren140,11,4,1,1,,"SlimeCorp Excavation Site (X-1, Y+10) - lor1314"
+"Canceled Subway Station (X-1, Y-2) - ren899","Canceled Subway Station (X-1, Y-2) - ren899",Canceled Subway Station,subway,ren899,-1,-2,2,4,,"SlimeCorp Excavation Site (X+0, Y+10) - lor1315"
+"Canceled Subway Station (X-3, Y+1) - ren279","Canceled Subway Station (X-3, Y+1) - ren279",Canceled Subway Station,subway,ren279,-3,1,1,1,,"SlimeCorp Excavation Site (X+2, Y+10) - lor1316"
 "Canceled Subway Station (X-2, Y+1) - ren32","Canceled Subway Station (X-2, Y+1) - ren32",Canceled Subway Station,subway,ren32,-2,1,1,1,,
 "Canceled Subway Station (X+1, Y+1) - ren13","Canceled Subway Station (X+1, Y+1) - ren13",Canceled Subway Station,subway,ren13,1,1,1,1,,
 "Canceled Subway Station (X+2, Y+1) - ren280","Canceled Subway Station (X+2, Y+1) - ren280",Canceled Subway Station,subway,ren280,2,1,1,1,,

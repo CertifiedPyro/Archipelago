@@ -39,23 +39,42 @@ RoomDict = dict[str, RoomData]
 
 
 def read_full_rooms_csv() -> RoomDict:
-    room_dict: RoomDict = {"Menu": RoomData("Menu", "Menu", "Menu", "", "")}
+    room_dict: RoomDict = {
+        "Menu": RoomData(
+            room_label="Menu",
+            room_area="Menu",
+            region_name="Menu",
+            region_name_suffixless="Menu",
+            global_room_id="",
+            sort_key="",
+        )
+    }
     with FULL_ROOMS_CSV.open(encoding="utf-8") as file:
         reader = csv.DictReader(file)
+
+        excluded_rooms = set()
+        for row in reader:
+            if row["Exclude"]:
+                excluded_rooms.add(row["Exclude"])
+            else:
+                break
+
         for row in reader:
             room_area = row["Area"]
-            if room_area not in AREA_NAMES or row["Exclude"] == "TRUE":
+            room_label = row["Full Room Label"]
+            if room_area not in AREA_NAMES or room_label in excluded_rooms:
                 continue
 
-            room_label = row["Full Room Label"]
             region_area = AREA_NAMES[room_area]
-            region_name = f"{region_area} (X{int(row['X']):+},Y{int(row['Y']):+}){row['Suffix']}"
+            region_name_suffixless = f"{region_area} (X{int(row['X']):+}, Y{int(row['Y']):+})"
+            region_name = f"{region_name_suffixless}{row['Suffix']}"
             sort_index = AREA_NAMES_KEYS.index(room_area) * 10_000 + (abs(int(row["X"])) * 100 + int(row["Y"]))
             sort_key = f"{sort_index:04}{row['Suffix']}"
             room_dict[room_label] = RoomData(
                 room_label=room_label,
                 room_area=room_area,
                 region_name=region_name,
+                region_name_suffixless=region_name_suffixless,
                 global_room_id=f"{row['Map ID']}/{row['Room ID']}",
                 sort_key=sort_key,
             )
@@ -114,6 +133,7 @@ def read_locations_csv(room_dict: RoomDict) -> tuple[list[LocationData], list[Ev
             region_name = room_data.region_name
             object_ids = row["Object Ids"].split(",")
             location_name = row["Name"]
+            full_location_name = f"{room_data.region_name_suffixless}: {location_name}"
 
             # Get any non-empty rule values
             rule_strs = [v for k, v in row.items() if RULE_HEADER_PATTERN.match(k) and v]
@@ -122,7 +142,7 @@ def read_locations_csv(room_dict: RoomDict) -> tuple[list[LocationData], list[Ev
                 events.append(
                     EventData(
                         region_name=region_name,
-                        location_name=location_name,
+                        full_location_name=full_location_name,
                         global_object_id=f"{room_data.global_room_id}/{object_ids[0]}",
                         map_name=row["Map Name"],
                         room_area=room_data.room_area,
@@ -133,7 +153,7 @@ def read_locations_csv(room_dict: RoomDict) -> tuple[list[LocationData], list[Ev
                 locations.append(
                     LocationData(
                         region_name=region_name,
-                        location_name=location_name,
+                        full_location_name=full_location_name,
                         global_object_id=f"{room_data.global_room_id}/{object_ids[0]}",
                         map_name=row["Map Name"],
                         room_area=room_data.room_area,
@@ -144,7 +164,7 @@ def read_locations_csv(room_dict: RoomDict) -> tuple[list[LocationData], list[Ev
                 locations.extend(
                     LocationData(
                         region_name=region_name,
-                        location_name=f"{location_name} {j + 1}",
+                        full_location_name=f"{full_location_name} {j + 1}",
                         global_object_id=f"{room_data.global_room_id}/{object_ids[j]}",
                         map_name=row["Map Name"],
                         room_area=room_data.room_area,

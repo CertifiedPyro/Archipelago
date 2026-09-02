@@ -28,7 +28,7 @@ def create_all_locations(world: PipWorld) -> None:
 
 def create_regular_locations(world: PipWorld) -> None:
     for idx, d in enumerate(LOCATIONS):
-        loc_name_lower = d.location_name.lower()
+        loc_name_lower = d.full_location_name.lower()
         if "money bag" in loc_name_lower and not world.options.moneysanity:
             continue
 

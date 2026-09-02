@@ -15,7 +15,7 @@ class TestFariaNormalLogic(PipTestBase):
 
     def test_vanilla_logic(self) -> None:
         with self.subTest("Test skyscraper is reachable with vanilla logic"):
-            skyscraper_region = self.world.get_region("Faria (X+4,Y-3) (North)")
+            skyscraper_region = self.world.get_region("Faria (X+4, Y-3) (North)")
             self.assertFalse(skyscraper_region.can_reach(self.multiworld.state))
 
             possible_items = {
@@ -35,14 +35,14 @@ class TestFariaNormalLogic(PipTestBase):
             self.assert_access_dependency([skyscraper_region], possible_items.values())
 
         with self.subTest("Test dungeon is reachable with vanilla logic"):
-            dungeon_region = self.world.get_region("Faria (X+8,Y-3) (Main)")
+            dungeon_region = self.world.get_region("Faria (X+8, Y-3) (Main)")
             staff_id = self.get_item_by_name("Staff ID").name
 
             self.assert_access_dependency([dungeon_region], [[M.DASH], [M.UFO], [M.RIDE], [staff_id]])
 
     def test_water_section(self) -> None:
-        self.world.origin_region_name = "Faria (X+10,Y+2) (Main)"
-        golden_badge = self.world.get_location("S Plaza (X-1,Y+4) (Southeast): Golden Badge")
+        self.world.origin_region_name = "Faria (X+10, Y+2) (Main)"
+        golden_badge = self.world.get_location("S Plaza (X-1, Y+4): Badge")
         self.assert_access_dependency([golden_badge], [["Walk-the-Dog"]])
 
 
@@ -54,8 +54,8 @@ class TestFariaHardLogic(PipTestBase):
 
     def test_vanilla_logic(self) -> None:
         with self.subTest("Test skyscraper is reachable without abilities on hard logic"):
-            key = self.world.get_location("Faria (X+6,Y-4): Key")
-            skyscraper_region = self.world.get_region("Faria (X+4,Y-3) (North)")
+            key = self.world.get_location("Faria (X+6, Y-4): Key")
+            skyscraper_region = self.world.get_region("Faria (X+4, Y-3) (North)")
             self.assertTrue(key.can_reach(self.multiworld.state))
             self.assertFalse(skyscraper_region.can_reach(self.multiworld.state))
 
@@ -63,8 +63,8 @@ class TestFariaHardLogic(PipTestBase):
             self.assertTrue(skyscraper_region.can_reach(self.multiworld.state))
 
     def test_water_section(self) -> None:
-        self.world.origin_region_name = "Faria (X+10,Y+2) (Main)"
-        golden_badge = self.world.get_location("S Plaza (X-1,Y+4) (Southeast): Golden Badge")
+        self.world.origin_region_name = "Faria (X+10, Y+2) (Main)"
+        golden_badge = self.world.get_location("S Plaza (X-1, Y+4): Badge")
 
         possible_items = {
             "Walk-the-Dog": [M.DOG],
@@ -90,8 +90,8 @@ class TestFariaExpertLogic(PipTestBase):
     }
 
     def test_water_section(self) -> None:
-        self.world.origin_region_name = "Faria (X+10,Y+2) (Main)"
-        golden_badge = self.world.get_location("S Plaza (X-1,Y+4) (Southeast): Golden Badge")
+        self.world.origin_region_name = "Faria (X+10, Y+2) (Main)"
+        golden_badge = self.world.get_location("S Plaza (X-1, Y+4): Badge")
 
         possible_items = {
             "Walk-the-Dog": [M.DOG],
