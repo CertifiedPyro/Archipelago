@@ -18,8 +18,6 @@ class PipLocation(Location):
 LOCATION_NAME_TO_ID = {d.full_location_name: idx + 1 for idx, d in enumerate(LOCATIONS)}
 """Map of location name to numerical id. This is required for the Archipelago world."""
 
-__EVENT_LOCATION_NAME_TO_ITEM_NAME = {d.full_location_name: d.full_item_name for d in EVENTS}
-
 
 def create_all_locations(world: PipWorld) -> None:
     create_regular_locations(world)
@@ -45,7 +43,3 @@ def create_events(world: PipWorld) -> None:
     for d in EVENTS:
         r = world.get_region(d.region_name)
         r.add_event(d.full_location_name, d.full_item_name, location_type=pl, item_type=pi)
-
-
-def get_event_item(full_location_name: str) -> str:
-    return __EVENT_LOCATION_NAME_TO_ITEM_NAME[full_location_name]
