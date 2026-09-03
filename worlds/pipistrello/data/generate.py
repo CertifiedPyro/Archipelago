@@ -68,8 +68,8 @@ def read_full_rooms_csv() -> RoomDict:
             region_area = AREA_NAMES[room_area]
             region_name_suffixless = f"{region_area} (X{int(row['X']):+}, Y{int(row['Y']):+})"
             region_name = f"{region_name_suffixless}{row['Suffix']}"
-            sort_index = AREA_NAMES_KEYS.index(room_area) * 10_000 + (abs(int(row["X"])) * 100 + int(row["Y"]))
-            sort_key = f"{sort_index:04}{row['Suffix']}"
+            sort_index = (AREA_NAMES_KEYS.index(room_area) + 1) * 10_000 + (int(row["X"]) * 100 + int(row["Y"]))
+            sort_key = f"{sort_index:06}"
             room_dict[room_label] = RoomData(
                 room_label=room_label,
                 room_area=room_area,

@@ -67,4 +67,4 @@ class PipWorld(World):
         return slot_data
 
     def custom_ut_sort(self, region_label: str, location_label: str) -> str | int:
-        return regions.REGION_NAME_TO_ROOM[region_label].sort_key
+        return f"{regions.REGION_NAME_TO_ROOM[region_label].sort_key} | {location_label}"

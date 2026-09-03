@@ -19,7 +19,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+9, Y-7)",
         region_name_suffixless="Faria (X+9, Y-7)",
         global_room_id="city/yug3435",
-        sort_key="40893",
+        sort_key="050893",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+1, Y-6) - lor1097",
@@ -27,7 +27,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+1, Y-6)",
         region_name_suffixless="Faria (X+1, Y-6)",
         global_room_id="city/lor1097",
-        sort_key="40094",
+        sort_key="050094",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+3, Y-6) - yug1263",
@@ -35,7 +35,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+3, Y-6)",
         region_name_suffixless="Faria (X+3, Y-6)",
         global_room_id="city/yug1263",
-        sort_key="40294",
+        sort_key="050294",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+4, Y-6) - yug173",
@@ -43,7 +43,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+4, Y-6)",
         region_name_suffixless="Faria (X+4, Y-6)",
         global_room_id="city/yug173",
-        sort_key="40394",
+        sort_key="050394",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+7, Y-6) - yug171 (Main)",
@@ -51,7 +51,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+7, Y-6) (Main)",
         region_name_suffixless="Faria (X+7, Y-6)",
         global_room_id="city/yug171",
-        sort_key="40694 (Main)",
+        sort_key="050694",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+7, Y-6) - yug171 (East)",
@@ -59,7 +59,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+7, Y-6) (East)",
         region_name_suffixless="Faria (X+7, Y-6)",
         global_room_id="city/yug171",
-        sort_key="40694 (East)",
+        sort_key="050694",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+8, Y-6) - yug3298",
@@ -67,7 +67,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+8, Y-6)",
         region_name_suffixless="Faria (X+8, Y-6)",
         global_room_id="city/yug3298",
-        sort_key="40794",
+        sort_key="050794",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+9, Y-6) - yug3411",
@@ -75,7 +75,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+9, Y-6)",
         region_name_suffixless="Faria (X+9, Y-6)",
         global_room_id="city/yug3411",
-        sort_key="40894",
+        sort_key="050894",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+3, Y-5) - yug20",
@@ -83,7 +83,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+3, Y-5)",
         region_name_suffixless="Faria (X+3, Y-5)",
         global_room_id="city/yug20",
-        sort_key="40295",
+        sort_key="050295",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+4, Y-5) - yug208 (North)",
@@ -91,7 +91,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+4, Y-5) (North)",
         region_name_suffixless="Faria (X+4, Y-5)",
         global_room_id="city/yug208",
-        sort_key="40395 (North)",
+        sort_key="050395",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+4, Y-5) - yug208 (South)",
@@ -99,7 +99,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+4, Y-5) (South)",
         region_name_suffixless="Faria (X+4, Y-5)",
         global_room_id="city/yug208",
-        sort_key="40395 (South)",
+        sort_key="050395",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+5, Y-5) - yug183",
@@ -107,7 +107,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+5, Y-5)",
         region_name_suffixless="Faria (X+5, Y-5)",
         global_room_id="city/yug183",
-        sort_key="40495",
+        sort_key="050495",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+6, Y-5) - yug23",
@@ -115,7 +115,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+6, Y-5)",
         region_name_suffixless="Faria (X+6, Y-5)",
         global_room_id="city/yug23",
-        sort_key="40595",
+        sort_key="050595",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+7, Y-5) - yug3458",
@@ -123,7 +123,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+7, Y-5)",
         region_name_suffixless="Faria (X+7, Y-5)",
         global_room_id="city/yug3458",
-        sort_key="40695",
+        sort_key="050695",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+8, Y-5) - yug3276",
@@ -131,7 +131,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+8, Y-5)",
         region_name_suffixless="Faria (X+8, Y-5)",
         global_room_id="city/yug3276",
-        sort_key="40795",
+        sort_key="050795",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+9, Y-5) - yug3320 (Main)",
@@ -139,7 +139,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+9, Y-5) (Main)",
         region_name_suffixless="Faria (X+9, Y-5)",
         global_room_id="city/yug3320",
-        sort_key="40895 (Main)",
+        sort_key="050895",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+9, Y-5) - yug3320 (South Alcove)",
@@ -147,7 +147,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+9, Y-5) (South Alcove)",
         region_name_suffixless="Faria (X+9, Y-5)",
         global_room_id="city/yug3320",
-        sort_key="40895 (South Alcove)",
+        sort_key="050895",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+2, Y-4) - lor1128 (West)",
@@ -155,7 +155,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+2, Y-4) (West)",
         region_name_suffixless="Faria (X+2, Y-4)",
         global_room_id="city/lor1128",
-        sort_key="40196 (West)",
+        sort_key="050196",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+2, Y-4) - lor1128 (East)",
@@ -163,7 +163,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+2, Y-4) (East)",
         region_name_suffixless="Faria (X+2, Y-4)",
         global_room_id="city/lor1128",
-        sort_key="40196 (East)",
+        sort_key="050196",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+3, Y-4) - yug19",
@@ -171,7 +171,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+3, Y-4)",
         region_name_suffixless="Faria (X+3, Y-4)",
         global_room_id="city/yug19",
-        sort_key="40296",
+        sort_key="050296",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+5, Y-4) - yug190",
@@ -179,7 +179,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+5, Y-4)",
         region_name_suffixless="Faria (X+5, Y-4)",
         global_room_id="city/yug190",
-        sort_key="40496",
+        sort_key="050496",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+6, Y-4) - yug187",
@@ -187,7 +187,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+6, Y-4)",
         region_name_suffixless="Faria (X+6, Y-4)",
         global_room_id="city/yug187",
-        sort_key="40596",
+        sort_key="050596",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+7, Y-4) - yug202 (Main)",
@@ -195,7 +195,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+7, Y-4) (Main)",
         region_name_suffixless="Faria (X+7, Y-4)",
         global_room_id="city/yug202",
-        sort_key="40696 (Main)",
+        sort_key="050696",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+7, Y-4) - yug202 (West Alcove)",
@@ -203,7 +203,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+7, Y-4) (West Alcove)",
         region_name_suffixless="Faria (X+7, Y-4)",
         global_room_id="city/yug202",
-        sort_key="40696 (West Alcove)",
+        sort_key="050696",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+8, Y-4) - yug169",
@@ -211,7 +211,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+8, Y-4)",
         region_name_suffixless="Faria (X+8, Y-4)",
         global_room_id="city/yug169",
-        sort_key="40796",
+        sort_key="050796",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+9, Y-4) - yug3345",
@@ -219,7 +219,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+9, Y-4)",
         region_name_suffixless="Faria (X+9, Y-4)",
         global_room_id="city/yug3345",
-        sort_key="40896",
+        sort_key="050896",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+2, Y-3) - lor1129",
@@ -227,7 +227,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+2, Y-3)",
         region_name_suffixless="Faria (X+2, Y-3)",
         global_room_id="city/lor1129",
-        sort_key="40197",
+        sort_key="050197",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+3, Y-3) - yug71",
@@ -235,7 +235,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+3, Y-3)",
         region_name_suffixless="Faria (X+3, Y-3)",
         global_room_id="city/yug71",
-        sort_key="40297",
+        sort_key="050297",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+4, Y-3) - yug2741 (Main)",
@@ -243,7 +243,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+4, Y-3) (Main)",
         region_name_suffixless="Faria (X+4, Y-3)",
         global_room_id="city/yug2741",
-        sort_key="40397 (Main)",
+        sort_key="050397",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+4, Y-3) - yug2741 (North)",
@@ -251,7 +251,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+4, Y-3) (North)",
         region_name_suffixless="Faria (X+4, Y-3)",
         global_room_id="city/yug2741",
-        sort_key="40397 (North)",
+        sort_key="050397",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+4, Y-3) - yug2741 (East Alcove)",
@@ -259,7 +259,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+4, Y-3) (East Alcove)",
         region_name_suffixless="Faria (X+4, Y-3)",
         global_room_id="city/yug2741",
-        sort_key="40397 (East Alcove)",
+        sort_key="050397",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+8, Y-3) - yug108 (Main)",
@@ -267,7 +267,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+8, Y-3) (Main)",
         region_name_suffixless="Faria (X+8, Y-3)",
         global_room_id="city/yug108",
-        sort_key="40797 (Main)",
+        sort_key="050797",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+8, Y-3) - yug108 (Northwest)",
@@ -275,7 +275,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+8, Y-3) (Northwest)",
         region_name_suffixless="Faria (X+8, Y-3)",
         global_room_id="city/yug108",
-        sort_key="40797 (Northwest)",
+        sort_key="050797",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+8, Y-3) - yug108 (Northeast)",
@@ -283,7 +283,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+8, Y-3) (Northeast)",
         region_name_suffixless="Faria (X+8, Y-3)",
         global_room_id="city/yug108",
-        sort_key="40797 (Northeast)",
+        sort_key="050797",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+8, Y-3) - yug108 (Southwest)",
@@ -291,7 +291,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+8, Y-3) (Southwest)",
         region_name_suffixless="Faria (X+8, Y-3)",
         global_room_id="city/yug108",
-        sort_key="40797 (Southwest)",
+        sort_key="050797",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+8, Y-3) - yug108 (Southeast)",
@@ -299,7 +299,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+8, Y-3) (Southeast)",
         region_name_suffixless="Faria (X+8, Y-3)",
         global_room_id="city/yug108",
-        sort_key="40797 (Southeast)",
+        sort_key="050797",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+8, Y-3) - yug108 (Dungeon Entrance)",
@@ -307,7 +307,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+8, Y-3) (Dungeon Entrance)",
         region_name_suffixless="Faria (X+8, Y-3)",
         global_room_id="city/yug108",
-        sort_key="40797 (Dungeon Entrance)",
+        sort_key="050797",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+10, Y-3) - yug60",
@@ -315,7 +315,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+10, Y-3)",
         region_name_suffixless="Faria (X+10, Y-3)",
         global_room_id="city/yug60",
-        sort_key="40997",
+        sort_key="050997",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+2, Y-2) - yug2715",
@@ -323,7 +323,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+2, Y-2)",
         region_name_suffixless="Faria (X+2, Y-2)",
         global_room_id="city/yug2715",
-        sort_key="40198",
+        sort_key="050198",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+3, Y-2) - yug259",
@@ -331,7 +331,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+3, Y-2)",
         region_name_suffixless="Faria (X+3, Y-2)",
         global_room_id="city/yug259",
-        sort_key="40298",
+        sort_key="050298",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+10, Y-2) - yug56 (Main)",
@@ -339,7 +339,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+10, Y-2) (Main)",
         region_name_suffixless="Faria (X+10, Y-2)",
         global_room_id="city/yug56",
-        sort_key="40998 (Main)",
+        sort_key="050998",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+10, Y-2) - yug56 (East)",
@@ -347,7 +347,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+10, Y-2) (East)",
         region_name_suffixless="Faria (X+10, Y-2)",
         global_room_id="city/yug56",
-        sort_key="40998 (East)",
+        sort_key="050998",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+2, Y-1) - yug2440",
@@ -355,7 +355,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+2, Y-1)",
         region_name_suffixless="Faria (X+2, Y-1)",
         global_room_id="city/yug2440",
-        sort_key="40199",
+        sort_key="050199",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+3, Y-1) - yug96",
@@ -363,7 +363,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+3, Y-1)",
         region_name_suffixless="Faria (X+3, Y-1)",
         global_room_id="city/yug96",
-        sort_key="40299",
+        sort_key="050299",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+10, Y-1) - yug61 (Main)",
@@ -371,7 +371,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+10, Y-1) (Main)",
         region_name_suffixless="Faria (X+10, Y-1)",
         global_room_id="city/yug61",
-        sort_key="40999 (Main)",
+        sort_key="050999",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+10, Y-1) - yug61 (West Alcove)",
@@ -379,7 +379,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+10, Y-1) (West Alcove)",
         region_name_suffixless="Faria (X+10, Y-1)",
         global_room_id="city/yug61",
-        sort_key="40999 (West Alcove)",
+        sort_key="050999",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+2, Y+0) - yug220 (West)",
@@ -387,7 +387,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+2, Y+0) (West)",
         region_name_suffixless="Faria (X+2, Y+0)",
         global_room_id="city/yug220",
-        sort_key="40200 (West)",
+        sort_key="050200",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+2, Y+0) - yug220 (East)",
@@ -395,7 +395,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+2, Y+0) (East)",
         region_name_suffixless="Faria (X+2, Y+0)",
         global_room_id="city/yug220",
-        sort_key="40200 (East)",
+        sort_key="050200",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+4, Y+0) - yug27 (Main)",
@@ -403,7 +403,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+4, Y+0) (Main)",
         region_name_suffixless="Faria (X+4, Y+0)",
         global_room_id="city/yug27",
-        sort_key="40400 (Main)",
+        sort_key="050400",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+4, Y+0) - yug27 (North Alcove)",
@@ -411,7 +411,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+4, Y+0) (North Alcove)",
         region_name_suffixless="Faria (X+4, Y+0)",
         global_room_id="city/yug27",
-        sort_key="40400 (North Alcove)",
+        sort_key="050400",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+10, Y+0) - yug55",
@@ -419,7 +419,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+10, Y+0)",
         region_name_suffixless="Faria (X+10, Y+0)",
         global_room_id="city/yug55",
-        sort_key="41000",
+        sort_key="051000",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+2, Y+1) - yug219 (Main)",
@@ -427,7 +427,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+2, Y+1) (Main)",
         region_name_suffixless="Faria (X+2, Y+1)",
         global_room_id="city/yug219",
-        sort_key="40201 (Main)",
+        sort_key="050201",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+2, Y+1) - yug219 (House Entrance)",
@@ -435,7 +435,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+2, Y+1) (House Entrance)",
         region_name_suffixless="Faria (X+2, Y+1)",
         global_room_id="city/yug219",
-        sort_key="40201 (House Entrance)",
+        sort_key="050201",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+8, Y+1) - yug17",
@@ -443,7 +443,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+8, Y+1)",
         region_name_suffixless="Faria (X+8, Y+1)",
         global_room_id="city/yug17",
-        sort_key="40801",
+        sort_key="050801",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+9, Y+1) - yug18",
@@ -451,7 +451,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+9, Y+1)",
         region_name_suffixless="Faria (X+9, Y+1)",
         global_room_id="city/yug18",
-        sort_key="40901",
+        sort_key="050901",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+10, Y+1) - lor2298",
@@ -459,7 +459,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+10, Y+1)",
         region_name_suffixless="Faria (X+10, Y+1)",
         global_room_id="city/lor2298",
-        sort_key="41001",
+        sort_key="051001",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+8, Y+2) - yug15",
@@ -467,7 +467,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+8, Y+2)",
         region_name_suffixless="Faria (X+8, Y+2)",
         global_room_id="city/yug15",
-        sort_key="40802",
+        sort_key="050802",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+9, Y+2) - yug22",
@@ -475,7 +475,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+9, Y+2)",
         region_name_suffixless="Faria (X+9, Y+2)",
         global_room_id="city/yug22",
-        sort_key="40902",
+        sort_key="050902",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+10, Y+2) - lor2334 (Main)",
@@ -483,7 +483,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+10, Y+2) (Main)",
         region_name_suffixless="Faria (X+10, Y+2)",
         global_room_id="city/lor2334",
-        sort_key="41002 (Main)",
+        sort_key="051002",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+10, Y+2) - lor2334 (Northeast)",
@@ -491,7 +491,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+10, Y+2) (Northeast)",
         region_name_suffixless="Faria (X+10, Y+2)",
         global_room_id="city/lor2334",
-        sort_key="41002 (Northeast)",
+        sort_key="051002",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+11, Y+2) - lor2872",
@@ -499,7 +499,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+11, Y+2)",
         region_name_suffixless="Faria (X+11, Y+2)",
         global_room_id="city/lor2872",
-        sort_key="41102",
+        sort_key="051102",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+2, Y+3) - yug1",
@@ -507,7 +507,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+2, Y+3)",
         region_name_suffixless="Faria (X+2, Y+3)",
         global_room_id="city/yug1",
-        sort_key="40203",
+        sort_key="050203",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+3, Y+3) - yug217",
@@ -515,7 +515,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+3, Y+3)",
         region_name_suffixless="Faria (X+3, Y+3)",
         global_room_id="city/yug217",
-        sort_key="40303",
+        sort_key="050303",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+4, Y+3) - yug2 (West)",
@@ -523,7 +523,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+4, Y+3) (West)",
         region_name_suffixless="Faria (X+4, Y+3)",
         global_room_id="city/yug2",
-        sort_key="40403 (West)",
+        sort_key="050403",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+4, Y+3) - yug2 (East)",
@@ -531,7 +531,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+4, Y+3) (East)",
         region_name_suffixless="Faria (X+4, Y+3)",
         global_room_id="city/yug2",
-        sort_key="40403 (East)",
+        sort_key="050403",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+5, Y+3) - yug2165",
@@ -539,7 +539,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+5, Y+3)",
         region_name_suffixless="Faria (X+5, Y+3)",
         global_room_id="city/yug2165",
-        sort_key="40503",
+        sort_key="050503",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+6, Y+3) - yug2099 (North)",
@@ -547,7 +547,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+6, Y+3) (North)",
         region_name_suffixless="Faria (X+6, Y+3)",
         global_room_id="city/yug2099",
-        sort_key="40603 (North)",
+        sort_key="050603",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+6, Y+3) - yug2099 (South)",
@@ -555,7 +555,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+6, Y+3) (South)",
         region_name_suffixless="Faria (X+6, Y+3)",
         global_room_id="city/yug2099",
-        sort_key="40603 (South)",
+        sort_key="050603",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+7, Y+3) - yug9",
@@ -563,7 +563,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+7, Y+3)",
         region_name_suffixless="Faria (X+7, Y+3)",
         global_room_id="city/yug9",
-        sort_key="40703",
+        sort_key="050703",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+3, Y+4) - yug4250",
@@ -571,7 +571,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+3, Y+4)",
         region_name_suffixless="Faria (X+3, Y+4)",
         global_room_id="city/yug4250",
-        sort_key="40304",
+        sort_key="050304",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+4, Y+4) - yug4303",
@@ -579,7 +579,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+4, Y+4)",
         region_name_suffixless="Faria (X+4, Y+4)",
         global_room_id="city/yug4303",
-        sort_key="40404",
+        sort_key="050404",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+5, Y+4) - yug4308",
@@ -587,7 +587,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+5, Y+4)",
         region_name_suffixless="Faria (X+5, Y+4)",
         global_room_id="city/yug4308",
-        sort_key="40504",
+        sort_key="050504",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+6, Y+4) - yug4185",
@@ -595,7 +595,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+6, Y+4)",
         region_name_suffixless="Faria (X+6, Y+4)",
         global_room_id="city/yug4185",
-        sort_key="40604",
+        sort_key="050604",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+7, Y+4) - yug4153 (North)",
@@ -603,7 +603,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+7, Y+4) (North)",
         region_name_suffixless="Faria (X+7, Y+4)",
         global_room_id="city/yug4153",
-        sort_key="40704 (North)",
+        sort_key="050704",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+7, Y+4) - yug4153 (South)",
@@ -611,7 +611,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+7, Y+4) (South)",
         region_name_suffixless="Faria (X+7, Y+4)",
         global_room_id="city/yug4153",
-        sort_key="40704 (South)",
+        sort_key="050704",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+8, Y+4) - yug4144",
@@ -619,7 +619,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+8, Y+4)",
         region_name_suffixless="Faria (X+8, Y+4)",
         global_room_id="city/yug4144",
-        sort_key="40804",
+        sort_key="050804",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+9, Y+4) - yug4136",
@@ -627,7 +627,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+9, Y+4)",
         region_name_suffixless="Faria (X+9, Y+4)",
         global_room_id="city/yug4136",
-        sort_key="40904",
+        sort_key="050904",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+10, Y+4) - yug4122",
@@ -635,7 +635,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+10, Y+4)",
         region_name_suffixless="Faria (X+10, Y+4)",
         global_room_id="city/yug4122",
-        sort_key="41004",
+        sort_key="051004",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+11, Y+4) - lor2884",
@@ -643,7 +643,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+11, Y+4)",
         region_name_suffixless="Faria (X+11, Y+4)",
         global_room_id="city/lor2884",
-        sort_key="41104",
+        sort_key="051104",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+1, Y+5) - yug4288",
@@ -651,7 +651,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+1, Y+5)",
         region_name_suffixless="Faria (X+1, Y+5)",
         global_room_id="city/yug4288",
-        sort_key="40105",
+        sort_key="050105",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+4, Y+5) - yug4222",
@@ -659,7 +659,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+4, Y+5)",
         region_name_suffixless="Faria (X+4, Y+5)",
         global_room_id="city/yug4222",
-        sort_key="40405",
+        sort_key="050405",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+5, Y+5) - yug4236",
@@ -667,7 +667,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+5, Y+5)",
         region_name_suffixless="Faria (X+5, Y+5)",
         global_room_id="city/yug4236",
-        sort_key="40505",
+        sort_key="050505",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+6, Y+5) - yug4194",
@@ -675,7 +675,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+6, Y+5)",
         region_name_suffixless="Faria (X+6, Y+5)",
         global_room_id="city/yug4194",
-        sort_key="40605",
+        sort_key="050605",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+9, Y+5) - yug4113",
@@ -683,7 +683,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+9, Y+5)",
         region_name_suffixless="Faria (X+9, Y+5)",
         global_room_id="city/yug4113",
-        sort_key="40905",
+        sort_key="050905",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+10, Y+5) - yug4798",
@@ -691,7 +691,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+10, Y+5)",
         region_name_suffixless="Faria (X+10, Y+5)",
         global_room_id="city/yug4798",
-        sort_key="41005",
+        sort_key="051005",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+11, Y+5) - lor2866",
@@ -699,7 +699,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria (X+11, Y+5)",
         region_name_suffixless="Faria (X+11, Y+5)",
         global_room_id="city/lor2866",
-        sort_key="41105",
+        sort_key="051105",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Interiors) (X+6, Y-6) - yug134",
@@ -707,7 +707,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria Interiors (X+6, Y-6)",
         region_name_suffixless="Faria Interiors (X+6, Y-6)",
         global_room_id="city_interiors/yug134",
-        sort_key="50594",
+        sort_key="060594",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Interiors) (X+8, Y-6) - yug426",
@@ -715,7 +715,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria Interiors (X+8, Y-6)",
         region_name_suffixless="Faria Interiors (X+8, Y-6)",
         global_room_id="city_interiors/yug426",
-        sort_key="50794",
+        sort_key="060794",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Interiors) (X+4, Y-5) - yug47",
@@ -723,7 +723,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria Interiors (X+4, Y-5)",
         region_name_suffixless="Faria Interiors (X+4, Y-5)",
         global_room_id="city_interiors/yug47",
-        sort_key="50395",
+        sort_key="060395",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Interiors) (X+3, Y-3) - yug1",
@@ -731,7 +731,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria Interiors (X+3, Y-3)",
         region_name_suffixless="Faria Interiors (X+3, Y-3)",
         global_room_id="city_interiors/yug1",
-        sort_key="50297",
+        sort_key="060297",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Interiors) (X+7, Y-3) - lor414",
@@ -739,7 +739,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria Interiors (X+7, Y-3)",
         region_name_suffixless="Faria Interiors (X+7, Y-3)",
         global_room_id="city_interiors/lor414",
-        sort_key="50697",
+        sort_key="060697",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Interiors) (X+10, Y-2) - yug59",
@@ -747,7 +747,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria Interiors (X+10, Y-2)",
         region_name_suffixless="Faria Interiors (X+10, Y-2)",
         global_room_id="city_interiors/yug59",
-        sort_key="50998",
+        sort_key="060998",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Interiors) (X+2, Y-1) - yug69",
@@ -755,7 +755,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria Interiors (X+2, Y-1)",
         region_name_suffixless="Faria Interiors (X+2, Y-1)",
         global_room_id="city_interiors/yug69",
-        sort_key="50199",
+        sort_key="060199",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Interiors) (X+5, Y+0) - lor296",
@@ -763,7 +763,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria Interiors (X+5, Y+0)",
         region_name_suffixless="Faria Interiors (X+5, Y+0)",
         global_room_id="city_interiors/lor296",
-        sort_key="50500",
+        sort_key="060500",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Interiors) (X+3, Y+1) - yug119",
@@ -771,7 +771,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria Interiors (X+3, Y+1)",
         region_name_suffixless="Faria Interiors (X+3, Y+1)",
         global_room_id="city_interiors/yug119",
-        sort_key="50301",
+        sort_key="060301",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+3, Y-7) - ren3974",
@@ -779,7 +779,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria Sewers (X+3, Y-7)",
         region_name_suffixless="Faria Sewers (X+3, Y-7)",
         global_room_id="city_underground/ren3974",
-        sort_key="60293",
+        sort_key="070293",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+4, Y-7) - ren3993 (Main)",
@@ -787,7 +787,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria Sewers (X+4, Y-7) (Main)",
         region_name_suffixless="Faria Sewers (X+4, Y-7)",
         global_room_id="city_underground/ren3993",
-        sort_key="60393 (Main)",
+        sort_key="070393",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+4, Y-7) - ren3993 (South)",
@@ -795,7 +795,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria Sewers (X+4, Y-7) (South)",
         region_name_suffixless="Faria Sewers (X+4, Y-7)",
         global_room_id="city_underground/ren3993",
-        sort_key="60393 (South)",
+        sort_key="070393",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+8, Y-7) - yug882",
@@ -803,7 +803,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria Sewers (X+8, Y-7)",
         region_name_suffixless="Faria Sewers (X+8, Y-7)",
         global_room_id="city_underground/yug882",
-        sort_key="60793",
+        sort_key="070793",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+9, Y-7) - yug873",
@@ -811,7 +811,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria Sewers (X+9, Y-7)",
         region_name_suffixless="Faria Sewers (X+9, Y-7)",
         global_room_id="city_underground/yug873",
-        sort_key="60893",
+        sort_key="070893",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+3, Y-6) - ren3946",
@@ -819,7 +819,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria Sewers (X+3, Y-6)",
         region_name_suffixless="Faria Sewers (X+3, Y-6)",
         global_room_id="city_underground/ren3946",
-        sort_key="60294",
+        sort_key="070294",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+4, Y-6) - ren3982 (Main)",
@@ -827,7 +827,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria Sewers (X+4, Y-6) (Main)",
         region_name_suffixless="Faria Sewers (X+4, Y-6)",
         global_room_id="city_underground/ren3982",
-        sort_key="60394 (Main)",
+        sort_key="070394",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+4, Y-6) - ren3982 (North)",
@@ -835,7 +835,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria Sewers (X+4, Y-6) (North)",
         region_name_suffixless="Faria Sewers (X+4, Y-6)",
         global_room_id="city_underground/ren3982",
-        sort_key="60394 (North)",
+        sort_key="070394",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+4, Y-6) - ren3982 (South)",
@@ -843,7 +843,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria Sewers (X+4, Y-6) (South)",
         region_name_suffixless="Faria Sewers (X+4, Y-6)",
         global_room_id="city_underground/ren3982",
-        sort_key="60394 (South)",
+        sort_key="070394",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+5, Y-6) - ren4029 (Main)",
@@ -851,7 +851,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria Sewers (X+5, Y-6) (Main)",
         region_name_suffixless="Faria Sewers (X+5, Y-6)",
         global_room_id="city_underground/ren4029",
-        sort_key="60494 (Main)",
+        sort_key="070494",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+5, Y-6) - ren4029 (South)",
@@ -859,7 +859,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria Sewers (X+5, Y-6) (South)",
         region_name_suffixless="Faria Sewers (X+5, Y-6)",
         global_room_id="city_underground/ren4029",
-        sort_key="60494 (South)",
+        sort_key="070494",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+7, Y-6) - yug817",
@@ -867,7 +867,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria Sewers (X+7, Y-6)",
         region_name_suffixless="Faria Sewers (X+7, Y-6)",
         global_room_id="city_underground/yug817",
-        sort_key="60694",
+        sort_key="070694",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+8, Y-6) - yug912 (Main)",
@@ -875,7 +875,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria Sewers (X+8, Y-6) (Main)",
         region_name_suffixless="Faria Sewers (X+8, Y-6)",
         global_room_id="city_underground/yug912",
-        sort_key="60794 (Main)",
+        sort_key="070794",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+8, Y-6) - yug912 (North)",
@@ -883,7 +883,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria Sewers (X+8, Y-6) (North)",
         region_name_suffixless="Faria Sewers (X+8, Y-6)",
         global_room_id="city_underground/yug912",
-        sort_key="60794 (North)",
+        sort_key="070794",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+8, Y-6) - yug912 (Northwest)",
@@ -891,7 +891,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria Sewers (X+8, Y-6) (Northwest)",
         region_name_suffixless="Faria Sewers (X+8, Y-6)",
         global_room_id="city_underground/yug912",
-        sort_key="60794 (Northwest)",
+        sort_key="070794",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+8, Y-6) - yug912 (Northeast)",
@@ -899,7 +899,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria Sewers (X+8, Y-6) (Northeast)",
         region_name_suffixless="Faria Sewers (X+8, Y-6)",
         global_room_id="city_underground/yug912",
-        sort_key="60794 (Northeast)",
+        sort_key="070794",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+9, Y-6) - yug860",
@@ -907,7 +907,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria Sewers (X+9, Y-6)",
         region_name_suffixless="Faria Sewers (X+9, Y-6)",
         global_room_id="city_underground/yug860",
-        sort_key="60894",
+        sort_key="070894",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+2, Y-5) - ren3998",
@@ -915,7 +915,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria Sewers (X+2, Y-5)",
         region_name_suffixless="Faria Sewers (X+2, Y-5)",
         global_room_id="city_underground/ren3998",
-        sort_key="60195",
+        sort_key="070195",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+4, Y-5) - ren3965",
@@ -923,7 +923,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria Sewers (X+4, Y-5)",
         region_name_suffixless="Faria Sewers (X+4, Y-5)",
         global_room_id="city_underground/ren3965",
-        sort_key="60395",
+        sort_key="070395",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+7, Y-5) - yug804",
@@ -931,7 +931,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria Sewers (X+7, Y-5)",
         region_name_suffixless="Faria Sewers (X+7, Y-5)",
         global_room_id="city_underground/yug804",
-        sort_key="60695",
+        sort_key="070695",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+9, Y-5) - yug838 (West)",
@@ -939,7 +939,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria Sewers (X+9, Y-5) (West)",
         region_name_suffixless="Faria Sewers (X+9, Y-5)",
         global_room_id="city_underground/yug838",
-        sort_key="60895 (West)",
+        sort_key="070895",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+9, Y-5) - yug838 (East)",
@@ -947,7 +947,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria Sewers (X+9, Y-5) (East)",
         region_name_suffixless="Faria Sewers (X+9, Y-5)",
         global_room_id="city_underground/yug838",
-        sort_key="60895 (East)",
+        sort_key="070895",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+8, Y-4) - yug829",
@@ -955,7 +955,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria Sewers (X+8, Y-4)",
         region_name_suffixless="Faria Sewers (X+8, Y-4)",
         global_room_id="city_underground/yug829",
-        sort_key="60796",
+        sort_key="070796",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+9, Y-4) - yug848",
@@ -963,7 +963,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria Sewers (X+9, Y-4)",
         region_name_suffixless="Faria Sewers (X+9, Y-4)",
         global_room_id="city_underground/yug848",
-        sort_key="60896",
+        sort_key="070896",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+5, Y-2) - lor177",
@@ -971,7 +971,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria Sewers (X+5, Y-2)",
         region_name_suffixless="Faria Sewers (X+5, Y-2)",
         global_room_id="city_underground/lor177",
-        sort_key="60498",
+        sort_key="070498",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+6, Y-2) - yug13",
@@ -979,7 +979,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria Sewers (X+6, Y-2)",
         region_name_suffixless="Faria Sewers (X+6, Y-2)",
         global_room_id="city_underground/yug13",
-        sort_key="60598",
+        sort_key="070598",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+2, Y-1) - ren1477",
@@ -987,7 +987,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria Sewers (X+2, Y-1)",
         region_name_suffixless="Faria Sewers (X+2, Y-1)",
         global_room_id="city_underground/ren1477",
-        sort_key="60199",
+        sort_key="070199",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+5, Y-1) - lor176",
@@ -995,7 +995,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria Sewers (X+5, Y-1)",
         region_name_suffixless="Faria Sewers (X+5, Y-1)",
         global_room_id="city_underground/lor176",
-        sort_key="60499",
+        sort_key="070499",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+6, Y-1) - yug31",
@@ -1003,7 +1003,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria Sewers (X+6, Y-1)",
         region_name_suffixless="Faria Sewers (X+6, Y-1)",
         global_room_id="city_underground/yug31",
-        sort_key="60599",
+        sort_key="070599",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+7, Y-1) - lor194",
@@ -1011,7 +1011,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria Sewers (X+7, Y-1)",
         region_name_suffixless="Faria Sewers (X+7, Y-1)",
         global_room_id="city_underground/lor194",
-        sort_key="60699",
+        sort_key="070699",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+8, Y-1) - yug23",
@@ -1019,7 +1019,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria Sewers (X+8, Y-1)",
         region_name_suffixless="Faria Sewers (X+8, Y-1)",
         global_room_id="city_underground/yug23",
-        sort_key="60799",
+        sort_key="070799",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+2, Y+0) - ren1453",
@@ -1027,7 +1027,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria Sewers (X+2, Y+0)",
         region_name_suffixless="Faria Sewers (X+2, Y+0)",
         global_room_id="city_underground/ren1453",
-        sort_key="60200",
+        sort_key="070200",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+5, Y+0) - lor175",
@@ -1035,7 +1035,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria Sewers (X+5, Y+0)",
         region_name_suffixless="Faria Sewers (X+5, Y+0)",
         global_room_id="city_underground/lor175",
-        sort_key="60500",
+        sort_key="070500",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+6, Y+0) - yug26 (Main)",
@@ -1043,7 +1043,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria Sewers (X+6, Y+0) (Main)",
         region_name_suffixless="Faria Sewers (X+6, Y+0)",
         global_room_id="city_underground/yug26",
-        sort_key="60600 (Main)",
+        sort_key="070600",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+6, Y+0) - yug26 (North)",
@@ -1051,7 +1051,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria Sewers (X+6, Y+0) (North)",
         region_name_suffixless="Faria Sewers (X+6, Y+0)",
         global_room_id="city_underground/yug26",
-        sort_key="60600 (North)",
+        sort_key="070600",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+6, Y+0) - yug26 (South)",
@@ -1059,7 +1059,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria Sewers (X+6, Y+0) (South)",
         region_name_suffixless="Faria Sewers (X+6, Y+0)",
         global_room_id="city_underground/yug26",
-        sort_key="60600 (South)",
+        sort_key="070600",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+6, Y+0) - yug26 (East)",
@@ -1067,7 +1067,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria Sewers (X+6, Y+0) (East)",
         region_name_suffixless="Faria Sewers (X+6, Y+0)",
         global_room_id="city_underground/yug26",
-        sort_key="60600 (East)",
+        sort_key="070600",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+7, Y+0) - yug39",
@@ -1075,7 +1075,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria Sewers (X+7, Y+0)",
         region_name_suffixless="Faria Sewers (X+7, Y+0)",
         global_room_id="city_underground/yug39",
-        sort_key="60700",
+        sort_key="070700",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+8, Y+0) - yug20",
@@ -1083,7 +1083,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria Sewers (X+8, Y+0)",
         region_name_suffixless="Faria Sewers (X+8, Y+0)",
         global_room_id="city_underground/yug20",
-        sort_key="60800",
+        sort_key="070800",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+9, Y+0) - yug1330",
@@ -1091,7 +1091,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria Sewers (X+9, Y+0)",
         region_name_suffixless="Faria Sewers (X+9, Y+0)",
         global_room_id="city_underground/yug1330",
-        sort_key="60900",
+        sort_key="070900",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+10, Y+0) - yug1803",
@@ -1099,7 +1099,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria Sewers (X+10, Y+0)",
         region_name_suffixless="Faria Sewers (X+10, Y+0)",
         global_room_id="city_underground/yug1803",
-        sort_key="61000",
+        sort_key="071000",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+5, Y+1) - yug4",
@@ -1107,7 +1107,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria Sewers (X+5, Y+1)",
         region_name_suffixless="Faria Sewers (X+5, Y+1)",
         global_room_id="city_underground/yug4",
-        sort_key="60501",
+        sort_key="070501",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+6, Y+1) - yug35",
@@ -1115,7 +1115,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria Sewers (X+6, Y+1)",
         region_name_suffixless="Faria Sewers (X+6, Y+1)",
         global_room_id="city_underground/yug35",
-        sort_key="60601",
+        sort_key="070601",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+8, Y+1) - yug619",
@@ -1123,7 +1123,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria Sewers (X+8, Y+1)",
         region_name_suffixless="Faria Sewers (X+8, Y+1)",
         global_room_id="city_underground/yug619",
-        sort_key="60801",
+        sort_key="070801",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+4, Y+3) - yug47",
@@ -1131,7 +1131,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria Sewers (X+4, Y+3)",
         region_name_suffixless="Faria Sewers (X+4, Y+3)",
         global_room_id="city_underground/yug47",
-        sort_key="60403",
+        sort_key="070403",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+5, Y+3) - lor779",
@@ -1139,7 +1139,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria Sewers (X+5, Y+3)",
         region_name_suffixless="Faria Sewers (X+5, Y+3)",
         global_room_id="city_underground/lor779",
-        sort_key="60503",
+        sort_key="070503",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+6, Y+3) - yug382",
@@ -1147,7 +1147,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria Sewers (X+6, Y+3)",
         region_name_suffixless="Faria Sewers (X+6, Y+3)",
         global_room_id="city_underground/yug382",
-        sort_key="60603",
+        sort_key="070603",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+7, Y+3) - lor173 (West)",
@@ -1155,7 +1155,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria Sewers (X+7, Y+3) (West)",
         region_name_suffixless="Faria Sewers (X+7, Y+3)",
         global_room_id="city_underground/lor173",
-        sort_key="60703 (West)",
+        sort_key="070703",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+7, Y+3) - lor173 (East)",
@@ -1163,7 +1163,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria Sewers (X+7, Y+3) (East)",
         region_name_suffixless="Faria Sewers (X+7, Y+3)",
         global_room_id="city_underground/lor173",
-        sort_key="60703 (East)",
+        sort_key="070703",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+8, Y+3) - yug1141",
@@ -1171,7 +1171,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria Sewers (X+8, Y+3)",
         region_name_suffixless="Faria Sewers (X+8, Y+3)",
         global_room_id="city_underground/yug1141",
-        sort_key="60803",
+        sort_key="070803",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+4, Y+4) - yug385",
@@ -1179,7 +1179,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria Sewers (X+4, Y+4)",
         region_name_suffixless="Faria Sewers (X+4, Y+4)",
         global_room_id="city_underground/yug385",
-        sort_key="60404",
+        sort_key="070404",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+6, Y+4) - yug528",
@@ -1187,7 +1187,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria Sewers (X+6, Y+4)",
         region_name_suffixless="Faria Sewers (X+6, Y+4)",
         global_room_id="city_underground/yug528",
-        sort_key="60604",
+        sort_key="070604",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+7, Y+4) - yug1206",
@@ -1195,7 +1195,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria Sewers (X+7, Y+4)",
         region_name_suffixless="Faria Sewers (X+7, Y+4)",
         global_room_id="city_underground/yug1206",
-        sort_key="60704",
+        sort_key="070704",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+8, Y+4) - ren3800 (West)",
@@ -1203,7 +1203,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria Sewers (X+8, Y+4) (West)",
         region_name_suffixless="Faria Sewers (X+8, Y+4)",
         global_room_id="city_underground/ren3800",
-        sort_key="60804 (West)",
+        sort_key="070804",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+8, Y+4) - ren3800 (East)",
@@ -1211,7 +1211,7 @@ ROOMS: list[RoomData] = [
         region_name="Faria Sewers (X+8, Y+4) (East)",
         region_name_suffixless="Faria Sewers (X+8, Y+4)",
         global_room_id="city_underground/ren3800",
-        sort_key="60804 (East)",
+        sort_key="070804",
     ),
     RoomData(
         room_label="Safe House (X-1, Y+0) - lor127",
@@ -1219,7 +1219,7 @@ ROOMS: list[RoomData] = [
         region_name="Safe House (X-1, Y+0)",
         region_name_suffixless="Safe House (X-1, Y+0)",
         global_room_id="safehouse/lor127",
-        sort_key="0100",
+        sort_key="009900",
     ),
     RoomData(
         room_label="Safe House (X+0, Y+0) - mig38",
@@ -1227,7 +1227,7 @@ ROOMS: list[RoomData] = [
         region_name="Safe House (X+0, Y+0)",
         region_name_suffixless="Safe House (X+0, Y+0)",
         global_room_id="safehouse/mig38",
-        sort_key="0000",
+        sort_key="010000",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X-3, Y-2) - lor1300",
@@ -1235,7 +1235,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X-3, Y-2)",
         region_name_suffixless="Excavation (X-3, Y-2)",
         global_room_id="dungeon2/lor1300",
-        sort_key="80298",
+        sort_key="089698",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X+0, Y-2) - lor1303",
@@ -1243,7 +1243,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X+0, Y-2)",
         region_name_suffixless="Excavation (X+0, Y-2)",
         global_room_id="dungeon2/lor1303",
-        sort_key="79998",
+        sort_key="089998",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X+3, Y-2) - lor1305",
@@ -1251,7 +1251,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X+3, Y-2)",
         region_name_suffixless="Excavation (X+3, Y-2)",
         global_room_id="dungeon2/lor1305",
-        sort_key="80298",
+        sort_key="090298",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X+4, Y-2) - lor179 (Main)",
@@ -1259,7 +1259,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X+4, Y-2) (Main)",
         region_name_suffixless="Excavation (X+4, Y-2)",
         global_room_id="dungeon2/lor179",
-        sort_key="80398 (Main)",
+        sort_key="090398",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X+4, Y-2) - lor179 (West)",
@@ -1267,7 +1267,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X+4, Y-2) (West)",
         region_name_suffixless="Excavation (X+4, Y-2)",
         global_room_id="dungeon2/lor179",
-        sort_key="80398 (West)",
+        sort_key="090398",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X+4, Y-2) - lor179 (South Money Bag)",
@@ -1275,7 +1275,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X+4, Y-2) (South Money Bag)",
         region_name_suffixless="Excavation (X+4, Y-2)",
         global_room_id="dungeon2/lor179",
-        sort_key="80398 (South Money Bag)",
+        sort_key="090398",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X+5, Y-2) - lor1326",
@@ -1283,7 +1283,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X+5, Y-2)",
         region_name_suffixless="Excavation (X+5, Y-2)",
         global_room_id="dungeon2/lor1326",
-        sort_key="80498",
+        sort_key="090498",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X+6, Y-2) - lor1325",
@@ -1291,7 +1291,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X+6, Y-2)",
         region_name_suffixless="Excavation (X+6, Y-2)",
         global_room_id="dungeon2/lor1325",
-        sort_key="80598",
+        sort_key="090598",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X-4, Y-1) - lor1299",
@@ -1299,7 +1299,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X-4, Y-1)",
         region_name_suffixless="Excavation (X-4, Y-1)",
         global_room_id="dungeon2/lor1299",
-        sort_key="80399",
+        sort_key="089599",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X-3, Y-1) - lor534",
@@ -1307,7 +1307,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X-3, Y-1)",
         region_name_suffixless="Excavation (X-3, Y-1)",
         global_room_id="dungeon2/lor534",
-        sort_key="80299",
+        sort_key="089699",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X-2, Y-1) - lor524 (Main)",
@@ -1315,7 +1315,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X-2, Y-1) (Main)",
         region_name_suffixless="Excavation (X-2, Y-1)",
         global_room_id="dungeon2/lor524",
-        sort_key="80199 (Main)",
+        sort_key="089799",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X-2, Y-1) - lor524 (Northwest)",
@@ -1323,7 +1323,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X-2, Y-1) (Northwest)",
         region_name_suffixless="Excavation (X-2, Y-1)",
         global_room_id="dungeon2/lor524",
-        sort_key="80199 (Northwest)",
+        sort_key="089799",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X-2, Y-1) - lor524 (Southwest)",
@@ -1331,7 +1331,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X-2, Y-1) (Southwest)",
         region_name_suffixless="Excavation (X-2, Y-1)",
         global_room_id="dungeon2/lor524",
-        sort_key="80199 (Southwest)",
+        sort_key="089799",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X-1, Y-1) - lor533",
@@ -1339,7 +1339,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X-1, Y-1)",
         region_name_suffixless="Excavation (X-1, Y-1)",
         global_room_id="dungeon2/lor533",
-        sort_key="80099",
+        sort_key="089899",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X+2, Y-1) - lor1231",
@@ -1347,7 +1347,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X+2, Y-1)",
         region_name_suffixless="Excavation (X+2, Y-1)",
         global_room_id="dungeon2/lor1231",
-        sort_key="80199",
+        sort_key="090199",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X+3, Y-1) - lor172",
@@ -1355,7 +1355,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X+3, Y-1)",
         region_name_suffixless="Excavation (X+3, Y-1)",
         global_room_id="dungeon2/lor172",
-        sort_key="80299",
+        sort_key="090299",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X+5, Y-1) - lor1228",
@@ -1363,7 +1363,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X+5, Y-1)",
         region_name_suffixless="Excavation (X+5, Y-1)",
         global_room_id="dungeon2/lor1228",
-        sort_key="80499",
+        sort_key="090499",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X-3, Y+0) - lor536",
@@ -1371,7 +1371,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X-3, Y+0)",
         region_name_suffixless="Excavation (X-3, Y+0)",
         global_room_id="dungeon2/lor536",
-        sort_key="80300",
+        sort_key="089700",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X-1, Y+0) - lor523",
@@ -1379,7 +1379,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X-1, Y+0)",
         region_name_suffixless="Excavation (X-1, Y+0)",
         global_room_id="dungeon2/lor523",
-        sort_key="80100",
+        sort_key="089900",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X+0, Y+0) - lor149 (Main)",
@@ -1387,7 +1387,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X+0, Y+0) (Main)",
         region_name_suffixless="Excavation (X+0, Y+0)",
         global_room_id="dungeon2/lor149",
-        sort_key="80000 (Main)",
+        sort_key="090000",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X+0, Y+0) - lor149 (Southwest Left)",
@@ -1395,7 +1395,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X+0, Y+0) (Southwest Left)",
         region_name_suffixless="Excavation (X+0, Y+0)",
         global_room_id="dungeon2/lor149",
-        sort_key="80000 (Southwest Left)",
+        sort_key="090000",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X+0, Y+0) - lor149 (Southwest Right)",
@@ -1403,7 +1403,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X+0, Y+0) (Southwest Right)",
         region_name_suffixless="Excavation (X+0, Y+0)",
         global_room_id="dungeon2/lor149",
-        sort_key="80000 (Southwest Right)",
+        sort_key="090000",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X+0, Y+0) - lor149 (Southeast)",
@@ -1411,7 +1411,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X+0, Y+0) (Southeast)",
         region_name_suffixless="Excavation (X+0, Y+0)",
         global_room_id="dungeon2/lor149",
-        sort_key="80000 (Southeast)",
+        sort_key="090000",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X+2, Y+0) - lor158 (West)",
@@ -1419,7 +1419,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X+2, Y+0) (West)",
         region_name_suffixless="Excavation (X+2, Y+0)",
         global_room_id="dungeon2/lor158",
-        sort_key="80200 (West)",
+        sort_key="090200",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X+2, Y+0) - lor158 (East)",
@@ -1427,7 +1427,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X+2, Y+0) (East)",
         region_name_suffixless="Excavation (X+2, Y+0)",
         global_room_id="dungeon2/lor158",
-        sort_key="80200 (East)",
+        sort_key="090200",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X+3, Y+0) - lor166",
@@ -1435,7 +1435,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X+3, Y+0)",
         region_name_suffixless="Excavation (X+3, Y+0)",
         global_room_id="dungeon2/lor166",
-        sort_key="80300",
+        sort_key="090300",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X+4, Y+0) - lor171",
@@ -1443,7 +1443,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X+4, Y+0)",
         region_name_suffixless="Excavation (X+4, Y+0)",
         global_room_id="dungeon2/lor171",
-        sort_key="80400",
+        sort_key="090400",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X+5, Y+0) - lor339",
@@ -1451,7 +1451,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X+5, Y+0)",
         region_name_suffixless="Excavation (X+5, Y+0)",
         global_room_id="dungeon2/lor339",
-        sort_key="80500",
+        sort_key="090500",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X-3, Y+1) - lor535",
@@ -1459,7 +1459,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X-3, Y+1)",
         region_name_suffixless="Excavation (X-3, Y+1)",
         global_room_id="dungeon2/lor535",
-        sort_key="80301",
+        sort_key="089701",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X-1, Y+1) - lor584",
@@ -1467,7 +1467,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X-1, Y+1)",
         region_name_suffixless="Excavation (X-1, Y+1)",
         global_room_id="dungeon2/lor584",
-        sort_key="80101",
+        sort_key="089901",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X+2, Y+1) - lor213",
@@ -1475,7 +1475,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X+2, Y+1)",
         region_name_suffixless="Excavation (X+2, Y+1)",
         global_room_id="dungeon2/lor213",
-        sort_key="80201",
+        sort_key="090201",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X+3, Y+1) - lor173",
@@ -1483,7 +1483,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X+3, Y+1)",
         region_name_suffixless="Excavation (X+3, Y+1)",
         global_room_id="dungeon2/lor173",
-        sort_key="80301",
+        sort_key="090301",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X+4, Y+1) - lor180",
@@ -1491,7 +1491,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X+4, Y+1)",
         region_name_suffixless="Excavation (X+4, Y+1)",
         global_room_id="dungeon2/lor180",
-        sort_key="80401",
+        sort_key="090401",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X+5, Y+1) - lor337",
@@ -1499,7 +1499,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X+5, Y+1)",
         region_name_suffixless="Excavation (X+5, Y+1)",
         global_room_id="dungeon2/lor337",
-        sort_key="80501",
+        sort_key="090501",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X-4, Y+2) - lor1296",
@@ -1507,7 +1507,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X-4, Y+2)",
         region_name_suffixless="Excavation (X-4, Y+2)",
         global_room_id="dungeon2/lor1296",
-        sort_key="80402",
+        sort_key="089602",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X-3, Y+2) - lor617",
@@ -1515,7 +1515,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X-3, Y+2)",
         region_name_suffixless="Excavation (X-3, Y+2)",
         global_room_id="dungeon2/lor617",
-        sort_key="80302",
+        sort_key="089702",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X-2, Y+2) - lor586",
@@ -1523,7 +1523,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X-2, Y+2)",
         region_name_suffixless="Excavation (X-2, Y+2)",
         global_room_id="dungeon2/lor586",
-        sort_key="80202",
+        sort_key="089802",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X-1, Y+2) - lor585",
@@ -1531,7 +1531,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X-1, Y+2)",
         region_name_suffixless="Excavation (X-1, Y+2)",
         global_room_id="dungeon2/lor585",
-        sort_key="80102",
+        sort_key="089902",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X+2, Y+2) - lor212 (West)",
@@ -1539,7 +1539,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X+2, Y+2) (West)",
         region_name_suffixless="Excavation (X+2, Y+2)",
         global_room_id="dungeon2/lor212",
-        sort_key="80202 (West)",
+        sort_key="090202",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X+2, Y+2) - lor212 (East)",
@@ -1547,7 +1547,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X+2, Y+2) (East)",
         region_name_suffixless="Excavation (X+2, Y+2)",
         global_room_id="dungeon2/lor212",
-        sort_key="80202 (East)",
+        sort_key="090202",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X+4, Y+2) - yug8",
@@ -1555,7 +1555,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X+4, Y+2)",
         region_name_suffixless="Excavation (X+4, Y+2)",
         global_room_id="dungeon2/yug8",
-        sort_key="80402",
+        sort_key="090402",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X-3, Y+3) - lor618",
@@ -1563,7 +1563,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X-3, Y+3)",
         region_name_suffixless="Excavation (X-3, Y+3)",
         global_room_id="dungeon2/lor618",
-        sort_key="80303",
+        sort_key="089703",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X+0, Y+3) - lor619",
@@ -1571,7 +1571,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X+0, Y+3)",
         region_name_suffixless="Excavation (X+0, Y+3)",
         global_room_id="dungeon2/lor619",
-        sort_key="80003",
+        sort_key="090003",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X+1, Y+3) - lor416",
@@ -1579,7 +1579,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X+1, Y+3)",
         region_name_suffixless="Excavation (X+1, Y+3)",
         global_room_id="dungeon2/lor416",
-        sort_key="80103",
+        sort_key="090103",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X+2, Y+3) - lor417 (West)",
@@ -1587,7 +1587,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X+2, Y+3) (West)",
         region_name_suffixless="Excavation (X+2, Y+3)",
         global_room_id="dungeon2/lor417",
-        sort_key="80203 (West)",
+        sort_key="090203",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X+2, Y+3) - lor417 (East)",
@@ -1595,7 +1595,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X+2, Y+3) (East)",
         region_name_suffixless="Excavation (X+2, Y+3)",
         global_room_id="dungeon2/lor417",
-        sort_key="80203 (East)",
+        sort_key="090203",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X+3, Y+3) - lor368 (West)",
@@ -1603,7 +1603,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X+3, Y+3) (West)",
         region_name_suffixless="Excavation (X+3, Y+3)",
         global_room_id="dungeon2/lor368",
-        sort_key="80303 (West)",
+        sort_key="090303",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X+3, Y+3) - lor368 (East)",
@@ -1611,7 +1611,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X+3, Y+3) (East)",
         region_name_suffixless="Excavation (X+3, Y+3)",
         global_room_id="dungeon2/lor368",
-        sort_key="80303 (East)",
+        sort_key="090303",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X+4, Y+3) - lor256",
@@ -1619,7 +1619,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X+4, Y+3)",
         region_name_suffixless="Excavation (X+4, Y+3)",
         global_room_id="dungeon2/lor256",
-        sort_key="80403",
+        sort_key="090403",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X-2, Y+4) - lor672 (North)",
@@ -1627,7 +1627,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X-2, Y+4) (North)",
         region_name_suffixless="Excavation (X-2, Y+4)",
         global_room_id="dungeon2/lor672",
-        sort_key="80204 (North)",
+        sort_key="089804",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X-2, Y+4) - lor672 (South)",
@@ -1635,7 +1635,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X-2, Y+4) (South)",
         region_name_suffixless="Excavation (X-2, Y+4)",
         global_room_id="dungeon2/lor672",
-        sort_key="80204 (South)",
+        sort_key="089804",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X-2, Y+4) - lor672 (Southeast)",
@@ -1643,7 +1643,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X-2, Y+4) (Southeast)",
         region_name_suffixless="Excavation (X-2, Y+4)",
         global_room_id="dungeon2/lor672",
-        sort_key="80204 (Southeast)",
+        sort_key="089804",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X-2, Y+4) - lor672 (Lever)",
@@ -1651,7 +1651,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X-2, Y+4) (Lever)",
         region_name_suffixless="Excavation (X-2, Y+4)",
         global_room_id="dungeon2/lor672",
-        sort_key="80204 (Lever)",
+        sort_key="089804",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X+0, Y+4) - lor667 (Main)",
@@ -1659,7 +1659,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X+0, Y+4) (Main)",
         region_name_suffixless="Excavation (X+0, Y+4)",
         global_room_id="dungeon2/lor667",
-        sort_key="80004 (Main)",
+        sort_key="090004",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X+0, Y+4) - lor667 (Southeast)",
@@ -1667,7 +1667,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X+0, Y+4) (Southeast)",
         region_name_suffixless="Excavation (X+0, Y+4)",
         global_room_id="dungeon2/lor667",
-        sort_key="80004 (Southeast)",
+        sort_key="090004",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X+1, Y+4) - lor755",
@@ -1675,7 +1675,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X+1, Y+4)",
         region_name_suffixless="Excavation (X+1, Y+4)",
         global_room_id="dungeon2/lor755",
-        sort_key="80104",
+        sort_key="090104",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X+2, Y+4) - lor770",
@@ -1683,7 +1683,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X+2, Y+4)",
         region_name_suffixless="Excavation (X+2, Y+4)",
         global_room_id="dungeon2/lor770",
-        sort_key="80204",
+        sort_key="090204",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X+3, Y+4) - lor390 (West)",
@@ -1691,7 +1691,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X+3, Y+4) (West)",
         region_name_suffixless="Excavation (X+3, Y+4)",
         global_room_id="dungeon2/lor390",
-        sort_key="80304 (West)",
+        sort_key="090304",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X+3, Y+4) - lor390 (East)",
@@ -1699,7 +1699,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X+3, Y+4) (East)",
         region_name_suffixless="Excavation (X+3, Y+4)",
         global_room_id="dungeon2/lor390",
-        sort_key="80304 (East)",
+        sort_key="090304",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X+4, Y+4) - lor1321",
@@ -1707,7 +1707,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X+4, Y+4)",
         region_name_suffixless="Excavation (X+4, Y+4)",
         global_room_id="dungeon2/lor1321",
-        sort_key="80404",
+        sort_key="090404",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X-5, Y+5) - lor1307 (Main)",
@@ -1715,7 +1715,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X-5, Y+5) (Main)",
         region_name_suffixless="Excavation (X-5, Y+5)",
         global_room_id="dungeon2/lor1307",
-        sort_key="80505 (Main)",
+        sort_key="089505",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X-5, Y+5) - lor1307 (Money Bag)",
@@ -1723,7 +1723,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X-5, Y+5) (Money Bag)",
         region_name_suffixless="Excavation (X-5, Y+5)",
         global_room_id="dungeon2/lor1307",
-        sort_key="80505 (Money Bag)",
+        sort_key="089505",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X+0, Y+5) - lor741 (West)",
@@ -1731,7 +1731,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X+0, Y+5) (West)",
         region_name_suffixless="Excavation (X+0, Y+5)",
         global_room_id="dungeon2/lor741",
-        sort_key="80005 (West)",
+        sort_key="090005",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X+0, Y+5) - lor741 (East)",
@@ -1739,7 +1739,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X+0, Y+5) (East)",
         region_name_suffixless="Excavation (X+0, Y+5)",
         global_room_id="dungeon2/lor741",
-        sort_key="80005 (East)",
+        sort_key="090005",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X+2, Y+5) - lor769 (Main)",
@@ -1747,7 +1747,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X+2, Y+5) (Main)",
         region_name_suffixless="Excavation (X+2, Y+5)",
         global_room_id="dungeon2/lor769",
-        sort_key="80205 (Main)",
+        sort_key="090205",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X+2, Y+5) - lor769 (Key)",
@@ -1755,7 +1755,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X+2, Y+5) (Key)",
         region_name_suffixless="Excavation (X+2, Y+5)",
         global_room_id="dungeon2/lor769",
-        sort_key="80205 (Key)",
+        sort_key="090205",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X+3, Y+5) - lor856",
@@ -1763,7 +1763,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X+3, Y+5)",
         region_name_suffixless="Excavation (X+3, Y+5)",
         global_room_id="dungeon2/lor856",
-        sort_key="80305",
+        sort_key="090305",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X-4, Y+6) - yug3 (West)",
@@ -1771,7 +1771,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X-4, Y+6) (West)",
         region_name_suffixless="Excavation (X-4, Y+6)",
         global_room_id="dungeon2/yug3",
-        sort_key="80406 (West)",
+        sort_key="089606",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X-4, Y+6) - yug3 (East)",
@@ -1779,7 +1779,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X-4, Y+6) (East)",
         region_name_suffixless="Excavation (X-4, Y+6)",
         global_room_id="dungeon2/yug3",
-        sort_key="80406 (East)",
+        sort_key="089606",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X-3, Y+6) - lor703 (West)",
@@ -1787,7 +1787,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X-3, Y+6) (West)",
         region_name_suffixless="Excavation (X-3, Y+6)",
         global_room_id="dungeon2/lor703",
-        sort_key="80306 (West)",
+        sort_key="089706",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X-3, Y+6) - lor703 (East)",
@@ -1795,7 +1795,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X-3, Y+6) (East)",
         region_name_suffixless="Excavation (X-3, Y+6)",
         global_room_id="dungeon2/lor703",
-        sort_key="80306 (East)",
+        sort_key="089706",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X-2, Y+6) - lor701 (West)",
@@ -1803,7 +1803,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X-2, Y+6) (West)",
         region_name_suffixless="Excavation (X-2, Y+6)",
         global_room_id="dungeon2/lor701",
-        sort_key="80206 (West)",
+        sort_key="089806",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X-2, Y+6) - lor701 (East)",
@@ -1811,7 +1811,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X-2, Y+6) (East)",
         region_name_suffixless="Excavation (X-2, Y+6)",
         global_room_id="dungeon2/lor701",
-        sort_key="80206 (East)",
+        sort_key="089806",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X-1, Y+6) - lor732 (South)",
@@ -1819,7 +1819,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X-1, Y+6) (South)",
         region_name_suffixless="Excavation (X-1, Y+6)",
         global_room_id="dungeon2/lor732",
-        sort_key="80106 (South)",
+        sort_key="089906",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X-1, Y+6) - lor732 (West)",
@@ -1827,7 +1827,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X-1, Y+6) (West)",
         region_name_suffixless="Excavation (X-1, Y+6)",
         global_room_id="dungeon2/lor732",
-        sort_key="80106 (West)",
+        sort_key="089906",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X-1, Y+6) - lor732 (East)",
@@ -1835,7 +1835,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X-1, Y+6) (East)",
         region_name_suffixless="Excavation (X-1, Y+6)",
         global_room_id="dungeon2/lor732",
-        sort_key="80106 (East)",
+        sort_key="089906",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X+0, Y+6) - lor1079 (Main)",
@@ -1843,7 +1843,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X+0, Y+6) (Main)",
         region_name_suffixless="Excavation (X+0, Y+6)",
         global_room_id="dungeon2/lor1079",
-        sort_key="80006 (Main)",
+        sort_key="090006",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X+0, Y+6) - lor1079 (East Alcove)",
@@ -1851,7 +1851,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X+0, Y+6) (East Alcove)",
         region_name_suffixless="Excavation (X+0, Y+6)",
         global_room_id="dungeon2/lor1079",
-        sort_key="80006 (East Alcove)",
+        sort_key="090006",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X+2, Y+6) - lor768",
@@ -1859,7 +1859,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X+2, Y+6)",
         region_name_suffixless="Excavation (X+2, Y+6)",
         global_room_id="dungeon2/lor768",
-        sort_key="80206",
+        sort_key="090206",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X+3, Y+6) - lor854",
@@ -1867,7 +1867,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X+3, Y+6)",
         region_name_suffixless="Excavation (X+3, Y+6)",
         global_room_id="dungeon2/lor854",
-        sort_key="80306",
+        sort_key="090306",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X+4, Y+6) - lor1086",
@@ -1875,7 +1875,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X+4, Y+6)",
         region_name_suffixless="Excavation (X+4, Y+6)",
         global_room_id="dungeon2/lor1086",
-        sort_key="80406",
+        sort_key="090406",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X+5, Y+6) - lor1320",
@@ -1883,7 +1883,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X+5, Y+6)",
         region_name_suffixless="Excavation (X+5, Y+6)",
         global_room_id="dungeon2/lor1320",
-        sort_key="80506",
+        sort_key="090506",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X-4, Y+7) - lor1309",
@@ -1891,7 +1891,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X-4, Y+7)",
         region_name_suffixless="Excavation (X-4, Y+7)",
         global_room_id="dungeon2/lor1309",
-        sort_key="80407",
+        sort_key="089607",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X-3, Y+7) - lor712",
@@ -1899,7 +1899,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X-3, Y+7)",
         region_name_suffixless="Excavation (X-3, Y+7)",
         global_room_id="dungeon2/lor712",
-        sort_key="80307",
+        sort_key="089707",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X-2, Y+7) - lor726 (Main)",
@@ -1907,7 +1907,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X-2, Y+7) (Main)",
         region_name_suffixless="Excavation (X-2, Y+7)",
         global_room_id="dungeon2/lor726",
-        sort_key="80207 (Main)",
+        sort_key="089807",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X-2, Y+7) - lor726 (Key)",
@@ -1915,7 +1915,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X-2, Y+7) (Key)",
         region_name_suffixless="Excavation (X-2, Y+7)",
         global_room_id="dungeon2/lor726",
-        sort_key="80207 (Key)",
+        sort_key="089807",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X-1, Y+7) - lor731 (West)",
@@ -1923,7 +1923,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X-1, Y+7) (West)",
         region_name_suffixless="Excavation (X-1, Y+7)",
         global_room_id="dungeon2/lor731",
-        sort_key="80107 (West)",
+        sort_key="089907",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X-1, Y+7) - lor731 (East)",
@@ -1931,7 +1931,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X-1, Y+7) (East)",
         region_name_suffixless="Excavation (X-1, Y+7)",
         global_room_id="dungeon2/lor731",
-        sort_key="80107 (East)",
+        sort_key="089907",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X+0, Y+7) - lor1284",
@@ -1939,7 +1939,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X+0, Y+7)",
         region_name_suffixless="Excavation (X+0, Y+7)",
         global_room_id="dungeon2/lor1284",
-        sort_key="80007",
+        sort_key="090007",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X+2, Y+7) - lor860",
@@ -1947,7 +1947,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X+2, Y+7)",
         region_name_suffixless="Excavation (X+2, Y+7)",
         global_room_id="dungeon2/lor860",
-        sort_key="80207",
+        sort_key="090207",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X-2, Y+8) - lor1311",
@@ -1955,7 +1955,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X-2, Y+8)",
         region_name_suffixless="Excavation (X-2, Y+8)",
         global_room_id="dungeon2/lor1311",
-        sort_key="80208",
+        sort_key="089808",
     ),
     RoomData(
         room_label="SlimeCorp Excavation Site (X+0, Y+8) - lor1089",
@@ -1963,7 +1963,7 @@ ROOMS: list[RoomData] = [
         region_name="Excavation (X+0, Y+8)",
         region_name_suffixless="Excavation (X+0, Y+8)",
         global_room_id="dungeon2/lor1089",
-        sort_key="80008",
+        sort_key="090008",
     ),
     RoomData(
         room_label="SlimeCorp Skyscraper (X+0, Y-5) - lor151",
@@ -1971,7 +1971,7 @@ ROOMS: list[RoomData] = [
         region_name="Skyscraper (X+0, Y-5)",
         region_name_suffixless="Skyscraper (X+0, Y-5)",
         global_room_id="skyscraper/lor151",
-        sort_key="69995",
+        sort_key="079995",
     ),
     RoomData(
         room_label="SlimeCorp Skyscraper (X+1, Y-5) - lor133",
@@ -1979,7 +1979,7 @@ ROOMS: list[RoomData] = [
         region_name="Skyscraper (X+1, Y-5)",
         region_name_suffixless="Skyscraper (X+1, Y-5)",
         global_room_id="skyscraper/lor133",
-        sort_key="70095",
+        sort_key="080095",
     ),
     RoomData(
         room_label="SlimeCorp Skyscraper (X+2, Y-5) - lor98",
@@ -1987,7 +1987,7 @@ ROOMS: list[RoomData] = [
         region_name="Skyscraper (X+2, Y-5)",
         region_name_suffixless="Skyscraper (X+2, Y-5)",
         global_room_id="skyscraper/lor98",
-        sort_key="70195",
+        sort_key="080195",
     ),
     RoomData(
         room_label="SlimeCorp Skyscraper (X+3, Y-5) - lor112",
@@ -1995,7 +1995,7 @@ ROOMS: list[RoomData] = [
         region_name="Skyscraper (X+3, Y-5)",
         region_name_suffixless="Skyscraper (X+3, Y-5)",
         global_room_id="skyscraper/lor112",
-        sort_key="70295",
+        sort_key="080295",
     ),
     RoomData(
         room_label="SlimeCorp Skyscraper (X+4, Y-5) - lor104",
@@ -2003,7 +2003,7 @@ ROOMS: list[RoomData] = [
         region_name="Skyscraper (X+4, Y-5)",
         region_name_suffixless="Skyscraper (X+4, Y-5)",
         global_room_id="skyscraper/lor104",
-        sort_key="70395",
+        sort_key="080395",
     ),
     RoomData(
         room_label="SlimeCorp Skyscraper (X+0, Y-4) - lor187",
@@ -2011,7 +2011,7 @@ ROOMS: list[RoomData] = [
         region_name="Skyscraper (X+0, Y-4)",
         region_name_suffixless="Skyscraper (X+0, Y-4)",
         global_room_id="skyscraper/lor187",
-        sort_key="69996",
+        sort_key="079996",
     ),
     RoomData(
         room_label="SlimeCorp Skyscraper (X+1, Y-4) - lor150",
@@ -2019,7 +2019,7 @@ ROOMS: list[RoomData] = [
         region_name="Skyscraper (X+1, Y-4)",
         region_name_suffixless="Skyscraper (X+1, Y-4)",
         global_room_id="skyscraper/lor150",
-        sort_key="70096",
+        sort_key="080096",
     ),
     RoomData(
         room_label="SlimeCorp Skyscraper (X+2, Y-4) - lor140",
@@ -2027,7 +2027,7 @@ ROOMS: list[RoomData] = [
         region_name="Skyscraper (X+2, Y-4)",
         region_name_suffixless="Skyscraper (X+2, Y-4)",
         global_room_id="skyscraper/lor140",
-        sort_key="70196",
+        sort_key="080196",
     ),
     RoomData(
         room_label="SlimeCorp Skyscraper (X+3, Y-4) - lor97 (Main)",
@@ -2035,7 +2035,7 @@ ROOMS: list[RoomData] = [
         region_name="Skyscraper (X+3, Y-4) (Main)",
         region_name_suffixless="Skyscraper (X+3, Y-4)",
         global_room_id="skyscraper/lor97",
-        sort_key="70296 (Main)",
+        sort_key="080296",
     ),
     RoomData(
         room_label="SlimeCorp Skyscraper (X+3, Y-4) - lor97 (North)",
@@ -2043,7 +2043,7 @@ ROOMS: list[RoomData] = [
         region_name="Skyscraper (X+3, Y-4) (North)",
         region_name_suffixless="Skyscraper (X+3, Y-4)",
         global_room_id="skyscraper/lor97",
-        sort_key="70296 (North)",
+        sort_key="080296",
     ),
     RoomData(
         room_label="SlimeCorp Skyscraper (X+3, Y-4) - lor97 (Southeast)",
@@ -2051,7 +2051,7 @@ ROOMS: list[RoomData] = [
         region_name="Skyscraper (X+3, Y-4) (Southeast)",
         region_name_suffixless="Skyscraper (X+3, Y-4)",
         global_room_id="skyscraper/lor97",
-        sort_key="70296 (Southeast)",
+        sort_key="080296",
     ),
     RoomData(
         room_label="SlimeCorp Skyscraper (X+1, Y-3) - lor220 (Main)",
@@ -2059,7 +2059,7 @@ ROOMS: list[RoomData] = [
         region_name="Skyscraper (X+1, Y-3) (Main)",
         region_name_suffixless="Skyscraper (X+1, Y-3)",
         global_room_id="skyscraper/lor220",
-        sort_key="70097 (Main)",
+        sort_key="080097",
     ),
     RoomData(
         room_label="SlimeCorp Skyscraper (X+1, Y-3) - lor220 (North)",
@@ -2067,7 +2067,7 @@ ROOMS: list[RoomData] = [
         region_name="Skyscraper (X+1, Y-3) (North)",
         region_name_suffixless="Skyscraper (X+1, Y-3)",
         global_room_id="skyscraper/lor220",
-        sort_key="70097 (North)",
+        sort_key="080097",
     ),
     RoomData(
         room_label="SlimeCorp Skyscraper (X+0, Y-2) - lor2 (West)",
@@ -2075,7 +2075,7 @@ ROOMS: list[RoomData] = [
         region_name="Skyscraper (X+0, Y-2) (West)",
         region_name_suffixless="Skyscraper (X+0, Y-2)",
         global_room_id="skyscraper/lor2",
-        sort_key="69998 (West)",
+        sort_key="079998",
     ),
     RoomData(
         room_label="SlimeCorp Skyscraper (X+0, Y-2) - lor2 (East)",
@@ -2083,7 +2083,7 @@ ROOMS: list[RoomData] = [
         region_name="Skyscraper (X+0, Y-2) (East)",
         region_name_suffixless="Skyscraper (X+0, Y-2)",
         global_room_id="skyscraper/lor2",
-        sort_key="69998 (East)",
+        sort_key="079998",
     ),
     RoomData(
         room_label="SlimeCorp Skyscraper (X+2, Y-2) - lor63 (West)",
@@ -2091,7 +2091,7 @@ ROOMS: list[RoomData] = [
         region_name="Skyscraper (X+2, Y-2) (West)",
         region_name_suffixless="Skyscraper (X+2, Y-2)",
         global_room_id="skyscraper/lor63",
-        sort_key="70198 (West)",
+        sort_key="080198",
     ),
     RoomData(
         room_label="SlimeCorp Skyscraper (X+2, Y-2) - lor63 (East)",
@@ -2099,7 +2099,7 @@ ROOMS: list[RoomData] = [
         region_name="Skyscraper (X+2, Y-2) (East)",
         region_name_suffixless="Skyscraper (X+2, Y-2)",
         global_room_id="skyscraper/lor63",
-        sort_key="70198 (East)",
+        sort_key="080198",
     ),
     RoomData(
         room_label="SlimeCorp Skyscraper (X+2, Y-1) - ren22",
@@ -2107,7 +2107,7 @@ ROOMS: list[RoomData] = [
         region_name="Skyscraper (X+2, Y-1)",
         region_name_suffixless="Skyscraper (X+2, Y-1)",
         global_room_id="skyscraper/ren22",
-        sort_key="70199",
+        sort_key="080199",
     ),
     RoomData(
         room_label="SlimeCorp Skyscraper (X+3, Y-1) - lor25 (North)",
@@ -2115,7 +2115,7 @@ ROOMS: list[RoomData] = [
         region_name="Skyscraper (X+3, Y-1) (North)",
         region_name_suffixless="Skyscraper (X+3, Y-1)",
         global_room_id="skyscraper/lor25",
-        sort_key="70299 (North)",
+        sort_key="080299",
     ),
     RoomData(
         room_label="SlimeCorp Skyscraper (X+3, Y-1) - lor25 (Southwest)",
@@ -2123,7 +2123,7 @@ ROOMS: list[RoomData] = [
         region_name="Skyscraper (X+3, Y-1) (Southwest)",
         region_name_suffixless="Skyscraper (X+3, Y-1)",
         global_room_id="skyscraper/lor25",
-        sort_key="70299 (Southwest)",
+        sort_key="080299",
     ),
     RoomData(
         room_label="SlimeCorp Skyscraper (X+4, Y-1) - lor54",
@@ -2131,7 +2131,7 @@ ROOMS: list[RoomData] = [
         region_name="Skyscraper (X+4, Y-1)",
         region_name_suffixless="Skyscraper (X+4, Y-1)",
         global_room_id="skyscraper/lor54",
-        sort_key="70399",
+        sort_key="080399",
     ),
     RoomData(
         room_label="SlimeCorp Skyscraper (X+2, Y+0) - lor16",
@@ -2139,7 +2139,7 @@ ROOMS: list[RoomData] = [
         region_name="Skyscraper (X+2, Y+0)",
         region_name_suffixless="Skyscraper (X+2, Y+0)",
         global_room_id="skyscraper/lor16",
-        sort_key="70200",
+        sort_key="080200",
     ),
     RoomData(
         room_label="South Plaza (X-1, Y-6) - ren355 (North)",
@@ -2147,7 +2147,7 @@ ROOMS: list[RoomData] = [
         region_name="S Plaza (X-1, Y-6) (North)",
         region_name_suffixless="S Plaza (X-1, Y-6)",
         global_room_id="city/ren355",
-        sort_key="10094 (North)",
+        sort_key="019894",
     ),
     RoomData(
         room_label="South Plaza (X-1, Y-6) - ren355 (South)",
@@ -2155,7 +2155,7 @@ ROOMS: list[RoomData] = [
         region_name="S Plaza (X-1, Y-6) (South)",
         region_name_suffixless="S Plaza (X-1, Y-6)",
         global_room_id="city/ren355",
-        sort_key="10094 (South)",
+        sort_key="019894",
     ),
     RoomData(
         room_label="South Plaza (X-1, Y-6) - ren355 (East)",
@@ -2163,7 +2163,7 @@ ROOMS: list[RoomData] = [
         region_name="S Plaza (X-1, Y-6) (East)",
         region_name_suffixless="S Plaza (X-1, Y-6)",
         global_room_id="city/ren355",
-        sort_key="10094 (East)",
+        sort_key="019894",
     ),
     RoomData(
         room_label="South Plaza (X-2, Y-4) - ren4064",
@@ -2171,7 +2171,7 @@ ROOMS: list[RoomData] = [
         region_name="S Plaza (X-2, Y-4)",
         region_name_suffixless="S Plaza (X-2, Y-4)",
         global_room_id="city/ren4064",
-        sort_key="10196",
+        sort_key="019796",
     ),
     RoomData(
         room_label="South Plaza (X+1, Y-4) - ren4066",
@@ -2179,7 +2179,7 @@ ROOMS: list[RoomData] = [
         region_name="S Plaza (X+1, Y-4)",
         region_name_suffixless="S Plaza (X+1, Y-4)",
         global_room_id="city/ren4066",
-        sort_key="10096",
+        sort_key="020096",
     ),
     RoomData(
         room_label="South Plaza (X-2, Y-3) - ren223 (Main)",
@@ -2187,7 +2187,7 @@ ROOMS: list[RoomData] = [
         region_name="S Plaza (X-2, Y-3) (Main)",
         region_name_suffixless="S Plaza (X-2, Y-3)",
         global_room_id="city/ren223",
-        sort_key="10197 (Main)",
+        sort_key="019797",
     ),
     RoomData(
         room_label="South Plaza (X-2, Y-3) - ren223 (South)",
@@ -2195,7 +2195,7 @@ ROOMS: list[RoomData] = [
         region_name="S Plaza (X-2, Y-3) (South)",
         region_name_suffixless="S Plaza (X-2, Y-3)",
         global_room_id="city/ren223",
-        sort_key="10197 (South)",
+        sort_key="019797",
     ),
     RoomData(
         room_label="South Plaza (X-2, Y-3) - ren223 (Southwest)",
@@ -2203,7 +2203,7 @@ ROOMS: list[RoomData] = [
         region_name="S Plaza (X-2, Y-3) (Southwest)",
         region_name_suffixless="S Plaza (X-2, Y-3)",
         global_room_id="city/ren223",
-        sort_key="10197 (Southwest)",
+        sort_key="019797",
     ),
     RoomData(
         room_label="South Plaza (X-2, Y-3) - ren223 (Southeast)",
@@ -2211,7 +2211,7 @@ ROOMS: list[RoomData] = [
         region_name="S Plaza (X-2, Y-3) (Southeast)",
         region_name_suffixless="S Plaza (X-2, Y-3)",
         global_room_id="city/ren223",
-        sort_key="10197 (Southeast)",
+        sort_key="019797",
     ),
     RoomData(
         room_label="South Plaza (X-3, Y+3) - ren4152",
@@ -2219,7 +2219,7 @@ ROOMS: list[RoomData] = [
         region_name="S Plaza (X-3, Y+3)",
         region_name_suffixless="S Plaza (X-3, Y+3)",
         global_room_id="city/ren4152",
-        sort_key="10303",
+        sort_key="019703",
     ),
     RoomData(
         room_label="South Plaza (X-3, Y+4) - yug4930",
@@ -2227,7 +2227,7 @@ ROOMS: list[RoomData] = [
         region_name="S Plaza (X-3, Y+4)",
         region_name_suffixless="S Plaza (X-3, Y+4)",
         global_room_id="city/yug4930",
-        sort_key="10304",
+        sort_key="019704",
     ),
     RoomData(
         room_label="South Plaza (X-2, Y+4) - yug5210",
@@ -2235,7 +2235,7 @@ ROOMS: list[RoomData] = [
         region_name="S Plaza (X-2, Y+4)",
         region_name_suffixless="S Plaza (X-2, Y+4)",
         global_room_id="city/yug5210",
-        sort_key="10204",
+        sort_key="019804",
     ),
     RoomData(
         room_label="South Plaza (X-1, Y+4) - lor2248 (North)",
@@ -2243,7 +2243,7 @@ ROOMS: list[RoomData] = [
         region_name="S Plaza (X-1, Y+4) (North)",
         region_name_suffixless="S Plaza (X-1, Y+4)",
         global_room_id="city/lor2248",
-        sort_key="10104 (North)",
+        sort_key="019904",
     ),
     RoomData(
         room_label="South Plaza (X-1, Y+4) - lor2248 (South)",
@@ -2251,7 +2251,7 @@ ROOMS: list[RoomData] = [
         region_name="S Plaza (X-1, Y+4) (South)",
         region_name_suffixless="S Plaza (X-1, Y+4)",
         global_room_id="city/lor2248",
-        sort_key="10104 (South)",
+        sort_key="019904",
     ),
     RoomData(
         room_label="South Plaza (X-1, Y+4) - lor2248 (Southeast)",
@@ -2259,7 +2259,7 @@ ROOMS: list[RoomData] = [
         region_name="S Plaza (X-1, Y+4) (Southeast)",
         region_name_suffixless="S Plaza (X-1, Y+4)",
         global_room_id="city/lor2248",
-        sort_key="10104 (Southeast)",
+        sort_key="019904",
     ),
     RoomData(
         room_label="South Plaza (X-1, Y+4) - lor2248 (Southeast Entrance)",
@@ -2267,7 +2267,7 @@ ROOMS: list[RoomData] = [
         region_name="S Plaza (X-1, Y+4) (Southeast Entrance)",
         region_name_suffixless="S Plaza (X-1, Y+4)",
         global_room_id="city/lor2248",
-        sort_key="10104 (Southeast Entrance)",
+        sort_key="019904",
     ),
     RoomData(
         room_label="South Plaza (X+1, Y+4) - yug4939 (West)",
@@ -2275,7 +2275,7 @@ ROOMS: list[RoomData] = [
         region_name="S Plaza (X+1, Y+4) (West)",
         region_name_suffixless="S Plaza (X+1, Y+4)",
         global_room_id="city/yug4939",
-        sort_key="10104 (West)",
+        sort_key="020104",
     ),
     RoomData(
         room_label="South Plaza (X+1, Y+4) - yug4939 (East)",
@@ -2283,7 +2283,7 @@ ROOMS: list[RoomData] = [
         region_name="S Plaza (X+1, Y+4) (East)",
         region_name_suffixless="S Plaza (X+1, Y+4)",
         global_room_id="city/yug4939",
-        sort_key="10104 (East)",
+        sort_key="020104",
     ),
     RoomData(
         room_label="South Plaza (X+2, Y+4) - yug5154",
@@ -2291,7 +2291,7 @@ ROOMS: list[RoomData] = [
         region_name="S Plaza (X+2, Y+4)",
         region_name_suffixless="S Plaza (X+2, Y+4)",
         global_room_id="city/yug5154",
-        sort_key="10204",
+        sort_key="020204",
     ),
     RoomData(
         room_label="South Plaza (Interiors) (X-1, Y+1) - ren85",
@@ -2299,7 +2299,7 @@ ROOMS: list[RoomData] = [
         region_name="S Plaza Interiors (X-1, Y+1)",
         region_name_suffixless="S Plaza Interiors (X-1, Y+1)",
         global_room_id="city_interiors/ren85",
-        sort_key="20101",
+        sort_key="029901",
     ),
     RoomData(
         room_label="South Plaza (Sewers) (X-1, Y-6) - lor230",
@@ -2307,7 +2307,7 @@ ROOMS: list[RoomData] = [
         region_name="S Plaza Sewers (X-1, Y-6)",
         region_name_suffixless="S Plaza Sewers (X-1, Y-6)",
         global_room_id="city_underground/lor230",
-        sort_key="30094",
+        sort_key="039894",
     ),
     RoomData(
         room_label="South Plaza (Sewers) (X-1, Y-5) - ren984",
@@ -2315,7 +2315,7 @@ ROOMS: list[RoomData] = [
         region_name="S Plaza Sewers (X-1, Y-5)",
         region_name_suffixless="S Plaza Sewers (X-1, Y-5)",
         global_room_id="city_underground/ren984",
-        sort_key="30095",
+        sort_key="039895",
     ),
     RoomData(
         room_label="South Plaza (Sewers) (X-1, Y+4) - lor871",
@@ -2323,7 +2323,7 @@ ROOMS: list[RoomData] = [
         region_name="S Plaza Sewers (X-1, Y+4)",
         region_name_suffixless="S Plaza Sewers (X-1, Y+4)",
         global_room_id="city_underground/lor871",
-        sort_key="30104",
+        sort_key="039904",
     ),
     RoomData(
         room_label="South Plaza (Sewers) (X-1, Y+5) - yug1700 (West)",
@@ -2331,7 +2331,7 @@ ROOMS: list[RoomData] = [
         region_name="S Plaza Sewers (X-1, Y+5) (West)",
         region_name_suffixless="S Plaza Sewers (X-1, Y+5)",
         global_room_id="city_underground/yug1700",
-        sort_key="30105 (West)",
+        sort_key="039905",
     ),
     RoomData(
         room_label="South Plaza (Sewers) (X-1, Y+5) - yug1700 (East)",
@@ -2339,7 +2339,7 @@ ROOMS: list[RoomData] = [
         region_name="S Plaza Sewers (X-1, Y+5) (East)",
         region_name_suffixless="S Plaza Sewers (X-1, Y+5)",
         global_room_id="city_underground/yug1700",
-        sort_key="30105 (East)",
+        sort_key="039905",
     ),
 ]
 
