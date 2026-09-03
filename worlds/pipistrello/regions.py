@@ -11,6 +11,7 @@ if TYPE_CHECKING:
 
 
 REGION_NAME_TO_ROOM = {d.region_name: d for d in ROOMS}
+ROOM_NAME_TO_ROOM = {d.room_label: d for d in ROOMS}
 
 
 def create_and_connect_regions(world: PipWorld) -> None:

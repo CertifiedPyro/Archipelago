@@ -36,5 +36,5 @@ def set_all_location_rules(world: PipWorld) -> None:
 
 def set_completion_condition(world: PipWorld) -> None:
     # TODO: Set to North Plaza
-    end_region = regions.REGION_NAME_TO_ROOM["S Plaza (X-1, Y-6) (North)"].region_name
+    end_region = regions.ROOM_NAME_TO_ROOM["South Plaza (X-1, Y-6) - ren355 (North)"].region_name
     world.set_completion_rule(CanReachRegion(end_region))
