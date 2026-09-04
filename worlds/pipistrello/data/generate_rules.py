@@ -60,8 +60,9 @@ RULE_DICT = {
     "megabattery": f"Has('{SI.MEGA_BATTERY_FARIA}')",
     "staffid": f"Has('{SI.FARIA_STAFF_ID}')",
     # Health
-    "+1heart": f"Has('{OI.PETAL}', 8)",
     "heart+1": f"Has('{OI.PETAL}', 8)",
+    "heart+2": f"Has('{OI.PETAL}', 16)",
+    "heart+3": f"Has('{OI.PETAL}', 24)",
     # Difficulty
     "hard": "DIFF_HARD",
     "expert": "DIFF_EXPERT",

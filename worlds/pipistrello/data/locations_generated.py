@@ -109,7 +109,7 @@ LOCATIONS: list[LocationData] = [
         rule_strs=[],
     ),
     LocationData(
-        region_name="S Plaza (X-2, Y-3) (Southeast)",
+        region_name="S Plaza (X-2, Y-3) (Main)",
         full_location_name="S Plaza (X-2, Y-3): Money Bag 6",
         global_object_id="city/ren223/yug2147",
         map_name="Moneybag 6",
@@ -1125,7 +1125,7 @@ LOCATIONS: list[LocationData] = [
         rule_strs=[],
     ),
     LocationData(
-        region_name="Skyscraper (X+2, Y+0)",
+        region_name="Skyscraper (X+2, Y+0) (East)",
         full_location_name="Skyscraper (X+2, Y+0): Money Bag (secret)",
         global_object_id="skyscraper/lor16/lor318",
         map_name="Moneybag 1",
@@ -1499,6 +1499,14 @@ LOCATIONS: list[LocationData] = [
         map_name="Moneybag 31",
         room_area="SlimeCorp Excavation Site",
         rule_strs=["dash", "ride", "ufo, hard"],
+    ),
+    LocationData(
+        region_name="Excavation (X+5, Y+6)",
+        full_location_name="Excavation (X+5, Y+6): Money Bag",
+        global_object_id="dungeon2/lor1320/lor1416",
+        map_name="Moneybag 32",
+        room_area="SlimeCorp Excavation Site",
+        rule_strs=["heart+3", "dash, ride", "ufo, ride"],
     ),
     LocationData(
         region_name="Excavation (X-1, Y-1)",
@@ -1977,7 +1985,7 @@ EVENTS: list[EventData] = [
         global_object_id="city_underground/ren1477/ren1486",
         map_name="Combat 1",
         room_area="Faria Slimer Borough (Sewers)",
-        rule_strs=["Lever 1, +1 heart, off", "Lever 1, +1 heart, cat", "Lever 1, +1 heart, parry"],
+        rule_strs=["Lever 1, heart +1, off", "Lever 1, heart +1, cat", "Lever 1, heart +1, parry"],
     ),
     EventData(
         region_name="Faria Sewers (X+3, Y-6)",

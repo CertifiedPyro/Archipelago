@@ -460,7 +460,7 @@ ENTRANCE_RULES: dict[str, Rule] = {
     ),
     "Skyscraper (X+3, Y-1) (Southwest) -> Skyscraper (X+3, Y-1) (North)": (COG & Has("Offstring Throw")),
     "Skyscraper (X+4, Y-1) -> Skyscraper (X+3, Y-4) (Southeast)": (DIFF_EXPERT & Has("Wall-Dash") & Has("Wall-Ride")),
-    "Skyscraper (X+2, Y+0) -> Skyscraper (X+3, Y-1) (Southwest)": (COG | Has("UFO Throw")),
+    "Skyscraper (X+2, Y+0) (West) -> Skyscraper (X+2, Y+0) (East)": (COG | Has("UFO Throw")),
     "S Plaza (X-2, Y-3) (Main) -> S Plaza (X-2, Y-3) (South)": (
         SS_NORMAL | Has("Walk-the-Dog") | Has("Wall-Dash") | Has("UFO Throw") | Has("Wall-Ride")
     ),
@@ -709,6 +709,9 @@ LOCATION_RULES: dict[str, Rule] = {
     "Excavation (X+3, Y+0): Money Bag": (BOMB),
     "Excavation (X+0, Y+6): Money Bag (secret)": (Has("Wall-Ride") | Has("UFO Throw")),
     "Excavation (X+2, Y+7): Money Bag": (Has("Wall-Dash") | Has("Wall-Ride") | (Has("UFO Throw") & DIFF_HARD)),
+    "Excavation (X+5, Y+6): Money Bag": (
+        Has("Petal Container", 24) | (Has("Wall-Dash") & Has("Wall-Ride")) | (Has("UFO Throw") & Has("Wall-Ride"))
+    ),
     "Excavation (X+3, Y-1): Money Bag": (BOMB),
     "Excavation (X+4, Y-2): Money Bag 1": (BOMB),
     "Excavation (X+5, Y-2): Money Bag": (Has("Excavation (X+5, Y-2): Key") & CHEST),

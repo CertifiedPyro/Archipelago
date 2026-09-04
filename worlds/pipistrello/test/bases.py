@@ -52,7 +52,7 @@ class PipTestBase(WorldTestBase):
                 state.collect(item)
             for check in checks:
                 self.assertTrue(
-                    state.can_reach(check, player=self.player), f"{check.name} not reachable with {item_names}"
+                    state.can_reach(check, player=self.player), f"{check.name} is not reachable with {item_names}"
                 )
             for item_name in item_names:
                 item = self.get_item_by_name(item_name)

@@ -22,7 +22,7 @@ TEST_CASES = [
         possible_items={Difficulty.option_normal: [[M.OFF], [M.UFO]], Difficulty.option_hard: [[M.DASH, M.RIDE]]},
     ),
     TestCase(
-        room_name="SlimeCorp Skyscraper (X+2, Y+0) - lor16",
+        room_name="SlimeCorp Skyscraper (X+2, Y+0) - lor16 (East)",
         location_map_name="Moneybag 1",
         possible_items={Difficulty.option_normal: None},
     ),

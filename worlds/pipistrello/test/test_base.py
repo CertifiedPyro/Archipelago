@@ -52,7 +52,7 @@ class LogicTestMixinBase(_LogicTestBase):
         if None in filtered_possible_items.values():
             state = CollectionState(self.multiworld)
             state.sweep_for_advancements()
-            self.assertTrue(state.can_reach(check), f"{check.name} not reachable without items")
+            self.assertTrue(state.can_reach(check), f"{check.name} is not reachable without items")
         else:
             all_possible_items = [item for sublist in filtered_possible_items.values() for item in sublist]
             self.assert_access_dependency([check], all_possible_items)
