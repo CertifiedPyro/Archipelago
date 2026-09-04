@@ -138,11 +138,11 @@ def process_row(rule_strs: list[str], region_name: str, region_name2: str | None
 
             # Else, string must be an event instead.
             if region_name2 is None:
-                room1 = regions.REGION_NAME_TO_ROOM[region_name]
+                room1 = regions.get_room_by_region_name(region_name)
                 room2 = room1
             else:
-                room1 = regions.REGION_NAME_TO_ROOM[region_name]
-                room2 = regions.REGION_NAME_TO_ROOM[region_name2]
+                room1 = regions.get_room_by_region_name(region_name)
+                room2 = regions.get_room_by_region_name(region_name2)
 
             area_abbrev_start_idx = column_str.find("[")
             area_abbrev_end_idx = column_str.find("]")

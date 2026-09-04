@@ -4,8 +4,8 @@ from typing import TYPE_CHECKING
 
 from BaseClasses import Location
 
-from . import items
 from .data.locations_generated import EVENTS, LOCATIONS
+from .items import PipItem
 
 if TYPE_CHECKING:
     from .world import PipWorld
@@ -20,11 +20,11 @@ LOCATION_NAME_TO_ID = {d.full_location_name: idx + 1 for idx, d in enumerate(LOC
 
 
 def create_all_locations(world: PipWorld) -> None:
-    create_regular_locations(world)
-    create_events(world)
+    _create_regular_locations(world)
+    _create_events(world)
 
 
-def create_regular_locations(world: PipWorld) -> None:
+def _create_regular_locations(world: PipWorld) -> None:
     for idx, d in enumerate(LOCATIONS):
         loc_name_lower = d.full_location_name.lower()
         if "money bag" in loc_name_lower and not world.options.moneysanity:
@@ -37,9 +37,7 @@ def create_regular_locations(world: PipWorld) -> None:
         r.add_locations({d.full_location_name: idx + 1}, PipLocation)
 
 
-def create_events(world: PipWorld) -> None:
-    pl = PipLocation
-    pi = items.PipItem
+def _create_events(world: PipWorld) -> None:
     for d in EVENTS:
         r = world.get_region(d.region_name)
-        r.add_event(d.full_location_name, d.full_item_name, location_type=pl, item_type=pi)
+        r.add_event(d.full_location_name, d.full_item_name, location_type=PipLocation, item_type=PipItem)

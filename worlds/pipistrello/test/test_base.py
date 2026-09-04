@@ -4,9 +4,9 @@ from typing import TYPE_CHECKING, ClassVar
 
 from BaseClasses import CollectionState, Location, Region
 
+from .. import regions
 from ..data.locations_generated import LOCATIONS
 from ..options import Difficulty, Moneysanity
-from ..regions import ROOM_NAME_TO_ROOM
 from .bases import PipTestBase
 
 if TYPE_CHECKING:
@@ -58,7 +58,7 @@ class LogicTestMixinBase(_LogicTestBase):
             self.assert_access_dependency([check], all_possible_items)
 
     def _get_check(self, room_label: str, location_map_name: str | None = None) -> Location | Region:
-        room = ROOM_NAME_TO_ROOM[room_label]
+        room = regions.get_room_by_room_label(room_label)
         if location_map_name is None:
             return self.world.get_region(room.region_name)
 
