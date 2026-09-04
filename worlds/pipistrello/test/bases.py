@@ -32,6 +32,7 @@ class PipTestBase(WorldTestBase):
         all_items = [item_name for item_names in possible_items for item_name in item_names]
         event_items = [item.name for item in self.multiworld.get_items() if item.is_event]
 
+        # Ensure that checks cannot be reached if all other non-event items are collected.
         state = CollectionState(self.multiworld)
         self.collect_all_but(all_items + event_items, state)
         for check in checks:
@@ -41,6 +42,9 @@ class PipTestBase(WorldTestBase):
             )
 
         for item_names in possible_items:
+            # Reset state each time to remove all items. This ensures we aren't missing anything in possible_items.
+            state = CollectionState(self.multiworld)
+
             # Find specific item, then collect.
             # This avoids collecting all of an item, for example.
             for item_name in item_names:
