@@ -214,7 +214,7 @@ DASH_MIDAIR_UFO = HasAll("Wall-Dash", "UFO Throw") & DIFF_HARD
 DASH_MIDAIR_OFF = HasAll("Wall-Dash", "Offstring Throw") & DIFF_HARD
 TRICK_DASH = Has("Wall-Dash") & (DIFF_EXPERT | (DIFF_HARD & HasAny("Offstring Throw", "UFO Throw")))
 DROP = HasAny("Parry", "Around-the-World", "Coin-Flip") & DIFF_HARD
-SLEEPER_DROP = Has("Sleeper") & DROP & DIFF_HARD
+SLEEPER_DROP = Has("Sleeper") & HasAny("Parry", "Around-the-World") & DIFF_HARD
 
 BOMB = True_()
 BUOY = True_()
