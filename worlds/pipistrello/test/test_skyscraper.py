@@ -1,9 +1,11 @@
 from options import Difficulty
+from test.param import classvar_matrix
 
 from ..constants import Moves as M
 from .test_base import LogicTestMixinBase, TestCase, TestExpertLogic, TestHardLogic, TestNormalLogic
 
-test_cases = [
+ORIGIN_ROOM_LABEL = "SlimeCorp Skyscraper (X+0, Y-2) - lor2 (West)"
+TEST_CASES = [
     TestCase(  # Room with 2 key blocks
         room_name="SlimeCorp Skyscraper (X+3, Y-4) - lor97 (Main)",
         location_map_name=None,
@@ -20,6 +22,36 @@ test_cases = [
         possible_items={Difficulty.option_normal: [[M.OFF], [M.UFO]], Difficulty.option_hard: [[M.DASH, M.RIDE]]},
     ),
     TestCase(
+        room_name="SlimeCorp Skyscraper (X+2, Y+0) - lor16",
+        location_map_name="Moneybag 1",
+        possible_items={Difficulty.option_normal: None},
+    ),
+    TestCase(
+        room_name="SlimeCorp Skyscraper (X+1, Y-5) - lor133",
+        location_map_name="Moneybag 2",
+        possible_items={Difficulty.option_normal: [[M.OFF], [M.UFO], [M.RIDE]]},
+    ),
+    TestCase(
+        room_name="SlimeCorp Skyscraper (X+4, Y-5) - lor104",
+        location_map_name="Moneybag 3",
+        possible_items={Difficulty.option_normal: [[M.OFF], [M.UFO], [M.RIDE]]},
+    ),
+    TestCase(
+        room_name="SlimeCorp Skyscraper (X+0, Y-2) - lor2 (West)",
+        location_map_name="Musical Notes 1",
+        possible_items={Difficulty.option_normal: None},
+    ),
+    TestCase(
+        room_name="SlimeCorp Skyscraper (X+3, Y-4) - lor97 (North)",
+        location_map_name="Musical Notes 2",
+        possible_items={Difficulty.option_normal: [[M.OFF], [M.UFO], [M.RIDE]]},
+    ),
+    TestCase(
+        room_name="SlimeCorp Skyscraper (X+0, Y-5) - lor151",
+        location_map_name="Petal Container 1",
+        possible_items={Difficulty.option_normal: [[M.OFF], [M.UFO], [M.RIDE]]},
+    ),
+    TestCase(
         room_name="SlimeCorp Skyscraper (X+0, Y-4) - lor187",
         location_map_name="Staff ID",
         possible_items={Difficulty.option_normal: [[M.OFF], [M.UFO], [M.RIDE]]},
@@ -27,41 +59,19 @@ test_cases = [
 ]
 
 
-class SkyscraperLogicTestMixin(LogicTestMixinBase):
-    origin_room_label = "SlimeCorp Skyscraper (X+0, Y-2) - lor2 (West)"
-    test_cases = test_cases
-
-
-class TestSkyscraperNormalLogic(SkyscraperLogicTestMixin, TestNormalLogic):
+@classvar_matrix(test_case=TEST_CASES)
+class TestSkyscraperNormalLogic(LogicTestMixinBase, TestNormalLogic):
+    origin_room_label = ORIGIN_ROOM_LABEL
     pass
 
 
-class TestSkyscraperHardLogic(SkyscraperLogicTestMixin, TestHardLogic):
+@classvar_matrix(test_case=TEST_CASES)
+class TestSkyscraperHardLogic(LogicTestMixinBase, TestHardLogic):
+    origin_room_label = ORIGIN_ROOM_LABEL
     pass
 
 
-class TestSkyscraperExpertLogic(SkyscraperLogicTestMixin, TestExpertLogic):
+@classvar_matrix(test_case=TEST_CASES)
+class TestSkyscraperExpertLogic(LogicTestMixinBase, TestExpertLogic):
+    origin_room_label = ORIGIN_ROOM_LABEL
     pass
-
-
-# class TestSkyscraperCustomLogic(TestNormalLogic):
-#     run_default_tests = False
-#
-#     def test_starting_room(self) -> None:
-#         self._set_origin_region()
-#         start_room_east = self.world.get_region("Skyscraper (X+0, Y-2) (East)")
-#
-#         with self.subTest("Test east side of starting room is reachable with vanilla logic"):
-#             self.assertTrue(start_room_east.can_reach(self.multiworld.state))
-#
-#         with self.subTest("Test east side of starting room is reachable with alternate route"):
-#             entrance = self.world.get_entrance("Skyscraper (X+0, Y-2) (West) -> Skyscraper (X+0, Y-2) (East)")
-#             self.world.set_rule(entrance, False_())
-#             possible_items = {
-#                 "Wall-Ride + Wall-Dash": [M.RIDE, M.DASH],
-#                 "UFO Throw": [M.UFO],
-#             }
-#             self.assert_access_dependency([start_room_east], possible_items.values())
-#
-#     def _set_origin_region(self) -> None:
-#         self.world.origin_region_name = "Skyscraper (X+0, Y-2) (West)"

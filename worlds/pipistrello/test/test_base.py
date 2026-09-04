@@ -2,7 +2,7 @@
 from dataclasses import dataclass
 from typing import TYPE_CHECKING, ClassVar
 
-from BaseClasses import Location, Region
+from BaseClasses import CollectionState, Location, Region
 
 from ..data.locations_generated import LOCATIONS
 from ..options import Difficulty, Moneysanity
@@ -31,33 +31,31 @@ class TestExpertLogic(PipTestBase):
 class TestCase:
     room_name: str
     location_map_name: str | None
-    possible_items: dict[int, Iterable[Iterable[str]]]
+    possible_items: dict[int, Iterable[Iterable[str]] | None]
 
 
 class LogicTestMixinBase(_LogicTestBase):
     run_default_tests = False
 
     origin_room_label = ""
-    test_cases: ClassVar[list[TestCase]]
+    test_case: ClassVar[TestCase]
 
     def test_generic(self) -> None:
         self._set_origin_region()
+
         current_difficulty = self.options["difficulty"]
-        for test_case in self.test_cases:
-            all_possible_items = []
-            for difficulty, possible_items in test_case.possible_items.items():
-                if difficulty <= current_difficulty:
-                    all_possible_items += possible_items
+        filtered_possible_items = {k: v for k, v in self.test_case.possible_items.items() if k <= current_difficulty}
+        if len(filtered_possible_items) == 0:
+            self.skipTest(f"{self._get_test_name()} is not applicable at difficulty {current_difficulty}")
 
-            if len(all_possible_items) == 0:
-                continue
-
-            check = self._get_check(test_case.room_name, test_case.location_map_name)
-            if test_case.possible_items is None:
-                self.assertTrue(self.multiworld.state.can_reach(check))
-            else:
-                with self.subTest(check.name):
-                    self.assert_access_dependency([check], all_possible_items)
+        check = self._get_check(self.test_case.room_name, self.test_case.location_map_name)
+        if None in filtered_possible_items.values():
+            state = CollectionState(self.multiworld)
+            state.sweep_for_advancements()
+            self.assertTrue(state.can_reach(check), f"{check.name} not reachable without items")
+        else:
+            all_possible_items = [item for sublist in filtered_possible_items.values() for item in sublist]
+            self.assert_access_dependency([check], all_possible_items)
 
     def _get_check(self, room_label: str, location_map_name: str | None = None) -> Location | Region:
         room = ROOM_NAME_TO_ROOM[room_label]
@@ -75,3 +73,10 @@ class LogicTestMixinBase(_LogicTestBase):
             self.world.origin_region_name = region.name
         else:
             raise Exception(f"Could not find region from room label {self.origin_room_label}")
+
+    def _get_test_name(self) -> str:
+        return (
+            f"{self.test_case.room_name}: {self.test_case.location_map_name}"
+            if self.test_case.location_map_name
+            else self.test_case.room_name
+        )
