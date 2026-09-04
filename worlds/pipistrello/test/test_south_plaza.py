@@ -3,7 +3,6 @@ from test.param import classvar_matrix
 
 from ..constants import Badges as B
 from ..constants import Moves as M
-from ..constants import OtherItems as OI
 from .test_base import LogicTestMixinBase, TestCase, TestExpertLogic, TestHardLogic, TestNormalLogic
 
 ORIGIN_ROOM_LABEL = "South Plaza (X-2, Y-3) - ren223 (Main)"
@@ -25,7 +24,7 @@ TEST_CASES = [
     TestCase(
         room_name="South Plaza (X-2, Y+4) - yug5210",
         location_map_name="Badge (Pitcher's)",
-        possible_items={Difficulty.option_normal: [[M.DOG], [M.DASH], [M.UFO], [M.RIDE], [B.SS] + [OI.BP] * 4]},
+        possible_items={Difficulty.option_normal: [[M.DOG], [M.DASH], [M.UFO], [M.RIDE], [B.SS]]},
     ),
     TestCase(
         room_name="South Plaza (X+2, Y+4) - yug5154",
@@ -40,13 +39,13 @@ TEST_CASES = [
     TestCase(
         room_name="South Plaza (X-3, Y+3) - ren4152",
         location_map_name="Combat 2",
-        possible_items={Difficulty.option_normal: [[M.DOG], [M.UFO], [M.RIDE], [B.SS] + [OI.BP] * 4]},
+        possible_items={Difficulty.option_normal: [[M.DOG], [M.UFO], [M.RIDE], [B.SS]]},
     ),
     # Skip trivial Moneybag 1-4
     TestCase(
         room_name="South Plaza (X-2, Y-3) - ren223 (Southwest)",
         location_map_name="Moneybag 5",
-        possible_items={Difficulty.option_normal: [[M.DOG], [M.UFO], [M.RIDE], [B.SS] + [OI.BP] * 4]},
+        possible_items={Difficulty.option_normal: [[M.DOG], [M.UFO], [M.RIDE], [B.SS]]},
     ),
     TestCase(
         room_name="South Plaza (X-2, Y-3) - ren223 (Main)",
@@ -62,17 +61,17 @@ TEST_CASES = [
     TestCase(
         room_name="South Plaza (X-1, Y+4) - lor2248 (North)",
         location_map_name="Moneybag 9",
-        possible_items={Difficulty.option_normal: [[M.DOG], [M.DASH], [M.UFO], [M.RIDE], [B.SS] + [OI.BP] * 4]},
+        possible_items={Difficulty.option_normal: [[M.DOG], [M.DASH], [M.UFO], [M.RIDE], [B.SS]]},
     ),
     TestCase(
         room_name="South Plaza (X+1, Y+4) - yug4939 (West)",
         location_map_name="Moneybag 10",
-        possible_items={Difficulty.option_normal: [[M.DOG], [M.DASH], [M.UFO], [M.RIDE], [B.SS] + [OI.BP] * 4]},
+        possible_items={Difficulty.option_normal: [[M.DOG], [M.DASH], [M.UFO], [M.RIDE], [B.SS]]},
     ),
     TestCase(
         room_name="South Plaza (X+1, Y+4) - yug4939 (West)",
         location_map_name="Moneybag 11",
-        possible_items={Difficulty.option_normal: [[M.DOG], [M.DASH], [M.UFO], [M.RIDE], [B.SS] + [OI.BP] * 4]},
+        possible_items={Difficulty.option_normal: [[M.DOG], [M.DASH], [M.UFO], [M.RIDE], [B.SS]]},
     ),
     TestCase(
         room_name="South Plaza (X+1, Y+4) - yug4939 (East)",
@@ -88,7 +87,7 @@ TEST_CASES = [
                 [M.OFF, M.DASH],
                 [M.OFF, M.UFO],
                 [M.OFF, M.RIDE],
-                [M.OFF, B.SS] + [OI.BP] * 4,
+                [M.OFF, B.SS],
             ]
         },
     ),
@@ -101,14 +100,14 @@ TEST_CASES = [
                 [M.OFF, M.DASH],
                 [M.OFF, M.UFO],
                 [M.OFF, M.RIDE],
-                [M.OFF, B.SS] + [OI.BP] * 4,
+                [M.OFF, B.SS],
             ],
             Difficulty.option_expert: [
                 [M.ATW, M.DOG],
                 [M.ATW, M.DASH],
                 [M.ATW, M.UFO],
                 [M.RIDE],
-                [M.ATW, B.SS] + [OI.BP] * 4,
+                [M.ATW, B.SS],
             ],
         },
     ),

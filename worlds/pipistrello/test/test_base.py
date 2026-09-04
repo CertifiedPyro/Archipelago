@@ -1,5 +1,4 @@
-﻿from collections.abc import Iterable
-from dataclasses import dataclass
+﻿from dataclasses import dataclass
 from typing import TYPE_CHECKING, ClassVar
 
 from BaseClasses import CollectionState, Location, Region
@@ -31,7 +30,7 @@ class TestExpertLogic(PipTestBase):
 class TestCase:
     room_name: str
     location_map_name: str | None
-    possible_items: dict[int, Iterable[Iterable[str]] | None]
+    possible_items: dict[int, list[list[str]] | None]
 
 
 class LogicTestMixinBase(_LogicTestBase):
@@ -56,6 +55,11 @@ class LogicTestMixinBase(_LogicTestBase):
         else:
             all_possible_items = [item for sublist in filtered_possible_items.values() for item in sublist]
             self.assert_access_dependency([check], all_possible_items)
+
+            if current_difficulty in filtered_possible_items:
+                self.assert_no_access_dependency_combos(
+                    [check], all_possible_items, filtered_possible_items[current_difficulty]
+                )
 
     def _get_check(self, room_label: str, location_map_name: str | None = None) -> Location | Region:
         room = regions.get_room_by_room_label(room_label)
