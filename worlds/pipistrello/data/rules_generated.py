@@ -41,7 +41,9 @@ MANHOLE = True_()
 HAS_MONEY = True_()
 
 ENTRANCE_RULES: dict[str, Rule] = {
-    "Faria (X+1, Y-6) -> S Plaza (X-1, Y-6) (East)": (Has("Walk-the-Dog") | Has("Wall-Ride")),
+    "Faria (X+1, Y-6) -> S Plaza (X-1, Y-6) (East)": (
+        Has("Walk-the-Dog") | (Has("Wall-Ride") & HOOK) | (Has("Wall-Ride") & Has("Wall-Dash"))
+    ),
     "Faria (X+7, Y-6) (Main) -> Faria (X+7, Y-6) (East)": (
         COIN_FLIP_PLUS
         | (Has("Wall-Dash") & Has("Faria (X+10, Y-3): Bomb"))
@@ -67,6 +69,9 @@ ENTRANCE_RULES: dict[str, Rule] = {
     ),
     "Faria (X+8, Y-3) (Main) -> Faria (X+8, Y-3) (Dungeon Entrance)": (Has("Staff ID")),
     "Faria (X+8, Y-3) (Northwest) -> Faria (X+8, Y-3) (Northeast)": (
+        Has("Wall-Dash") | Has("UFO Throw") | Has("Wall-Ride")
+    ),
+    "Faria (X+8, Y-3) (Northeast) -> Faria (X+8, Y-3) (Northwest)": (
         Has("Wall-Dash") | Has("UFO Throw") | Has("Wall-Ride")
     ),
     "Faria (X+8, Y-3) (Southwest) -> Faria (X+8, Y-3) (Main)": (Has("Wall-Dash") | Has("UFO Throw") | Has("Wall-Ride")),
@@ -240,6 +245,7 @@ ENTRANCE_RULES: dict[str, Rule] = {
     "Faria Sewers (X+4, Y+4) -> Faria Sewers (X+6, Y+4)": (Has("Faria Sewers (X+4, Y+4): Combat 2")),
     "Faria Sewers (X+8, Y+4) (West) -> Faria Sewers (X+7, Y+4)": (Has("Faria Sewers (X+8, Y+4): Combat")),
     "Faria Sewers (X+8, Y+4) (East) -> Faria Sewers (X+8, Y+4) (West)": (Has("Wall-Dash") | Has("Wall-Ride")),
+    "Safe House (X+0, Y+0) -> Safe House (X+1, Y+0)": (Has("Faria Mega-Battery")),
     "Excavation (X-3, Y-2) -> Excavation (X+0, Y-2)": (Has("Wall-Ride")),
     "Excavation (X+0, Y-2) -> Excavation (X+3, Y-2)": (Has("Wall-Ride") & Has("Wall-Dash")),
     "Excavation (X+4, Y-2) (Main) -> Excavation (X+4, Y-2) (South Money Bag)": (
@@ -492,7 +498,10 @@ ENTRANCE_RULES: dict[str, Rule] = {
     ),
     "S Plaza (X+1, Y+4) (West) -> S Plaza (X+1, Y+4) (East)": (Has("Wall-Dash") | Has("UFO Throw") | Has("Wall-Ride")),
     "S Plaza Sewers (X-1, Y-5) -> S Plaza Sewers (X-1, Y-6)": (
-        Has("S Plaza Sewers (X-1, Y-5): Right Lever") & Has("S Plaza Sewers (X-1, Y-5): Left Lever")
+        Has("S Plaza Sewers (X-1, Y-5): Right Lever")
+        & Has("S Plaza Sewers (X-1, Y-5): Left Lever")
+        & Has("Faria Mega-Battery")
+        & Has("Excavation (X+0, Y+8): Boss")
     ),
     "S Plaza Sewers (X-1, Y+4) -> S Plaza Sewers (X-1, Y+5) (West)": (
         Has("Walk-the-Dog")

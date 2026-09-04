@@ -57,7 +57,7 @@ RULE_DICT = {
     "skippingstone+": "SS_PLUS",
     "wing": f"Has('{B.WING}')",
     # Special items
-    "megabattery": f"Has('{SI.MEGA_BATTERY_FARIA}')",
+    "mb2": f"Has('{SI.MEGA_BATTERY_FARIA}')",
     "staffid": f"Has('{SI.FARIA_STAFF_ID}')",
     # Health
     "heart+1": f"Has('{OI.PETAL}', 8)",
@@ -89,6 +89,7 @@ AREA_DICT = {
     "fsb-i": "Faria Slimer Borough (Interiors)",
     "sp": "South Plaza",
     "sp-i": "South Plaza (Interiors)",
+    "ses": "SlimeCorp Excavation Site",
 }
 
 
