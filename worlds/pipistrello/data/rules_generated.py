@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 from rule_builder.options import OptionFilter
-from rule_builder.rules import Has, HasAll, HasAny, HasFromList, Rule, True_
+from rule_builder.rules import False_, Has, HasAll, HasAny, HasFromList, Rule, True_
 
 from ..options import Difficulty
 
@@ -28,6 +28,7 @@ DASH_MIDAIR_OFF = HasAll("Wall-Dash", "Offstring Throw") & DIFF_HARD
 TRICK_DASH = Has("Wall-Dash") & (DIFF_EXPERT | (DIFF_HARD & HasAny("Offstring Throw", "UFO Throw")))
 DROP = HasAny("Parry", "Around-the-World", "Coin-Flip") & DIFF_HARD
 SLEEPER_DROP = Has("Sleeper") & HasAny("Parry", "Around-the-World") & DIFF_HARD
+YOYO_CANCEL = DIFF_EXPERT
 
 BOMB = True_()
 BUOY = True_()
@@ -66,9 +67,7 @@ ENTRANCE_RULES: dict[str, Rule] = {
     "Faria (X+4, Y-3) (Main) -> Faria (X+7, Y-4) (Main)": (
         SS_NORMAL | Has("Walk-the-Dog") | Has("Wall-Dash") | Has("UFO Throw") | Has("Wall-Ride") | DIFF_HARD
     ),
-    "Faria (X+4, Y-3) (Main) -> Faria (X+4, Y+0) (North Alcove)": (
-        Has("Wall-Dash") | Has("UFO Throw") | Has("Wall-Ride")
-    ),
+    "Faria (X+4, Y-3) (Main) -> Faria (X+4, Y+0) (North Alcove)": (Has("Wall-Dash") | Has("UFO Throw")),
     "Faria (X+8, Y-3) (Main) -> Faria (X+8, Y-3) (Dungeon Entrance)": (Has("Staff ID")),
     "Faria (X+8, Y-3) (Northwest) -> Faria (X+8, Y-3) (Northeast)": (
         Has("Wall-Dash") | Has("UFO Throw") | Has("Wall-Ride")
@@ -405,7 +404,7 @@ ENTRANCE_RULES: dict[str, Rule] = {
         | Has("Wall-Dash")
         | Has("UFO Throw")
         | SS_NORMAL
-        | DIFF_EXPERT
+        | YOYO_CANCEL
         | Has("Progressive Moon Badge")
     ),
     "Excavation (X-1, Y+7) (West) -> Excavation (X-1, Y+7) (East)": (
@@ -588,7 +587,7 @@ LOCATION_RULES: dict[str, Rule] = {
     "Faria Interiors (X+2, Y-1): BP Shard": (BOMB),
     "Faria Interiors (X+4, Y-5): BP Shard": (Has("Faria Interiors (X+4, Y-5): Key")),
     "Faria Interiors (X+8, Y-6): Key (shop)": (HAS_MONEY),
-    "Faria Interiors (X+5, Y+0): Key": (Has("Offstring Throw") | DASH_MIDAIR_UFO | DIFF_HARD),
+    "Faria Interiors (X+5, Y+0): Key": (Has("Offstring Throw") | DASH_MIDAIR_UFO | YOYO_CANCEL),
     "Faria Interiors (X+3, Y-3): Key": (Has("Offstring Throw") | (Has("UFO Throw") & TRICK_DASH & DASH_MIDAIR_UFO)),
     "Faria Interiors (X+4, Y-5): Key": (Has("Faria Interiors (X+4, Y-5): Lever")),
     "Faria Interiors (X+5, Y+0): Petal Container": (Has("Faria Interiors (X+5, Y+0): Key") & CHEST),
@@ -610,21 +609,26 @@ LOCATION_RULES: dict[str, Rule] = {
         | (Has("Faria Sewers (X+2, Y-1): Lever") & Has("Petal Container", 8) & Has("Parry"))
     ),
     "Faria Sewers (X+2, Y-5): Combat (optional)": (
-        Has("Faria Sewers (X+2, Y-5): Lever") | (Has("Progressive Wing Badge") & DIFF_HARD) | DIFF_EXPERT
+        Has("Faria Sewers (X+2, Y-5): Lever")
+        | (Has("Progressive Wing Badge") & DIFF_HARD)
+        | DIFF_EXPERT
+        | (Has("Offstring Throw") & DIFF_HARD)
+        | (COIN_FLIP_PLUS & DIFF_HARD)
+        | False_()
     ),
     "Faria Sewers (X+2, Y-5): Combat (optional) - Reward 1": (Has("Faria Sewers (X+2, Y-5): Combat (optional)")),
     "Faria Sewers (X+2, Y-5): Combat (optional) - Reward 2": (Has("Faria Sewers (X+2, Y-5): Combat (optional)")),
     "Faria Sewers (X+2, Y-5): Combat (optional) - Reward 3": (Has("Faria Sewers (X+2, Y-5): Combat (optional)")),
     "Faria Sewers (X+4, Y+4): Combat 1": (Has("Faria Sewers (X+4, Y+4): Lever")),
     "Faria Sewers (X+4, Y+4): Combat 2": (Has("Faria Sewers (X+4, Y+4): Key")),
-    "Faria Sewers (X+8, Y+4): Combat": (Has("Wall-Dash")),
+    "Faria Sewers (X+8, Y+4): Combat": (Has("Wall-Dash") | COIN_FLIP_PLUS | Has("Around-the-World")),
     "Faria Sewers (X+6, Y-1): Combat": (
         Has("Offstring Throw")
         | Has("Wall-Dash")
         | Has("UFO Throw")
         | Has("Wall-Ride")
         | MANHOLE
-        | Has("Coin-Flip")
+        | COIN_FLIP_PLUS
         | DIFF_EXPERT
     ),
     "Faria Sewers (X+7, Y+0): Combat": (
@@ -658,7 +662,7 @@ LOCATION_RULES: dict[str, Rule] = {
     "Faria Sewers (X+6, Y+3): Musical Notes - Reward 2": (Has("Faria Sewers (X+6, Y+3): Musical Notes")),
     "Faria Sewers (X+6, Y+3): Musical Notes - Reward 3": (Has("Faria Sewers (X+6, Y+3): Musical Notes")),
     "Faria Sewers (X+2, Y-1): Petal Container": (Has("Faria Sewers (X+2, Y-1): Combat")),
-    "Faria Sewers (X+8, Y-1): Petal Container": (Has("Offstring Throw")),
+    "Faria Sewers (X+8, Y-1): Petal Container": (Has("Offstring Throw") | YOYO_CANCEL),
     "Excavation (X+2, Y+4): Badge": (Has("Wall-Dash") | Has("Wall-Ride") | Has("UFO Throw")),
     "Excavation (X+5, Y-1): Badge": (BOMB & Has("Offstring Throw")),
     "Excavation (X+4, Y+3): BP Shard": (
@@ -714,8 +718,9 @@ LOCATION_RULES: dict[str, Rule] = {
     ),
     "Excavation (X-4, Y-1): Money Bag": (
         (BOMB & Has("Offstring Throw"))
-        | COIN_FLIP_PLUS
+        | (COIN_FLIP_PLUS & Has("Offstring Throw"))
         | (Has("UFO Throw") & Has("Wall-Dash") & Has("Wall-Ride") & DIFF_HARD)
+        | (COIN_FLIP_PLUS & Has("UFO Throw"))
     ),
     "Excavation (X-1, Y+1): Money Bag": (BOMB),
     "Excavation (X-3, Y+2): Money Bag": (
@@ -759,6 +764,8 @@ LOCATION_RULES: dict[str, Rule] = {
         | (Has("Wall-Dash") & Has("Coin-Flip"))
         | (Has("Wall-Dash") & Has("Around-the-World"))
         | (Has("Wall-Dash") & Has("Merry-Go-Round"))
+        | (Has("Wall-Dash") & Has("Progressive Mist Badge", 2) & Has("Petal Container", 24) & DIFF_HARD)
+        | (Has("Wall-Dash") & Has("Progressive Mist Badge", 2) & DIFF_EXPERT)
     ),
     "Skyscraper (X+4, Y-1): Badge": (
         (Has("Skyscraper (X+4, Y-1): Key") & COG & Has("Offstring Throw"))
@@ -767,14 +774,13 @@ LOCATION_RULES: dict[str, Rule] = {
     "Skyscraper (X+2, Y-2): Combat": (COG),
     "Skyscraper (X+1, Y-4): Combat": (COG & Has("Offstring Throw")),
     "Skyscraper (X+4, Y-1): Key": (COG & Has("Offstring Throw")),
-    "Skyscraper (X+2, Y-1): Key": ((COG & Has("Offstring Throw")) | Has("Wall-Dash") | Has("Progressive Moon Badge")),
+    "Skyscraper (X+2, Y-1): Key": (
+        (COG & Has("Offstring Throw")) | Has("Wall-Dash") | Has("Progressive Moon Badge") | (COG & DIFF_EXPERT)
+    ),
     "Skyscraper (X+1, Y-5): Key": (COG & Has("Offstring Throw")),
     "Skyscraper (X+4, Y-5): Key": ((COG & Has("Offstring Throw")) | (COG & DIFF_HARD) | Has("UFO Throw")),
     "Skyscraper (X+1, Y-5): Money Bag (secret)": (
-        COG
-        | (Has("Wall-Ride") & Has("Wall-Dash"))
-        | (Has("Wall-Ride") & Has("UFO Throw"))
-        | (Has("Wall-Ride") & DIFF_EXPERT)
+        COG | (Has("Wall-Ride") & Has("Wall-Dash")) | (Has("Wall-Ride") & Has("UFO Throw"))
     ),
     "Skyscraper (X+4, Y-5): Money Bag (secret)": ((COG & Has("Offstring Throw")) | Has("UFO Throw") | Has("Wall-Ride")),
     "Skyscraper (X+0, Y-2): Musical Notes - Reward": (Has("Skyscraper (X+0, Y-2): Musical Notes")),

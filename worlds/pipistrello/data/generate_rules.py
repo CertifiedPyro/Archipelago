@@ -50,12 +50,12 @@ RULE_DICT = {
     "flip+": "COIN_FLIP_PLUS",
     "coinflip+": "COIN_FLIP_PLUS",
     # Badges
+    "wing": f"Has('{B.WING}')",
+    "mist+": f"Has('{B.MIST}', 2)",
     "moon": f"Has('{B.MOON}')",
     "ss": "SS_NORMAL",
-    "skippingstone": "SS_NORMAL",
     "ss+": "SS_PLUS",
-    "skippingstone+": "SS_PLUS",
-    "wing": f"Has('{B.WING}')",
+    "turret": "False_()",
     # Special items
     "mb2": f"Has('{SI.MEGA_BATTERY_FARIA}')",
     "staffid": f"Has('{SI.FARIA_STAFF_ID}')",
@@ -82,7 +82,9 @@ RULE_DICT = {
     "trick-dash": "TRICK_DASH",
     "drop": "DROP",
     "sleeper-drop": "SLEEPER_DROP",
+    "yoyo-cancel": "YOYO_CANCEL",
 }
+
 
 AREA_DICT = {
     "fsb": "Faria Slimer Borough",
@@ -192,7 +194,7 @@ def write_connection_rules(entrance_rules: dict[str, str], location_rules: dict[
 from __future__ import annotations
 
 from rule_builder.options import OptionFilter
-from rule_builder.rules import Has, HasAll, HasAny, HasFromList, Rule, True_
+from rule_builder.rules import False_, Has, HasAll, HasAny, HasFromList, Rule, True_
 
 from ..options import Difficulty
 
@@ -217,6 +219,7 @@ DASH_MIDAIR_OFF = HasAll("Wall-Dash", "Offstring Throw") & DIFF_HARD
 TRICK_DASH = Has("Wall-Dash") & (DIFF_EXPERT | (DIFF_HARD & HasAny("Offstring Throw", "UFO Throw")))
 DROP = HasAny("Parry", "Around-the-World", "Coin-Flip") & DIFF_HARD
 SLEEPER_DROP = Has("Sleeper") & HasAny("Parry", "Around-the-World") & DIFF_HARD
+YOYO_CANCEL = DIFF_EXPERT
 
 BOMB = True_()
 BUOY = True_()

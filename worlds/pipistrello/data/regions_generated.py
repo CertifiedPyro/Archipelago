@@ -2489,7 +2489,7 @@ CONNECTIONS: list[ConnectionData] = [
     ConnectionData(
         start_region_name="Faria (X+4, Y-3) (Main)",
         end_region_name="Faria (X+4, Y+0) (North Alcove)",
-        rule_strs=["dash", "ufo", "ride"],
+        rule_strs=["dash", "ufo"],
     ),
     ConnectionData(
         start_region_name="Faria (X+4, Y-3) (Main)", end_region_name="Faria Interiors (X+7, Y-3)", rule_strs=[]
@@ -3717,7 +3717,7 @@ CONNECTIONS: list[ConnectionData] = [
     ConnectionData(
         start_region_name="Excavation (X-1, Y+7) (West)",
         end_region_name="Excavation (X-2, Y+7) (Key)",
-        rule_strs=["walk", "dash", "ufo", "ss", "expert", "moon"],
+        rule_strs=["walk", "dash", "ufo", "ss", "yoyo-cancel", "moon"],
     ),
     ConnectionData(
         start_region_name="Excavation (X-1, Y+7) (West)",

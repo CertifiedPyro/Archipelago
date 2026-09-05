@@ -66,7 +66,7 @@ TEST_CASES = [
         possible_items={
             Difficulty.option_normal: [
                 [M.RIDE, M.OFF],
-                [M.RIDE, M.COINFLIP, U.PRODIGY],
+                [M.RIDE, M.COINFLIP, U.PRODIGY, M.UFO],
             ],
             Difficulty.option_hard: [[M.RIDE, M.DASH, M.UFO]],
         },
