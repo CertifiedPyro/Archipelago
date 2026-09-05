@@ -8,8 +8,15 @@ class Difficulty(Choice):
     Determines the logic difficulty.
 
     - **Normal**: Vanilla difficulty logic.
-    - **Hard**: May require solo trick buttons, somewhat tight timings, or unusual solutions.
-    - **Expert**: May require difficult yoyo tricks (e.g. Wall-Ride around corners), or very tight timings.
+    - **Hard**: More difficult, but consistent tricks. Requires the following knowledge:
+      - Binding abilities to solo buttons and unbinding "Walk-the-Dog (+ Trick)" is required for most of these tricks.
+      - Dash-Throw: Wall-Dash + midair UFO Throw or Offstring Throw. Timing is very lenient.
+      - Trick-Dash: UFO Throw or Offstring Throw near a wall to perform a Wall-Dash while keeping an item on the yoyo.
+      - Drop: Input any Special Move to drop a held item slightly behind you.
+      - Sleeper-Drop: Hold an item with Sleeper, then use Parry or Around-the-World to drop the item near the yoyo.
+    - **Expert**: Very difficult tricks. Requires the following knowledge:
+      - Midair UFO Throw: Perform a midair UFO Throw after jumping. Timing is very tight.
+      - Hard Trick-Dash: Hold trick stance when Wall-Dashing, then release trick stance.
     """
 
     display_name = "Difficulty"
@@ -56,13 +63,13 @@ class PipOptions(PerGameCommonOptions):
 #     ),
 # ]
 
-option_presets = {
-    "normal": {
-        "difficulty": Difficulty.option_normal,
-        "moneysanity": False,
-    },
-    "hard": {
-        "difficulty": Difficulty.option_hard,
-        "moneysanity": True,
-    },
-}
+# option_presets = {
+#     "normal": {
+#         "difficulty": Difficulty.option_normal,
+#         "moneysanity": False,
+#     },
+#     "hard": {
+#         "difficulty": Difficulty.option_hard,
+#         "moneysanity": True,
+#     },
+# }

@@ -16,6 +16,10 @@ The goal is to reach North Plaza via the sewers. In addition to hitting the 2 le
 - Obtain the Faria Mega-Battery
 - Defeat the Slime Tycoon in SlimeCorp Excavation Site
 
+You can also pick from several levels of logic difficulty.
+Make sure you read the description of the difficulty setting in the options yaml before selecting a difficulty above
+Normal.
+
 ## What items get shuffled?
 
 By default, the following items are in the item pool:

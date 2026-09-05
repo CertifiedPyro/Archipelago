@@ -211,7 +211,7 @@ COIN_FLIP_PLUS = HasAll("Coin-Flip", "Prodigy")
 SS_PLUS = Has("Progressive Skipping Stone Badge", 2) & BP_PLUS1  # Requires 4 BP (from base 3 BP)
 SS_NORMAL = SS_PLUS | (Has("Progressive Skipping Stone Badge", 1) & BP_PLUS2)  # Requires 5 BP (from base 3 BP)
 
-MID_AIR_UFO = Has("UFO Throw") & DIFF_HARD
+MID_AIR_UFO = Has("UFO Throw") & DIFF_EXPERT
 DASH_MIDAIR_UFO = HasAll("Wall-Dash", "UFO Throw") & DIFF_HARD
 DASH_MIDAIR_OFF = HasAll("Wall-Dash", "Offstring Throw") & DIFF_HARD
 TRICK_DASH = Has("Wall-Dash") & (DIFF_EXPERT | (DIFF_HARD & HasAny("Offstring Throw", "UFO Throw")))
