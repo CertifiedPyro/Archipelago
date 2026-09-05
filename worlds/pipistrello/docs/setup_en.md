@@ -47,10 +47,10 @@ Follow [the official instructions](https://archipelago.gg/tutorial/Archipelago/s
     1. Note: the password field is **not protected** and is fully visible.
 3. Press the **Connect** button in-game.
 4. Once connected, you can press **Load Game**.
-5. Start with a *new* save file. The game will stall for a few seconds before loading.
+5. Start with a *new* save file. The game will stall for a few seconds while loading.
 6. You should now be loaded directly into South Plaza!
 
 ## Hints and trackers
 
-There is no visual tracker yet, so please use Universal Tracker for now. In Universal Tracker. locations are sorted by
-area (in logical order).
+There is no visual tracker yet, so please use Universal Tracker for now. In Universal Tracker, locations are sorted by
+area in logical order, then by X and Y coordinates.
