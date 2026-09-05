@@ -443,7 +443,7 @@ Room Label 1,Exit,Room Label 2,↔️,Rules,Edit,Idx1,Idx2,✅,Rule 1,Rule 2,Rul
 "Faria Slimer Borough (X+4, Y-6) - yug173",right,"Faria Slimer Borough (X+7, Y-6) - yug171 (Main)",TRUE,FALSE,8/3/2026 15:17:37,194,195,TRUE,,,,,,,,,,,,,,,,
 "Faria Slimer Borough (X+4, Y-6) - yug173",down,"Faria Slimer Borough (X+4, Y-5) - yug208 (North)",TRUE,FALSE,8/3/2026 15:17:41,194,200,TRUE,,,,,,,,,,,,,,,,
 "Faria Slimer Borough (X+4, Y-6) - yug173",down,"Faria Slimer Borough (X+6, Y-5) - yug23",FALSE,FALSE,8/4/2026 21:36:25,194,203,TRUE,,,,,,,,,,,,,,,,
-"Faria Slimer Borough (X+7, Y-6) - yug171 (Main)",right,"Faria Slimer Borough (X+7, Y-6) - yug171 (East)",FALSE,TRUE,8/5/2026 19:45:27,195,196,TRUE,flip+,"dash, Bomb 1","ufo, Bomb 1","ride, Bomb 1",,,,FALSE,FALSE,FALSE,Bomb 1,Bomb 1,Bomb 1,Coin-Flip + Prodigy,FALSE,Possible without abilities w/ taxi phones and either north region reached
+"Faria Slimer Borough (X+7, Y-6) - yug171 (Main)",right,"Faria Slimer Borough (X+7, Y-6) - yug171 (East)",FALSE,TRUE,9/4/2026 23:27:34,195,196,TRUE,flip+,"dash, Bomb 1","ufo, Bomb 1","ride, Bomb 1","hard, Bomb 1",,,FALSE,FALSE,FALSE,Bomb 1,Bomb 1,Bomb 1,Coin-Flip + Prodigy,FALSE,"Bomb only requires fast travel from TP3 to TP1, then going up"
 "Faria Slimer Borough (X+7, Y-6) - yug171 (Main)",down,"Faria Slimer Borough (X+7, Y-5) - yug3458",TRUE,FALSE,8/4/2026 14:00:30,195,204,TRUE,,,,,,,,,,,,,,,,
 "Faria Slimer Borough (X+7, Y-6) - yug171 (East)",left,"Faria Slimer Borough (X+7, Y-6) - yug171 (Main)",FALSE,FALSE,8/3/2026 16:10:56,196,195,TRUE,,,,,,,,,,,,,,,,
 "Faria Slimer Borough (X+7, Y-6) - yug171 (East)",warp (up),"Faria Slimer Borough (Interiors) (X+6, Y-6) - yug134",TRUE,FALSE,8/3/2026 16:23:58,196,277,TRUE,,,,,,,,,,,,,,,,
@@ -451,9 +451,9 @@ Room Label 1,Exit,Room Label 2,↔️,Rules,Edit,Idx1,Idx2,✅,Rule 1,Rule 2,Rul
 "Faria Slimer Borough (X+9, Y-6) - yug3411",up,"Faria Slimer Borough (X+9, Y-7) - yug3435",TRUE,FALSE,8/4/2026 16:38:52,198,191,TRUE,,,,,,,,,,,,,,,,
 "Faria Slimer Borough (X+3, Y-5) - yug20",up,"Faria Slimer Borough (X+3, Y-6) - yug1263",TRUE,FALSE,8/2/2026 21:03:32,199,193,TRUE,,,,,,,,,,,,,,,,
 "Faria Slimer Borough (X+3, Y-5) - yug20",down,"Faria Slimer Borough (X+3, Y-4) - yug19",FALSE,FALSE,8/16/2026 12:42:56,199,210,TRUE,,,,,,,,,,,,,,,,
-"Faria Slimer Borough (X+4, Y-5) - yug208 (North)",down,"Faria Slimer Borough (X+4, Y-5) - yug208 (South)",FALSE,TRUE,8/2/2026 22:10:39,200,201,TRUE,Lever 4,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Lever 4,
+"Faria Slimer Borough (X+4, Y-5) - yug208 (North)",down,"Faria Slimer Borough (X+4, Y-5) - yug208 (South)",TRUE,TRUE,9/4/2026 22:46:30,200,201,TRUE,Lever 4,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Lever 4,
 "Faria Slimer Borough (X+4, Y-5) - yug208 (North)",warp (up),"Faria Slimer Borough (Interiors) (X+4, Y-5) - yug47",TRUE,FALSE,8/2/2026 22:08:52,200,279,TRUE,,,,,,,,,,,,,,,,Use debris from room above to hold down button
-"Faria Slimer Borough (X+4, Y-5) - yug208 (South)",left,"Faria Slimer Borough (X+3, Y-4) - yug19",FALSE,FALSE,8/16/2026 12:46:09,201,210,TRUE,,,,,,,,,,,,,,,,
+"Faria Slimer Borough (X+4, Y-5) - yug208 (South)",left,"Faria Slimer Borough (X+3, Y-4) - yug19",FALSE,FALSE,9/4/2026 22:46:35,201,210,TRUE,,,,,,,,,,,,,,,,
 "Faria Slimer Borough (X+5, Y-5) - yug183",down,"Faria Slimer Borough (X+5, Y-4) - yug190",FALSE,FALSE,8/3/2026 15:41:23,202,211,TRUE,,,,,,,,,,,,,,,,
 "Faria Slimer Borough (X+6, Y-5) - yug23",left,"Faria Slimer Borough (X+5, Y-5) - yug183",FALSE,TRUE,8/3/2026 15:30:22,203,202,TRUE,Key 1,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Key 1,
 "Faria Slimer Borough (X+6, Y-5) - yug23",down,"Faria Slimer Borough (X+6, Y-4) - yug187",FALSE,FALSE,8/3/2026 15:26:18,203,212,TRUE,,,,,,,,,,,,,,,,
@@ -534,7 +534,7 @@ Room Label 1,Exit,Room Label 2,↔️,Rules,Edit,Idx1,Idx2,✅,Rule 1,Rule 2,Rul
 "Faria Slimer Borough (X+9, Y+2) - yug22",left,"Faria Slimer Borough (X+8, Y+2) - yug15",TRUE,FALSE,8/8/2026 19:21:41,248,247,TRUE,,,,,,,,,,,,,,,,
 "Faria Slimer Borough (X+10, Y+2) - lor2334 (Main)",up,"Faria Slimer Borough (X+10, Y+2) - lor2334 (Northeast)",FALSE,TRUE,8/6/2026 21:34:02,249,250,TRUE,"dog, ss",dash,"ufo, ss+","ride, ss+",,,,FALSE,FALSE,Skipping Stone,TRUE,Skipping Stone+,Skipping Stone+,FALSE,FALSE,
 "Faria Slimer Borough (X+10, Y+2) - lor2334 (Main)",right,"Faria Slimer Borough (X+11, Y+2) - lor2872",FALSE,TRUE,8/6/2026 21:37:14,249,251,TRUE,dog,dash,midair ufo,"ufo, ss","ride, ss",,,FALSE,FALSE,TRUE,TRUE,Midair OR Skipping Stone,Skipping Stone,FALSE,FALSE,
-"Faria Slimer Borough (X+10, Y+2) - lor2334 (Main)",down,"Faria Slimer Borough (X+10, Y+4) - yug4122",FALSE,TRUE,8/30/2026 0:43:56,249,268,TRUE,dog,"dash, ss+, ride","midair ufo, ss+","dash-midair-ufo, ss+","ufo, dash, ss+","ufo, dash, ride, ss",,FALSE,FALSE,TRUE,Skipping Stone+ AND Wall-Ride,Midair UFO AND Skipping Stone+,FALSE,FALSE,FALSE,"- SS -> dash off right buoy -> wall-ride + SS
+"Faria Slimer Borough (X+10, Y+2) - lor2334 (Main)",down,"Faria Slimer Borough (X+10, Y+4) - yug4122",FALSE,TRUE,9/4/2026 22:11:05,249,268,TRUE,dog,"dash, ride, hard","midair ufo, ss","dash-midair-ufo, ss","ufo, dash, ss+","dash, ride, ss+",,FALSE,FALSE,TRUE,Skipping Stone+ AND Wall-Ride,Midair UFO AND Skipping Stone+,FALSE,FALSE,FALSE,"- SS -> dash off right buoy -> wall-ride + SS
 - SS -> midair ufo off bottom-right corner
 - UFO -> dash off right buoy -> SS+
 - UFO -> dash off right buoy -> wall-ride + SS"
@@ -547,7 +547,7 @@ Room Label 1,Exit,Room Label 2,↔️,Rules,Edit,Idx1,Idx2,✅,Rule 1,Rule 2,Rul
 "Faria Slimer Borough (X+4, Y+3) - yug2 (East)",left,"Faria Slimer Borough (X+4, Y+3) - yug2 (West)",TRUE,TRUE,8/8/2026 17:08:08,255,254,TRUE,Staff ID,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Staff ID,
 "Faria Slimer Borough (X+5, Y+3) - yug2165",right,"Faria Slimer Borough (X+6, Y+3) - yug2099 (North)",FALSE,TRUE,8/8/2026 19:10:48,256,257,TRUE,Combat 8,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Combat 8,
 "Faria Slimer Borough (X+6, Y+3) - yug2099 (South)",left,"Faria Slimer Borough (X+5, Y+3) - yug2165",FALSE,FALSE,8/8/2026 19:06:53,258,256,TRUE,,,,,,,,,,,,,,,,
-"Faria Slimer Borough (X+7, Y+3) - yug9",up,"Faria Slimer Borough (X+4, Y+0) - yug27 (Main)",FALSE,FALSE,8/8/2026 18:55:39,259,239,TRUE,,,,,,,,,,,,,,,,
+"Faria Slimer Borough (X+7, Y+3) - yug9",up,"Faria Slimer Borough (X+4, Y+0) - yug27 (Main)",TRUE,TRUE,9/4/2026 22:52:20,259,239,TRUE,Button 1,,,,,,,,,,,,,,,
 "Faria Slimer Borough (X+7, Y+3) - yug9",up,"Faria Slimer Borough (X+9, Y+2) - yug22",FALSE,TRUE,8/8/2026 19:15:37,259,248,TRUE,Lever 5,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Lever 5,
 "Faria Slimer Borough (X+7, Y+3) - yug9",left,"Faria Slimer Borough (X+6, Y+3) - yug2099 (South)",FALSE,FALSE,8/8/2026 19:02:54,259,258,TRUE,,,,,,,,,,,,,,,,
 "Faria Slimer Borough (X+3, Y+4) - yug4250",left,"Faria Slimer Borough (X+1, Y+5) - yug4288",FALSE,TRUE,8/16/2026 12:49:27,260,270,TRUE,Combat 6,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,Combat 6,

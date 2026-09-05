@@ -8,7 +8,7 @@ class Difficulty(Choice):
     Determines the logic difficulty.
 
     - **Normal**: Vanilla difficulty logic.
-    - **Hard**: More difficult, but consistent tricks. Requires the following knowledge:
+    - **Hard**: More difficult but consistent tricks, or unusual solutions. Requires the following knowledge:
       - Binding abilities to solo buttons and unbinding "Walk-the-Dog (+ Trick)" is required for most of these tricks.
       - Dash-Throw: Wall-Dash + midair UFO Throw or Offstring Throw. Timing is very lenient.
       - Trick-Dash: UFO Throw or Offstring Throw near a wall to perform a Wall-Dash while keeping an item on the yoyo.

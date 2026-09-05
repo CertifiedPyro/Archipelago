@@ -498,7 +498,7 @@ LOCATIONS: list[LocationData] = [
         global_object_id="city/yug4122/yug4760",
         map_name="Moneybag 15",
         room_area="Faria Slimer Borough",
-        rule_strs=["dog", "dash, ss+", "ride, ss"],
+        rule_strs=["dog", "dash, ss+", "ride, ss", "dash, ride"],
     ),
     LocationData(
         region_name="Faria (X+10, Y+4)",
@@ -506,7 +506,7 @@ LOCATIONS: list[LocationData] = [
         global_object_id="city/yug4122/yug5561",
         map_name="Moneybag 15",
         room_area="Faria Slimer Borough",
-        rule_strs=["dog", "dash, ss+", "ride, ss"],
+        rule_strs=["dog", "dash, ss+", "ride, ss", "dash, ride"],
     ),
     LocationData(
         region_name="Faria (X+7, Y+4) (South)",
@@ -618,7 +618,7 @@ LOCATIONS: list[LocationData] = [
         global_object_id="city/yug22/yug2381",
         map_name="Petal Container 3",
         room_area="Faria Slimer Borough",
-        rule_strs=["flip+", "dash, Bomb 1", "ufo, Bomb 1", "ride, Bomb 1"],
+        rule_strs=["flip+", "dash, Bomb 1", "ufo, Bomb 1", "ride, Bomb 1", "hard, Bomb 1, Button 1, Lever 5"],
     ),
     LocationData(
         region_name="Faria (X+3, Y+3)",
@@ -1426,7 +1426,7 @@ LOCATIONS: list[LocationData] = [
         global_object_id="dungeon2/lor672/lor700",
         map_name="Moneybag 24",
         room_area="SlimeCorp Excavation Site",
-        rule_strs=[],
+        rule_strs=["none"],
     ),
     LocationData(
         region_name="Excavation (X-2, Y+4) (Southeast)",
@@ -1688,6 +1688,14 @@ EVENTS: list[EventData] = [
         rule_strs=[],
     ),
     EventData(
+        region_name="Faria (X+7, Y+3)",
+        full_location_name="Faria (X+7, Y+3): Button",
+        global_object_id="city/yug9/yug11",
+        map_name="Button 1",
+        room_area="Faria Slimer Borough",
+        rule_strs=[],
+    ),
+    EventData(
         region_name="Faria (X+3, Y-4)",
         full_location_name="Faria (X+3, Y-4): Combat",
         global_object_id="city/yug19/yug1153",
@@ -1789,7 +1797,7 @@ EVENTS: list[EventData] = [
         global_object_id="city/yug2715/yug2732",
         map_name="Lever 3",
         room_area="Faria Slimer Borough",
-        rule_strs=["off, Lever 1, Lever 2", "ride, Lever 1, Lever 2"],
+        rule_strs=["off, Lever 1, Lever 2", "ride, Lever 1, Lever 2", "dash-midair-ufo, Lever 1, Lever 2"],
     ),
     EventData(
         region_name="Faria (X+4, Y-5) (North)",
@@ -1869,7 +1877,7 @@ EVENTS: list[EventData] = [
         global_object_id="city_interiors/lor296/lor298",
         map_name="Key 1",
         room_area="Faria Slimer Borough (Interiors)",
-        rule_strs=["off", "dash-midair-ufo"],
+        rule_strs=["off", "dash-midair-ufo", "hard"],
     ),
     EventData(
         region_name="Faria Interiors (X+7, Y-3)",
@@ -1957,11 +1965,7 @@ EVENTS: list[EventData] = [
         global_object_id="city_underground/yug912/yug922",
         map_name="Button 3",
         room_area="Faria Slimer Borough (Sewers)",
-        rule_strs=[
-            "off, [FSB-I] Key (shop)",
-            "midair ufo, [FSB-I] Key (shop)",
-            "trick-dash, dash-midair-ufo, [FSB-I] Key (shop)",
-        ],
+        rule_strs=["off, [FSB-I] Key (shop)"],
     ),
     EventData(
         region_name="Faria Sewers (X+8, Y-6) (Northwest)",
@@ -1977,7 +1981,12 @@ EVENTS: list[EventData] = [
         global_object_id="city_underground/yug912/yug920",
         map_name="Button 5",
         room_area="Faria Slimer Borough (Sewers)",
-        rule_strs=["off, [FSB-I] Key (shop)"],
+        rule_strs=[
+            "off, [FSB-I] Key (shop)",
+            "midair ufo, [FSB-I] Key (shop)",
+            "trick-dash, dash-midair-ufo, [FSB-I] Key (shop)",
+            "trick-dash, expert, [FSB-I] Key (shop)",
+        ],
     ),
     EventData(
         region_name="Faria Sewers (X+2, Y-1)",

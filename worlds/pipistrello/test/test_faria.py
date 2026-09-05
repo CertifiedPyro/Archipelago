@@ -4,6 +4,7 @@ from test.param import classvar_matrix
 from ..constants import Badges as B
 from ..constants import Moves as M
 from ..constants import SpecialItems as SI
+from ..constants import Upgrades as U
 from .test_base import LogicTestMixinBase, TestCase, TestExpertLogic, TestHardLogic, TestNormalLogic
 
 ORIGIN_ROOM_LABEL = "South Plaza (X-2, Y-3) - ren223 (Main)"
@@ -36,6 +37,21 @@ TEST_CASES = [
         possible_items={
             Difficulty.option_normal: [[M.DOG, M.DASH], [M.DOG, M.RIDE], [M.DOG, M.UFO]],
             Difficulty.option_hard: [[M.DASH, M.RIDE, B.SS], [M.RIDE, B.SS, B.SS]],
+        },
+    ),
+    TestCase(
+        room_label="Faria Slimer Borough (X+9, Y+2) - yug22",
+        location_map_name="Petal Container 3",
+        possible_items={
+            Difficulty.option_normal: [[M.COINFLIP, U.PRODIGY], [M.DASH], [M.RIDE], [M.UFO]],
+        },
+    ),
+
+    TestCase(
+        room_label="Faria Slimer Borough (Interiors) (X+6, Y-6) - yug134",
+        location_map_name="Petal Container 4",
+        possible_items={
+            Difficulty.option_normal: [[M.COINFLIP, U.PRODIGY], [M.DASH], [M.RIDE], [M.UFO]],
         },
     ),
 ]

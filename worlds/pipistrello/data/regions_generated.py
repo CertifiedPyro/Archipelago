@@ -2379,7 +2379,7 @@ CONNECTIONS: list[ConnectionData] = [
     ConnectionData(
         start_region_name="Faria (X+7, Y-6) (Main)",
         end_region_name="Faria (X+7, Y-6) (East)",
-        rule_strs=["flip+", "dash, Bomb 1", "ufo, Bomb 1", "ride, Bomb 1"],
+        rule_strs=["flip+", "dash, Bomb 1", "ufo, Bomb 1", "ride, Bomb 1", "hard, Bomb 1"],
     ),
     ConnectionData(start_region_name="Faria (X+7, Y-6) (Main)", end_region_name="Faria (X+7, Y-5)", rule_strs=[]),
     ConnectionData(start_region_name="Faria (X+7, Y-5)", end_region_name="Faria (X+7, Y-6) (Main)", rule_strs=[]),
@@ -2401,6 +2401,9 @@ CONNECTIONS: list[ConnectionData] = [
     ConnectionData(start_region_name="Faria (X+3, Y-5)", end_region_name="Faria (X+3, Y-4)", rule_strs=[]),
     ConnectionData(
         start_region_name="Faria (X+4, Y-5) (North)", end_region_name="Faria (X+4, Y-5) (South)", rule_strs=["Lever 4"]
+    ),
+    ConnectionData(
+        start_region_name="Faria (X+4, Y-5) (South)", end_region_name="Faria (X+4, Y-5) (North)", rule_strs=["Lever 4"]
     ),
     ConnectionData(
         start_region_name="Faria (X+4, Y-5) (North)", end_region_name="Faria Interiors (X+4, Y-5)", rule_strs=[]
@@ -2732,11 +2735,11 @@ CONNECTIONS: list[ConnectionData] = [
         end_region_name="Faria (X+10, Y+4)",
         rule_strs=[
             "dog",
-            "dash, ss+, ride",
-            "midair ufo, ss+",
-            "dash-midair-ufo, ss+",
+            "dash, ride, hard",
+            "midair ufo, ss",
+            "dash-midair-ufo, ss",
             "ufo, dash, ss+",
-            "ufo, dash, ride, ss",
+            "dash, ride, ss+",
         ],
     ),
     ConnectionData(
@@ -2774,7 +2777,12 @@ CONNECTIONS: list[ConnectionData] = [
         start_region_name="Faria (X+5, Y+3)", end_region_name="Faria (X+6, Y+3) (North)", rule_strs=["Combat 8"]
     ),
     ConnectionData(start_region_name="Faria (X+6, Y+3) (South)", end_region_name="Faria (X+5, Y+3)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+7, Y+3)", end_region_name="Faria (X+4, Y+0) (Main)", rule_strs=[]),
+    ConnectionData(
+        start_region_name="Faria (X+7, Y+3)", end_region_name="Faria (X+4, Y+0) (Main)", rule_strs=["Button 1"]
+    ),
+    ConnectionData(
+        start_region_name="Faria (X+4, Y+0) (Main)", end_region_name="Faria (X+7, Y+3)", rule_strs=["Button 1"]
+    ),
     ConnectionData(start_region_name="Faria (X+7, Y+3)", end_region_name="Faria (X+9, Y+2)", rule_strs=["Lever 5"]),
     ConnectionData(start_region_name="Faria (X+7, Y+3)", end_region_name="Faria (X+6, Y+3) (South)", rule_strs=[]),
     ConnectionData(start_region_name="Faria (X+3, Y+4)", end_region_name="Faria (X+1, Y+5)", rule_strs=["Combat 6"]),
