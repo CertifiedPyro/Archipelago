@@ -43,7 +43,7 @@ class ItemTypes:
         ItemData(M.SLEEPER, IC.progression),
         ItemData(M.FLURRY, IC.useful),
         ItemData(M.CAT, IC.progression),
-        # ItemData(M.MERRY, IC.useful),  # Unused charged move
+        ItemData(M.MERRY, IC.useful),  # Unused charged move
     ]
     SPECIAL_MOVES: typing.ClassVar[list[ItemData]] = [
         ItemData(M.PARRY, IC.progression),

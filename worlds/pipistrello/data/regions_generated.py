@@ -3471,7 +3471,14 @@ CONNECTIONS: list[ConnectionData] = [
         rule_strs=["ride"],
     ),
     ConnectionData(
-        start_region_name="Excavation (X-2, Y+4) (South)", end_region_name="Excavation (X-2, Y+4) (Lever)", rule_strs=[]
+        start_region_name="Excavation (X-2, Y+4) (South)",
+        end_region_name="Excavation (X-2, Y+4) (Lever)",
+        rule_strs=["none"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-2, Y+4) (Southeast)",
+        end_region_name="Excavation (X-2, Y+4) (Lever)",
+        rule_strs=["ride"],
     ),
     ConnectionData(
         start_region_name="Excavation (X+0, Y+4) (Main)",

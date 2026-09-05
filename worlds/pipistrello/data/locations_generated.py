@@ -1514,7 +1514,7 @@ LOCATIONS: list[LocationData] = [
         global_object_id="dungeon2/lor533/lor601",
         map_name="Petal Container 1",
         room_area="SlimeCorp Excavation Site",
-        rule_strs=["off", "hard", "atw", "flip+", "dash, ufo"],
+        rule_strs=["off", "hard", "atw", "merry", "flip+", "dash, ufo"],
     ),
     LocationData(
         region_name="Excavation (X-4, Y+6) (West)",
@@ -1530,7 +1530,7 @@ LOCATIONS: list[LocationData] = [
         global_object_id="dungeon2/lor856/lor858",
         map_name="Petal Container 3",
         room_area="SlimeCorp Excavation Site",
-        rule_strs=["ufo", "ride", "dash, off", "dash, flip", "dash, atw"],
+        rule_strs=["ufo", "ride", "dash, off", "dash, flip", "dash, atw", "dash, merry"],
     ),
 ]
 

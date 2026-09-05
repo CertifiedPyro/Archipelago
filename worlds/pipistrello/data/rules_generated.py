@@ -339,6 +339,7 @@ ENTRANCE_RULES: dict[str, Rule] = {
     "Excavation (X-2, Y+4) (Southeast) -> Excavation (X-2, Y+4) (South)": (Has("Excavation (X-2, Y+4): Lever")),
     "Excavation (X-2, Y+4) (South) -> Excavation (X-3, Y+6) (West)": (Has("Wall-Ride")),
     "Excavation (X-3, Y+6) (West) -> Excavation (X-2, Y+4) (South)": (Has("Wall-Ride")),
+    "Excavation (X-2, Y+4) (Southeast) -> Excavation (X-2, Y+4) (Lever)": (Has("Wall-Ride")),
     "Excavation (X+0, Y+4) (Main) -> Excavation (X+0, Y+4) (Southeast)": (
         (Has("Excavation (X+0, Y+4): Lever") & Has("Wall-Dash")) | Has("Wall-Ride") | Has("UFO Throw")
     ),
@@ -729,6 +730,7 @@ LOCATION_RULES: dict[str, Rule] = {
         Has("Offstring Throw")
         | DIFF_HARD
         | Has("Around-the-World")
+        | Has("Merry-Go-Round")
         | COIN_FLIP_PLUS
         | (Has("Wall-Dash") & Has("UFO Throw"))
     ),
@@ -738,6 +740,7 @@ LOCATION_RULES: dict[str, Rule] = {
         | (Has("Wall-Dash") & Has("Offstring Throw"))
         | (Has("Wall-Dash") & Has("Coin-Flip"))
         | (Has("Wall-Dash") & Has("Around-the-World"))
+        | (Has("Wall-Dash") & Has("Merry-Go-Round"))
     ),
     "Skyscraper (X+4, Y-1): Badge": (
         (Has("Skyscraper (X+4, Y-1): Key") & COG & Has("Offstring Throw"))
