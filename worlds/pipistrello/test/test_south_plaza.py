@@ -10,69 +10,69 @@ TEST_CASES = [
     # Skip Golden Badge and Diamond 1, which should be bundled with Faria
     # Skip Hellhound Badge, which should be bundled with Gallineiros
     TestCase(
-        room_name="Safe House (X+0, Y+0) - mig38",
+        room_label="Safe House (X+0, Y+0) - mig38",
         location_map_name="Badge (Eye)",
         possible_items={Difficulty.option_normal: None},
     ),
     TestCase(
-        room_name="South Plaza (X-2, Y+4) - yug5210",
+        room_label="South Plaza (X-2, Y+4) - yug5210",
         location_map_name="Badge (Pitcher's)",
         possible_items={Difficulty.option_normal: [[M.DOG], [M.DASH], [M.UFO], [M.RIDE], [B.SS]]},
     ),
     TestCase(
-        room_name="South Plaza (X+2, Y+4) - yug5154",
+        room_label="South Plaza (X+2, Y+4) - yug5154",
         location_map_name="BP Shard 1",
         possible_items={Difficulty.option_normal: [[M.UFO], [M.RIDE]]},
     ),
     TestCase(
-        room_name="South Plaza (X-2, Y-3) - ren223 (Main)",
+        room_label="South Plaza (X-2, Y-3) - ren223 (Main)",
         location_map_name="Combat 1 (optional)",
         possible_items={Difficulty.option_normal: None},
     ),
     TestCase(
-        room_name="South Plaza (X-3, Y+3) - ren4152",
+        room_label="South Plaza (X-3, Y+3) - ren4152",
         location_map_name="Combat 2",
         possible_items={Difficulty.option_normal: [[M.DOG], [M.UFO], [M.RIDE], [B.SS]]},
     ),
     # Skip trivial Moneybag 1-4
     TestCase(
-        room_name="South Plaza (X-2, Y-3) - ren223 (Southwest)",
+        room_label="South Plaza (X-2, Y-3) - ren223 (Southwest)",
         location_map_name="Moneybag 5",
         possible_items={Difficulty.option_normal: [[M.DOG], [M.UFO], [M.RIDE], [B.SS]]},
     ),
     TestCase(
-        room_name="South Plaza (X-2, Y-3) - ren223 (Main)",
+        room_label="South Plaza (X-2, Y-3) - ren223 (Main)",
         location_map_name="Moneybag 6",
         possible_items={Difficulty.option_normal: None},
     ),
     TestCase(
-        room_name="South Plaza (X-1, Y-6) - ren355 (East)",
+        room_label="South Plaza (X-1, Y-6) - ren355 (East)",
         location_map_name="Moneybag 7",
         possible_items={Difficulty.option_normal: [[M.RIDE], [M.UFO, M.DOG]]},
     ),
     # Skip trivial Moneybag 8
     TestCase(
-        room_name="South Plaza (X-1, Y+4) - lor2248 (North)",
+        room_label="South Plaza (X-1, Y+4) - lor2248 (North)",
         location_map_name="Moneybag 9",
         possible_items={Difficulty.option_normal: [[M.DOG], [M.DASH], [M.UFO], [M.RIDE], [B.SS]]},
     ),
     TestCase(
-        room_name="South Plaza (X+1, Y+4) - yug4939 (West)",
+        room_label="South Plaza (X+1, Y+4) - yug4939 (West)",
         location_map_name="Moneybag 10",
         possible_items={Difficulty.option_normal: [[M.DOG], [M.DASH], [M.UFO], [M.RIDE], [B.SS]]},
     ),
     TestCase(
-        room_name="South Plaza (X+1, Y+4) - yug4939 (West)",
+        room_label="South Plaza (X+1, Y+4) - yug4939 (West)",
         location_map_name="Moneybag 11",
         possible_items={Difficulty.option_normal: [[M.DOG], [M.DASH], [M.UFO], [M.RIDE], [B.SS]]},
     ),
     TestCase(
-        room_name="South Plaza (X+1, Y+4) - yug4939 (East)",
+        room_label="South Plaza (X+1, Y+4) - yug4939 (East)",
         location_map_name="Moneybag 12",
         possible_items={Difficulty.option_normal: [[M.DASH], [M.UFO], [M.RIDE]]},
     ),
     TestCase(
-        room_name="South Plaza (X-2, Y-3) - ren223 (South)",
+        room_label="South Plaza (X-2, Y-3) - ren223 (South)",
         location_map_name="Musical Notes 1",
         possible_items={
             Difficulty.option_normal: [
@@ -85,7 +85,7 @@ TEST_CASES = [
         },
     ),
     TestCase(
-        room_name="South Plaza (X-2, Y-3) - ren223 (South)",
+        room_label="South Plaza (X-2, Y-3) - ren223 (South)",
         location_map_name="Musical Notes 2",
         possible_items={
             Difficulty.option_normal: [
@@ -105,12 +105,12 @@ TEST_CASES = [
         },
     ),
     TestCase(
-        room_name="South Plaza (X-2, Y-3) - ren223 (Main)",
+        room_label="South Plaza (X-2, Y-3) - ren223 (Main)",
         location_map_name="Petal Container 1",
         possible_items={Difficulty.option_normal: None},
     ),
     TestCase(
-        room_name="South Plaza (X-2, Y-3) - ren223 (Main)",
+        room_label="South Plaza (X-2, Y-3) - ren223 (Main)",
         location_map_name="Quest (Burger 1)",
         possible_items={Difficulty.option_normal: None},
     ),

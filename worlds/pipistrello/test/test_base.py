@@ -28,7 +28,7 @@ class TestExpertLogic(PipTestBase):
 
 @dataclass
 class TestCase:
-    room_name: str
+    room_label: str
     location_map_name: str | None
     possible_items: dict[int, list[list[str]] | None]
 
@@ -47,7 +47,7 @@ class LogicTestMixinBase(_LogicTestBase):
         if len(filtered_possible_items) == 0:
             self.skipTest(f"{self._get_test_name()} is not applicable at difficulty {current_difficulty}")
 
-        check = self._get_check(self.test_case.room_name, self.test_case.location_map_name)
+        check = self._get_check(self.test_case.room_label, self.test_case.location_map_name)
         if None in filtered_possible_items.values():
             state = CollectionState(self.multiworld)
             state.sweep_for_advancements()
@@ -80,7 +80,7 @@ class LogicTestMixinBase(_LogicTestBase):
 
     def _get_test_name(self) -> str:
         return (
-            f"{self.test_case.room_name}: {self.test_case.location_map_name}"
+            f"{self.test_case.room_label}: {self.test_case.location_map_name}"
             if self.test_case.location_map_name
-            else self.test_case.room_name
+            else self.test_case.room_label
         )
