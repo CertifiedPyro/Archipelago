@@ -14,13 +14,6 @@ TEST_CASES = [
         location_map_name="Badge (Eye)",
         possible_items={Difficulty.option_normal: None},
     ),
-    # TestCase(
-    #     room_name="South Plaza (X-1, Y+4) - lor2248 (Southeast)",
-    #     location_map_name="Badge (Golden)",
-    #     possible_items={
-    #         Difficulty.option_normal: [[M.DOG, M.UFO], [M.DOG, M.RIDE]],
-    #     },
-    # ),
     TestCase(
         room_name="South Plaza (X-2, Y+4) - yug5210",
         location_map_name="Badge (Pitcher's)",
