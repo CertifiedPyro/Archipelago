@@ -29,6 +29,11 @@
 2. Place the dll file into the `Mods/` folder under the game's installation folder.
 3. Launch the game. The mod is installed correctly if a **Connect** button appears on the main menu.
 
+To disable the Archipelago mod:
+
+1. In Steam, right-click the game and click Properties > General
+2. In Launch Options, add "--no-mods"
+
 ### Archipelago tools
 
 1. Make sure the Archipelago software (v0.6.7 or newer) is installed.
@@ -54,3 +59,5 @@ Follow [the official instructions](https://archipelago.gg/tutorial/Archipelago/s
 
 There is no visual tracker yet, so please use Universal Tracker for now. In Universal Tracker, locations are sorted by
 area in logical order, then by X and Y coordinates.
+
+If you are ever confused about how to reach a location, you can use /explain and /get_logical_path in Universal Tracker.

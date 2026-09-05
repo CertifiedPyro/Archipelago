@@ -14,9 +14,10 @@ class Difficulty(Choice):
       - Trick-Dash: UFO Throw or Offstring Throw near a wall to perform a Wall-Dash while keeping an item on the yoyo.
       - Drop: Input any Special Move to drop a held item slightly behind you.
       - Sleeper-Drop: Hold an item with Sleeper, then use Parry or Around-the-World to drop the item near the yoyo.
-    - **Expert**: Very difficult tricks. Requires the following knowledge:
+    - **Expert**: Very difficult tricks, or very unusual solutions. Requires the following knowledge:
       - Midair UFO Throw: Perform a midair UFO Throw after jumping. Timing is very tight.
       - Hard Trick-Dash: Hold trick stance when Wall-Dashing, then release trick stance.
+      - Enemies in rooms may not respawn if you leave the room and come back.
     """
 
     display_name = "Difficulty"
