@@ -1,8 +1,6 @@
 from BaseClasses import Tutorial
 from worlds.AutoWorld import WebWorld
 
-from .options import option_presets
-
 
 class PipWebWorld(WebWorld):
     game = "Pipistrello and the Cursed Yoyo"
@@ -21,4 +19,4 @@ class PipWebWorld(WebWorld):
     tutorials = [setup_en]
 
     # option_groups = option_groups
-    options_presets = option_presets
+    # options_presets = option_presets

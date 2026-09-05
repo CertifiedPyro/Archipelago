@@ -5,1427 +5,2597 @@ from __future__ import annotations
 from .data_classes import ConnectionData, RoomData
 
 ROOMS: list[RoomData] = [
-    RoomData(room_label="Menu", room_area="Menu", region_name="Menu", global_room_id="", sort_key=""),
+    RoomData(
+        room_label="Menu",
+        room_area="Menu",
+        region_name="Menu",
+        region_name_suffixless="Menu",
+        global_room_id="",
+        sort_key="",
+    ),
     RoomData(
         room_label="Faria Slimer Borough (X+9, Y-7) - yug3435",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+9,Y-7)",
+        region_name="Faria (X+9, Y-7)",
+        region_name_suffixless="Faria (X+9, Y-7)",
         global_room_id="city/yug3435",
-        sort_key="40893",
+        sort_key="050893",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+1, Y-6) - lor1097",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+1,Y-6)",
+        region_name="Faria (X+1, Y-6)",
+        region_name_suffixless="Faria (X+1, Y-6)",
         global_room_id="city/lor1097",
-        sort_key="40094",
+        sort_key="050094",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+3, Y-6) - yug1263",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+3,Y-6)",
+        region_name="Faria (X+3, Y-6)",
+        region_name_suffixless="Faria (X+3, Y-6)",
         global_room_id="city/yug1263",
-        sort_key="40294",
+        sort_key="050294",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+4, Y-6) - yug173",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+4,Y-6)",
+        region_name="Faria (X+4, Y-6)",
+        region_name_suffixless="Faria (X+4, Y-6)",
         global_room_id="city/yug173",
-        sort_key="40394",
+        sort_key="050394",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+7, Y-6) - yug171 (Main)",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+7,Y-6) (Main)",
+        region_name="Faria (X+7, Y-6) (Main)",
+        region_name_suffixless="Faria (X+7, Y-6)",
         global_room_id="city/yug171",
-        sort_key="40694 (Main)",
+        sort_key="050694",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+7, Y-6) - yug171 (East)",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+7,Y-6) (East)",
+        region_name="Faria (X+7, Y-6) (East)",
+        region_name_suffixless="Faria (X+7, Y-6)",
         global_room_id="city/yug171",
-        sort_key="40694 (East)",
+        sort_key="050694",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+8, Y-6) - yug3298",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+8,Y-6)",
+        region_name="Faria (X+8, Y-6)",
+        region_name_suffixless="Faria (X+8, Y-6)",
         global_room_id="city/yug3298",
-        sort_key="40794",
+        sort_key="050794",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+9, Y-6) - yug3411",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+9,Y-6)",
+        region_name="Faria (X+9, Y-6)",
+        region_name_suffixless="Faria (X+9, Y-6)",
         global_room_id="city/yug3411",
-        sort_key="40894",
+        sort_key="050894",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+3, Y-5) - yug20",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+3,Y-5)",
+        region_name="Faria (X+3, Y-5)",
+        region_name_suffixless="Faria (X+3, Y-5)",
         global_room_id="city/yug20",
-        sort_key="40295",
+        sort_key="050295",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+4, Y-5) - yug208 (North)",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+4,Y-5) (North)",
+        region_name="Faria (X+4, Y-5) (North)",
+        region_name_suffixless="Faria (X+4, Y-5)",
         global_room_id="city/yug208",
-        sort_key="40395 (North)",
+        sort_key="050395",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+4, Y-5) - yug208 (South)",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+4,Y-5) (South)",
+        region_name="Faria (X+4, Y-5) (South)",
+        region_name_suffixless="Faria (X+4, Y-5)",
         global_room_id="city/yug208",
-        sort_key="40395 (South)",
+        sort_key="050395",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+5, Y-5) - yug183",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+5,Y-5)",
+        region_name="Faria (X+5, Y-5)",
+        region_name_suffixless="Faria (X+5, Y-5)",
         global_room_id="city/yug183",
-        sort_key="40495",
+        sort_key="050495",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+6, Y-5) - yug23",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+6,Y-5)",
+        region_name="Faria (X+6, Y-5)",
+        region_name_suffixless="Faria (X+6, Y-5)",
         global_room_id="city/yug23",
-        sort_key="40595",
+        sort_key="050595",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+7, Y-5) - yug3458",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+7,Y-5)",
+        region_name="Faria (X+7, Y-5)",
+        region_name_suffixless="Faria (X+7, Y-5)",
         global_room_id="city/yug3458",
-        sort_key="40695",
+        sort_key="050695",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+8, Y-5) - yug3276",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+8,Y-5)",
+        region_name="Faria (X+8, Y-5)",
+        region_name_suffixless="Faria (X+8, Y-5)",
         global_room_id="city/yug3276",
-        sort_key="40795",
+        sort_key="050795",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+9, Y-5) - yug3320 (Main)",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+9,Y-5) (Main)",
+        region_name="Faria (X+9, Y-5) (Main)",
+        region_name_suffixless="Faria (X+9, Y-5)",
         global_room_id="city/yug3320",
-        sort_key="40895 (Main)",
+        sort_key="050895",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+9, Y-5) - yug3320 (South Alcove)",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+9,Y-5) (South Alcove)",
+        region_name="Faria (X+9, Y-5) (South Alcove)",
+        region_name_suffixless="Faria (X+9, Y-5)",
         global_room_id="city/yug3320",
-        sort_key="40895 (South Alcove)",
+        sort_key="050895",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+2, Y-4) - lor1128 (West)",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+2,Y-4) (West)",
+        region_name="Faria (X+2, Y-4) (West)",
+        region_name_suffixless="Faria (X+2, Y-4)",
         global_room_id="city/lor1128",
-        sort_key="40196 (West)",
+        sort_key="050196",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+2, Y-4) - lor1128 (East)",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+2,Y-4) (East)",
+        region_name="Faria (X+2, Y-4) (East)",
+        region_name_suffixless="Faria (X+2, Y-4)",
         global_room_id="city/lor1128",
-        sort_key="40196 (East)",
+        sort_key="050196",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+3, Y-4) - yug19",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+3,Y-4)",
+        region_name="Faria (X+3, Y-4)",
+        region_name_suffixless="Faria (X+3, Y-4)",
         global_room_id="city/yug19",
-        sort_key="40296",
+        sort_key="050296",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+5, Y-4) - yug190",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+5,Y-4)",
+        region_name="Faria (X+5, Y-4)",
+        region_name_suffixless="Faria (X+5, Y-4)",
         global_room_id="city/yug190",
-        sort_key="40496",
+        sort_key="050496",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+6, Y-4) - yug187",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+6,Y-4)",
+        region_name="Faria (X+6, Y-4)",
+        region_name_suffixless="Faria (X+6, Y-4)",
         global_room_id="city/yug187",
-        sort_key="40596",
+        sort_key="050596",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+7, Y-4) - yug202 (Main)",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+7,Y-4) (Main)",
+        region_name="Faria (X+7, Y-4) (Main)",
+        region_name_suffixless="Faria (X+7, Y-4)",
         global_room_id="city/yug202",
-        sort_key="40696 (Main)",
+        sort_key="050696",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+7, Y-4) - yug202 (West Alcove)",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+7,Y-4) (West Alcove)",
+        region_name="Faria (X+7, Y-4) (West Alcove)",
+        region_name_suffixless="Faria (X+7, Y-4)",
         global_room_id="city/yug202",
-        sort_key="40696 (West Alcove)",
+        sort_key="050696",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+8, Y-4) - yug169",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+8,Y-4)",
+        region_name="Faria (X+8, Y-4)",
+        region_name_suffixless="Faria (X+8, Y-4)",
         global_room_id="city/yug169",
-        sort_key="40796",
+        sort_key="050796",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+9, Y-4) - yug3345",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+9,Y-4)",
+        region_name="Faria (X+9, Y-4)",
+        region_name_suffixless="Faria (X+9, Y-4)",
         global_room_id="city/yug3345",
-        sort_key="40896",
+        sort_key="050896",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+2, Y-3) - lor1129",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+2,Y-3)",
+        region_name="Faria (X+2, Y-3)",
+        region_name_suffixless="Faria (X+2, Y-3)",
         global_room_id="city/lor1129",
-        sort_key="40197",
+        sort_key="050197",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+3, Y-3) - yug71",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+3,Y-3)",
+        region_name="Faria (X+3, Y-3)",
+        region_name_suffixless="Faria (X+3, Y-3)",
         global_room_id="city/yug71",
-        sort_key="40297",
+        sort_key="050297",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+4, Y-3) - yug2741 (Main)",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+4,Y-3) (Main)",
+        region_name="Faria (X+4, Y-3) (Main)",
+        region_name_suffixless="Faria (X+4, Y-3)",
         global_room_id="city/yug2741",
-        sort_key="40397 (Main)",
+        sort_key="050397",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+4, Y-3) - yug2741 (North)",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+4,Y-3) (North)",
+        region_name="Faria (X+4, Y-3) (North)",
+        region_name_suffixless="Faria (X+4, Y-3)",
         global_room_id="city/yug2741",
-        sort_key="40397 (North)",
+        sort_key="050397",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+4, Y-3) - yug2741 (East Alcove)",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+4,Y-3) (East Alcove)",
+        region_name="Faria (X+4, Y-3) (East Alcove)",
+        region_name_suffixless="Faria (X+4, Y-3)",
         global_room_id="city/yug2741",
-        sort_key="40397 (East Alcove)",
+        sort_key="050397",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+8, Y-3) - yug108 (Main)",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+8,Y-3) (Main)",
+        region_name="Faria (X+8, Y-3) (Main)",
+        region_name_suffixless="Faria (X+8, Y-3)",
         global_room_id="city/yug108",
-        sort_key="40797 (Main)",
+        sort_key="050797",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+8, Y-3) - yug108 (Northwest)",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+8,Y-3) (Northwest)",
+        region_name="Faria (X+8, Y-3) (Northwest)",
+        region_name_suffixless="Faria (X+8, Y-3)",
         global_room_id="city/yug108",
-        sort_key="40797 (Northwest)",
+        sort_key="050797",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+8, Y-3) - yug108 (Northeast)",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+8,Y-3) (Northeast)",
+        region_name="Faria (X+8, Y-3) (Northeast)",
+        region_name_suffixless="Faria (X+8, Y-3)",
         global_room_id="city/yug108",
-        sort_key="40797 (Northeast)",
+        sort_key="050797",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+8, Y-3) - yug108 (Southwest)",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+8,Y-3) (Southwest)",
+        region_name="Faria (X+8, Y-3) (Southwest)",
+        region_name_suffixless="Faria (X+8, Y-3)",
         global_room_id="city/yug108",
-        sort_key="40797 (Southwest)",
+        sort_key="050797",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+8, Y-3) - yug108 (Southeast)",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+8,Y-3) (Southeast)",
+        region_name="Faria (X+8, Y-3) (Southeast)",
+        region_name_suffixless="Faria (X+8, Y-3)",
         global_room_id="city/yug108",
-        sort_key="40797 (Southeast)",
+        sort_key="050797",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+8, Y-3) - yug108 (Dungeon Entrance)",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+8,Y-3) (Dungeon Entrance)",
+        region_name="Faria (X+8, Y-3) (Dungeon Entrance)",
+        region_name_suffixless="Faria (X+8, Y-3)",
         global_room_id="city/yug108",
-        sort_key="40797 (Dungeon Entrance)",
+        sort_key="050797",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+10, Y-3) - yug60",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+10,Y-3)",
+        region_name="Faria (X+10, Y-3)",
+        region_name_suffixless="Faria (X+10, Y-3)",
         global_room_id="city/yug60",
-        sort_key="40997",
+        sort_key="050997",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+2, Y-2) - yug2715",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+2,Y-2)",
+        region_name="Faria (X+2, Y-2)",
+        region_name_suffixless="Faria (X+2, Y-2)",
         global_room_id="city/yug2715",
-        sort_key="40198",
+        sort_key="050198",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+3, Y-2) - yug259",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+3,Y-2)",
+        region_name="Faria (X+3, Y-2)",
+        region_name_suffixless="Faria (X+3, Y-2)",
         global_room_id="city/yug259",
-        sort_key="40298",
+        sort_key="050298",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+10, Y-2) - yug56 (Main)",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+10,Y-2) (Main)",
+        region_name="Faria (X+10, Y-2) (Main)",
+        region_name_suffixless="Faria (X+10, Y-2)",
         global_room_id="city/yug56",
-        sort_key="40998 (Main)",
+        sort_key="050998",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+10, Y-2) - yug56 (East)",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+10,Y-2) (East)",
+        region_name="Faria (X+10, Y-2) (East)",
+        region_name_suffixless="Faria (X+10, Y-2)",
         global_room_id="city/yug56",
-        sort_key="40998 (East)",
+        sort_key="050998",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+2, Y-1) - yug2440",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+2,Y-1)",
+        region_name="Faria (X+2, Y-1)",
+        region_name_suffixless="Faria (X+2, Y-1)",
         global_room_id="city/yug2440",
-        sort_key="40199",
+        sort_key="050199",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+3, Y-1) - yug96",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+3,Y-1)",
+        region_name="Faria (X+3, Y-1)",
+        region_name_suffixless="Faria (X+3, Y-1)",
         global_room_id="city/yug96",
-        sort_key="40299",
+        sort_key="050299",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+10, Y-1) - yug61 (Main)",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+10,Y-1) (Main)",
+        region_name="Faria (X+10, Y-1) (Main)",
+        region_name_suffixless="Faria (X+10, Y-1)",
         global_room_id="city/yug61",
-        sort_key="40999 (Main)",
+        sort_key="050999",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+10, Y-1) - yug61 (West Alcove)",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+10,Y-1) (West Alcove)",
+        region_name="Faria (X+10, Y-1) (West Alcove)",
+        region_name_suffixless="Faria (X+10, Y-1)",
         global_room_id="city/yug61",
-        sort_key="40999 (West Alcove)",
+        sort_key="050999",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+2, Y+0) - yug220 (West)",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+2,Y+0) (West)",
+        region_name="Faria (X+2, Y+0) (West)",
+        region_name_suffixless="Faria (X+2, Y+0)",
         global_room_id="city/yug220",
-        sort_key="40200 (West)",
+        sort_key="050200",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+2, Y+0) - yug220 (East)",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+2,Y+0) (East)",
+        region_name="Faria (X+2, Y+0) (East)",
+        region_name_suffixless="Faria (X+2, Y+0)",
         global_room_id="city/yug220",
-        sort_key="40200 (East)",
+        sort_key="050200",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+4, Y+0) - yug27 (Main)",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+4,Y+0) (Main)",
+        region_name="Faria (X+4, Y+0) (Main)",
+        region_name_suffixless="Faria (X+4, Y+0)",
         global_room_id="city/yug27",
-        sort_key="40400 (Main)",
+        sort_key="050400",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+4, Y+0) - yug27 (North Alcove)",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+4,Y+0) (North Alcove)",
+        region_name="Faria (X+4, Y+0) (North Alcove)",
+        region_name_suffixless="Faria (X+4, Y+0)",
         global_room_id="city/yug27",
-        sort_key="40400 (North Alcove)",
+        sort_key="050400",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+10, Y+0) - yug55",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+10,Y+0)",
+        region_name="Faria (X+10, Y+0)",
+        region_name_suffixless="Faria (X+10, Y+0)",
         global_room_id="city/yug55",
-        sort_key="41000",
+        sort_key="051000",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+2, Y+1) - yug219 (Main)",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+2,Y+1) (Main)",
+        region_name="Faria (X+2, Y+1) (Main)",
+        region_name_suffixless="Faria (X+2, Y+1)",
         global_room_id="city/yug219",
-        sort_key="40201 (Main)",
+        sort_key="050201",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+2, Y+1) - yug219 (House Entrance)",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+2,Y+1) (House Entrance)",
+        region_name="Faria (X+2, Y+1) (House Entrance)",
+        region_name_suffixless="Faria (X+2, Y+1)",
         global_room_id="city/yug219",
-        sort_key="40201 (House Entrance)",
+        sort_key="050201",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+8, Y+1) - yug17",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+8,Y+1)",
+        region_name="Faria (X+8, Y+1)",
+        region_name_suffixless="Faria (X+8, Y+1)",
         global_room_id="city/yug17",
-        sort_key="40801",
+        sort_key="050801",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+9, Y+1) - yug18",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+9,Y+1)",
+        region_name="Faria (X+9, Y+1)",
+        region_name_suffixless="Faria (X+9, Y+1)",
         global_room_id="city/yug18",
-        sort_key="40901",
+        sort_key="050901",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+10, Y+1) - lor2298",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+10,Y+1)",
+        region_name="Faria (X+10, Y+1)",
+        region_name_suffixless="Faria (X+10, Y+1)",
         global_room_id="city/lor2298",
-        sort_key="41001",
+        sort_key="051001",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+8, Y+2) - yug15",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+8,Y+2)",
+        region_name="Faria (X+8, Y+2)",
+        region_name_suffixless="Faria (X+8, Y+2)",
         global_room_id="city/yug15",
-        sort_key="40802",
+        sort_key="050802",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+9, Y+2) - yug22",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+9,Y+2)",
+        region_name="Faria (X+9, Y+2)",
+        region_name_suffixless="Faria (X+9, Y+2)",
         global_room_id="city/yug22",
-        sort_key="40902",
+        sort_key="050902",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+10, Y+2) - lor2334 (Main)",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+10,Y+2) (Main)",
+        region_name="Faria (X+10, Y+2) (Main)",
+        region_name_suffixless="Faria (X+10, Y+2)",
         global_room_id="city/lor2334",
-        sort_key="41002 (Main)",
+        sort_key="051002",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+10, Y+2) - lor2334 (Northeast)",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+10,Y+2) (Northeast)",
+        region_name="Faria (X+10, Y+2) (Northeast)",
+        region_name_suffixless="Faria (X+10, Y+2)",
         global_room_id="city/lor2334",
-        sort_key="41002 (Northeast)",
+        sort_key="051002",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+11, Y+2) - lor2872",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+11,Y+2)",
+        region_name="Faria (X+11, Y+2)",
+        region_name_suffixless="Faria (X+11, Y+2)",
         global_room_id="city/lor2872",
-        sort_key="41102",
+        sort_key="051102",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+2, Y+3) - yug1",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+2,Y+3)",
+        region_name="Faria (X+2, Y+3)",
+        region_name_suffixless="Faria (X+2, Y+3)",
         global_room_id="city/yug1",
-        sort_key="40203",
+        sort_key="050203",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+3, Y+3) - yug217",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+3,Y+3)",
+        region_name="Faria (X+3, Y+3)",
+        region_name_suffixless="Faria (X+3, Y+3)",
         global_room_id="city/yug217",
-        sort_key="40303",
+        sort_key="050303",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+4, Y+3) - yug2 (West)",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+4,Y+3) (West)",
+        region_name="Faria (X+4, Y+3) (West)",
+        region_name_suffixless="Faria (X+4, Y+3)",
         global_room_id="city/yug2",
-        sort_key="40403 (West)",
+        sort_key="050403",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+4, Y+3) - yug2 (East)",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+4,Y+3) (East)",
+        region_name="Faria (X+4, Y+3) (East)",
+        region_name_suffixless="Faria (X+4, Y+3)",
         global_room_id="city/yug2",
-        sort_key="40403 (East)",
+        sort_key="050403",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+5, Y+3) - yug2165",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+5,Y+3)",
+        region_name="Faria (X+5, Y+3)",
+        region_name_suffixless="Faria (X+5, Y+3)",
         global_room_id="city/yug2165",
-        sort_key="40503",
+        sort_key="050503",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+6, Y+3) - yug2099 (North)",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+6,Y+3) (North)",
+        region_name="Faria (X+6, Y+3) (North)",
+        region_name_suffixless="Faria (X+6, Y+3)",
         global_room_id="city/yug2099",
-        sort_key="40603 (North)",
+        sort_key="050603",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+6, Y+3) - yug2099 (South)",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+6,Y+3) (South)",
+        region_name="Faria (X+6, Y+3) (South)",
+        region_name_suffixless="Faria (X+6, Y+3)",
         global_room_id="city/yug2099",
-        sort_key="40603 (South)",
+        sort_key="050603",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+7, Y+3) - yug9",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+7,Y+3)",
+        region_name="Faria (X+7, Y+3)",
+        region_name_suffixless="Faria (X+7, Y+3)",
         global_room_id="city/yug9",
-        sort_key="40703",
+        sort_key="050703",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+3, Y+4) - yug4250",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+3,Y+4)",
+        region_name="Faria (X+3, Y+4)",
+        region_name_suffixless="Faria (X+3, Y+4)",
         global_room_id="city/yug4250",
-        sort_key="40304",
+        sort_key="050304",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+4, Y+4) - yug4303",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+4,Y+4)",
+        region_name="Faria (X+4, Y+4)",
+        region_name_suffixless="Faria (X+4, Y+4)",
         global_room_id="city/yug4303",
-        sort_key="40404",
+        sort_key="050404",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+5, Y+4) - yug4308",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+5,Y+4)",
+        region_name="Faria (X+5, Y+4)",
+        region_name_suffixless="Faria (X+5, Y+4)",
         global_room_id="city/yug4308",
-        sort_key="40504",
+        sort_key="050504",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+6, Y+4) - yug4185",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+6,Y+4)",
+        region_name="Faria (X+6, Y+4)",
+        region_name_suffixless="Faria (X+6, Y+4)",
         global_room_id="city/yug4185",
-        sort_key="40604",
+        sort_key="050604",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+7, Y+4) - yug4153 (North)",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+7,Y+4) (North)",
+        region_name="Faria (X+7, Y+4) (North)",
+        region_name_suffixless="Faria (X+7, Y+4)",
         global_room_id="city/yug4153",
-        sort_key="40704 (North)",
+        sort_key="050704",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+7, Y+4) - yug4153 (South)",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+7,Y+4) (South)",
+        region_name="Faria (X+7, Y+4) (South)",
+        region_name_suffixless="Faria (X+7, Y+4)",
         global_room_id="city/yug4153",
-        sort_key="40704 (South)",
+        sort_key="050704",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+8, Y+4) - yug4144",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+8,Y+4)",
+        region_name="Faria (X+8, Y+4)",
+        region_name_suffixless="Faria (X+8, Y+4)",
         global_room_id="city/yug4144",
-        sort_key="40804",
+        sort_key="050804",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+9, Y+4) - yug4136",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+9,Y+4)",
+        region_name="Faria (X+9, Y+4)",
+        region_name_suffixless="Faria (X+9, Y+4)",
         global_room_id="city/yug4136",
-        sort_key="40904",
+        sort_key="050904",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+10, Y+4) - yug4122",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+10,Y+4)",
+        region_name="Faria (X+10, Y+4)",
+        region_name_suffixless="Faria (X+10, Y+4)",
         global_room_id="city/yug4122",
-        sort_key="41004",
+        sort_key="051004",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+11, Y+4) - lor2884",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+11,Y+4)",
+        region_name="Faria (X+11, Y+4)",
+        region_name_suffixless="Faria (X+11, Y+4)",
         global_room_id="city/lor2884",
-        sort_key="41104",
+        sort_key="051104",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+1, Y+5) - yug4288",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+1,Y+5)",
+        region_name="Faria (X+1, Y+5)",
+        region_name_suffixless="Faria (X+1, Y+5)",
         global_room_id="city/yug4288",
-        sort_key="40105",
+        sort_key="050105",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+4, Y+5) - yug4222",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+4,Y+5)",
+        region_name="Faria (X+4, Y+5)",
+        region_name_suffixless="Faria (X+4, Y+5)",
         global_room_id="city/yug4222",
-        sort_key="40405",
+        sort_key="050405",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+5, Y+5) - yug4236",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+5,Y+5)",
+        region_name="Faria (X+5, Y+5)",
+        region_name_suffixless="Faria (X+5, Y+5)",
         global_room_id="city/yug4236",
-        sort_key="40505",
+        sort_key="050505",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+6, Y+5) - yug4194",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+6,Y+5)",
+        region_name="Faria (X+6, Y+5)",
+        region_name_suffixless="Faria (X+6, Y+5)",
         global_room_id="city/yug4194",
-        sort_key="40605",
+        sort_key="050605",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+9, Y+5) - yug4113",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+9,Y+5)",
+        region_name="Faria (X+9, Y+5)",
+        region_name_suffixless="Faria (X+9, Y+5)",
         global_room_id="city/yug4113",
-        sort_key="40905",
+        sort_key="050905",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+10, Y+5) - yug4798",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+10,Y+5)",
+        region_name="Faria (X+10, Y+5)",
+        region_name_suffixless="Faria (X+10, Y+5)",
         global_room_id="city/yug4798",
-        sort_key="41005",
+        sort_key="051005",
     ),
     RoomData(
         room_label="Faria Slimer Borough (X+11, Y+5) - lor2866",
         room_area="Faria Slimer Borough",
-        region_name="Faria (X+11,Y+5)",
+        region_name="Faria (X+11, Y+5)",
+        region_name_suffixless="Faria (X+11, Y+5)",
         global_room_id="city/lor2866",
-        sort_key="41105",
+        sort_key="051105",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Interiors) (X+6, Y-6) - yug134",
         room_area="Faria Slimer Borough (Interiors)",
-        region_name="Faria Interiors (X+6,Y-6)",
+        region_name="Faria Interiors (X+6, Y-6)",
+        region_name_suffixless="Faria Interiors (X+6, Y-6)",
         global_room_id="city_interiors/yug134",
-        sort_key="50594",
+        sort_key="060594",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Interiors) (X+8, Y-6) - yug426",
         room_area="Faria Slimer Borough (Interiors)",
-        region_name="Faria Interiors (X+8,Y-6)",
+        region_name="Faria Interiors (X+8, Y-6)",
+        region_name_suffixless="Faria Interiors (X+8, Y-6)",
         global_room_id="city_interiors/yug426",
-        sort_key="50794",
+        sort_key="060794",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Interiors) (X+4, Y-5) - yug47",
         room_area="Faria Slimer Borough (Interiors)",
-        region_name="Faria Interiors (X+4,Y-5)",
+        region_name="Faria Interiors (X+4, Y-5)",
+        region_name_suffixless="Faria Interiors (X+4, Y-5)",
         global_room_id="city_interiors/yug47",
-        sort_key="50395",
+        sort_key="060395",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Interiors) (X+3, Y-3) - yug1",
         room_area="Faria Slimer Borough (Interiors)",
-        region_name="Faria Interiors (X+3,Y-3)",
+        region_name="Faria Interiors (X+3, Y-3)",
+        region_name_suffixless="Faria Interiors (X+3, Y-3)",
         global_room_id="city_interiors/yug1",
-        sort_key="50297",
+        sort_key="060297",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Interiors) (X+7, Y-3) - lor414",
         room_area="Faria Slimer Borough (Interiors)",
-        region_name="Faria Interiors (X+7,Y-3)",
+        region_name="Faria Interiors (X+7, Y-3)",
+        region_name_suffixless="Faria Interiors (X+7, Y-3)",
         global_room_id="city_interiors/lor414",
-        sort_key="50697",
+        sort_key="060697",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Interiors) (X+10, Y-2) - yug59",
         room_area="Faria Slimer Borough (Interiors)",
-        region_name="Faria Interiors (X+10,Y-2)",
+        region_name="Faria Interiors (X+10, Y-2)",
+        region_name_suffixless="Faria Interiors (X+10, Y-2)",
         global_room_id="city_interiors/yug59",
-        sort_key="50998",
+        sort_key="060998",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Interiors) (X+2, Y-1) - yug69",
         room_area="Faria Slimer Borough (Interiors)",
-        region_name="Faria Interiors (X+2,Y-1)",
+        region_name="Faria Interiors (X+2, Y-1)",
+        region_name_suffixless="Faria Interiors (X+2, Y-1)",
         global_room_id="city_interiors/yug69",
-        sort_key="50199",
+        sort_key="060199",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Interiors) (X+5, Y+0) - lor296",
         room_area="Faria Slimer Borough (Interiors)",
-        region_name="Faria Interiors (X+5,Y+0)",
+        region_name="Faria Interiors (X+5, Y+0)",
+        region_name_suffixless="Faria Interiors (X+5, Y+0)",
         global_room_id="city_interiors/lor296",
-        sort_key="50500",
+        sort_key="060500",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Interiors) (X+3, Y+1) - yug119",
         room_area="Faria Slimer Borough (Interiors)",
-        region_name="Faria Interiors (X+3,Y+1)",
+        region_name="Faria Interiors (X+3, Y+1)",
+        region_name_suffixless="Faria Interiors (X+3, Y+1)",
         global_room_id="city_interiors/yug119",
-        sort_key="50301",
+        sort_key="060301",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+3, Y-7) - ren3974",
         room_area="Faria Slimer Borough (Sewers)",
-        region_name="Faria Sewers (X+3,Y-7)",
+        region_name="Faria Sewers (X+3, Y-7)",
+        region_name_suffixless="Faria Sewers (X+3, Y-7)",
         global_room_id="city_underground/ren3974",
-        sort_key="60293",
+        sort_key="070293",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+4, Y-7) - ren3993 (Main)",
         room_area="Faria Slimer Borough (Sewers)",
-        region_name="Faria Sewers (X+4,Y-7) (Main)",
+        region_name="Faria Sewers (X+4, Y-7) (Main)",
+        region_name_suffixless="Faria Sewers (X+4, Y-7)",
         global_room_id="city_underground/ren3993",
-        sort_key="60393 (Main)",
+        sort_key="070393",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+4, Y-7) - ren3993 (South)",
         room_area="Faria Slimer Borough (Sewers)",
-        region_name="Faria Sewers (X+4,Y-7) (South)",
+        region_name="Faria Sewers (X+4, Y-7) (South)",
+        region_name_suffixless="Faria Sewers (X+4, Y-7)",
         global_room_id="city_underground/ren3993",
-        sort_key="60393 (South)",
+        sort_key="070393",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+8, Y-7) - yug882",
         room_area="Faria Slimer Borough (Sewers)",
-        region_name="Faria Sewers (X+8,Y-7)",
+        region_name="Faria Sewers (X+8, Y-7)",
+        region_name_suffixless="Faria Sewers (X+8, Y-7)",
         global_room_id="city_underground/yug882",
-        sort_key="60793",
+        sort_key="070793",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+9, Y-7) - yug873",
         room_area="Faria Slimer Borough (Sewers)",
-        region_name="Faria Sewers (X+9,Y-7)",
+        region_name="Faria Sewers (X+9, Y-7)",
+        region_name_suffixless="Faria Sewers (X+9, Y-7)",
         global_room_id="city_underground/yug873",
-        sort_key="60893",
+        sort_key="070893",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+3, Y-6) - ren3946",
         room_area="Faria Slimer Borough (Sewers)",
-        region_name="Faria Sewers (X+3,Y-6)",
+        region_name="Faria Sewers (X+3, Y-6)",
+        region_name_suffixless="Faria Sewers (X+3, Y-6)",
         global_room_id="city_underground/ren3946",
-        sort_key="60294",
+        sort_key="070294",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+4, Y-6) - ren3982 (Main)",
         room_area="Faria Slimer Borough (Sewers)",
-        region_name="Faria Sewers (X+4,Y-6) (Main)",
+        region_name="Faria Sewers (X+4, Y-6) (Main)",
+        region_name_suffixless="Faria Sewers (X+4, Y-6)",
         global_room_id="city_underground/ren3982",
-        sort_key="60394 (Main)",
+        sort_key="070394",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+4, Y-6) - ren3982 (North)",
         room_area="Faria Slimer Borough (Sewers)",
-        region_name="Faria Sewers (X+4,Y-6) (North)",
+        region_name="Faria Sewers (X+4, Y-6) (North)",
+        region_name_suffixless="Faria Sewers (X+4, Y-6)",
         global_room_id="city_underground/ren3982",
-        sort_key="60394 (North)",
+        sort_key="070394",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+4, Y-6) - ren3982 (South)",
         room_area="Faria Slimer Borough (Sewers)",
-        region_name="Faria Sewers (X+4,Y-6) (South)",
+        region_name="Faria Sewers (X+4, Y-6) (South)",
+        region_name_suffixless="Faria Sewers (X+4, Y-6)",
         global_room_id="city_underground/ren3982",
-        sort_key="60394 (South)",
+        sort_key="070394",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+5, Y-6) - ren4029 (Main)",
         room_area="Faria Slimer Borough (Sewers)",
-        region_name="Faria Sewers (X+5,Y-6) (Main)",
+        region_name="Faria Sewers (X+5, Y-6) (Main)",
+        region_name_suffixless="Faria Sewers (X+5, Y-6)",
         global_room_id="city_underground/ren4029",
-        sort_key="60494 (Main)",
+        sort_key="070494",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+5, Y-6) - ren4029 (South)",
         room_area="Faria Slimer Borough (Sewers)",
-        region_name="Faria Sewers (X+5,Y-6) (South)",
+        region_name="Faria Sewers (X+5, Y-6) (South)",
+        region_name_suffixless="Faria Sewers (X+5, Y-6)",
         global_room_id="city_underground/ren4029",
-        sort_key="60494 (South)",
+        sort_key="070494",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+7, Y-6) - yug817",
         room_area="Faria Slimer Borough (Sewers)",
-        region_name="Faria Sewers (X+7,Y-6)",
+        region_name="Faria Sewers (X+7, Y-6)",
+        region_name_suffixless="Faria Sewers (X+7, Y-6)",
         global_room_id="city_underground/yug817",
-        sort_key="60694",
+        sort_key="070694",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+8, Y-6) - yug912 (Main)",
         room_area="Faria Slimer Borough (Sewers)",
-        region_name="Faria Sewers (X+8,Y-6) (Main)",
+        region_name="Faria Sewers (X+8, Y-6) (Main)",
+        region_name_suffixless="Faria Sewers (X+8, Y-6)",
         global_room_id="city_underground/yug912",
-        sort_key="60794 (Main)",
+        sort_key="070794",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+8, Y-6) - yug912 (North)",
         room_area="Faria Slimer Borough (Sewers)",
-        region_name="Faria Sewers (X+8,Y-6) (North)",
+        region_name="Faria Sewers (X+8, Y-6) (North)",
+        region_name_suffixless="Faria Sewers (X+8, Y-6)",
         global_room_id="city_underground/yug912",
-        sort_key="60794 (North)",
+        sort_key="070794",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+8, Y-6) - yug912 (Northwest)",
         room_area="Faria Slimer Borough (Sewers)",
-        region_name="Faria Sewers (X+8,Y-6) (Northwest)",
+        region_name="Faria Sewers (X+8, Y-6) (Northwest)",
+        region_name_suffixless="Faria Sewers (X+8, Y-6)",
         global_room_id="city_underground/yug912",
-        sort_key="60794 (Northwest)",
+        sort_key="070794",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+8, Y-6) - yug912 (Northeast)",
         room_area="Faria Slimer Borough (Sewers)",
-        region_name="Faria Sewers (X+8,Y-6) (Northeast)",
+        region_name="Faria Sewers (X+8, Y-6) (Northeast)",
+        region_name_suffixless="Faria Sewers (X+8, Y-6)",
         global_room_id="city_underground/yug912",
-        sort_key="60794 (Northeast)",
+        sort_key="070794",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+9, Y-6) - yug860",
         room_area="Faria Slimer Borough (Sewers)",
-        region_name="Faria Sewers (X+9,Y-6)",
+        region_name="Faria Sewers (X+9, Y-6)",
+        region_name_suffixless="Faria Sewers (X+9, Y-6)",
         global_room_id="city_underground/yug860",
-        sort_key="60894",
+        sort_key="070894",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+2, Y-5) - ren3998",
         room_area="Faria Slimer Borough (Sewers)",
-        region_name="Faria Sewers (X+2,Y-5)",
+        region_name="Faria Sewers (X+2, Y-5)",
+        region_name_suffixless="Faria Sewers (X+2, Y-5)",
         global_room_id="city_underground/ren3998",
-        sort_key="60195",
+        sort_key="070195",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+4, Y-5) - ren3965",
         room_area="Faria Slimer Borough (Sewers)",
-        region_name="Faria Sewers (X+4,Y-5)",
+        region_name="Faria Sewers (X+4, Y-5)",
+        region_name_suffixless="Faria Sewers (X+4, Y-5)",
         global_room_id="city_underground/ren3965",
-        sort_key="60395",
+        sort_key="070395",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+7, Y-5) - yug804",
         room_area="Faria Slimer Borough (Sewers)",
-        region_name="Faria Sewers (X+7,Y-5)",
+        region_name="Faria Sewers (X+7, Y-5)",
+        region_name_suffixless="Faria Sewers (X+7, Y-5)",
         global_room_id="city_underground/yug804",
-        sort_key="60695",
+        sort_key="070695",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+9, Y-5) - yug838 (West)",
         room_area="Faria Slimer Borough (Sewers)",
-        region_name="Faria Sewers (X+9,Y-5) (West)",
+        region_name="Faria Sewers (X+9, Y-5) (West)",
+        region_name_suffixless="Faria Sewers (X+9, Y-5)",
         global_room_id="city_underground/yug838",
-        sort_key="60895 (West)",
+        sort_key="070895",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+9, Y-5) - yug838 (East)",
         room_area="Faria Slimer Borough (Sewers)",
-        region_name="Faria Sewers (X+9,Y-5) (East)",
+        region_name="Faria Sewers (X+9, Y-5) (East)",
+        region_name_suffixless="Faria Sewers (X+9, Y-5)",
         global_room_id="city_underground/yug838",
-        sort_key="60895 (East)",
+        sort_key="070895",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+8, Y-4) - yug829",
         room_area="Faria Slimer Borough (Sewers)",
-        region_name="Faria Sewers (X+8,Y-4)",
+        region_name="Faria Sewers (X+8, Y-4)",
+        region_name_suffixless="Faria Sewers (X+8, Y-4)",
         global_room_id="city_underground/yug829",
-        sort_key="60796",
+        sort_key="070796",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+9, Y-4) - yug848",
         room_area="Faria Slimer Borough (Sewers)",
-        region_name="Faria Sewers (X+9,Y-4)",
+        region_name="Faria Sewers (X+9, Y-4)",
+        region_name_suffixless="Faria Sewers (X+9, Y-4)",
         global_room_id="city_underground/yug848",
-        sort_key="60896",
+        sort_key="070896",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+5, Y-2) - lor177",
         room_area="Faria Slimer Borough (Sewers)",
-        region_name="Faria Sewers (X+5,Y-2)",
+        region_name="Faria Sewers (X+5, Y-2)",
+        region_name_suffixless="Faria Sewers (X+5, Y-2)",
         global_room_id="city_underground/lor177",
-        sort_key="60498",
+        sort_key="070498",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+6, Y-2) - yug13",
         room_area="Faria Slimer Borough (Sewers)",
-        region_name="Faria Sewers (X+6,Y-2)",
+        region_name="Faria Sewers (X+6, Y-2)",
+        region_name_suffixless="Faria Sewers (X+6, Y-2)",
         global_room_id="city_underground/yug13",
-        sort_key="60598",
+        sort_key="070598",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+2, Y-1) - ren1477",
         room_area="Faria Slimer Borough (Sewers)",
-        region_name="Faria Sewers (X+2,Y-1)",
+        region_name="Faria Sewers (X+2, Y-1)",
+        region_name_suffixless="Faria Sewers (X+2, Y-1)",
         global_room_id="city_underground/ren1477",
-        sort_key="60199",
+        sort_key="070199",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+5, Y-1) - lor176",
         room_area="Faria Slimer Borough (Sewers)",
-        region_name="Faria Sewers (X+5,Y-1)",
+        region_name="Faria Sewers (X+5, Y-1)",
+        region_name_suffixless="Faria Sewers (X+5, Y-1)",
         global_room_id="city_underground/lor176",
-        sort_key="60499",
+        sort_key="070499",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+6, Y-1) - yug31",
         room_area="Faria Slimer Borough (Sewers)",
-        region_name="Faria Sewers (X+6,Y-1)",
+        region_name="Faria Sewers (X+6, Y-1)",
+        region_name_suffixless="Faria Sewers (X+6, Y-1)",
         global_room_id="city_underground/yug31",
-        sort_key="60599",
+        sort_key="070599",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+7, Y-1) - lor194",
         room_area="Faria Slimer Borough (Sewers)",
-        region_name="Faria Sewers (X+7,Y-1)",
+        region_name="Faria Sewers (X+7, Y-1)",
+        region_name_suffixless="Faria Sewers (X+7, Y-1)",
         global_room_id="city_underground/lor194",
-        sort_key="60699",
+        sort_key="070699",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+8, Y-1) - yug23",
         room_area="Faria Slimer Borough (Sewers)",
-        region_name="Faria Sewers (X+8,Y-1)",
+        region_name="Faria Sewers (X+8, Y-1)",
+        region_name_suffixless="Faria Sewers (X+8, Y-1)",
         global_room_id="city_underground/yug23",
-        sort_key="60799",
+        sort_key="070799",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+2, Y+0) - ren1453",
         room_area="Faria Slimer Borough (Sewers)",
-        region_name="Faria Sewers (X+2,Y+0)",
+        region_name="Faria Sewers (X+2, Y+0)",
+        region_name_suffixless="Faria Sewers (X+2, Y+0)",
         global_room_id="city_underground/ren1453",
-        sort_key="60200",
+        sort_key="070200",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+5, Y+0) - lor175",
         room_area="Faria Slimer Borough (Sewers)",
-        region_name="Faria Sewers (X+5,Y+0)",
+        region_name="Faria Sewers (X+5, Y+0)",
+        region_name_suffixless="Faria Sewers (X+5, Y+0)",
         global_room_id="city_underground/lor175",
-        sort_key="60500",
+        sort_key="070500",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+6, Y+0) - yug26 (Main)",
         room_area="Faria Slimer Borough (Sewers)",
-        region_name="Faria Sewers (X+6,Y+0) (Main)",
+        region_name="Faria Sewers (X+6, Y+0) (Main)",
+        region_name_suffixless="Faria Sewers (X+6, Y+0)",
         global_room_id="city_underground/yug26",
-        sort_key="60600 (Main)",
+        sort_key="070600",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+6, Y+0) - yug26 (North)",
         room_area="Faria Slimer Borough (Sewers)",
-        region_name="Faria Sewers (X+6,Y+0) (North)",
+        region_name="Faria Sewers (X+6, Y+0) (North)",
+        region_name_suffixless="Faria Sewers (X+6, Y+0)",
         global_room_id="city_underground/yug26",
-        sort_key="60600 (North)",
+        sort_key="070600",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+6, Y+0) - yug26 (South)",
         room_area="Faria Slimer Borough (Sewers)",
-        region_name="Faria Sewers (X+6,Y+0) (South)",
+        region_name="Faria Sewers (X+6, Y+0) (South)",
+        region_name_suffixless="Faria Sewers (X+6, Y+0)",
         global_room_id="city_underground/yug26",
-        sort_key="60600 (South)",
+        sort_key="070600",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+6, Y+0) - yug26 (East)",
         room_area="Faria Slimer Borough (Sewers)",
-        region_name="Faria Sewers (X+6,Y+0) (East)",
+        region_name="Faria Sewers (X+6, Y+0) (East)",
+        region_name_suffixless="Faria Sewers (X+6, Y+0)",
         global_room_id="city_underground/yug26",
-        sort_key="60600 (East)",
+        sort_key="070600",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+7, Y+0) - yug39",
         room_area="Faria Slimer Borough (Sewers)",
-        region_name="Faria Sewers (X+7,Y+0)",
+        region_name="Faria Sewers (X+7, Y+0)",
+        region_name_suffixless="Faria Sewers (X+7, Y+0)",
         global_room_id="city_underground/yug39",
-        sort_key="60700",
+        sort_key="070700",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+8, Y+0) - yug20",
         room_area="Faria Slimer Borough (Sewers)",
-        region_name="Faria Sewers (X+8,Y+0)",
+        region_name="Faria Sewers (X+8, Y+0)",
+        region_name_suffixless="Faria Sewers (X+8, Y+0)",
         global_room_id="city_underground/yug20",
-        sort_key="60800",
+        sort_key="070800",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+9, Y+0) - yug1330",
         room_area="Faria Slimer Borough (Sewers)",
-        region_name="Faria Sewers (X+9,Y+0)",
+        region_name="Faria Sewers (X+9, Y+0)",
+        region_name_suffixless="Faria Sewers (X+9, Y+0)",
         global_room_id="city_underground/yug1330",
-        sort_key="60900",
+        sort_key="070900",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+10, Y+0) - yug1803",
         room_area="Faria Slimer Borough (Sewers)",
-        region_name="Faria Sewers (X+10,Y+0)",
+        region_name="Faria Sewers (X+10, Y+0)",
+        region_name_suffixless="Faria Sewers (X+10, Y+0)",
         global_room_id="city_underground/yug1803",
-        sort_key="61000",
+        sort_key="071000",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+5, Y+1) - yug4",
         room_area="Faria Slimer Borough (Sewers)",
-        region_name="Faria Sewers (X+5,Y+1)",
+        region_name="Faria Sewers (X+5, Y+1)",
+        region_name_suffixless="Faria Sewers (X+5, Y+1)",
         global_room_id="city_underground/yug4",
-        sort_key="60501",
+        sort_key="070501",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+6, Y+1) - yug35",
         room_area="Faria Slimer Borough (Sewers)",
-        region_name="Faria Sewers (X+6,Y+1)",
+        region_name="Faria Sewers (X+6, Y+1)",
+        region_name_suffixless="Faria Sewers (X+6, Y+1)",
         global_room_id="city_underground/yug35",
-        sort_key="60601",
+        sort_key="070601",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+8, Y+1) - yug619",
         room_area="Faria Slimer Borough (Sewers)",
-        region_name="Faria Sewers (X+8,Y+1)",
+        region_name="Faria Sewers (X+8, Y+1)",
+        region_name_suffixless="Faria Sewers (X+8, Y+1)",
         global_room_id="city_underground/yug619",
-        sort_key="60801",
+        sort_key="070801",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+4, Y+3) - yug47",
         room_area="Faria Slimer Borough (Sewers)",
-        region_name="Faria Sewers (X+4,Y+3)",
+        region_name="Faria Sewers (X+4, Y+3)",
+        region_name_suffixless="Faria Sewers (X+4, Y+3)",
         global_room_id="city_underground/yug47",
-        sort_key="60403",
+        sort_key="070403",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+5, Y+3) - lor779",
         room_area="Faria Slimer Borough (Sewers)",
-        region_name="Faria Sewers (X+5,Y+3)",
+        region_name="Faria Sewers (X+5, Y+3)",
+        region_name_suffixless="Faria Sewers (X+5, Y+3)",
         global_room_id="city_underground/lor779",
-        sort_key="60503",
+        sort_key="070503",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+6, Y+3) - yug382",
         room_area="Faria Slimer Borough (Sewers)",
-        region_name="Faria Sewers (X+6,Y+3)",
+        region_name="Faria Sewers (X+6, Y+3)",
+        region_name_suffixless="Faria Sewers (X+6, Y+3)",
         global_room_id="city_underground/yug382",
-        sort_key="60603",
+        sort_key="070603",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+7, Y+3) - lor173 (West)",
         room_area="Faria Slimer Borough (Sewers)",
-        region_name="Faria Sewers (X+7,Y+3) (West)",
+        region_name="Faria Sewers (X+7, Y+3) (West)",
+        region_name_suffixless="Faria Sewers (X+7, Y+3)",
         global_room_id="city_underground/lor173",
-        sort_key="60703 (West)",
+        sort_key="070703",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+7, Y+3) - lor173 (East)",
         room_area="Faria Slimer Borough (Sewers)",
-        region_name="Faria Sewers (X+7,Y+3) (East)",
+        region_name="Faria Sewers (X+7, Y+3) (East)",
+        region_name_suffixless="Faria Sewers (X+7, Y+3)",
         global_room_id="city_underground/lor173",
-        sort_key="60703 (East)",
+        sort_key="070703",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+8, Y+3) - yug1141",
         room_area="Faria Slimer Borough (Sewers)",
-        region_name="Faria Sewers (X+8,Y+3)",
+        region_name="Faria Sewers (X+8, Y+3)",
+        region_name_suffixless="Faria Sewers (X+8, Y+3)",
         global_room_id="city_underground/yug1141",
-        sort_key="60803",
+        sort_key="070803",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+4, Y+4) - yug385",
         room_area="Faria Slimer Borough (Sewers)",
-        region_name="Faria Sewers (X+4,Y+4)",
+        region_name="Faria Sewers (X+4, Y+4)",
+        region_name_suffixless="Faria Sewers (X+4, Y+4)",
         global_room_id="city_underground/yug385",
-        sort_key="60404",
+        sort_key="070404",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+6, Y+4) - yug528",
         room_area="Faria Slimer Borough (Sewers)",
-        region_name="Faria Sewers (X+6,Y+4)",
+        region_name="Faria Sewers (X+6, Y+4)",
+        region_name_suffixless="Faria Sewers (X+6, Y+4)",
         global_room_id="city_underground/yug528",
-        sort_key="60604",
+        sort_key="070604",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+7, Y+4) - yug1206",
         room_area="Faria Slimer Borough (Sewers)",
-        region_name="Faria Sewers (X+7,Y+4)",
+        region_name="Faria Sewers (X+7, Y+4)",
+        region_name_suffixless="Faria Sewers (X+7, Y+4)",
         global_room_id="city_underground/yug1206",
-        sort_key="60704",
+        sort_key="070704",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+8, Y+4) - ren3800 (West)",
         room_area="Faria Slimer Borough (Sewers)",
-        region_name="Faria Sewers (X+8,Y+4) (West)",
+        region_name="Faria Sewers (X+8, Y+4) (West)",
+        region_name_suffixless="Faria Sewers (X+8, Y+4)",
         global_room_id="city_underground/ren3800",
-        sort_key="60804 (West)",
+        sort_key="070804",
     ),
     RoomData(
         room_label="Faria Slimer Borough (Sewers) (X+8, Y+4) - ren3800 (East)",
         room_area="Faria Slimer Borough (Sewers)",
-        region_name="Faria Sewers (X+8,Y+4) (East)",
+        region_name="Faria Sewers (X+8, Y+4) (East)",
+        region_name_suffixless="Faria Sewers (X+8, Y+4)",
         global_room_id="city_underground/ren3800",
-        sort_key="60804 (East)",
+        sort_key="070804",
     ),
     RoomData(
         room_label="Safe House (X-1, Y+0) - lor127",
         room_area="Safe House",
-        region_name="Safe House (X-1,Y+0)",
+        region_name="Safe House (X-1, Y+0)",
+        region_name_suffixless="Safe House (X-1, Y+0)",
         global_room_id="safehouse/lor127",
-        sort_key="0100",
+        sort_key="009900",
     ),
     RoomData(
         room_label="Safe House (X+0, Y+0) - mig38",
         room_area="Safe House",
-        region_name="Safe House (X+0,Y+0)",
+        region_name="Safe House (X+0, Y+0)",
+        region_name_suffixless="Safe House (X+0, Y+0)",
         global_room_id="safehouse/mig38",
-        sort_key="0000",
+        sort_key="010000",
     ),
     RoomData(
         room_label="Safe House (X+1, Y+0) - mig32",
         room_area="Safe House",
-        region_name="Safe House (X+1,Y+0)",
+        region_name="Safe House (X+1, Y+0)",
+        region_name_suffixless="Safe House (X+1, Y+0)",
         global_room_id="safehouse/mig32",
-        sort_key="0100",
+        sort_key="010100",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-3, Y-2) - lor1300",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-3, Y-2)",
+        region_name_suffixless="Excavation (X-3, Y-2)",
+        global_room_id="dungeon2/lor1300",
+        sort_key="089698",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+0, Y-2) - lor1303",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+0, Y-2)",
+        region_name_suffixless="Excavation (X+0, Y-2)",
+        global_room_id="dungeon2/lor1303",
+        sort_key="089998",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+3, Y-2) - lor1305",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+3, Y-2)",
+        region_name_suffixless="Excavation (X+3, Y-2)",
+        global_room_id="dungeon2/lor1305",
+        sort_key="090298",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+4, Y-2) - lor179 (Main)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+4, Y-2) (Main)",
+        region_name_suffixless="Excavation (X+4, Y-2)",
+        global_room_id="dungeon2/lor179",
+        sort_key="090398",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+4, Y-2) - lor179 (West)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+4, Y-2) (West)",
+        region_name_suffixless="Excavation (X+4, Y-2)",
+        global_room_id="dungeon2/lor179",
+        sort_key="090398",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+4, Y-2) - lor179 (South Money Bag)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+4, Y-2) (South Money Bag)",
+        region_name_suffixless="Excavation (X+4, Y-2)",
+        global_room_id="dungeon2/lor179",
+        sort_key="090398",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+5, Y-2) - lor1326",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+5, Y-2)",
+        region_name_suffixless="Excavation (X+5, Y-2)",
+        global_room_id="dungeon2/lor1326",
+        sort_key="090498",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+6, Y-2) - lor1325",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+6, Y-2)",
+        region_name_suffixless="Excavation (X+6, Y-2)",
+        global_room_id="dungeon2/lor1325",
+        sort_key="090598",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-4, Y-1) - lor1299",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-4, Y-1)",
+        region_name_suffixless="Excavation (X-4, Y-1)",
+        global_room_id="dungeon2/lor1299",
+        sort_key="089599",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-3, Y-1) - lor534",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-3, Y-1)",
+        region_name_suffixless="Excavation (X-3, Y-1)",
+        global_room_id="dungeon2/lor534",
+        sort_key="089699",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-2, Y-1) - lor524 (Main)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-2, Y-1) (Main)",
+        region_name_suffixless="Excavation (X-2, Y-1)",
+        global_room_id="dungeon2/lor524",
+        sort_key="089799",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-2, Y-1) - lor524 (Northwest)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-2, Y-1) (Northwest)",
+        region_name_suffixless="Excavation (X-2, Y-1)",
+        global_room_id="dungeon2/lor524",
+        sort_key="089799",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-2, Y-1) - lor524 (Southwest)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-2, Y-1) (Southwest)",
+        region_name_suffixless="Excavation (X-2, Y-1)",
+        global_room_id="dungeon2/lor524",
+        sort_key="089799",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-1, Y-1) - lor533",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-1, Y-1)",
+        region_name_suffixless="Excavation (X-1, Y-1)",
+        global_room_id="dungeon2/lor533",
+        sort_key="089899",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+2, Y-1) - lor1231",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+2, Y-1)",
+        region_name_suffixless="Excavation (X+2, Y-1)",
+        global_room_id="dungeon2/lor1231",
+        sort_key="090199",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+3, Y-1) - lor172",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+3, Y-1)",
+        region_name_suffixless="Excavation (X+3, Y-1)",
+        global_room_id="dungeon2/lor172",
+        sort_key="090299",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+5, Y-1) - lor1228",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+5, Y-1)",
+        region_name_suffixless="Excavation (X+5, Y-1)",
+        global_room_id="dungeon2/lor1228",
+        sort_key="090499",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-3, Y+0) - lor536",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-3, Y+0)",
+        region_name_suffixless="Excavation (X-3, Y+0)",
+        global_room_id="dungeon2/lor536",
+        sort_key="089700",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-1, Y+0) - lor523",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-1, Y+0)",
+        region_name_suffixless="Excavation (X-1, Y+0)",
+        global_room_id="dungeon2/lor523",
+        sort_key="089900",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+0, Y+0) - lor149 (Main)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+0, Y+0) (Main)",
+        region_name_suffixless="Excavation (X+0, Y+0)",
+        global_room_id="dungeon2/lor149",
+        sort_key="090000",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+0, Y+0) - lor149 (Southwest Left)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+0, Y+0) (Southwest Left)",
+        region_name_suffixless="Excavation (X+0, Y+0)",
+        global_room_id="dungeon2/lor149",
+        sort_key="090000",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+0, Y+0) - lor149 (Southwest Right)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+0, Y+0) (Southwest Right)",
+        region_name_suffixless="Excavation (X+0, Y+0)",
+        global_room_id="dungeon2/lor149",
+        sort_key="090000",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+0, Y+0) - lor149 (Southeast)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+0, Y+0) (Southeast)",
+        region_name_suffixless="Excavation (X+0, Y+0)",
+        global_room_id="dungeon2/lor149",
+        sort_key="090000",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+2, Y+0) - lor158 (West)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+2, Y+0) (West)",
+        region_name_suffixless="Excavation (X+2, Y+0)",
+        global_room_id="dungeon2/lor158",
+        sort_key="090200",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+2, Y+0) - lor158 (East)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+2, Y+0) (East)",
+        region_name_suffixless="Excavation (X+2, Y+0)",
+        global_room_id="dungeon2/lor158",
+        sort_key="090200",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+3, Y+0) - lor166",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+3, Y+0)",
+        region_name_suffixless="Excavation (X+3, Y+0)",
+        global_room_id="dungeon2/lor166",
+        sort_key="090300",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+4, Y+0) - lor171",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+4, Y+0)",
+        region_name_suffixless="Excavation (X+4, Y+0)",
+        global_room_id="dungeon2/lor171",
+        sort_key="090400",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+5, Y+0) - lor339",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+5, Y+0)",
+        region_name_suffixless="Excavation (X+5, Y+0)",
+        global_room_id="dungeon2/lor339",
+        sort_key="090500",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-3, Y+1) - lor535",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-3, Y+1)",
+        region_name_suffixless="Excavation (X-3, Y+1)",
+        global_room_id="dungeon2/lor535",
+        sort_key="089701",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-1, Y+1) - lor584",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-1, Y+1)",
+        region_name_suffixless="Excavation (X-1, Y+1)",
+        global_room_id="dungeon2/lor584",
+        sort_key="089901",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+2, Y+1) - lor213",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+2, Y+1)",
+        region_name_suffixless="Excavation (X+2, Y+1)",
+        global_room_id="dungeon2/lor213",
+        sort_key="090201",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+3, Y+1) - lor173",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+3, Y+1)",
+        region_name_suffixless="Excavation (X+3, Y+1)",
+        global_room_id="dungeon2/lor173",
+        sort_key="090301",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+4, Y+1) - lor180",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+4, Y+1)",
+        region_name_suffixless="Excavation (X+4, Y+1)",
+        global_room_id="dungeon2/lor180",
+        sort_key="090401",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+5, Y+1) - lor337",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+5, Y+1)",
+        region_name_suffixless="Excavation (X+5, Y+1)",
+        global_room_id="dungeon2/lor337",
+        sort_key="090501",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-4, Y+2) - lor1296",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-4, Y+2)",
+        region_name_suffixless="Excavation (X-4, Y+2)",
+        global_room_id="dungeon2/lor1296",
+        sort_key="089602",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-3, Y+2) - lor617",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-3, Y+2)",
+        region_name_suffixless="Excavation (X-3, Y+2)",
+        global_room_id="dungeon2/lor617",
+        sort_key="089702",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-2, Y+2) - lor586",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-2, Y+2)",
+        region_name_suffixless="Excavation (X-2, Y+2)",
+        global_room_id="dungeon2/lor586",
+        sort_key="089802",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-1, Y+2) - lor585",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-1, Y+2)",
+        region_name_suffixless="Excavation (X-1, Y+2)",
+        global_room_id="dungeon2/lor585",
+        sort_key="089902",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+2, Y+2) - lor212 (West)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+2, Y+2) (West)",
+        region_name_suffixless="Excavation (X+2, Y+2)",
+        global_room_id="dungeon2/lor212",
+        sort_key="090202",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+2, Y+2) - lor212 (East)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+2, Y+2) (East)",
+        region_name_suffixless="Excavation (X+2, Y+2)",
+        global_room_id="dungeon2/lor212",
+        sort_key="090202",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+4, Y+2) - yug8",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+4, Y+2)",
+        region_name_suffixless="Excavation (X+4, Y+2)",
+        global_room_id="dungeon2/yug8",
+        sort_key="090402",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-3, Y+3) - lor618",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-3, Y+3)",
+        region_name_suffixless="Excavation (X-3, Y+3)",
+        global_room_id="dungeon2/lor618",
+        sort_key="089703",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+0, Y+3) - lor619",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+0, Y+3)",
+        region_name_suffixless="Excavation (X+0, Y+3)",
+        global_room_id="dungeon2/lor619",
+        sort_key="090003",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+1, Y+3) - lor416",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+1, Y+3)",
+        region_name_suffixless="Excavation (X+1, Y+3)",
+        global_room_id="dungeon2/lor416",
+        sort_key="090103",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+2, Y+3) - lor417 (West)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+2, Y+3) (West)",
+        region_name_suffixless="Excavation (X+2, Y+3)",
+        global_room_id="dungeon2/lor417",
+        sort_key="090203",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+2, Y+3) - lor417 (East)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+2, Y+3) (East)",
+        region_name_suffixless="Excavation (X+2, Y+3)",
+        global_room_id="dungeon2/lor417",
+        sort_key="090203",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+3, Y+3) - lor368 (West)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+3, Y+3) (West)",
+        region_name_suffixless="Excavation (X+3, Y+3)",
+        global_room_id="dungeon2/lor368",
+        sort_key="090303",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+3, Y+3) - lor368 (East)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+3, Y+3) (East)",
+        region_name_suffixless="Excavation (X+3, Y+3)",
+        global_room_id="dungeon2/lor368",
+        sort_key="090303",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+4, Y+3) - lor256",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+4, Y+3)",
+        region_name_suffixless="Excavation (X+4, Y+3)",
+        global_room_id="dungeon2/lor256",
+        sort_key="090403",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-2, Y+4) - lor672 (North)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-2, Y+4) (North)",
+        region_name_suffixless="Excavation (X-2, Y+4)",
+        global_room_id="dungeon2/lor672",
+        sort_key="089804",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-2, Y+4) - lor672 (South)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-2, Y+4) (South)",
+        region_name_suffixless="Excavation (X-2, Y+4)",
+        global_room_id="dungeon2/lor672",
+        sort_key="089804",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-2, Y+4) - lor672 (Southeast)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-2, Y+4) (Southeast)",
+        region_name_suffixless="Excavation (X-2, Y+4)",
+        global_room_id="dungeon2/lor672",
+        sort_key="089804",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-2, Y+4) - lor672 (Lever)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-2, Y+4) (Lever)",
+        region_name_suffixless="Excavation (X-2, Y+4)",
+        global_room_id="dungeon2/lor672",
+        sort_key="089804",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+0, Y+4) - lor667 (Main)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+0, Y+4) (Main)",
+        region_name_suffixless="Excavation (X+0, Y+4)",
+        global_room_id="dungeon2/lor667",
+        sort_key="090004",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+0, Y+4) - lor667 (Southeast)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+0, Y+4) (Southeast)",
+        region_name_suffixless="Excavation (X+0, Y+4)",
+        global_room_id="dungeon2/lor667",
+        sort_key="090004",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+1, Y+4) - lor755",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+1, Y+4)",
+        region_name_suffixless="Excavation (X+1, Y+4)",
+        global_room_id="dungeon2/lor755",
+        sort_key="090104",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+2, Y+4) - lor770",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+2, Y+4)",
+        region_name_suffixless="Excavation (X+2, Y+4)",
+        global_room_id="dungeon2/lor770",
+        sort_key="090204",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+3, Y+4) - lor390 (West)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+3, Y+4) (West)",
+        region_name_suffixless="Excavation (X+3, Y+4)",
+        global_room_id="dungeon2/lor390",
+        sort_key="090304",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+3, Y+4) - lor390 (East)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+3, Y+4) (East)",
+        region_name_suffixless="Excavation (X+3, Y+4)",
+        global_room_id="dungeon2/lor390",
+        sort_key="090304",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+4, Y+4) - lor1321",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+4, Y+4)",
+        region_name_suffixless="Excavation (X+4, Y+4)",
+        global_room_id="dungeon2/lor1321",
+        sort_key="090404",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-5, Y+5) - lor1307 (Main)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-5, Y+5) (Main)",
+        region_name_suffixless="Excavation (X-5, Y+5)",
+        global_room_id="dungeon2/lor1307",
+        sort_key="089505",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-5, Y+5) - lor1307 (Money Bag)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-5, Y+5) (Money Bag)",
+        region_name_suffixless="Excavation (X-5, Y+5)",
+        global_room_id="dungeon2/lor1307",
+        sort_key="089505",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+0, Y+5) - lor741 (West)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+0, Y+5) (West)",
+        region_name_suffixless="Excavation (X+0, Y+5)",
+        global_room_id="dungeon2/lor741",
+        sort_key="090005",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+0, Y+5) - lor741 (East)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+0, Y+5) (East)",
+        region_name_suffixless="Excavation (X+0, Y+5)",
+        global_room_id="dungeon2/lor741",
+        sort_key="090005",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+2, Y+5) - lor769 (Main)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+2, Y+5) (Main)",
+        region_name_suffixless="Excavation (X+2, Y+5)",
+        global_room_id="dungeon2/lor769",
+        sort_key="090205",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+2, Y+5) - lor769 (Key)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+2, Y+5) (Key)",
+        region_name_suffixless="Excavation (X+2, Y+5)",
+        global_room_id="dungeon2/lor769",
+        sort_key="090205",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+3, Y+5) - lor856",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+3, Y+5)",
+        region_name_suffixless="Excavation (X+3, Y+5)",
+        global_room_id="dungeon2/lor856",
+        sort_key="090305",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-4, Y+6) - yug3 (West)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-4, Y+6) (West)",
+        region_name_suffixless="Excavation (X-4, Y+6)",
+        global_room_id="dungeon2/yug3",
+        sort_key="089606",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-4, Y+6) - yug3 (East)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-4, Y+6) (East)",
+        region_name_suffixless="Excavation (X-4, Y+6)",
+        global_room_id="dungeon2/yug3",
+        sort_key="089606",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-3, Y+6) - lor703 (West)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-3, Y+6) (West)",
+        region_name_suffixless="Excavation (X-3, Y+6)",
+        global_room_id="dungeon2/lor703",
+        sort_key="089706",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-3, Y+6) - lor703 (East)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-3, Y+6) (East)",
+        region_name_suffixless="Excavation (X-3, Y+6)",
+        global_room_id="dungeon2/lor703",
+        sort_key="089706",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-2, Y+6) - lor701 (West)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-2, Y+6) (West)",
+        region_name_suffixless="Excavation (X-2, Y+6)",
+        global_room_id="dungeon2/lor701",
+        sort_key="089806",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-2, Y+6) - lor701 (East)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-2, Y+6) (East)",
+        region_name_suffixless="Excavation (X-2, Y+6)",
+        global_room_id="dungeon2/lor701",
+        sort_key="089806",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-1, Y+6) - lor732 (South)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-1, Y+6) (South)",
+        region_name_suffixless="Excavation (X-1, Y+6)",
+        global_room_id="dungeon2/lor732",
+        sort_key="089906",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-1, Y+6) - lor732 (West)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-1, Y+6) (West)",
+        region_name_suffixless="Excavation (X-1, Y+6)",
+        global_room_id="dungeon2/lor732",
+        sort_key="089906",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-1, Y+6) - lor732 (East)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-1, Y+6) (East)",
+        region_name_suffixless="Excavation (X-1, Y+6)",
+        global_room_id="dungeon2/lor732",
+        sort_key="089906",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+0, Y+6) - lor1079 (Main)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+0, Y+6) (Main)",
+        region_name_suffixless="Excavation (X+0, Y+6)",
+        global_room_id="dungeon2/lor1079",
+        sort_key="090006",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+0, Y+6) - lor1079 (East Alcove)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+0, Y+6) (East Alcove)",
+        region_name_suffixless="Excavation (X+0, Y+6)",
+        global_room_id="dungeon2/lor1079",
+        sort_key="090006",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+2, Y+6) - lor768",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+2, Y+6)",
+        region_name_suffixless="Excavation (X+2, Y+6)",
+        global_room_id="dungeon2/lor768",
+        sort_key="090206",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+3, Y+6) - lor854",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+3, Y+6)",
+        region_name_suffixless="Excavation (X+3, Y+6)",
+        global_room_id="dungeon2/lor854",
+        sort_key="090306",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+4, Y+6) - lor1086",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+4, Y+6)",
+        region_name_suffixless="Excavation (X+4, Y+6)",
+        global_room_id="dungeon2/lor1086",
+        sort_key="090406",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+5, Y+6) - lor1320",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+5, Y+6)",
+        region_name_suffixless="Excavation (X+5, Y+6)",
+        global_room_id="dungeon2/lor1320",
+        sort_key="090506",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-4, Y+7) - lor1309",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-4, Y+7)",
+        region_name_suffixless="Excavation (X-4, Y+7)",
+        global_room_id="dungeon2/lor1309",
+        sort_key="089607",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-3, Y+7) - lor712",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-3, Y+7)",
+        region_name_suffixless="Excavation (X-3, Y+7)",
+        global_room_id="dungeon2/lor712",
+        sort_key="089707",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-2, Y+7) - lor726 (Main)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-2, Y+7) (Main)",
+        region_name_suffixless="Excavation (X-2, Y+7)",
+        global_room_id="dungeon2/lor726",
+        sort_key="089807",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-2, Y+7) - lor726 (Key)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-2, Y+7) (Key)",
+        region_name_suffixless="Excavation (X-2, Y+7)",
+        global_room_id="dungeon2/lor726",
+        sort_key="089807",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-1, Y+7) - lor731 (West)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-1, Y+7) (West)",
+        region_name_suffixless="Excavation (X-1, Y+7)",
+        global_room_id="dungeon2/lor731",
+        sort_key="089907",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-1, Y+7) - lor731 (East)",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-1, Y+7) (East)",
+        region_name_suffixless="Excavation (X-1, Y+7)",
+        global_room_id="dungeon2/lor731",
+        sort_key="089907",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+0, Y+7) - lor1284",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+0, Y+7)",
+        region_name_suffixless="Excavation (X+0, Y+7)",
+        global_room_id="dungeon2/lor1284",
+        sort_key="090007",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+2, Y+7) - lor860",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+2, Y+7)",
+        region_name_suffixless="Excavation (X+2, Y+7)",
+        global_room_id="dungeon2/lor860",
+        sort_key="090207",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X-2, Y+8) - lor1311",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X-2, Y+8)",
+        region_name_suffixless="Excavation (X-2, Y+8)",
+        global_room_id="dungeon2/lor1311",
+        sort_key="089808",
+    ),
+    RoomData(
+        room_label="SlimeCorp Excavation Site (X+0, Y+8) - lor1089",
+        room_area="SlimeCorp Excavation Site",
+        region_name="Excavation (X+0, Y+8)",
+        region_name_suffixless="Excavation (X+0, Y+8)",
+        global_room_id="dungeon2/lor1089",
+        sort_key="090008",
+    ),
+    RoomData(
+        room_label="SlimeCorp Skyscraper (X+0, Y-5) - lor151",
+        room_area="SlimeCorp Skyscraper",
+        region_name="Skyscraper (X+0, Y-5)",
+        region_name_suffixless="Skyscraper (X+0, Y-5)",
+        global_room_id="skyscraper/lor151",
+        sort_key="079995",
+    ),
+    RoomData(
+        room_label="SlimeCorp Skyscraper (X+1, Y-5) - lor133",
+        room_area="SlimeCorp Skyscraper",
+        region_name="Skyscraper (X+1, Y-5)",
+        region_name_suffixless="Skyscraper (X+1, Y-5)",
+        global_room_id="skyscraper/lor133",
+        sort_key="080095",
+    ),
+    RoomData(
+        room_label="SlimeCorp Skyscraper (X+2, Y-5) - lor98",
+        room_area="SlimeCorp Skyscraper",
+        region_name="Skyscraper (X+2, Y-5)",
+        region_name_suffixless="Skyscraper (X+2, Y-5)",
+        global_room_id="skyscraper/lor98",
+        sort_key="080195",
+    ),
+    RoomData(
+        room_label="SlimeCorp Skyscraper (X+3, Y-5) - lor112",
+        room_area="SlimeCorp Skyscraper",
+        region_name="Skyscraper (X+3, Y-5)",
+        region_name_suffixless="Skyscraper (X+3, Y-5)",
+        global_room_id="skyscraper/lor112",
+        sort_key="080295",
+    ),
+    RoomData(
+        room_label="SlimeCorp Skyscraper (X+4, Y-5) - lor104",
+        room_area="SlimeCorp Skyscraper",
+        region_name="Skyscraper (X+4, Y-5)",
+        region_name_suffixless="Skyscraper (X+4, Y-5)",
+        global_room_id="skyscraper/lor104",
+        sort_key="080395",
+    ),
+    RoomData(
+        room_label="SlimeCorp Skyscraper (X+0, Y-4) - lor187",
+        room_area="SlimeCorp Skyscraper",
+        region_name="Skyscraper (X+0, Y-4)",
+        region_name_suffixless="Skyscraper (X+0, Y-4)",
+        global_room_id="skyscraper/lor187",
+        sort_key="079996",
+    ),
+    RoomData(
+        room_label="SlimeCorp Skyscraper (X+1, Y-4) - lor150",
+        room_area="SlimeCorp Skyscraper",
+        region_name="Skyscraper (X+1, Y-4)",
+        region_name_suffixless="Skyscraper (X+1, Y-4)",
+        global_room_id="skyscraper/lor150",
+        sort_key="080096",
+    ),
+    RoomData(
+        room_label="SlimeCorp Skyscraper (X+2, Y-4) - lor140",
+        room_area="SlimeCorp Skyscraper",
+        region_name="Skyscraper (X+2, Y-4)",
+        region_name_suffixless="Skyscraper (X+2, Y-4)",
+        global_room_id="skyscraper/lor140",
+        sort_key="080196",
+    ),
+    RoomData(
+        room_label="SlimeCorp Skyscraper (X+3, Y-4) - lor97 (Main)",
+        room_area="SlimeCorp Skyscraper",
+        region_name="Skyscraper (X+3, Y-4) (Main)",
+        region_name_suffixless="Skyscraper (X+3, Y-4)",
+        global_room_id="skyscraper/lor97",
+        sort_key="080296",
+    ),
+    RoomData(
+        room_label="SlimeCorp Skyscraper (X+3, Y-4) - lor97 (North)",
+        room_area="SlimeCorp Skyscraper",
+        region_name="Skyscraper (X+3, Y-4) (North)",
+        region_name_suffixless="Skyscraper (X+3, Y-4)",
+        global_room_id="skyscraper/lor97",
+        sort_key="080296",
+    ),
+    RoomData(
+        room_label="SlimeCorp Skyscraper (X+3, Y-4) - lor97 (Southeast)",
+        room_area="SlimeCorp Skyscraper",
+        region_name="Skyscraper (X+3, Y-4) (Southeast)",
+        region_name_suffixless="Skyscraper (X+3, Y-4)",
+        global_room_id="skyscraper/lor97",
+        sort_key="080296",
+    ),
+    RoomData(
+        room_label="SlimeCorp Skyscraper (X+1, Y-3) - lor220 (Main)",
+        room_area="SlimeCorp Skyscraper",
+        region_name="Skyscraper (X+1, Y-3) (Main)",
+        region_name_suffixless="Skyscraper (X+1, Y-3)",
+        global_room_id="skyscraper/lor220",
+        sort_key="080097",
+    ),
+    RoomData(
+        room_label="SlimeCorp Skyscraper (X+1, Y-3) - lor220 (North)",
+        room_area="SlimeCorp Skyscraper",
+        region_name="Skyscraper (X+1, Y-3) (North)",
+        region_name_suffixless="Skyscraper (X+1, Y-3)",
+        global_room_id="skyscraper/lor220",
+        sort_key="080097",
+    ),
+    RoomData(
+        room_label="SlimeCorp Skyscraper (X+0, Y-2) - lor2 (West)",
+        room_area="SlimeCorp Skyscraper",
+        region_name="Skyscraper (X+0, Y-2) (West)",
+        region_name_suffixless="Skyscraper (X+0, Y-2)",
+        global_room_id="skyscraper/lor2",
+        sort_key="079998",
+    ),
+    RoomData(
+        room_label="SlimeCorp Skyscraper (X+0, Y-2) - lor2 (East)",
+        room_area="SlimeCorp Skyscraper",
+        region_name="Skyscraper (X+0, Y-2) (East)",
+        region_name_suffixless="Skyscraper (X+0, Y-2)",
+        global_room_id="skyscraper/lor2",
+        sort_key="079998",
+    ),
+    RoomData(
+        room_label="SlimeCorp Skyscraper (X+2, Y-2) - lor63 (West)",
+        room_area="SlimeCorp Skyscraper",
+        region_name="Skyscraper (X+2, Y-2) (West)",
+        region_name_suffixless="Skyscraper (X+2, Y-2)",
+        global_room_id="skyscraper/lor63",
+        sort_key="080198",
+    ),
+    RoomData(
+        room_label="SlimeCorp Skyscraper (X+2, Y-2) - lor63 (East)",
+        room_area="SlimeCorp Skyscraper",
+        region_name="Skyscraper (X+2, Y-2) (East)",
+        region_name_suffixless="Skyscraper (X+2, Y-2)",
+        global_room_id="skyscraper/lor63",
+        sort_key="080198",
+    ),
+    RoomData(
+        room_label="SlimeCorp Skyscraper (X+2, Y-1) - ren22",
+        room_area="SlimeCorp Skyscraper",
+        region_name="Skyscraper (X+2, Y-1)",
+        region_name_suffixless="Skyscraper (X+2, Y-1)",
+        global_room_id="skyscraper/ren22",
+        sort_key="080199",
+    ),
+    RoomData(
+        room_label="SlimeCorp Skyscraper (X+3, Y-1) - lor25 (North)",
+        room_area="SlimeCorp Skyscraper",
+        region_name="Skyscraper (X+3, Y-1) (North)",
+        region_name_suffixless="Skyscraper (X+3, Y-1)",
+        global_room_id="skyscraper/lor25",
+        sort_key="080299",
+    ),
+    RoomData(
+        room_label="SlimeCorp Skyscraper (X+3, Y-1) - lor25 (Southwest)",
+        room_area="SlimeCorp Skyscraper",
+        region_name="Skyscraper (X+3, Y-1) (Southwest)",
+        region_name_suffixless="Skyscraper (X+3, Y-1)",
+        global_room_id="skyscraper/lor25",
+        sort_key="080299",
+    ),
+    RoomData(
+        room_label="SlimeCorp Skyscraper (X+4, Y-1) - lor54",
+        room_area="SlimeCorp Skyscraper",
+        region_name="Skyscraper (X+4, Y-1)",
+        region_name_suffixless="Skyscraper (X+4, Y-1)",
+        global_room_id="skyscraper/lor54",
+        sort_key="080399",
+    ),
+    RoomData(
+        room_label="SlimeCorp Skyscraper (X+2, Y+0) - lor16 (West)",
+        room_area="SlimeCorp Skyscraper",
+        region_name="Skyscraper (X+2, Y+0) (West)",
+        region_name_suffixless="Skyscraper (X+2, Y+0)",
+        global_room_id="skyscraper/lor16",
+        sort_key="080200",
+    ),
+    RoomData(
+        room_label="SlimeCorp Skyscraper (X+2, Y+0) - lor16 (East)",
+        room_area="SlimeCorp Skyscraper",
+        region_name="Skyscraper (X+2, Y+0) (East)",
+        region_name_suffixless="Skyscraper (X+2, Y+0)",
+        global_room_id="skyscraper/lor16",
+        sort_key="080200",
     ),
     RoomData(
         room_label="South Plaza (X-1, Y-6) - ren355 (North)",
         room_area="South Plaza",
-        region_name="S Plaza (X-1,Y-6) (North)",
+        region_name="S Plaza (X-1, Y-6) (North)",
+        region_name_suffixless="S Plaza (X-1, Y-6)",
         global_room_id="city/ren355",
-        sort_key="10094 (North)",
+        sort_key="019894",
     ),
     RoomData(
         room_label="South Plaza (X-1, Y-6) - ren355 (South)",
         room_area="South Plaza",
-        region_name="S Plaza (X-1,Y-6) (South)",
+        region_name="S Plaza (X-1, Y-6) (South)",
+        region_name_suffixless="S Plaza (X-1, Y-6)",
         global_room_id="city/ren355",
-        sort_key="10094 (South)",
+        sort_key="019894",
     ),
     RoomData(
         room_label="South Plaza (X-1, Y-6) - ren355 (East)",
         room_area="South Plaza",
-        region_name="S Plaza (X-1,Y-6) (East)",
+        region_name="S Plaza (X-1, Y-6) (East)",
+        region_name_suffixless="S Plaza (X-1, Y-6)",
         global_room_id="city/ren355",
-        sort_key="10094 (East)",
+        sort_key="019894",
     ),
     RoomData(
         room_label="South Plaza (X-2, Y-4) - ren4064",
         room_area="South Plaza",
-        region_name="S Plaza (X-2,Y-4)",
+        region_name="S Plaza (X-2, Y-4)",
+        region_name_suffixless="S Plaza (X-2, Y-4)",
         global_room_id="city/ren4064",
-        sort_key="10196",
+        sort_key="019796",
     ),
     RoomData(
         room_label="South Plaza (X+1, Y-4) - ren4066",
         room_area="South Plaza",
-        region_name="S Plaza (X+1,Y-4)",
+        region_name="S Plaza (X+1, Y-4)",
+        region_name_suffixless="S Plaza (X+1, Y-4)",
         global_room_id="city/ren4066",
-        sort_key="10096",
+        sort_key="020096",
     ),
     RoomData(
         room_label="South Plaza (X-2, Y-3) - ren223 (Main)",
         room_area="South Plaza",
-        region_name="S Plaza (X-2,Y-3) (Main)",
+        region_name="S Plaza (X-2, Y-3) (Main)",
+        region_name_suffixless="S Plaza (X-2, Y-3)",
         global_room_id="city/ren223",
-        sort_key="10197 (Main)",
+        sort_key="019797",
     ),
     RoomData(
         room_label="South Plaza (X-2, Y-3) - ren223 (South)",
         room_area="South Plaza",
-        region_name="S Plaza (X-2,Y-3) (South)",
+        region_name="S Plaza (X-2, Y-3) (South)",
+        region_name_suffixless="S Plaza (X-2, Y-3)",
         global_room_id="city/ren223",
-        sort_key="10197 (South)",
+        sort_key="019797",
     ),
     RoomData(
         room_label="South Plaza (X-2, Y-3) - ren223 (Southwest)",
         room_area="South Plaza",
-        region_name="S Plaza (X-2,Y-3) (Southwest)",
+        region_name="S Plaza (X-2, Y-3) (Southwest)",
+        region_name_suffixless="S Plaza (X-2, Y-3)",
         global_room_id="city/ren223",
-        sort_key="10197 (Southwest)",
+        sort_key="019797",
     ),
     RoomData(
         room_label="South Plaza (X-2, Y-3) - ren223 (Southeast)",
         room_area="South Plaza",
-        region_name="S Plaza (X-2,Y-3) (Southeast)",
+        region_name="S Plaza (X-2, Y-3) (Southeast)",
+        region_name_suffixless="S Plaza (X-2, Y-3)",
         global_room_id="city/ren223",
-        sort_key="10197 (Southeast)",
+        sort_key="019797",
     ),
     RoomData(
         room_label="South Plaza (X-3, Y+3) - ren4152",
         room_area="South Plaza",
-        region_name="S Plaza (X-3,Y+3)",
+        region_name="S Plaza (X-3, Y+3)",
+        region_name_suffixless="S Plaza (X-3, Y+3)",
         global_room_id="city/ren4152",
-        sort_key="10303",
+        sort_key="019703",
     ),
     RoomData(
         room_label="South Plaza (X-3, Y+4) - yug4930",
         room_area="South Plaza",
-        region_name="S Plaza (X-3,Y+4)",
+        region_name="S Plaza (X-3, Y+4)",
+        region_name_suffixless="S Plaza (X-3, Y+4)",
         global_room_id="city/yug4930",
-        sort_key="10304",
+        sort_key="019704",
     ),
     RoomData(
         room_label="South Plaza (X-2, Y+4) - yug5210",
         room_area="South Plaza",
-        region_name="S Plaza (X-2,Y+4)",
+        region_name="S Plaza (X-2, Y+4)",
+        region_name_suffixless="S Plaza (X-2, Y+4)",
         global_room_id="city/yug5210",
-        sort_key="10204",
+        sort_key="019804",
     ),
     RoomData(
         room_label="South Plaza (X-1, Y+4) - lor2248 (North)",
         room_area="South Plaza",
-        region_name="S Plaza (X-1,Y+4) (North)",
+        region_name="S Plaza (X-1, Y+4) (North)",
+        region_name_suffixless="S Plaza (X-1, Y+4)",
         global_room_id="city/lor2248",
-        sort_key="10104 (North)",
+        sort_key="019904",
     ),
     RoomData(
         room_label="South Plaza (X-1, Y+4) - lor2248 (South)",
         room_area="South Plaza",
-        region_name="S Plaza (X-1,Y+4) (South)",
+        region_name="S Plaza (X-1, Y+4) (South)",
+        region_name_suffixless="S Plaza (X-1, Y+4)",
         global_room_id="city/lor2248",
-        sort_key="10104 (South)",
+        sort_key="019904",
     ),
     RoomData(
         room_label="South Plaza (X-1, Y+4) - lor2248 (Southeast)",
         room_area="South Plaza",
-        region_name="S Plaza (X-1,Y+4) (Southeast)",
+        region_name="S Plaza (X-1, Y+4) (Southeast)",
+        region_name_suffixless="S Plaza (X-1, Y+4)",
         global_room_id="city/lor2248",
-        sort_key="10104 (Southeast)",
+        sort_key="019904",
     ),
     RoomData(
         room_label="South Plaza (X-1, Y+4) - lor2248 (Southeast Entrance)",
         room_area="South Plaza",
-        region_name="S Plaza (X-1,Y+4) (Southeast Entrance)",
+        region_name="S Plaza (X-1, Y+4) (Southeast Entrance)",
+        region_name_suffixless="S Plaza (X-1, Y+4)",
         global_room_id="city/lor2248",
-        sort_key="10104 (Southeast Entrance)",
+        sort_key="019904",
     ),
     RoomData(
         room_label="South Plaza (X+1, Y+4) - yug4939 (West)",
         room_area="South Plaza",
-        region_name="S Plaza (X+1,Y+4) (West)",
+        region_name="S Plaza (X+1, Y+4) (West)",
+        region_name_suffixless="S Plaza (X+1, Y+4)",
         global_room_id="city/yug4939",
-        sort_key="10104 (West)",
+        sort_key="020104",
     ),
     RoomData(
         room_label="South Plaza (X+1, Y+4) - yug4939 (East)",
         room_area="South Plaza",
-        region_name="S Plaza (X+1,Y+4) (East)",
+        region_name="S Plaza (X+1, Y+4) (East)",
+        region_name_suffixless="S Plaza (X+1, Y+4)",
         global_room_id="city/yug4939",
-        sort_key="10104 (East)",
+        sort_key="020104",
     ),
     RoomData(
         room_label="South Plaza (X+2, Y+4) - yug5154",
         room_area="South Plaza",
-        region_name="S Plaza (X+2,Y+4)",
+        region_name="S Plaza (X+2, Y+4)",
+        region_name_suffixless="S Plaza (X+2, Y+4)",
         global_room_id="city/yug5154",
-        sort_key="10204",
+        sort_key="020204",
     ),
     RoomData(
         room_label="South Plaza (Interiors) (X-1, Y+1) - ren85",
         room_area="South Plaza (Interiors)",
-        region_name="S Plaza Interiors (X-1,Y+1)",
+        region_name="S Plaza Interiors (X-1, Y+1)",
+        region_name_suffixless="S Plaza Interiors (X-1, Y+1)",
         global_room_id="city_interiors/ren85",
-        sort_key="20101",
+        sort_key="029901",
     ),
     RoomData(
         room_label="South Plaza (Sewers) (X-1, Y-6) - lor230",
         room_area="South Plaza (Sewers)",
-        region_name="S Plaza Sewers (X-1,Y-6)",
+        region_name="S Plaza Sewers (X-1, Y-6)",
+        region_name_suffixless="S Plaza Sewers (X-1, Y-6)",
         global_room_id="city_underground/lor230",
-        sort_key="30094",
+        sort_key="039894",
     ),
     RoomData(
         room_label="South Plaza (Sewers) (X-1, Y-5) - ren984",
         room_area="South Plaza (Sewers)",
-        region_name="S Plaza Sewers (X-1,Y-5)",
+        region_name="S Plaza Sewers (X-1, Y-5)",
+        region_name_suffixless="S Plaza Sewers (X-1, Y-5)",
         global_room_id="city_underground/ren984",
-        sort_key="30095",
+        sort_key="039895",
     ),
     RoomData(
         room_label="South Plaza (Sewers) (X-1, Y+4) - lor871",
         room_area="South Plaza (Sewers)",
-        region_name="S Plaza Sewers (X-1,Y+4)",
+        region_name="S Plaza Sewers (X-1, Y+4)",
+        region_name_suffixless="S Plaza Sewers (X-1, Y+4)",
         global_room_id="city_underground/lor871",
-        sort_key="30104",
+        sort_key="039904",
     ),
     RoomData(
         room_label="South Plaza (Sewers) (X-1, Y+5) - yug1700 (West)",
         room_area="South Plaza (Sewers)",
-        region_name="S Plaza Sewers (X-1,Y+5) (West)",
+        region_name="S Plaza Sewers (X-1, Y+5) (West)",
+        region_name_suffixless="S Plaza Sewers (X-1, Y+5)",
         global_room_id="city_underground/yug1700",
-        sort_key="30105 (West)",
+        sort_key="039905",
     ),
     RoomData(
         room_label="South Plaza (Sewers) (X-1, Y+5) - yug1700 (East)",
         room_area="South Plaza (Sewers)",
-        region_name="S Plaza Sewers (X-1,Y+5) (East)",
+        region_name="S Plaza Sewers (X-1, Y+5) (East)",
+        region_name_suffixless="S Plaza Sewers (X-1, Y+5)",
         global_room_id="city_underground/yug1700",
-        sort_key="30105 (East)",
+        sort_key="039905",
     ),
 ]
 
 CONNECTIONS: list[ConnectionData] = [
-    ConnectionData(start_region_name="Menu", end_region_name="S Plaza (X-2,Y-3) (Main)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+9,Y-7)", end_region_name="Faria Sewers (X+9,Y-7)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria Sewers (X+9,Y-7)", end_region_name="Faria (X+9,Y-7)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+1,Y-6)", end_region_name="Faria (X+3,Y-6)", rule_strs=[]),
+    ConnectionData(start_region_name="Menu", end_region_name="S Plaza (X-2, Y-3) (Main)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria (X+9, Y-7)", end_region_name="Faria Sewers (X+9, Y-7)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria Sewers (X+9, Y-7)", end_region_name="Faria (X+9, Y-7)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria (X+1, Y-6)", end_region_name="Faria (X+3, Y-6)", rule_strs=[]),
     ConnectionData(
-        start_region_name="Faria (X+1,Y-6)", end_region_name="S Plaza (X-1,Y-6) (East)", rule_strs=["dog", "ride"]
+        start_region_name="Faria (X+1, Y-6)",
+        end_region_name="S Plaza (X-1, Y-6) (East)",
+        rule_strs=["dog", "ride, hook", "ride, dash"],
     ),
-    ConnectionData(start_region_name="Faria (X+3,Y-6)", end_region_name="Faria Sewers (X+3,Y-6)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria Sewers (X+3,Y-6)", end_region_name="Faria (X+3,Y-6)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+4,Y-6)", end_region_name="Faria (X+7,Y-6) (Main)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+7,Y-6) (Main)", end_region_name="Faria (X+4,Y-6)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+4,Y-6)", end_region_name="Faria (X+4,Y-5) (North)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+4,Y-5) (North)", end_region_name="Faria (X+4,Y-6)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+4,Y-6)", end_region_name="Faria (X+6,Y-5)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria (X+3, Y-6)", end_region_name="Faria Sewers (X+3, Y-6)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria Sewers (X+3, Y-6)", end_region_name="Faria (X+3, Y-6)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria (X+4, Y-6)", end_region_name="Faria (X+7, Y-6) (Main)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria (X+7, Y-6) (Main)", end_region_name="Faria (X+4, Y-6)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria (X+4, Y-6)", end_region_name="Faria (X+4, Y-5) (North)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria (X+4, Y-5) (North)", end_region_name="Faria (X+4, Y-6)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria (X+4, Y-6)", end_region_name="Faria (X+6, Y-5)", rule_strs=[]),
     ConnectionData(
-        start_region_name="Faria (X+7,Y-6) (Main)",
-        end_region_name="Faria (X+7,Y-6) (East)",
-        rule_strs=["flip+", "dash, Bomb 1", "ufo, Bomb 1", "ride, Bomb 1"],
+        start_region_name="Faria (X+7, Y-6) (Main)",
+        end_region_name="Faria (X+7, Y-6) (East)",
+        rule_strs=["flip+", "dash, Bomb 1", "ufo, Bomb 1", "ride, Bomb 1", "hard, Bomb 1"],
     ),
-    ConnectionData(start_region_name="Faria (X+7,Y-6) (Main)", end_region_name="Faria (X+7,Y-5)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+7,Y-5)", end_region_name="Faria (X+7,Y-6) (Main)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+7,Y-6) (East)", end_region_name="Faria (X+7,Y-6) (Main)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria (X+7, Y-6) (Main)", end_region_name="Faria (X+7, Y-5)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria (X+7, Y-5)", end_region_name="Faria (X+7, Y-6) (Main)", rule_strs=[]),
     ConnectionData(
-        start_region_name="Faria (X+7,Y-6) (East)", end_region_name="Faria Interiors (X+6,Y-6)", rule_strs=[]
-    ),
-    ConnectionData(
-        start_region_name="Faria Interiors (X+6,Y-6)", end_region_name="Faria (X+7,Y-6) (East)", rule_strs=[]
-    ),
-    ConnectionData(start_region_name="Faria (X+8,Y-6)", end_region_name="Faria Interiors (X+8,Y-6)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria Interiors (X+8,Y-6)", end_region_name="Faria (X+8,Y-6)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+9,Y-6)", end_region_name="Faria (X+9,Y-7)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+9,Y-7)", end_region_name="Faria (X+9,Y-6)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+3,Y-5)", end_region_name="Faria (X+3,Y-6)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+3,Y-6)", end_region_name="Faria (X+3,Y-5)", rule_strs=[]),
-    ConnectionData(
-        start_region_name="Faria (X+4,Y-5) (North)", end_region_name="Faria (X+4,Y-5) (South)", rule_strs=["Lever 4"]
+        start_region_name="Faria (X+7, Y-6) (East)", end_region_name="Faria (X+7, Y-6) (Main)", rule_strs=[]
     ),
     ConnectionData(
-        start_region_name="Faria (X+4,Y-5) (North)", end_region_name="Faria Interiors (X+4,Y-5)", rule_strs=[]
+        start_region_name="Faria (X+7, Y-6) (East)", end_region_name="Faria Interiors (X+6, Y-6)", rule_strs=[]
     ),
     ConnectionData(
-        start_region_name="Faria Interiors (X+4,Y-5)", end_region_name="Faria (X+4,Y-5) (North)", rule_strs=[]
+        start_region_name="Faria Interiors (X+6, Y-6)", end_region_name="Faria (X+7, Y-6) (East)", rule_strs=[]
     ),
-    ConnectionData(start_region_name="Faria (X+4,Y-5) (South)", end_region_name="Faria (X+3,Y-4)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+3,Y-4)", end_region_name="Faria (X+4,Y-5) (South)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+5,Y-5)", end_region_name="Faria (X+5,Y-4)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+6,Y-5)", end_region_name="Faria (X+5,Y-5)", rule_strs=["Key 1"]),
-    ConnectionData(start_region_name="Faria (X+6,Y-5)", end_region_name="Faria (X+6,Y-4)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+7,Y-5)", end_region_name="Faria (X+8,Y-5)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+8,Y-5)", end_region_name="Faria (X+7,Y-5)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+7,Y-5)", end_region_name="Faria (X+7,Y-4) (Main)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+7,Y-4) (Main)", end_region_name="Faria (X+7,Y-5)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+7,Y-5)", end_region_name="Faria (X+7,Y-4) (West Alcove)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+8,Y-5)", end_region_name="Faria (X+8,Y-6)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+8,Y-6)", end_region_name="Faria (X+8,Y-5)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+8,Y-5)", end_region_name="Faria (X+9,Y-5) (Main)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+9,Y-5) (Main)", end_region_name="Faria (X+8,Y-5)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+8,Y-5)", end_region_name="Faria Sewers (X+8,Y-6) (Main)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria Sewers (X+8,Y-6) (Main)", end_region_name="Faria (X+8,Y-5)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+9,Y-5) (Main)", end_region_name="Faria (X+9,Y-6)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+9,Y-6)", end_region_name="Faria (X+9,Y-5) (Main)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+9,Y-5) (South Alcove)", end_region_name="Faria (X+9,Y-4)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria (X+8, Y-6)", end_region_name="Faria Interiors (X+8, Y-6)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria Interiors (X+8, Y-6)", end_region_name="Faria (X+8, Y-6)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria (X+9, Y-6)", end_region_name="Faria (X+9, Y-7)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria (X+9, Y-7)", end_region_name="Faria (X+9, Y-6)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria (X+3, Y-5)", end_region_name="Faria (X+3, Y-6)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria (X+3, Y-6)", end_region_name="Faria (X+3, Y-5)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria (X+3, Y-5)", end_region_name="Faria (X+3, Y-4)", rule_strs=[]),
     ConnectionData(
-        start_region_name="Faria (X+2,Y-4) (West)", end_region_name="Faria (X+2,Y-4) (East)", rule_strs=["ufo", "ride"]
+        start_region_name="Faria (X+4, Y-5) (North)", end_region_name="Faria (X+4, Y-5) (South)", rule_strs=["Lever 4"]
     ),
     ConnectionData(
-        start_region_name="Faria (X+2,Y-4) (East)", end_region_name="Faria (X+2,Y-4) (West)", rule_strs=["ufo", "ride"]
-    ),
-    ConnectionData(start_region_name="Faria (X+2,Y-4) (East)", end_region_name="Faria (X+1,Y-6)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+1,Y-6)", end_region_name="Faria (X+2,Y-4) (East)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+2,Y-4) (East)", end_region_name="Faria (X+2,Y-3)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+2,Y-3)", end_region_name="Faria (X+2,Y-4) (East)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+3,Y-4)", end_region_name="Faria (X+3,Y-5)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+3,Y-5)", end_region_name="Faria (X+3,Y-4)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+3,Y-4)", end_region_name="Faria (X+3,Y-3)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+3,Y-3)", end_region_name="Faria (X+3,Y-4)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+5,Y-4)", end_region_name="Faria (X+5,Y-5)", rule_strs=["Combat 2"]),
-    ConnectionData(
-        start_region_name="Faria (X+5,Y-4)", end_region_name="Faria (X+4,Y-3) (North)", rule_strs=["Combat 2"]
+        start_region_name="Faria (X+4, Y-5) (South)", end_region_name="Faria (X+4, Y-5) (North)", rule_strs=["Lever 4"]
     ),
     ConnectionData(
-        start_region_name="Faria (X+7,Y-4) (Main)", end_region_name="Faria (X+8,Y-4)", rule_strs=["dash", "ufo", "ride"]
-    ),
-    ConnectionData(start_region_name="Faria (X+7,Y-4) (Main)", end_region_name="Faria (X+4,Y-3) (Main)", rule_strs=[]),
-    ConnectionData(
-        start_region_name="Faria (X+8,Y-4)", end_region_name="Faria (X+8,Y-3) (Northwest)", rule_strs=["Combat 4"]
-    ),
-    ConnectionData(start_region_name="Faria (X+9,Y-4)", end_region_name="Faria (X+9,Y-5) (Main)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+3,Y-3)", end_region_name="Faria Interiors (X+3,Y-3)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria Interiors (X+3,Y-3)", end_region_name="Faria (X+3,Y-3)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+4,Y-3) (Main)", end_region_name="Faria (X+4,Y-5) (South)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+4,Y-5) (South)", end_region_name="Faria (X+4,Y-3) (Main)", rule_strs=[]),
-    ConnectionData(
-        start_region_name="Faria (X+4,Y-3) (Main)",
-        end_region_name="Faria (X+7,Y-4) (Main)",
-        rule_strs=["ss", "dog", "dash", "ufo", "ride", "hard, manhole"],
+        start_region_name="Faria (X+4, Y-5) (North)", end_region_name="Faria Interiors (X+4, Y-5)", rule_strs=[]
     ),
     ConnectionData(
-        start_region_name="Faria (X+4,Y-3) (Main)",
-        end_region_name="Faria (X+4,Y+0) (North Alcove)",
+        start_region_name="Faria Interiors (X+4, Y-5)", end_region_name="Faria (X+4, Y-5) (North)", rule_strs=[]
+    ),
+    ConnectionData(start_region_name="Faria (X+4, Y-5) (South)", end_region_name="Faria (X+3, Y-4)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria (X+5, Y-5)", end_region_name="Faria (X+5, Y-4)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria (X+6, Y-5)", end_region_name="Faria (X+5, Y-5)", rule_strs=["Key 1"]),
+    ConnectionData(start_region_name="Faria (X+6, Y-5)", end_region_name="Faria (X+6, Y-4)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria (X+7, Y-5)", end_region_name="Faria (X+8, Y-5)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria (X+8, Y-5)", end_region_name="Faria (X+7, Y-5)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria (X+7, Y-5)", end_region_name="Faria (X+7, Y-4) (Main)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria (X+7, Y-4) (Main)", end_region_name="Faria (X+7, Y-5)", rule_strs=[]),
+    ConnectionData(
+        start_region_name="Faria (X+7, Y-5)", end_region_name="Faria (X+7, Y-4) (West Alcove)", rule_strs=[]
+    ),
+    ConnectionData(start_region_name="Faria (X+8, Y-5)", end_region_name="Faria (X+8, Y-6)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria (X+8, Y-6)", end_region_name="Faria (X+8, Y-5)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria (X+8, Y-5)", end_region_name="Faria (X+9, Y-5) (Main)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria (X+9, Y-5) (Main)", end_region_name="Faria (X+8, Y-5)", rule_strs=[]),
+    ConnectionData(
+        start_region_name="Faria (X+8, Y-5)", end_region_name="Faria Sewers (X+8, Y-6) (Main)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="Faria Sewers (X+8, Y-6) (Main)", end_region_name="Faria (X+8, Y-5)", rule_strs=[]
+    ),
+    ConnectionData(start_region_name="Faria (X+9, Y-5) (Main)", end_region_name="Faria (X+9, Y-6)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria (X+9, Y-6)", end_region_name="Faria (X+9, Y-5) (Main)", rule_strs=[]),
+    ConnectionData(
+        start_region_name="Faria (X+9, Y-5) (South Alcove)", end_region_name="Faria (X+9, Y-4)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="Faria (X+2, Y-4) (West)",
+        end_region_name="Faria (X+2, Y-4) (East)",
+        rule_strs=["ufo", "ride"],
+    ),
+    ConnectionData(
+        start_region_name="Faria (X+2, Y-4) (East)",
+        end_region_name="Faria (X+2, Y-4) (West)",
+        rule_strs=["ufo", "ride"],
+    ),
+    ConnectionData(start_region_name="Faria (X+2, Y-4) (East)", end_region_name="Faria (X+1, Y-6)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria (X+1, Y-6)", end_region_name="Faria (X+2, Y-4) (East)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria (X+2, Y-4) (East)", end_region_name="Faria (X+2, Y-3)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria (X+2, Y-3)", end_region_name="Faria (X+2, Y-4) (East)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria (X+3, Y-4)", end_region_name="Faria (X+3, Y-5)", rule_strs=["Combat 1"]),
+    ConnectionData(
+        start_region_name="Faria (X+3, Y-4)", end_region_name="Faria (X+4, Y-5) (South)", rule_strs=["Combat 1"]
+    ),
+    ConnectionData(start_region_name="Faria (X+3, Y-4)", end_region_name="Faria (X+3, Y-3)", rule_strs=["Combat 1"]),
+    ConnectionData(start_region_name="Faria (X+5, Y-4)", end_region_name="Faria (X+5, Y-5)", rule_strs=["Combat 2"]),
+    ConnectionData(
+        start_region_name="Faria (X+5, Y-4)", end_region_name="Faria (X+4, Y-3) (North)", rule_strs=["Combat 2"]
+    ),
+    ConnectionData(
+        start_region_name="Faria (X+7, Y-4) (Main)",
+        end_region_name="Faria (X+8, Y-4)",
         rule_strs=["dash", "ufo", "ride"],
     ),
     ConnectionData(
-        start_region_name="Faria (X+4,Y-3) (Main)", end_region_name="Faria Interiors (X+7,Y-3)", rule_strs=[]
+        start_region_name="Faria (X+7, Y-4) (Main)", end_region_name="Faria (X+4, Y-3) (Main)", rule_strs=[]
     ),
     ConnectionData(
-        start_region_name="Faria Interiors (X+7,Y-3)", end_region_name="Faria (X+4,Y-3) (Main)", rule_strs=[]
+        start_region_name="Faria (X+8, Y-4)", end_region_name="Faria (X+8, Y-3) (Northwest)", rule_strs=["Combat 4"]
     ),
-    ConnectionData(start_region_name="Faria (X+4,Y-3) (Main)", end_region_name="Faria Sewers (X+6,Y-2)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria Sewers (X+6,Y-2)", end_region_name="Faria (X+4,Y-3) (Main)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+4,Y-3) (Main)", end_region_name="Faria Sewers (X+7,Y-1)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria Sewers (X+7,Y-1)", end_region_name="Faria (X+4,Y-3) (Main)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+4,Y-3) (North)", end_region_name="Faria (X+5,Y-4)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+4,Y-3) (North)", end_region_name="Faria (X+4,Y-3) (Main)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria (X+9, Y-4)", end_region_name="Faria (X+9, Y-5) (Main)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria (X+3, Y-3)", end_region_name="Faria (X+3, Y-4)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria (X+3, Y-3)", end_region_name="Faria Interiors (X+3, Y-3)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria Interiors (X+3, Y-3)", end_region_name="Faria (X+3, Y-3)", rule_strs=[]),
     ConnectionData(
-        start_region_name="Faria (X+8,Y-3) (Main)", end_region_name="Faria (X+8,Y-3) (Dungeon Entrance)", rule_strs=[]
+        start_region_name="Faria (X+4, Y-3) (Main)", end_region_name="Faria (X+4, Y-5) (South)", rule_strs=[]
     ),
     ConnectionData(
-        start_region_name="Faria (X+8,Y-3) (Main)", end_region_name="Faria (X+4,Y-3) (East Alcove)", rule_strs=[]
+        start_region_name="Faria (X+4, Y-5) (South)", end_region_name="Faria (X+4, Y-3) (Main)", rule_strs=[]
     ),
     ConnectionData(
-        start_region_name="Faria (X+8,Y-3) (Main)", end_region_name="Faria (X+10,Y-1) (West Alcove)", rule_strs=[]
+        start_region_name="Faria (X+4, Y-3) (Main)",
+        end_region_name="Faria (X+7, Y-4) (Main)",
+        rule_strs=["ss", "dog", "dash", "ufo", "ride", "hard"],
     ),
     ConnectionData(
-        start_region_name="Faria (X+8,Y-3) (Northwest)",
-        end_region_name="Faria (X+8,Y-3) (Northeast)",
+        start_region_name="Faria (X+4, Y-3) (Main)",
+        end_region_name="Faria (X+4, Y+0) (North Alcove)",
+        rule_strs=["dash", "ufo"],
+    ),
+    ConnectionData(
+        start_region_name="Faria (X+4, Y-3) (Main)", end_region_name="Faria Interiors (X+7, Y-3)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="Faria Interiors (X+7, Y-3)", end_region_name="Faria (X+4, Y-3) (Main)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="Faria (X+4, Y-3) (Main)", end_region_name="Faria Sewers (X+6, Y-2)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="Faria Sewers (X+6, Y-2)", end_region_name="Faria (X+4, Y-3) (Main)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="Faria (X+4, Y-3) (Main)", end_region_name="Faria Sewers (X+7, Y-1)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="Faria Sewers (X+7, Y-1)", end_region_name="Faria (X+4, Y-3) (Main)", rule_strs=[]
+    ),
+    ConnectionData(start_region_name="Faria (X+4, Y-3) (North)", end_region_name="Faria (X+5, Y-4)", rule_strs=[]),
+    ConnectionData(
+        start_region_name="Faria (X+4, Y-3) (North)", end_region_name="Faria (X+4, Y-3) (Main)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="Faria (X+4, Y-3) (North)", end_region_name="Skyscraper (X+0, Y-2) (West)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+0, Y-2) (West)", end_region_name="Faria (X+4, Y-3) (North)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Faria (X+8, Y-3) (Main)",
+        end_region_name="Faria (X+8, Y-3) (Dungeon Entrance)",
+        rule_strs=["Staff ID"],
+    ),
+    ConnectionData(
+        start_region_name="Faria (X+8, Y-3) (Main)", end_region_name="Faria (X+4, Y-3) (East Alcove)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="Faria (X+8, Y-3) (Main)", end_region_name="Faria (X+10, Y-1) (West Alcove)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="Faria (X+8, Y-3) (Northwest)",
+        end_region_name="Faria (X+8, Y-3) (Northeast)",
         rule_strs=["dash", "ufo", "ride"],
     ),
     ConnectionData(
-        start_region_name="Faria (X+8,Y-3) (Northeast)", end_region_name="Faria (X+8,Y-3) (Main)", rule_strs=[]
-    ),
-    ConnectionData(
-        start_region_name="Faria (X+8,Y-3) (Dungeon Entrance)", end_region_name="Faria (X+8,Y-3) (Main)", rule_strs=[]
-    ),
-    ConnectionData(
-        start_region_name="Faria (X+8,Y-3) (Southwest)",
-        end_region_name="Faria (X+8,Y-3) (Main)",
+        start_region_name="Faria (X+8, Y-3) (Northeast)",
+        end_region_name="Faria (X+8, Y-3) (Northwest)",
         rule_strs=["dash", "ufo", "ride"],
     ),
     ConnectionData(
-        start_region_name="Faria (X+8,Y-3) (Main)",
-        end_region_name="Faria (X+8,Y-3) (Southwest)",
+        start_region_name="Faria (X+8, Y-3) (Northeast)", end_region_name="Faria (X+8, Y-3) (Main)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="Faria (X+8, Y-3) (Main)", end_region_name="Faria (X+8, Y-3) (Northeast)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="Faria (X+8, Y-3) (Dungeon Entrance)", end_region_name="Faria (X+8, Y-3) (Main)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="Faria (X+8, Y-3) (Dungeon Entrance)",
+        end_region_name="Excavation (X+0, Y+0) (Main)",
+        rule_strs=["none"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+0, Y+0) (Main)",
+        end_region_name="Faria (X+8, Y-3) (Dungeon Entrance)",
+        rule_strs=["none"],
+    ),
+    ConnectionData(
+        start_region_name="Faria (X+8, Y-3) (Southwest)",
+        end_region_name="Faria (X+8, Y-3) (Main)",
         rule_strs=["dash", "ufo", "ride"],
     ),
     ConnectionData(
-        start_region_name="Faria (X+8,Y-3) (Southwest)", end_region_name="Faria Sewers (X+8,Y+0)", rule_strs=[]
-    ),
-    ConnectionData(
-        start_region_name="Faria Sewers (X+8,Y+0)", end_region_name="Faria (X+8,Y-3) (Southwest)", rule_strs=[]
-    ),
-    ConnectionData(
-        start_region_name="Faria (X+8,Y-3) (Southeast)", end_region_name="Faria (X+8,Y-3) (Main)", rule_strs=[]
-    ),
-    ConnectionData(
-        start_region_name="Faria (X+8,Y-3) (Southeast)",
-        end_region_name="Faria (X+10,Y+0)",
+        start_region_name="Faria (X+8, Y-3) (Main)",
+        end_region_name="Faria (X+8, Y-3) (Southwest)",
         rule_strs=["dash", "ufo", "ride"],
     ),
     ConnectionData(
-        start_region_name="Faria (X+10,Y+0)",
-        end_region_name="Faria (X+8,Y-3) (Southeast)",
+        start_region_name="Faria (X+8, Y-3) (Southwest)", end_region_name="Faria Sewers (X+8, Y+0)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="Faria Sewers (X+8, Y+0)", end_region_name="Faria (X+8, Y-3) (Southwest)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="Faria (X+8, Y-3) (Southeast)", end_region_name="Faria (X+8, Y-3) (Main)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="Faria (X+8, Y-3) (Southeast)",
+        end_region_name="Faria (X+10, Y+0)",
         rule_strs=["dash", "ufo", "ride"],
     ),
     ConnectionData(
-        start_region_name="Faria (X+10,Y-3)",
-        end_region_name="Faria (X+8,Y-3) (Northeast)",
+        start_region_name="Faria (X+10, Y+0)",
+        end_region_name="Faria (X+8, Y-3) (Southeast)",
         rule_strs=["dash", "ufo", "ride"],
     ),
     ConnectionData(
-        start_region_name="Faria (X+2,Y-2)",
-        end_region_name="Faria (X+2,Y-1)",
+        start_region_name="Faria (X+10, Y-3)",
+        end_region_name="Faria (X+8, Y-3) (Northeast)",
+        rule_strs=["dash", "ufo", "ride"],
+    ),
+    ConnectionData(
+        start_region_name="Faria (X+2, Y-2)",
+        end_region_name="Faria (X+2, Y-1)",
         rule_strs=[
             "dash, Lever 1, Lever 3",
             "ride, Lever 1, Lever 2",
@@ -1433,518 +2603,1452 @@ CONNECTIONS: list[ConnectionData] = [
             "midair ufo, Lever 1, Lever 3",
         ],
     ),
-    ConnectionData(start_region_name="Faria (X+3,Y-2)", end_region_name="Faria (X+2,Y-2)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+10,Y-2) (Main)", end_region_name="Faria (X+10,Y-3)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+10,Y-3)", end_region_name="Faria (X+10,Y-2) (Main)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria (X+3, Y-2)", end_region_name="Faria (X+2, Y-2)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria (X+10, Y-2) (Main)", end_region_name="Faria (X+10, Y-3)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria (X+10, Y-3)", end_region_name="Faria (X+10, Y-2) (Main)", rule_strs=[]),
     ConnectionData(
-        start_region_name="Faria (X+10,Y-2) (Main)",
-        end_region_name="Faria (X+10,Y-2) (East)",
+        start_region_name="Faria (X+10, Y-2) (Main)",
+        end_region_name="Faria (X+10, Y-2) (East)",
         rule_strs=["dash", "ufo", "ride"],
     ),
     ConnectionData(
-        start_region_name="Faria (X+10,Y-2) (East)",
-        end_region_name="Faria (X+10,Y-2) (Main)",
+        start_region_name="Faria (X+10, Y-2) (East)",
+        end_region_name="Faria (X+10, Y-2) (Main)",
         rule_strs=["dash", "ufo", "ride"],
     ),
     ConnectionData(
-        start_region_name="Faria (X+10,Y-2) (East)", end_region_name="Faria Interiors (X+10,Y-2)", rule_strs=[]
+        start_region_name="Faria (X+10, Y-2) (East)", end_region_name="Faria Interiors (X+10, Y-2)", rule_strs=[]
     ),
     ConnectionData(
-        start_region_name="Faria Interiors (X+10,Y-2)", end_region_name="Faria (X+10,Y-2) (East)", rule_strs=[]
+        start_region_name="Faria Interiors (X+10, Y-2)", end_region_name="Faria (X+10, Y-2) (East)", rule_strs=[]
     ),
-    ConnectionData(start_region_name="Faria (X+2,Y-1)", end_region_name="Faria Interiors (X+2,Y-1)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria Interiors (X+2,Y-1)", end_region_name="Faria (X+2,Y-1)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria (X+2, Y-1)", end_region_name="Faria Interiors (X+2, Y-1)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria Interiors (X+2, Y-1)", end_region_name="Faria (X+2, Y-1)", rule_strs=[]),
     ConnectionData(
-        start_region_name="Faria (X+3,Y-1)", end_region_name="Faria (X+3,Y-2)", rule_strs=["dash", "ufo", "ride"]
+        start_region_name="Faria (X+3, Y-1)", end_region_name="Faria (X+3, Y-2)", rule_strs=["dash", "ufo", "ride"]
     ),
-    ConnectionData(start_region_name="Faria (X+3,Y-1)", end_region_name="Faria (X+4,Y+0) (Main)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+4,Y+0) (Main)", end_region_name="Faria (X+3,Y-1)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria (X+3, Y-1)", end_region_name="Faria (X+4, Y+0) (Main)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria (X+4, Y+0) (Main)", end_region_name="Faria (X+3, Y-1)", rule_strs=[]),
     ConnectionData(
-        start_region_name="Faria (X+10,Y-1) (Main)", end_region_name="Faria (X+10,Y-2) (Main)", rule_strs=[]
-    ),
-    ConnectionData(
-        start_region_name="Faria (X+10,Y-2) (Main)", end_region_name="Faria (X+10,Y-1) (Main)", rule_strs=[]
-    ),
-    ConnectionData(start_region_name="Faria (X+2,Y+0) (West)", end_region_name="Faria Sewers (X+2,Y+0)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria Sewers (X+2,Y+0)", end_region_name="Faria (X+2,Y+0) (West)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+2,Y+0) (East)", end_region_name="Faria (X+3,Y-1)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+3,Y-1)", end_region_name="Faria (X+2,Y+0) (East)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+2,Y+0) (East)", end_region_name="Faria (X+2,Y+0) (West)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+2,Y+0) (East)", end_region_name="Faria Sewers (X+2,Y+0)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria Sewers (X+2,Y+0)", end_region_name="Faria (X+2,Y+0) (East)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+4,Y+0) (Main)", end_region_name="Faria (X+4,Y-3) (Main)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+4,Y-3) (Main)", end_region_name="Faria (X+4,Y+0) (Main)", rule_strs=[]),
-    ConnectionData(
-        start_region_name="Faria (X+4,Y+0) (Main)", end_region_name="Faria (X+8,Y-3) (Southwest)", rule_strs=[]
+        start_region_name="Faria (X+10, Y-1) (Main)", end_region_name="Faria (X+10, Y-2) (Main)", rule_strs=[]
     ),
     ConnectionData(
-        start_region_name="Faria (X+8,Y-3) (Southwest)", end_region_name="Faria (X+4,Y+0) (Main)", rule_strs=[]
-    ),
-    ConnectionData(start_region_name="Faria (X+4,Y+0) (Main)", end_region_name="Faria (X+4,Y+3) (East)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+4,Y+3) (East)", end_region_name="Faria (X+4,Y+0) (Main)", rule_strs=[]),
-    ConnectionData(
-        start_region_name="Faria (X+4,Y+0) (Main)", end_region_name="Faria Interiors (X+5,Y+0)", rule_strs=[]
+        start_region_name="Faria (X+10, Y-2) (Main)", end_region_name="Faria (X+10, Y-1) (Main)", rule_strs=[]
     ),
     ConnectionData(
-        start_region_name="Faria Interiors (X+5,Y+0)", end_region_name="Faria (X+4,Y+0) (Main)", rule_strs=[]
+        start_region_name="Faria (X+2, Y+0) (West)", end_region_name="Faria Sewers (X+2, Y+0)", rule_strs=[]
     ),
-    ConnectionData(start_region_name="Faria (X+4,Y+0) (Main)", end_region_name="Faria Sewers (X+5,Y+1)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria Sewers (X+5,Y+1)", end_region_name="Faria (X+4,Y+0) (Main)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+10,Y+0)", end_region_name="Faria (X+10,Y-1) (Main)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+10,Y-1) (Main)", end_region_name="Faria (X+10,Y+0)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+10,Y+0)", end_region_name="Faria (X+10,Y+1)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+10,Y+0)", end_region_name="Faria Sewers (X+10,Y+0)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria Sewers (X+10,Y+0)", end_region_name="Faria (X+10,Y+0)", rule_strs=[]),
     ConnectionData(
-        start_region_name="Faria (X+2,Y+1) (Main)",
-        end_region_name="Faria (X+2,Y+1) (House Entrance)",
+        start_region_name="Faria Sewers (X+2, Y+0)", end_region_name="Faria (X+2, Y+0) (West)", rule_strs=[]
+    ),
+    ConnectionData(start_region_name="Faria (X+2, Y+0) (East)", end_region_name="Faria (X+3, Y-1)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria (X+3, Y-1)", end_region_name="Faria (X+2, Y+0) (East)", rule_strs=[]),
+    ConnectionData(
+        start_region_name="Faria (X+2, Y+0) (East)", end_region_name="Faria (X+2, Y+0) (West)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="Faria (X+2, Y+0) (East)", end_region_name="Faria Sewers (X+2, Y+0)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="Faria Sewers (X+2, Y+0)", end_region_name="Faria (X+2, Y+0) (East)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="Faria (X+4, Y+0) (Main)", end_region_name="Faria (X+4, Y-3) (Main)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="Faria (X+4, Y-3) (Main)", end_region_name="Faria (X+4, Y+0) (Main)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="Faria (X+4, Y+0) (Main)", end_region_name="Faria (X+8, Y-3) (Southwest)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="Faria (X+8, Y-3) (Southwest)", end_region_name="Faria (X+4, Y+0) (Main)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="Faria (X+4, Y+0) (Main)", end_region_name="Faria (X+4, Y+3) (East)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="Faria (X+4, Y+3) (East)", end_region_name="Faria (X+4, Y+0) (Main)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="Faria (X+4, Y+0) (Main)", end_region_name="Faria Interiors (X+5, Y+0)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="Faria Interiors (X+5, Y+0)", end_region_name="Faria (X+4, Y+0) (Main)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="Faria (X+4, Y+0) (Main)", end_region_name="Faria Sewers (X+5, Y+1)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="Faria Sewers (X+5, Y+1)", end_region_name="Faria (X+4, Y+0) (Main)", rule_strs=[]
+    ),
+    ConnectionData(start_region_name="Faria (X+10, Y+0)", end_region_name="Faria (X+10, Y-1) (Main)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria (X+10, Y-1) (Main)", end_region_name="Faria (X+10, Y+0)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria (X+10, Y+0)", end_region_name="Faria (X+10, Y+1)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria (X+10, Y+0)", end_region_name="Faria Sewers (X+10, Y+0)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria Sewers (X+10, Y+0)", end_region_name="Faria (X+10, Y+0)", rule_strs=[]),
+    ConnectionData(
+        start_region_name="Faria (X+2, Y+1) (Main)",
+        end_region_name="Faria (X+2, Y+1) (House Entrance)",
         rule_strs=["Apple 1, Apple 2, Apple 3"],
     ),
     ConnectionData(
-        start_region_name="Faria (X+2,Y+1) (House Entrance)", end_region_name="Faria (X+2,Y+1) (Main)", rule_strs=[]
+        start_region_name="Faria (X+2, Y+1) (House Entrance)", end_region_name="Faria (X+2, Y+1) (Main)", rule_strs=[]
     ),
     ConnectionData(
-        start_region_name="Faria (X+2,Y+1) (House Entrance)", end_region_name="Faria Interiors (X+3,Y+1)", rule_strs=[]
+        start_region_name="Faria (X+2, Y+1) (House Entrance)",
+        end_region_name="Faria Interiors (X+3, Y+1)",
+        rule_strs=[],
     ),
     ConnectionData(
-        start_region_name="Faria Interiors (X+3,Y+1)", end_region_name="Faria (X+2,Y+1) (House Entrance)", rule_strs=[]
+        start_region_name="Faria Interiors (X+3, Y+1)",
+        end_region_name="Faria (X+2, Y+1) (House Entrance)",
+        rule_strs=[],
     ),
-    ConnectionData(start_region_name="Faria (X+8,Y+1)", end_region_name="Faria (X+8,Y+2)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+8,Y+1)", end_region_name="Faria Sewers (X+8,Y+1)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria Sewers (X+8,Y+1)", end_region_name="Faria (X+8,Y+1)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+9,Y+1)", end_region_name="Faria (X+8,Y-3) (Southeast)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+8,Y-3) (Southeast)", end_region_name="Faria (X+9,Y+1)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+10,Y+1)", end_region_name="Faria (X+10,Y+2) (Main)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria (X+8, Y+1)", end_region_name="Faria (X+8, Y+2)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria (X+8, Y+1)", end_region_name="Faria Sewers (X+8, Y+1)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria Sewers (X+8, Y+1)", end_region_name="Faria (X+8, Y+1)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria (X+9, Y+1)", end_region_name="Faria (X+8, Y-3) (Southeast)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria (X+8, Y-3) (Southeast)", end_region_name="Faria (X+9, Y+1)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria (X+10, Y+1)", end_region_name="Faria (X+10, Y+2) (Main)", rule_strs=[]),
     ConnectionData(
-        start_region_name="Faria (X+8,Y+2)",
-        end_region_name="Faria (X+8,Y+1)",
+        start_region_name="Faria (X+8, Y+2)",
+        end_region_name="Faria (X+8, Y+1)",
         rule_strs=["[SP] Mole Brother 1, Mole Brother 2"],
     ),
-    ConnectionData(start_region_name="Faria (X+9,Y+2)", end_region_name="Faria (X+9,Y+1)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+9,Y+1)", end_region_name="Faria (X+9,Y+2)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+9,Y+2)", end_region_name="Faria (X+8,Y+2)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+8,Y+2)", end_region_name="Faria (X+9,Y+2)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria (X+9, Y+2)", end_region_name="Faria (X+9, Y+1)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria (X+9, Y+1)", end_region_name="Faria (X+9, Y+2)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria (X+9, Y+2)", end_region_name="Faria (X+8, Y+2)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria (X+8, Y+2)", end_region_name="Faria (X+9, Y+2)", rule_strs=[]),
     ConnectionData(
-        start_region_name="Faria (X+10,Y+2) (Main)",
-        end_region_name="Faria (X+10,Y+2) (Northeast)",
+        start_region_name="Faria (X+10, Y+2) (Main)",
+        end_region_name="Faria (X+10, Y+2) (Northeast)",
         rule_strs=["dog, ss", "dash", "ufo, ss+", "ride, ss+"],
     ),
     ConnectionData(
-        start_region_name="Faria (X+10,Y+2) (Main)",
-        end_region_name="Faria (X+11,Y+2)",
+        start_region_name="Faria (X+10, Y+2) (Main)",
+        end_region_name="Faria (X+11, Y+2)",
         rule_strs=["dog", "dash", "midair ufo", "ufo, ss", "ride, ss"],
     ),
     ConnectionData(
-        start_region_name="Faria (X+10,Y+2) (Main)",
-        end_region_name="Faria (X+10,Y+4)",
-        rule_strs=["dog", "hard, dash, ss+, ride", "midair ufo, ss+"],
+        start_region_name="Faria (X+10, Y+2) (Main)",
+        end_region_name="Faria (X+10, Y+4)",
+        rule_strs=[
+            "dog",
+            "dash, ride, hard",
+            "midair ufo, ss",
+            "dash-midair-ufo, ss",
+            "ufo, dash, ss+",
+            "dash, ride, ss+",
+        ],
     ),
     ConnectionData(
-        start_region_name="Faria (X+2,Y+3)",
-        end_region_name="S Plaza (X-2,Y-3) (Southeast)",
+        start_region_name="Faria (X+2, Y+3)",
+        end_region_name="S Plaza (X-2, Y-3) (Southeast)",
         rule_strs=["[FSB] Combat 7"],
     ),
-    ConnectionData(start_region_name="Faria (X+2,Y+3)", end_region_name="Faria (X+3,Y+3)", rule_strs=["Combat 7"]),
+    ConnectionData(start_region_name="Faria (X+2, Y+3)", end_region_name="Faria (X+3, Y+3)", rule_strs=["Combat 7"]),
     ConnectionData(
-        start_region_name="Faria (X+3,Y+3)", end_region_name="Faria (X+2,Y+1) (Main)", rule_strs=["dash", "ufo", "ride"]
+        start_region_name="Faria (X+3, Y+3)",
+        end_region_name="Faria (X+2, Y+1) (Main)",
+        rule_strs=["dash", "ufo", "ride"],
     ),
     ConnectionData(
-        start_region_name="Faria (X+2,Y+1) (Main)", end_region_name="Faria (X+3,Y+3)", rule_strs=["dash", "ufo", "ride"]
+        start_region_name="Faria (X+2, Y+1) (Main)",
+        end_region_name="Faria (X+3, Y+3)",
+        rule_strs=["dash", "ufo", "ride"],
     ),
-    ConnectionData(start_region_name="Faria (X+3,Y+3)", end_region_name="Faria (X+2,Y+3)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+4,Y+3) (West)", end_region_name="Faria (X+3,Y+3)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+3,Y+3)", end_region_name="Faria (X+4,Y+3) (West)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+4,Y+3) (West)", end_region_name="Faria Sewers (X+4,Y+3)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria Sewers (X+4,Y+3)", end_region_name="Faria (X+4,Y+3) (West)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria (X+3, Y+3)", end_region_name="Faria (X+2, Y+3)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria (X+4, Y+3) (West)", end_region_name="Faria (X+3, Y+3)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria (X+3, Y+3)", end_region_name="Faria (X+4, Y+3) (West)", rule_strs=[]),
     ConnectionData(
-        start_region_name="Faria (X+4,Y+3) (East)", end_region_name="Faria (X+4,Y+3) (West)", rule_strs=["Staff ID"]
-    ),
-    ConnectionData(
-        start_region_name="Faria (X+4,Y+3) (West)", end_region_name="Faria (X+4,Y+3) (East)", rule_strs=["Staff ID"]
+        start_region_name="Faria (X+4, Y+3) (West)", end_region_name="Faria Sewers (X+4, Y+3)", rule_strs=[]
     ),
     ConnectionData(
-        start_region_name="Faria (X+5,Y+3)", end_region_name="Faria (X+6,Y+3) (North)", rule_strs=["Combat 8"]
+        start_region_name="Faria Sewers (X+4, Y+3)", end_region_name="Faria (X+4, Y+3) (West)", rule_strs=[]
     ),
-    ConnectionData(start_region_name="Faria (X+6,Y+3) (South)", end_region_name="Faria (X+5,Y+3)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+7,Y+3)", end_region_name="Faria (X+4,Y+0) (Main)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+7,Y+3)", end_region_name="Faria (X+9,Y+2)", rule_strs=["Lever 5"]),
-    ConnectionData(start_region_name="Faria (X+7,Y+3)", end_region_name="Faria (X+6,Y+3) (South)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+3,Y+4)", end_region_name="Faria (X+1,Y+5)", rule_strs=[]),
     ConnectionData(
-        start_region_name="Faria (X+4,Y+4)",
-        end_region_name="Faria (X+3,Y+4)",
+        start_region_name="Faria (X+4, Y+3) (East)", end_region_name="Faria (X+4, Y+3) (West)", rule_strs=["Staff ID"]
+    ),
+    ConnectionData(
+        start_region_name="Faria (X+4, Y+3) (West)", end_region_name="Faria (X+4, Y+3) (East)", rule_strs=["Staff ID"]
+    ),
+    ConnectionData(
+        start_region_name="Faria (X+5, Y+3)", end_region_name="Faria (X+6, Y+3) (North)", rule_strs=["Combat 8"]
+    ),
+    ConnectionData(start_region_name="Faria (X+6, Y+3) (South)", end_region_name="Faria (X+5, Y+3)", rule_strs=[]),
+    ConnectionData(
+        start_region_name="Faria (X+7, Y+3)", end_region_name="Faria (X+4, Y+0) (Main)", rule_strs=["Button 1"]
+    ),
+    ConnectionData(
+        start_region_name="Faria (X+4, Y+0) (Main)", end_region_name="Faria (X+7, Y+3)", rule_strs=["Button 1"]
+    ),
+    ConnectionData(start_region_name="Faria (X+7, Y+3)", end_region_name="Faria (X+9, Y+2)", rule_strs=["Lever 5"]),
+    ConnectionData(start_region_name="Faria (X+7, Y+3)", end_region_name="Faria (X+6, Y+3) (South)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria (X+3, Y+4)", end_region_name="Faria (X+1, Y+5)", rule_strs=["Combat 6"]),
+    ConnectionData(
+        start_region_name="Faria (X+4, Y+4)",
+        end_region_name="Faria (X+3, Y+4)",
         rule_strs=["ss, buoy", "dog", "dash, ss+", "ride, ss+", "dash, ride"],
     ),
     ConnectionData(
-        start_region_name="Faria (X+4,Y+4)", end_region_name="Faria (X+5,Y+4)", rule_strs=["ss, buoy", "ss+", "dog"]
+        start_region_name="Faria (X+4, Y+4)", end_region_name="Faria (X+5, Y+4)", rule_strs=["ss, buoy", "ss+", "dog"]
     ),
-    ConnectionData(start_region_name="Faria (X+6,Y+4)", end_region_name="Faria (X+6,Y+5)", rule_strs=["ss", "buoy"]),
+    ConnectionData(start_region_name="Faria (X+6, Y+4)", end_region_name="Faria (X+6, Y+5)", rule_strs=["ss", "buoy"]),
     ConnectionData(
-        start_region_name="Faria (X+7,Y+4) (North)",
-        end_region_name="Faria (X+7,Y+4) (South)",
+        start_region_name="Faria (X+7, Y+4) (North)",
+        end_region_name="Faria (X+7, Y+4) (South)",
         rule_strs=["ss", "dog", "dash", "ufo"],
     ),
-    ConnectionData(start_region_name="Faria (X+7,Y+4) (North)", end_region_name="Faria (X+6,Y+4)", rule_strs=["Key 2"]),
     ConnectionData(
-        start_region_name="Faria (X+8,Y+4)",
-        end_region_name="Faria (X+7,Y+4) (North)",
-        rule_strs=["dog", "dash, ss, ride", "ride, ss+", "hard, off, ride, dash", "expert, ride, dash"],
-    ),
-    ConnectionData(start_region_name="Faria (X+9,Y+4)", end_region_name="Faria (X+8,Y+4)", rule_strs=[]),
-    ConnectionData(
-        start_region_name="Faria (X+10,Y+4)", end_region_name="Faria (X+11,Y+4)", rule_strs=["dog", "ride, ss"]
+        start_region_name="Faria (X+7, Y+4) (North)", end_region_name="Faria (X+6, Y+4)", rule_strs=["Key 2"]
     ),
     ConnectionData(
-        start_region_name="Faria (X+11,Y+4)",
-        end_region_name="Faria (X+10,Y+2) (Northeast)",
+        start_region_name="Faria (X+8, Y+4)",
+        end_region_name="Faria (X+7, Y+4) (North)",
+        rule_strs=["dog", "dash, ss, ride", "ride, ss+", "hard, ride, dash"],
+    ),
+    ConnectionData(start_region_name="Faria (X+9, Y+4)", end_region_name="Faria (X+8, Y+4)", rule_strs=[]),
+    ConnectionData(
+        start_region_name="Faria (X+10, Y+4)", end_region_name="Faria (X+11, Y+4)", rule_strs=["dog", "ride, ss"]
+    ),
+    ConnectionData(
+        start_region_name="Faria (X+11, Y+4)",
+        end_region_name="Faria (X+10, Y+2) (Northeast)",
         rule_strs=["dog", "ride, ss"],
     ),
     ConnectionData(
-        start_region_name="Faria (X+10,Y+2) (Northeast)",
-        end_region_name="Faria (X+11,Y+4)",
+        start_region_name="Faria (X+10, Y+2) (Northeast)",
+        end_region_name="Faria (X+11, Y+4)",
         rule_strs=["dog", "ride, ss"],
     ),
     ConnectionData(
-        start_region_name="Faria (X+11,Y+4)", end_region_name="Faria (X+11,Y+5)", rule_strs=["ss", "dog", "ufo", "ride"]
+        start_region_name="Faria (X+11, Y+4)",
+        end_region_name="Faria (X+11, Y+5)",
+        rule_strs=["ss", "dog", "ufo", "ride"],
     ),
     ConnectionData(
-        start_region_name="Faria (X+1,Y+5)",
-        end_region_name="S Plaza (X-1,Y+4) (Southeast Entrance)",
+        start_region_name="Faria (X+1, Y+5)",
+        end_region_name="S Plaza (X-1, Y+4) (Southeast Entrance)",
         rule_strs=["dog, ride", "dash, ride", "ride, ss+", "buoy"],
     ),
     ConnectionData(
-        start_region_name="Faria (X+4,Y+5)",
-        end_region_name="Faria (X+4,Y+4)",
+        start_region_name="Faria (X+4, Y+5)",
+        end_region_name="Faria (X+4, Y+4)",
         rule_strs=["dog, buoy", "dog, ride", "dash, ride", "ride, ss+"],
     ),
     ConnectionData(
-        start_region_name="Faria (X+5,Y+5)",
-        end_region_name="Faria (X+4,Y+5)",
+        start_region_name="Faria (X+5, Y+5)",
+        end_region_name="Faria (X+4, Y+5)",
         rule_strs=["ss+, buoy", "dog, buoy", "dash, ss, buoy", "ride, buoy"],
     ),
     ConnectionData(
-        start_region_name="Faria (X+6,Y+5)",
-        end_region_name="Faria (X+5,Y+5)",
+        start_region_name="Faria (X+6, Y+5)",
+        end_region_name="Faria (X+5, Y+5)",
         rule_strs=["dog, buoy", "dog, ss", "dash, buoy", "dash, ss", "ufo, ride", "ride, buoy", "ride, ss"],
     ),
     ConnectionData(
-        start_region_name="Faria (X+9,Y+5)",
-        end_region_name="Faria (X+9,Y+4)",
+        start_region_name="Faria (X+9, Y+5)",
+        end_region_name="Faria (X+9, Y+4)",
         rule_strs=["dog", "dash, ride", "ride, ss+"],
     ),
     ConnectionData(
-        start_region_name="Faria (X+10,Y+5)",
-        end_region_name="Faria (X+9,Y+5)",
+        start_region_name="Faria (X+10, Y+5)",
+        end_region_name="Faria (X+9, Y+5)",
         rule_strs=["dog", "ride, ss+", "hard, ride, ss", "hard, ride, dash"],
     ),
     ConnectionData(
-        start_region_name="Faria (X+11,Y+5)",
-        end_region_name="Faria (X+10,Y+5)",
+        start_region_name="Faria (X+11, Y+5)",
+        end_region_name="Faria (X+10, Y+5)",
         rule_strs=["dog", "hard, ride, ss+", "hard, dash, ride, ss", "expert, dash, ride"],
     ),
     ConnectionData(
-        start_region_name="Faria Sewers (X+3,Y-7)",
-        end_region_name="Faria Sewers (X+4,Y-7) (Main)",
+        start_region_name="Faria Sewers (X+3, Y-7)",
+        end_region_name="Faria Sewers (X+4, Y-7) (Main)",
         rule_strs=["Lever 7, Lever 8"],
     ),
     ConnectionData(
-        start_region_name="Faria Sewers (X+4,Y-7) (Main)",
-        end_region_name="Faria Sewers (X+4,Y-6) (North)",
+        start_region_name="Faria Sewers (X+4, Y-7) (Main)",
+        end_region_name="Faria Sewers (X+4, Y-6) (North)",
         rule_strs=[],
     ),
     ConnectionData(
-        start_region_name="Faria Sewers (X+4,Y-7) (South)", end_region_name="Faria Sewers (X+3,Y-7)", rule_strs=[]
+        start_region_name="Faria Sewers (X+4, Y-7) (South)", end_region_name="Faria Sewers (X+3, Y-7)", rule_strs=[]
     ),
     ConnectionData(
-        start_region_name="Faria Sewers (X+8,Y-7)", end_region_name="Faria Sewers (X+8,Y-6) (North)", rule_strs=[]
-    ),
-    ConnectionData(start_region_name="Faria Sewers (X+9,Y-7)", end_region_name="Faria Sewers (X+8,Y-7)", rule_strs=[]),
-    ConnectionData(
-        start_region_name="Faria Sewers (X+3,Y-6)", end_region_name="Faria Sewers (X+4,Y-6) (Main)", rule_strs=[]
+        start_region_name="Faria Sewers (X+8, Y-7)", end_region_name="Faria Sewers (X+8, Y-6) (North)", rule_strs=[]
     ),
     ConnectionData(
-        start_region_name="Faria Sewers (X+4,Y-6) (Main)",
-        end_region_name="Faria Sewers (X+4,Y-7) (South)",
+        start_region_name="Faria Sewers (X+9, Y-7)", end_region_name="Faria Sewers (X+8, Y-7)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="Faria Sewers (X+3, Y-6)", end_region_name="Faria Sewers (X+4, Y-6) (Main)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="Faria Sewers (X+4, Y-6) (Main)",
+        end_region_name="Faria Sewers (X+4, Y-7) (South)",
         rule_strs=[],
     ),
     ConnectionData(
-        start_region_name="Faria Sewers (X+4,Y-6) (Main)",
-        end_region_name="Faria Sewers (X+5,Y-6) (Main)",
+        start_region_name="Faria Sewers (X+4, Y-6) (Main)",
+        end_region_name="Faria Sewers (X+5, Y-6) (Main)",
         rule_strs=["Key 1, Key 2, Button 1, Button 2"],
     ),
     ConnectionData(
-        start_region_name="Faria Sewers (X+4,Y-6) (Main)", end_region_name="Faria Sewers (X+2,Y-5)", rule_strs=[]
+        start_region_name="Faria Sewers (X+4, Y-6) (Main)", end_region_name="Faria Sewers (X+2, Y-5)", rule_strs=[]
     ),
     ConnectionData(
-        start_region_name="Faria Sewers (X+5,Y-6) (Main)",
-        end_region_name="Faria Sewers (X+5,Y-6) (South)",
+        start_region_name="Faria Sewers (X+5, Y-6) (Main)",
+        end_region_name="Faria Sewers (X+5, Y-6) (South)",
         rule_strs=["Key 3"],
     ),
-    ConnectionData(start_region_name="Faria Sewers (X+5,Y-6) (South)", end_region_name="Faria (X+4,Y-6)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+4,Y-6)", end_region_name="Faria Sewers (X+5,Y-6) (South)", rule_strs=[]),
     ConnectionData(
-        start_region_name="Faria Sewers (X+7,Y-6)", end_region_name="Faria Sewers (X+8,Y-6) (Northwest)", rule_strs=[]
+        start_region_name="Faria Sewers (X+5, Y-6) (South)", end_region_name="Faria (X+4, Y-6)", rule_strs=[]
     ),
     ConnectionData(
-        start_region_name="Faria Sewers (X+8,Y-6) (Main)", end_region_name="Faria Sewers (X+7,Y-5)", rule_strs=[]
+        start_region_name="Faria (X+4, Y-6)", end_region_name="Faria Sewers (X+5, Y-6) (South)", rule_strs=[]
     ),
     ConnectionData(
-        start_region_name="Faria Sewers (X+8,Y-6) (Main)",
-        end_region_name="Faria Sewers (X+9,Y-5) (West)",
+        start_region_name="Faria Sewers (X+7, Y-6)", end_region_name="Faria Sewers (X+8, Y-6) (Northwest)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="Faria Sewers (X+8, Y-6) (Main)", end_region_name="Faria Sewers (X+7, Y-5)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="Faria Sewers (X+8, Y-6) (Main)",
+        end_region_name="Faria Sewers (X+9, Y-5) (West)",
         rule_strs=["Button 3, Button 4, Button 5"],
     ),
     ConnectionData(
-        start_region_name="Faria Sewers (X+8,Y-6) (Main)", end_region_name="Faria Sewers (X+8,Y-4)", rule_strs=[]
+        start_region_name="Faria Sewers (X+8, Y-6) (Main)", end_region_name="Faria Sewers (X+8, Y-4)", rule_strs=[]
     ),
     ConnectionData(
-        start_region_name="Faria Sewers (X+9,Y-6)",
-        end_region_name="Faria Sewers (X+8,Y-6) (Northeast)",
+        start_region_name="Faria Sewers (X+9, Y-6)",
+        end_region_name="Faria Sewers (X+8, Y-6) (Northeast)",
         rule_strs=["ufo", "off, [FSB-I] Key (shop)", "off, manhole"],
     ),
-    ConnectionData(start_region_name="Faria Sewers (X+2,Y-5)", end_region_name="Faria Sewers (X+4,Y-5)", rule_strs=[]),
     ConnectionData(
-        start_region_name="Faria Sewers (X+4,Y-5)",
-        end_region_name="Faria Sewers (X+4,Y-6) (South)",
+        start_region_name="Faria Sewers (X+2, Y-5)", end_region_name="Faria Sewers (X+4, Y-5)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="Faria Sewers (X+4, Y-5)",
+        end_region_name="Faria Sewers (X+4, Y-6) (South)",
         rule_strs=["Combat 4"],
     ),
-    ConnectionData(start_region_name="Faria Sewers (X+7,Y-5)", end_region_name="Faria Sewers (X+7,Y-6)", rule_strs=[]),
     ConnectionData(
-        start_region_name="Faria Sewers (X+9,Y-5) (West)",
-        end_region_name="Faria (X+9,Y-5) (South Alcove)",
+        start_region_name="Faria Sewers (X+7, Y-5)", end_region_name="Faria Sewers (X+7, Y-6)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="Faria Sewers (X+9, Y-5) (West)",
+        end_region_name="Faria (X+9, Y-5) (South Alcove)",
         rule_strs=[],
     ),
     ConnectionData(
-        start_region_name="Faria (X+9,Y-5) (South Alcove)",
-        end_region_name="Faria Sewers (X+9,Y-5) (West)",
+        start_region_name="Faria (X+9, Y-5) (South Alcove)",
+        end_region_name="Faria Sewers (X+9, Y-5) (West)",
         rule_strs=[],
     ),
     ConnectionData(
-        start_region_name="Faria Sewers (X+9,Y-5) (East)",
-        end_region_name="Faria Sewers (X+9,Y-6)",
+        start_region_name="Faria Sewers (X+9, Y-5) (East)",
+        end_region_name="Faria Sewers (X+9, Y-6)",
         rule_strs=["[FSB-I] Key (shop)", "manhole"],
     ),
     ConnectionData(
-        start_region_name="Faria Sewers (X+8,Y-4)",
-        end_region_name="Faria Sewers (X+9,Y-4)",
+        start_region_name="Faria Sewers (X+8, Y-4)",
+        end_region_name="Faria Sewers (X+9, Y-4)",
         rule_strs=["manhole", "[FSB-I] Key (shop)"],
     ),
     ConnectionData(
-        start_region_name="Faria Sewers (X+9,Y-4)",
-        end_region_name="Faria Sewers (X+9,Y-5) (East)",
+        start_region_name="Faria Sewers (X+9, Y-4)",
+        end_region_name="Faria Sewers (X+9, Y-5) (East)",
         rule_strs=["off, [FSB-I] Key (shop)", "off, manhole"],
     ),
-    ConnectionData(start_region_name="Faria Sewers (X+6,Y-2)", end_region_name="Faria Sewers (X+6,Y-1)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria Sewers (X+5,Y-1)", end_region_name="Faria Sewers (X+5,Y-2)", rule_strs=[]),
     ConnectionData(
-        start_region_name="Faria Sewers (X+6,Y-1)",
-        end_region_name="Faria Sewers (X+6,Y+0) (North)",
+        start_region_name="Faria Sewers (X+6, Y-2)", end_region_name="Faria Sewers (X+6, Y-1)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="Faria Sewers (X+5, Y-1)", end_region_name="Faria Sewers (X+5, Y-2)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="Faria Sewers (X+6, Y-1)",
+        end_region_name="Faria Sewers (X+6, Y+0) (North)",
         rule_strs=["Combat 8"],
     ),
-    ConnectionData(start_region_name="Faria Sewers (X+7,Y-1)", end_region_name="Faria Sewers (X+8,Y-1)", rule_strs=[]),
     ConnectionData(
-        start_region_name="Faria Sewers (X+2,Y+0)",
-        end_region_name="Faria Sewers (X+2,Y-1)",
-        rule_strs=["ss+", "dog", "midair ufo", "ride, ss", "expert, ride"],
+        start_region_name="Faria Sewers (X+7, Y-1)", end_region_name="Faria Sewers (X+8, Y-1)", rule_strs=[]
     ),
     ConnectionData(
-        start_region_name="Faria Sewers (X+6,Y+0) (North)", end_region_name="Faria Sewers (X+5,Y-1)", rule_strs=[]
+        start_region_name="Faria Sewers (X+2, Y+0)",
+        end_region_name="Faria Sewers (X+2, Y-1)",
+        rule_strs=["ss+", "dog", "midair ufo", "dash-midair-ufo", "ride, ss"],
     ),
     ConnectionData(
-        start_region_name="Faria Sewers (X+6,Y+0) (North)", end_region_name="Faria Sewers (X+5,Y+0)", rule_strs=[]
+        start_region_name="Faria Sewers (X+6, Y+0) (North)", end_region_name="Faria Sewers (X+5, Y-1)", rule_strs=[]
     ),
     ConnectionData(
-        start_region_name="Faria Sewers (X+6,Y+0) (South)", end_region_name="Faria Sewers (X+5,Y+0)", rule_strs=[]
+        start_region_name="Faria Sewers (X+6, Y+0) (North)", end_region_name="Faria Sewers (X+5, Y+0)", rule_strs=[]
     ),
     ConnectionData(
-        start_region_name="Faria Sewers (X+6,Y+0) (East)",
-        end_region_name="Faria Sewers (X+6,Y+0) (Main)",
+        start_region_name="Faria Sewers (X+6, Y+0) (South)", end_region_name="Faria Sewers (X+5, Y+0)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="Faria Sewers (X+6, Y+0) (East)",
+        end_region_name="Faria Sewers (X+6, Y+0) (Main)",
         rule_strs=["Lever 2, Lever 3, Lever 5"],
     ),
     ConnectionData(
-        start_region_name="Faria Sewers (X+7,Y+0)",
-        end_region_name="Faria Sewers (X+6,Y+0) (East)",
-        rule_strs=["off", "dash", "ufo", "ride", "hard"],
+        start_region_name="Faria Sewers (X+7, Y+0)",
+        end_region_name="Faria Sewers (X+6, Y+0) (East)",
+        rule_strs=["Combat 9"],
     ),
-    ConnectionData(start_region_name="Faria Sewers (X+8,Y+0)", end_region_name="Faria Sewers (X+7,Y+0)", rule_strs=[]),
     ConnectionData(
-        start_region_name="Faria Sewers (X+10,Y+0)",
-        end_region_name="Faria Sewers (X+9,Y+0)",
+        start_region_name="Faria Sewers (X+8, Y+0)", end_region_name="Faria Sewers (X+7, Y+0)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="Faria Sewers (X+10, Y+0)",
+        end_region_name="Faria Sewers (X+9, Y+0)",
         rule_strs=["hard, dash", "ufo", "ride, dash"],
     ),
-    ConnectionData(start_region_name="Faria Sewers (X+5,Y+1)", end_region_name="Faria Sewers (X+6,Y+1)", rule_strs=[]),
     ConnectionData(
-        start_region_name="Faria Sewers (X+6,Y+1)",
-        end_region_name="Faria Sewers (X+6,Y+0) (South)",
+        start_region_name="Faria Sewers (X+5, Y+1)", end_region_name="Faria Sewers (X+6, Y+1)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="Faria Sewers (X+6, Y+1)",
+        end_region_name="Faria Sewers (X+6, Y+0) (South)",
         rule_strs=["off", "ufo", "hard, ride"],
     ),
-    ConnectionData(start_region_name="Faria Sewers (X+4,Y+3)", end_region_name="Faria Sewers (X+5,Y+3)", rule_strs=[]),
     ConnectionData(
-        start_region_name="Faria Sewers (X+5,Y+3)",
-        end_region_name="Faria Sewers (X+4,Y+3)",
+        start_region_name="Faria Sewers (X+4, Y+3)", end_region_name="Faria Sewers (X+5, Y+3)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="Faria Sewers (X+5, Y+3)",
+        end_region_name="Faria Sewers (X+4, Y+3)",
         rule_strs=["ss", "dog", "dash", "ufo", "ride"],
     ),
-    ConnectionData(start_region_name="Faria Sewers (X+5,Y+3)", end_region_name="Faria Sewers (X+6,Y+3)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria Sewers (X+6,Y+3)", end_region_name="Faria Sewers (X+5,Y+3)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria Sewers (X+5,Y+3)", end_region_name="Faria Sewers (X+4,Y+4)", rule_strs=[]),
     ConnectionData(
-        start_region_name="Faria Sewers (X+6,Y+3)", end_region_name="Faria Sewers (X+7,Y+3) (West)", rule_strs=[]
+        start_region_name="Faria Sewers (X+5, Y+3)", end_region_name="Faria Sewers (X+6, Y+3)", rule_strs=[]
     ),
     ConnectionData(
-        start_region_name="Faria Sewers (X+7,Y+3) (West)", end_region_name="Faria Sewers (X+6,Y+3)", rule_strs=[]
+        start_region_name="Faria Sewers (X+6, Y+3)", end_region_name="Faria Sewers (X+5, Y+3)", rule_strs=[]
     ),
-    ConnectionData(start_region_name="Faria Sewers (X+7,Y+3) (West)", end_region_name="Faria (X+7,Y+3)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+7,Y+3)", end_region_name="Faria Sewers (X+7,Y+3) (West)", rule_strs=[]),
     ConnectionData(
-        start_region_name="Faria Sewers (X+7,Y+3) (West)",
-        end_region_name="Faria Sewers (X+7,Y+3) (East)",
+        start_region_name="Faria Sewers (X+5, Y+3)", end_region_name="Faria Sewers (X+4, Y+4)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="Faria Sewers (X+6, Y+3)", end_region_name="Faria Sewers (X+7, Y+3) (West)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="Faria Sewers (X+7, Y+3) (West)", end_region_name="Faria Sewers (X+6, Y+3)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="Faria Sewers (X+7, Y+3) (West)", end_region_name="Faria (X+7, Y+3)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="Faria (X+7, Y+3)", end_region_name="Faria Sewers (X+7, Y+3) (West)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="Faria Sewers (X+7, Y+3) (West)",
+        end_region_name="Faria Sewers (X+7, Y+3) (East)",
         rule_strs=["dash", "ride, midair ufo"],
     ),
     ConnectionData(
-        start_region_name="Faria Sewers (X+7,Y+3) (East)", end_region_name="Faria Sewers (X+8,Y+3)", rule_strs=[]
+        start_region_name="Faria Sewers (X+7, Y+3) (East)", end_region_name="Faria Sewers (X+8, Y+3)", rule_strs=[]
     ),
     ConnectionData(
-        start_region_name="Faria Sewers (X+8,Y+3)", end_region_name="Faria Sewers (X+8,Y+4) (East)", rule_strs=["dash"]
+        start_region_name="Faria Sewers (X+8, Y+3)",
+        end_region_name="Faria Sewers (X+8, Y+4) (East)",
+        rule_strs=["dash"],
     ),
     ConnectionData(
-        start_region_name="Faria Sewers (X+4,Y+4)", end_region_name="Faria Sewers (X+6,Y+4)", rule_strs=["Combat 6"]
+        start_region_name="Faria Sewers (X+4, Y+4)", end_region_name="Faria Sewers (X+6, Y+4)", rule_strs=["Combat 6"]
     ),
     ConnectionData(
-        start_region_name="Faria Sewers (X+8,Y+4) (West)",
-        end_region_name="Faria Sewers (X+7,Y+4)",
+        start_region_name="Faria Sewers (X+8, Y+4) (West)",
+        end_region_name="Faria Sewers (X+7, Y+4)",
         rule_strs=["Combat 7"],
     ),
     ConnectionData(
-        start_region_name="Faria Sewers (X+8,Y+4) (East)",
-        end_region_name="Faria Sewers (X+8,Y+4) (West)",
+        start_region_name="Faria Sewers (X+8, Y+4) (East)",
+        end_region_name="Faria Sewers (X+8, Y+4) (West)",
         rule_strs=["dash", "ride"],
     ),
-    ConnectionData(start_region_name="Safe House (X+0,Y+0)", end_region_name="S Plaza (X-2,Y-3) (Main)", rule_strs=[]),
+    ConnectionData(start_region_name="Safe House (X+0, Y+0)", end_region_name="Safe House (X-1, Y+0)", rule_strs=[]),
     ConnectionData(
-        start_region_name="S Plaza (X-1,Y-6) (North)", end_region_name="S Plaza (X-1,Y-6) (South)", rule_strs=[]
+        start_region_name="Safe House (X+0, Y+0)", end_region_name="Safe House (X+1, Y+0)", rule_strs=["MB2"]
     ),
     ConnectionData(
-        start_region_name="S Plaza (X-1,Y-6) (North)", end_region_name="S Plaza Sewers (X-1,Y-6)", rule_strs=[]
+        start_region_name="Safe House (X+0, Y+0)", end_region_name="S Plaza (X-2, Y-3) (Main)", rule_strs=[]
     ),
     ConnectionData(
-        start_region_name="S Plaza Sewers (X-1,Y-6)", end_region_name="S Plaza (X-1,Y-6) (North)", rule_strs=[]
+        start_region_name="Excavation (X-3, Y-2)", end_region_name="Excavation (X+0, Y-2)", rule_strs=["ride"]
     ),
     ConnectionData(
-        start_region_name="S Plaza (X-1,Y-6) (South)", end_region_name="S Plaza Sewers (X-1,Y-5)", rule_strs=[]
+        start_region_name="Excavation (X+0, Y-2)", end_region_name="Excavation (X+3, Y-2)", rule_strs=["ride, dash"]
     ),
     ConnectionData(
-        start_region_name="S Plaza Sewers (X-1,Y-5)", end_region_name="S Plaza (X-1,Y-6) (South)", rule_strs=[]
-    ),
-    ConnectionData(start_region_name="S Plaza (X-2,Y-4)", end_region_name="S Plaza (X-1,Y-6) (South)", rule_strs=[]),
-    ConnectionData(start_region_name="S Plaza (X-1,Y-6) (South)", end_region_name="S Plaza (X-2,Y-4)", rule_strs=[]),
-    ConnectionData(start_region_name="S Plaza (X+1,Y-4)", end_region_name="Faria (X+2,Y-4) (West)", rule_strs=[]),
-    ConnectionData(start_region_name="Faria (X+2,Y-4) (West)", end_region_name="S Plaza (X+1,Y-4)", rule_strs=[]),
-    ConnectionData(start_region_name="S Plaza (X+1,Y-4)", end_region_name="S Plaza (X-1,Y-6) (South)", rule_strs=[]),
-    ConnectionData(start_region_name="S Plaza (X-1,Y-6) (South)", end_region_name="S Plaza (X+1,Y-4)", rule_strs=[]),
-    ConnectionData(
-        start_region_name="S Plaza (X-2,Y-3) (Main)", end_region_name="Faria (X+2,Y+0) (West)", rule_strs=[]
+        start_region_name="Excavation (X+4, Y-2) (Main)",
+        end_region_name="Excavation (X+4, Y-2) (South Money Bag)",
+        rule_strs=["bomb", "ride", "ufo"],
     ),
     ConnectionData(
-        start_region_name="Faria (X+2,Y+0) (West)", end_region_name="S Plaza (X-2,Y-3) (Main)", rule_strs=[]
-    ),
-    ConnectionData(start_region_name="S Plaza (X-2,Y-3) (Main)", end_region_name="Safe House (X+0,Y+0)", rule_strs=[]),
-    ConnectionData(start_region_name="S Plaza (X-2,Y-3) (Main)", end_region_name="S Plaza (X-2,Y-4)", rule_strs=[]),
-    ConnectionData(start_region_name="S Plaza (X-2,Y-4)", end_region_name="S Plaza (X-2,Y-3) (Main)", rule_strs=[]),
-    ConnectionData(start_region_name="S Plaza (X-2,Y-3) (Main)", end_region_name="S Plaza (X+1,Y-4)", rule_strs=[]),
-    ConnectionData(start_region_name="S Plaza (X+1,Y-4)", end_region_name="S Plaza (X-2,Y-3) (Main)", rule_strs=[]),
-    ConnectionData(
-        start_region_name="S Plaza (X-2,Y-3) (Main)",
-        end_region_name="S Plaza (X-2,Y-3) (South)",
-        rule_strs=["ss", "dog", "dash", "ufo", "ride"],
+        start_region_name="Excavation (X+4, Y-2) (Main)", end_region_name="Excavation (X+5, Y-1)", rule_strs=["none"]
     ),
     ConnectionData(
-        start_region_name="S Plaza (X-2,Y-3) (South)",
-        end_region_name="S Plaza (X-2,Y-3) (Main)",
-        rule_strs=["ss", "dog", "dash", "ufo", "ride"],
+        start_region_name="Excavation (X+5, Y-1)", end_region_name="Excavation (X+4, Y-2) (Main)", rule_strs=["none"]
     ),
     ConnectionData(
-        start_region_name="S Plaza (X-2,Y-3) (Main)",
-        end_region_name="S Plaza (X-2,Y-3) (Southwest)",
-        rule_strs=["ss", "dog", "ufo", "ride"],
+        start_region_name="Excavation (X+4, Y-2) (West)",
+        end_region_name="Excavation (X+4, Y-2) (Main)",
+        rule_strs=["bomb"],
     ),
     ConnectionData(
-        start_region_name="S Plaza (X-2,Y-3) (Southwest)",
-        end_region_name="S Plaza (X-2,Y-3) (Main)",
-        rule_strs=["ss", "dog", "ufo", "ride"],
+        start_region_name="Excavation (X+4, Y-2) (South Money Bag)",
+        end_region_name="Excavation (X+4, Y-2) (Main)",
+        rule_strs=["dash, ride", "midair ufo", "ufo, dash"],
     ),
     ConnectionData(
-        start_region_name="S Plaza (X-2,Y-3) (Main)",
-        end_region_name="S Plaza (X-2,Y-3) (Southeast)",
+        start_region_name="Excavation (X+6, Y-2)", end_region_name="Excavation (X+5, Y-2)", rule_strs=["ride"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-3, Y-1)",
+        end_region_name="Excavation (X-2, Y-1) (Northwest)",
+        rule_strs=["Lever West 1, Lever West 2"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-2, Y-1) (Main)", end_region_name="Excavation (X-3, Y-2)", rule_strs=["ride"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-2, Y-1) (Main)", end_region_name="Excavation (X-3, Y-1)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-2, Y-1) (Main)",
+        end_region_name="Excavation (X-2, Y-1) (Northwest)",
+        rule_strs=["flip+"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-2, Y-1) (Main)",
+        end_region_name="Excavation (X-2, Y-1) (Southwest)",
+        rule_strs=["flip+"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-2, Y-1) (Main)", end_region_name="Excavation (X-1, Y-1)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-2, Y-1) (Main)",
+        end_region_name="Excavation (X-3, Y+0)",
+        rule_strs=["Cog 1, Cog 2"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-2, Y-1) (Main)", end_region_name="Excavation (X-3, Y+1)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-2, Y-1) (Main)",
+        end_region_name="Excavation (X-1, Y+1)",
+        rule_strs=["Key West 1"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+3, Y-1)", end_region_name="Excavation (X+4, Y-2) (West)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+3, Y-1)", end_region_name="Excavation (X+2, Y-1)", rule_strs=["Lever East 1"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+5, Y-1)",
+        end_region_name="Excavation (X+5, Y-2)",
+        rule_strs=["ufo", "bomb, off, dash"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+5, Y-1)",
+        end_region_name="Excavation (X+5, Y+0)",
+        rule_strs=["ufo", "dash, ride"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+5, Y+0)",
+        end_region_name="Excavation (X+5, Y-1)",
+        rule_strs=["ufo", "dash, ride"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-1, Y+0)", end_region_name="Excavation (X-2, Y-1) (Main)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-1, Y+0)",
+        end_region_name="Excavation (X-1, Y+1)",
+        rule_strs=["ride", "ufo", "dash"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-1, Y+1)",
+        end_region_name="Excavation (X-1, Y+0)",
+        rule_strs=["ride", "ufo", "dash"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+0, Y+0) (Main)",
+        end_region_name="Excavation (X-1, Y+0)",
+        rule_strs=["Lever Main 2"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+0, Y+0) (Main)",
+        end_region_name="Excavation (X+0, Y+0) (Southwest Right)",
+        rule_strs=["Lever Main 4", "dash", "ride", "ufo"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+0, Y+0) (Main)",
+        end_region_name="Excavation (X+0, Y+0) (Southeast)",
+        rule_strs=["Lever Main 2", "ride", "ufo"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+0, Y+0) (Main)",
+        end_region_name="Excavation (X+2, Y+0) (West)",
+        rule_strs=["none"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+0, Y+0) (Main)",
+        end_region_name="Excavation (X+2, Y+1)",
+        rule_strs=["dash", "ride", "ufo"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+0, Y+0) (Main)", end_region_name="Excavation (X-3, Y+3)", rule_strs=["ride"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+0, Y+0) (Southwest Left)",
+        end_region_name="Excavation (X+0, Y+3)",
+        rule_strs=["none"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+0, Y+0) (Southwest Left)",
+        end_region_name="Excavation (X+0, Y+0) (Southwest Right)",
+        rule_strs=["dash", "ride", "ufo"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+0, Y+0) (Southwest Right)",
+        end_region_name="Excavation (X+0, Y+0) (Southwest Left)",
+        rule_strs=["dash", "ride", "ufo"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+0, Y+0) (Southeast)",
+        end_region_name="Excavation (X+1, Y+3)",
+        rule_strs=["none"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+2, Y+0) (West)",
+        end_region_name="Excavation (X+2, Y+0) (East)",
+        rule_strs=["bomb", "ride", "dash"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+2, Y+0) (East)", end_region_name="Excavation (X+3, Y+0)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+3, Y+0)", end_region_name="Excavation (X+3, Y-1)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+3, Y+0)", end_region_name="Excavation (X+4, Y+0)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+3, Y+0)", end_region_name="Excavation (X+3, Y+1)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+4, Y+0)",
+        end_region_name="Excavation (X+4, Y-2) (South Money Bag)",
+        rule_strs=["dash, ride, hard", "dash, ufo, hard"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+4, Y+0)", end_region_name="Excavation (X+4, Y+1)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+5, Y+0)", end_region_name="Excavation (X+6, Y-2)", rule_strs=["ride"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-3, Y+1)", end_region_name="Excavation (X-4, Y-1)", rule_strs=["ride"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-3, Y+1)",
+        end_region_name="Excavation (X-2, Y-1) (Southwest)",
+        rule_strs=["Lever West 3"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-1, Y+1)", end_region_name="Excavation (X-1, Y+2)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-1, Y+2)", end_region_name="Excavation (X-1, Y+1)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+2, Y+1)", end_region_name="Excavation (X+2, Y+0) (East)", rule_strs=["ufo"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+2, Y+1)", end_region_name="Excavation (X+2, Y+2) (West)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+3, Y+1)",
+        end_region_name="Excavation (X+2, Y+1)",
+        rule_strs=["Key East 1, Key East 2"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+3, Y+1)", end_region_name="Excavation (X+4, Y+1)", rule_strs=["ride"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+4, Y+1)", end_region_name="Excavation (X+5, Y+1)", rule_strs=["ride"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+4, Y+1)", end_region_name="Excavation (X+4, Y+2)", rule_strs=["ride"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+5, Y+1)", end_region_name="Excavation (X+5, Y+0)", rule_strs=["ride"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-3, Y+2)", end_region_name="Excavation (X-3, Y+3)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-3, Y+3)", end_region_name="Excavation (X-3, Y+2)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-2, Y+2)", end_region_name="Excavation (X-3, Y+2)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-3, Y+2)", end_region_name="Excavation (X-2, Y+2)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-1, Y+2)", end_region_name="Excavation (X-2, Y+2)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-2, Y+2)", end_region_name="Excavation (X-1, Y+2)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+2, Y+2) (West)",
+        end_region_name="Excavation (X+2, Y+2) (East)",
+        rule_strs=["bomb"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+2, Y+2) (East)",
+        end_region_name="Excavation (X+2, Y+2) (West)",
+        rule_strs=["bomb"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+2, Y+2) (West)",
+        end_region_name="Excavation (X+2, Y+3) (West)",
+        rule_strs=["ride", "ufo"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+2, Y+2) (East)", end_region_name="Excavation (X+4, Y+2)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+4, Y+2)", end_region_name="Excavation (X+2, Y+2) (East)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+4, Y+2)", end_region_name="Excavation (X+4, Y+3)", rule_strs=["Lever East 2"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-3, Y+3)", end_region_name="Excavation (X-4, Y+2)", rule_strs=["ride"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-3, Y+3)", end_region_name="Excavation (X+0, Y+3)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+0, Y+3)",
+        end_region_name="Excavation (X+0, Y+0) (Southwest Left)",
+        rule_strs=["Combat 4"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+0, Y+3)", end_region_name="Excavation (X-3, Y+3)", rule_strs=["Combat 4"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+0, Y+3)",
+        end_region_name="Excavation (X+0, Y+4) (Main)",
+        rule_strs=["Key West 2"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+1, Y+3)",
+        end_region_name="Excavation (X+0, Y+0) (Southeast)",
+        rule_strs=["Combat 2"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+1, Y+3)",
+        end_region_name="Excavation (X+2, Y+3) (West)",
+        rule_strs=["Combat 2"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+2, Y+3) (West)", end_region_name="Excavation (X+1, Y+3)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+2, Y+3) (West)",
+        end_region_name="Excavation (X+2, Y+3) (East)",
+        rule_strs=["bomb", "ufo, ride", "ride, hard", "dash"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+2, Y+3) (East)",
+        end_region_name="Excavation (X+2, Y+3) (West)",
+        rule_strs=["bomb", "ride, dash", "ride, hard", "ufo"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+3, Y+3) (West)",
+        end_region_name="Excavation (X+2, Y+3) (East)",
+        rule_strs=["none"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+2, Y+3) (East)",
+        end_region_name="Excavation (X+3, Y+3) (West)",
+        rule_strs=["none"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+3, Y+3) (West)",
+        end_region_name="Excavation (X+3, Y+4) (West)",
+        rule_strs=["none"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+3, Y+4) (West)",
+        end_region_name="Excavation (X+3, Y+3) (West)",
+        rule_strs=["none"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+3, Y+3) (East)",
+        end_region_name="Excavation (X+3, Y+3) (West)",
+        rule_strs=["dash", "ride", "ufo"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+3, Y+3) (West)",
+        end_region_name="Excavation (X+3, Y+3) (East)",
+        rule_strs=["dash", "ride", "ufo"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+3, Y+3) (East)",
+        end_region_name="Excavation (X+3, Y+4) (East)",
+        rule_strs=["none"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+3, Y+4) (East)",
+        end_region_name="Excavation (X+3, Y+3) (East)",
+        rule_strs=["none"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+4, Y+3)", end_region_name="Excavation (X+3, Y+3) (East)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+3, Y+3) (East)", end_region_name="Excavation (X+4, Y+3)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-2, Y+4) (North)",
+        end_region_name="Excavation (X-2, Y+4) (South)",
+        rule_strs=["dash", "ufo"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-2, Y+4) (South)",
+        end_region_name="Excavation (X-2, Y+4) (North)",
+        rule_strs=["dash", "ufo"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-2, Y+4) (North)",
+        end_region_name="Excavation (X-2, Y+4) (Southeast)",
         rule_strs=["dash", "ufo", "ride"],
     ),
     ConnectionData(
-        start_region_name="S Plaza (X-2,Y-3) (Southeast)",
-        end_region_name="S Plaza (X-2,Y-3) (Main)",
+        start_region_name="Excavation (X-2, Y+4) (Southeast)",
+        end_region_name="Excavation (X-2, Y+4) (North)",
         rule_strs=["dash", "ufo", "ride"],
     ),
     ConnectionData(
-        start_region_name="S Plaza (X-2,Y-3) (Main)", end_region_name="S Plaza Interiors (X-1,Y+1)", rule_strs=[]
+        start_region_name="Excavation (X-2, Y+4) (North)",
+        end_region_name="Excavation (X-2, Y+4) (Lever)",
+        rule_strs=["hard, off"],
     ),
     ConnectionData(
-        start_region_name="S Plaza Interiors (X-1,Y+1)", end_region_name="S Plaza (X-2,Y-3) (Main)", rule_strs=[]
+        start_region_name="Excavation (X-2, Y+4) (South)",
+        end_region_name="Excavation (X-2, Y+4) (Southeast)",
+        rule_strs=["Lever South 2"],
     ),
     ConnectionData(
-        start_region_name="S Plaza (X-2,Y-3) (South)", end_region_name="S Plaza (X-1,Y+4) (North)", rule_strs=[]
+        start_region_name="Excavation (X-2, Y+4) (Southeast)",
+        end_region_name="Excavation (X-2, Y+4) (South)",
+        rule_strs=["Lever South 2"],
     ),
     ConnectionData(
-        start_region_name="S Plaza (X-1,Y+4) (North)", end_region_name="S Plaza (X-2,Y-3) (South)", rule_strs=[]
+        start_region_name="Excavation (X-2, Y+4) (South)",
+        end_region_name="Excavation (X-1, Y+6) (West)",
+        rule_strs=["none"],
     ),
     ConnectionData(
-        start_region_name="S Plaza (X-2,Y-3) (Southwest)", end_region_name="S Plaza (X-3,Y+3)", rule_strs=[]
+        start_region_name="Excavation (X-1, Y+6) (West)",
+        end_region_name="Excavation (X-2, Y+4) (South)",
+        rule_strs=["none"],
     ),
-    ConnectionData(start_region_name="S Plaza (X-2,Y-3) (Southeast)", end_region_name="Faria (X+2,Y+3)", rule_strs=[]),
     ConnectionData(
-        start_region_name="S Plaza (X-3,Y+3)",
-        end_region_name="S Plaza (X-2,Y-3) (Southwest)",
+        start_region_name="Excavation (X-2, Y+4) (South)",
+        end_region_name="Excavation (X-3, Y+6) (West)",
+        rule_strs=["ride"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-3, Y+6) (West)",
+        end_region_name="Excavation (X-2, Y+4) (South)",
+        rule_strs=["ride"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-2, Y+4) (South)",
+        end_region_name="Excavation (X-2, Y+4) (Lever)",
+        rule_strs=["none"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-2, Y+4) (Southeast)",
+        end_region_name="Excavation (X-2, Y+4) (Lever)",
+        rule_strs=["ride"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+0, Y+4) (Main)",
+        end_region_name="Excavation (X-2, Y+4) (North)",
+        rule_strs=["none"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-2, Y+4) (North)",
+        end_region_name="Excavation (X+0, Y+4) (Main)",
+        rule_strs=["none"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+0, Y+4) (Main)",
+        end_region_name="Excavation (X+0, Y+4) (Southeast)",
+        rule_strs=["Lever South 1, dash", "ride", "ufo"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+0, Y+4) (Southeast)",
+        end_region_name="Excavation (X+0, Y+4) (Main)",
+        rule_strs=["Lever South 1, dash", "ride", "ufo"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+0, Y+4) (Southeast)",
+        end_region_name="Excavation (X+0, Y+5) (East)",
+        rule_strs=["none"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+0, Y+5) (East)",
+        end_region_name="Excavation (X+0, Y+4) (Southeast)",
+        rule_strs=["none"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+1, Y+4)", end_region_name="Excavation (X+1, Y+3)", rule_strs=["Lever South 4"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+1, Y+4)",
+        end_region_name="Excavation (X+2, Y+4)",
+        rule_strs=["dash", "ride", "ufo"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+1, Y+4)",
+        end_region_name="Excavation (X+2, Y+5) (Main)",
+        rule_strs=["dash", "ride", "ufo"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+1, Y+4)",
+        end_region_name="Excavation (X+0, Y+6) (East Alcove)",
+        rule_strs=["ride"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+1, Y+4)", end_region_name="Excavation (X+2, Y+6)", rule_strs=["Key South 2"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+3, Y+4) (West)",
+        end_region_name="Excavation (X+3, Y+4) (East)",
+        rule_strs=["bomb"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+3, Y+4) (East)",
+        end_region_name="Excavation (X+3, Y+4) (West)",
+        rule_strs=["bomb, off", "bomb, sleeper-drop", "flip+"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+4, Y+4)", end_region_name="Excavation (X+5, Y+1)", rule_strs=["ride"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+5, Y+1)", end_region_name="Excavation (X+4, Y+4)", rule_strs=["ride"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+0, Y+5) (West)",
+        end_region_name="Excavation (X+0, Y+5) (East)",
+        rule_strs=["dash", "ride", "ufo"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+0, Y+5) (East)", end_region_name="Excavation (X+1, Y+4)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+0, Y+5) (East)",
+        end_region_name="Excavation (X+0, Y+5) (West)",
+        rule_strs=["dash, Combat 5", "ride, Combat 5", "ufo, Combat 5"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+2, Y+5) (Main)",
+        end_region_name="Excavation (X+2, Y+5) (Key)",
+        rule_strs=["dash", "ride", "ufo"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-4, Y+6) (East)",
+        end_region_name="Excavation (X-5, Y+5) (Main)",
+        rule_strs=["ride, dash"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-4, Y+6) (East)",
+        end_region_name="Excavation (X-5, Y+5) (Money Bag)",
+        rule_strs=["ride"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-4, Y+6) (East)",
+        end_region_name="Excavation (X-4, Y+6) (West)",
+        rule_strs=["dash", "ride"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-3, Y+6) (West)",
+        end_region_name="Excavation (X-4, Y+6) (East)",
+        rule_strs=["none"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-3, Y+6) (West)", end_region_name="Excavation (X-3, Y+7)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-3, Y+7)", end_region_name="Excavation (X-3, Y+6) (West)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-3, Y+6) (East)",
+        end_region_name="Excavation (X-3, Y+6) (West)",
+        rule_strs=["dash", "ufo"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-3, Y+6) (West)",
+        end_region_name="Excavation (X-3, Y+6) (East)",
+        rule_strs=["dash", "ufo"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-2, Y+6) (West)",
+        end_region_name="Excavation (X-3, Y+6) (East)",
+        rule_strs=["none"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-3, Y+6) (East)",
+        end_region_name="Excavation (X-2, Y+6) (West)",
+        rule_strs=["none"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-2, Y+6) (East)",
+        end_region_name="Excavation (X-2, Y+6) (West)",
+        rule_strs=["dash", "ride", "ufo"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-2, Y+6) (West)",
+        end_region_name="Excavation (X-2, Y+6) (East)",
+        rule_strs=["dash", "ride", "ufo"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-1, Y+6) (South)",
+        end_region_name="Excavation (X-1, Y+6) (East)",
+        rule_strs=["Key South 1"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-1, Y+6) (West)",
+        end_region_name="Excavation (X-2, Y+6) (East)",
+        rule_strs=["none"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-2, Y+6) (East)",
+        end_region_name="Excavation (X-1, Y+6) (West)",
+        rule_strs=["none"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-1, Y+6) (East)",
+        end_region_name="Excavation (X+0, Y+6) (Main)",
+        rule_strs=["none"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+0, Y+6) (Main)",
+        end_region_name="Excavation (X-1, Y+6) (East)",
+        rule_strs=["none"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+0, Y+6) (Main)",
+        end_region_name="Excavation (X+0, Y+5) (West)",
+        rule_strs=["none"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+0, Y+5) (West)",
+        end_region_name="Excavation (X+0, Y+6) (Main)",
+        rule_strs=["none"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+2, Y+6)",
+        end_region_name="Excavation (X+3, Y+6)",
+        rule_strs=["dash", "ufo", "ride"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+3, Y+6)",
+        end_region_name="Excavation (X+3, Y+5)",
+        rule_strs=["dash", "ufo", "ride"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+3, Y+6)",
+        end_region_name="Excavation (X+4, Y+6)",
+        rule_strs=["dash", "ufo", "ride"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+4, Y+6)",
+        end_region_name="Excavation (X+2, Y+7)",
+        rule_strs=["dash", "ufo", "ride"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+5, Y+6)", end_region_name="Excavation (X+4, Y+4)", rule_strs=["ride"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+4, Y+4)", end_region_name="Excavation (X+5, Y+6)", rule_strs=["ride"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-3, Y+7)", end_region_name="Excavation (X-4, Y+7)", rule_strs=["ride"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-3, Y+7)", end_region_name="Excavation (X-2, Y+7) (Main)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-2, Y+7) (Main)", end_region_name="Excavation (X-3, Y+7)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-2, Y+7) (Main)",
+        end_region_name="Excavation (X-1, Y+7) (West)",
+        rule_strs=["walk", "dash", "ufo", "ss", "ride"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-2, Y+7) (Main)",
+        end_region_name="Excavation (X-2, Y+8)",
+        rule_strs=["walk", "ride", "ufo", "ss"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-2, Y+8)",
+        end_region_name="Excavation (X-2, Y+7) (Main)",
+        rule_strs=["walk", "ride", "ufo", "ss"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-1, Y+7) (West)",
+        end_region_name="Excavation (X-2, Y+7) (Key)",
+        rule_strs=["walk", "dash", "ufo", "ss", "yoyo-cancel", "moon"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-1, Y+7) (West)",
+        end_region_name="Excavation (X-1, Y+7) (East)",
+        rule_strs=["ufo", "dash", "ride"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-1, Y+7) (East)",
+        end_region_name="Excavation (X-1, Y+6) (South)",
+        rule_strs=["none"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+0, Y+7)", end_region_name="Excavation (X+1, Y+4)", rule_strs=["Lever South 5"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+0, Y+7)",
+        end_region_name="Excavation (X+0, Y+6) (Main)",
+        rule_strs=["Lever South 5"],
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+0, Y+7)", end_region_name="Excavation (X+0, Y+8)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+2, Y+7)", end_region_name="Excavation (X+0, Y+7)", rule_strs=["dash"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X-2, Y+8)", end_region_name="Excavation (X+5, Y+6)", rule_strs=["ride"]
+    ),
+    ConnectionData(
+        start_region_name="Excavation (X+5, Y+6)", end_region_name="Excavation (X-2, Y+8)", rule_strs=["ride"]
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+2, Y-5)", end_region_name="Skyscraper (X+1, Y-5)", rule_strs=["cog"]
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+3, Y-5)", end_region_name="Skyscraper (X+2, Y-5)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+0, Y-4)", end_region_name="Skyscraper (X+0, Y-5)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+0, Y-4)", end_region_name="Skyscraper (X+1, Y-4)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+1, Y-4)", end_region_name="Skyscraper (X+0, Y-4)", rule_strs=["Combat 3"]
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+2, Y-4)",
+        end_region_name="Skyscraper (X+3, Y-4) (Main)",
+        rule_strs=["ride, dash"],
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+2, Y-4)",
+        end_region_name="Skyscraper (X+1, Y-3) (Main)",
+        rule_strs=["cog, Key 3, Key 4", "hard, ride, dash"],
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+3, Y-4) (Main)",
+        end_region_name="Skyscraper (X+2, Y-4)",
+        rule_strs=["Key 3", "Key 4", "ride", "ufo"],
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+3, Y-4) (Main)",
+        end_region_name="Skyscraper (X+3, Y-4) (North)",
+        rule_strs=["cog", "hard, dash, ride", "ufo"],
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+3, Y-4) (Main)",
+        end_region_name="Skyscraper (X+3, Y-4) (Southeast)",
+        rule_strs=["cog, off", "ufo", "hard, cog, dash"],
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+3, Y-4) (North)", end_region_name="Skyscraper (X+3, Y-5)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+3, Y-4) (North)", end_region_name="Skyscraper (X+4, Y-5)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+3, Y-4) (Southeast)",
+        end_region_name="Skyscraper (X+3, Y-4) (Main)",
+        rule_strs=["none"],
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+1, Y-3) (North)", end_region_name="Skyscraper (X+1, Y-4)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+1, Y-4)", end_region_name="Skyscraper (X+1, Y-3) (North)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+1, Y-3) (Main)",
+        end_region_name="Skyscraper (X+1, Y-3) (North)",
+        rule_strs=["cog, off", "ufo", "hard, dash, ride"],
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+1, Y-3) (Main)", end_region_name="Skyscraper (X+2, Y-4)", rule_strs=["none"]
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+1, Y-3) (Main)",
+        end_region_name="Skyscraper (X+0, Y-2) (East)",
+        rule_strs=["ufo"],
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+1, Y-3) (North)",
+        end_region_name="Skyscraper (X+1, Y-3) (Main)",
+        rule_strs=["ufo", "ride, dash"],
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+0, Y-2) (West)",
+        end_region_name="Skyscraper (X+0, Y-4)",
+        rule_strs=["ufo", "ride"],
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+0, Y-2) (West)",
+        end_region_name="Skyscraper (X+0, Y-2) (East)",
+        rule_strs=["ufo", "cog"],
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+0, Y-2) (East)",
+        end_region_name="Skyscraper (X+1, Y-3) (Main)",
+        rule_strs=["ufo", "dash"],
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+0, Y-2) (East)",
+        end_region_name="Skyscraper (X+2, Y-2) (West)",
+        rule_strs=["Key 2", "ride", "ufo"],
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+0, Y-2) (East)",
+        end_region_name="Skyscraper (X+2, Y-1)",
+        rule_strs=["ufo", "ride"],
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+0, Y-2) (East)",
+        end_region_name="Skyscraper (X+2, Y+0) (West)",
+        rule_strs=["none"],
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+2, Y-2) (West)",
+        end_region_name="Skyscraper (X+0, Y-2) (East)",
+        rule_strs=["Key 2", "ride", "dash", "ufo"],
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+2, Y-2) (West)",
+        end_region_name="Skyscraper (X+2, Y-2) (East)",
+        rule_strs=["Combat 2", "ride"],
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+2, Y-2) (East)",
+        end_region_name="Skyscraper (X+2, Y-2) (West)",
+        rule_strs=["Combat 2", "ride"],
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+2, Y-2) (East)",
+        end_region_name="Skyscraper (X+3, Y-4) (Main)",
+        rule_strs=["none"],
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+3, Y-4) (Main)",
+        end_region_name="Skyscraper (X+2, Y-2) (East)",
+        rule_strs=["none"],
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+2, Y-1)",
+        end_region_name="Skyscraper (X+3, Y-1) (North)",
+        rule_strs=["ufo", "dash"],
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+3, Y-1) (North)",
+        end_region_name="Skyscraper (X+3, Y-4) (Main)",
+        rule_strs=["ufo", "dash, ride"],
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+3, Y-1) (North)",
+        end_region_name="Skyscraper (X+2, Y-1)",
+        rule_strs=["Combat 1, cog", "Combat 1, ufo", "ufo, ride"],
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+3, Y-1) (North)",
+        end_region_name="Skyscraper (X+4, Y-1)",
+        rule_strs=["Combat 1, cog", "Combat 1, ufo", "ufo, ride"],
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+3, Y-1) (Southwest)",
+        end_region_name="Skyscraper (X+3, Y-1) (North)",
+        rule_strs=["cog, off"],
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+4, Y-1)",
+        end_region_name="Skyscraper (X+3, Y-4) (Southeast)",
+        rule_strs=["expert, dash, ride"],
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+2, Y+0) (West)",
+        end_region_name="Skyscraper (X+2, Y+0) (East)",
+        rule_strs=["cog", "ufo"],
+    ),
+    ConnectionData(
+        start_region_name="Skyscraper (X+2, Y+0) (East)",
+        end_region_name="Skyscraper (X+3, Y-1) (Southwest)",
+        rule_strs=["none"],
+    ),
+    ConnectionData(
+        start_region_name="S Plaza (X-1, Y-6) (North)", end_region_name="S Plaza (X-1, Y-6) (South)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="S Plaza (X-1, Y-6) (North)", end_region_name="S Plaza Sewers (X-1, Y-6)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="S Plaza Sewers (X-1, Y-6)", end_region_name="S Plaza (X-1, Y-6) (North)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="S Plaza (X-1, Y-6) (South)", end_region_name="S Plaza Sewers (X-1, Y-5)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="S Plaza Sewers (X-1, Y-5)", end_region_name="S Plaza (X-1, Y-6) (South)", rule_strs=[]
+    ),
+    ConnectionData(start_region_name="S Plaza (X-2, Y-4)", end_region_name="S Plaza (X-1, Y-6) (South)", rule_strs=[]),
+    ConnectionData(start_region_name="S Plaza (X-1, Y-6) (South)", end_region_name="S Plaza (X-2, Y-4)", rule_strs=[]),
+    ConnectionData(start_region_name="S Plaza (X+1, Y-4)", end_region_name="Faria (X+2, Y-4) (West)", rule_strs=[]),
+    ConnectionData(start_region_name="Faria (X+2, Y-4) (West)", end_region_name="S Plaza (X+1, Y-4)", rule_strs=[]),
+    ConnectionData(start_region_name="S Plaza (X+1, Y-4)", end_region_name="S Plaza (X-1, Y-6) (South)", rule_strs=[]),
+    ConnectionData(start_region_name="S Plaza (X-1, Y-6) (South)", end_region_name="S Plaza (X+1, Y-4)", rule_strs=[]),
+    ConnectionData(
+        start_region_name="S Plaza (X-2, Y-3) (Main)", end_region_name="Faria (X+2, Y+0) (West)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="Faria (X+2, Y+0) (West)", end_region_name="S Plaza (X-2, Y-3) (Main)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="S Plaza (X-2, Y-3) (Main)", end_region_name="Safe House (X+0, Y+0)", rule_strs=[]
+    ),
+    ConnectionData(start_region_name="S Plaza (X-2, Y-3) (Main)", end_region_name="S Plaza (X-2, Y-4)", rule_strs=[]),
+    ConnectionData(start_region_name="S Plaza (X-2, Y-4)", end_region_name="S Plaza (X-2, Y-3) (Main)", rule_strs=[]),
+    ConnectionData(start_region_name="S Plaza (X-2, Y-3) (Main)", end_region_name="S Plaza (X+1, Y-4)", rule_strs=[]),
+    ConnectionData(start_region_name="S Plaza (X+1, Y-4)", end_region_name="S Plaza (X-2, Y-3) (Main)", rule_strs=[]),
+    ConnectionData(
+        start_region_name="S Plaza (X-2, Y-3) (Main)",
+        end_region_name="S Plaza (X-2, Y-3) (South)",
+        rule_strs=["ss", "dog", "dash", "ufo", "ride"],
+    ),
+    ConnectionData(
+        start_region_name="S Plaza (X-2, Y-3) (South)",
+        end_region_name="S Plaza (X-2, Y-3) (Main)",
+        rule_strs=["ss", "dog", "dash", "ufo", "ride"],
+    ),
+    ConnectionData(
+        start_region_name="S Plaza (X-2, Y-3) (Main)",
+        end_region_name="S Plaza (X-2, Y-3) (Southwest)",
+        rule_strs=["ss", "dog", "ufo", "ride"],
+    ),
+    ConnectionData(
+        start_region_name="S Plaza (X-2, Y-3) (Southwest)",
+        end_region_name="S Plaza (X-2, Y-3) (Main)",
+        rule_strs=["ss", "dog", "ufo", "ride"],
+    ),
+    ConnectionData(
+        start_region_name="S Plaza (X-2, Y-3) (Main)",
+        end_region_name="S Plaza (X-2, Y-3) (Southeast)",
+        rule_strs=["dash", "ufo", "ride"],
+    ),
+    ConnectionData(
+        start_region_name="S Plaza (X-2, Y-3) (Southeast)",
+        end_region_name="S Plaza (X-2, Y-3) (Main)",
+        rule_strs=["dash", "ufo", "ride"],
+    ),
+    ConnectionData(
+        start_region_name="S Plaza (X-2, Y-3) (Main)", end_region_name="S Plaza Interiors (X-1, Y+1)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="S Plaza Interiors (X-1, Y+1)", end_region_name="S Plaza (X-2, Y-3) (Main)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="S Plaza (X-2, Y-3) (South)", end_region_name="S Plaza (X-1, Y+4) (North)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="S Plaza (X-1, Y+4) (North)", end_region_name="S Plaza (X-2, Y-3) (South)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="S Plaza (X-2, Y-3) (Southwest)", end_region_name="S Plaza (X-3, Y+3)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="S Plaza (X-2, Y-3) (Southeast)", end_region_name="Faria (X+2, Y+3)", rule_strs=[]
+    ),
+    ConnectionData(
+        start_region_name="S Plaza (X-3, Y+3)",
+        end_region_name="S Plaza (X-2, Y-3) (Southwest)",
         rule_strs=["[SP] Combat 2"],
     ),
-    ConnectionData(start_region_name="S Plaza (X-2,Y+4)", end_region_name="S Plaza (X-3,Y+4)", rule_strs=[]),
-    ConnectionData(start_region_name="S Plaza (X-1,Y+4) (North)", end_region_name="S Plaza (X-2,Y+4)", rule_strs=[]),
+    ConnectionData(start_region_name="S Plaza (X-2, Y+4)", end_region_name="S Plaza (X-3, Y+4)", rule_strs=[]),
+    ConnectionData(start_region_name="S Plaza (X-1, Y+4) (North)", end_region_name="S Plaza (X-2, Y+4)", rule_strs=[]),
     ConnectionData(
-        start_region_name="S Plaza (X-1,Y+4) (North)", end_region_name="S Plaza (X+1,Y+4) (West)", rule_strs=[]
+        start_region_name="S Plaza (X-1, Y+4) (North)", end_region_name="S Plaza (X+1, Y+4) (West)", rule_strs=[]
     ),
     ConnectionData(
-        start_region_name="S Plaza (X-1,Y+4) (South)", end_region_name="S Plaza (X-1,Y+4) (North)", rule_strs=[]
+        start_region_name="S Plaza (X-1, Y+4) (South)", end_region_name="S Plaza (X-1, Y+4) (North)", rule_strs=[]
     ),
     ConnectionData(
-        start_region_name="S Plaza (X-1,Y+4) (South)", end_region_name="S Plaza Sewers (X-1,Y+4)", rule_strs=[]
+        start_region_name="S Plaza (X-1, Y+4) (South)", end_region_name="S Plaza Sewers (X-1, Y+4)", rule_strs=[]
     ),
     ConnectionData(
-        start_region_name="S Plaza Sewers (X-1,Y+4)", end_region_name="S Plaza (X-1,Y+4) (South)", rule_strs=[]
+        start_region_name="S Plaza Sewers (X-1, Y+4)", end_region_name="S Plaza (X-1, Y+4) (South)", rule_strs=[]
     ),
     ConnectionData(
-        start_region_name="S Plaza (X-1,Y+4) (Southeast)",
-        end_region_name="S Plaza (X-1,Y+4) (South)",
+        start_region_name="S Plaza (X-1, Y+4) (Southeast)",
+        end_region_name="S Plaza (X-1, Y+4) (South)",
         rule_strs=["ss", "dog", "dash", "ufo", "ride"],
     ),
     ConnectionData(
-        start_region_name="S Plaza (X-1,Y+4) (Southeast Entrance)",
-        end_region_name="S Plaza (X-1,Y+4) (Southeast)",
+        start_region_name="S Plaza (X-1, Y+4) (Southeast Entrance)",
+        end_region_name="S Plaza (X-1, Y+4) (Southeast)",
         rule_strs=["ss, Lever 3", "dog, Lever 3", "ufo, Lever 3", "ride", "buoy, Lever 3"],
     ),
     ConnectionData(
-        start_region_name="S Plaza (X+1,Y+4) (West)",
-        end_region_name="S Plaza (X+1,Y+4) (East)",
+        start_region_name="S Plaza (X+1, Y+4) (West)",
+        end_region_name="S Plaza (X+1, Y+4) (East)",
         rule_strs=["dash", "ufo", "ride"],
     ),
-    ConnectionData(start_region_name="S Plaza (X+1,Y+4) (East)", end_region_name="S Plaza (X+2,Y+4)", rule_strs=[]),
+    ConnectionData(start_region_name="S Plaza (X+1, Y+4) (East)", end_region_name="S Plaza (X+2, Y+4)", rule_strs=[]),
     ConnectionData(
-        start_region_name="S Plaza Sewers (X-1,Y-5)",
-        end_region_name="S Plaza Sewers (X-1,Y-6)",
-        rule_strs=["Lever 1, Lever 2"],
+        start_region_name="S Plaza Sewers (X-1, Y-5)",
+        end_region_name="S Plaza Sewers (X-1, Y-6)",
+        rule_strs=["Lever 1, Lever 2, MB2, [SES] Combat (Boss)"],
     ),
     ConnectionData(
-        start_region_name="S Plaza Sewers (X-1,Y+4)",
-        end_region_name="S Plaza Sewers (X-1,Y+5) (West)",
-        rule_strs=["dog", "midair ufo, ss", "ride"],
+        start_region_name="S Plaza Sewers (X-1, Y+4)",
+        end_region_name="S Plaza Sewers (X-1, Y+5) (West)",
+        rule_strs=["dog", "ufo, ss, midair ufo", "ufo, ss, dash-midair-ufo", "ride"],
     ),
     ConnectionData(
-        start_region_name="S Plaza Sewers (X-1,Y+5) (West)",
-        end_region_name="S Plaza Sewers (X-1,Y+5) (East)",
+        start_region_name="S Plaza Sewers (X-1, Y+5) (West)",
+        end_region_name="S Plaza Sewers (X-1, Y+5) (East)",
         rule_strs=["off, dog", "off, ride", "dog, ss"],
     ),
 ]

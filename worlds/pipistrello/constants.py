@@ -107,6 +107,7 @@ class Badges:
 
 
 class SpecialItems:
+    MEGA_BATTERY_FARIA = "Faria Mega-Battery"
     FARIA_STAFF_ID = "Staff ID"
 
 

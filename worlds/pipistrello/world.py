@@ -59,7 +59,7 @@ class PipWorld(World):
         return items.get_random_filler_item_name(self)
 
     def fill_slot_data(self) -> Mapping[str, Any]:
-        return {"options": self.options.as_dict("difficulty", "moneysanity")}
+        return {"options": self.options.as_dict("difficulty", "death_link", "death_link_amnesty", "moneysanity")}
 
     @staticmethod
     def interpret_slot_data(slot_data: dict[str, Any]) -> dict[str, Any]:
@@ -67,4 +67,4 @@ class PipWorld(World):
         return slot_data
 
     def custom_ut_sort(self, region_label: str, location_label: str) -> str | int:
-        return regions.REGION_NAME_TO_ROOM[region_label].sort_key
+        return f"{regions.get_room_by_region_name(region_label).sort_key} | {location_label}"

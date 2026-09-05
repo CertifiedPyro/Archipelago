@@ -4,6 +4,7 @@ from pathlib import Path
 import jinja2
 
 from .. import locations, regions
+from ..constants import Badges as B
 from ..constants import Moves as M
 from ..constants import OtherItems as OI
 from ..constants import SpecialItems as SI
@@ -19,13 +20,12 @@ RULE_DICT = {
     "off": f"Has('{M.OFF}')",
     "offstring": f"Has('{M.OFF}')",
     "dog": f"Has('{M.DOG}')",
+    "walk": f"Has('{M.DOG}')",
     "walkthedog": f"Has('{M.DOG}')",
     "dash": f"Has('{M.DASH}')",
     "walldash": f"Has('{M.DASH}')",
     "ufo": f"Has('{M.UFO}')",
     "ufothrow": f"Has('{M.UFO}')",
-    "midairufo": "HAS_MID_AIR_UFO",
-    "midairufothrow": "HAS_MID_AIR_UFO",
     "ride": f"Has('{M.RIDE}')",
     "wallride": f"Has('{M.RIDE}')",
     # Charged moves
@@ -50,15 +50,19 @@ RULE_DICT = {
     "flip+": "COIN_FLIP_PLUS",
     "coinflip+": "COIN_FLIP_PLUS",
     # Badges
-    "ss": "HAS_SS_NORMAL",
-    "skippingstone": "HAS_SS_NORMAL",
-    "ss+": "HAS_SS_PLUS",
-    "skippingstone+": "HAS_SS_PLUS",
+    "wing": f"Has('{B.WING}')",
+    "mist+": f"Has('{B.MIST}', 2)",
+    "moon": f"Has('{B.MOON}')",
+    "ss": "SS_NORMAL",
+    "ss+": "SS_PLUS",
+    "turret": "False_()",
     # Special items
+    "mb2": f"Has('{SI.MEGA_BATTERY_FARIA}')",
     "staffid": f"Has('{SI.FARIA_STAFF_ID}')",
     # Health
-    "+1heart": f"Has('{OI.PETAL}', 8)",
     "heart+1": f"Has('{OI.PETAL}', 8)",
+    "heart+2": f"Has('{OI.PETAL}', 16)",
+    "heart+3": f"Has('{OI.PETAL}', 24)",
     # Difficulty
     "hard": "DIFF_HARD",
     "expert": "DIFF_EXPERT",
@@ -66,16 +70,28 @@ RULE_DICT = {
     "bomb": "BOMB",
     "buoy": "BUOY",
     "chest": "CHEST",
+    "cog": "COG",
+    "hook": "HOOK",
     "key": "KEY",
     "lever": "LEVER",
     "manhole": "MANHOLE",
+    # Difficult tricks
+    "midairufo": "MID_AIR_UFO",
+    "dash-midair-ufo": "DASH_MIDAIR_UFO",
+    "dash-midair-off": "DASH_MIDAIR_OFF",
+    "trick-dash": "TRICK_DASH",
+    "drop": "DROP",
+    "sleeper-drop": "SLEEPER_DROP",
+    "yoyo-cancel": "YOYO_CANCEL",
 }
+
 
 AREA_DICT = {
     "fsb": "Faria Slimer Borough",
     "fsb-i": "Faria Slimer Borough (Interiors)",
     "sp": "South Plaza",
     "sp-i": "South Plaza (Interiors)",
+    "ses": "SlimeCorp Excavation Site",
 }
 
 
@@ -105,9 +121,13 @@ def process_row(rule_strs: list[str], region_name: str, region_name2: str | None
     remove_map = str.maketrans("", "", " '")
     row_rules = []
     for rule_str in rule_strs:
+        # TODO: Bomb by itself should be Bomb item + Coin Flip+
         column_strs = rule_str.translate(remove_map).lower().split(",")
         column_rule_strs = []
         for column_str in column_strs:
+            if column_str == "none":
+                continue
+
             # Check if string is a known one.
             rule_value_str = RULE_DICT.get(column_str)
             if rule_value_str is not None:
@@ -122,11 +142,11 @@ def process_row(rule_strs: list[str], region_name: str, region_name2: str | None
 
             # Else, string must be an event instead.
             if region_name2 is None:
-                room1 = regions.REGION_NAME_TO_ROOM[region_name]
+                room1 = regions.get_room_by_region_name(region_name)
                 room2 = room1
             else:
-                room1 = regions.REGION_NAME_TO_ROOM[region_name]
-                room2 = regions.REGION_NAME_TO_ROOM[region_name2]
+                room1 = regions.get_room_by_region_name(region_name)
+                room2 = regions.get_room_by_region_name(region_name2)
 
             area_abbrev_start_idx = column_str.find("[")
             area_abbrev_end_idx = column_str.find("]")
@@ -174,9 +194,12 @@ def write_connection_rules(entrance_rules: dict[str, str], location_rules: dict[
 from __future__ import annotations
 
 from rule_builder.options import OptionFilter
-from rule_builder.rules import Has, HasAll, HasFromList, Rule, True_
+from rule_builder.rules import False_, Has, HasAll, HasAny, HasFromList, Rule, True_
 
 from ..options import Difficulty
+
+DIFF_HARD = [OptionFilter(Difficulty, Difficulty.option_hard, operator="ge")]
+DIFF_EXPERT = [OptionFilter(Difficulty, Difficulty.option_expert, operator="ge")]
 
 BP_PLUS1_UPGRADES = ["Bat Pouch", "Bat Backpack"]
 BP_PLUS1 = Has("BP Shard", 2) | HasFromList(*BP_PLUS1_UPGRADES, count=1)
@@ -187,16 +210,22 @@ BP_PLUS2 = (
 )
 
 COIN_FLIP_PLUS = HasAll("Coin-Flip", "Prodigy")
-HAS_MID_AIR_UFO = Has("UFO Throw", options=[OptionFilter(Difficulty, Difficulty.option_hard)])
-HAS_SS_PLUS = Has("Progressive Skipping Stone Badge", 2) & BP_PLUS1  # Requires 4 BP (from base 3 BP)
-HAS_SS_NORMAL = HAS_SS_PLUS | (Has("Progressive Skipping Stone Badge", 1) & BP_PLUS2)  # Requires 5 BP (from base 3 BP)
+SS_PLUS = Has("Progressive Skipping Stone Badge", 2) & BP_PLUS1  # Requires 4 BP (from base 3 BP)
+SS_NORMAL = SS_PLUS | (Has("Progressive Skipping Stone Badge", 1) & BP_PLUS2)  # Requires 5 BP (from base 3 BP)
 
-DIFF_HARD = [OptionFilter(Difficulty, Difficulty.option_hard, operator="ge")]
-DIFF_EXPERT = [OptionFilter(Difficulty, Difficulty.option_expert, operator="ge")]
+MID_AIR_UFO = Has("UFO Throw") & DIFF_EXPERT
+DASH_MIDAIR_UFO = HasAll("Wall-Dash", "UFO Throw") & DIFF_HARD
+DASH_MIDAIR_OFF = HasAll("Wall-Dash", "Offstring Throw") & DIFF_HARD
+TRICK_DASH = Has("Wall-Dash") & (DIFF_EXPERT | (DIFF_HARD & HasAny("Offstring Throw", "UFO Throw")))
+DROP = HasAny("Parry", "Around-the-World", "Coin-Flip") & DIFF_HARD
+SLEEPER_DROP = Has("Sleeper") & HasAny("Parry", "Around-the-World") & DIFF_HARD
+YOYO_CANCEL = DIFF_EXPERT
 
 BOMB = True_()
 BUOY = True_()
 CHEST = True_()
+COG = True_()
+HOOK = True_()
 KEY = True_()
 LEVER = True_()
 MANHOLE = True_()
