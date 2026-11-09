@@ -52,7 +52,7 @@ RULE_DICT = {
     # Badges
     "wing": f"Has('{B.WING}')",
     "mist+": f"Has('{B.MIST}', 2)",
-    "moon": f"Has('{B.MOON}')",
+    "moon": "MOON",
     "ss": "SS_NORMAL",
     "ss+": "SS_PLUS",
     "turret": "False_()",
@@ -210,6 +210,7 @@ BP_PLUS2 = (
 )
 
 COIN_FLIP_PLUS = HasAll("Coin-Flip", "Prodigy")
+MOON = HasAll("Progressive Moon Badge", "Offstring Throw")
 SS_PLUS = Has("Progressive Skipping Stone Badge", 2) & BP_PLUS1  # Requires 4 BP (from base 3 BP)
 SS_NORMAL = SS_PLUS | (Has("Progressive Skipping Stone Badge", 1) & BP_PLUS2)  # Requires 5 BP (from base 3 BP)
 

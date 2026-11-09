@@ -19,6 +19,7 @@ BP_PLUS2 = (
 )
 
 COIN_FLIP_PLUS = HasAll("Coin-Flip", "Prodigy")
+MOON = HasAll("Progressive Moon Badge", "Offstring Throw")
 SS_PLUS = Has("Progressive Skipping Stone Badge", 2) & BP_PLUS1  # Requires 4 BP (from base 3 BP)
 SS_NORMAL = SS_PLUS | (Has("Progressive Skipping Stone Badge", 1) & BP_PLUS2)  # Requires 5 BP (from base 3 BP)
 
@@ -400,12 +401,7 @@ ENTRANCE_RULES: dict[str, Rule] = {
         Has("Walk-the-Dog") | Has("Wall-Ride") | Has("UFO Throw") | SS_NORMAL
     ),
     "Excavation (X-1, Y+7) (West) -> Excavation (X-2, Y+7) (Key)": (
-        Has("Walk-the-Dog")
-        | Has("Wall-Dash")
-        | Has("UFO Throw")
-        | SS_NORMAL
-        | YOYO_CANCEL
-        | Has("Progressive Moon Badge")
+        Has("Walk-the-Dog") | Has("Wall-Dash") | Has("UFO Throw") | SS_NORMAL | YOYO_CANCEL | MOON
     ),
     "Excavation (X-1, Y+7) (West) -> Excavation (X-1, Y+7) (East)": (
         Has("UFO Throw") | Has("Wall-Dash") | Has("Wall-Ride")
@@ -676,7 +672,7 @@ LOCATION_RULES: dict[str, Rule] = {
     ),
     "Excavation (X+2, Y-1): Key": ((BOMB & Has("Offstring Throw")) | COIN_FLIP_PLUS),
     "Excavation (X+4, Y+1): Key": (Has("Excavation (X+4, Y+1): Combat")),
-    "Excavation (X+5, Y-2): Key": ((COG & Has("Offstring Throw")) | Has("Progressive Moon Badge")),
+    "Excavation (X+5, Y-2): Key": ((COG & Has("Offstring Throw")) | MOON),
     "Excavation (X-2, Y+7): Key": (Has("Wall-Dash") | Has("UFO Throw") | Has("Excavation (X-1, Y+7): Lever")),
     "Excavation (X+2, Y+5): Key": (
         Has("Offstring Throw") | Has("UFO Throw") | TRICK_DASH | (Has("Wall-Dash") & DIFF_HARD)
@@ -774,9 +770,7 @@ LOCATION_RULES: dict[str, Rule] = {
     "Skyscraper (X+2, Y-2): Combat": (COG),
     "Skyscraper (X+1, Y-4): Combat": (COG & Has("Offstring Throw")),
     "Skyscraper (X+4, Y-1): Key": (COG & Has("Offstring Throw")),
-    "Skyscraper (X+2, Y-1): Key": (
-        (COG & Has("Offstring Throw")) | Has("Wall-Dash") | Has("Progressive Moon Badge") | (COG & DIFF_EXPERT)
-    ),
+    "Skyscraper (X+2, Y-1): Key": ((COG & Has("Offstring Throw")) | Has("Wall-Dash") | MOON | (COG & DIFF_EXPERT)),
     "Skyscraper (X+1, Y-5): Key": (COG & Has("Offstring Throw")),
     "Skyscraper (X+4, Y-5): Key": ((COG & Has("Offstring Throw")) | (COG & DIFF_HARD) | Has("UFO Throw")),
     "Skyscraper (X+1, Y-5): Money Bag (secret)": (

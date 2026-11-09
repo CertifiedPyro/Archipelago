@@ -489,7 +489,7 @@ Room Label 1,Exit,Room Label 2,↔️,Rules,Edit,Idx1,Idx2,✅,Rule 1,Rule 2,Rul
 "Faria Slimer Borough (X+4, Y-3) - yug2741 (North)",up,"Faria Slimer Borough (X+5, Y-4) - yug190",FALSE,FALSE,8/3/2026 15:43:11,220,211,TRUE,,,,,,,,,,,,,,,,
 "Faria Slimer Borough (X+4, Y-3) - yug2741 (North)",down,"Faria Slimer Borough (X+4, Y-3) - yug2741 (Main)",FALSE,FALSE,7/28/2026 14:59:21,220,219,TRUE,,,,,,,,,,,,,,,,
 "Faria Slimer Borough (X+4, Y-3) - yug2741 (North)",warp (up),"SlimeCorp Skyscraper (X+0, Y-2) - lor2 (West)",TRUE,FALSE,9/6/2026 15:09:14,220,932,TRUE,none,,,,,,,,,,,,,,,
-"Faria Slimer Borough (X+8, Y-3) - yug108 (Main)",up,"Faria Slimer Borough (X+8, Y-3) - yug108 (Dungeon Entrance)",FALSE,TRUE,9/6/2026 15:09:11,222,227,TRUE,Staff ID,MB2,,,,,,,,,,,,,,
+"Faria Slimer Borough (X+8, Y-3) - yug108 (Main)",up,"Faria Slimer Borough (X+8, Y-3) - yug108 (Dungeon Entrance)",FALSE,TRUE,11/9/2026 4:52:59,222,227,TRUE,Staff ID,,,,,,,,,,,,,,,
 "Faria Slimer Borough (X+8, Y-3) - yug108 (Main)",left,"Faria Slimer Borough (X+4, Y-3) - yug2741 (East Alcove)",FALSE,FALSE,8/4/2026 17:58:52,222,221,TRUE,,,,,,,,,,,,,,,,
 "Faria Slimer Borough (X+8, Y-3) - yug108 (Main)",right,"Faria Slimer Borough (X+10, Y-1) - yug61 (West Alcove)",FALSE,FALSE,8/5/2026 18:50:39,222,236,TRUE,,,,,,,,,,,,,,,,
 "Faria Slimer Borough (X+8, Y-3) - yug108 (Northwest)",right,"Faria Slimer Borough (X+8, Y-3) - yug108 (Northeast)",TRUE,TRUE,9/6/2026 15:09:19,223,224,TRUE,dash,ufo,ride,,,,,,,,,,,,,
